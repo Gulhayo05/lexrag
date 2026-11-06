@@ -1,6 +1,7 @@
-data/
-eval/runs/
 .env
+.env.*
+!.env.example
+.DS_Store
 __pycache__/
+.venv/
 *.pyc
-deploy/__pycache__/
