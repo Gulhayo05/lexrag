@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Lex RAG: server + chat (http://127.0.0.1:8000)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["lexrag.api:app", "--host", "0.0.0.0", "--port", "8000"],
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true,
+      "serverReadyAction": { "pattern": "Uvicorn running on", "uriFormat": "http://127.0.0.1:8000/", "action": "openExternally" }
+    },
+    {
+      "name": "Lex RAG: run tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "unittest",
+      "args": ["discover", "-s", "tests", "-v"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Lex RAG: evaluate 100 questions (server must be running)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/eval/run_eval.py",
+      "args": ["run", "--testset", "eval/testset_100.csv", "--run-id", "${input:runId}", "--seed", "${input:seed}", "--score", "--judge"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Lex RAG: rebuild index (~90 s)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "lexrag.ingest",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    { "id": "runId", "type": "promptString", "description": "run_id (results go to eval/runs/<run_id>)", "default": "vscode-run" },
+    { "id": "seed", "type": "promptString", "description": "seed (a new seed = fresh answers, not cached)", "default": "9001" }
+  ]
+}

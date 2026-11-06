@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Lex RAG: start server",
+      "type": "shell",
+      "command": "./run_server.sh",
+      "isBackground": true,
+      "problemMatcher": { "owner": "uvicorn", "pattern": { "regexp": "^__never__$" },
+                          "background": { "activesBegin": true, "beginsPattern": "Base URL", "endsPattern": "Uvicorn running on|Application startup complete" } },
+      "presentation": { "panel": "dedicated", "reveal": "always" }
+    },
+    { "label": "Lex RAG: open chat in browser", "type": "shell", "command": "open http://127.0.0.1:8000/", "problemMatcher": [] },
+    { "label": "Lex RAG: run tests", "type": "shell", "command": "python3 -m unittest discover -s tests -v", "group": { "kind": "test", "isDefault": true }, "problemMatcher": [] },
+    { "label": "Lex RAG: rebuild index", "type": "shell", "command": "python3 -m lexrag.ingest", "problemMatcher": [] },
+    { "label": "Lex RAG: convert .doc files (only after new lex.uz data)", "type": "shell", "command": "./convert.sh", "problemMatcher": [] },
+    { "label": "Lex RAG: build 100-question test set", "type": "shell", "command": "python3 eval/build_testset.py --out eval/testset_100.csv", "problemMatcher": [] },
+    { "label": "Lex RAG: list models of your keys", "type": "shell", "command": "python3 -m lexrag.deepseek; python3 -m lexrag.gemini", "problemMatcher": [] }
+  ]
+}

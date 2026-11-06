@@ -1,0 +1,6 @@
+data/
+eval/runs/
+.env
+__pycache__/
+*.pyc
+deploy/__pycache__/

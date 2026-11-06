@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lex RAG — Chat va baholash</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2310b981'/%3E%3Cpath d='M16 7v18M9 11h14M11 11l-3 7a3 3 0 0 0 6 0zM21 11l-3 7a3 3 0 0 0 6 0z' stroke='%23fff' stroke-width='2' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --navy-950:#070d1a;--navy-900:#0b1324;--navy-800:#131d33;--navy-700:#1c2842;--navy-600:#2a3758;
+  --green-600:#059669;--green-500:#10b981;--green-400:#34d399;--green-50:#ecfdf5;--green-100:#d1fae5;
+  --ink:#0f172a;--ink-2:#334155;--muted:#64748b;--line:#e2e8f0;--line-2:#eef2f7;--bg:#f6f8fb;--card:#fff;
+  --amber:#b45309;--amber-50:#fffbeb;--red:#b91c1c;--red-50:#fef2f2;--blue:#2563eb;
+  --radius:14px;--shadow:0 1px 2px rgba(15,23,42,.04),0 6px 24px rgba(15,23,42,.06);
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+button{font:inherit;cursor:pointer}
+a{color:var(--green-600)}
+.app{display:grid;grid-template-columns:272px 1fr;height:100vh}
+
+/* ---------- sidebar ---------- */
+.side{background:linear-gradient(180deg,var(--navy-900),var(--navy-950));color:#cbd5e1;display:flex;flex-direction:column;padding:18px 14px;gap:6px;overflow:hidden}
+.brand{display:flex;gap:12px;align-items:center;padding:4px 8px 18px}
+.logo{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--green-400),var(--green-600));display:grid;place-items:center;box-shadow:0 6px 18px rgba(16,185,129,.35)}
+.brand b{display:block;color:#fff;font-size:16px;letter-spacing:.2px}
+.brand small{color:#94a3b8;font-size:12px}
+.nav{display:flex;gap:12px;align-items:center;padding:10px 12px;border-radius:12px;color:#cbd5e1;text-decoration:none;border:1px solid transparent;transition:.15s}
+.nav:hover{background:var(--navy-800)}
+.nav.active{background:var(--navy-700);border-color:var(--navy-600);color:#fff}
+.nav .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--navy-800);flex:none}
+.nav.active .ic{background:var(--green-500);color:#fff}
+.nav b{display:block;font-size:14px;font-weight:600;color:inherit}
+.nav small{display:block;font-size:12px;color:#7c8aa5;line-height:1.3}
+.side h6{margin:16px 12px 6px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#64748b}
+.convs{flex:1;overflow:auto;display:flex;flex-direction:column;gap:2px;margin:0 -4px;padding:0 4px}
+.conv{display:flex;align-items:center;gap:8px;padding:7px 12px;border-radius:9px;color:#aab6cb;font-size:13px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:0;background:none;text-align:left;width:100%}
+.conv:hover{background:var(--navy-800);color:#fff}
+.conv.cur{background:var(--navy-800);color:#fff}
+.conv span{overflow:hidden;text-overflow:ellipsis}
+.status{margin-top:8px;background:var(--navy-800);border:1px solid var(--navy-700);border-radius:12px;padding:12px;font-size:12.5px}
+.status .row{display:flex;justify-content:space-between;gap:8px;margin-top:6px;color:#94a3b8}
+.status .row code{font-family:var(--mono);color:var(--green-400);font-size:12px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green-400);display:inline-block;margin-right:8px;box-shadow:0 0 0 4px rgba(52,211,153,.15)}
+.dot.bad{background:#f87171;box-shadow:0 0 0 4px rgba(248,113,113,.15)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.ltag{font-family:var(--mono);font-size:11px;border:1px solid var(--navy-600);color:#cbd5e1;border-radius:6px;padding:1px 7px}
+
+/* ---------- main ---------- */
+.main{display:flex;flex-direction:column;min-width:0;height:100vh}
+.top{display:flex;align-items:center;gap:14px;padding:14px 24px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.85);backdrop-filter:blur(8px);position:sticky;top:0;z-index:5}
+.top h1{margin:0;font-size:16px}
+.top p{margin:0;color:var(--muted);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top > div:not(.sp){min-width:0}
+.top .sp{flex:1}
+.pill{font-size:12.5px;border:1px solid #bfdbfe;background:#eff6ff;color:#1d4ed8;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.pill.mem b{font-weight:700}
+select{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}
+.ghost{background:none;border:1px solid transparent;color:var(--muted);border-radius:9px;padding:6px 10px;font-size:13px;display:inline-flex;gap:6px;align-items:center}
+.ghost:hover{background:var(--line-2);color:var(--ink)}
+.burger{display:none}
+
+.scroll{flex:1;overflow:auto;scroll-behavior:smooth}
+.wrap{max-width:860px;margin:0 auto;padding:28px 24px 12px}
+
+/* welcome */
+.hello{text-align:center;padding:24px 0 8px}
+.hello h2{font-size:24px;margin:18px 0 6px;letter-spacing:-.01em}
+.hello p{color:var(--muted);max-width:560px;margin:0 auto}
+.ref-demo{display:inline-grid;place-items:center;min-width:18px;height:18px;border-radius:5px;background:var(--green-50);color:var(--green-600);font-weight:700;font-size:11px;border:1px solid var(--green-100);vertical-align:1px}
+.langs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0 22px}
+.lang{font-size:12.5px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:3px 9px;color:var(--ink-2)}
+.lang code{font-family:var(--mono);font-weight:700;color:var(--ink);margin-right:4px}
+.examples{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ex{position:relative;text-align:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px 18px;cursor:pointer;transition:.15s;box-shadow:var(--shadow);color:var(--ink);font-weight:500}
+.ex:hover{border-color:var(--green-400);transform:translateY(-2px)}
+.ex .lt{display:inline-block;font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:6px;padding:0 7px;color:var(--ink-2);margin-bottom:8px}
+.ex .pin{position:absolute;right:12px;top:12px;color:#cbd5e1}
+
+/* messages */
+.msg{display:flex;gap:12px;margin:22px 0;animation:in .25s ease}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.msg.user{justify-content:flex-end}
+.bubble{max-width:78%;background:var(--navy-800);color:#fff;border-radius:16px 16px 4px 16px;padding:10px 14px;white-space:pre-wrap;box-shadow:var(--shadow)}
+.bubble .meta{display:block;font-size:11px;color:#94a3b8;margin-top:4px;text-align:right;font-family:var(--mono)}
+.avatar{width:34px;height:34px;flex:none;border-radius:10px;background:linear-gradient(135deg,var(--green-400),var(--green-600));display:grid;place-items:center;margin-top:2px}
+.card{flex:1;min-width:0;background:#fff;border:1px solid var(--line);border-radius:4px 16px 16px 16px;box-shadow:var(--shadow);overflow:hidden}
+.card .hd{display:flex;align-items:center;gap:8px;padding:10px 16px;border-bottom:1px solid var(--line-2);font-size:12.5px;color:var(--muted)}
+.badge{font-size:12px;font-weight:600;border-radius:999px;padding:2px 9px;border:1px solid}
+.b-ok{color:var(--green-600);background:var(--green-50);border-color:var(--green-100)}
+.b-warn{color:var(--amber);background:var(--amber-50);border-color:#fde68a}
+.b-bad{color:var(--red);background:var(--red-50);border-color:#fecaca}
+.body{padding:14px 16px 6px;font-size:15.5px;line-height:1.7}
+.body p{margin:0 0 8px}
+.cite{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 5px;margin:0 1px;border-radius:6px;background:var(--green-50);color:var(--green-600);border:1px solid var(--green-100);font-size:11.5px;font-weight:700;cursor:pointer;vertical-align:2px;transition:.15s}
+.cite:hover,.cite.on{background:var(--green-500);color:#fff;border-color:var(--green-500)}
+.sources{padding:6px 16px 14px;display:flex;flex-direction:column;gap:8px}
+.src{border:1px solid var(--line);border-radius:12px;padding:10px 12px;transition:.2s;background:#fff}
+.src.on{border-color:var(--green-400);box-shadow:0 0 0 4px rgba(16,185,129,.12)}
+.src .t{display:flex;gap:8px;align-items:flex-start}
+.src .n{flex:none;width:22px;height:22px;border-radius:7px;background:var(--green-500);color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center;margin-top:1px}
+.src .ttl{font-weight:600;font-size:14px;line-height:1.4}
+.src .sub{font-size:12.5px;color:var(--muted);margin-top:2px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.src blockquote{margin:8px 0 2px 30px;padding:6px 10px;border-left:3px solid var(--green-400);background:#f8fafc;border-radius:0 8px 8px 0;font-size:13.5px;color:var(--ink-2);font-style:italic}
+.src a.open{font-size:12.5px;text-decoration:none;font-weight:600;margin-left:auto;white-space:nowrap}
+.foot{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:10px 16px;border-top:1px solid var(--line-2);font-size:12px;color:var(--muted)}
+.foot .sp{flex:1}
+.conf{display:inline-flex;align-items:center;gap:6px}
+.meter{width:60px;height:6px;border-radius:4px;background:var(--line);overflow:hidden;display:inline-block}
+.meter i{display:block;height:100%;background:var(--green-500)}
+details.ctx{border-top:1px solid var(--line-2)}
+details.ctx summary{list-style:none;cursor:pointer;padding:9px 16px;font-size:12.5px;color:var(--muted);user-select:none}
+details.ctx summary::-webkit-details-marker{display:none}
+details.ctx summary:hover{color:var(--ink)}
+.ctab{width:100%;border-collapse:collapse;font-size:12.5px}
+.ctab th,.ctab td{padding:7px 10px;border-top:1px solid var(--line-2);text-align:left;vertical-align:top}
+.ctab th{color:var(--muted);font-weight:600;background:#fafbfc}
+.ctab .txt{display:none;white-space:pre-wrap;color:var(--ink-2);font-size:12.5px;margin-top:6px;max-height:200px;overflow:auto;background:#f8fafc;border-radius:8px;padding:8px}
+.ctab tr.open .txt{display:block}
+.bar{width:64px;height:5px;background:var(--line);border-radius:3px;display:inline-block;vertical-align:middle;margin-right:4px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--blue)}
+.copy{background:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--ink-2)}
+.copy:hover{border-color:var(--green-400);color:var(--green-600)}
+
+/* thinking */
+.steps{padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13.5px}
+.step{display:flex;gap:10px;align-items:center;color:#94a3b8}
+.step .s{width:18px;height:18px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;flex:none}
+.step.now{color:var(--ink)} .step.now .s{border-color:var(--green-500);border-top-color:transparent;animation:spin .8s linear infinite}
+.step.done{color:var(--green-600)} .step.done .s{background:var(--green-500);border-color:var(--green-500)}
+.step.done .s::after{content:"";width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* composer */
+.composer{padding:10px 24px 14px;background:linear-gradient(180deg,rgba(246,248,251,0),var(--bg) 30%)}
+.box{max-width:860px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:10px 12px 10px 16px;transition:.15s}
+.box:focus-within{border-color:var(--green-400);box-shadow:0 0 0 4px rgba(16,185,129,.12),var(--shadow)}
+.box textarea{width:100%;border:0;outline:0;resize:none;font:inherit;font-size:15px;max-height:180px;min-height:26px;color:var(--ink);background:transparent}
+.box .bar2{display:flex;align-items:center;gap:10px;margin-top:6px;font-size:12px;color:var(--muted)}
+.box .bar2 .sp{flex:1}
+.send{background:var(--green-500);color:#fff;border:0;border-radius:10px;padding:8px 16px;font-weight:600;display:inline-flex;gap:7px;align-items:center;font-size:14px;transition:.15s}
+.send:hover{background:var(--green-600)}
+.send:disabled{background:#a7f3d0;cursor:not-allowed}
+.counter{font-family:var(--mono)}
+.disc{text-align:center;font-size:12px;color:var(--muted);margin-top:8px}
+
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(7,13,26,.55);display:none;place-items:center;z-index:50;padding:20px}
+.modal.on{display:grid}
+.dlg{background:#fff;border-radius:16px;padding:22px;max-width:420px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.dlg h3{margin:0 0 6px}
+.dlg p{margin:0 0 14px;color:var(--muted);font-size:13.5px}
+.dlg input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font:inherit}
+.dlg .acts{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}
+.btn2{background:var(--line-2);border:0;border-radius:10px;padding:8px 14px}
+.err{color:var(--red);font-size:13px;margin-top:8px;min-height:18px}
+
+/* pages */
+.page{display:none}.page.on{display:flex}
+.panel{max-width:1000px;margin:0 auto;padding:28px 24px 40px}
+.panel h2{margin:0 0 4px;font-size:22px}
+.panel .lead{color:var(--muted);margin:0 0 20px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.tile{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow)}
+.tile .k{font-size:12px;color:var(--muted)}
+.tile .v{font-size:22px;font-weight:700;margin-top:2px}
+.tile .tg{font-size:12px;margin-top:2px}
+.tile.pass{border-left:4px solid var(--green-500)} .tile.fail{border-left:4px solid #ef4444}
+.section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:16px;box-shadow:var(--shadow)}
+.section h3{margin:0 0 10px;font-size:15px}
+.tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl th,.tbl td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line-2)}
+.tbl th{color:var(--muted);font-weight:600}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.sw div{border-radius:12px;height:76px;padding:8px 10px;font-size:12px;font-family:var(--mono);display:flex;align-items:flex-end;border:1px solid var(--line)}
+.kv{display:grid;grid-template-columns:200px 1fr;gap:6px 14px;font-size:13.5px}
+.kv span:nth-child(odd){color:var(--muted)}
+
+@media (max-width:1100px){ .top .hide-md{display:none} }
+@media (max-width:900px){
+  .app{grid-template-columns:1fr}
+  .side{position:fixed;inset:0 auto 0 0;width:280px;z-index:40;transform:translateX(-100%);transition:.2s}
+  .side.open{transform:none}
+  .burger{display:inline-flex}
+  .examples{grid-template-columns:1fr}
+  .top .hide-sm{display:none}
+  .bubble{max-width:92%}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- ======================= SIDEBAR ======================= -->
+  <aside class="side" id="side">
+    <div class="brand">
+      <div class="logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0zM17 7l-3 7a3 3 0 0 0 6 0zM8 21h8"/></svg></div>
+      <div><b>Lex RAG</b><small>lex.uz huquqiy yordamchi</small></div>
+    </div>
+    <a class="nav active" href="#chat" data-page="chat"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span><b>Chat yordamchi</b><small>Savol-javob, manbalar bilan</small></span></a>
+    <a class="nav" href="#design" data-page="design"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 1 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.4A5.6 5.6 0 0 0 22 9.8C22 5.5 17.5 2 12 2z"/></svg></span><span><b>Dizayn tizimi</b><small>Ranglar, komponentlar</small></span></a>
+    <a class="nav" href="#staff" data-page="staff"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><span><b>Xodimlar paneli</b><small>Kalit bilan: baholash, tizim</small></span></a>
+    <h6>Oxirgi suhbatlar</h6>
+    <div class="convs" id="convs"></div>
+    <div class="status">
+      <div><span class="dot" id="hdot"></span><span id="htext">Tekshirilmoqda…</span></div>
+      <div class="row"><span>AI rejimi</span><code id="hmodel">—</code></div>
+      <div class="row"><span>lex.uz indeksi</span><code id="hindex">—</code></div>
+      <div class="tags"><span class="ltag">UZ·Lat</span><span class="ltag">ЎЗ·Кир</span><span class="ltag">RU</span></div>
+    </div>
+  </aside>
+
+  <!-- ======================= MAIN ======================= -->
+  <div class="main">
+    <!-- ---------- CHAT ---------- -->
+    <section class="page on" id="p-chat" style="flex-direction:column;height:100vh">
+      <div class="top">
+        <button class="ghost burger" onclick="toggleSide()" aria-label="Menyu">☰</button>
+        <div><h1>Huquqiy chat yordamchi</h1><p>Javob → manba → modda → aynan iqtibos. Faqat lex.uz.</p></div>
+        <span class="sp"></span>
+        <span class="pill mem hide-sm" id="mem" title="Keyingi savol oldingi 5 ta savol-javobni hisobga oladi">Xotira: <b>0</b>/5 savol</span>
+        <label class="hide-sm hide-md" style="font-size:12.5px;color:var(--muted)">Javob tili</label>
+        <select id="alang" class="hide-sm">
+          <option value="auto">auto (savol tilida)</option><option value="uz-Latn">Oʻzbekcha (lotin)</option>
+          <option value="uz-Cyrl">Ўзбекча (кирилл)</option><option value="ru">Русский</option>
+        </select>
+        <button class="ghost" onclick="newChat()" title="Yangi suhbat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span class="hide-sm hide-md">Yangi suhbat</span></button>
+        <button class="ghost" onclick="openKey()" title="Kirish kaliti"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2 20 3M17 6l3 3M14 9l2 2"/></svg></button>
+      </div>
+      <div class="scroll" id="scroll"><div class="wrap" id="thread"></div></div>
+      <div class="composer">
+        <div class="box">
+          <textarea id="q" rows="1" maxlength="2000" placeholder="Savolingizni oʻzbek (lotin/kirill) yoki rus tilida yozing…"></textarea>
+          <div class="bar2">
+            <span id="detect">Til avtomatik aniqlanadi</span><span class="sp"></span>
+            <span class="counter" id="cnt">0/2000</span>
+            <button class="send" id="send" disabled onclick="send()"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>Yuborish</button>
+          </div>
+        </div>
+        <div class="disc">Javoblar maʼlumot uchun — rasmiy huquqiy maslahat emas. Manbani doimo lex.uz da tekshiring.</div>
+      </div>
+    </section>
+
+    <!-- ---------- DESIGN SYSTEM ---------- -->
+    <section class="page scroll" id="p-design" style="flex-direction:column">
+      <div class="top"><button class="ghost burger" onclick="toggleSide()">☰</button><div><h1>Dizayn tizimi</h1><p>Ranglar, tipografiya va komponentlar</p></div></div>
+      <div class="panel">
+        <div class="section"><h3>Ranglar</h3><div class="sw" id="swatches"></div></div>
+        <div class="section"><h3>Tipografiya</h3>
+          <div style="font-size:24px;font-weight:700">Sarlavha — Huquqiy chat yordamchi</div>
+          <div style="font-size:15.5px;margin-top:6px">Asosiy matn: Mehnat kodeksining 217-moddasiga koʻra … <span class="cite">1</span></div>
+          <div style="font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:6px">Monospace: lex:-6257288#art-217#p1</div>
+        </div>
+        <div class="section"><h3>Komponentlar</h3>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+            <button class="send">Yuborish</button><button class="btn2">Bekor qilish</button>
+            <span class="badge b-ok">amalda</span><span class="badge b-warn">Javob topilmadi</span><span class="badge b-bad">kuchini yoʻqotgan</span>
+            <span class="pill">Xotira: 3/5 savol</span><span class="cite">1</span><span class="cite on">2</span>
+          </div>
+          <div class="src" style="margin-top:14px"><div class="t"><span class="n">1</span><div><div class="ttl">Oʻzbekiston Respublikasining Mehnat kodeksi — 217-modda</div><div class="sub"><span class="badge b-ok">amalda</span> tahrir: 2022-10-29</div></div></div><blockquote>Har yilgi asosiy eng kam mehnat taʼtilining davomiyligi yigirma bir kalendar kunni tashkil etadi</blockquote></div>
+        </div>
+        <div class="section"><h3>Illyustratsiya</h3><div style="text-align:center" id="illu2"></div></div>
+      </div>
+    </section>
+
+    <!-- ---------- STAFF ---------- -->
+    <section class="page scroll" id="p-staff" style="flex-direction:column">
+      <div class="top"><button class="ghost burger" onclick="toggleSide()">☰</button><div><h1>Xodimlar paneli</h1><p>Tizim holati va RAG baholash natijalari (spetsifikatsiya 6-boʻlim)</p></div><span class="sp"></span><button class="ghost" onclick="loadStaff()">↻ Yangilash</button></div>
+      <div class="panel" id="staff"></div>
+    </section>
+  </div>
+</div>
+
+<div class="modal" id="modal"><div class="dlg">
+  <h3>Kirish kaliti</h3>
+  <p>Server <code>.env</code> faylidagi <code>LEXRAG_API_KEYS</code> qiymatini kiriting. U faqat shu brauzerda saqlanadi.</p>
+  <input type="password" id="keyIn" placeholder="lexrag-test-…" autocomplete="off">
+  <div class="err" id="keyErr"></div>
+  <div class="acts"><button class="btn2" onclick="closeKey()">Bekor qilish</button><button class="send" onclick="saveKey()">Saqlash</button></div>
+</div></div>
+
+<script>
+/* ======================= helpers ======================= */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const LS = { get: (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } }, set: (k, v) => localStorage.setItem(k, JSON.stringify(v)) };
+const ROBOT = `<svg width="300" height="200" viewBox="0 0 300 200" fill="none" aria-hidden="true">
+  <ellipse cx="150" cy="186" rx="96" ry="9" fill="#e2e8f0"/>
+  <circle cx="150" cy="100" r="86" fill="#ecfdf5"/>
+  <circle cx="58" cy="42" r="9" fill="#d1fae5"/><path d="M78 36v12M72 42h12" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M246 74v8M242 78h8" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+  <g transform="rotate(-8 60 120)"><rect x="30" y="84" width="62" height="78" rx="8" fill="#fff" stroke="#e2e8f0"/><rect x="40" y="96" width="34" height="4" rx="2" fill="#0f172a"/><rect x="40" y="108" width="42" height="3" rx="1.5" fill="#cbd5e1"/><rect x="40" y="116" width="38" height="3" rx="1.5" fill="#cbd5e1"/><rect x="40" y="130" width="40" height="5" rx="2.5" fill="#34d399"/><rect x="40" y="141" width="30" height="3" rx="1.5" fill="#cbd5e1"/><circle cx="86" cy="88" r="9" fill="#10b981"/><path d="m82 88 3 3 5-6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+  <g transform="rotate(7 238 128)"><rect x="208" y="92" width="60" height="76" rx="8" fill="#fff" stroke="#e2e8f0"/><path d="M238 104v22M226 109h24M229 109l-5 10a5 5 0 0 0 10 0zM247 109l-5 10a5 5 0 0 0 10 0z" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="218" y="140" width="40" height="3" rx="1.5" fill="#cbd5e1"/><rect x="218" y="149" width="18" height="4" rx="2" fill="#10b981"/></g>
+  <rect x="196" y="22" width="76" height="40" rx="10" fill="#fff" stroke="#e2e8f0"/><rect x="206" y="32" width="38" height="4" rx="2" fill="#cbd5e1"/><rect x="206" y="42" width="28" height="4" rx="2" fill="#cbd5e1"/><rect x="246" y="38" width="18" height="12" rx="3" fill="#ecfdf5" stroke="#10b981"/><text x="250" y="47" font-size="8" font-family="monospace" fill="#059669">[1]</text>
+  <path d="M190 54 182 66l14-6" fill="#fff" stroke="#e2e8f0"/>
+  <line x1="150" y1="30" x2="150" y2="44" stroke="#0f172a" stroke-width="3"/><circle cx="150" cy="27" r="5" fill="#10b981"/>
+  <rect x="112" y="44" width="76" height="58" rx="18" fill="#fff" stroke="#e2e8f0"/><rect x="122" y="56" width="56" height="34" rx="12" fill="#0f172a"/>
+  <rect x="134" y="66" width="10" height="13" rx="5" fill="#34d399"/><rect x="156" y="66" width="10" height="13" rx="5" fill="#34d399"/><path d="M143 83q7 5 14 0" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <rect x="104" y="64" width="8" height="18" rx="4" fill="#0f172a"/><rect x="188" y="64" width="8" height="18" rx="4" fill="#0f172a"/>
+  <rect x="120" y="106" width="60" height="58" rx="16" fill="#0f172a"/><circle cx="150" cy="128" r="9" fill="#10b981"/><path d="M146 128h8M150 124v8" stroke="#fff" stroke-width="2"/>
+  <path d="M112 148q38-16 76 0v20q-38-14-76 0z" fill="#fff" stroke="#cbd5e1"/><line x1="150" y1="141" x2="150" y2="162" stroke="#cbd5e1"/><path d="M120 151h22M120 157h20M158 151h22M160 157h20" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="113" cy="150" r="7" fill="#0f172a"/><circle cx="187" cy="150" r="7" fill="#0f172a"/>
+  <rect x="117" y="178" width="18" height="6" rx="3" fill="#0f172a"/><rect x="141" y="178" width="18" height="6" rx="3" fill="#cbd5e1"/><rect x="165" y="178" width="18" height="6" rx="3" fill="#cbd5e1"/>
+</svg>`;
+const EXAMPLES = [
+  ["UZ · Lat", "Yillik asosiy mehnat taʼtilining eng kam muddati qancha?"],
+  ["ЎЗ · Кир", "Никоҳ ёши неча ёш этиб белгиланган?"],
+  ["RU · Кир", "Какой срок исковой давности установлен Гражданским кодексом?"],
+  ["UZ · Lat", "Isteʼmolchi sifatsiz tovarni qaytarishga haqlimi?"],
+];
+function detectLang(t) {
+  const letters = (t.match(/\p{L}/gu) || []); if (!letters.length) return null;
+  const cyr = letters.filter((c) => /[Ѐ-ӿ]/.test(c)).length / letters.length;
+  if (cyr < 0.3) return ["uz-Latn", "Oʻzbekcha (lotin)"];
+  if (/[ўқғҳЎҚҒҲ]/.test(t)) return ["uz-Cyrl", "Ўзбекча (кирилл)"];
+  return ["ru", "Русский"];
+}
+
+/* ======================= state ======================= */
+let conv = LS.get("lexrag_conv", { id: Date.now(), turns: [] });   // turns: {q, lang, res, at}
+let busy = false;
+const key = () => localStorage.getItem("lexrag_key") || "";
+
+/* ======================= routing ======================= */
+function route() {
+  const page = (location.hash || "#chat").slice(1);
+  document.querySelectorAll(".page").forEach((p) => p.classList.toggle("on", p.id === "p-" + page));
+  document.querySelectorAll(".nav").forEach((n) => n.classList.toggle("active", n.dataset.page === page));
+  $("#side").classList.remove("open");
+  if (page === "staff") loadStaff();
+  if (page === "design") renderDesign();
+}
+window.addEventListener("hashchange", route);
+function toggleSide() { $("#side").classList.toggle("open"); }
+
+/* ======================= health ======================= */
+async function health() {
+  try {
+    const [h, m] = await Promise.all([fetch("/v1/health").then((r) => r.json()), fetch("/v1/meta").then((r) => r.json())]);
+    const ok = h.status === "ok";
+    $("#hdot").classList.toggle("bad", !ok);
+    $("#htext").textContent = ok ? "Tizim ishlayapti" : "Tizimda muammo";
+    $("#hmodel").textContent = m.llm_model || "—";
+    $("#hindex").textContent = (m.index_docs || 0).toLocaleString("ru-RU") + " hujjat";
+    $("#hindex").title = `${m.index_version} · lex.uz holati ${m.lex_snapshot_date}`;
+  } catch { $("#hdot").classList.add("bad"); $("#htext").textContent = "Server bilan aloqa yoʻq"; }
+}
+
+/* ======================= chat rendering ======================= */
+function renderThread() {
+  const t = $("#thread");
+  if (!conv.turns.length) {
+    t.innerHTML = `<div class="hello">${ROBOT}
+      <h2>Assalomu alaykum! Savolingizni yozing.</h2>
+      <p>Javoblar faqat lex.uz dagi amaldagi qonunchilik hujjatlariga asoslanadi. Har bir daʼvo <span class="ref-demo">1</span> kabi havola bilan beriladi — bosib, modda va aynan iqtibosni koʻring.</p>
+      <div class="langs"><span class="lang"><code>UZ</code>Lat Oʻzbekcha (lotin)</span><span class="lang"><code>ЎЗ</code>Кир Ўзбекча (кирилл)</span><span class="lang"><code>RU</code>Кир Русский</span></div>
+      <div class="examples">${EXAMPLES.map(([l, q]) => `<div class="ex" onclick='ask(${JSON.stringify(q)})'><span class="pin">✦</span><span class="lt">${l}</span><div>${esc(q)}</div></div>`).join("")}</div></div>`;
+  } else {
+    t.innerHTML = conv.turns.map((x, i) => userMsg(x) + (x.res ? botMsg(x.res, i) : x.err ? errMsg(x.err, i) : thinking(i))).join("");
+  }
+  $("#mem").innerHTML = `Xotira: <b>${Math.min(5, conv.turns.filter((x) => x.res).length)}</b>/5 savol`;
+  renderConvs();
+}
+function userMsg(x) {
+  const lt = { "uz-Latn": "UZ·Lat", "uz-Cyrl": "ЎЗ·Кир", "ru": "RU" }[x.lang] || "";
+  return `<div class="msg user"><div class="bubble">${esc(x.q)}<span class="meta">${lt} · ${new Date(x.at).toLocaleTimeString("uz", { hour: "2-digit", minute: "2-digit" })}</span></div></div>`;
+}
+const AV = `<div class="avatar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0zM17 7l-3 7a3 3 0 0 0 6 0z"/></svg></div>`;
+function thinking(i) {
+  return `<div class="msg" id="think${i}">${AV}<div class="card"><div class="steps">
+    <div class="step now" data-s="0"><span class="s"></span>Savol tahlil qilinmoqda (til, qonun nomi, huquqiy atamalar)…</div>
+    <div class="step" data-s="1"><span class="s"></span>lex.uz boʻyicha qidirilmoqda — 1,1 mln modda boʻlagi</div>
+    <div class="step" data-s="2"><span class="s"></span>Moddalar saralanib, javob va iqtiboslar tayyorlanmoqda</div></div></div></div>`;
+}
+function errMsg(e, i) {
+  return `<div class="msg">${AV}<div class="card"><div class="hd"><span class="badge b-bad">Xato</span></div>
+    <div class="body"><p>${esc(e)}</p></div><div class="foot"><button class="copy" onclick="retry(${i})">↻ Qayta urinish</button></div></div></div>`;
+}
+function botMsg(data, i) {
+  const r = data.result;
+  if (r.status === "error" || r.status === "timeout")
+    return errMsg(`${r.error?.code}: ${r.error?.message}${r.error?.retryable ? " — qayta urinib koʻring." : ""}`, i);
+  const badge = r.no_answer ? `<span class="badge b-warn">Qonunchilikda javob topilmadi</span>` : `<span class="badge b-ok">Javob</span>`;
+  const answer = esc(r.answer).split(/\n{2,}/).map((p) => `<p>${p.replace(/\[(\d+)\]/g, (m, n) => `<span class="cite" data-i="${i}" data-n="${n}" onclick="focusSrc(${i},${n})">${n}</span>`)}</p>`).join("");
+  const srcs = r.citations.map((c) => `<div class="src" id="src-${i}-${c.ref}">
+      <div class="t"><span class="n">${c.ref}</span><div style="flex:1;min-width:0"><div class="ttl">${esc(c.doc_title)}${c.article ? " — " + esc(c.article) : ""}</div>
+      <div class="sub">${c.doc_status === "amalda" ? '<span class="badge b-ok">amalda</span>' : '<span class="badge b-bad">kuchini yoʻqotgan</span>'}
+        <span>${esc(c.part || "")}</span><span>tahrir: ${esc(c.edition_date || "?")}</span>
+        ${c.amended_after_as_of ? '<span class="badge b-warn">soʻralgan sanadan keyin oʻzgartirilgan</span>' : ""}</div></div>
+      <a class="open" href="${esc(c.url)}" target="_blank" rel="noopener">lex.uz ↗</a></div>
+      <blockquote>“${esc(c.quote)}”</blockquote></div>`).join("");
+  const rows = r.contexts.map((c, k) => `<tr onclick="this.classList.toggle('open')" style="cursor:pointer"><td>${c.rank}</td>
+      <td><b>${esc(c.article || "—")}</b> · ${esc((c.doc_title || "").slice(0, 70))} ${c.doc_status === "amalda" ? "" : '<span class="badge b-bad">eski</span>'}<div class="txt">${esc(c.text)}</div></td>
+      <td>${bar(c.retrieval_score)}</td><td>${bar(c.rerank_score)}</td><td>${c.used_in_answer ? "✅" : ""}</td></tr>`).join("");
+  const t = r.timing || {}, u = r.usage || {};
+  return `<div class="msg">${AV}<div class="card">
+    <div class="hd">${badge}<span>· ${esc(r.answer_language)}</span>${r.debug?.rewritten_query ? `<span title="Qayta yozilgan soʻrov" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">· 🔎 ${esc(r.debug.rewritten_query)}</span>` : ""}</div>
+    <div class="body">${answer}</div>
+    ${srcs ? `<div class="sources">${srcs}</div>` : ""}
+    <details class="ctx"><summary>▸ Topilgan kontekstlar (${r.contexts.length}) — qidiruv va qayta saralash ballari</summary>
+      <table class="ctab"><tr><th>#</th><th>Modda / hujjat</th><th>Qidiruv</th><th>Rerank</th><th>Javobda</th></tr>${rows}</table></details>
+    <div class="foot"><span class="conf">Ishonch <span class="meter"><i style="width:${Math.round((r.confidence || 0) * 100)}%"></i></span>${Math.round((r.confidence || 0) * 100)}%</span>
+      <span>⏱ ${((t.total_ms || 0) / 1000).toFixed(1)} s</span><span>${esc(u.models?.answer || data.system?.llm_model || "")}</span>
+      <span>${(u.input_tokens || 0).toLocaleString("ru-RU")} / ${(u.output_tokens || 0).toLocaleString("ru-RU")} token</span><span class="sp"></span>
+      <button class="copy" onclick="copyAns(${i})">Nusxa olish</button></div></div></div>`;
+}
+function bar(v) { return v == null ? "—" : `<span class="bar"><i style="width:${Math.round(v * 100)}%"></i></span>${v.toFixed(2)}`; }
+function focusSrc(i, n) {
+  document.querySelectorAll(".src.on,.cite.on").forEach((e) => e.classList.remove("on"));
+  const el = $(`#src-${i}-${n}`); if (!el) return;
+  el.classList.add("on"); document.querySelectorAll(`.cite[data-i="${i}"][data-n="${n}"]`).forEach((c) => c.classList.add("on"));
+  el.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+function copyAns(i) {
+  const r = conv.turns[i].res.result;
+  const txt = r.answer + "\n\n" + r.citations.map((c) => `[${c.ref}] ${c.doc_title}, ${c.article} — ${c.url}`).join("\n");
+  navigator.clipboard?.writeText(txt);
+}
+function scrollEnd() { const s = $("#scroll"); s.scrollTop = s.scrollHeight; }
+
+/* ======================= sending ======================= */
+function ask(q) { $("#q").value = q; onInput(); send(); }
+async function send() {
+  const q = $("#q").value.trim();
+  if (!q || busy) return;
+  if (!key()) { openKey(q); return; }
+  const lang = (detectLang(q) || ["uz-Latn"])[0];
+  const history = conv.turns.filter((x) => x.res && x.res.result && x.res.result.answer).slice(-5)
+                     .map((x) => ({ question: x.q, answer: x.res.result.answer }));
+  conv.turns.push({ q, lang, at: Date.now() });
+  const i = conv.turns.length - 1;
+  $("#q").value = ""; onInput(); save(); renderThread(); scrollEnd();
+  await run(i, history);
+}
+async function retry(i) {
+  const x = conv.turns[i]; delete x.err; delete x.res; renderThread();
+  const history = conv.turns.slice(0, i).filter((y) => y.res && y.res.result && y.res.result.answer).slice(-5).map((y) => ({ question: y.q, answer: y.res.result.answer }));
+  await run(i, history);
+}
+async function run(i, history) {
+  busy = true; $("#send").disabled = true;
+  const x = conv.turns[i];
+  const timers = [setTimeout(() => step(i, 1), 1700), setTimeout(() => step(i, 2), 2700)];
+  try {
+    const opts = { top_k: 5, return_debug: true };
+    if ($("#alang").value !== "auto") opts.answer_language = $("#alang").value;
+    const r = await fetch("/v1/rag/query", { method: "POST",
+      headers: { "Content-Type": "application/json; charset=utf-8", Authorization: "Bearer " + key() },
+      body: JSON.stringify({ question: x.q, options: opts, history }) });
+    const data = await r.json().catch(() => ({}));
+    if (r.status === 401 || r.status === 403) { x.err = "Kirish kaliti notoʻgʻri. Kalit tugmasi (🔑) orqali qayta kiriting."; openKey(); }
+    else if (r.status === 429) x.err = `Juda koʻp soʻrov. ${r.headers.get("Retry-After") || 1} soniyadan keyin qayta urinib koʻring.`;
+    else if (!r.ok) x.err = `Server xatosi (HTTP ${r.status}): ${data.error?.message || ""}`;
+    else x.res = data;
+  } catch (e) { x.err = "Server bilan aloqa yoʻq: " + e.message; }
+  timers.forEach(clearTimeout);
+  busy = false; onInput(); save(); renderThread(); scrollEnd();
+}
+function step(i, n) {
+  const box = $(`#think${i}`); if (!box) return;
+  box.querySelectorAll(".step").forEach((s) => { const k = +s.dataset.s; s.className = "step " + (k < n ? "done" : k === n ? "now" : ""); });
+}
+function onInput() {
+  const t = $("#q"), v = t.value;
+  t.style.height = "auto"; t.style.height = Math.min(t.scrollHeight, 180) + "px";
+  $("#cnt").textContent = `${v.length}/2000`;
+  $("#send").disabled = !v.trim() || busy;
+  const d = detectLang(v); $("#detect").textContent = d ? `Aniqlangan til: ${d[1]}` : "Til avtomatik aniqlanadi";
+}
+$("#q").addEventListener("input", onInput);
+$("#q").addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); send(); } });
+
+/* ======================= conversations ======================= */
+function save() {
+  LS.set("lexrag_conv", conv);
+  if (!conv.turns.length) return;
+  const all = LS.get("lexrag_convs", []).filter((c) => c.id !== conv.id);
+  all.unshift({ id: conv.id, title: conv.turns[0].q.slice(0, 60), conv });
+  LS.set("lexrag_convs", all.slice(0, 15));
+}
+function newChat() { save(); conv = { id: Date.now(), turns: [] }; LS.set("lexrag_conv", conv); renderThread(); location.hash = "#chat"; $("#q").focus(); }
+function openConv(id) { const c = LS.get("lexrag_convs", []).find((x) => x.id === id); if (c) { conv = c.conv; LS.set("lexrag_conv", conv); renderThread(); location.hash = "#chat"; } }
+function renderConvs() {
+  const all = LS.get("lexrag_convs", []);
+  $("#convs").innerHTML = all.length ? all.map((c) => `<button class="conv ${c.id === conv.id ? "cur" : ""}" onclick="openConv(${c.id})"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>${esc(c.title)}</span></button>`).join("")
+    : `<div style="padding:4px 12px;font-size:12.5px;color:#64748b">Hozircha suhbat yoʻq</div>`;
+}
+
+/* ======================= key modal ======================= */
+let pendingQ = null;
+function openKey(q) { pendingQ = q || null; $("#keyIn").value = key(); $("#keyErr").textContent = ""; $("#modal").classList.add("on"); setTimeout(() => $("#keyIn").focus(), 30); }
+function closeKey() { $("#modal").classList.remove("on"); }
+async function saveKey() {
+  const k = $("#keyIn").value.trim(); if (!k) return;
+  const r = await fetch("/v1/admin/overview", { headers: { Authorization: "Bearer " + k } }).catch(() => null);
+  if (!r || r.status === 401 || r.status === 403) { $("#keyErr").textContent = "Kalit notoʻgʻri"; return; }
+  localStorage.setItem("lexrag_key", k); closeKey();
+  if (pendingQ) { $("#q").value = pendingQ; pendingQ = null; send(); }
+  if (location.hash === "#staff") loadStaff();
+}
+$("#keyIn").addEventListener("keydown", (e) => { if (e.key === "Enter") saveKey(); });
+
+/* ======================= staff panel ======================= */
+const MNAMES = { hit5_doc: "Hit@5 (hujjat)", hit5_article: "Hit@5 (modda)", mrr: "MRR", context_precision: "Context precision",
+  answer_correctness: "Answer correctness", faithfulness: "Faithfulness", citation_accuracy: "Citation accuracy",
+  fabricated_citations: "Toʻqilgan manba", outdated_citations: "Eskirgan norma", no_answer_accuracy: "No-answer aniqligi",
+  latency_p50_s: "Latency p50 (s)", latency_p95_s: "Latency p95 (s)", error_rate: "Xato ulushi" };
+async function loadStaff() {
+  const el = $("#staff");
+  if (!key()) { el.innerHTML = `<div class="section"><h3>Kirish talab qilinadi</h3><p class="lead">Panel API kalit bilan himoyalangan.</p><button class="send" onclick="openKey()">Kalitni kiritish</button></div>`; return; }
+  el.innerHTML = `<p class="lead">Yuklanmoqda…</p>`;
+  const r = await fetch("/v1/admin/overview", { headers: { Authorization: "Bearer " + key() } });
+  if (!r.ok) { el.innerHTML = `<div class="section"><h3>Kirish rad etildi</h3><button class="send" onclick="openKey()">Kalitni qayta kiritish</button></div>`; return; }
+  const d = await r.json(), s = d.system;
+  const run = d.runs.find((x) => x.metrics && x.metrics.questions >= 100) || d.runs[0];
+  let html = `<h2>Tizim</h2><p class="lead">Joriy konfiguratsiya va indeks</p>
+    <div class="section"><div class="kv">
+      <span>LLM provayder / model</span><span><b>${esc(d.llm_provider || "—")}</b> · ${esc(s.llm_model)} (qayta yozish: ${esc(s.rewrite_model || "—")})</span>
+      <span>Qidiruv</span><span>${esc(s.retriever)}</span><span>Reranker</span><span>${esc(s.reranker || "—")}</span>
+      <span>Indeks</span><span>${esc(s.index_version)} · ${(s.index_docs || 0).toLocaleString("ru-RU")} hujjat · ${(s.index_chunks || 0).toLocaleString("ru-RU")} boʻlak</span>
+      <span>lex.uz holati</span><span>${esc(s.lex_snapshot_date)}</span><span>Chunking</span><span>${esc(s.chunking)}</span>
+      <span>Pipeline / prompt</span><span>${esc(s.pipeline_version)} / ${esc(s.prompt_version)}</span>
+      <span>API hujjatlari</span><span><a href="/docs" target="_blank">/docs (OpenAPI)</a></span></div></div>`;
+  if (run) {
+    const m = run.metrics, tg = run.targets || {};
+    html += `<h2 style="margin-top:26px">Baholash: ${esc(run.run_id)}</h2><p class="lead">${m.questions} ta savol · ${esc(run.modified)} · model ${esc(run.system?.llm_model || "")}</p><div class="tiles">`;
+    for (const k of Object.keys(MNAMES)) {
+      if (m[k] == null) continue;
+      const t = tg[k]; const v = typeof m[k] === "number" && m[k] <= 1 && !k.startsWith("latency") && !k.includes("citations") ? (m[k] * (k === "answer_correctness" ? 1 : 100)).toFixed(k === "answer_correctness" || k === "mrr" ? 2 : 1) + (k === "answer_correctness" || k === "mrr" ? "" : "%") : m[k];
+      const shown = k === "mrr" ? (+m[k]).toFixed(2) : v;
+      html += `<div class="tile ${t ? (t.pass ? "pass" : "fail") : ""}"><div class="k">${MNAMES[k]}</div><div class="v">${esc(shown)}</div><div class="tg" style="color:${t ? (t.pass ? "var(--green-600)" : "var(--red)") : "var(--muted)"}">${t ? (t.pass ? "✓ " : "✗ ") + "maqsad " + esc(t.target) : ""}</div></div>`;
+    }
+    html += `</div><div class="section"><h3>Kategoriyalar boʻyicha</h3><table class="tbl"><tr><th>Kategoriya</th><th>Savollar</th><th>Xatolar</th><th>Notoʻgʻri/yoʻqotilgan</th><th>Toʻgʻrilik (0–2)</th></tr>
+      ${Object.entries(run.categories).map(([c, v]) => `<tr><td>${esc(c)}</td><td>${v.n}</td><td>${v.errors}</td><td>${v.misses}</td><td>${v.correctness ?? "—"}</td></tr>`).join("")}</table></div>`;
+    html += `<div class="section"><h3>Barcha run lar</h3><table class="tbl"><tr><th>Run</th><th>Savol</th><th>Hit@5 modda</th><th>MRR</th><th>Toʻgʻrilik</th><th>p50</th><th>Model</th></tr>
+      ${d.runs.map((x) => `<tr><td>${esc(x.run_id)}</td><td>${x.metrics?.questions ?? ""}</td><td>${x.metrics?.hit5_article ?? "—"}</td><td>${x.metrics?.mrr != null ? (+x.metrics.mrr).toFixed(2) : "—"}</td><td>${x.metrics?.answer_correctness ?? "—"}</td><td>${x.metrics?.latency_p50_s ?? ""}</td><td>${esc(x.system?.llm_model || "")}</td></tr>`).join("")}</table></div>`;
+  } else html += `<div class="section"><h3>Hali baholash yoʻq</h3><p class="lead"><code>python3 eval/run_eval.py run --testset eval/testset_100.csv --score --judge</code></p></div>`;
+  el.innerHTML = html;
+}
+
+/* ======================= design page ======================= */
+function renderDesign() {
+  const sw = [["--navy-900", "#0b1324", "#fff"], ["--navy-700", "#1c2842", "#fff"], ["--green-500", "#10b981", "#fff"], ["--green-600", "#059669", "#fff"],
+    ["--green-50", "#ecfdf5", "#065f46"], ["--ink", "#0f172a", "#fff"], ["--muted", "#64748b", "#fff"], ["--line", "#e2e8f0", "#0f172a"], ["--bg", "#f6f8fb", "#0f172a"], ["--amber", "#b45309", "#fff"], ["--red", "#b91c1c", "#fff"]];
+  $("#swatches").innerHTML = sw.map(([n, c, f]) => `<div style="background:${c};color:${f}">${n}<br>${c}</div>`).join("");
+  $("#illu2").innerHTML = ROBOT;
+}
+
+/* ======================= boot ======================= */
+renderThread(); health(); route(); setInterval(health, 30000);
+</script>
+</body>
+</html>

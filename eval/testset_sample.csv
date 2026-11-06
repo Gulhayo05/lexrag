@@ -1,0 +1,11 @@
+id,batch,category,question,expected_answer,expected_doc_id,expected_article,answerable
+q001,b01,faktik,"Yillik asosiy mehnat ta'tilining eng kam muddati qancha?","Har yilgi asosiy eng kam mehnat taʼtili 21 kalendar kun (Mehnat kodeksi 217-modda).",lex:-6257288,217-modda,true
+q002,b01,rus_kirill,"Какой срок исковой давности установлен Гражданским кодексом?","Общий срок исковой давности — три года (ГК, ст. 150).",lex:-111189,150-modda,true
+q003,b01,faktik,"Nikoh yoshi necha yosh etib belgilangan?","Nikoh yoshi erkaklar va ayollar uchun 18 yosh (Oila kodeksi 15-modda).",lex:-104720,15-modda,true
+q004,b01,raqamlar,"Jinoiy javobgarlikka tortish yoshi necha yoshdan boshlanadi?","Umumiy qoida — 16 yosh; ayrim ogʻir jinoyatlar uchun 14 yosh (Jinoyat kodeksi 17-modda).",lex:-111453,17-modda,true
+q005,b01,javobsiz,"Marsda yer uchastkasini xususiylashtirish tartibi qanday?",,,,false
+q006,b01,ozgargan,"Mehnat kodeksiga ko'ra yillik asosiy ta'til necha ish kuni? (1995-yilgi kodeks bo'yicha 15 ish kuni edi)","Amaldagi Mehnat kodeksida — 21 kalendar kun (217-modda); 1995-yilgi kodeks kuchini yoʻqotgan.",lex:-6257288,217-modda,true
+q007,b01,rus_kirill,"Президентликка номзод камида неча ёшда бўлиши керак?","Kamida 35 yosh (Konstitutsiya 106-modda).",lex:6445145;lex:4386848,106-modda;61-modda,true
+q008,b01,noaniq,"ishga kirsam sinov muddati bo'ladimi, qancha?","Mehnat shartnomasi dastlabki sinov bilan tuzilishi mumkin (Mehnat kodeksi 129-modda).",lex:-6257288,129-modda,true
+q009,b01,bir_nechta,"Umumiy da'vo muddati qancha va maxsus da'vo muddatlari belgilanishi mumkinmi?","Umumiy daʼvo muddati — uch yil (FK 150-modda); qonunchilikda maxsus muddatlar belgilanishi mumkin (151-modda).",lex:-111189,150-modda;151-modda,true
+q010,b01,javobsiz,"Eng yaxshi futbol jamoasi qaysi?",,,,false

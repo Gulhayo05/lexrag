@@ -1,0 +1,907 @@
+[
+ {
+  "id": "q001",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-3517337#art-82#p1"
+  ],
+  "_verify": "The source text explicitly lists the information that must be provided about the witness (surname, name, patronymic, place of residence or place of work/study), and the expected answer matches this exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q002",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-4329270#art-29#p1"
+  ],
+  "_verify": "The source text clearly states that for projects with total value more than 1 million USD equivalent, changes, supplements, or termination are done in agreement with the authorized state body. The question specifies the range 'more than 1 million but not more than 10 million', which falls under this provision, and the expected answer correctly identifies the authorized state body.",
+  "orig_question": null
+ },
+ {
+  "id": "q003",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-3321352#art-20#p1"
+  ],
+  "_verify": "The source text states that the Commissioner may be early released from office by the President if he submits a written application for resignation of his powers. The question specifically asks about the case of submitting a written application of his own will, and the expected answer correctly and completely reflects that ground.",
+  "orig_question": null
+ },
+ {
+  "id": "q004",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:4953674#art-62#p1"
+  ],
+  "_verify": "The source text clearly states that parents are obliged to support and raise their children until they come of age. The expected answer accurately quotes this duty and includes the article reference. The question is unambiguous because the provided excerpt is solely about this obligation and there is no alternative source or act that could lead to a different reasonable answer.",
+  "orig_question": null
+ },
+ {
+  "id": "q005",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-152653#art-51#p1"
+  ],
+  "_verify": "Source explicitly states that land plots are given to families for agricultural production for at least five years under a family contract.",
+  "orig_question": null
+ },
+ {
+  "id": "q006",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:-3527353#art-227#p1",
+   "lex:-3527353#art-202#p1"
+  ],
+  "_verify": "The source text contains all necessary provisions: Article 202 states that an appeal is sent to the appellate instance court but filed with the court that issued the decision, which must forward it within five days. Article 227 states that a cassation appeal may be filed within six months from the entry into force of the first instance decision. The expected answer accurately reflects these rules.",
+  "orig_question": null
+ },
+ {
+  "id": "q007",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:4953674#art-25#p1",
+   "lex:4953674#art-111#p1"
+  ],
+  "_verify": "Both points are clearly stated in Articles 25 and 111 of the Constitution of the Republic of Karakalpakstan; the expected answer correctly summarizes them.",
+  "orig_question": null
+ },
+ {
+  "id": "q008",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:-111189#art-145#p1"
+  ],
+  "_verify": "The source text of Article 145 explicitly states that a term established by legislation or a transaction is determined by a calendar date or by the expiration of a period measured in years, months, weeks, days, or hours. The expected answer accurately and completely reflects this, and the question clearly refers to this specific provision.",
+  "orig_question": "Oʻzbekiston Fuqarolik kodeksiga koʻra, qonun yoki shartnomada belgilangan muddat qanday birliklar orqali oʻlchanadigan vaqt davri sifatida belgilanishi mumkin?"
+ },
+ {
+  "id": "q009",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:-3517337#art-299#p1",
+   "lex:186105#art-149#p1"
+  ],
+  "_verify": "The source text in Article 299 specifies that the birth date may be changed by no more than one year, and the place of birth may be changed only if the child is not older than ten years. The expected answer accurately reflects these limits.",
+  "orig_question": null
+ },
+ {
+  "id": "q010",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q011",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-35333#art-9#p1"
+  ],
+  "_verify": "The text directly states that foreign investors may freely use legislative acts and court decisions affecting their interests, with mandatory publication in cases provided by law, and state bodies are obliged to provide requested information in accordance with the law. The expected answer accurately and completely reflects these provisions.",
+  "orig_question": null
+ },
+ {
+  "id": "q012",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-111453#art-266#p1"
+  ],
+  "_verify": "The source text (Article 266) explicitly states that violating traffic safety rules causing moderate or serious bodily injury is punished by up to three years of deprivation of a certain right, a fine up to fifty times the base calculation amount, or restriction of liberty up to three years, or imprisonment up to three years. The question specifically asks about moderate bodily injury, which is covered by the first paragraph, and the expected answer accurately and completely quotes that punishment. The question is unambiguous as it directly refers to the driver violating traffic rules and causing such injury, matching the article's scope.",
+  "orig_question": null
+ },
+ {
+  "id": "q013",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:2876354#art-344#p1"
+  ],
+  "_verify": "The source text explicitly states that the amount of bank guarantee must not be less than the sum of customs payments and interest due.",
+  "orig_question": null
+ },
+ {
+  "id": "q014",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-106136#art-86#p1"
+  ],
+  "_verify": "The source text directly states that a residential lease agreement must be concluded in written form and registered according to legislation, matching the expected answer exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q015",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-180552#art-733#p1"
+  ],
+  "_verify": "The source text clearly states that when the loan amount between citizens exceeds ten times the base calculation amount, the loan agreement must be made in simple written form. The expected answer accurately reflects this requirement.",
+  "orig_question": null
+ },
+ {
+  "id": "q016",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:2304138#art-128#p1",
+   "lex:2304138#art-36#p1"
+  ],
+  "_verify": "The source explicitly states in Article 128 that execution against state target funds is carried out by the bodies distributing those funds under the procedure established by the Cabinet of Ministers, and in Article 36 that such funds are established by a decision of the President of Uzbekistan. The expected answer reflects these provisions accurately.",
+  "orig_question": null
+ },
+ {
+  "id": "q017",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:-5980334#art-20#p1",
+   "lex:-5980334#art-22#p1"
+  ],
+  "_verify": "The source text in Article 20 states that a producer obtains the right to use the national conformity mark after undergoing the conformity confirmation procedure and obtaining an organic conformity certificate. Article 22 states that equivalence assessment is carried out by the authorized state body. The expected answer accurately reflects both provisions.",
+  "orig_question": null
+ },
+ {
+  "id": "q018",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:-7655343#art-18#p1"
+  ],
+  "_verify": "The source text explicitly states that water management user organizations and water supplying organizations take into account the proposals of water users, non-governmental non-profit organizations, and citizens, including socially vulnerable segments. The expected answer lists all these groups exactly as in the text.",
+  "orig_question": "Suv xoʻjaligi va suv yetkazib beruvchi tashkilotlar suv resurslarini boshqarishda kimlarning takliflarini hisobga olishlari shart?"
+ },
+ {
+  "id": "q019",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:4674902#art-460#p1",
+   "lex:1286558#art-325#p1"
+  ],
+  "_verify": "The source text (Soliq kodeksi, 460-modda) explicitly states that the fee for foreign vehicles entering Uzbekistan is collected when the vehicle enters Uzbekistan or in the customs territory according to the procedure established by the Cabinet of Ministers. The expected answer accurately reflects this provision. The question is clear and refers to that specific provision, not the separate heavy truck road use fee.",
+  "orig_question": null
+ },
+ {
+  "id": "q020",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q021",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-5972411#art-22#p1"
+  ],
+  "_verify": "Manba matnida 22-moddaning oxirgi qismida rad etish toʻgʻrisidagi xabarnoma qaror qabul qilingan sanadan eʼtiboran bir ish kunidan kechiktirmay yuborilishi aniq koʻrsatilgan. Kutilgan javob shu muddatni toʻgʻri va toʻliq ifodalaydi.",
+  "orig_question": null
+ },
+ {
+  "id": "q022",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-8323797#art-12#p1"
+  ],
+  "_verify": "The source text explicitly lists the areas of national legislation that apply in the territory of the financial centre, including national security, defense, anti-money laundering, counter-terrorism financing, non-proliferation financing, immigration control, family, environmental protection, emergency, sanitary-epidemiological wellbeing, and public health. The expected answer accurately and completely reflects that specific list.",
+  "orig_question": null
+ },
+ {
+  "id": "q023",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-111189#art-286#p1"
+  ],
+  "_verify": "The source text explicitly states that the pledgee may transfer rights under the pledge contract by complying with the rules on assignment of creditor's rights to another person by waiving the claim in favor of another person (Articles 313-321). The expected answer correctly quotes this requirement, completing the text with the article reference. The question is specific to this provision and has a single clear answer.",
+  "orig_question": null
+ },
+ {
+  "id": "q024",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-32913#art-5#p1"
+  ],
+  "_verify": "The source text explicitly states that family members of the President of Uzbekistan are granted the right to use service vehicles, directly confirming the expected answer.",
+  "orig_question": null
+ },
+ {
+  "id": "q025",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:6445145#art-96#p1"
+  ],
+  "_verify": "The source text in Article 96 explicitly states the time limits for the first meetings of both chambers. The expected answer correctly and completely extracts the two-month period for the Legislative Chamber after elections and the one-month period for the Senate after its formation, matching the text. The question is unambiguous and directly addressed by this article.",
+  "orig_question": null
+ },
+ {
+  "id": "q026",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:4386848#art-92.1#p1",
+   "lex:4386848#art-40.1#p1"
+  ],
+  "_verify": "The source Article 921 states exactly when a person elected as deputy to a local Kengash acquires deputy status and that the certificate and badge are issued within ten days of registration. The expected answer matches these provisions.",
+  "orig_question": null
+ },
+ {
+  "id": "q027",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:2876354#art-108#p1",
+   "lex:2876354#art-96#p1"
+  ],
+  "_verify": "The question asks about transferring goods under the customs warehouse regime, which is directly covered by Article 96. The expected answer correctly states the required documents (written notification and customs declaration) and that the transfer does not suspend or extend storage period. The extra information about free customs zone is accurate but not necessary; however, it does not make the answer incorrect or incomplete for the specific question. The question itself is unambiguous.",
+  "orig_question": null
+ },
+ {
+  "id": "q028",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:-75847#art-15#p1"
+  ],
+  "_verify": "Manba matnida yer egalari va yerdan foydalanuvchilar o'zlariga ajratilgan uchastkalar doirasida xo'jalik va ro'zg'or ehtiyojlari uchun keng tarqalgan foydali qazilmalarni litsenziyasiz qazib olish huquqiga ega ekani aniq ko'rsatilgan. Savolga javob manbadan to'liq olinadi va kutilgan javob ushbu qoidani to'g'ri ifodalaydi.",
+  "orig_question": "Yer egasi yoki yerdan foydalanuvchi oʻziga ajratilgan uchastkada oʻz xoʻjalik ehtiyojlari uchun keng tarqalgan foydali qazilmalarni qazib olishi uchun litsenziya olishi shartmi?"
+ },
+ {
+  "id": "q029",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:4674902#art-54#p1",
+   "lex:1286558#art-21#p1"
+  ],
+  "_verify": "The source text (Article 54) clearly states that a financial lease contract meets the requirement if the residual value of the leased asset after the contract term is at least 20% of its initial value. The expected answer correctly reflects this condition and is complete for the specific question about residual value.",
+  "orig_question": null
+ },
+ {
+  "id": "q030",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q031",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-55594#art-72#p1"
+  ],
+  "_verify": "The source clearly states the commander must report to authorized body and is required to provide help only if no danger to the aircraft's flight, passengers, and crew; otherwise not required to help. The expected answer accurately reflects this.",
+  "orig_question": null
+ },
+ {
+  "id": "q032",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-31719#art-27#p1"
+  ],
+  "_verify": "The source text explicitly lists all five cases for termination of the right to use wildlife, and the expected answer correctly summarizes them.",
+  "orig_question": null
+ },
+ {
+  "id": "q033",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-6213382#art-2#p1"
+  ],
+  "_verify": "The source text explicitly states that if an international treaty of Uzbekistan sets rules different from the national legislation on electronic commerce, the rules of the international treaty apply. The expected answer matches this exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q034",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-3321352#art-5#p1"
+  ],
+  "_verify": "The source text explicitly states the obligations: suspend or terminate political party membership while performing duties, and cannot engage in other paid activities except scientific, pedagogical, and creative work. The expected answer accurately reflects this.",
+  "orig_question": null
+ },
+ {
+  "id": "q035",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-3517337#art-395#p1"
+  ],
+  "_verify": "395-modda birinchi qismida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish to'g'risida ajrim chiqarilgan kundan e'tiboran bir oydan ortiq bo'lmagan muddatda ko'rib chiqilishi belgilangan. Savol aynan shu umumiy qoidaga qaratilgan va kutilgan javob matnga mos.",
+  "orig_question": null
+ },
+ {
+  "id": "q036",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:-3517337#art-89.4#p1",
+   "lex:-3517337#art-228#p1"
+  ],
+  "_verify": "The source text directly states that the court must directly examine and inspect digital evidence with the participation of a specialist (Article 89⁴) and that the court determines the procedure for examining evidence after hearing parties and questioning witnesses, experts, and specialists (Article 228). The expected answer accurately reflects these provisions.",
+  "orig_question": null
+ },
+ {
+  "id": "q037",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:-111460#art-476#p1",
+   "lex:-111460#art-457#p1"
+  ],
+  "_verify": "The source text (Criminal Procedure Code, Article 476) directly specifies that when a person sentenced to deprivation of liberty has dependents left without care or property left unattended, the court issues a ruling simultaneously with the conviction to place dependents under guardianship/custody and to take measures to protect property, and these decisions are read out in the courtroom after the sentence is announced. The expected answer accurately reflects this and adds the general sentencing issues from Article 457, which is consistent with the source. No ambiguity or alternative interpretation arises from the provided texts.",
+  "orig_question": null
+ },
+ {
+  "id": "q038",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:-107115#art-58#p1"
+  ],
+  "_verify": "The source text clearly states that for a construction site of 500 sqm or more, violating requirements to prevent dust and sand from rising into the air by legal entities results in a fine equal to three times the compensation payment for environmental pollution. The expected answer matches this exactly, and the question is specific to this article.",
+  "orig_question": "«Qonuni tabiatni muhofaza qilish toʻgʻrisida»ga koʻra, maydoni 500 kvadrat metr va undan katta boʻlgan qurilish maydonida chang va qum havoga koʻtarilishini toʻxtatish talablarini buzgan yuridik shaxsga qanday miqdorda jarima qoʻllaniladi?"
+ },
+ {
+  "id": "q039",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:3523891#art-341#p1",
+   "lex:185986#art-216#p1"
+  ],
+  "_verify": "The source explicitly states that in such cases the application for a duplicate may be filed within one month from the day the claimant learned of the loss.",
+  "orig_question": null
+ },
+ {
+  "id": "q040",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q041",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-7049383#art-10#p1"
+  ],
+  "_verify": "10-modda to'g'ridan-to'g'ri soliq qarzdorligi shartini belgilaydi: yer solig'i va mol-mulk solig'i bo'yicha qarzdorlik bo'lmasligi kerak, kutilgan javob aynan shu.",
+  "orig_question": null
+ },
+ {
+  "id": "q042",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-5055690#art-103#p1"
+  ],
+  "_verify": "The source text explicitly states that such activity is carried out on the basis of accreditation conducted by the Ministry of Poverty Reduction and Employment of the Republic of Uzbekistan. The expected answer correctly identifies this ministry and is complete and unambiguous.",
+  "orig_question": null
+ },
+ {
+  "id": "q043",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-104720#art-149#p1"
+  ],
+  "_verify": "The source explicitly states that no other legal or natural persons besides guardianship and trusteeship authorities may engage in identifying and placing such children. The expected answer accurately reflects this prohibition and cites the article.",
+  "orig_question": null
+ },
+ {
+  "id": "q044",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-25531#art-2#p1"
+  ],
+  "_verify": "Manba matnida xalqaro shartnomalarda boshqacha qoidalar belgilangan bo'lsa, xalqaro shartnomalar qoidalari qo'llanilishi aniq ko'rsatilgan. Savolga javob manbadan to'liq va to'g'ri olingan, boshqa talqin mavjud emas.",
+  "orig_question": null
+ },
+ {
+  "id": "q045",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-5069150#art-29#p1"
+  ],
+  "_verify": "The source text expressly states that the person, their advocate, or legal representative may appeal the court decision within 72 hours, which matches the expected answer.",
+  "orig_question": null
+ },
+ {
+  "id": "q046",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:2876354#art-83#p1",
+   "lex:2876354#art-113#p1"
+  ],
+  "_verify": "The source text directly states that goods can be kept under temporary storage without paying customs duties, and that duty-free shops may sell to persons crossing the border, temporarily staying foreign persons, and accredited foreign persons. The expected answer matches the source.",
+  "orig_question": null
+ },
+ {
+  "id": "q047",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:-5819317#art-17#p1",
+   "lex:-5819317#art-7#p1"
+  ],
+  "_verify": "The question's two parts are directly answered by Articles 17 and 7: Article 17 lists the preparers (special authorized state body, research institutes, legal entities with departmental observation networks), and Article 7 defines the principle requiring sufficient parameter sets, preserved value and relevance, and effective user assimilation for decision-making. The expected answer accurately and completely reflects these provisions.",
+  "orig_question": null
+ },
+ {
+  "id": "q048",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:-18942#art-18#p1"
+  ],
+  "_verify": "The source states that a business entity must respond to a claim within fifteen days from receipt, and the expected answer matches this exactly.",
+  "orig_question": "Xoʻjalik yurituvchi subyekt oʻziga yuborilgan talabnomani olgandan keyin qancha vaqt ichida unga javob berishi shart?"
+ },
+ {
+  "id": "q049",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:4674902#art-119#p1",
+   "lex:1286558#art-61#p1"
+  ],
+  "_verify": "The source text clearly states that the tax debt must be paid within sixty calendar days from receipt of the demand by a legal entity or individual entrepreneur (business activity part), which directly answers the question. The expected answer accurately reflects this period and is unambiguous as it refers specifically to Article 119.",
+  "orig_question": null
+ },
+ {
+  "id": "q050",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q051",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-29794#art-4#p1"
+  ],
+  "_verify": "Matnda axborot faqat telekommunikatsiya tarmoqlari orqali, axborot xavfsizligi talablariga rioya qilingan holda taqdim etilishi va tartibni Vazirlar Mahkamasi belgilashi aniq ko'rsatilgan. Savolga javob to'liq va to'g'ri.",
+  "orig_question": null
+ },
+ {
+  "id": "q052",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-111189#art-280#p1"
+  ],
+  "_verify": "The source text explicitly states that the agreement between pledgee and pledgor to satisfy the claim from pledged immovable property without court must be notarially certified ('notarial tartibda tasdiqlangan kelishuvi'). The expected answer correctly reflects this requirement and is complete.",
+  "orig_question": null
+ },
+ {
+  "id": "q053",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-6066682#art-21#p1"
+  ],
+  "_verify": "The source explicitly states that employees of departmental guard units without the right to use service weapons undergo training independently in their own units and optionally under contract at training courses of the Ministry of Internal Affairs and National Guard educational institutions. The expected answer accurately reflects this, and the question is unambiguous within the provided text.",
+  "orig_question": null
+ },
+ {
+  "id": "q054",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-6087433#art-28#p1"
+  ],
+  "_verify": "The source explicitly states that one year after registration, the authorized body or citizens' self-government body may apply to court. The expected answer matches this, including the one-year period and the authority.",
+  "orig_question": null
+ },
+ {
+  "id": "q055",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-436950#art-12#p1"
+  ],
+  "_verify": "The source text explicitly states that a prosecutor who has obtained consent to deprive a deputy of immunity must notify the relevant Council of People's Deputies of the results of the investigation and court review within three days from the date the proceedings are completed, which matches the expected answer exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q056",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:-104720#art-164#p1",
+   "lex:-104720#art-209#p1"
+  ],
+  "_verify": "The source text directly states in Article 164 that the birth date can be changed with a difference of not more than one year, and Article 209 lists the bases for entering father's information: parents' application, court decision, or father's application. The expected answer accurately reflects both provisions.",
+  "orig_question": null
+ },
+ {
+  "id": "q057",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:-180552#art-690#p1"
+  ],
+  "_verify": "The source text explicitly states that the contractor guarantees that third parties have no right to obstruct or restrict the performance of work based on the prepared design and estimate documentation, which directly answers the question and matches the expected answer.",
+  "orig_question": "Pudratchi loyiha-smeta hujjatlari asosida ish bajarishga uchinchi shaxslar tomonidan toʻsqinlik qilinmasligiga kafolat beradimi?"
+ },
+ {
+  "id": "q058",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:3523891#art-143#p1",
+   "lex:185986#art-205#p1"
+  ],
+  "_verify": "The source text (Article 143) explicitly states that a court order is issued by the judge without a hearing, without summoning the creditor and debtor, and without hearing their explanations. The expected answer accurately quotes this rule and correctly cites the article, fully addressing the question.",
+  "orig_question": null
+ },
+ {
+  "id": "q059",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q060",
+  "category": "noaniq",
+  "_source_chunks": [
+   "lex:-180552#art-1097#p1"
+  ],
+  "_verify": "The source text explicitly states that unless otherwise provided by the contract, the obligation to maintain confidentiality remains with the licensee even after termination of the license agreement, provided the information remains undisclosed information. The expected answer accurately reflects this.",
+  "orig_question": null
+ },
+ {
+  "id": "q061",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:3523891#art-308#p1"
+  ],
+  "_verify": "The source text explicitly states that a protest against documents from cases reviewed by the Judicial Chamber for Economic Affairs of the Supreme Court under revision is considered by the Presidium when filed by the Chairman of the Supreme Court or the Prosecutor General. The expected answer matches this exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q062",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-111453#art-74#p1"
+  ],
+  "_verify": "The source text explicitly states that for a grave crime, the convicted person must serve at least half of the appointed sentence before the punishment can be replaced with a lighter one. The expected answer correctly reflects this.",
+  "orig_question": null
+ },
+ {
+  "id": "q063",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-3527353#art-179#p1"
+  ],
+  "_verify": "The source text explicitly grants the right to apply to court for declaring a departmental normative legal act invalid in whole or in part if a person considers it violates their rights and lawful interests. The expected answer correctly reflects this rule and is complete for the question, with no ambiguity.",
+  "orig_question": null
+ },
+ {
+  "id": "q064",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:4953674#art-112#p1"
+  ],
+  "_verify": "The source states that persons elected to the Constitutional Oversight Committee have a term of five years, matching the expected answer. The question is specific to this committee and the source is the relevant constitution.",
+  "orig_question": null
+ },
+ {
+  "id": "q065",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-24377#art-8#p1"
+  ],
+  "_verify": "The text explicitly states that cultural properties created fifty years ago or earlier cannot be exported. The question asks how long ago created cultural properties are prohibited, which is directly answered by the text. The expected answer correctly and completely reflects this information.",
+  "orig_question": null
+ },
+ {
+  "id": "q066",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:-5630180#art-12#p1",
+   "lex:-5630180#art-15#p1"
+  ],
+  "_verify": "15-modda aniq: seysmik xatarni baholash (kuchli zilzila oqibatidagi yoʻqotishlar ilmiy prognozi) Fanlar akademiyasi tomonidan tegishli davlat organlari va tashkilotlari bilan birgalikda amalga oshiriladi va natijada turli masshtabdagi seysmik xatar xaritalari ishlab chiqiladi. Savol shu moddaga mos, boshqa modda bilan chalkashtirish uchun asos yoʻq.",
+  "orig_question": null
+ },
+ {
+  "id": "q067",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:-6333240#art-12#p1"
+  ],
+  "_verify": "12-modda jismoniy shaxslardan olinadigan mol-mulk soligʻi tumanlar va shaharlar budjetlariga toʻliq hajmda oʻtkazilishini aniq belgilaydi.",
+  "orig_question": "Qonuni 2023-yil uchun Oʻzbekiston Respublikasining davlat budjeti toʻgʻrisidagi qonunga koʻra, jismoniy shaxslardan olinadigan mol-mulk soligʻi qaysi budjetga toʻliq hajmda oʻtkaziladi?"
+ },
+ {
+  "id": "q068",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:-8536927#art-84#p1",
+   "lex:-5391934#art-72#p1"
+  ],
+  "_verify": "The source explicitly states that decisions and conclusions must be published within three days from adoption and enter into force from the day of official publication, matching the expected answer exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q069",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q070",
+  "category": "noaniq",
+  "_source_chunks": [
+   "lex:-2004956#art-4#p1"
+  ],
+  "_verify": "4-modda to'g'ridan-to'g'ri oilaviy korxona faoliyatni faqat yuridik shaxs tashkil etgan holda amalga oshirishi mumkinligini belgilaydi, savolga aniq javob beradi.",
+  "orig_question": null
+ },
+ {
+  "id": "q071",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-24741#art-21#p1"
+  ],
+  "_verify": "The source explicitly states that citizens are allowed to prepare independently within the relevant programs for the right to drive motorcycles, motor scooters, and other motor vehicles.",
+  "orig_question": null
+ },
+ {
+  "id": "q072",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-55594#art-87#p1"
+  ],
+  "_verify": "The source text (Havo kodeksi, 87-modda) clearly states that persons who learn about an aviation accident or incident must immediately ('zudlik bilan') report it to the authorities specified in part four of Article 81 of the Code. The expected answer accurately and completely reflects this requirement, including the timeframe ('zudlik bilan') and the addressee (the authorities under Article 81 part 4). The question is unambiguous as it pertains directly to this statutory duty.",
+  "orig_question": null
+ },
+ {
+  "id": "q073",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-7051573#art-61#p1"
+  ],
+  "_verify": "The source text explicitly states that interruption without prior warning is allowed when necessary to prevent or eliminate accidents, and requires system operators to immediately inform consumers about the interruption, its impact, and expected duration. The expected answer accurately reflects this.",
+  "orig_question": null
+ },
+ {
+  "id": "q074",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-6257288#art-491#p1"
+  ],
+  "_verify": "The source text states that seasonal work duration, as a rule, should not exceed six months, which directly answers the question. The expected answer correctly and completely reflects this rule, including the qualifier 'qoida tariqasida'. The question is unambiguous because it asks about the general rule ('odatda').",
+  "orig_question": null
+ },
+ {
+  "id": "q075",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-4344714#art-13#p1"
+  ],
+  "_verify": "The 13th article explicitly states that unused pastures can be leased for a period of not less than three years and not more than forty-nine years, including to resident investors. The expected answer correctly reflects this duration range.",
+  "orig_question": null
+ },
+ {
+  "id": "q076",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:-108831#art-25#p1",
+   "lex:-108831#art-30#p1"
+  ],
+  "_verify": "Both parts of the question are directly addressed in the provided articles: 25-modda specifies the state fee is set by the Cabinet of Ministers in fixed amounts, and 30-modda confirms the state guarantees protection of property rights for exchange transactions not contrary to law. The expected answer accurately paraphrases these provisions with no ambiguity.",
+  "orig_question": null
+ },
+ {
+  "id": "q077",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:-7283071#art-22#p1"
+  ],
+  "_verify": "The source text explicitly states that interconnection is carried out on the basis of contracts between operators and providers of the respective telecommunication networks. The expected answer quotes this directly and is complete.",
+  "orig_question": "Turli operatorlar va provayderlar oʻz tarmoqlarini bir-biriga ulashi qanday hujjat asosida amalga oshiriladi?"
+ },
+ {
+  "id": "q078",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:-3517337#art-148#p1",
+   "lex:186105#art-124#p1"
+  ],
+  "_verify": "148-modda sud ajrimining koʻchirma nusxasini olganidan keyin besh kun ichida jarima solgan sudga iltimos qilish mumkinligini aniq belgilaydi. Kutilgan javob shu qoidaga to'liq mos keladi va boshqa modda yoki aktga murojaat qilishni talab qilmaydi.",
+  "orig_question": null
+ },
+ {
+  "id": "q079",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q080",
+  "category": "noaniq",
+  "_source_chunks": [
+   "lex:-111189#art-293#p1"
+  ],
+  "_verify": "The source text (Article 293) directly addresses the guarantor's liability: joint liability with the debtor unless subsidiary liability is provided, and liability to the same extent as the debtor, including interest, court costs, and other losses. The expected answer accurately reflects this.",
+  "orig_question": null
+ },
+ {
+  "id": "q081",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-1560390#art-3#p1"
+  ],
+  "_verify": "Manba Nizomning 1-bandida fuqarolar mehnat va jangovar xizmatlari, samarali davlat, ijtimoiy va ijodiy faoliyatlari uchun mukofotlanishi aniq ko'rsatilgan. Savolga javob aynan shu matndan olinadi, kutilgan javob ham to'liq va to'g'ri.",
+  "orig_question": null
+ },
+ {
+  "id": "q082",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-503992#art-5#p1"
+  ],
+  "_verify": "The source text states that a written notice with copies of documents must be sent no later than three days from receipt of materials constituting grounds for recall, which matches the expected answer.",
+  "orig_question": null
+ },
+ {
+  "id": "q083",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-5534923#art-63#p1"
+  ],
+  "_verify": "Manba 63-moddada sudyalar maslahatlashuvining sir tutilishi va uni oshkor qilishni talab etish taqiqlanishi aniq ko'rsatilgan. Savol va javob shu qoidaga mos, boshqa qonun yoki hujjatga murojaat qilishni talab qilmaydi.",
+  "orig_question": null
+ },
+ {
+  "id": "q084",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-8323797#art-20#p1"
+  ],
+  "_verify": "The source text (Article 20, paragraph 2) states that foreign citizens and stateless persons who are persons of the Finance Center may obtain an entry visa for a period of up to five years. The expected answer 'Besh yilgacha bo'lgan muddatga' accurately reflects this.",
+  "orig_question": null
+ },
+ {
+  "id": "q085",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-111460#art-267#p1"
+  ],
+  "_verify": "Source text explicitly states: 'Shaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnoma yopiq sud majlisida, materiallar kelib tushgan paytdan eʼtiboran qirq sakkiz soat ichida koʻrib chiqiladi.' The expected answer matches exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q086",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:5307951#art-45#p1",
+   "lex:5307951#art-16#p1"
+  ],
+  "_verify": "45-modda tuman va shahar ijro hokimiyatlari bilan kelishishni 44-modda 2-4-bandlaridagi hujjatlar uchun talab qiladi; 16-modda esa litsenziyaga ega yoki vakolatli organni xabardor qilgan yuridik shaxslar ishlab chiquvchi bo'lishini belgilaydi. Berilgan javob ushbu qoidalarga to'liq mos.",
+  "orig_question": null
+ },
+ {
+  "id": "q087",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:4386848#art-88#p1"
+  ],
+  "_verify": "Manba 88-moddada viloyatlar va Toshkent shahar Kengashlari uchun aholisi uch million nafardan ortiq hududlarda deputatlik o‘rinlari elliktadan oltmishtagacha belgilanishi aniq ko‘rsatilgan. Savolga javob to‘liq va to‘g‘ri.",
+  "orig_question": "Saylov kodeksiga koʻra, aholisi uch million nafardan ortiq boʻlgan hududda Xalq deputatlari viloyat yoki Toshkent shahar Kengashida nechta deputatlik oʻrni belgilanishi mumkin?"
+ },
+ {
+  "id": "q088",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:-3517337#art-278#p1",
+   "lex:186105#art-22#p1"
+  ],
+  "_verify": "The source text explicitly states that the minutes must be signed no later than three days after the court session or separate procedural action. The expected answer accurately includes this three-day period and cites the correct article, and the question refers specifically to this provision.",
+  "orig_question": null
+ },
+ {
+  "id": "q089",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q090",
+  "category": "noaniq",
+  "_source_chunks": [
+   "lex:-33419#art-13#p1"
+  ],
+  "_verify": "The text explicitly states that those reserved for state authorities, enterprises, institutions and organizations are exempt from military training, directly answering the question. The expected answer correctly and completely reflects this provision.",
+  "orig_question": null
+ },
+ {
+  "id": "q091",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:2876354#art-2#p1"
+  ],
+  "_verify": "The source explicitly states that if an international treaty provides different rules, the treaty rules apply. The expected answer matches exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q092",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:-6518381#art-1#p1"
+  ],
+  "_verify": "The source text explicitly states the purpose of the law, the expected answer correctly paraphrases the control and suppression aspects as asked, and the question is specific to this law.",
+  "orig_question": null
+ },
+ {
+  "id": "q093",
+  "category": "faktik",
+  "_source_chunks": [
+   "lex:4386848#art-100#p1"
+  ],
+  "_verify": "The text explicitly states that state funds are transferred to the political party's account after the candidates nominated by that party are registered, in an amount corresponding to the number of registered candidates. The expected answer matches this exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q094",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-6257288#art-74#p1"
+  ],
+  "_verify": "The article explicitly states that the collective agreement remains in force for six months when the organization's owner changes, and the expected answer matches this exactly.",
+  "orig_question": null
+ },
+ {
+  "id": "q095",
+  "category": "raqamlar",
+  "_source_chunks": [
+   "lex:-111453#art-192#p1"
+  ],
+  "_verify": "The source (Jinoyat kodeksi, 192-modda) explicitly states that the offense is punishable by a fine of 50 to 100 times the base calculation amount, which matches the expected answer. The question specifically asks about the fine amount, and the article provides it clearly without ambiguity from other provisions.",
+  "orig_question": null
+ },
+ {
+  "id": "q096",
+  "category": "bir_nechta",
+  "_source_chunks": [
+   "lex:-97664#art-91.1#p1",
+   "lex:-97664#art-89#p1"
+  ],
+  "_verify": "The answer is directly supported by Article 91¹ (second paragraph: repeated dumping by citizen, fine 10-15 times BHM) and Article 89 (first paragraph: first-time storage violation by citizen, fine 1/3 to 1 times BHM). The question clearly specifies offenses and repeat/first-time conditions.",
+  "orig_question": null
+ },
+ {
+  "id": "q097",
+  "category": "rus_kirill",
+  "_source_chunks": [
+   "lex:-7592967#art-36#p1"
+  ],
+  "_verify": "The source explicitly states that using Guarantee Fund money for recapitalization of the bank under rehabilitation or bridge bank is prohibited. The expected answer accurately quotes this prohibition.",
+  "orig_question": "Bank sanatsiyasi paytida Kafolatlash jamgʻarmasi pullarini bankni qayta kapitallashtirish uchun ishlatsa boʻladimi?"
+ },
+ {
+  "id": "q098",
+  "category": "ozgargan",
+  "_source_chunks": [
+   "lex:-6257288#art-201#p1",
+   "lex:-142859#art-126#p1"
+  ],
+  "_verify": "Manba matnida qon va uning tarkibiy qismlari topshirilgan har bir kundan keyin donorlarga dam olish kuni berilishi va bu dam olish vaqtining turlari ro'yxatida keltirilgani aniq ko'rsatilgan. Kutilgan javob matnga mos va to'liq.",
+  "orig_question": null
+ },
+ {
+  "id": "q099",
+  "category": "javobsiz",
+  "_source_chunks": [],
+  "_verify": "unanswerable by design",
+  "orig_question": null
+ },
+ {
+  "id": "q100",
+  "category": "noaniq",
+  "_source_chunks": [
+   "lex:4674902#art-208#p1"
+  ],
+  "_verify": "The source states that CFC profit is reduced by dividends paid in the calendar year following the year for which financial statements are prepared under the company's residence legislation, including interim dividends paid during that financial year. The question is answered directly and only by this provision.",
+  "orig_question": null
+ }
+]

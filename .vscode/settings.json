@@ -1,0 +1,11 @@
+{
+  "python.defaultInterpreterPath": "/Users/gulkhayo/.pyenv/versions/3.12.6/bin/python",
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestArgs": ["-v", "-s", "./tests", "-p", "test_*.py"],
+  "files.exclude": { "**/__pycache__": true },
+  "files.watcherExclude": { "**/data/**": true, "**/eval/runs/**": true },
+  "search.exclude": { "**/data/**": true, "**/eval/runs/**": true },
+  "files.associations": { ".env*": "dotenv" },
+  "editor.rulers": [120]
+}
