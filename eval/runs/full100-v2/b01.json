@@ -1,0 +1,1586 @@
+{
+ "run_id": "full100-v2",
+ "batch_id": "full100-v2-b01",
+ "batch_index": 1,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p6",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125645,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:45:20+05:00",
+  "completed_at": "2026-11-06T18:45:28+05:00",
+  "total_ms": 7959
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q001",
+   "status": "ok",
+   "answer": "Guvohni chaqirishni soʻrab murojaat qilgan shaxs ish uchun ahamiyatga molik qaysi holatlarni guvoh tasdiqlashi mumkinligini koʻrsatishi va guvohning familiyasi, ismi, otasining ismi va yashash joyini sudga maʼlum qilishi shart [1]. Fuqarolik protsessual kodeksining 82-moddasiga koʻra esa yashash joyi bilan birga ish yoki oʻqish joyini ham koʻrsatish talab etiladi [2]. Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksning 87-moddasida ham xuddi shunday talab belgilangan [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "88-modda",
+     "part": "1–4-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-88#p1",
+     "quote": "Guvohni chaqirish haqida iltimos qiluvchi shaxs ish uchun ahamiyatga molik qaysi holatlarni guvoh tasdiqlashi mumkinligini koʻrsatishi va uning familiyasi, ismi, otasining ismi va yashash joyini sudga maʼlum qilishi shart",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "82-modda",
+     "part": "1-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-82#p1",
+     "quote": "Guvohni chaqirish toʻgʻrisida iltimosnoma taqdim etuvchi shaxs guvohning ish uchun ahamiyatga ega boʻlgan qanday holatlarni tasdiqlay olishi mumkinligini koʻrsatishi va sudga uning familiyasi, ismi, otasining ismini, yashash joyini yoki ish, oʻqish joyini maʼlum qilishi shart",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "87-modda",
+     "part": "1–4-qism",
+     "edition_date": "2018-01-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3527353#art-87#p1",
+     "quote": "Guvohni chaqirish haqida iltimosnoma kirituvchi shaxs ish uchun ahamiyatga molik qaysi holatlarni guvoh tasdiqlashi mumkinligini koʻrsatishi va uning familiyasi, ismi, otasining ismi va yashash joyini sudga maʼlum qilishi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:3523891#art-88#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "88-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "88-modda. Guvohning koʻrsatuvlari\nIshda ishtirok etuvchi shaxsning iltimosnomasi boʻyicha sud guvohni sud majlisida koʻrsatuvlar berish uchun chaqirtirishi mumkin.\nGuvohni chaqirish haqida iltimos qiluvchi shaxs ish uchun ahamiyatga molik qaysi holatlarni guvoh tasdiqlashi mumkinligini koʻrsatishi va uning familiyasi, ismi, otasining ismi va yashash joyini sudga maʼlum qilishi shart.\nGuvoh ish boʻyicha oʻziga maʼlum boʻlgan maʼlumotlar va holatlarni sudga ogʻzaki xabar qiladi. Guvoh sudning taklifiga koʻra oʻz koʻrsatuvlarini yozma shaklda bayon qilishi mumkin.\nAgar guvoh oʻzi bilgan maʼlumotlarning manbaini koʻrsatib bera olmasa, u xabar qilgan maʼlumotlar dalil hisoblanmaydi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-82#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "82-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "82-modda. Guvohni chaqirish toʻgʻrisidagi iltimosnoma\nGuvohni chaqirish toʻgʻrisida iltimosnoma taqdim etuvchi shaxs guvohning ish uchun ahamiyatga ega boʻlgan qanday holatlarni tasdiqlay olishi mumkinligini koʻrsatishi va sudga uning familiyasi, ismi, otasining ismini, yashash joyini yoki ish, oʻqish joyini maʼlum qilishi shart.",
+     "retrieval_score": 0.9665,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3527353#art-87#p1",
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "87-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-25",
+     "text": "87-modda. Guvohning koʻrsatuvlari\nIshda ishtirok etuvchi shaxsning iltimosnomasi boʻyicha sud guvohni sud majlisida koʻrsatuvlar berish uchun chaqirtirishi mumkin.\nGuvohni chaqirish haqida iltimosnoma kirituvchi shaxs ish uchun ahamiyatga molik qaysi holatlarni guvoh tasdiqlashi mumkinligini koʻrsatishi va uning familiyasi, ismi, otasining ismi va yashash joyini sudga maʼlum qilishi shart.\nGuvoh ish boʻyicha oʻziga maʼlum boʻlgan maʼlumotlar va holatlarni sudga ogʻzaki xabar qiladi. Guvoh sudning taklifiga koʻra oʻz koʻrsatuvlarini yozma shaklda bayon qilishi mumkin.\nAgar guvoh oʻzi bilgan maʼlumotlarning manbaini koʻrsatib bera olmasa, u xabar qilgan maʼlumotlar dalil hisoblanmaydi.",
+     "retrieval_score": 0.621,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-163.1#p5",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "163¹-modda",
+     "part": "5–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-05-24",
+     "text": "1631-modda. Sudgacha majlis\n4) ishning murakkabligini hisobga olgan holda sud muhokamasining prognoz qilinayotgan, shu jumladan nizoni hal qilish uchun ahamiyatga ega boʻlgan iltimosnomalar va hujjatlarni sudga topshirish, guvohlar mavjud boʻlganda ularning roʻyxatlarini almashish muddatlarini nazarda tutuvchi jadvalini aniqlaydi;\n5) sud majlisida hozir boʻlgan taraflar va boshqa manfaatdor shaxslardan ular oʻrtasida ushbu ishning sudga taalluqliligi masalasi boʻyicha kelishuv, ushbu Kodeksning 163-moddasida nazarda tutilgan boshqa harakatlarni amalga oshirish zaruriyati mavjudligini aniqlaydi.\nSudgacha majlisning vaqti va joyi toʻgʻrisida taraflar va boshqa manfaatdor shaxslar xabardor qilinganlik faktini qayd etishni taʼminlaydigan sud chaqiruv qogʻozlari, buyurtma xatlar, telefonogrammalar, telegrammalar va boshqa aloqa vositalari orqali xabardor qilinadi.\nSudgacha majlis oʻtkazilganligi toʻgʻrisida bayonnoma tuzilib, unda quyidagilar koʻrsatiladi: sudgacha majlis oʻtkazilgan yil, oy, sana va joy; ishni yuritayotgan sudning nomi; sudyaning va majlis kotibining (sudya yordamchisining yoki katta yordamchisining) familiyasi hamda ismi-sharifining bosh harflari; taraflar, boshqa manfaatdor shaxslar haqidagi va ularga protsessual huquq va majburiyatlari tushuntirilganligi toʻgʻrisidagi maʼlumotlar; taraflar tomonidan berilgan tushuntirishlar.",
+     "retrieval_score": 0.7454,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-157#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "157-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "157-modda. Sud chaqiruv qogʻozining mazmuni\nSudga chaqirish toʻgʻrisidagi sud chaqiruv qogʻozida quyidagilar koʻrsatilishi kerak:\n1) sudning nomi, manzili, telefon raqami, elektron pochta manzili;\n2) kelish joyi va vaqti;\n3) shaxs qanday ish yuzasidan chaqirilayotganligi;\n4) shaxsning kim tariqasida chaqirilayotganligi;\n5) ishda ishtirok etuvchi shaxslarga ish boʻyicha oʻzlari ega boʻlgan hamma dalillarni taqdim etish toʻgʻrisidagi taklif;\n6) chaqiriluvchi yoʻqligi sababli chaqiruv qogʻozini qabul qilib olgan shaxsning imkoniyat boʻlishi bilanoq uni darhol chaqiriluvchiga topshirishga majburligi;\n7) sudga kelmaganlikning ushbu Kodeksning 220, 221 va 222-moddalarida nazarda tutilgan oqibatlari.\nSudga chaqirish toʻgʻrisida elektron hujjat tarzida yuborilayotgan sud chaqiruv qogʻozida ushbu modda birinchi qismining 1 — 5, 7-bandlarida sanab oʻtilgan maʼlumotlar koʻrsatilishi kerak.",
+     "retrieval_score": 0.7004,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2498,
+    "retrieval_ms": 2006,
+    "rerank_ms": 0,
+    "generation_ms": 3453,
+    "total_ms": 7958
+   },
+   "usage": {
+    "input_tokens": 13755,
+    "output_tokens": 786,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sudga guvohni chaqirish toʻgʻrisida iltimosnoma bergan shaxs guvoh haqida qanday maʼlumotlarni koʻrsatishi shart?",
+    "search_queries": [
+     "Sudga guvohni chaqirishni soʻrab murojaat qilgan odam guvoh haqida qanday maʼlumotlarni yetkazishi shart?",
+     "Sudga guvohni chaqirish toʻgʻrisida iltimosnoma bergan shaxs guvoh haqida qanday maʼlumotlarni koʻrsatishi shart?",
+     "guvohni sudga chaqirish toʻgʻrisidagi iltimosnomada guvoh haqida maʼlumotlar",
+     "guvohni chaqirish iltimosnomasi mazmuni guvohning familiyasi ismi otasining ismi yashash joyi",
+     "guvoh haqida maʼlumotlar sudga chaqirish tartibi"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi",
+     "Jinoyat-protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 950,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q002",
+   "status": "ok",
+   "answer": "«Davlat-xususiy sheriklik toʻgʻrisida»gi qonunning 29-moddasiga koʻra, umumiy qiymati bir million AQSH dollaridan ortiq boʻlgan ekvivalentdagi loyiha boʻyicha sheriklik bitimini oʻzgartirish, unga qoʻshimcha kiritish yoki uni bekor qilish vakolatli davlat organi bilan kelishuvga koʻra amalga oshiriladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-4329270",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat-xususiy sheriklik toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-4329270",
+     "article": "29-modda",
+     "part": "1–4-qism",
+     "edition_date": "2021-01-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-4329270#art-29#p1",
+     "quote": "Umumiy qiymati bir million AQSH dollaridan ortiq boʻlgan ekvivalentdagi davlat-xususiy sheriklik loyihasi boʻyicha davlat-xususiy sheriklik toʻgʻrisidagi bitimni oʻzgartirish, unga qoʻshimcha kiritish yoki uni bekor qilish vakolatli davlat organi bilan kelishuvga koʻra amalga oshiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-4329270#art-29#p1",
+     "doc_id": "lex:-4329270",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat-xususiy sheriklik toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4329270",
+     "article": "29-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-01-23",
+     "text": "29-modda. Davlat-xususiy sheriklik toʻgʻrisidagi bitimni oʻzgartirish, unga qoʻshimcha kiritish yoki uni bekor qilish\nAgar qonunchilikda yoki davlat-xususiy sheriklik toʻgʻrisidagi bitimda boshqacha qoida nazarda tutilmagan boʻlsa, davlat-xususiy sheriklik toʻgʻrisidagi bitim taraflarning kelishuviga koʻra yoxud sudning qaroriga binoan oʻzgartirilishi, unga qoʻshimcha kiritilishi yoki u bekor qilinishi mumkin.\nUmumiy qiymati bir million AQSH dollariga qadar boʻlgan ekvivalentdagi davlat-xususiy sheriklik loyihasi boʻyicha davlat-xususiy sheriklik toʻgʻrisidagi bitimni oʻzgartish, unga qoʻshimcha kiritish yoki uni bekor qilish davlat-xususiy sheriklik toʻgʻrisidagi bitimda belgilangan tartibda davlat sherigi va xususiy sherik tomonidan mustaqil ravishda amalga oshiriladi.\nUmumiy qiymati bir million AQSH dollaridan ortiq boʻlgan ekvivalentdagi davlat-xususiy sheriklik loyihasi boʻyicha davlat-xususiy sheriklik toʻgʻrisidagi bitimni oʻzgartirish, unga qoʻshimcha kiritish yoki uni bekor qilish vakolatli davlat organi bilan kelishuvga koʻra amalga oshiriladi.\nUmumiy qiymati oʻn million AQSH dollaridan ortiq boʻlgan ekvivalentdagi davlat-xususiy sheriklik loyihasi boʻyicha davlat-xususiy sheriklik toʻgʻrisidagi bitimni oʻzgartirish, unga qoʻshimcha kiritish yoki uni bekor qilish Oʻzbekiston Respublikasi Vazirlar Mahkamasi bilan kelishuvga koʻra amalga oshiriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5235535#art-2#p156",
+     "doc_id": "lex:-5235535",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat-xususiy sheriklik toʻgʻrisidagi qonunchilik takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrim qonun hujjatlarini oʻz kuchini yoʻqotgan deb topish haqida",
+     "url": "https://lex.uz/docs/-5235535",
+     "article": "2-modda",
+     "part": "156–158-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-01-22",
+     "text": "2-modda. Oʻzbekiston Respublikasining 2019-yil 10-mayda qabul qilingan “Davlat-xususiy sheriklik toʻgʻrisida”gi OʻRQ-537-sonli Qonuniga (Oʻzbekiston Respublikasi Oliy Majlisi palatalarining Axborotnomasi, 2019-yil, № 5, 262-modda) quyidagi qoʻshimcha va oʻzgartishlar kiritilsin:\nAgar qonunchilikda yoki davlat-xususiy sheriklik toʻgʻrisidagi bitimda boshqacha qoida nazarda tutilmagan boʻlsa, davlat-xususiy sheriklik toʻgʻrisidagi bitim taraflarning kelishuviga koʻra yoxud sudning qaroriga binoan oʻzgartirilishi, unga qoʻshimcha kiritilishi yoki u bekor qilinishi mumkin.\nUmumiy qiymati bir million AQSh dollariga qadar boʻlgan ekvivalentdagi davlat-xususiy sheriklik loyihasi boʻyicha davlat-xususiy sheriklik toʻgʻrisidagi bitimni oʻzgartish, unga qoʻshimcha kiritish yoki uni bekor qilish davlat-xususiy sheriklik toʻgʻrisidagi bitimda belgilangan tartibda davlat sherigi va xususiy sherik tomonidan mustaqil ravishda amalga oshiriladi.\nUmumiy qiymati bir million AQSh dollaridan ortiq boʻlgan ekvivalentdagi davlat-xususiy sheriklik loyihasi boʻyicha davlat-xususiy sheriklik toʻgʻrisidagi bitimni oʻzgartirish, unga qoʻshimcha kiritish yoki uni bekor qilish vakolatli davlat organi bilan kelishuvga koʻra amalga oshiriladi.",
+     "retrieval_score": 0.7331,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-4329270#art-18#p1",
+     "doc_id": "lex:-4329270",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat-xususiy sheriklik toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4329270",
+     "article": "18-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-01-23",
+     "text": "18-modda. Davlat-xususiy sheriklik loyihasining konsepsiyasini tasdiqlash, unga oʻzgartishlar va (yoki) qoʻshimchalar kiritish\nUmumiy qiymati bir million AQSH dollariga qadar boʻlgan ekvivalentdagi davlat-xususiy sheriklik loyihasining konsepsiyasini tasdiqlash, unga oʻzgartishlar va (yoki) qoʻshimchalar kiritish tegishli davlat organi (tashkiloti) tomonidan mustaqil ravishda amalga oshiriladi.\nUmumiy qiymati bir million AQSH dollaridan ortiq va oʻn million AQSH dollariga qadar boʻlgan ekvivalentdagi davlat-xususiy sheriklik loyihasining konsepsiyasini tasdiqlash, unga oʻzgartishlar va (yoki) qoʻshimchalar kiritish tegishli davlat organi (tashkiloti) tomonidan vakolatli davlat organi bilan kelishuvga koʻra amalga oshiriladi.\nUmumiy qiymati oʻn million AQSH dollaridan ortiq boʻlgan ekvivalentdagi davlat-xususiy sheriklik loyihasining konsepsiyasini tasdiqlash, unga oʻzgartishlar va (yoki) qoʻshimchalar kiritish Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan amalga oshiriladi.\nDavlat-xususiy sheriklik loyihasining konsepsiyasi tasdiqlanganidan keyin davlat sherigi davlat-xususiy sheriklik loyihasini amalga oshirishning keyingi bosqichlariga oʻtadi.",
+     "retrieval_score": 0.8826,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4798603#band-56s2#p1",
+     "doc_id": "lex:4798603",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori davlat-xususiy sheriklik loyihalarini amalga oshirish tartibini takomillashtirish toʻgʻrisida",
+     "url": "https://lex.uz/docs/4798603",
+     "article": "56-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-04-27",
+     "text": "56. DXSH toʻgʻrisidagi bitimning amal qilish muddati — DXSH obyekti uchun jalb qilingan kapital qoʻyilmalar va investitsiyalarning toʻliq qoplanish muddatidan, shuningdek, DXSH loyihasini amalga oshirish davrida olingan asosiy vositalar va boshqa mol-mulklardan foydalanish muddatidan hamda olinadigan sof foyda koʻrsatkichlaridan kelib chiqib belgilanadi.\nUmumiy qiymati oʻn million AQSh dollarigacha boʻlgan ekvivalentdagi DXSH toʻgʻrisidagi bitimning amal qilish muddatini uzaytirish — xususiy sherik tomonidan qoʻshimcha ravishda kapital qoʻyilmalar va investitsiyalarni jalb qilish sharti asosida vakolatli davlat organi va davlat sherigi bilan kelishilgan holda amalga oshiriladi.\nUmumiy qiymati oʻn million AQSh dollaridan ortiq boʻlgan ekvivalentdagi DXSH toʻgʻrisidagi bitimning amal qilish muddatini uzaytirish — xususiy sherik tomonidan qoʻshimcha ravishda kapital qoʻyilmalar va investitsiyalarni jalb qilish sharti asosida vakolatli davlat organi va davlat sherigi hamda Vazirlar Mahkamasi bilan kelishilgan holda amalga oshiriladi.",
+     "retrieval_score": 0.8531,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:7180726#band-4s3#p1-2",
+     "doc_id": "lex:7180726",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori davlat-xususiy sheriklik sohasini yanada takomillashtirish hamda kompleks tizimlashtirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/7180726",
+     "article": "4-band (3-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-04-20",
+     "text": "4. Umumiy qiymati bir million AQSH dollaridan ortiq boʻlgan ekvivalentdagi DXSH loyihasining konsepsiyasi va LBH maʼqullangandan soʻng ularni yozma ravishda vakolatli davlat organiga kelishish uchun taqdim qiladi.\u0007\u0007Zaruratga koʻra\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u00072-bosqich\u0007\u0007Vakolatli davlat organi\u0007\u0007Davlat sherigi tomonidan kiritilgan umumiy qiymati bir million AQSH dollaridan ortiq boʻlgan ekvivalentdagi DXSH loyihasining konsepsiyasini koʻrib chiqadi, kelishadi, rad etadi yoki qayta ishlash uchun qaytaradi.\u0007\u000710 kun ichida\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007Davlat sherigi tomonidan kiritilgan umumiy qiymati oʻn million AQSH dollaridan ortiq boʻlgan ekvivalentdagi DXSH loyihasining konsepsiyasi kelishilgandan soʻng Vazirlar Mahkamasiga tasdiqlash uchun kiritadi.\u0007\u00075 kun ichida\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u00073-bosqich\u0007\u0007Davlat sherigi\u0007\u0007Umumiy qiymati oʻn million AQSH dollariga qadar boʻlgan ekvivalentdagi DXSH loyihasining konsepsiyasi vakolatli davlat organi bilan kelishilgandan soʻng uni tasdiqlaydi.\u0007\u00075 kun ichida\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u00074-bosqich\u0007\u0007Vazirlar Mahkamasi\u0007\u0007Vakolatli davlat organi tomonidan kiritilgan umumiy qiymati oʻn million AQSH dollaridan ortiq boʻlgan ekvivalentdagi DXSH loyihasining konsepsiyasini koʻrib chiqadi va maʼqullaydi, rad etadi yoki qayta ishlash uchun qaytaradi.\u0007\u000710 kun ichida\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u00075-bosqich\u0007\u0007Davlat sherigi\u0007\u0007Umumiy qiymati bir million AQSH dollaridan ortiq boʻlgan ekvivalentdagi tasdiqlangan DXSH loyihasining konsepsiyasi asosida tender hujjatlarini va DXSH toʻgʻrisidagi bitim loyihasini tayyorlaydi hamda vakolatli davlat organiga kelishish uchun kiritadi.\u0007\u0007Vakolatli davlat organi tomonidan belgilangan muddatlarda\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u00076-bosqich\u0007\u0007Vakolatli davlat organi\u0007\u0007Tender hujjatlari va DXSH toʻgʻrisidagi bitim loyihasini kelishadi va davlat sherigiga qaytaradi.\u0007\u000710 kun ichida\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007",
+     "retrieval_score": 0.8369,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2189,
+    "retrieval_ms": 2347,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 4537
+   },
+   "usage": {
+    "input_tokens": 14493,
+    "output_tokens": 533,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "«Davlat-xususiy sheriklik toʻgʻrisida»gi qonunga koʻra, umumiy qiymati bir million AQSH dollaridan ortiq, lekin oʻn million AQSH dollaridan oshmaydigan loyiha boʻyicha sheriklik bitimini oʻzgartirish yoki bekor qilish kim bilan kelishilgan holda amalga oshiriladi?",
+    "search_queries": [
+     "«Qonuni davlat-xususiy sheriklik toʻgʻrisida»ga koʻra, umumiy qiymati bir million AQSH dollaridan ortiq, lekin oʻn million AQSH dollaridan oshmaydigan loyiha boʻyicha sheriklik bitimini oʻzgartirish yoki bekor qilish kim bilan kelishilgan holda amalga oshiriladi?",
+     "«Davlat-xususiy sheriklik toʻgʻrisida»gi qonunga koʻra, umumiy qiymati bir million AQSH dollaridan ortiq, lekin oʻn million AQSH dollaridan oshmaydigan loyiha boʻyicha sheriklik bitimini oʻzgartirish yoki bekor qilish kim bilan kelishilgan holda amalga oshiriladi?",
+     "davlat-xususiy sheriklik bitimini oʻzgartirish yoki bekor qilish kelishilgan holda",
+     "sheriklik bitimini bekor qilish vakolatli organ bilan kelishish",
+     "davlat-xususiy sheriklik loyihasi qiymati bir million AQSH dollaridan ortiq bitimni oʻzgartirish"
+    ],
+    "doc_hints": [
+     "Davlat-xususiy sheriklik toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 424,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q003",
+   "status": "ok",
+   "answer": "Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil oʻz vakolatlarini zimmasidan soqit qilish toʻgʻrisida yozma ravishda ariza bergan taqdirda, Oʻzbekiston Respublikasi Prezidenti tomonidan lavozimidan muddatidan ilgari ozod qilinishi mumkin [1]. Bu holat Qonunning 20-moddasida nazarda tutilgan [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "20-modda",
+     "part": "1–6-qism",
+     "edition_date": "2017-08-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3321352#art-20#p1",
+     "quote": "u oʻz vakolatlarini zimmasidan soqit qilish toʻgʻrisida yozma ravishda ariza bergan taqdirda;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3321352#art-20#p1",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "20-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-08-29",
+     "text": "20-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilni lavozimidan muddatidan ilgari ozod qilish\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakil lavozimdan quyidagi hollarda Oʻzbekiston Respublikasi Prezidenti tomonidan muddatidan ilgari ozod qilinishi mumkin:\nu oʻz vakolatlarini zimmasidan soqit qilish toʻgʻrisida yozma ravishda ariza bergan taqdirda;\nu qonunga koʻra Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilning vakolatlarini amalga oshirishga mos kelmaydigan lavozimga saylangan yoki tayinlangan taqdirda;\nu sogʻligʻining holatiga yoki boshqa uzrli sabablarga koʻra Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil vazifasini bajarishga uzoq vaqt mobaynida qodir boʻlmagan taqdirda;\nunga nisbatan sudning ayblov hukmi qonuniy kuchga kirgan taqdirda;\nu oʻz majburiyatlarini muntazam ravishda, uzrli sabablarsiz bajarmagan taqdirda.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3321352#art-4#p1",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "4-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-08-29",
+     "text": "4-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilni lavozimga tayinlash va lavozimidan ozod etish\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakil Oʻzbekiston Respublikasi Prezidenti tomonidan lavozimga tayinlanadi va lavozimidan ozod etiladi.\nTayinlanish kuni oʻttiz yoshga toʻlgan, oliy maʼlumotli, davlat tilini biladigan, tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish sohasidagi faoliyatda yoxud tadbirkorlik faoliyatida tajribaga ega boʻlgan, bevosita tayinlanishidan oldin kamida besh yil Oʻzbekiston Respublikasi hududida muqim yashayotgan Oʻzbekiston Respublikasi fuqarosi Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil etib tayinlanishi mumkin.",
+     "retrieval_score": 0.9587,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3321352#art-21#p1",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "21-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-11-13",
+     "text": "21-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilning oʻrinbosarlari\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakilning Oʻzbekiston Respublikasi Prezidenti tomonidan lavozimga tayinlanadigan va lavozimidan ozod qilinadigan ikki nafar oʻrinbosari boʻladi.\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakil oʻz lavozimidan muddatidan ilgari ozod qilingan taqdirda, Tadbirkorlarning huquqlarini himoya qilish boʻyicha yangi vakil tayinlanguniga qadar uning vazifasini oʻrinbosarlaridan biri vaqtincha bajarib turadi va ana shu davrda unga nisbatan Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil uchun belgilangan kafolatlar tatbiq etiladi.",
+     "retrieval_score": 0.9316,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3321352#art-5#p1",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "5-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-08-29",
+     "text": "5-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil lavozimiga mos kelmaydigan faoliyat\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakil oʻzining siyosiy partiyaga aʼzoligini oʻz vazifalarini bajarayotgan davrda toʻxtatib turishi yoki tugatishi shart. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil ilmiy, pedagogik va ijodiy faoliyatdan tashqari haq toʻlanadigan boshqa turdagi faoliyat bilan shugʻullanishi mumkin emas.",
+     "retrieval_score": 0.8718,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3321352#art-6#p1",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "6-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-08-29",
+     "text": "6-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil faoliyatining asosiy prinsiplari\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakil faoliyatining asosiy prinsiplari qonuniylik, mustaqillik, adolatparvarlik, insonparvarlik, oshkoralik, ochiqlik, tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlari ustuvorligidan iboratdir.",
+     "retrieval_score": 0.8236,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2022,
+    "retrieval_ms": 891,
+    "rerank_ms": 0,
+    "generation_ms": 1788,
+    "total_ms": 4702
+   },
+   "usage": {
+    "input_tokens": 9842,
+    "output_tokens": 431,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Tadbirkorlar huquqlarini himoya qilish boʻyicha vakil qanday holatda oʻz xohishi bilan yozma ariza berib, lavozimidan muddatidan oldin ozod qilinishi mumkin?",
+    "search_queries": [
+     "Tadbirkorlar huquqlarini himoya qilish boʻyicha vakil qanday holatda oʻz xohishi bilan yozma ariza berib, lavozimidan muddatidan oldin ozod qilinishi mumkin?",
+     "Tadbirkorlar huquqlarini himoya qilish boʻyicha vakilni lavozimidan ozod qilish",
+     "vakil oʻz xohishiga koʻra yozma ariza bilan muddatidan oldin ozod qilish",
+     "Tadbirkorlar huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil faoliyati"
+    ],
+    "doc_hints": [
+     "Tadbirkorlar huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 432,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q004",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasi konstitutsiyasining 77-moddasiga koʻra, ota-onalar va ularning oʻrnini bosuvchi shaxslar oʻz farzandlarini voyaga yetguniga qadar boqishi, ularning tarbiyasi, taʼlim olishi, sogʻlom, toʻlaqonli va har tomonlama kamol topishi xususida gʻamxoʻrlik qilishga majburdirlar [1]. Oila kodeksining 73-moddasiga koʻra, ota-ona oʻz bolalarini tarbiyalashi shart va ularning tarbiyasi hamda kamoloti uchun javobgardir [2]. Shuningdek, ota-ona voyaga yetmagan bolalariga taʼminot berishi shart [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "77-modda",
+     "part": "1–2-qism",
+     "edition_date": "2023-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:6445145#art-77#p1",
+     "quote": "Ota-onalar va ularning oʻrnini bosuvchi shaxslar oʻz farzandlarini voyaga yetguniga qadar boqishi, ularning tarbiyasi, taʼlim olishi, sogʻlom, toʻlaqonli va har tomonlama kamol topishi xususida gʻamxoʻrlik qilishga majburdirlar",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "73-modda",
+     "part": "1–4-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-104720#art-73#p1",
+     "quote": "Ota-ona oʻz bolalarini tarbiyalash huquqiga ega va tarbiyalashi shart",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "96-modda",
+     "part": "1–4-qism",
+     "edition_date": "2020-03-11",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-104720#art-96#p1",
+     "quote": "Ota-ona voyaga yetmagan bolalariga taʼminot berishi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:6445145#art-77#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "77-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-04-30",
+     "text": "77-modda.\nOta-onalar va ularning oʻrnini bosuvchi shaxslar oʻz farzandlarini voyaga yetguniga qadar boqishi, ularning tarbiyasi, taʼlim olishi, sogʻlom, toʻlaqonli va har tomonlama kamol topishi xususida gʻamxoʻrlik qilishga majburdirlar.\nDavlat va jamiyat yetim bolalarni hamda ota-onasining vasiyligidan mahrum boʻlgan bolalarni boqishni, tarbiyalashni, ularning taʼlim olishini, sogʻlom, toʻlaqonli va har tomonlama kamol topishini taʼminlaydi, shu maqsadda xayriya faoliyatini ragʻbatlantiradi.",
+     "retrieval_score": 0.9918,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4953674#art-62#p1",
+     "doc_id": "lex:4953674",
+     "doc_title": "QORAQALPOGʻISTON RESPUBLIKASINING KONSTITUTSIYASI Qoraqalpogʻiston Respublikasi Oliy Kengashi tomonidan 1993-yil 9-aprelda qabul qilingan",
+     "url": "https://lex.uz/docs/4953674",
+     "article": "62-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-02-26",
+     "text": "62-modda. Ota-onalar oʻz farzandlarini voyaga yetgunlariga qadar boqish va tarbiyalashga majburdirlar.\nDavlat va jamiyat yetim bolalarni va ota-onalarining vasiyligidan mahrum boʻlgan bolalarni boqish, tarbiyalash va oʻqitishni taʼminlaydi, bolalarga bagʻishlangan xayriya faoliyatlarini ragʻbatlantiradi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-104720#art-73#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "73-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "73-modda. Ota-onaning bolalarga taʼlim-tarbiya berishga oid huquq va majburiyatlari\nOta-ona oʻz bolalarini tarbiyalash huquqiga ega va tarbiyalashi shart.\nOta-ona oʻz bolalarining tarbiyasi va kamoloti uchun javobgardir. Ular oʻz bolalarining sogʻligʻi, jismoniy, ruhiy, maʼnaviy va axloqiy kamoloti haqida gʻamxoʻrlik qilishlari shart.\nOta-ona oʻz bolalarini tarbiyalashda boshqa barcha shaxslarga nisbatan ustun huquqqa ega.\nOta-ona bolalarining qonunchilikda belgilangan zarur darajada taʼlim olishini taʼminlashi shart.",
+     "retrieval_score": 0.9235,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-104720#art-96#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "96-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2020-03-11",
+     "text": "96-modda. Ota-onaning voyaga yetmagan bolalariga taʼminot berish majburiyati\nOta-ona voyaga yetmagan bolalariga taʼminot berishi shart.\nVoyaga yetmagan bolalariga taʼminot berish majburiyatini ixtiyoriy ravishda bajarmagan ota (ona)dan sudning hal qiluv qaroriga yoki sud buyrugʻiga asosan aliment undiriladi.\nVoyaga yetmagan bolalarga aliment toʻlash haqida ota-ona oʻrtasida kelishuv boʻlmaganda yoki aliment ixtiyoriy ravishda toʻlanmaganda va ota-onadan birortasi ham aliment undirish toʻgʻrisida sudga daʼvo yoxud ariza bilan murojaat qilmagan hollarda, vasiylik va homiylik organlari, shuningdek oʻn toʻrt yoshga toʻlgan bola voyaga yetmagan bolaning taʼminoti uchun ota yoki onadan qonunda belgilangan miqdorda aliment undirish toʻgʻrisida daʼvo qoʻzgʻatishga haqlidir.\nOta-ona va bola alohida-alohida yashagan taqdirda, vasiylik va homiylik organlari, shuningdek oʻn toʻrt yoshga toʻlgan bola bir vaqtning oʻzida ota va onadan voyaga yetmagan bolalarning taʼminoti uchun aliment undirish toʻgʻrisida daʼvo qoʻzgʻatishga haqli.",
+     "retrieval_score": 0.7069,
+     "rerank_score": 0.4,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-104720#art-72#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "72-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1998-04-30",
+     "text": "72-modda. Voyaga yetmagan ota-onaning huquqlari\nVoyaga yetmagan ota-ona oʻz bolasi bilan birga yashash va uning tarbiyasida ishtirok etish huquqiga ega.\nOʻzaro nikohda boʻlmagan voyaga yetmagan ota-ona ulardan bola tugʻilganda hamda ularning onaligi va (yoki) otaligi belgilanganda oʻn olti yoshga toʻlishlari bilan ota-onalik huquqlarini mustaqil ravishda amalga oshirishga haqlidirlar. Voyaga yetmagan ota-ona oʻn olti yoshga yetgunga qadar, bolani voyaga yetmagan ota-ona bilan birgalikda tarbiyalash uchun bolaga vasiy tayinlanishi mumkin. Bolaning vasiysi bilan voyaga yetmagan ota-ona oʻrtasida kelib chiqadigan kelishmovchiliklar vasiylik va homiylik organi tomonidan hal etiladi.\nVoyaga yetmagan ota-ona oʻz otaligi va onaligini umumiy asoslarda eʼtirof etish yoki bunga eʼtiroz bildirish huquqiga egadir.",
+     "retrieval_score": 0.9025,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1940,
+    "retrieval_ms": 565,
+    "rerank_ms": 0,
+    "generation_ms": 2842,
+    "total_ms": 5349
+   },
+   "usage": {
+    "input_tokens": 10960,
+    "output_tokens": 596,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Ota-ona farzandini necha yoshga yetguncha boqishi va tarbiyalashi shart?",
+    "search_queries": [
+     "Ota-ona farzandini necha yoshga yetguncha boqishi va tarbiyalashi shart?",
+     "ota-ona farzandini voyaga yetguncha boqish va tarbiyalash majburiyati",
+     "ota-onaning farzandlarini tarbiyalash va taʼminlash majburiyati",
+     "farzandni voyaga yetgunga qadar moddiy taʼminlash majburiyati"
+    ],
+    "doc_hints": [
+     "Oila kodeksi",
+     "Konstitutsiya"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 678,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q005",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasining yer kodeksining 51-moddasiga koʻra, qishloq xoʻjaligi kooperativlari va boshqa qishloq xoʻjaligi korxonalarida yer uchastkalari oilalarga qishloq xoʻjaligi mahsuloti yetishtirish uchun kamida besh yil muddatga foydalanishga oila pudrati shartnomasi shartlari asosida beriladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "51-modda",
+     "part": "1–3-qism",
+     "edition_date": "2025-05-05",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-152653#art-51#p1",
+     "quote": "Qishloq xoʻjaligi kooperativlari va boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlarida yer uchastkalari, qoida tariqasida, oilalarga qishloq xoʻjaligi mahsuloti yetishtirish uchun kamida besh yil muddatga foydalanishga oila pudrati shartnomasi shartlari asosida beriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-152653#art-51#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "51-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "51-modda. Yer uchastkalarini xoʻjalik ichida taqsimlash. Oila (jamoa) pudrati\nQishloq xoʻjaligi kooperativlari va boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlarida yer uchastkalari, qoida tariqasida, oilalarga qishloq xoʻjaligi mahsuloti yetishtirish uchun kamida besh yil muddatga foydalanishga oila pudrati shartnomasi shartlari asosida beriladi.\nYer uchastkalari muayyan turdagi qishloq xoʻjaligi ishlarini bajarish uchun qishloq xoʻjaligi kooperativlari aʼzolarining va boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlari xodimlarining guruhlariga ham kamida besh yil muddatga foydalanishga jamoa pudrati shartnomasi shartlari asosida berilishi mumkin.\nOila pudrati — qishloq xoʻjaligi kooperativi va boshqa qishloq xoʻjaligi korxonasi, muassasasi hamda tashkiloti tomonidan oilaga vaqtincha foydalanishga oila pudrati shartnomasi shartlari asosida berilgan yer uchastkalarida qishloq xoʻjaligi mahsuloti yetishtirishda oila aʼzolarining bevosita ishtirok etishiga asoslangan ishlab chiqarish va mehnatni xoʻjalik ichida tashkil etish shaklidir.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-152653#art-51#p4",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "51-modda",
+     "part": "4–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "51-modda. Yer uchastkalarini xoʻjalik ichida taqsimlash. Oila (jamoa) pudrati\nOila (jamoa) pudrati shartnomasi har yili qishloq xoʻjaligi kooperativi, boshqa jamoa qishloq xoʻjaligi korxonasi boshqaruv organlari orqali shu kooperativ, jamoa korxonasi bilan yoki boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlarining ish beruvchisi (maʼmuriyati) bilan oila boshligʻi (jamoaning vakolat berilgan vakili) oʻrtasida tuziladi.\nOila (jamoa) pudrati shartnomasida quyidagilar nazarda tutiladi:\nyer uchastkasining oʻlchami, joylashgan yeri va holati;\nyer uchastkasidan foydalanish shartlari, taraflarning almashlab ekish sxemasiga muvofiq yerning hosildorligi va sifatini oshirish borasidagi, tuproq unumdorligini saqlash va oshirish borasidagi majburiyatlari;\nyetishtiriladigan qishloq xoʻjalik mahsulotining miqdori va turlari, uning sifati;\nyetishtirilgan qishloq xoʻjalik mahsulotining bahosi, unga haq toʻlash va uni realizatsiya qilish shartlari;\nsugʻorish uchun suv va moddiy-texnika resurslari bilan pudratchini taʼminlash;\ntaraflarning shartnoma majburiyatlarini bajarmaganlik uchun javobgarligi va ularning xohishiga koʻra boshqa shartlar.\nOila (jamoa) pudrati shartlari asosida beriladigan yer uchastkalaridan qatʼiy ruxsat etilgan foydalanishning asosiy turlariga muvofiq foydalaniladi, bunda haydaladigan yerlar maydoni oʻlchamlarining kamaytirilishiga yoʻl qoʻyilmaydi.",
+     "retrieval_score": 0.9319,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-152653#art-51#p13",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "51-modda",
+     "part": "13–17-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "51-modda. Yer uchastkalarini xoʻjalik ichida taqsimlash. Oila (jamoa) pudrati\nYer uchastkasining oʻlchamlari va uning chegaralari taraflarning kelishuviga koʻra oʻzgartirilishi mumkin.\nOila (jamoa) pudratida mehnatga haq toʻlash yakuniy natijalarga koʻra — yetishtirilgan mahsulotning shartnomada nazarda tutilgan miqdori, sifati va bahosiga koʻra amalga oshiriladi. Shu bilan birga oila aʼzolari (pudratchilar) — pay egalari xoʻjalikning yil davomidagi faoliyati yakuniy natijalariga koʻra aniqlanadigan dividendlar oladilar.\nOila (jamoa) pudrati shartlari asosida berilgan yer uchastkasi uchun pudratchidan yer haqi undirilmaydi. Bu uchastkalardan olinadigan yer soligʻini qishloq xoʻjaligi kooperativi va boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlari belgilangan tartibda toʻlaydi.\nPudrat shartnomasi shartlari asosida olingan yer uchastkasini ijaraga yoki yordamchi pudratga berish taqiqlanadi.\nYer uchastkasi jamoat ehtiyojlari uchun olib qoʻyilgan taqdirda pudratchi zarar va boshqa xarajatlar ushbu Kodeks 86-moddasiga muvofiq qoplanishini talab qilish huquqiga ega.",
+     "retrieval_score": 0.918,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-152653#art-24.2#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "24²-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-07-18",
+     "text": "242-modda. Qishloq xoʻjaligiga moʻljallangan yerlarni ikkilamchi ijaraga berish\nQishloq xoʻjaligiga moʻljallangan yerlar qishloq xoʻjaligi mahsuloti yetishtirish maqsadida yuridik va jismoniy shaxslarga ikkilamchi ijaraga berilishi (ularni uchinchi shaxslarga berish huquqisiz) mumkin.\nQishloq xoʻjaligiga moʻljallangan yer uchastkasi bir yilgacha boʻlgan muddatga, qishloq xoʻjaligiga moʻljallangan yer uchastkalarining dala chetlaridagi kanallar, sugʻorish va kollektor-drenaj tarmoqlari atrofidagi maydonlari esa qishloq xoʻjaligi mahsulotini yetishtirish uchun oʻn yilgacha boʻlgan muddatga ikkilamchi ijaraga berilishi mumkin, bundan ushbu moddaning uchinchi qismida nazarda tutilgan hollar mustasno.\nFoydalanishga kiritilgan qishloq xoʻjaligiga moʻljallangan yer uchastkalarini ikkilamchi ijaraga berish shartnomasining muddati ushbu Kodeksning 241-moddasida nazarda tutilgan hollarda, taraflarning kelishuviga koʻra belgilanadi va u qishloq xoʻjaligiga moʻljallangan yer uchastkasini ijaraga berish shartnomasi muddatidan ortiq boʻlishi mumkin emas.\nIkkilamchi ijaraga berilgan qishloq xoʻjaligiga moʻljallangan yer uchastkasi oldi-sotdi, garov, hadya, ayirboshlash obyekti boʻlishi mumkin emas.",
+     "retrieval_score": 0.7492,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-152653#art-24#p20",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "24-modda",
+     "part": "20–27-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-10-10",
+     "text": "24-modda. Yer uchastkasi ijarasi\nQishloq xoʻjaligiga moʻljallangan yer uchastkasiga nisbatan huquqlar va majburiyatlar ushbu Kodeksning 245-moddasida belgilangan tartibda ijaraga oluvchi tomonidan boshqa shaxsga oʻtkazilishi (qayta ijaraga berilishi) mumkin.\nYer uchastkalari ijarasining shartlari va muddatlari taraflarning kelishuviga binoan belgilanadi hamda shartnomada mustahkamlab qoʻyiladi.\nQishloq xoʻjaligiga moʻljallangan yerlar ushbu Kodeksning 461-moddasida belgilangan oʻlchamlarda oʻttiz yil muddatga ijaraga beriladi.\nQishloq xoʻjaligiga moʻljallanmagan yerlarni ijaraga berish muddati yuz yildan ortiq boʻlishi mumkin emas.\nChet el investitsiyalari ishtirokidagi korxonalarga, xalqaro birlashmalar va tashkilotlarga, chet el jismoniy va yuridik shaxslariga yer uchastkalari yigirma besh yilgacha boʻlgan muddatga ijaraga beriladi.\nIjarachi yer uchastkalari ijara shartnomasining amal qilish muddati tugaganidan keyin shartnomani yangilashda boshqa teng sharoitlarda ustun huquqqa ega.\nYer uchastkalarini ijaraga olganlik uchun haq toʻlash tartibi va uning miqdori ijara shartnomasida qonunchilikka muvofiq belgilanadi.\nYer uchastkalarini ijaraga olish shartnomasini muddatidan oldin bekor qilish taraflarning kelishuvi bilan, bunday kelishuvga erishilmagan taqdirda esa, sudning hal qiluv qarori bilan amalga oshiriladi.",
+     "retrieval_score": 0.7157,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1967,
+    "retrieval_ms": 852,
+    "rerank_ms": 0,
+    "generation_ms": 1977,
+    "total_ms": 4798
+   },
+   "usage": {
+    "input_tokens": 14592,
+    "output_tokens": 494,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Qishloq xoʻjaligi korxonasida oilaga mahsulot yetishtirish uchun yer uchastkasi oila pudrat shartnomasi asosida kamida qancha muddatga beriladi?",
+    "search_queries": [
+     "Qishloq xoʻjaligi korxonasida oilaga mahsulot yetishtirish uchun yer uchastkasi oila pudrati shartnomasi asosida kamida qancha muddatga beriladi?",
+     "Qishloq xoʻjaligi korxonasida oilaga mahsulot yetishtirish uchun yer uchastkasi oila pudrat shartnomasi asosida kamida qancha muddatga beriladi?",
+     "oila pudrat shartnomasi asosida yer uchastkasi berish muddati",
+     "qishloq xoʻjaligi korxonasida oilaga mahsulot yetishtirish uchun yer uchastkasi",
+     "oila pudrati shartnomasi muddati yer uchastkasi"
+    ],
+    "doc_hints": [
+     "Yer kodeksi",
+     "Dehqon xoʻjaligi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 568,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q006",
+   "status": "ok",
+   "answer": "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksning 202-moddasiga koʻra, apellyatsiya shikoyati apellyatsiya instansiyasi sudiga yoʻllanadi, biroq hal qiluv qarorini qabul qilgan sudga beriladi, va bu sud shikoyat kelib tushgan kundan eʼtiboran besh kunlik muddatda uni apellyatsiya instansiyasi sudiga ish bilan birga yuborishi shart [1]. Kassatsiya shikoyati esa birinchi instansiya sudining hal qiluv qarori qonuniy kuchga kirgan kundan eʼtiboran olti oy ichida berilishi mumkin [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "202-modda",
+     "part": "1–2-qism",
+     "edition_date": "2018-01-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3527353#art-202#p1",
+     "quote": "Apellyatsiya shikoyati (protesti) apellyatsiya instansiyasi sudiga yoʻllanadi, biroq hal qiluv qarorini qabul qilgan sudga beriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "227-modda",
+     "part": "1–3-qism",
+     "edition_date": "2024-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3527353#art-227#p1",
+     "quote": "Kassatsiya shikoyati (protesti) birinchi instansiya sudining hal qiluv qarori qonuniy kuchga kirgan kundan eʼtiboran olti oy ichida berilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3527353#art-202#p1",
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "202-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-25",
+     "text": "202-modda. Apellyatsiya shikoyatini (protestini) berish tartibi\nApellyatsiya shikoyati (protesti) apellyatsiya instansiyasi sudiga yoʻllanadi, biroq hal qiluv qarorini qabul qilgan sudga beriladi.\nHal qiluv qarorini qabul qilgan sud shikoyat (protest) kelib tushgan kundan eʼtiboran besh kunlik muddatda uni apellyatsiya instansiyasi sudiga ish bilan birga yuborishi shart.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3527353#art-227#p1",
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "227-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "227-modda. Kassatsiya shikoyatini (protestini) berish muddati\nKassatsiya shikoyati (protesti) birinchi instansiya sudining hal qiluv qarori qonuniy kuchga kirgan kundan eʼtiboran olti oy ichida berilishi mumkin.\nOʻtkazib yuborilgan kassatsiya shikoyati (protesti) berish muddati shikoyat (protest) berayotgan shaxsning iltimosnomasiga koʻra kassatsiya instansiya sudining sudyasi tomonidan, basharti iltimosnoma kassatsiya shikoyati (protesti) berish muddati oʻtgan kundan eʼtiboran uch oydan kechiktirmay berilgan boʻlsa va oʻtkazib yuborilgan muddat sud tomonidan uzrli deb topilsa, tiklanishi mumkin.\nKassatsiya shikoyati (protesti) berishning oʻtkazib yuborilgan muddatini tiklash yoki uni tiklashni rad etish haqida ajrim chiqariladi.",
+     "retrieval_score": 0.9059,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3527353#art-226#p1",
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "226-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "226-modda. Kassatsiya shikoyatini (protestini) berish tartibi\nKassatsiya shikoyati (protesti) kassatsiya instansiyasi sudiga yoʻllanadi, biroq hal qiluv qarorini qabul qilgan sudga beriladi.\nHal qiluv qarorini qabul qilgan sud shikoyat (protest) kelib tushgan kundan eʼtiboran besh kunlik muddatda uni kassatsiya instansiyasi sudiga ish bilan birga yuborishi shart.",
+     "retrieval_score": 0.8953,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:6711102#art-226#p1",
+     "doc_id": "lex:6711102",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni sud qarorlarining qonuniyligi va asosliligini tekshirish tartibi takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksiga oʻzgartirish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/6711102",
+     "article": "226-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-08-15",
+     "text": "226-modda. Kassatsiya shikoyatini (protestini) berish tartibi\nKassatsiya shikoyati (protesti) kassatsiya instansiyasi sudiga yoʻllanadi, biroq hal qiluv qarorini qabul qilgan sudga beriladi.\nHal qiluv qarorini qabul qilgan sud shikoyat (protest) kelib tushgan kundan eʼtiboran besh kunlik muddatda uni kassatsiya instansiyasi sudiga ish bilan birga yuborishi shart”;\n25) 227-moddaning birinchi qismi quyidagi tahrirda bayon etilsin:\n“Kassatsiya shikoyati (protesti) birinchi instansiya sudining hal qiluv qarori qonuniy kuchga kirgan kundan eʼtiboran olti oy ichida berilishi mumkin”;\n26) 228-moddaning birinchi qismidagi “kassatsiya instansiyasi sudiga” degan soʻzlar “sudga” degan soʻz bilan almashtirilsin;\n27) 230-moddaning uchinchi qismi quyidagi tahrirda bayon etilsin:\n“Arizani (shikoyatni) qaytarish toʻgʻrisidagi, arizani (shikoyatni) qabul qilishni rad etish haqidagi ajrim ustidan berilgan kassatsiya shikoyatiga (protestiga) qaytarilgan ariza (shikoyat) va uni sudga taqdim etish chogʻida unga qoʻshib berilgan hujjatlar ham ilova qilinishi kerak”;\n28) 2301-moddaning matni quyidagi tahrirda bayon etilsin:",
+     "retrieval_score": 0.7609,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3527353#art-224#p1",
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "224-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "224-modda. Kassatsiya shikoyati berish (protesti keltirish) huquqi\nIshda ishtirok etuvchi shaxslar, shuningdek ishda ishtirok etishga jalb qilinmagan, ammo huquqlari va majburiyatlari toʻgʻrisida sud hal qiluv qarori qabul qilgan shaxslar birinchi instansiya sudining qonuniy kuchga kirgan, apellyatsiya tartibida koʻrilmagan hal qiluv qarori ustidan kassatsiya shikoyati, prokuror esa kassatsiya protesti berishga haqli.\nOʻzbekiston Respublikasi Prezidenti huzuridagi Tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil birinchi instansiya sudining qonuniy kuchga kirgan va apellyatsiya tartibida koʻrilmagan hal qiluv qarori ustidan kassatsiya shikoyati berishga haqli, bundan tadbirkorlik faoliyati bilan bogʻliq boʻlmagan nizolar mustasno.\nBirinchi instansiya sudining hal qiluv qarori ustidan toʻliq yoki qisman shikoyat qilinishi (protest keltirilishi) mumkin.",
+     "retrieval_score": 0.8471,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2193,
+    "retrieval_ms": 2322,
+    "rerank_ms": 0,
+    "generation_ms": 3136,
+    "total_ms": 7653
+   },
+   "usage": {
+    "input_tokens": 14591,
+    "output_tokens": 767,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksga koʻra, apellyatsiya shikoyati qaysi sudga beriladi va uni qabul qilgan sud shikoyatni necha kun ichida apellyatsiya instansiyasiga yuborishi shart? Shuningdek, birinchi instansiya sudining qarori kuchga kirgandan keyin kassatsiya shikoyatini berish uchun qancha muddat belgilangan?",
+    "search_queries": [
+     "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksiga koʻra, apellyatsiya shikoyati qaysi sudga yuboriladi va uni qabul qilgan sud shikoyatni necha kun ichida apellyatsiya instansiyasiga yuborishi kerak? Shuningdek, birinchi instansiya qarori kuchga kirgandan keyin kassatsiya shikoyatini berish uchun qancha muddat bor?",
+     "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksga koʻra, apellyatsiya shikoyati qaysi sudga beriladi va uni qabul qilgan sud shikoyatni necha kun ichida apellyatsiya instansiyasiga yuborishi shart? Shuningdek, birinchi instansiya sudining qarori kuchga kirgandan keyin kassatsiya shikoyatini berish uchun qancha muddat belgilangan?",
+     "apellyatsiya shikoyati beriladigan sud va uni apellyatsiya instansiyasiga yuborish muddati",
+     "apellyatsiya shikoyatini qabul qilgan sud uni yuborish muddati",
+     "kassatsiya shikoyatini berish muddati qaror kuchga kirgandan keyin"
+    ],
+    "doc_hints": [
+     "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeks",
+     "toʻgʻrisidagi kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 554,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 1,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q007",
+   "status": "ok",
+   "answer": "Ha, fuqaro uy-joy daxlsizligi huquqiga ega: hech kim uy-joyga unda yashovchi shaxslarning xohishiga qarshi kira olmaydi, uy-joyga kirish, olib qoʻyish va koʻzdan kechirish faqat qonunda nazarda tutilgan hollarda va tartibda, tintuv esa faqat qonunga muvofiq va sudning qaroriga asosan amalga oshiriladi [1]. Qoraqalpogʻiston Respublikasi Konstitutsiyasining 25-moddasiga koʻra ham hech kim qonun nazarda tutgan hollardan va tartibdan tashqari birovning turar joyiga kirishi, tintuv oʻtkazishi yoki uni koʻzdan kechirishi mumkin emas [2]. Saylovda ovoz berish huquqiga esa Oʻzbekiston Respublikasining oʻn sakkiz yoshga toʻlgan fuqarolari ega [3], Saylov kodeksining 4-moddasiga koʻra saylov kuniga qadar yoki saylov kuni oʻn sakkiz yoshga toʻlgan fuqarolar saylash huquqiga egadir [4].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "31-modda",
+     "part": "1–5-qism",
+     "edition_date": "2023-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:6445145#art-31#p1",
+     "quote": "Hech kim uy-joyga unda yashovchi shaxslarning xohishiga qarshi kirishi mumkin emas. Uy-joyga kirishga, shuningdek unda olib qoʻyishni va koʻzdan kechirishni oʻtkazishga faqat qonunda nazarda tutilgan hollarda va tartibda yoʻl qoʻyiladi. Uy-joyda tintuv oʻtkazishga faqat qonunga muvofiq va sudning qaroriga asosan yoʻl qoʻyiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4953674",
+     "doc_title": "QORAQALPOGʻISTON RESPUBLIKASINING KONSTITUTSIYASI Qoraqalpogʻiston Respublikasi Oliy Kengashi tomonidan 1993-yil 9-aprelda qabul qilingan",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/4953674",
+     "article": "25-modda",
+     "part": "1-qism",
+     "edition_date": "1994-02-26",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4953674#art-25#p1",
+     "quote": "Hech kim qonun nazarda tutgan hollardan va tartibdan tashqari birovning turar joyiga kirishi, tintuv oʻtkazishi yoki uni koʻzdan kechirishi, yozishmalar va telefonda soʻzlashuvlar sirini oshkora qilishi mumkin emas",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "128-modda",
+     "part": "1–3-qism",
+     "edition_date": "2023-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:6445145#art-128#p1",
+     "quote": "Oʻzbekiston Respublikasining oʻn sakkiz yoshga toʻlgan fuqarolari saylash huquqiga ega",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "4-modda",
+     "part": "1–3-qism",
+     "edition_date": "2023-12-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-4#p1",
+     "quote": "Saylov kuniga qadar yoki saylov kuni oʻn sakkiz yoshga toʻlgan Oʻzbekiston Respublikasi fuqarolari (bundan buyon matnda fuqarolar deb yuritiladi) saylash huquqiga egadir",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:6445145#art-31#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "31-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-04-30",
+     "text": "31-modda.\nHar bir inson shaxsiy hayotining daxlsizligi, shaxsiy va oilaviy sirga ega boʻlish, oʻz shaʼni va qadr-qimmatini himoya qilish huquqiga ega.\nHar kim yozishmalari, telefon orqali soʻzlashuvlari, pochta, elektron va boshqa xabarlari sir saqlanishi huquqiga ega. Ushbu huquqning cheklanishiga faqat qonunga muvofiq va sudning qaroriga asosan yoʻl qoʻyiladi.\nHar kim oʻz shaxsiga doir maʼlumotlarning himoya qilinishi huquqiga, shuningdek notoʻgʻri maʼlumotlarning tuzatilishini, oʻzi toʻgʻrisida qonunga xilof yoʻl bilan toʻplangan yoki huquqiy asoslarga ega boʻlmay qolgan maʼlumotlarning yoʻq qilinishini talab qilish huquqiga ega.\nHar kim uy-joy daxlsizligi huquqiga ega.\nHech kim uy-joyga unda yashovchi shaxslarning xohishiga qarshi kirishi mumkin emas. Uy-joyga kirishga, shuningdek unda olib qoʻyishni va koʻzdan kechirishni oʻtkazishga faqat qonunda nazarda tutilgan hollarda va tartibda yoʻl qoʻyiladi. Uy-joyda tintuv oʻtkazishga faqat qonunga muvofiq va sudning qaroriga asosan yoʻl qoʻyiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:6445145#art-128#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "128-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-04-30",
+     "text": "128-modda.\nOʻzbekiston Respublikasining fuqarolari davlat hokimiyati vakillik organlariga saylash va saylanish huquqiga egadirlar. Har bir saylovchi bir ovozga ega. Ovoz berish huquqi, oʻz xohish-irodasini bildirish tengligi va erkinligi qonun bilan kafolatlanadi.\nOʻzbekiston Respublikasi Prezidenti saylovi, Oʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasiga hamda Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesiga, viloyatlar, tumanlar, shaharlar davlat hokimiyati vakillik organlariga saylov tegishincha ularning konstitutsiyaviy vakolat muddati tugaydigan yilda — oktabr oyi uchinchi oʻn kunligining birinchi yakshanbasida oʻtkaziladi, bundan ushbu Konstitutsiyada nazarda tutilgan muddatidan ilgari saylov oʻtkazish hollari mustasno. Saylovlar umumiy, teng va toʻgʻridan-toʻgʻri saylov huquqi asosida yashirin ovoz berish yoʻli bilan oʻtkaziladi. Oʻzbekiston Respublikasining oʻn sakkiz yoshga toʻlgan fuqarolari saylash huquqiga ega.\nOʻzbekiston Respublikasi Prezidenti muddatidan ilgari Oʻzbekiston Respublikasi Prezidenti saylovini tayinlashga haqli.",
+     "retrieval_score": 0.9891,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4953674#art-25#p1",
+     "doc_id": "lex:4953674",
+     "doc_title": "QORAQALPOGʻISTON RESPUBLIKASINING KONSTITUTSIYASI Qoraqalpogʻiston Respublikasi Oliy Kengashi tomonidan 1993-yil 9-aprelda qabul qilingan",
+     "url": "https://lex.uz/docs/4953674",
+     "article": "25-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-02-26",
+     "text": "25-modda. Har kim oʻz shaʼni va obroʻsiga qilingan tajovuzlardan, shaxsiy hayotiga aralashishdan himoyalanish va turar joyi daxlsizligi huquqiga ega.\nHech kim qonun nazarda tutgan hollardan va tartibdan tashqari birovning turar joyiga kirishi, tintuv oʻtkazishi yoki uni koʻzdan kechirishi, yozishmalar va telefonda soʻzlashuvlar sirini oshkora qilishi mumkin emas.",
+     "retrieval_score": 0.8619,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4953674#art-111#p1",
+     "doc_id": "lex:4953674",
+     "doc_title": "QORAQALPOGʻISTON RESPUBLIKASINING KONSTITUTSIYASI Qoraqalpogʻiston Respublikasi Oliy Kengashi tomonidan 1993-yil 9-aprelda qabul qilingan",
+     "url": "https://lex.uz/docs/4953674",
+     "article": "111-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-02-26",
+     "text": "111-modda. Qoraqalpogʻiston Respublikasi fuqarolari vakillik organlariga saylash va saylanish huquqiga egadirlar. Har bir saylovchi bir ovozga ega. Ovoz berish huquqi, oʻz xohish-irodasini bildirish tengligi va erkinligi qonun bilan kafolatlanadi.\nQoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesiga, tumanlar va shaharlar davlat hokimiyati vakillik organlariga saylov tegishincha ularning konstitutsiyaviy vakolat muddati tugaydigan yilda — dekabr oyi uchinchi oʻn kunligining birinchi yakshanbasida oʻtkaziladi. Saylovlar umumiy, teng va toʻgʻridan-toʻgʻri saylov huquqi asosida yashirin ovoz berish yoʻli bilan oʻtkaziladi. Qoraqalpogʻiston Respublikasining oʻn sakkiz yoshga toʻlgan fuqarolari saylash huquqiga egadirlar.\nSud tomonidan muomalaga layoqatsiz deb topilgan fuqarolar, shuningdek sud hukmi bilan ozodlikdan mahrum etish joylarida saqlanayotgan shaxslar saylanishi mumkin emas va saylovda qatnashmaydilar. Boshqa har qanday hollarda fuqarolarning saylov huquqlarini toʻgʻridan-toʻgʻri yoki bilvosita cheklashga yoʻl qoʻyilmaydi.\nQoraqalpogʻiston Respublikasi fuqarosi bir vaqtning oʻzida ikkidan ortiq vakillik organining deputati boʻlishi mumkin emas.\nSaylov oʻtkazish tartibi qonun bilan belgilanadi.",
+     "retrieval_score": 0.9073,
+     "rerank_score": 0.85,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4386848#art-4#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "4-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-19",
+     "text": "4-modda. Umumiy saylov huquqi\nOʻzbekiston Respublikasi Prezidenti, Qonunchilik palatasi deputatlari va mahalliy Kengashlar deputatlari saylovlari umumiydir.\nSaylov kuniga qadar yoki saylov kuni oʻn sakkiz yoshga toʻlgan Oʻzbekiston Respublikasi fuqarolari (bundan buyon matnda fuqarolar deb yuritiladi) saylash huquqiga egadir.\nFuqarolar jinsi, irqiy va milliy mansubligi, tili, dinga munosabati, ijtimoiy kelib chiqishi, eʼtiqodi, ijtimoiy mavqeyi, maʼlumoti, mashgʻulotining turi va xususiyatidan qatʼi nazar, teng saylov huquqiga egadir.",
+     "retrieval_score": 0.5743,
+     "rerank_score": 0.85,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2000,
+    "retrieval_ms": 539,
+    "rerank_ms": 0,
+    "generation_ms": 4395,
+    "total_ms": 6936
+   },
+   "usage": {
+    "input_tokens": 11851,
+    "output_tokens": 958,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Qoraqalpogʻiston Respublikasida yashovchi fuqaro oʻz uyiga ruxsatsiz kirishdan himoyalanganmi va u qanday yoshdan saylovda ovoz bera oladi?",
+    "search_queries": [
+     "Qoraqalpogʻiston Respublikasida yashovchi fuqaro uyiga ruxsatsiz kirishdan himoyalanganmi va u qanday yoshdan saylovda ovoz bera oladi?",
+     "Qoraqalpogʻiston Respublikasida yashovchi fuqaro oʻz uyiga ruxsatsiz kirishdan himoyalanganmi va u qanday yoshdan saylovda ovoz bera oladi?",
+     "uy daxlsizligi ruxsatsiz kirish himoya",
+     "saylov huquqi ovoz berish yoshi 18 yosh",
+     "Konstitutsiya uy daxlsizligi saylov huquqi"
+    ],
+    "doc_hints": [
+     "Konstitutsiya",
+     "Saylov kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 894,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q008",
+   "status": "ok",
+   "answer": "Согласно статье 145 Гражданского кодекса, срок, установленный законодательством или сделкой, а также назначаемый судом, определяется календарной датой либо истечением периода времени, измеряемого годами, месяцами, неделями, днями или часами [1].",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "145-modda",
+     "part": "1–2-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-145#p1",
+     "quote": "Qonunchilikda yoki bitimda belgilangan, shuningdek sud tomonidan tayinlanadigan muddat kalendar sana bilan yoxud yillar, oylar, haftalar, kunlar yoki soatlar bilan oʻlchanadigan vaqt davrining oʻtishi bilan belgilanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111189#art-145#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "145-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "145-modda. Muddat belgilash\nQonunchilikda yoki bitimda belgilangan, shuningdek sud tomonidan tayinlanadigan muddat kalendar sana bilan yoxud yillar, oylar, haftalar, kunlar yoki soatlar bilan oʻlchanadigan vaqt davrining oʻtishi bilan belgilanadi.\nMuddat muqarrar yuz berishi kerak boʻlgan voqeani koʻrsatish bilan ham belgilanishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111189#art-147#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "147-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-21",
+     "text": "147-modda. Vaqt davri bilan belgilangan muddatning tamom boʻlishi\nYillar bilan hisoblanadigan muddat uning oxirgi yilidagi tegishli oy va kunda tamom boʻladi.\nYarim yil deb belgilangan muddatga nisbatan oylar bilan hisoblanadigan muddatlar uchun belgilangan qoidalar qoʻllaniladi.\nYil choraklari bilan hisoblanadigan muddatga nisbatan oylar bilan hisoblanadigan muddatlar uchun belgilangan qoidalar qoʻllaniladi. Bunda yil choragi uch oyga teng deb hisoblanadi, yil choraklarining hisobi esa — yil boshidan yuritiladi.\nOylar bilan hisoblanadigan muddat shu muddatning oxirgi oyidagi tegishli kunda tugaydi.\nYarim oy deb belgilangan muddatga kunlar bilan hisoblanadigan muddat deb qaraladi va u oʻn besh kunga teng boʻladi.\nAgar oylar bilan hisoblanadigan muddatning tamom boʻlishi tegishli raqam boʻlmagan oyga toʻgʻri kelsa, u holda muddat shu oyning oxirgi kunida tugaydi.\nHaftalar bilan oʻlchanadigan muddat shu muddatning oxirgi haftasidagi tegishli kunda tugaydi.",
+     "retrieval_score": 0.8553,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111189#art-146#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "146-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-21",
+     "text": "146-modda. Vaqt davri bilan belgilangan muddatning boshlanishi\nVaqt davri bilan belgilangan muddat kalendar sanadan keyingi yoki uning boshlanish kuni deb belgilangan voqea yuz berganidan keyingi kundan oʻta boshlaydi.",
+     "retrieval_score": 0.8491,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111189#art-152#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "152-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-21",
+     "text": "152-modda. Daʼvo muddatlarini oʻzgartirish toʻgʻrisidagi bitimning haqiqiy sanalmasligi\nDaʼvo muddatlari va ularni hisoblash tartibi taraflarning kelishuvi bilan oʻzgartirilishi mumkin emas.\nDaʼvo muddatlari oʻtishini toʻxtatish va uning uzilish asoslari ushbu Kodeks bilan belgilanadi.",
+     "retrieval_score": 0.7651,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-180552#art-405#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "405-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-11-05",
+     "text": "405-modda. Tovarning yaroqlilik muddati\nQonunchilikda, shu jumladan milliy standartlarda tovar oʻz vazifasi boʻyicha foydalanish uchun yaroqsiz holga kelib qoladi deb hisoblanadigan vaqt (yaroqlilik muddati) belgilanishi mumkin.\nSotuvchi yaroqlilik muddati belgilangan tovarni sotib oluvchiga shunday moʻljal bilan topshirishi kerakki, toki undan yaroqlilik muddati tugagunga qadar oʻz vazifasi boʻyicha foydalanish mumkin boʻlsin.",
+     "retrieval_score": 0.7466,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2153,
+    "retrieval_ms": 2314,
+    "rerank_ms": 0,
+    "generation_ms": 2192,
+    "total_ms": 6660
+   },
+   "usage": {
+    "input_tokens": 9359,
+    "output_tokens": 366,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekiston Respublikasi Fuqarolik kodeksiga koʻra, muddat qonunda yoki shartnomada belgilangan qanday birliklar bilan oʻlchanadigan vaqt davri sifatida belgilanishi mumkin?",
+    "search_queries": [
+     "Согласно Гражданскому кодексу Республики Узбекистан, какими единицами может быть определён срок как период времени, измеряемый в установленных законом или договором единицах?",
+     "Oʻzbekiston Respublikasi Fuqarolik kodeksiga koʻra, muddat qonunda yoki shartnomada belgilangan qanday birliklar bilan oʻlchanadigan vaqt davri sifatida belgilanishi mumkin?",
+     "muddat vaqt davri bilan belgilanishi kalendar sana yoki hodisa",
+     "muddat yillar oylar haftalar kunlar soatlar bilan hisoblanishi",
+     "Fuqarolik kodeksi muddatlar hisobi"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 859,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q009",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 299-moddasiga koʻra, arizada bolaning tugʻilgan sanasini koʻpi bilan bir yilga oʻzgartirish soʻralishi mumkin, tugʻilgan joyini esa faqat bola oʻn yoshdan oshmagan boʻlsa oʻzgartirish soʻraladi [1]. Oila kodeksining 164-moddasida ham tugʻilgan sanasi bir yildan ortiq boʻlmagan farq bilan, tugʻilgan joyi esa bola oʻn yoshdan oshmagan boʻlsa oʻzgartirilishi mumkinligi belgilangan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "299-modda",
+     "part": "1–6-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-299#p1",
+     "quote": "farzandlikka olinayotgan bolaning familiyasini, ismini, otasining ismini, tugʻilgan sanasini (koʻpi bilan bir yilga), farzandlikka olinayotgan bolaning tugʻilgan joyini (agar bola oʻn yoshdan oshmagan boʻlsa) oʻzgartirish haqidagi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "164-modda",
+     "part": "1–3-qism",
+     "edition_date": "2013-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-104720#art-164#p1",
+     "quote": "Zarur hollarda bolaning familiyasi, ismi, otasining ismigina emas, balki tugʻilgan sanasi ham bir yildan ortiq boʻlmagan farq bilan oʻzgartiriladi. Agar bola oʻn yoshdan oshmagan boʻlsa, tugʻilgan joyi ham Oʻzbekiston Respublikasi doirasida oʻzgartirilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-299#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "299-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "299-modda. Arizaning mazmuni\nFarzandlikka olish toʻgʻrisidagi arizada quyidagilar koʻrsatilgan boʻlishi kerak:\nfarzandlikka oluvchilarning (oluvchining) familiyasi, ismi, otasining ismi, ularning (uning) yashash joyi;\nfarzandlikka olinayotgan bolaning familiyasi, ismi, otasining ismi va tugʻilgan sanasi, uning yashash (turgan) joyi, farzandlikka olinayotgan bolaning ota-onasi toʻgʻrisidagi, aka-uka va opa-singillari borligi yoki yoʻqligi haqidagi maʼlumotlar;\nfarzandlikka oluvchilarning (oluvchining) farzandlikka olish toʻgʻrisidagi iltimosini asoslovchi holatlar va mazkur holatlarni tasdiqlovchi dalillar;\nfarzandlikka oluvchilar (oluvchi) bolaning tugʻilganlik toʻgʻrisidagi dalolatnoma yozuviga tegishli oʻzgartirishlar kiritishni istagan taqdirda — farzandlikka olinayotgan bolaning familiyasini, ismini, otasining ismini, tugʻilgan sanasini (koʻpi bilan bir yilga), farzandlikka olinayotgan bolaning tugʻilgan joyini (agar bola oʻn yoshdan oshmagan boʻlsa) oʻzgartirish haqidagi, bolaning tugʻilganlik toʻgʻrisidagi dalolatnoma yozuviga farzandlikka oluvchilarni (oluvchini) ota-ona (ota yoki ona) sifatida qayd etish haqidagi iltimos.\nFarzandlikka olish toʻgʻrisidagi ariza farzandlikka oluvchilar (oluvchi) tomonidan imzolanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-104720#art-164#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "164-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2013-04-30",
+     "text": "164-modda. Farzandlikka olishda tugʻilishni qayd etish daftariga oʻzgartirish kiritish\nSudning farzandlikka olish toʻgʻrisidagi hal qiluv qarori qonuniy kuchga kirgan kundan boshlab oʻn kun ichida fuqarolik holati dalolatnomalarini qayd etish organlari farzandlikka olinayotganning tugʻilishi qayd etilgan daftarga zarur oʻzgartirishlar kiritishi lozim.\nFarzandlikka oluvchilar bolaning tugʻilishi yozilgan daftarga, agar bu haqda sudning hal qiluv qarorida koʻrsatilgan boʻlsa, uning ota-onasi deb yozilishi kerak.\nZarur hollarda bolaning familiyasi, ismi, otasining ismigina emas, balki tugʻilgan sanasi ham bir yildan ortiq boʻlmagan farq bilan oʻzgartiriladi. Agar bola oʻn yoshdan oshmagan boʻlsa, tugʻilgan joyi ham Oʻzbekiston Respublikasi doirasida oʻzgartirilishi mumkin.",
+     "retrieval_score": 0.9836,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-104720#art-171#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "171-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2013-04-30",
+     "text": "171-modda. Farzandlikka olishni bekor qilish tartibi\nFarzandlikka olishni bekor qilishga faqat sud tartibida yoʻl qoʻyiladi. Farzandlikka olishni bekor qilish toʻgʻrisidagi ishlarni hal qilishda oʻn yoshga toʻlgan bolaning fikri hisobga olinadi.\nSudning farzandlikka olishni bekor qilish toʻgʻrisidagi hal qiluv qarori qonuniy kuchga kirgan kundan boshlab sud uch kun ichida ushbu hal qiluv qaroridan koʻchirmani farzandlikka olinayotgan bolaning tugʻilganligi roʻyxatga olingan joydagi fuqarolik holati dalolatnomalarini qayd etish organiga yuborishi shart.",
+     "retrieval_score": 0.795,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-303#p4",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "303-modda",
+     "part": "4–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "303-modda. Sudning hal qiluv qarori\nFarzandlikka olish toʻgʻrisidagi ariza qanoatlantirilgan taqdirda, farzandlikka oluvchilar (oluvchi) va farzandlikka olinayotgan bolaning oʻzaro huquq va majburiyatlari farzandlikka olingan bolaning tugʻilganligini qayd etish daftariga zarur oʻzgartishlar kiritilgan kundan eʼtiboran belgilanadi.\nSud farzandlikka olish toʻgʻrisidagi hal qiluv qarori qonuniy kuchga kirgan kundan eʼtiboran uch kun ichida ushbu hal qiluv qarorining koʻchirma nusxasini tegishli vasiylik va homiylik organiga hamda farzandlikka olinayotgan bolaning tugʻilganligi roʻyxatga olingan joydagi fuqarolik holati dalolatnomalarini qayd etish organiga yuborishi shart.",
+     "retrieval_score": 0.7812,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-104720#art-210#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "210-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2013-04-30",
+     "text": "210-modda. Farzandlikka olingan bolaning tugʻilish toʻgʻrisidagi yozuvlar daftariga oʻzgartishlar kiritish\nSudning farzandlikka olish toʻgʻrisidagi hal qiluv qaroriga koʻra, tugʻilish toʻgʻrisidagi dalolatnoma yozuvi turgan joydagi fuqarolik holatlarini yozish organi tugʻilish toʻgʻrisidagi yozuvlar daftariga zarur oʻzgartishlar kiritadi.",
+     "retrieval_score": 0.7781,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2320,
+    "retrieval_ms": 2060,
+    "rerank_ms": 0,
+    "generation_ms": 2905,
+    "total_ms": 7286
+   },
+   "usage": {
+    "input_tokens": 12033,
+    "output_tokens": 620,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Farzandlikka olish toʻgʻrisidagi arizada bolaning tugʻilgan sanasini va tugʻilgan joyini oʻzgartirishni soʻrash mumkinmi, bunda qanday muddat va yosh chegaralari belgilangan?",
+    "search_queries": [
+     "Farzandlikka olish uchun sudga beriladigan arizada bolaning tugʻilgan sanasini oʻzgartirishni soʻrasam, bu muddat qancha boʻlishi mumkin va bolaning tugʻilgan joyini oʻzgartirishga qanday yosh chegarasi qoʻyilgan?",
+     "Farzandlikka olish toʻgʻrisidagi arizada bolaning tugʻilgan sanasini va tugʻilgan joyini oʻzgartirishni soʻrash mumkinmi, bunda qanday muddat va yosh chegaralari belgilangan?",
+     "farzandlikka olishda bolaning tugʻilgan sanasini oʻzgartirish",
+     "bolaning tugʻilgan joyini oʻzgartirish yosh chegarasi",
+     "farzandlikka olish sud tartibi ariza",
+     "tugʻilgan sanani oʻzgartirish farzandlikka olish sharti"
+    ],
+    "doc_hints": [
+     "Oila kodeksi",
+     "Fuqarolik protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 857,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q010",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida bu savolga aniq javob topilmadi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5382968#band-2s22#p1",
+     "doc_id": "lex:-5382968",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori 2021 — 2023-yillarda buxoro viloyatining vobkent tumanini kompleks ijtimoiy-iqtisodiy rivojlantirish va kambagʻallikni qisqartirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5382968",
+     "article": "2-band (22-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-04-23",
+     "text": "2. Sayyohlarga qadimda tayyorlangan tansiq va mazali taomlarning tayyorlanish uslublari boʻyicha maste� klasslar oʻtkazish.\n2021–2022-yillar davomida\n-\nIjrochilar mablagʻlari\nTurizm va sport vazirligi, Buxoro viloyati hokimligi\n14.\n“Shirin” MFYning Shirin qishlogʻida tuman Madaniyat markazining “Navnihol” milliy etnografik folklor jamoasi tomonidan kuy-qoʻshiqlar, marosimlar, qadriyatlar va anʼanalarni koʻrsatib beruvchi turizmning etno (tomosha) turizmini tashkil etish.\nMilliy qadriyatlarimizni namoyon etuvchi laparlar, koʻy-qoʻshiqlar va boshqa marosimlarni oʻtkazilishini tashkil etish.\nDoimiy\n-\nIjrochilar mablagʻlari\nMadaniyat vazirligi, Buxoro viloyati hokimligi\nIII. Targʻibot tashviqot ishlarini tashkillashtirish\n15.\n“Shirin” MFY Shirin qishlogʻida “Turizm qishlogʻi”ni OAV va ijtimoiy tarmoqlarda keng yoritib borish.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5382968#band-2s9#p1",
+     "doc_id": "lex:-5382968",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori 2021 — 2023-yillarda buxoro viloyatining vobkent tumanini kompleks ijtimoiy-iqtisodiy rivojlantirish va kambagʻallikni qisqartirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5382968",
+     "article": "2-band (9-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-04-23",
+     "text": "2. Sayyohlarga qadimda tayyorlangan tansiq va mazali taomlarning tayyorlanish uslublari boʻyicha master klasslar oʻtkazish.\n2021-2022-yillar davomida\n-\nIjrochilar mablagʻlari\nTurizm va sport vazirligi, Buxoro viloyati hokimligi\n12.\n“Vobkent” MFYning Ahmad Donish koʻchasida tuman Madaniyat markazining “Navnihol” milliy etno-grafik folklor jamoasi tomonidan kuy-qoʻshiqlar, marosimlar, qadriyatlar va anʼanalarni koʻrsatib beruvchi etno (tomosha) turizmini tashkil etish.\nMilliy qadriyatlarimizni namoyon etuvchi laparlar, koʻy-qoʻshiqlar va boshqa marosimlarni oʻtkazilishini tashkil etish.\ndoimiy\n-\nIjrochilar mablagʻlari\nTurizm va sport vazirligi, Buxoro viloyati hokimligi\nIII. Targʻibot tashviqot ishlarini tashkillashtirish\n13.\nAhmad Donish koʻchasida “Turizm koʻchasi”ni OAV va ijtimoiy tarmoqlarda keng yoritib borish.",
+     "retrieval_score": 0.9859,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5546373#band-2s2#p15",
+     "doc_id": "lex:-5546373",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori koʻchma savdo faoliyatiga zamonaviy axborot texnologiyalarini yanada keng joriy etish hamda savdo avtomati orqali chakana savdo faoliyatini tartibga solish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5546373",
+     "article": "2-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-05-15",
+     "text": "kichik oshxona — isteʼmolchilarga oson tayyorlanadigan taomlar va zakuskalar, qaynoq va salqin ichimliklar bilan jadal xizmat koʻrsatishni tashkil etuvchi korxona. Sotiladigan mahsulotlar turiga koʻra kichik oshxonalar quyidagilarga ixtisoslashgan boʻlishi mumkin: kabobxona, palovxona, somsaxona, sosiskaxona, chuchvaraxona, cheburekxona, pirojkaxona, blinchikxona va shu kabilar.",
+     "retrieval_score": 0.8964,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5621189#band-27s3#p1",
+     "doc_id": "lex:-5621189",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori iqtidorli oʻquvchilar oʻrtasida fan olimpiadalarini oʻtkazish tizimini takomillashtirish hamda xorijiy tillarni oʻqitish boʻyicha eng yaxshi maktabni aniqlash tizimini joriy etish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5621189",
+     "article": "27-band (3-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-09-09",
+     "text": "27. Tanlovning uchinchi bosqichi (respublika bosqichi) har yili avgust oyida, viloyat bosqichida gʻolib boʻlgan maktablar oʻrtasida Agentlik hamda xorijiy hamkor tashkilotlar tomonidan tayyorlanadigan maxsus sinov materiallari asosida, bevosita Agentlik, Vazirlik hamda boshqa vazirlik va idoralar tomonidan belgilanadigan masʼullar ishtirokida oʻtkaziladi.",
+     "retrieval_score": 0.8838,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-5621189#band-22s3#p1",
+     "doc_id": "lex:-5621189",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori iqtidorli oʻquvchilar oʻrtasida fan olimpiadalarini oʻtkazish tizimini takomillashtirish hamda xorijiy tillarni oʻqitish boʻyicha eng yaxshi maktabni aniqlash tizimini joriy etish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5621189",
+     "article": "22-band (3-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-09-09",
+     "text": "22. Tanlovning ikkinchi bosqichi (viloyat bosqichi) har yili aprel oyida tuman bosqichida gʻolib boʻlgan maktablar oʻrtasida, Agentlik hamda Vazirlik tomonidan tayyorlanadigan maxsus sinov materiallari asosida, bevosita Agentlik, Vazirlik, Vazirlar Mahkamasi huzuridagi Taʼlim sifatini nazorat qilish davlat inspeksiyasi hamda Davlat test markazi tomonidan belgilanadigan masʼullar ishtirokida oʻtkaziladi.\nViloyat bosqichida ishtirok etadigan maktablarning axborot tizimiga asosiy koʻrsatkichlar boʻyicha kiritgan maʼlumotlari hududiy xalq taʼlimi boshqarmalari tomonidan tuzilgan tashkiliy qoʻmita tomonidan tahlil qilinadi va haqqoniyligi tasdiqlanadi.",
+     "retrieval_score": 0.8721,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1900,
+    "retrieval_ms": 18,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 1919
+   },
+   "usage": {
+    "input_tokens": 905,
+    "output_tokens": 65,
+    "models": {
+     "rewrite": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekistonda eng mazali palov qaysi viloyatda tayyorlanadi?",
+    "search_queries": [
+     "Oʻzbekistonda eng mazali palov qaysi viloyatda tayyorlanadi?"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 150,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": null,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

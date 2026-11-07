@@ -1,0 +1,1583 @@
+{
+ "run_id": "full100-v1",
+ "batch_id": "full100-v1-b09",
+ "batch_index": 9,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p5",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:25:46+05:00",
+  "completed_at": "2026-11-06T18:25:54+05:00",
+  "total_ms": 8287
+ },
+ "summary": {
+  "total": 10,
+  "ok": 10,
+  "no_answer": 0,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q081",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 217-moddasiga koʻra, raislik qiluvchi ishda ishtirok etuvchi shaxslarga ularning protsessual huquqlari va majburiyatlarini tushuntiradi va bu haqda sud majlisining bayonnomasida koʻrsatiladi [1]. Bayonnoma mazmuniga oid 277-moddada ham sudning taraflar va protsessning boshqa ishtirokchilariga ularning protsessual huquq va majburiyatlarini tushuntirganligi bayonnoma koʻrsatiladigan maʼlumotlar qatoriga kiritilgan [2]. Iqtisodiy protsessual kodeksining 201-moddasida ham sud tomonidan ishda ishtirok etuvchi shaxslarga va sud protsessining boshqa ishtirokchilariga ularning protsessual huquq va majburiyatlari tushuntirilganligi toʻgʻrisidagi maʼlumotlar bayonnomada koʻrsatilishi belgilangan [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "217-modda",
+     "part": "1-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-217#p1",
+     "quote": "Raislik qiluvchi ishda ishtirok etuvchi shaxslarga ularning protsessual huquqlari va majburiyatlarini tushuntiradi. Bu haqda sud majlisining bayonnomasida koʻrsatiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "277-modda",
+     "part": "1–11-qism",
+     "edition_date": "2024-11-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-277#p1",
+     "quote": "6) sudning taraflar va protsessning boshqa ishtirokchilariga ularning protsessual huquq va majburiyatlarini tushuntirganligi;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "201-modda",
+     "part": "1–12-qism",
+     "edition_date": "2024-11-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-201#p1",
+     "quote": "5) sud tomonidan ishda ishtirok etuvchi shaxslarga va sud protsessining boshqa ishtirokchilariga ularning protsessual huquq va majburiyatlari tushuntirilganligi toʻgʻrisidagi maʼlumotlar;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-217#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "217-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "217-modda. Ishda ishtirok etuvchi shaxslarga ularning huquqlari va majburiyatlarini tushuntirish\nRaislik qiluvchi ishda ishtirok etuvchi shaxslarga ularning protsessual huquqlari va majburiyatlarini tushuntiradi. Bu haqda sud majlisining bayonnomasida koʻrsatiladi.",
+     "retrieval_score": 0.8357,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-277#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "277-modda",
+     "part": "1–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-21",
+     "text": "277-modda. Bayonnoma mazmuni\nSud majlisi bayonnomasida ish muhokamasining yoki alohida protsessual harakatlarni amalga oshirishning barcha muhim jihatlari aks ettirilishi kerak. Sud majlisi bayonnomasida quyidagilar koʻrsatiladi:\n1) sud majlisi boʻlib oʻtgan yil, oy, kun va joy;\n2) sud majlisi boshlangan va tamomlangan vaqt;\n3) ishni koʻrayotgan sudning nomi, sudyaning familiyasi, ismi va otasining ismi, hamda sud majlisining kotibi;\n4) ishning nomi va raqami;\n5) ishda ishtirok etuvchi shaxslarning va odil sudlovga koʻmaklashayotgan shaxslarning kelgan-kelmaganligi toʻgʻrisidagi maʼlumotlar;\n6) sudning taraflar va protsessning boshqa ishtirokchilariga ularning protsessual huquq va majburiyatlarini tushuntirganligi;\n7) ushbu moddaning 5-bandida koʻrsatilgan shaxslarga sud chaqiruv qogʻozlari va boshqa xabarnomalar topshirilganligi toʻgʻrisidagi hamda ular sud majlisiga kelmaganligining sabablari haqidagi maʼlumotlar;\n8) raislik qiluvchining barcha farmoyishlari va sudning alohida xonaga (maslahatxonaga) chiqmasdan chiqargan ajrimlari;\n9) ishda ishtirok etuvchi shaxslarning arizalari;\n10) sudga taqdim etilgan barcha ashyoviy, yozma va raqamli dalillar, ekspertlarning yozma xulosalari, mutaxassislarning maslahatlari toʻgʻrisidagi maʼlumotlar;",
+     "retrieval_score": 0.906,
+     "rerank_score": 0.8,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-201#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "201-modda",
+     "part": "1–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-21",
+     "text": "201-modda. Bayonnoma\nSud majlisida, shuningdek sud majlisi zalidan tashqarida ayrim protsessual harakatlar bajarilganda bayonnoma yuritiladi.\nSud majlisining bayonnomasida quyidagilar koʻrsatiladi:\n1) sud majlisi oʻtkazilgan yil, oy, sana va joy;\n2) ishni koʻrayotgan sudning nomi, sud tarkibi va sud majlisining kotibi;\n3) ishning nomi va raqami;\n4) ishda ishtirok etuvchi shaxslar va sud protsessining boshqa ishtirokchilari kelganligi toʻgʻrisidagi maʼlumotlar;\n5) sud tomonidan ishda ishtirok etuvchi shaxslarga va sud protsessining boshqa ishtirokchilariga ularning protsessual huquq va majburiyatlari tushuntirilganligi toʻgʻrisidagi maʼlumotlar;\n6) sud tomonidan alohida xonaga (maslahatxonaga) kirmasdan joyida chiqarilgan ajrimlar;\n7) ishda ishtirok etuvchi shaxslarning ogʻzaki arzlari va iltimosnomalari;\n8) ishni koʻrishda sudga taqdim etilgan barcha ashyoviy, yozma va raqamli dalillar, ekspertlarning yozma xulosalari haqidagi maʼlumotlar;\n9) ishda ishtirok etuvchi shaxslarning tushuntirishlari, guvohlarning koʻrsatuvlari, ekspertlarning oʻz xulosalarini ogʻzaki tushuntirishlari, mutaxassislarning fikrlari, ashyoviy, yozma va raqamli dalillarning koʻzdan kechirilganligi, olib qoʻyilganligi, sxemalar tuzilganligi, video- va fototasvirga olinganligi haqidagi maʼlumotlar;\n10) alohida protsessual harakatlar bajarilganda olingan maʼlumotlar;",
+     "retrieval_score": 0.8265,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-278#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "278-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-03-21",
+     "text": "278-modda. Bayonnoma tuzish\nBayonnoma sud majlisi kotibi tomonidan sud majlisining oʻzida yoki sud majlisi zalidan tashqarida alohida protsessual harakat bajarilganida yuritiladi.\nIshda ishtirok etuvchi shaxslar oʻzlari ish uchun ahamiyatga ega deb hisoblangan holatlarni bayonnomaga kiritish toʻgʻrisida iltimosnomalar berishga haqli.\nTaraflarning, uchinchi shaxslarning oʻzlari qoʻygan talablardan butunlay yoki qisman voz kechganligi haqidagi, qoʻyilgan talablarni tan olishi, ishni kelishuv bitimi yoki mediativ kelishuv bilan tamomlash toʻgʻrisidagi arizalari bayonnomaga kiritiladi. Bayonnoma sud majlisi tamom boʻlganidan yoki alohida protsessual harakat amalga oshirilganidan keyin kechi bilan uch kunda raislik qiluvchi va sud majlisining kotibi tomonidan imzolanishi kerak. Kiritilgan barcha oʻzgarishlar, tuzatishlar, qoʻshimchalar bayonnomada izohlanishi kerak.",
+     "retrieval_score": 0.9545,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-211#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "211-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "211-modda. Sud majlisida raislik qiluvchi\nSud majlisida shu sudning raisi, uning oʻrinbosari yoki sudya raislik qiladi.\nSud majlisida raislik qiluvchi (bundan buyon matnda raislik qiluvchi deb yuritiladi) sud majlisini boshqarib, ishning barcha holatlari, taraflarning huquq va majburiyatlari toʻliq, har tomonlama va xolisona aniqlanishini, sud protsessining tarbiyaviy taʼsirini taʼminlaydi, koʻrilayotgan ishga aloqasi boʻlmagan hamma narsani sud muhokamasidan chetlatadi.\nIshda ishtirok etuvchi shaxslardan, guvohlardan, ekspertlardan, mutaxassislardan, tarjimonlardan birortasi raislik qiluvchining xatti-harakatlariga eʼtiroz bildirgan taqdirda, bu eʼtirozlar sud majlisining bayonnomasiga kiritiladi va masala sud tomonidan hal qilinadi.\nRaislik qiluvchi sud majlisida tegishli tartibni taʼminlash uchun zarur choralar koʻradi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1824,
+    "retrieval_ms": 2201,
+    "rerank_ms": 0,
+    "generation_ms": 3848,
+    "total_ms": 7875
+   },
+   "usage": {
+    "input_tokens": 12496,
+    "output_tokens": 819,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud majlisida raislik qiluvchi ishda qatnashayotgan shaxslarga ularning huquq va burchlarini tushuntirsa, bu holat qayerda qayd etilishi kerak?",
+    "search_queries": [
+     "Sud majlisida raislik qiluvchi ishda qatnashayotgan odamlarga ularning huquq va burchlarini tushuntirsa, bu holat qayerda qayd etilishi kerak?",
+     "Sud majlisida raislik qiluvchi ishda qatnashayotgan shaxslarga ularning huquq va burchlarini tushuntirsa, bu holat qayerda qayd etilishi kerak?",
+     "sud majlisi bayonnomasi mazmuni",
+     "majlisda qatnashuvchilarga huquq va burchlar tushuntirilishi bayonnomada qayd etilishi",
+     "sud majlisi bayonnomasiga kiritiladigan maʼlumotlar"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi",
+     "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 783,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q082",
+   "status": "ok",
+   "answer": "Hakamlik sudining hal qiluv qarori bekor qilinganda, agar hakamlik sudiga murojaat etish imkoniyati yoʻqolmagan boʻlsa, tomonlar hakamlik bitimiga muvofiq hakamlik sudiga yangidan murojaat etishlari yoki Fuqarolik protsessual kodeksida nazarda tutilgan qoidalarga binoan fuqarolik ishlari boʻyicha sudga murojaat etishlari mumkin [1]. Hakamlik sudlari toʻgʻrisidagi qonunning 48-moddasiga koʻra ham, hal qiluv qarori vakolatli sud tomonidan bekor qilingan taqdirda, hakamlik muhokamasi taraflari hakamlik bitimiga muvofiq hakamlik sudiga yangidan murojaat etishga haqli [2]. Biroq qaror hakamlik bitimi haqiqiy emasligi oqibatida yoxud bitimda nazarda tutilmagan yoki uning shartlariga toʻgʻri kelmaydigan nizo boʻyicha chiqarilganligi sababli bekor qilingan boʻlsa, bunday nizo bundan buyon hakamlik sudida koʻrib chiqilishi mumkin emas [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "353-modda",
+     "part": "1–7-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-353#p1",
+     "quote": "Hakamlik sudi hal qiluv qarorining bekor qilinganligi hakamlik muhokamasi taraflarining, agar hakamlik sudiga murojaat etish imkoniyati yoʻqolmagan boʻlsa, hakamlik bitimiga muvofiq hakamlik sudiga yangidan murojaat etishiga yoki ushbu Kodeksda nazarda tutilgan qoidalarga binoan fuqarolik ishlari boʻyicha sudga murojaat etishiga toʻsqinlik qilmaydi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-1072079",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni hakamlik sudlari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-1072079",
+     "article": "48-modda",
+     "part": "1–2-qism",
+     "edition_date": "2006-10-16",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-1072079#art-48#p1",
+     "quote": "Hakamlik sudining hal qiluv qarori vakolatli sud tomonidan bekor qilingan taqdirda, hakamlik muhokamasi taraflari hakamlik bitimiga muvofiq hakamlik sudiga yangidan murojaat etishga haqli",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-353#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "353-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "353-modda. Sudning hakamlik sudi hal qiluv qarorini bekor qilish toʻgʻrisidagi ish boʻyicha ajrimi\nFuqarolik ishlari boʻyicha sud hakamlik sudining hal qiluv qarorini bekor qilish toʻgʻrisidagi ishni koʻrib chiqish natijalari boʻyicha ushbu Kodeksda hal qiluv qarori qabul qilish uchun nazarda tutilgan qoidalarga koʻra ajrim chiqaradi.\nFuqarolik ishlari boʻyicha sudning hakamlik sudi hal qiluv qarorini bekor qilish toʻgʻrisidagi yoki hakamlik sudi hal qiluv qarorini bekor qilishni rad etish haqidagi ajrimida quyidagilar ham koʻrsatilishi lozim:\n1) hakamlik sudining nizolashilayotgan hal qiluv qarori toʻgʻrisidagi va mazkur qaror qabul qilingan joy haqidagi maʼlumotlar;\n2) nizolashilayotgan hal qiluv qarorini qabul qilgan hakamlik sudining nomi va tarkibi toʻgʻrisidagi maʼlumotlar;\n3) hakamlik muhokamasi taraflarining familiyasi, ismi, otasining ismi (nomi);\n4) hakamlik sudining hal qiluv qarorini toʻliq yoki qisman bekor qilishga yoxud arizachining talabini toʻliq yoki qisman qanoatlantirishni rad etishga doir koʻrsatma.\nHakamlik sudi hal qiluv qarorining bekor qilinganligi hakamlik muhokamasi taraflarining, agar hakamlik sudiga murojaat etish imkoniyati yoʻqolmagan boʻlsa, hakamlik bitimiga muvofiq hakamlik sudiga yangidan murojaat etishiga yoki ushbu Kodeksda nazarda tutilgan qoidalarga binoan fuqarolik ishlari boʻyicha sudga murojaat etishiga toʻsqinlik qilmaydi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-1072079#art-48#p1",
+     "doc_id": "lex:-1072079",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni hakamlik sudlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-1072079",
+     "article": "48-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2006-10-16",
+     "text": "48-modda. Hakamlik sudining hal qiluv qarorini bekor qilish oqibatlari\nHakamlik sudining hal qiluv qarori vakolatli sud tomonidan bekor qilingan taqdirda, hakamlik muhokamasi taraflari hakamlik bitimiga muvofiq hakamlik sudiga yangidan murojaat etishga haqli.\nAgar hakamlik sudining hal qiluv qarori hakamlik bitimi haqiqiy emasligi oqibatida yoxud hal qiluv qarori hakamlik bitimida nazarda tutilmagan yoki uning shartlariga toʻgʻri kelmaydigan nizo boʻyicha chiqarilganligi oqibatida yoxud unda hakamlik bitimida qamrab olinmagan masalalar boʻyicha toʻxtam mavjudligi yoinki nizo hakamlik muhokamasi predmeti boʻlishi mumkin emasligi oqibatida toʻliq yoki qisman bekor qilingan boʻlsa, mazkur nizo bundan buyon hakamlik sudida koʻrib chiqilishi mumkin emas.",
+     "retrieval_score": 0.9963,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3517337#art-353#p8",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "353-modda",
+     "part": "8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "353-modda. Sudning hakamlik sudi hal qiluv qarorini bekor qilish toʻgʻrisidagi ish boʻyicha ajrimi\nAgar hakamlik sudining hal qiluv qarori hakamlik bitimi haqiqiy emasligi oqibatida yoki hal qiluv qarori hakamlik bitimida nazarda tutilmagan yoki uning shartlariga toʻgʻri kelmaydigan nizo boʻyicha chiqarilganligi yoxud unda hakamlik bitimida qamrab olinmagan masalalar boʻyicha xulosalar mavjudligi yoinki nizo hakamlik muhokamasining predmeti boʻlishi mumkin emasligi oqibatida fuqarolik ishlari boʻyicha sud tomonidan toʻliq yoki qisman bekor qilingan boʻlsa, hakamlik muhokamasi taraflari bunday nizoni hal qilish uchun ushbu Kodeksda nazarda tutilgan umumiy qoidalarga binoan sudga murojaat etishi mumkin.",
+     "retrieval_score": 0.9782,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-358#p7",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "358-modda",
+     "part": "7–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "358-modda. Sudning hakamlik sudi hal qiluv qarorini majburiy ijro etish uchun ijro varaqasi berish toʻgʻrisidagi ish boʻyicha ajrimi\nHakamlik sudining hal qiluv qarorini majburiy ijro etish uchun ijro varaqasi berish rad etilganligi hakamlik muhokamasi taraflarining, agar hakamlik sudiga murojaat etish imkoniyati yoʻqolmagan boʻlsa, hakamlik bitimiga muvofiq hakamlik sudiga yangidan murojaat etishiga yoki ushbu Kodeksda nazarda tutilgan qoidalarga binoan fuqarolik ishlari boʻyicha sudga murojaat etishiga toʻsqinlik qilmaydi.\nAgar hakamlik sudining hal qiluv qarorini majburiy ijro etish uchun ijro varaqasi berish hakamlik bitimining haqiqiy emasligi oqibatida yoki hal qiluv qarori hakamlik bitimida nazarda tutilmagan yoki uning shartlariga toʻgʻri kelmaydigan nizo boʻyicha chiqarilganligi yoxud unda hakamlik bitimida qamrab olinmagan masalalar boʻyicha toʻxtamlar mavjudligi yoinki nizo hakamlik muhokamasining predmeti boʻlishi mumkin emasligi oqibatida fuqarolik ishlari boʻyicha sud tomonidan toʻliq yoki qisman rad etilgan boʻlsa, hakamlik muhokamasi taraflari bunday nizoni hal qilish uchun ushbu Kodeksda nazarda tutilgan qoidalarga binoan fuqarolik ishlari boʻyicha sudga murojaat etishi mumkin.\nFuqarolik ishlari boʻyicha sudning hakamlik sudi hal qiluv qarorini majburiy ijro etish uchun ijro varaqasi berish toʻgʻrisidagi ajrimi darhol ijro etilishi kerak.",
+     "retrieval_score": 0.8992,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-2483046#band-16#p1",
+     "doc_id": "lex:-2483046",
+     "doc_title": "Oʻzbekiston Respublikasi oliy xoʻjalik sudi plenumining qarori iqtisodiy sudlar tomonidan hakamlik muhokamasi bilan bogʻliq ishlarni koʻrishda qonun hujjatlarini qoʻllashning ayrim masalalari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-2483046",
+     "article": "16-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-05-19",
+     "text": "16. IPK 227-moddasining uchinchi qismiga koʻra, hakamlik sudi hal qiluv qarorining bekor qilinganligi hakamlik muhokamasi taraflarining, agar hakamlik sudiga murojaat etish imkoniyati yoʻqolmagan boʻlsa, hakamlik bitimiga muvofiq hakamlik sudiga yangidan murojaat etishiga yoki ushbu Kodeksda nazarda tutilgan umumiy qoidalarga binoan iqtisodiy sudga murojaat etishiga toʻsqinlik qilmaydi.\nBunda sudlar shuni nazarda tutishlari kerakki, agar hakamlik sudining hal qiluv qarori IPK 226-moddasi birinchi qismining 1-bandiga asosan bekor qilingan boʻlsa, hakamlik sudiga murojaat qilish uchun asos boʻlgan hujjat haqiqiy emas deb topilganligi sababli, hakamlik muhokamasi taraflari IPKda nazarda tutilgan umumiy qoidalarga binoan iqtisodiy sudga murojaat etishga haqli. Hakamlik sudining hal qiluv qarori IPK 226-moddasi birinchi qismining 2-bandiga (Qonun 47-moddasi ikkinchi qismining uchinchi xatboshisi) asosan hamda ushbu qarorning 3 va 15.6-bandlarida koʻrsatilgan asoslarga koʻra bekor qilingan boʻlsa ham, hakamlik muhokamasi taraflari IPKda nazarda tutilgan umumiy qoidalarga binoan iqtisodiy sudga murojaat etishga haqli.\nAgar hakamlik sudining hal qiluv qarori IPK 226-moddasi birinchi qismining 3, 4, 5-bandlariga asosan bekor qilingan va hakamlik sudiga murojaat etish imkoniyati yoʻqotilmagan boʻlsa, hakamlik muhokamasi taraflari hakamlik sudiga yangidan murojaat etishga haqli.",
+     "retrieval_score": 0.8407,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1656,
+    "retrieval_ms": 420,
+    "rerank_ms": 0,
+    "generation_ms": 4689,
+    "total_ms": 6767
+   },
+   "usage": {
+    "input_tokens": 13123,
+    "output_tokens": 1045,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Hakamlik sudining qarori bekor qilingandan soʻng, agar hakamlik sudiga qayta murojaat qilish imkoniyati hali yoʻqolmagan boʻlsa, tomonlar qanday harakat qilishlari mumkin?",
+    "search_queries": [
+     "Hakamlik sudining qarori bekor qilingandan keyin, agar hakamlik sudiga qayta murojaat qilish imkoni hali yoʻqolmagan boʻlsa, tomonlar nima qilishlari mumkin?",
+     "Hakamlik sudining qarori bekor qilingandan soʻng, agar hakamlik sudiga qayta murojaat qilish imkoniyati hali yoʻqolmagan boʻlsa, tomonlar qanday harakat qilishlari mumkin?",
+     "hakamlik sudi qarorini bekor qilish oqibatlari",
+     "hakamlik sudiga qayta murojaat qilish imkoniyati",
+     "hakamlik sudi qarori bekor qilingandan keyin tomonlarning huquqlari"
+    ],
+    "doc_hints": [
+     "Hakamlik sudlari toʻgʻrisidagi qonun",
+     "Fuqarolik protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 403,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 1,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q083",
+   "status": "ok",
+   "answer": "Jinoyat kodeksining 266-moddasi birinchi qismiga koʻra, transport vositasini boshqaruvchi shaxs tomonidan transport vositalari harakati yoki ulardan foydalanish xavfsizligi qoidalarini buzish badanga oʻrtacha ogʻir yoki ogʻir shikast yetkazilishiga sabab boʻlsa, uch yilgacha muayyan huquqdan mahrum qilib, bazaviy hisoblash miqdorining ellik baravarigacha miqdorda jarima yoki uch yilgacha ozodlikni cheklash yoxud uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "266-modda",
+     "part": "1–9-qism",
+     "edition_date": "2025-02-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111453#art-266#p1",
+     "quote": "Transport vositasini boshqaruvchi shaxs tomonidan transport vositalari harakati yoki ulardan foydalanish xavfsizligi qoidalarini buzish badanga oʻrtacha ogʻir yoki ogʻir shikast yetkazilishiga sabab boʻlsa, — uch yilgacha muayyan huquqdan mahrum qilib, bazaviy hisoblash miqdorining ellik baravarigacha miqdorda jarima yoki uch yilgacha ozodlikni cheklash yoxud uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111453#art-266#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "266-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-02-21",
+     "text": "266-modda. Transport vositalari harakati yoki ulardan foydalanish xavfsizligi qoidalarini buzish\nTransport vositasini boshqaruvchi shaxs tomonidan transport vositalari harakati yoki ulardan foydalanish xavfsizligi qoidalarini buzish badanga oʻrtacha ogʻir yoki ogʻir shikast yetkazilishiga sabab boʻlsa, —\nuch yilgacha muayyan huquqdan mahrum qilib, bazaviy hisoblash miqdorining ellik baravarigacha miqdorda jarima yoki uch yilgacha ozodlikni cheklash yoxud uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha qilmish odam oʻlishiga sabab boʻlsa, —\nmuayyan huquqdan mahrum qilib, yetti yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha qilmish:\na) odamlar oʻlimiga;\nb) halokatga;\nv) boshqa ogʻir oqibatlarga sabab boʻlsa, —\nmuayyan huquqdan mahrum qilib, oʻn yilgacha ozodlikdan mahrum qilish bilan jazolanadi.",
+     "retrieval_score": 0.9657,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111453#art-268#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "268-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-04",
+     "text": "268-modda. Transportning xavfsiz ishlashini taʼminlashga doir qoidalarni buzish\nYoʻlovchi, piyoda, velosiped, ot-ulov transportining haydovchisi yoki yoʻl harakatining boshqa qatnashchilari tomonidan, ushbu Kodeksning 261-263, 265 yoki 266-moddalarida nazarda tutilgan shaxslardan tashqari, harakat xavfsizligi qoidalarini yoki barcha turdagi transport vositalaridan foydalanish qoidalarini buzish badanga oʻrtacha ogʻir yoki ogʻir shikast yetkazilishiga sabab boʻlsa, —\nbazaviy hisoblash miqdorining yigirma besh baravarigacha miqdorda jarima yoki uch yuz oltmish soatgacha majburiy jamoat ishlari yoki uch yilgacha axloq tuzatish ishlari yoxud bir yildan uch yilgacha ozodlikni cheklash yoki uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha harakat odam oʻlishiga sabab boʻlsa, —\nuch yildan besh yilgacha ozodlikni cheklash yoki uch yildan besh yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha harakat:\na) odamlar oʻlimiga;\nb) boshqa ogʻir oqibatlarga sabab boʻlsa, —\nbesh yildan sakkiz yilgacha ozodlikdan mahrum qilish bilan jazolanadi.",
+     "retrieval_score": 0.9818,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-87124#preamble#p25",
+     "doc_id": "lex:-87124",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni jinoiy jazolarning liberallashtirilishi munosabati bilan Oʻzbekiston Respublikasining jinoyat, jinoyat-protsessual kodekslari hamda maʼmuriy javobgarlik toʻgʻrisidagi kodeksiga oʻzgartishlar va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/-87124",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2001-08-29",
+     "text": "Ushbu Kodeks 105-moddasining birinchi qismida (qasddan badanga oʻrtacha ogʻir shikast yetkazish), 106-moddasida (kuchli ruhiy hayajonlanish holatida qasddan badanga ogʻir yoki oʻrtacha ogʻir shikast yetkazish), 107-moddasida (zaruriy mudofaa chegarasidan chetga chiqib, qasddan badanga ogʻir shikast yetkazish), 108-moddasida (ijtimoiy xavfli qilmish sodir etgan shaxsni ushlashning zarur choralari chegarasidan chetga chiqib, badanga qasddan ogʻir shikast yetkazish), 109-moddasida (qasddan badanga yengil shikast yetkazish), 110-moddasining birinchi qismida (qiynash), 111-moddasida (ehtiyotsizlik orqasida badanga oʻrtacha ogʻir yoki ogʻir shikast yetkazish), 116-moddasining birinchi va ikkinchi qismlarida (kasb yuzasidan oʻz vazifalarini lozim darajada bajarmaslik), 117-moddasining birinchi qismida (xavf ostida qoldirish), 122-moddasida (voyaga yetmagan yoki mehnatga layoqatsiz shaxslarni moddiy taʼminlashdan boʻyin tovlash), 123-moddasida (ota-onani moddiy taʼminlashdan boʻyin tovlash), 136-moddasida (ayolni erga tegishga majbur qilish yoki uning erga tegishiga toʻsqinlik qilish), 139-moddasining birinchi va ikkinchi qismlarida (tuhmat), 140-moddasining birinchi va ikkinchi qismlarida (haqorat qilish), 149-moddasida (mualliflik yoki ixtirochilik huquqlarini buzish), 167-moddasining birinchi qismida (oʻzlashtirish yoki rastrata yoʻli bilan talon-toroj qilish), 168-moddasining birinchi qismida (firibgarlik), 169-moddasining birinchi qismida (oʻgʻrilik), 170-moddasining birinchi qismida (aldash yoki ishonchni suiisteʼmol qilish yoʻli bilan mulkiy zarar yetkazish), 172-moddasida (mulkni qoʻriqlashga vijdonsiz munosabatda boʻlish), 173-moddasining birinchi qismida (mulkni qasddan nobud qilish yoki unga zarar yetkazish), 192-moddasida (raqobatchini obroʻsizlantirish), 260-moddasining birinchi qismida (temir yoʻl, dengiz, daryo yoki havo transportining harakati yoki ulardan foydalanish xavfsizligi qoidalarini buzish), 266-moddasining birinchi qismida (transport vositalari harakati yoki ulardan foydalanish xavfsizligi qoidalarini buzish), 268-moddasining birinchi qismida (transportning xavfsiz ishlashini taʼminlashga doir qoidalarni buzish), 298-moddasining birinchi qismida (mashinalarni boshqarish yoki ulardan foydalanish qoidalarini buzish) nazarda tutilgan jinoyatlarni birinchi marta sodir etgan shaxs, agar u oʻz aybiga iqror boʻlsa, jabrlanuvchi bilan yarashsa va yetkazilgan zararni bartaraf etsa, jinoiy javobgarlikdan ozod etilishi mumkin”;",
+     "retrieval_score": 0.8857,
+     "rerank_score": 0.35,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111453#art-66.1#p1-3",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "66¹-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-12",
+     "text": "661-modda. Yarashilganligi munosabati bilan jinoiy javobgarlikdan ozod qilish\n birinchi qismida (oʻgʻrilik), 170-moddasining birinchi qismida hamda ikkinchi qismining “b” va “v” bandlarida (aldash yoki ishonchni suiisteʼmol qilish yoʻli bilan mulkiy zarar yetkazish), 172-moddasida (mulkni qoʻriqlashga vijdonsiz munosabatda boʻlish), 173-moddasining birinchi qismida (mulkni qasddan nobud qilish yoki unga zarar yetkazish), 180-moddasida (soxta toʻlovga qobiliyatsizlik), 181-moddasida (toʻlovga qobiliyatsizlikni yashirish), 1852-moddasida (elektr, issiqlik energiyasi, gaz, vodoprovoddan foydalanish qoidalarini buzish), 189-moddasida (savdo yoki xizmat koʻrsatish qoidalarini buzish), 191-moddasida (qonunga xilof ravishda axborot toʻplash, uni oshkor qilish yoki undan foydalanish), 192-moddasida (raqobatchini obroʻsizlantirish), 229-moddasida (oʻzboshimchalik), 256-moddasining birinchi va ikkinchi qismlarida (tadqiqot faoliyatini amalga oshirishda xavfsizlik qoidalarini buzish), 257-moddasining birinchi qismida (mehnatni muhofaza qilish qoidalarini buzish), 258-moddasining birinchi qismida (togʻ-kon, qurilish yoki portlatish ishlari xavfsizligi qoidalarini buzish), 259-moddasining birinchi qismida (yongʻin xavfsizligi qoidalarini buzish), 260-moddasining birinchi qismida (temir yoʻl, dengiz, daryo yoki havo transportining harakati yoki ulardan foydalanish xavfsizligi qoidalarini buzish), 266-moddasining birinchi qismida (transport vositalari harakati yoki ulardan foydalanish xavfsizligi qoidalarini buzish), 268-moddasining birinchi qismida (transportning xavfsiz ishlashini taʼminlashga doir qoidalarni buzish), 2769-moddasining birinchi va ikkinchi qismlarida (tanosil yoki OIV kasalligini (OITSni) tarqatish), 277-moddasining birinchi qismida (bezorilik), 298-moddasining birinchi qismida (mashinalarni boshqarish yoki ulardan foydalanish qoidalarini buzish) nazarda tutilgan jinoyatlarni sodir etgan shaxs, agar u oʻz aybiga iqror boʻlsa, jabrlanuvchi bilan yarashsa va yetkazilgan zararni bartaraf etsa, jinoiy javobgarlikdan ozod etilishi mumkin.",
+     "retrieval_score": 0.7249,
+     "rerank_score": 0.35,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-7392575#art-2612#p6",
+     "doc_id": "lex:-7392575",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yoʻl harakati xavfsizligi tizimi takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining jinoyat, jinoyat-protsessual kodekslariga hamda Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksiga qoʻshimcha va oʻzgartirishlar kiritish haqida",
+     "url": "https://lex.uz/docs/-7392575",
+     "article": "2612-modda",
+     "part": "6–15-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-02-20",
+     "text": "2612-modda. Transport vositalarini boshqarish huquqidan mahrum etilgan shaxsning transport vositasini boshqarishi\nuch yilgacha muayyan huquqdan mahrum qilib, bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha miqdorda jarima yoki uch yilgacha axloq tuzatish ishlari yoki uch yilgacha ozodlikni cheklash yoxud uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha qilmish:\na) odam oʻlimiga;\nb) halokatga;\nv) boshqa ogʻir oqibatlarga sabab boʻlsa, —\nmuayyan huquqdan mahrum qilib, uch yildan besh yilgacha ozodlikni cheklash yoxud besh yildan sakkiz yilgacha ozodlikdan mahrum qilish bilan jazolanadi”;\n6) 266-modda birinchi qismining sanksiyasi quyidagi tahrirda bayon etilsin:\n“uch yilgacha muayyan huquqdan mahrum qilib, bazaviy hisoblash miqdorining ellik baravarigacha miqdorda jarima yoki uch yilgacha ozodlikni cheklash yoxud uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi”;\n7) 269-modda nomi va birinchi qismining dispozitsiyasi quyidagi tahrirda bayon etilsin:\n“269-modda. Avtomobil yoʻllaridan va koʻchalardan foydalanish, ularni taʼmirlash ishlarini tashkil etish va saqlash qoidalarini buzish",
+     "retrieval_score": 0.6256,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1806,
+    "retrieval_ms": 1993,
+    "rerank_ms": 0,
+    "generation_ms": 2638,
+    "total_ms": 6439
+   },
+   "usage": {
+    "input_tokens": 15163,
+    "output_tokens": 624,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Haydovchi transport vositasini boshqarayotganda yoʻl harakati xavfsizligi qoidalarini buzib, birovning sogʻligʻiga oʻrtacha ogʻir shikast yetkazsa, unga qanday jazo tayinlanishi mumkin?",
+    "search_queries": [
+     "Haydovchi transport vositasini boshqarayotganda yoʻl harakati xavfsizligi qoidalarini buzib, birovning sogʻligʻiga oʻrtacha ogʻir shikast yetkazsa, unga qanday jazo tayinlanishi mumkin?",
+     "yoʻl harakati xavfsizligi qoidalarini buzish sogʻliqqa oʻrtacha ogʻir shikast yetkazish jazo",
+     "transport vositasini boshqarishda yoʻl harakati qoidalarini buzish jinoyat javobgarlik",
+     "sogʻliqqa oʻrtacha ogʻir shikast yetkazish transport jinoyati jazo choralari"
+    ],
+    "doc_hints": [
+     "Jinoyat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 459,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q084",
+   "status": "ok",
+   "answer": "«Tabiiy monopoliyalar toʻgʻrisida»gi qonunning 5-moddasiga koʻra, tabiiy monopoliya subyekti asosiy vositalarga nisbatan mulk huquqini oladigan yoki tovarlar ishlab chiqarish (realizatsiya qilish) uchun moʻljallanmagan, ularga nisbatan davlat tartibga solishi qoʻllaniladigan asosiy vositalardan foydalanish huquqini qoʻlga kiritadigan bitimlar ustidan nazorat amalga oshiriladi, agar bunday asosiy vositalarning balans qiymati tabiiy monopoliya subyekti oʻz kapitali qiymatining oʻn foizidan ortiq boʻlsa [1]. Bunday harakatlarni amalga oshirish uchun subyekt monopoliyaga qarshi davlat organiga axborot hamda rozilik soʻrab iltimosnoma taqdim etishi shart [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-40123",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tabiiy monopoliyalar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-40123",
+     "article": "5-modda",
+     "part": "1–5-qism",
+     "edition_date": "1997-04-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-40123#art-5#p1",
+     "quote": "amalga oshirilishi natijasida tabiiy monopoliya subyekti asosiy vositalarga nisbatan mulk huquqini oladigan yoki tovarlar ishlab chiqarish (realizatsiya qilish) uchun moʻljallanmagan, ularga nisbatan davlat tartibga solishi qoʻllaniladigan asosiy vositalardan foydalanish huquqini qoʻlga kiritadigan bitimlar ustidan, agar bunday asosiy vositalarning balans qiymati tabiiy monopoliya subyekti oʻz kapitali qiymatining oʻn foizidan ortiq boʻlsa;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-40123",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tabiiy monopoliyalar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-40123",
+     "article": "5-modda",
+     "part": "6–10-qism",
+     "edition_date": "1997-04-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-40123#art-5#p6",
+     "quote": "Ushbu moddaning ikkinchi qismida koʻrsatilgan harakatlarni amalga oshirish uchun tabiiy monopoliya subyekti monopoliyaga qarshi davlat organiga tegishli axborot hamda bunday harakatlarni amalga oshirishga rozilik soʻrab iltimosnoma taqdim etishi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-40123#art-5#p1",
+     "doc_id": "lex:-40123",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tabiiy monopoliyalar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-40123",
+     "article": "5-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "1997-04-24",
+     "text": "5-modda. Tabiiy monopoliya subyektlari faoliyati ustidan davlat nazorati\nTabiiy monopoliya subyektlari faoliyati ustidan davlat nazorati monopoliyaga qarshi davlat organi tomonidan amalga oshiriladi.\nMonopoliyaga qarshi davlat organi quyidagilarni nazorat qiladi:\namalga oshirilishi natijasida tabiiy monopoliya subyekti asosiy vositalarga nisbatan mulk huquqini oladigan yoki tovarlar ishlab chiqarish (realizatsiya qilish) uchun moʻljallanmagan, ularga nisbatan davlat tartibga solishi qoʻllaniladigan asosiy vositalardan foydalanish huquqini qoʻlga kiritadigan bitimlar ustidan, agar bunday asosiy vositalarning balans qiymati tabiiy monopoliya subyekti oʻz kapitali qiymatining oʻn foizidan ortiq boʻlsa;\nasosiy vositalarni lizing asosida isteʼmolchiga berish ustidan;\namalga oshirilishi natijasida tabiiy monopoliya subyekti ushbu Qonunga muvofiq asosiy vositalarga nisbatan tartibga solish qoʻllaniladigan, tovarlar ishlab chiqarish (realizatsiya qilish) uchun moʻljallangan asosiy vositalarning bir qismiga nisbatan mulk huquqini yoxud ularga egalik qilish va (yoki) ulardan foydalanish huquqini xoʻjalik yurituvchi boshqa subyektga oʻtkazadigan bitimlar ustidan, agar bunday asosiy vositalarning balans qiymati tabiiy monopoliya subyekti oʻz kapitali qiymatining oʻn foizidan ortiq boʻlsa.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-40123#art-5#p6",
+     "doc_id": "lex:-40123",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tabiiy monopoliyalar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-40123",
+     "article": "5-modda",
+     "part": "6–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "1997-04-24",
+     "text": "5-modda. Tabiiy monopoliya subyektlari faoliyati ustidan davlat nazorati\nUshbu moddaning ikkinchi qismida koʻrsatilgan harakatlarni amalga oshirish uchun tabiiy monopoliya subyekti monopoliyaga qarshi davlat organiga tegishli axborot hamda bunday harakatlarni amalga oshirishga rozilik soʻrab iltimosnoma taqdim etishi shart.\nIltimosnomani koʻrib chiqish tartibi, bunday axborotning mazmuni va uni taqdim etish shakliga doir talablar monopoliyaga qarshi davlat organi tasdiqlaydigan qoidalarda belgilanadi.\nAgar iltimosnomada bayon qilingan harakatlar salbiy oqibatlarga olib kelishi mumkin boʻlsa, shuningdek arizachi barcha zarur hujjatlarni taqdim etmagan yoxud ulardagi maʼlumotlar ishonchsiz boʻlsa, monopoliyaga qarshi davlat organi iltimosnomani qondirishni rad etishga haqli.\nMonopoliyaga qarshi davlat organi iltimosnoma olingan kundan boshlab oʻttiz kundan kechiktirmay oʻz qarorini arizachiga yozma ravishda xabar qiladi.\nMonopoliyaga qarshi davlat organi arizachidan qoʻshimcha hujjatlar soʻrab olishga va basharti, bunday soʻrov iltimosnoma olingan kundan eʼtiboran oʻn besh kundan kechiktirmay uni koʻrib chiqish muddati uzaytirilganligi toʻgʻrisidagi xabarnoma bilan birgalikda arizachiga yuborilgan boʻlsa, iltimosnomani koʻrib chiqish muddatini uzaytirishga haqli.",
+     "retrieval_score": 0.7459,
+     "rerank_score": 0.4,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-55563#art-15#p4",
+     "doc_id": "lex:-55563",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tovar bozorlarida monopolistik faoliyatni cheklash va raqobat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-55563",
+     "article": "15-modda",
+     "part": "4–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-12-27",
+     "text": "15-modda. Aksiyalar, ulushlar va boshqa mulkiy huquqlarni olish vaqtida monopoliyaga qarshi kurashga doir qonun hujjatlariga rioya etilishi ustidan davlat nazorati\nTegishli bitimda qatnashuvchi shaxslar aktivlarining jami balans qiymati eng kam ish haqining toʻrt ming barobari miqdoridan ortiq boʻlsa yoki bitim qatnashchilaridan biri tovar bozorida ustun mavqeni egallab turgan xoʻjalik yurituvchi subyektlar reyestriga kiritilgan xoʻjalik yurituvchi subyekt boʻlsa yoxud ushbu xoʻjalik yurituvchi subyekt faoliyatini nazorat qiluvchi bir guruh shaxslar sotib oluvchi boʻlsa, ushbu moddaning birinchi qismida koʻrsatilgan bitimlarni tuzish uchun oldindan rozilik olinishi zarur.\nUshbu moddaning birinchi qismida koʻrsatilgan bitimlarni tuzish uchun shaxslar monopoliyaga qarshi davlat organiga bunday bitimlarni tuzish uchun rozilik berish haqida iltimosnoma taqdim etishlari va qaror chiqarish uchun zarur boʻlgan axborotni maʼlum qilishlari lozim.\nAgar bitim qatnashchilari oʻz harakatlarining bozorda savdo sharoitlarini yaxshilashga, tovarning raqobatbardoshligini oshirishga koʻmaklashuvchi, xaridorlarga sezilarli tarzda naf keltiruvchi ijobiy samarasi koʻrib chiqilayotgan tovar bozori uchun kelib chiqadigan salbiy oqibatlardan ustun boʻlishini isbotlasalar, hatto raqobatni cheklash ehtimoli boʻlgan taqdirda ham monopoliyaga qarshi davlat organi iltimosnomani qondirishga haqlidir.",
+     "retrieval_score": 0.6891,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-55563#art-15#p1",
+     "doc_id": "lex:-55563",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tovar bozorlarida monopolistik faoliyatni cheklash va raqobat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-55563",
+     "article": "15-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-12-27",
+     "text": "15-modda. Aksiyalar, ulushlar va boshqa mulkiy huquqlarni olish vaqtida monopoliyaga qarshi kurashga doir qonun hujjatlariga rioya etilishi ustidan davlat nazorati\nMonopoliyaga qarshi davlat organining oldindan olingan roziligi bilan xoʻjalik yurituvchi subyektning iltimosnomasi asosida quyidagilar amalga oshiriladi:\nbir shaxsning, bir guruh shaxslarning xoʻjalik yurituvchi subyektning aksiyalarini, ustav kapitalidagi ovoz huquqiga ega boʻlgan ulushlarini olishi, bunda ushbu shaxs, bir guruh shaxslar mazkur aksiyalar, ulushlarning oʻttiz besh foizdan ortigʻini tasarruf etish huquqini oladi. Ushbu talab xoʻjalik yurituvchi subyektni tashkil etish chogʻida uning taʼsis etuvchilariga tatbiq etilmaydi, moliya-sanoat guruhlari, xolding kompaniyalarni tashkil etish hollari bundan mustasno;\nbir shaxsning, bir guruh shaxslarning xoʻjalik yurituvchi subyektning tadbirkorlik faoliyatini olib borish yoxud uning ijroiya organi vazifalarini amalga oshirish shartlarini belgilash imkonini beruvchi huquqlarni olishi, shu jumladan bitimlar, shartnomalar, topshiriqnomalar, kontraktlar vositasida yoki boshqa yoʻllar bilan olishi.",
+     "retrieval_score": 0.6824,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-40123#art-3#p1",
+     "doc_id": "lex:-40123",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tabiiy monopoliyalar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-40123",
+     "article": "3-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1997-04-24",
+     "text": "3-modda. Tabiiy monopoliya subyektlarining faoliyatini tartibga soluvchi organlar\nTabiiy monopoliya subyektlari faoliyatini davlat tomonidan tartibga solishni Oʻzbekiston Respublikasi Vazirlar Mahkamasi va monopoliyaga qarshi davlat organi amalga oshiradi.\nTabiiy monopoliya subyektlari faoliyatini tartibga soluvchi organlarning vakolatlari “Tovar bozorlarida monopolistik faoliyatni cheklash va raqobat toʻgʻrisida”gi Qonunga hamda boshqa qonun hujjatlariga muvofiq belgilanadi.",
+     "retrieval_score": 0.6816,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1735,
+    "retrieval_ms": 1495,
+    "rerank_ms": 0,
+    "generation_ms": 3759,
+    "total_ms": 6991
+   },
+   "usage": {
+    "input_tokens": 13174,
+    "output_tokens": 864,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Tabiiy monopoliya subyekti asosiy vositalarga boʻlgan huquqni qoʻlga kiritadigan bitim qanday holatda monopoliyaga qarshi organning nazorati ostiga tushadi, yaʼni bunday vositalarning balans qiymati subyektning oʻz kapitaliga nisbatan qancha boʻlishi kerak?",
+    "search_queries": [
+     "Tabiiy monopoliya subyekti asosiy vositalarga boʻlgan huquqni qoʻlga kiritadigan bitim qanday holatda monopoliyaga qarshi organning nazorati ostiga tushadi — yaʼni bunday vositalarning balans qiymati subyektning oʻz kapitaliga nisbatan qancha boʻlishi kerak?",
+     "Tabiiy monopoliya subyekti asosiy vositalarga boʻlgan huquqni qoʻlga kiritadigan bitim qanday holatda monopoliyaga qarshi organning nazorati ostiga tushadi, yaʼni bunday vositalarning balans qiymati subyektning oʻz kapitaliga nisbatan qancha boʻlishi kerak?",
+     "tabiiy monopoliya subyekti asosiy vositalarga boʻlgan huquqni qoʻlga kiritish bitimi monopoliyaga qarshi organ nazorati",
+     "asosiy vositalarning balans qiymati subyektning oʻz kapitaliga nisbati monopoliyaga qarshi nazorat",
+     "tabiiy monopoliya subyekti bitimlari monopoliyaga qarshi organning roziligi bilan amalga oshiriladi"
+    ],
+    "doc_hints": [
+     "Raqobat toʻgʻrisidagi qonun",
+     "Tabiiy monopoliyalar toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 558,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q085",
+   "status": "ok",
+   "answer": "Nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisidagi qonunning 20-moddasiga koʻra, mikromoliya tashkiloti davlat roʻyxatidan oʻtkazilganidan keyin uch oydan kechiktirmay Markaziy bankka hisob roʻyxatidan oʻtish uchun hujjatlarni elektron platforma orqali taqdim etadi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5972411",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5972411",
+     "article": "20-modda",
+     "part": "1–8-qism",
+     "edition_date": "2025-04-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5972411#art-20#p1",
+     "quote": "Mikromoliya tashkiloti, ipotekani qayta moliyalashtirish tashkiloti, kafolatlar berish tashkiloti yoki faktoring tashkiloti (bundan buyon matnda ariza beruvchi deb yuritiladi) hisob roʻyxatidan oʻtish uchun ular davlat roʻyxatidan oʻtkazilganidan keyin uch oydan kechiktirmay Markaziy bankka elektron platforma orqali quyidagi hujjatlarni taqdim etadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5972411#art-20#p1",
+     "doc_id": "lex:-5972411",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5972411",
+     "article": "20-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "20-modda. Hisob roʻyxatidan oʻtish uchun taqdim etiladigan hujjatlar\nMikromoliya tashkiloti, ipotekani qayta moliyalashtirish tashkiloti, kafolatlar berish tashkiloti yoki faktoring tashkiloti (bundan buyon matnda ariza beruvchi deb yuritiladi) hisob roʻyxatidan oʻtish uchun ular davlat roʻyxatidan oʻtkazilganidan keyin uch oydan kechiktirmay Markaziy bankka elektron platforma orqali quyidagi hujjatlarni taqdim etadi.\nariza beruvchining firma nomi va joylashgan yeri (pochta manzili), shuningdek uning bank hisobvaragʻi rekvizitlari koʻrsatilgan arizani;\nariza beruvchining ishtirokchilari (aksiyadorlari) ushbu Qonun 14-moddasining ikkinchi qismida koʻrsatilgan shaxslar emasligini tasdiqlovchi maʼlumotlarni;\nuning ustav fondini (ustav kapitalini) shakllantirish uchun kiritilgan mablagʻlarning manbalari toʻgʻrisida hujjatlar bilan tasdiqlangan axborotni;\nariza beruvchining rahbar xodimlari ushbu Qonunning 16-moddasida belgilangan talablarga muvofiqligi toʻgʻrisidagi maʼlumotlarni.\nIpotekani qayta moliyalashtirish tashkiloti ushbu moddaning birinchi qismida koʻrsatilgan hujjatlardan tashqari quyidagi hujjatlarni taqdim etadi:\nkredit va investitsiya siyosatini, tavakkalchiliklarni, aktivlar va passivlarni boshqarish siyosatini belgilovchi hujjatlarni;\nnamunaviy bosh kredit shartnomasining (qayta moliyalashtirish shartnomasining) loyihasini;",
+     "retrieval_score": 0.9508,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5972411#art-13#p4",
+     "doc_id": "lex:-5972411",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5972411",
+     "article": "13-modda",
+     "part": "4–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "13-modda. Nobank kredit tashkilotining firma nomi\nNobank kredit tashkilotining turlaridan biri sifatida davlat roʻyxatidan oʻtgan, biroq davlat roʻyxatidan oʻtganidan keyin uch oy davomida hisob roʻyxatidan oʻtish uchun hujjatlarni taqdim etmagan yuridik shaxslar oʻz firma nomida “mikromoliya tashkiloti”, “ipotekani qayta moliyalashtirish”, “faktoring tashkiloti” soʻz birikmasidan yoki “MMT” degan qisqartma soʻzdan, shuningdek lombard faoliyatini boshlaganlik haqida Markaziy bankka xabarnoma yubormagan yuridik shaxslar — “lombard” degan soʻzdan foydalanish huquqiga ega emas.\nNobank kredit tashkilotlari boʻlmagan yuridik shaxslar oʻz firma nomida faktoring tashkilotining, lombardning faoliyatini, ipoteka kreditlarini qayta moliyalashtirish yoki jismoniy shaxslarga kredit berish faoliyatini amalga oshirishini anglatuvchi soʻzdan, soʻz birikmasidan va (yoki) qisqartirma soʻzdan foydalanishga haqli emas, bundan ushbu faoliyatni qonunchilikka muvofiq amalga oshiruvchi yuridik shaxslar mustasno.\nUshbu moddaning talablari kafolatlar berish tashkilotlariga nisbatan tatbiq etilmaydi.",
+     "retrieval_score": 0.8392,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5972411#art-22#p1",
+     "doc_id": "lex:-5972411",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5972411",
+     "article": "22-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "22-modda. Hisob roʻyxatidan oʻtkazishni rad etish\nHisob roʻyxatidan oʻtkazishni rad etish uchun quyidagilar asos boʻladi:\nariza beruvchi tomonidan taqdim etilgan hujjatlarning nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisidagi qonunchilik talablariga muvofiq emasligi va (yoki) ularda notoʻgʻri yoki buzib koʻrsatilgan maʼlumotlarning mavjudligi;\nariza beruvchining ishtirokchilari (aksiyadorlari) tarkibida ushbu Qonun 14-moddasining ikkinchi qismida koʻrsatilgan shaxslarning mavjudligi;\nrahbar xodimlarning ushbu Qonunning 16-moddasida belgilangan talablarga muvofiq emasligi;\nariza beruvchining ustav fondi (ustav kapitali) ushbu Qonunning 17-moddasi talablariga muvofiq emasligi;\nnorezident boʻlgan yuridik shaxs nazorat qilish organining hisob roʻyxatidan oʻtkazishni rad etish toʻgʻrisidagi tavsiyasi mavjudligi;\nariza beruvchining hisob roʻyxatidan oʻtkazish uchun hujjatlarni ushbu Qonunda belgilangan muddatlarda taqdim etmaganligi.\nHisob roʻyxatidan oʻtkazishni rad etish haqidagi xabarnoma (bundan buyon matnda rad etish toʻgʻrisidagi xabarnoma deb yuritiladi) ariza beruvchiga rad etish asoslari koʻrsatilgan holda, hisob roʻyxatidan oʻtkazishni rad etish toʻgʻrisidagi qaror qabul qilingan sanadan eʼtiboran bir ish kunidan kechiktirmay yuboriladi.",
+     "retrieval_score": 0.694,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5972411#art-21#p4",
+     "doc_id": "lex:-5972411",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5972411",
+     "article": "21-modda",
+     "part": "4–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "21-modda. Hujjatlarni koʻrib chiqish va hisob roʻyxatidan oʻtkazish toʻgʻrisida qaror qabul qilish tartibi\nHisob roʻyxatidan oʻtkazish uchun taqdim etilgan hujjatlarni koʻrib chiqish davrida ularda koʻrsatilgan maʼlumotlar oʻzgargan taqdirda, ariza beruvchi bu haqda zudlik bilan Markaziy bankni xabardor qilishi va yangilangan hujjatlarni oʻzgartishlar yuzaga kelgan paytdan eʼtiboran uch ish kuni ichida taqdim etishi kerak. Bunda hisob roʻyxatidan oʻtkazish uchun taqdim etilgan hujjatlarni koʻrib chiqish muddati oʻn ish kuniga uzaytiriladi.\nAriza beruvchiga hisob roʻyxatidan oʻtkazilganligi toʻgʻrisidagi xabarnoma hisob roʻyxatidan oʻtkazish toʻgʻrisida qaror qabul qilingan sanadan eʼtiboran bir ish kunidan kechiktirmay yuboriladi.\nHisob roʻyxatidan oʻtkazish haqidagi axborot hisob roʻyxatidan oʻtkazish toʻgʻrisidagi qaror qabul qilingan kundan eʼtiboran bir ish kuni ichida Markaziy bankning rasmiy veb-saytida eʼlon qilinishi lozim.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-5972411#art-21#p1",
+     "doc_id": "lex:-5972411",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5972411",
+     "article": "21-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "21-modda. Hujjatlarni koʻrib chiqish va hisob roʻyxatidan oʻtkazish toʻgʻrisida qaror qabul qilish tartibi\nAriza beruvchi tomonidan hisob roʻyxatidan oʻtkazish uchun taqdim etilgan hujjatlar ushbu Qonunning 20-moddasiga muvofiq taqdim etilgan taqdirda Markaziy bank tomonidan koʻrib chiqiladi. Boshqa hollarda Markaziy bank ular olingan kundan eʼtiboran besh kun ichida ariza beruvchiga hujjatlar koʻrib chiqilmasligi haqida xabarnoma yuboradi. Mazkur xabarnomada ushbu Qonunning 20-moddasiga muvofiq taqdim etilishi lozim boʻlgan hujjatlar roʻyxati ham koʻrsatiladi.\nHisob roʻyxatidan oʻtkazish uchun ariza beruvchi tomonidan taqdim etilgan hujjatlarni koʻrib chiqqanlik uchun yigʻim undirilmaydi.\nHisob roʻyxatidan oʻtkazish yoki hisob roʻyxatidan oʻtkazishni asoslantirilgan holda rad etish toʻgʻrisidagi qaror hisob roʻyxatidan oʻtkazish uchun zarur boʻlgan hujjatlar olingan kundan eʼtiboran oʻn besh ish kuni ichida Markaziy bank tomonidan qabul qilinadi. Mikromoliya tashkiloti, ipotekani qayta moliyalashtirish tashkiloti, kafolatlar berish tashkiloti yoki faktoring tashkiloti norezidentlar tomonidan tashkil etilgan hollarda mazkur muddat oʻn ish kuniga uzaytirilishi mumkin.",
+     "retrieval_score": 0.9694,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1709,
+    "retrieval_ms": 1455,
+    "rerank_ms": 0,
+    "generation_ms": 2266,
+    "total_ms": 5431
+   },
+   "usage": {
+    "input_tokens": 14147,
+    "output_tokens": 570,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Mikromoliya tashkiloti davlat roʻyxatidan oʻtkazilgandan soʻng qancha muddat ichida hisob roʻyxatidan oʻtish uchun hujjatlarni Markaziy bankka topshirishi kerak?",
+    "search_queries": [
+     "Mikromoliya tashkiloti davlat roʻyxatidan oʻtkazilgandan soʻng qancha muddat ichida hisob roʻyxatidan oʻtish uchun hujjatlarni Markaziy bankka topshirishi kerak?",
+     "mikromoliya tashkiloti hisob roʻyxatidan oʻtish muddati Markaziy bank",
+     "mikromoliya tashkiloti davlat roʻyxatidan oʻtkazilgandan soʻng hujjatlarni Markaziy bankka topshirish muddati",
+     "mikromoliya tashkilotlarini roʻyxatdan oʻtkazish hisob roʻyxati Markaziy bank"
+    ],
+    "doc_hints": [
+     "Mikromoliya tashkilotlari toʻgʻrisidagi qonun",
+     "Markaziy bank toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 537,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q086",
+   "status": "ok",
+   "answer": "Litsenziya berish toʻgʻrisidagi ariza barcha zarur hujjatlar bilan qabul qilingan sanadan eʼtiboran koʻrib chiqish, litsenziyani berish yoki berishni rad etish muddati yigirma ish kunidan oshmasligi kerak (Vazirlar Mahkamasi ayrim faoliyat turlari uchun bu muddatni yigirma ish kunidan ortiq etib belgilashi mumkin) [1]. Vakolatli organ qaror qabul qilingan sanadan eʼtiboran bir ish kunidan kechiktirmay uni maxsus elektron tizimga joylashtiradi va talabgorni qaror joylashtirilgan paytdan eʼtiboran bir ish soatidan oshmagan muddatda elektron shaklda xabardor qiladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "28-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-03-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5511879#art-28#p1",
+     "quote": "Talabgorning arizasi ushbu Qonunning 25-moddasida nazarda tutilgan tartibda barcha zarur hujjatlar bilan qabul qilib olingan sanadan eʼtiboran vakolatli organ tomonidan uni koʻrib chiqish, litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish yoxud uni berishni rad etish muddati yigirma ish kunidan oshmasligi kerak",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "28-modda",
+     "part": "3–5-qism",
+     "edition_date": "2026-03-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5511879#art-28#p3",
+     "quote": "Vakolatli organ litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish yoxud uni berishni rad etish toʻgʻrisidagi qaror qabul qilingan sanadan eʼtiboran bir ish kunidan kechiktirmay uni maxsus elektron tizimga joylashtiradi va talabgorni mazkur qaror joylashtirilgan paytdan eʼtiboran bir ish soatidan oshmagan muddatda maxsus elektron tizim vositasida elektron shaklda xabardor qiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5511879#art-28#p3",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "28-modda",
+     "part": "3–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-03-01",
+     "text": "28-modda. Talabgorlarning litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish toʻgʻrisidagi arizalarini koʻrib chiqish\nVakolatli organ, zarur boʻlgan taqdirda, oʻz mablagʻlari hisobidan tegishli xulosalarni tayyorlash uchun ekspertlarni shartnoma asosida jalb etishga haqli.\nVakolatli organ litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish yoxud uni berishni rad etish toʻgʻrisidagi qaror qabul qilingan sanadan eʼtiboran bir ish kunidan kechiktirmay uni maxsus elektron tizimga joylashtiradi va talabgorni mazkur qaror joylashtirilgan paytdan eʼtiboran bir ish soatidan oshmagan muddatda maxsus elektron tizim vositasida elektron shaklda xabardor qiladi.\nAgar vakolatli organ talabgorning litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish toʻgʻrisidagi arizasini koʻrib chiqish, uni berish yoki berishni rad etish muddati mobaynida talabgorga litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni bermasa va uni berishni rad etmasa, ushbu moddaning ikkinchi qismida nazarda tutilgan muddatlar oʻtganidan keyin talabgor amalga oshirilishi uchun litsenziya yoki ruxsat etish xususiyatiga ega hujjat olish niyatida boʻlgan faoliyatni (harakatni) amalga oshirish huquqiga ushbu moddaning oltinchi qismida nazarda tutilgan harakatlarni amalga oshirganidan keyin ega boʻladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5511879#art-28#p1",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "28-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-03-01",
+     "text": "28-modda. Talabgorlarning litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish toʻgʻrisidagi arizalarini koʻrib chiqish\nLitsenziyalash va ruxsat berish tartib-taomillari maxsus elektron tizim orqali elektron shaklda amalga oshiriladi, bundan davlat sirlarini yoki qonunchilikka muvofiq foydalanilishi cheklangan axborotni oʻz ichiga olgan litsenziyalash va ruxsat berish tartib-taomillari mustasno.\nTalabgorning arizasi ushbu Qonunning 25-moddasida nazarda tutilgan tartibda barcha zarur hujjatlar bilan qabul qilib olingan sanadan eʼtiboran vakolatli organ tomonidan uni koʻrib chiqish, litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish yoxud uni berishni rad etish muddati yigirma ish kunidan oshmasligi kerak. Oʻzbekiston Respublikasi Vazirlar Mahkamasi faoliyatning ayrim litsenziyalanadigan turlari va amalga oshirilishi uchun ruxsat etish xususiyatiga ega hujjatni olish zarur boʻlgan faoliyat (harakatlar) turlari uchun ularning oʻziga xos xususiyatlarini hisobga olgan holda talabgorlarning litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish toʻgʻrisidagi arizasini litsenziyalash va ruxsat berish tartib-taomillari sohasidagi vakolatli organ tomonidan koʻrib chiqish, uni berish yoki berishni rad etish muddatlarini yigirma ish kunidan ortiq etib belgilashi mumkin.",
+     "retrieval_score": 0.795,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5511879#art-16#p11",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "16-modda",
+     "part": "11–15-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-22",
+     "text": "16-modda. Litsenziyaning amal qilish muddati\nlotereyalar tashkil etish faoliyati;\nbukmekerlik faoliyati;\nInternet jahon axborot tarmogʻida tavakkalchilikka asoslangan oʻyinlarni tashkil etish faoliyati.\nUshbu modda birinchi qismining ikkinchi — oʻn uchinchi xatboshilarida nazarda tutilgan faoliyat turlarini (kichik turlarini) amalga oshirish uchun litsenziyalarning amal qilish muddatlari faoliyatning ayrim turlarini litsenziyalash toʻgʻrisidagi nizomlarda va ularning pasportlarida belgilanadi, lekin bu muddatlar besh yildan kam boʻlmasligi kerak.\nLitsenziyaning amal qilish muddati tugagach, u litsenziatning arizasiga koʻra uzaytirilishi mumkin. Litsenziyaning amal qilish muddatini uzaytirish toʻgʻrisidagi ariza ushbu Qonunning 25-moddasida nazarda tutilgan tartibda vakolatli organga topshiriladi. Litsenziyaning amal qilish muddatini uzaytirish litsenziyani berish uchun nazarda tutilgan tartibda amalga oshiriladi.",
+     "retrieval_score": 0.972,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5511879#art-29#p18",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "29-modda",
+     "part": "18–20-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "29-modda. Litsenziyani va ruxsat etish xususiyatiga ega hujjatni berishni rad etish\nHujjatlarni takroran koʻrib chiqishda vakolatli organlar tomonidan talabgorga ilgari bayon qilinmagan rad etish sabablarini keltirishga yoʻl qoʻyilmaydi, bundan ilgari koʻrsatilgan sabablar bartaraf etilganligini tasdiqlovchi hujjatlar bilan bogʻliq rad etish sabablari keltirilishi mustasno.\nLitsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish rad etilganligi haqidagi xabarnomada koʻrsatilgan muddat oʻtganidan keyin talabgor tomonidan berilgan ariza yangidan topshirilgan hisoblanadi va vakolatli organ tomonidan umumiy asoslarda koʻrib chiqiladi.\nTalabgor litsenziyani yoki ruxsat etish xususiyatiga ega hujjatni berish rad etilganligi, shuningdek vakolatli organ mansabdor shaxsining harakatlari (harakatsizligi) ustidan ushbu Qonunning 7-bobida belgilangan tartibda shikoyat qilish huquqiga ega.",
+     "retrieval_score": 0.9066,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-5511879#art-53#p1",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "53-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-03-01",
+     "text": "53-modda. Jarima solish toʻgʻrisidagi qarorni qabul qilish muddati\nJarima solish uchun asos boʻlgan huquqbuzarlik aniqlanganligi toʻgʻrisida dalolatnoma rasmiylashtirilgan kundan eʼtiboran besh ish kuni ichida vakolatli organ jarima solish toʻgʻrisida qaror qabul qiladi.\nMaxsus elektron tizim vositasida amalga oshiriladigan litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari boʻyicha jarima solish toʻgʻrisidagi qaror maxsus elektron tizimda rasmiylashtiriladi.\nJarima solish toʻgʻrisidagi qaror vakolatli organning birinchi rahbari (uning oʻrnini bosuvchi shaxs) tomonidan imzolanadi va bir ish kuni ichida huquqbuzarga yuboriladi.\nVakolatli organ tomonidan maxsus elektron tizim vositasida rasmiylashtirilgan jarima solish toʻgʻrisidagi qaror avtomatik ravishda huquqbuzarga yuboriladi.",
+     "retrieval_score": 0.8218,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1815,
+    "retrieval_ms": 2096,
+    "rerank_ms": 0,
+    "generation_ms": 3555,
+    "total_ms": 7469
+   },
+   "usage": {
+    "input_tokens": 11017,
+    "output_tokens": 798,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Litsenziya olish uchun ariza topshirgan tadbirkor litsenziya berish yoki bermaslik toʻgʻrisidagi qaror qabul qilinishini qancha muddat kutishi mumkin va qaror qabul qilinganidan keyin u qancha muddat ichida bu haqda xabardor qilinishi kerak?",
+    "search_queries": [
+     "Litsenziya olish uchun ariza topshirgan tadbirkor qaror qabul qilinishini qancha vaqt kutishi mumkin va qaror chiqqanidan keyin u qancha muddat ichida bu haqda xabardor qilinadi?",
+     "Litsenziya olish uchun ariza topshirgan tadbirkor litsenziya berish yoki bermaslik toʻgʻrisidagi qaror qabul qilinishini qancha muddat kutishi mumkin va qaror qabul qilinganidan keyin u qancha muddat ichida bu haqda xabardor qilinishi kerak?",
+     "litsenziya berish toʻgʻrisidagi ariza koʻrib chiqilish muddati",
+     "litsenziya berish yoki bermaslik haqidagi qaror qabul qilish muddati",
+     "litsenziya berilganligi toʻgʻrisida arizachini xabardor qilish muddati"
+    ],
+    "doc_hints": [
+     "Litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 655,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q087",
+   "status": "ok",
+   "answer": "Муддатли ҳарбий хизматчи ўзига шахсан фойдаланиш учун берилган ҳарбий аслаҳа-анжомларни сотиши Жиноят кодексининг 295-моддаси биринчи қисмига кўра ҳарбий мулкни беҳуда сарфлаш деб баҳоланади ва бир йилгача интизомий қисмга юбориш ёки бир йилгача озодликдан маҳрум қилиш билан жазоланади [1].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "295-modda",
+     "part": "1–6-qism",
+     "edition_date": "2017-03-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111453#art-295#p1",
+     "quote": "Harbiy mulkni behuda sarflash, yaʼni muddatli harbiy xizmat harbiy xizmatchisining shaxsan oʻzi foydalanishi uchun berilgan harbiy aslaha-anjomlarni sotishi, foydalanish uchun birovga berishi yoki garovga qoʻyishi — bir yilgacha intizomiy qismga yuborish yoki bir yilgacha ozodlikdan mahrum qilish bilan jazolanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111453#art-295#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "295-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-03-29",
+     "text": "295-modda. Harbiy mulkni behuda sarflash, yoʻqotish yoki ishdan chiqarish\nHarbiy mulkni behuda sarflash, yaʼni muddatli harbiy xizmat harbiy xizmatchisining shaxsan oʻzi foydalanishi uchun berilgan harbiy aslaha-anjomlarni sotishi, foydalanish uchun birovga berishi yoki garovga qoʻyishi —\nbir yilgacha intizomiy qismga yuborish yoki bir yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nXizmatda foydalanish uchun ishonib topshirilgan qurol, oʻq-dori, harakat qilish vositalari, texnika taʼminoti buyumlarini saqlash qoidalarini buzish natijasida ularni yoʻqotish yoki ishdan chiqarish, —\nikki yilgacha xizmat boʻyicha cheklash yoki bir yilgacha intizomiy qismga yuborish yoxud uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nUshbu moddaning birinchi yoki ikkinchi qismida nazarda tutilgan qilmishlar jangovar vaziyatda sodir etilgan boʻlsa, —\nuch yildan besh yilgacha ozodlikdan mahrum qilish bilan jazolanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111453#art-247#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "247-modda",
+     "part": "1–14-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-09-02",
+     "text": "247-modda. Oʻqotar qurolni, oʻq-dorilarni, oʻqotar qurolning asosiy qismlarini, portlovchi moddalarni, portlatish vositalarini yoki portlatish qurilmalarini qonunga xilof ravishda egallash\nOʻqotar qurolni, oʻq-dorilarni, oʻqotar qurolning asosiy qismlarini, portlovchi moddalarni, portlatish vositalarini yoki portlatish qurilmalarini oʻgʻrilik yoki firibgarlik yoʻli bilan egallash —\nuch yilgacha axloq tuzatish ishlari yoki ikki yildan besh yilgacha ozodlikni cheklash yoxud besh yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha harakat:\na) takroran;\nb) bir guruh shaxslar tomonidan oldindan til biriktirib;\nv) oʻzlashtirish, rastrata qilish yoxud mansab mavqeyini suiisteʼmol qilish yoʻli bilan;\ng) talonchilik;\nd) tamagirlik yoʻli bilan sodir etilgan boʻlsa, —\nbesh yildan oʻn yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha harakat:\na) bosqinchilik yoʻli bilan;\nb) oʻta xavfli retsidivist tomonidan;\nv) uyushgan guruh tomonidan yoki uning manfaatlarini koʻzlab sodir etilgan boʻlsa, —\noʻn yildan yigirma yilgacha ozodlikdan mahrum qilish bilan jazolanadi.",
+     "retrieval_score": 0.6603,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111453#art-281#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "281-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-09-22",
+     "text": "281-modda. Boshliqqa qarshilik koʻrsatish yoki uni xizmat vazifalarini buzishga majbur qilish\nBoshliqqa, shuningdek harbiy xizmat yuzasidan oʻziga yuklatilgan vazifalarni bajarayotgan boshqa shaxsga qarshilik koʻrsatish yoki uni mazkur vazifalarni buzishga majbur etish —\nikki yilgacha xizmat boʻyicha cheklash yoxud bir yilgacha intizomiy qismga yuborish yoxud besh yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha harakatlar:\na) bir guruh shaxslar tomonidan;\nb) qurol ishlatib sodir etilgan boʻlsa;\nv) ogʻir oqibatlarga sabab boʻlsa, —\nbesh yildan oʻn yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha harakatlar jangovar vaziyatda sodir etilgan boʻlsa, —\nbesh yildan oʻn besh yilgacha ozodlikdan mahrum qilish bilan jazolanadi.",
+     "retrieval_score": 0.6548,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111453#art-154#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "154-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2003-08-30",
+     "text": "154-modda. Yollanish\nYollanish, yaʼni nizolashayotgan davlatning fuqarosi yoki harbiy xizmatchisi hisoblanmagan yoxud nazorat qilinib turgan nizolashayotgan davlat hududida doimiy yashamaydigan yoki hech qanday davlat tomonidan qurolli kuchlar tarkibida rasmiy topshiriqni bajarish vakolati berilmagan shaxsning moddiy manfaatdorlik yoki boshqa biron shaxsiy manfaatni koʻzlab, oʻzga davlat hududida yoki uning tarafini olib qurolli toʻqnashuvda yoxud harbiy harakatlarda qatnashish uchun yollanishi —\nbesh yildan oʻn yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nYollanma shaxsni yollash, oʻqitish, moliyalashtirish yoki unga boshqa moddiy taʼminot berish, xuddi shuningdek undan harbiy toʻqnashuv yoki harbiy harakatlarda foydalanish —\nyetti yildan oʻn ikki yilgacha ozodlikdan mahrum qilish bilan jazolanadi.",
+     "retrieval_score": 0.6508,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111453#art-296#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "296-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-03-29",
+     "text": "296-modda. Harbiy mulkni nobud qilish yoki unga shikast yetkazish\nQurol, oʻq-dori, harakat qilish vositalari, harbiy texnika yoki boshqa harbiy mulkni qasddan nobud qilish yoki unga shikast yetkazish —\nikki yilgacha xizmat boʻyicha cheklash yoki bir yilgacha intizomiy qismga yuborish yoxud besh yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha qilmish ogʻir oqibatlarga sabab boʻlsa, —\nbesh yildan oʻn yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha qilmish jangovar vaziyatda sodir etilgan boʻlsa, —\noʻn yildan oʻn besh yilgacha ozodlikdan mahrum etish bilan jazolanadi.",
+     "retrieval_score": 0.643,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1959,
+    "retrieval_ms": 2097,
+    "rerank_ms": 0,
+    "generation_ms": 3103,
+    "total_ms": 7161
+   },
+   "usage": {
+    "input_tokens": 11597,
+    "output_tokens": 507,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Muddatli harbiy xizmatchi oʻziga shaxsan foydalanish uchun berilgan harbiy aslaha-anjomlarni boshqa birovga sotib yuborsa, qanday jazoga tortiladi?",
+    "search_queries": [
+     "Муддатли ҳарбий хизматчи ўзига шахсан фойдаланиш учун берилган ҳарбий аслаҳа-анжомларни бошқа бировга сотиб юборса, қандай жазога тортилади?",
+     "Muddatli harbiy xizmatchi oʻziga shaxsan foydalanish uchun berilgan harbiy aslaha-anjomlarni boshqa birovga sotib yuborsa, qanday jazoga tortiladi?",
+     "harbiy aslaha-anjomlarni sotish jinoyat javobgarlik",
+     "qurol-aslaha va oʻq-dorilarni talon-toroj qilish yoki sotish",
+     "harbiy xizmatchi tomonidan qurolni oʻzlashtirish yoki sotish"
+    ],
+    "doc_hints": [
+     "Jinoyat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 811,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q088",
+   "status": "ok",
+   "answer": "Avtomobil yoʻllari toʻgʻrisidagi qonunning 54-moddasiga koʻra, Vazirlar Mahkamasi pulli avtomobil yoʻllarida harakatni tashkil etish xizmatlarini koʻrsatish va ushbu yoʻllardan foydalanish qoidalarini, shuningdek pulli avtomobil yoʻllarida harakatlanish uchun toʻlovlarni hisoblash uslubiyatini ushbu Qonun rasmiy eʼlon qilingan kundan eʼtiboran uch oy ichida ishlab chiqishi va tasdiqlashi kerak [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-8377546",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni avtomobil yoʻllari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-8377546",
+     "article": "54-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-08-05",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-8377546#art-54#p1",
+     "quote": "ushbu Qonun 21-moddasi birinchi qismining sakkizinchi xatboshisida nazarda tutilgan pulli avtomobil yoʻllarida harakatni tashkil etish xizmatlarini koʻrsatish va ushbu yoʻllardan foydalanish qoidalarini, shuningdek pulli avtomobil yoʻllarida harakatlanish uchun toʻlovlarni hisoblash uslubiyatini ushbu Qonun rasmiy eʼlon qilingan kundan eʼtiboran uch oy ichida ishlab chiqsin va tasdiqlasin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-8377546#art-54#p1",
+     "doc_id": "lex:-8377546",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni avtomobil yoʻllari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8377546",
+     "article": "54-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-08-05",
+     "text": "54-modda. Qonunchilikni ushbu Qonunga muvofiqlashtirish\nOʻzbekiston Respublikasi Vazirlar Mahkamasi:\nushbu Qonun 21-moddasi birinchi qismining sakkizinchi xatboshisida nazarda tutilgan pulli avtomobil yoʻllarida harakatni tashkil etish xizmatlarini koʻrsatish va ushbu yoʻllardan foydalanish qoidalarini, shuningdek pulli avtomobil yoʻllarida harakatlanish uchun toʻlovlarni hisoblash uslubiyatini ushbu Qonun rasmiy eʼlon qilingan kundan eʼtiboran uch oy ichida ishlab chiqsin va tasdiqlasin;\nhukumat qarorlarini ushbu Qonunga muvofiqlashtirsin;\nrespublika ijro etuvchi hokimiyat organlari ushbu Qonunga zid boʻlgan oʻz normativ-huquqiy hujjatlarini qayta koʻrib chiqishlari va bekor qilishlarini taʼminlasin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-8377546#art-21#p1",
+     "doc_id": "lex:-8377546",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni avtomobil yoʻllari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8377546",
+     "article": "21-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-08-05",
+     "text": "21-modda. Oʻzbekiston Respublikasi Vazirlar Mahkamasining avtomobil yoʻllari sohasidagi vakolatlari\nOʻzbekiston Respublikasi Vazirlar Mahkamasi:\navtomobil yoʻllarini, shu jumladan pulli avtomobil yoʻllarini rivojlantirishga, avtomobil yoʻllari sohasidagi davlat siyosatining asosiy yoʻnalishlarini amalga oshirishga qaratilgan davlat dasturlarini va boshqa dasturlarni tasdiqlaydi;\nrespublika ijro etuvchi hokimiyat organlarining, shuningdek mahalliy ijro etuvchi hokimiyat organlarining avtomobil yoʻllari sohasidagi faoliyatini muvofiqlashtiradi;\nOʻzbekiston Respublikasining umumiy foydalanishdagi avtomobil yoʻllari roʻyxatini tasdiqlaydi;\navtomobil yoʻllari toʻgʻrisidagi qonunchilikka rioya etilishi ustidan davlat nazoratini amalga oshirish tartibini belgilaydi;\nrespublika avtomobil yoʻllarida harakatlanish uchun transport vositalarining (yuk bilan yoki yuksiz) ruxsat etilgan vazn va gabarit parametrlarini belgilaydi;\navtomobil yoʻllari sohasidagi respublika ijro etuvchi hokimiyat organlarining va mahalliy ijro etuvchi hokimiyat organlarining pulli avtomobil yoʻllarini tashkil etish toʻgʻrisidagi takliflarini koʻrib chiqadi va tegishli qaror qabul qiladi;\npulli avtomobil yoʻllarida harakatni tashkil etish xizmatlarini koʻrsatish va ushbu yoʻllardan foydalanish qoidalarini, shuningdek pulli avtomobil yoʻllarida harakatlanish uchun toʻlovlarni hisoblash uslubiyatini tasdiqlaydi;",
+     "retrieval_score": 0.9851,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-8377546#art-47#p5",
+     "doc_id": "lex:-8377546",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni avtomobil yoʻllari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8377546",
+     "article": "47-modda",
+     "part": "5–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-08-05",
+     "text": "47-modda. Harakatlanish uchun toʻlovni toʻlamagan holda pulli avtomobil yoʻllaridan harakatlanish huquqi\nDavlat-xususiy sheriklik asosida pulli avtomobil yoʻllaridan foydalanilgan taqdirda, ushbu moddaning birinchi qismida nazarda tutilmagan boshqa foydalanuvchilarga harakatlanish uchun toʻlovni toʻlamagan holda harakatlanish huquqini berish, agar davlat-xususiy sheriklik toʻgʻrisidagi bitimda boshqacha tartib nazarda tutilmagan boʻlsa, xususiy sherik bilan kelishilishi lozim.\nMuqobil bepul yoʻldan harakatlanish imkoniyatidan foydalanishga toʻsqinlik qiladigan holatlar yuzaga kelganda, ushbu holatlar bartaraf etilgunga qadar pulli avtomobil yoʻlidan harakatlanish uchun toʻlovni olish toʻxtatib turiladi.\nPulli avtomobil yoʻlidan harakatlanish uchun toʻlov olishni toʻxtatib turish toʻgʻrisidagi qaror avtomobil yoʻlining egasi tomonidan, agar pulli avtomobil yoʻlidan davlat-xususiy sheriklik asosida foydalanilsa, ushbu moddaning toʻrtinchi qismida koʻrsatilgan holatlar yuzaga kelgan paytdan eʼtiboran bir sutka ichida davlat sherigining talabiga binoan xususiy sherik tomonidan qabul qilinadi.",
+     "retrieval_score": 0.8995,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-8377546#art-45#p11",
+     "doc_id": "lex:-8377546",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni avtomobil yoʻllari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8377546",
+     "article": "45-modda",
+     "part": "11–14-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-08-05",
+     "text": "45-modda. Pulli avtomobil yoʻlidan foydalanish\nharakatlanish uchun toʻlovlarni toʻlamagan holda harakatlanish huquqiga ega boʻlgan foydalanuvchilarning roʻyxatini;\noperatorning avariya xizmati manzilini va aloqa maʼlumotlarini;\nfoydalanuvchilarning murojaatlarini qabul qiluvchi operator boʻlimining manzilini va aloqa maʼlumotlarini;\npulli avtomobil yoʻlida yoʻl harakati xavfsizligini taʼminlash uchun masʼul boʻlgan Oʻzbekiston Respublikasi ichki ishlar organlarining manzilini va aloqa maʼlumotlarini.",
+     "retrieval_score": 0.8823,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-8377546#art-45#p1",
+     "doc_id": "lex:-8377546",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni avtomobil yoʻllari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8377546",
+     "article": "45-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-08-05",
+     "text": "45-modda. Pulli avtomobil yoʻlidan foydalanish\nPulli avtomobil yoʻlidan foydalanish foydalanuvchi va operator oʻrtasidagi ommaviy shartnoma asosida amalga oshiriladi, unga koʻra operator ushbu Qonun va boshqa qonunchilik hujjatlariga muvofiq foydalanuvchiga transport vositasida pulli yoʻldan harakatlanish huquqini taqdim etishi va yoʻl harakatini tashkil etishi, foydalanuvchi esa koʻrsatilgan xizmat uchun haq toʻlashi shart.\nFoydalanuvchi transport vositasida pulli yoʻldan harakatlanish uchun quyidagi usullardan biri orqali operator bilan ommaviy shartnoma tuzadi:\npulli avtomobil yoʻliga kirish;\nharakatlanish uchun toʻlovni toʻlov punktida toʻlash;\nyoʻl talonini sotib olish.\nOperator ushbu moddaning birinchi va ikkinchi qismlarida koʻrsatilgan shartnomani tuzishda pulli avtomobil yoʻlining bir foydalanuvchisiga boshqa foydalanuvchilariga nisbatan ustunlik berishga haqli emas.\nShartnoma tuzishdan oldin operator foydalanuvchiga koʻrsatiladigan xizmatlar hamda ularni tanlash imkoniyati haqida toʻliq va ishonchli axborotni taqdim etishi shart. Axborot davlat tilida va, zarur hollarda, boshqa tillarda taqdim etiladi.\nAxborot shartnoma shartlarini va operator tomonidan koʻrsatiladigan xizmatlar uchun toʻlov tartibini oʻz ichiga olishi kerak, shu jumladan:\npulli avtomobil yoʻli sxemasini;\nharakatlanish uchun toʻlov miqdorini, tartibini, usullarini (shakllarini);",
+     "retrieval_score": 0.8652,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1843,
+    "retrieval_ms": 2980,
+    "rerank_ms": 0,
+    "generation_ms": 2388,
+    "total_ms": 7212
+   },
+   "usage": {
+    "input_tokens": 12886,
+    "output_tokens": 622,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Pulli avtomobil yoʻllarida harakatlanish uchun toʻlovlarni hisoblash uslubiyati va ulardan foydalanish qoidalarini Vazirlar Mahkamasi qancha muddat ichida ishlab chiqishi va tasdiqlashi lozim?",
+    "search_queries": [
+     "Pulli avtomobil yoʻllarida harakatlanish uchun toʻlovlarni hisoblash uslubiyati va foydalanish qoidalarini Vazirlar Mahkamasi qancha muddat ichida ishlab chiqishi va tasdiqlashi kerak?",
+     "Pulli avtomobil yoʻllarida harakatlanish uchun toʻlovlarni hisoblash uslubiyati va ulardan foydalanish qoidalarini Vazirlar Mahkamasi qancha muddat ichida ishlab chiqishi va tasdiqlashi lozim?",
+     "pulli avtomobil yoʻllaridan foydalanish qoidalari Vazirlar Mahkamasi tasdiqlashi",
+     "pulli avtomobil yoʻllarida harakatlanish uchun toʻlovlarni hisoblash uslubiyati",
+     "pulli avtomobil yoʻllari toʻlovlari hisoblash uslubiyati va foydalanish qoidalarini ishlab chiqish muddati"
+    ],
+    "doc_hints": [
+     "Vazirlar Mahkamasi qarori",
+     "Avtomobil yoʻllari toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 508,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q089",
+   "status": "ok",
+   "answer": "Litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisidagi qonunning 58-moddasiga koʻra, respublika darajasidagi vakolatli organning qarori ustidan ushbu organda tashkil etilgan apellyatsiya kengashiga shikoyat beriladi [1]. Shikoyat qaror toʻgʻrisida xabardor qilingan paytdan yoki harakatlar haqida maʼlum boʻlgan paytdan eʼtiboran oʻttiz kundan kechiktirmay berilishi mumkin [2], shuningdek bevosita sudga shikoyat qilish ham mumkin [3]. Apellyatsiya kengashi shikoyat boʻyicha oʻn besh ish kuni ichida qaror qabul qiladi [4].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.75,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "58-modda",
+     "part": "1–6-qism",
+     "edition_date": "2025-04-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5511879#art-58#p1",
+     "quote": "respublika darajasidagi vakolatli organga nisbatan — ushbu organda tashkil etilgan apellyatsiya kengashiga beriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "58-modda",
+     "part": "1–6-qism",
+     "edition_date": "2025-04-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5511879#art-58#p1",
+     "quote": "Agar qonunda boshqacha qoida nazarda tutilmagan boʻlsa, shikoyat jismoniy va yuridik shaxslar qaror toʻgʻrisida tegishli ravishda xabardor qilingan paytdan eʼtiboran yoki ularga vakolatli organning yoxud uning mansabdor shaxslarining harakatlari haqida maʼlum boʻlgan paytdan eʼtiboran oʻttiz kundan kechiktirmay berilishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "58-modda",
+     "part": "1–6-qism",
+     "edition_date": "2025-04-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5511879#art-58#p1",
+     "quote": "Jismoniy va yuridik shaxslar belgilangan tartibda vakolatli organlarning hamda ular mansabdor shaxslarining qarorlari (harakatlari) ustidan bevosita sudga shikoyat qilishga haqli",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "60-modda",
+     "part": "1–9-qism",
+     "edition_date": "2025-04-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5511879#art-60#p1",
+     "quote": "Yuqori turuvchi vakolatli organ yoki apellyatsiya kengashi shikoyat boʻyicha oʻn besh ish kuni ichida qaror qabul qiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5511879#art-58#p1",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "58-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "58-modda. Vakolatli organlarning va ular mansabdor shaxslarining qarorlari (harakatlari) ustidan shikoyat qilish\nJismoniy va yuridik shaxslar vakolatli organlarning hamda ular mansabdor shaxslarining oʻz faoliyatiga taalluqli boʻlgan qarorlari (harakatlari) ustidan shikoyat qilishi mumkin.\nShikoyat:\nhududiy darajadagi vakolatli organga nisbatan — uning yuqori turuvchi organiga;\nrespublika darajasidagi vakolatli organga nisbatan — ushbu organda tashkil etilgan apellyatsiya kengashiga beriladi. Apellyatsiya kengashini tashkil etish qoidalari faoliyatning ayrim turlarini litsenziyalash va ruxsat berish tartib-taomillaridan oʻtish tartibi toʻgʻrisidagi nizomlarda, shuningdek xabardor qilish tartibi toʻgʻrisidagi yagona nizomda faoliyatning oʻziga xos xususiyatidan kelib chiqqan holda belgilanishi mumkin.\nJismoniy va yuridik shaxslar belgilangan tartibda vakolatli organlarning hamda ular mansabdor shaxslarining qarorlari (harakatlari) ustidan bevosita sudga shikoyat qilishga haqli.\nAgar qonunda boshqacha qoida nazarda tutilmagan boʻlsa, shikoyat jismoniy va yuridik shaxslar qaror toʻgʻrisida tegishli ravishda xabardor qilingan paytdan eʼtiboran yoki ularga vakolatli organning yoxud uning mansabdor shaxslarining harakatlari haqida maʼlum boʻlgan paytdan eʼtiboran oʻttiz kundan kechiktirmay berilishi mumkin.",
+     "retrieval_score": 0.9656,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5511879#art-60#p1",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "60-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "60-modda. Shikoyatni koʻrib chiqish\nShikoyatni olgan yuqori turuvchi vakolatli organ va apellyatsiya kengashi ustidan shikoyat berilayotgan qaror, harakatlar toʻgʻrisidagi tegishli axborotni shikoyat olingan paytdan eʼtiboran uch ish kuni ichida soʻrab oladi.\nYuqori turuvchi vakolatli organ yoki apellyatsiya kengashi shikoyat boʻyicha oʻn besh ish kuni ichida qaror qabul qiladi.\nYuqori turuvchi vakolatli organ yoki apellyatsiya kengashi shikoyat boʻyicha quyidagi qarorlardan birini qabul qilishga haqli:\nustidan shikoyat qilinayotgan qarorni oʻzgarishsiz qoldirish;\nustidan shikoyat qilinayotgan qarorga oʻzgartishlar kiritish;\nqarorni bekor qilish va zarur boʻlgan taqdirda, yangi qaror qabul qilish;\nvakolatli organ yoki uning mansabdor shaxsi zimmasiga berilgan shikoyat mohiyati boʻyicha muayyan harakatlarni amalga oshirish majburiyatini yuklash.\nShikoyat boʻyicha apellyatsiya kengashining qarori barcha aʼzolar tomonidan bir ovozdan qabul qilinadi. Bunda apellyatsiya kengashi aʼzolaridan birortasi ham ovoz berishda betaraf qolishga haqli emas.\nVakolatli organning qarori ustidan shikoyat qilingan taqdirda shikoyat yuqori turuvchi vakolatli organda yoki apellyatsiya kengashida roʻyxatdan oʻtkazilgan paytdan eʼtiboran:",
+     "retrieval_score": 0.9359,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5511879#art-62#p1",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "62-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "62-modda. Nizolarni hal etish\nLitsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari sohasida yuzaga keladigan nizolar qonunchilikda belgilangan tartibda hal etiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5511879#art-60#p10",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "60-modda",
+     "part": "10–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "60-modda. Shikoyatni koʻrib chiqish\nqarorning amal qilishi va ijro etilishi toʻxtatib turiladi, bundan litsenziyaning yoki ruxsat etish xususiyatiga ega hujjatning amal qilishini yoxud xabardor qiluvchining xabardor qilish tartibida amalga oshiriladigan faoliyatini (harakatlarini) toʻxtatib turish hollari mustasno;\njarimani ixtiyoriy ravishda toʻlash muddati toʻxtatib turiladi.",
+     "retrieval_score": 0.8094,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-5511879#art-57#p1",
+     "doc_id": "lex:-5511879",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5511879",
+     "article": "57-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "57-modda. Jarima solish toʻgʻrisidagi qaror ustidan shikoyat qilish\nHuquqbuzar vakolatli organning jarima solish toʻgʻrisidagi qarori ustidan ushbu Qonunning 7-bobida belgilangan tartibda shikoyat qilishga haqli.",
+     "retrieval_score": 0.9263,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2156,
+    "retrieval_ms": 2603,
+    "rerank_ms": 0,
+    "generation_ms": 3518,
+    "total_ms": 8279
+   },
+   "usage": {
+    "input_tokens": 10055,
+    "output_tokens": 827,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekiston Respublikasining mavjud boʻlmagan (xayoliy) vazirligi tomonidan berilgan litsenziyani qanday tartibda apellyatsiya qilish (shikoyat qilish) mumkin?",
+    "search_queries": [
+     "Oʻzbekistonning Xayoliy Innovatsiyalar vazirligi tomonidan chiqarilgan litsenziyani qanday apellyatsiya qilish mumkin?",
+     "Oʻzbekiston Respublikasining mavjud boʻlmagan (xayoliy) vazirligi tomonidan berilgan litsenziyani qanday tartibda apellyatsiya qilish (shikoyat qilish) mumkin?",
+     "litsenziyani haqiqiy emas deb topish sud tartibi",
+     "litsenziya berishdan bosh tortish ustidan shikoyat qilish",
+     "litsenziya boʻyicha nizolarni hal etish sud tartibi"
+    ],
+    "doc_hints": [
+     "Litsenziyalash, ruxsat berish va xabardor qilish tartib-taomillari toʻgʻrisidagi qonun",
+     "Maʼmuriy sud ish yuritish toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 839,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q090",
+   "status": "ok",
+   "answer": "Ha, kerak. Fuqarolik kodeksining 1097-moddasiga koʻra, litsenziat shartnoma boʻyicha olgan axborotlarning maxfiyligini muhofaza qilishga doir kerakli choralarni koʻrishi shart, va shartnomada oʻzgacha hol nazarda tutilgan boʻlmasa, axborotlarning maxfiyligini saqlash majburiyati, basharti tegishli maʼlumotlar oshkor etilmagan axborot tariqasida qolaversa, litsenziya shartnomasi bekor boʻlganidan keyin ham litsenziatning zimmasida boʻladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1097-modda",
+     "part": "1–2-qism",
+     "edition_date": "1996-08-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-180552#art-1097#p1",
+     "quote": "Shartnomada oʻzgacha hol nazarda tutilgan boʻlmasa, axborotlarning maxfiyligini saqlash majburiyati, basharti tegishli maʼlumotlar oshkor etilmagan axborot tariqasida qolaversa, litsenziya shartnomasi bekor boʻlganidan keyin ham litsenziatning zimmasida boʻladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-180552#art-1097#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1097-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "1097-modda. Oshkor etilmagan axborotni noqonuniy foydalanishdan muhofaza qilish huquqining boshqa shaxsga oʻtishi\nOshkor etilmagan axborotga ega boʻlgan shaxs bu axborot mazmunini tashkil etuvchi maʼlumotlarning hammasini yoki bir qismini litsenziya shartnomasi asosida boshqa shaxsga berishi mumkin.\nLitsenziat shartnoma boʻyicha olgan axborotlarning maxfiyligini muhofaza qilishga doir kerakli choralarni koʻrishi shart va uni uchinchi shaxslarning noqonuniy foydalanishidan muhofaza qilishda litsenziarniki singari huquqlarga ega. Shartnomada oʻzgacha hol nazarda tutilgan boʻlmasa, axborotlarning maxfiyligini saqlash majburiyati, basharti tegishli maʼlumotlar oshkor etilmagan axborot tariqasida qolaversa, litsenziya shartnomasi bekor boʻlganidan keyin ham litsenziatning zimmasida boʻladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-180552#art-867#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "867-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "867-modda. Litsenziatning majburiyatlari\nLitsenziat kompleks tadbirkorlik litsenziyasi shartnomasi boʻyicha amalga oshiradigan faoliyatning xarakteri va xususiyatlarini hisobga olgan holda litsenziat:\nshartnomada nazarda tutilgan faoliyatni amalga oshirish chogʻida litsenziarning firma nomidan shartnomada koʻrsatilgan tarzda foydalanishi;\nu shartnoma asosida ishlab chiqarayotgan tovarlar, koʻrsatayotgan xizmatlar, bajarayotgan ishlar sifati bevosita litsenziarning oʻzi ishlab chiqarayotgan, koʻrsatayotgan yoki bajarayotgan shunday tovarlar, xizmatlar yoki ishlarning sifatiga aniq mos boʻlishini taʼminlashi;\nlitsenziarning litsenziya kompleksiga kiruvchi alohida huquqlardan foydalanish xarakteri, usullari va shartlari bu huquqlardan litsenziarning foydalanishiga aniq mos kelishiga qaratilgan barcha yoʻriqnomalari va koʻrsatmalariga, shu jumladan litsenziat shartnoma boʻyicha oʻziga berilgan huquqlarni amalga oshirish vaqtida foydalanadigan tijorat binolarining tashqi va ichki bezaklariga doir koʻrsatmalariga ham rioya etishi;\nsotib oluvchilar (buyurtmachilar) bevosita litsenziardan tovar (xizmat, ish) ni sotib olgan (buyurtma bergan) vaqtda ularga umid qilishlari mumkin boʻlgan hamma qoʻshimcha xizmatlarni koʻrsatishi;\nlitsenziarning ishlab chiqarish sirlarini va undan olgan boshqa maxfiy tijorat axborotini oshkor qilmasligi;",
+     "retrieval_score": 0.7822,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111189#art-98#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "98-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "98-modda. Xizmat va tijorat siri\nFuqarolik qonunchiligi xizmat yoki tijorat siri boʻlgan axborotni, basharti bu axborot uchinchi shaxslarga nomaʼlumligi sababli haqiqiy yoki nisbiy tijorat qimmatiga ega boʻlgan, qonun yoʻli bilan undan erkin bahramand boʻlish mumkin boʻlmagan hamda axborot egasi uning maxfiyligini saqlashga doir choralar koʻrgan hollarda himoya etadi.",
+     "retrieval_score": 0.5076,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-180552#art-654#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "654-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "654-modda. Taraflar olgan axborotning maxfiyligi\nAgar bir taraf pudrat shartnomasi boʻyicha oʻz majburiyatlarini bajarganligi tufayli ikkinchi tarafdan yangi yechimlar va texnikaviy bilimlar, jumladan huquqiy muhofaza qilinmaydigan yechim va bilimlar, shuningdek tijorat siri deb hisoblanishi mumkin boʻlgan maʼlumotlar olsa, u bu maʼlumotlarni ikkinchi tarafning roziligisiz uchinchi shaxslarga maʼlum qilishga haqli emas. Bunday axborotdan foydalanish tartibi va shartlari taraflarning kelishuvi bilan belgilanadi.",
+     "retrieval_score": 0.7857,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-12#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "12-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "12-modda. Sud muhokamasining oshkoraligi\nBarcha sudlarda ishlar muhokamasi oshkora oʻtkaziladi.\nDavlat siriga, farzandlikka olish siriga taalluqli maʼlumotlar mavjud boʻlgan ishlar boʻyicha va qonunda nazarda tutilgan boshqa hollarda ishning muhokamasi yopiq sud majlisida oʻtkaziladi.\nIshda ishtirok etuvchi shaxslarning shaxsiy hayoti toʻgʻrisidagi maʼlumotlar oshkor boʻlishining oldini olish, yozishmalar sirini va qonun bilan qoʻriqlanadigan boshqa sirni saqlash maqsadida yopiq sud muhokamasi oʻtkazilishiga yoʻl qoʻyiladi.\nIsh sudning yopiq majlisida koʻrilayotganida ishda ishtirok etuvchi shaxslar, zarur hollarda esa guvohlar, ekspertlar, mutaxassislar va tarjimonlar ham hozir boʻladi.\nIshni sudning yopiq majlisida eshitish fuqarolik sud ishlari yuritishning barcha qoidalariga rioya qilingan holda olib boriladi. Sudning yopiq majlisida videokonferensaloqa tizimidan foydalanishga yoʻl qoʻyilmaydi.\nSudning hal qiluv qarori barcha hollarda oshkora oʻqib eshittiriladi.\nQonuniy kuchga kirgan sud hujjatlari taraflarning roziligi bilan yoki shaxsini koʻrsatmagan tarzda sudning rasmiy veb-saytida eʼlon qilinishi mumkin, bundan sudning yopiq majlisida qabul qilingan sud hujjatlari mustasno.",
+     "retrieval_score": 0.7451,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2006,
+    "retrieval_ms": 2831,
+    "rerank_ms": 0,
+    "generation_ms": 2822,
+    "total_ms": 7660
+   },
+   "usage": {
+    "input_tokens": 12259,
+    "output_tokens": 552,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Yopiq maʼlumotlarni litsenziya shartnomasi boʻyicha olgan shaxs shartnoma tugaganidan keyin ham ularning maxfiyligini saqlashi shartmi?",
+    "search_queries": [
+     "Yopiq maʼlumotlarni litsenziya boʻyicha olgan odam shartnoma tugagandan keyin ham ularni sir saqlashi kerakmi?",
+     "Yopiq maʼlumotlarni litsenziya shartnomasi boʻyicha olgan shaxs shartnoma tugaganidan keyin ham ularning maxfiyligini saqlashi shartmi?",
+     "yopiq maʼlumotlar litsenziya shartnomasi maxfiylikni saqlash majburiyati",
+     "litsenziya shartnomasi tugaganidan keyin yopiq maʼlumotlarni sir saqlash",
+     "yopiq maʼlumotlar konfidensialligi shartnoma amal qilish muddati tugagach"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 735,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

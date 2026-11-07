@@ -1,0 +1,1549 @@
+{
+ "run_id": "full100-v1",
+ "batch_id": "full100-v1-b06",
+ "batch_index": 6,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p5",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:25:19+05:00",
+  "completed_at": "2026-11-06T18:25:28+05:00",
+  "total_ms": 9095
+ },
+ "summary": {
+  "total": 10,
+  "ok": 8,
+  "no_answer": 2,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q051",
+   "status": "ok",
+   "answer": "Soliq kodeksining 299-moddasiga koʻra, tekin olingan mol-mulk va (yoki) xizmatlar soliq toʻlovchining daromadi deb eʼtirof etiladi, bunda daromad ushbu mol-mulkning (xizmatlarning) bozor qiymatidan kelib chiqqan holda aniqlanadi [1]. Bozor qiymati hujjat bilan tasdiqlanishi kerak, xususan yuklab joʻnatishga, yetkazib berishga yoki topshirishga doir hujjatlar, mahsulot yetkazib beruvchilarning narxga doir maʼlumotlari (prays-varaqlar), ommaviy axborot vositalaridan olingan maʼlumotlar, birja xabarlari va davlat statistika organlarining maʼlumotlari shunday hujjatlar boʻlishi mumkin [1]. Ushbu modda qoidalari mol-mulkni ishonchli boshqaruvga berishdan naf oluvchi oladigan daromadlarga nisbatan ham tatbiq etiladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "299-modda",
+     "part": "1–8-qism",
+     "edition_date": "2025-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-299#p1",
+     "quote": "Mol-mulkni (xizmatlarni) tekin asosda olish chogʻida oluvchi shaxsning daromadlari, agar ushbu moddaning toʻrtinchi qismida boshqacha qoida nazarda tutilmagan boʻlsa, ushbu mol-mulkning (xizmatlarning) bozor qiymatidan kelib chiqqan holda aniqlanadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "299-modda",
+     "part": "14-qism",
+     "edition_date": "2025-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-299#p14",
+     "quote": "Ushbu moddaning birinchi qismi qoidalari ushbu Kodeksning 322-moddasida nazarda tutilgan soliq solishning oʻziga xos xususiyatlarini hisobga olgan holda mol-mulkni ishonchli boshqaruvga berishdan naf oluvchi oladigan daromadlarga nisbatan ham tatbiq etiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-299#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "299-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-01-01",
+     "text": "299-modda. Tekin olingan mol-mulk (xizmatlar)\nAgar ushbu Kodeksda boshqacha qoida nazarda tutilmagan boʻlsa, soliq toʻlovchi tomonidan tekin olingan mol-mulk va (yoki) xizmatlar soliq toʻlovchining daromadi deb eʼtirof etiladi.\nMol-mulkni (xizmatlarni) tekin asosda olish chogʻida oluvchi shaxsning daromadlari, agar ushbu moddaning toʻrtinchi qismida boshqacha qoida nazarda tutilmagan boʻlsa, ushbu mol-mulkning (xizmatlarning) bozor qiymatidan kelib chiqqan holda aniqlanadi.\nTekin olingan mol-mulkning (xizmatlarning) bozor qiymati hujjat bilan tasdiqlanishi kerak. Xususan, quyidagilar shunday hujjatlar boʻlishi mumkin:\n1) yuklab joʻnatishga, yetkazib berishga yoki topshirishga doir hujjatlar;\n2) mahsulot yetkazib beruvchilarning narxga doir maʼlumotlari (prays-varaqlar);\n3) ommaviy axborot vositalaridan olingan maʼlumotlar;\n4) birja xabarlari;\n5) davlat statistika organlarining maʼlumotlari.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4674902#art-297#p10",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "297-modda",
+     "part": "10–19-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-29",
+     "text": "297-modda. Umumiy qoidalar\n8) mol-mulkni mulk ijarasiga (ijaraga) berishdan olingan daromad, bundan moliyaviy ijara (lizing) mustasno;\n9) royalti;\n10) ushbu Kodeksning 299-moddasiga muvofiq tekin olingan mol-mulk (olingan xizmatlar);\n11) inventarizatsiya natijasida aniqlangan ortiqcha tovar-moddiy zaxiralarning va boshqa mol-mulkning qiymati tarzidagi daromad;\n12) qonunchilikda belgilangan tartibda majburiyatlarni hisobdan chiqarishdan olingan daromad, bundan ushbu Kodeksning 317-moddasiga muvofiq ilgari chegirib tashlanmagan xarajatlarni hisobdan chiqarishdan olingan daromadlar mustasno;\n13) ushbu Kodeksning 300-moddasiga muvofiq talab qilish huquqidan oʻzganing foydasiga voz kechish shartnomasi boʻyicha olingan daromad;\n14) ushbu Kodeksning 301-moddasiga muvofiq ilgari chegirib tashlangan xarajatlar yoki zararlarning oʻrnini qoplash tarzidagi daromad;\n15) ushbu Kodeksning 302-moddasiga muvofiq xizmat koʻrsatuvchi xoʻjaliklardan olinadigan daromad;\n16) ushbu Kodeksning 319-moddasiga muvofiq birgalikdagi faoliyatda ishtirok etishdan olingan daromad;\n17) qarzdor tomonidan eʼtirof etilgan yoxud qarzdor tomonidan sudning qonuniy kuchga kirgan hujjati asosida shartnoma majburiyatlarini buzganlik uchun toʻlanishi lozim boʻlgan jarimalar, penyalar va boshqa sanksiyalar, shuningdek zararlarning (ziyonning) oʻrnini qoplash summalari;",
+     "retrieval_score": 0.6918,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4674902#art-376#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "376-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-01-01",
+     "text": "376-modda. Moddiy naf tarzidagi daromadlar\nSoliq toʻlovchi tomonidan moddiy naf tarzida olingan daromadlar, agar ushbu Kodeks 369-moddasining ikkinchi qismida boshqacha qoida nazarda tutilmagan boʻlsa, quyidagilardan iborat:\n1) soliq agenti tomonidan soliq toʻlovchi manfaatlarini koʻzlab, tovarlar (xizmatlar), mulkiy huquqlar haqini toʻlash, shu jumladan:\nsoliq toʻlovchining bolalarini maktabgacha taʼlim tashkilotlarida oʻqitish, tarbiyalash haqini toʻlash;\nsoliq toʻlovchilarga berilgan uy-joyning kommunal xizmatlar haqini, uy-joydan foydalanish xarajatlarini, yotoqxonadagi joylar haqini yoki ularning oʻrnini qoplash qiymatini toʻlash;\nsanatoriy-kurortlarda davolanish yoʻllanmalari qiymatini, dam olish, statsionar va ambulator davolanish haqini yoki ularning oʻrnini qoplash qiymatini toʻlash;\nsoliq agentining soliq toʻlovchi daromadi boʻlgan boshqa xarajatlarini toʻlash;\n2) soliq toʻlovchining manfaatlarini koʻzlab tekin, shu jumladan hadya shartnomasi boʻyicha berilgan mol-mulkning va koʻrsatilgan xizmatlarning qiymati;\n3) tovarlarni (xizmatlarni) soliq toʻlovchilarga realizatsiya qilish narxi hamda shu tovarlarning (xizmatlarning) ushbu moddaning ikkinchi va uchinchi qismlariga muvofiq hisoblab chiqarilgan qiymati oʻrtasidagi salbiy farq;",
+     "retrieval_score": 0.8385,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4674902#art-378#p17",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "378-modda",
+     "part": "17–25-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-17",
+     "text": "378-modda. Soliq solinmaydigan daromadlar\n9) xalqaro hamda respublika tanlovlari va musobaqalarida olingan buyum tarzidagi sovrinlarning qiymati;\n10) ish beruvchidan soliq davri mobaynida mehnatga haq toʻlashning eng kam miqdorining 2,11 baravarigacha boʻlgan qiymatdagi:\nxodimlar natura shaklida olgan sovgʻalar;\nilgari mazkur ish beruvchining xodimlari boʻlgan ishlamayotgan pensionerlar va mehnat qobiliyatini yoʻqotgan shaxslar, vafot etgan xodimning oila aʼzolari tomonidan olingan sovgʻalar hamda boshqa turlardagi yordam;\n11) jismoniy shaxslardan meros yoki hadya tartibida, shuningdek tekinga olingan pul va natura shaklidagi daromadlar, bundan quyidagilar mustasno:\nilm-fan, adabiyot va sanʼat asarlarining, adabiyot hamda sanʼat asarlari ijrochilarining, shuningdek kashfiyotlar, ixtirolar va sanoat namunalari mualliflarining merosxoʻrlariga (huquqiy vorislariga) toʻlanadigan pul mukofotlari;\nyaqin qarindosh boʻlmagan shaxslar oʻrtasidagi koʻchmas mulk, avtotransport vositalari, qimmatli qogʻozlar, yuridik shaxslarning ustav fondlaridagi (ustav kapitallaridagi) ulushlar;\n12) davlat zayomining obligatsiyalari boʻyicha yutuqlar, shuningdek Oʻzbekiston Respublikasining davlat qimmatli qogʻozlari boʻyicha foizlar;\n13) jamgʻarma sertifikatlari, davlat qimmatli qogʻozlari boʻyicha daromadlar, shuningdek banklardagi omonatlar boʻyicha foizlar va yutuqlar;",
+     "retrieval_score": 0.7036,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4674902#art-299#p14",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "299-modda",
+     "part": "14-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-01-01",
+     "text": "299-modda. Tekin olingan mol-mulk (xizmatlar)\nUshbu moddaning birinchi qismi qoidalari ushbu Kodeksning 322-moddasida nazarda tutilgan soliq solishning oʻziga xos xususiyatlarini hisobga olgan holda mol-mulkni ishonchli boshqaruvga berishdan naf oluvchi oladigan daromadlarga nisbatan ham tatbiq etiladi.",
+     "retrieval_score": 0.8517,
+     "rerank_score": 0.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1777,
+    "retrieval_ms": 1954,
+    "rerank_ms": 0,
+    "generation_ms": 4228,
+    "total_ms": 7961
+   },
+   "usage": {
+    "input_tokens": 14744,
+    "output_tokens": 773,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar shaxs boshqa shaxsdan mol-mulkni yoki xizmatni tekin olgan boʻlsa, uning daromadi qanday miqdorda hisoblanadi va bu qiymat qanday tasdiqlanishi kerak?",
+    "search_queries": [
+     "Agar biror kishi boshqa shaxsdan mol-mulkni yoki xizmatni tekin olib olgan boʻlsa, uning daromadi qanday miqdorda hisoblanadi va bu qiymat qanday tasdiqlanishi kerak?",
+     "Agar shaxs boshqa shaxsdan mol-mulkni yoki xizmatni tekin olgan boʻlsa, uning daromadi qanday miqdorda hisoblanadi va bu qiymat qanday tasdiqlanishi kerak?",
+     "tekin olingan mol-mulk yoki xizmat qiymati daromad sifatida hisoblash",
+     "moddiy naf koʻrinishidagi daromad qiymati bozor narxida aniqlanadi",
+     "tekin olingan mol-mulk va xizmatlar qiymatini tasdiqlovchi hujjatlar"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 696,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q052",
+   "status": "ok",
+   "answer": "«Valyutani tartibga solish toʻgʻrisida»gi Qonunning 21-moddasiga koʻra, ushbu Qonunni qoʻllashga doir yoʻriqnomalar va boshqa meʼyoriy hujjatlar Oʻzbekiston Respublikasi Markaziy banki tomonidan Oʻzbekiston Respublikasi Moliya vazirligi va Oʻzbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Davlat soliq bosh boshqarmasi bilan birgalikda chiqariladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-81499",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni valyutani tartibga solish toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-81499",
+     "article": "21-modda",
+     "part": "1–5-qism",
+     "edition_date": "1993-05-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-81499#art-21#p1",
+     "quote": "Ushbu Qonunni qoʻllashga doir yoʻriqnomalar va boshqa meʼyoriy hujjatlar Oʻzbekiston Respublikasi Markaziy banki tomonidan Oʻzbekiston Respublikasi Moliya vazirligi va Oʻzbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Davlat soliq bosh boshqarmasi bilan birgalikda chiqariladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-81499#art-21#p1",
+     "doc_id": "lex:-81499",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni valyutani tartibga solish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-81499",
+     "article": "21-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "1993-05-07",
+     "text": "21-modda. Ushbu Qonunni qoʻllashga doir yoʻriqnomalar\nUshbu Qonunni qoʻllashga doir yoʻriqnomalar va boshqa meʼyoriy hujjatlar Oʻzbekiston Respublikasi Markaziy banki tomonidan Oʻzbekiston Respublikasi Moliya vazirligi va Oʻzbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Davlat soliq bosh boshqarmasi bilan birgalikda chiqariladi.\nOʻzbekiston Respublikasining Prezidenti I. KARIMOV\nToshkent sh.,\n1993-yil 7-may,\n841-XII-son",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-4562834#art-7#p1",
+     "doc_id": "lex:-4562834",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “valyutani tartibga solish toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/-4562834",
+     "article": "7-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "7-modda. Valyutani tartibga soluvchi davlat organi\nOʻzbekiston Respublikasi Markaziy banki valyutani tartibga soluvchi davlat organidir (bundan buyon matnda Markaziy bank deb yuritiladi).\nMarkaziy bank oʻz vakolatlari doirasida:\nnorezidentlar tomonidan Oʻzbekiston Respublikasi hududida, shuningdek rezidentlar tomonidan Oʻzbekiston Respublikasi hududida va uning tashqarisida amal qilinishi majburiy boʻlgan normativ-huquqiy hujjatlarni qabul qiladi;\nvalyuta operatsiyalarini amalga oshirish qoidalarini belgilaydi;\nvalyuta birjalari faoliyatini litsenziyalaydi va tartibga soladi;\nbanklar uchun ochiq valyuta pozitsiyasining limitlarini belgilaydi;\numum eʼtirof etilgan xalqaro amaliyotga muvofiq valyuta operatsiyalarining va tashqi sektorning statistikasini tayyorlaydi hamda eʼlon qiladi;\nrezidentlar va norezidentlar tomonidan amalga oshiriladigan valyuta operatsiyalarini monitoring qilish tartibini belgilaydi, shu jumladan valyutani nazorat qiluvchi organlar bilan birgalikda belgilaydi;\nOʻzbekiston Respublikasi banklari uchun valyuta operatsiyalari hisobi va hisoboti shakllarini hamda ularni taqdim etish tartibi va muddatlarini belgilaydi;\ntashqi sektor statistikasini tuzish uchun barcha rezidentlar va norezidentlar tomonidan taqdim etilishi majburiy boʻlgan valyuta operatsiyalarining hisobi va hisoboti shakllarini belgilaydi;",
+     "retrieval_score": 0.7018,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4590452#art-47#p1",
+     "doc_id": "lex:4590452",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “Oʻzbekiston Respublikasining Markaziy banki toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/4590452",
+     "article": "47-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "47-modda. Valyutani tartibga solish va valyutani nazorat qilish\nMarkaziy bank valyutani tartibga solish va valyutani nazorat qilish davlat organidir.\nMarkaziy bank oʻz vakolatlari doirasida:\nvalyutani tartibga solishga doir normativ-huquqiy hujjatlarni ishlab chiqadi va qabul qiladi;\nbanklarning valyutani tartibga solish toʻgʻrisidagi qonunchilikka rioya etishga doir faoliyatini tartibga solishni va nazorat qilishni amalga oshiradi;\nvalyuta birjalari faoliyatini litsenziyalashni va tartibga solishni amalga oshiradi;\nbanklar uchun ochiq valyuta pozitsiyasi limitlarini va boshqa prudensial normativlarni belgilaydi;\nchet el valyutasidagi hisobvaraqlarni ochish tartibini belgilaydi;\nvalyuta kursini aniqlash tartibini belgilaydi.",
+     "retrieval_score": 0.7468,
+     "rerank_score": 0.35,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:72266#art-40#p1",
+     "doc_id": "lex:72266",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining Markaziy banki toʻgʻrisida",
+     "url": "https://lex.uz/docs/72266",
+     "article": "40-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2015-12-29",
+     "text": "40-modda. Valyutani tartibga solish\nMarkaziy bank valyutani tartibga solish va valyutani nazorat qilish davlat organidir.\nMarkaziy bank:\nijro etish Oʻzbekiston Respublikasi hududida barcha shaxslar uchun majburiy boʻlgan valyutani nazorat qilishga doir normativ hujjatlar chiqaradi;\nbanklarga chet el valyutasida operatsiyalar oʻtkazish uchun litsenziyalar beradi va litsenziyalarni qaytarib oladi, ularning faoliyatini nazorat qiladi va tartibga solib boradi;\nvalyuta birjasini litsenziyalashni amalga oshiradi va uning faoliyatini tartibga soladi;\nbanklar uchun ochiq valyuta mavqeyi chegaralarini va boshqa iqtisodiy normativlarni belgilaydi;\nmilliy valyutaning chet el valyutasiga nisbatan kursini aniqlash tartibini belgilaydi;\nOʻzbekiston Respublikasining xalqaro rezervlarini tasarruf etadi va boshqaradi.",
+     "retrieval_score": 0.8712,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-81499#art-18#p1",
+     "doc_id": "lex:-81499",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni valyutani tartibga solish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-81499",
+     "article": "18-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1993-05-07",
+     "text": "18-modda. Valyuta operatsiyalari toʻgʻrisidagi hisobotlar\nValyuta operatsiyalari toʻgʻrisidagi hisobotlarni taqdim etish tartibini, ularning turlari, shakllari va ularni taqdim etish muddatlarini Oʻzbekiston Respublikasi Markaziy banki Oʻzbekiston Respublikasi Moliya vazirligi, Oʻzbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Davlat soliq bosh boshqarmasi bilan birgalikda belgilaydi. Valyuta operatsiyalari toʻgʻrisida hisobot taqdim etmaslik valyuta qonunlarini buzish hisoblanadi.",
+     "retrieval_score": 0.8011,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1862,
+    "retrieval_ms": 1520,
+    "rerank_ms": 0,
+    "generation_ms": 2017,
+    "total_ms": 5400
+   },
+   "usage": {
+    "input_tokens": 10934,
+    "output_tokens": 522,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Valyutani tartibga solishga oid yoʻriqnomalarni qaysi organ kimlar bilan birgalikda chiqaradi?",
+    "search_queries": [
+     "Valyutani tartibga solishga oid yoʻriqnomalarni qaysi organ kimlar bilan birgalikda chiqaradi?",
+     "valyutani tartibga solish yoʻriqnomalarini chiqaruvchi organ",
+     "valyuta operatsiyalarini tartibga solish boʻyicha normativ hujjatlar qabul qilish",
+     "valyuta sohasidagi yoʻriqnoma va qoidalarni tasdiqlash vakolati"
+    ],
+    "doc_hints": [
+     "Valyutani tartibga solish toʻgʻrisidagi qonun",
+     "Markaziy bank toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 710,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q053",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida interaktiv davlat xizmatlari qanday hujjat asosida koʻrsatilishi kerakligi haqidagi qoida mavjud emas.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:6671033#preamble#p1",
+     "doc_id": "lex:6671033",
+     "doc_title": "Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasi kengashining qarori “davlat xizmatlari koʻrsatish tizimi takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuni loyihasi haqida",
+     "url": "https://lex.uz/docs/6671033",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-10-16",
+     "text": "Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasining Kengashi qaror qiladi:",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:6671033#band-2#p1",
+     "doc_id": "lex:6671033",
+     "doc_title": "Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasi kengashining qarori “davlat xizmatlari koʻrsatish tizimi takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuni loyihasi haqida",
+     "url": "https://lex.uz/docs/6671033",
+     "article": "2-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-10-16",
+     "text": "2. Mazkur qonun loyihasi koʻrib chiqish uchun Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasining navbatdagi majlisi kun tartibi loyihasiga kiritilsin.",
+     "retrieval_score": 0.99,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6145972#art-12#p1",
+     "doc_id": "lex:-6145972",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat fuqarolik xizmati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6145972",
+     "article": "12-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-08-08",
+     "text": "12-modda. Davlat fuqarolik xizmatchisining majburiyatlari\nDavlat fuqarolik xizmatchisi:\nOʻzbekiston Respublikasining Konstitutsiyasi, qonunlari va boshqa qonunchilik hujjatlariga rioya etishi;\noʻz xizmat majburiyatlarini vijdonan bajarishi, davlat organi tomonidan belgilangan odob-axloq qoidalariga, xizmatga oid axborot bilan ishlash tartibiga, shuningdek davlat fuqarolik xizmatini oʻtash bilan bogʻliq boshqa qoidalarga rioya etishi;\nushbu Qonunda belgilangan, davlat fuqarolik xizmatini oʻtash bilan bogʻliq boʻlgan cheklovlarga rioya etishi;\nmanfaatlar toʻqnashuviga yoʻl qoʻymasligi, begʻaraz va xolis boʻlishi;\ndavlat organining nufuzini tushirishga olib kelishi yoki uning oʻz xizmat majburiyatlarini vijdonan bajarishiga shubha tugʻdirishi mumkin boʻlgan harakatlardan (harakatsizlikdan), shu jumladan oʻz xizmat majburiyatlarini bajarayotganda har qanday shakldagi kamsitishdan, noxolislikdan yoki kimgadir nisbatan alohida munosabatda boʻlishdan tiyilishi;\noʻz xizmat mavqeyidan shaxsiy va boshqa gʻayriqonuniy maqsadlarda foydalanmasligi, shuningdek oʻz xizmat faoliyatiga, davlat organlari, ularning mansabdor shaxslari va fuqarolarning faoliyatiga qonunga xilof taʼsir koʻrsatilishiga yoʻl qoʻymasligi;",
+     "retrieval_score": 0.9459,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:6671033#band-3#p1",
+     "doc_id": "lex:6671033",
+     "doc_title": "Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasi kengashining qarori “davlat xizmatlari koʻrsatish tizimi takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuni loyihasi haqida",
+     "url": "https://lex.uz/docs/6671033",
+     "article": "3-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-10-16",
+     "text": "3. Ushbu Qaror qabul qilingan kundan eʼtiboran kuchga kiradi.\nOʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasining Spikeri N. ISMOILOV\nToshkent sh.,\n2023-yil 16-oktabr,\n3591-IV-son",
+     "retrieval_score": 0.9303,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-40158#art-8#p1",
+     "doc_id": "lex:-40158",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat soliq xizmati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-40158",
+     "article": "8-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "8-modda. Davlat soliq xizmati organlarining mansabdor shaxslari\nDavlat soliq xizmati organlarining mansabdor shaxslari xizmat vazifalarini bajarish chogʻida davlat hokimiyati vakili hisoblanadilar. Davlat soliq xizmati organlari mansabdor shaxslarining soliq haqidagi qonunchilikka rioya qilish xususidagi talablari barcha yuridik va jismoniy shaxslar tomonidan ijro etilishi shart.\nHech kim davlat soliq xizmati organlari mansabdor shaxslarining qonuniy faoliyatiga aralashishga haqli emas. Davlat soliq xizmati organlari mansabdor shaxslarining oʻz xizmat vazifalarini bajarishlariga toʻsqinlik qilinish, ularning oʻz xizmat vazifalarini bajarishlari munosabati bilan ularning shaʼni va qadr-qimmatini haqoratlash, ularga qarshilik koʻrsatish, tahdid qilish, zoʻravonlik qilish yoki ularning hayoti, sogʻligʻi va mol-mulkiga tajovuz qilish qonunchilikda nazarda tutilgan javobgarlikka sabab boʻladi.",
+     "retrieval_score": 0.8829,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1592,
+    "retrieval_ms": 2421,
+    "rerank_ms": 0,
+    "generation_ms": 1091,
+    "total_ms": 5106
+   },
+   "usage": {
+    "input_tokens": 10097,
+    "output_tokens": 237,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Interaktiv davlat xizmatlari qanday hujjat asosida koʻrsatilishi kerak?",
+    "search_queries": [
+     "Interaktiv davlat xizmatlari qanday hujjat asosida koʻrsatilishi kerak?",
+     "interaktiv davlat xizmatlari koʻrsatish tartibi",
+     "davlat xizmatlari toʻgʻrisidagi qonun interaktiv xizmatlar",
+     "davlat xizmatlari reyestri interaktiv shaklda koʻrsatish"
+    ],
+    "doc_hints": [
+     "Davlat xizmatlari toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 607,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q054",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasi Yer kodeksining 51-moddasiga koʻra, qishloq xoʻjaligi kooperativlari va boshqa qishloq xoʻjaligi korxonalarida yer uchastkalari oilalarga qishloq xoʻjaligi mahsuloti yetishtirish uchun kamida besh yil muddatga oila pudrati shartnomasi shartlari asosida beriladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "51-modda",
+     "part": "1–3-qism",
+     "edition_date": "2025-05-05",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-152653#art-51#p1",
+     "quote": "Qishloq xoʻjaligi kooperativlari va boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlarida yer uchastkalari, qoida tariqasida, oilalarga qishloq xoʻjaligi mahsuloti yetishtirish uchun kamida besh yil muddatga foydalanishga oila pudrati shartnomasi shartlari asosida beriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-152653#art-51#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "51-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "51-modda. Yer uchastkalarini xoʻjalik ichida taqsimlash. Oila (jamoa) pudrati\nQishloq xoʻjaligi kooperativlari va boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlarida yer uchastkalari, qoida tariqasida, oilalarga qishloq xoʻjaligi mahsuloti yetishtirish uchun kamida besh yil muddatga foydalanishga oila pudrati shartnomasi shartlari asosida beriladi.\nYer uchastkalari muayyan turdagi qishloq xoʻjaligi ishlarini bajarish uchun qishloq xoʻjaligi kooperativlari aʼzolarining va boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlari xodimlarining guruhlariga ham kamida besh yil muddatga foydalanishga jamoa pudrati shartnomasi shartlari asosida berilishi mumkin.\nOila pudrati — qishloq xoʻjaligi kooperativi va boshqa qishloq xoʻjaligi korxonasi, muassasasi hamda tashkiloti tomonidan oilaga vaqtincha foydalanishga oila pudrati shartnomasi shartlari asosida berilgan yer uchastkalarida qishloq xoʻjaligi mahsuloti yetishtirishda oila aʼzolarining bevosita ishtirok etishiga asoslangan ishlab chiqarish va mehnatni xoʻjalik ichida tashkil etish shaklidir.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-246806#band-14s3#p1",
+     "doc_id": "lex:-246806",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori qishloq xoʻjaligida ijara munosabatlarini yanada rivojlantirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-246806",
+     "article": "14-band (3-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-04-05",
+     "text": "14. Shirkat xoʻjaligining qishloq xoʻjaligi ekin maydoni, qoida tariqasida, oilalarga (jamoalarga) oila (jamoa) pudrati shartnomasi shartlari asosida qishloq xoʻjaligi mahsulotlari yetishtirish maqsadida qonunchilikda va umumiy yigʻilish tomonidan belgilangan tartibda besh yil muddatga vaqtincha foydalanish uchun beriladi.\nYer uchastkasidan foydalanish muddati tamom boʻlgandan keyin oilalar (jamoalar) oila (jamoa) pudrati shartnomasini yangi muddatga uzaytirish (choʻzish) huquqiga egadir.\nOila (jamoa) pudratchilariga yer uchastkasini berish dalolatnoma bilan tasdiqlanadi.",
+     "retrieval_score": 0.5076,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-152653#art-51#p4",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "51-modda",
+     "part": "4–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "51-modda. Yer uchastkalarini xoʻjalik ichida taqsimlash. Oila (jamoa) pudrati\nOila (jamoa) pudrati shartnomasi har yili qishloq xoʻjaligi kooperativi, boshqa jamoa qishloq xoʻjaligi korxonasi boshqaruv organlari orqali shu kooperativ, jamoa korxonasi bilan yoki boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlarining ish beruvchisi (maʼmuriyati) bilan oila boshligʻi (jamoaning vakolat berilgan vakili) oʻrtasida tuziladi.\nOila (jamoa) pudrati shartnomasida quyidagilar nazarda tutiladi:\nyer uchastkasining oʻlchami, joylashgan yeri va holati;\nyer uchastkasidan foydalanish shartlari, taraflarning almashlab ekish sxemasiga muvofiq yerning hosildorligi va sifatini oshirish borasidagi, tuproq unumdorligini saqlash va oshirish borasidagi majburiyatlari;\nyetishtiriladigan qishloq xoʻjalik mahsulotining miqdori va turlari, uning sifati;\nyetishtirilgan qishloq xoʻjalik mahsulotining bahosi, unga haq toʻlash va uni realizatsiya qilish shartlari;\nsugʻorish uchun suv va moddiy-texnika resurslari bilan pudratchini taʼminlash;\ntaraflarning shartnoma majburiyatlarini bajarmaganlik uchun javobgarligi va ularning xohishiga koʻra boshqa shartlar.\nOila (jamoa) pudrati shartlari asosida beriladigan yer uchastkalaridan qatʼiy ruxsat etilgan foydalanishning asosiy turlariga muvofiq foydalaniladi, bunda haydaladigan yerlar maydoni oʻlchamlarining kamaytirilishiga yoʻl qoʻyilmaydi.",
+     "retrieval_score": 0.9087,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-152653#art-51#p13",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "51-modda",
+     "part": "13–17-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "51-modda. Yer uchastkalarini xoʻjalik ichida taqsimlash. Oila (jamoa) pudrati\nYer uchastkasining oʻlchamlari va uning chegaralari taraflarning kelishuviga koʻra oʻzgartirilishi mumkin.\nOila (jamoa) pudratida mehnatga haq toʻlash yakuniy natijalarga koʻra — yetishtirilgan mahsulotning shartnomada nazarda tutilgan miqdori, sifati va bahosiga koʻra amalga oshiriladi. Shu bilan birga oila aʼzolari (pudratchilar) — pay egalari xoʻjalikning yil davomidagi faoliyati yakuniy natijalariga koʻra aniqlanadigan dividendlar oladilar.\nOila (jamoa) pudrati shartlari asosida berilgan yer uchastkasi uchun pudratchidan yer haqi undirilmaydi. Bu uchastkalardan olinadigan yer soligʻini qishloq xoʻjaligi kooperativi va boshqa qishloq xoʻjaligi korxonalari, muassasalari hamda tashkilotlari belgilangan tartibda toʻlaydi.\nPudrat shartnomasi shartlari asosida olingan yer uchastkasini ijaraga yoki yordamchi pudratga berish taqiqlanadi.\nYer uchastkasi jamoat ehtiyojlari uchun olib qoʻyilgan taqdirda pudratchi zarar va boshqa xarajatlar ushbu Kodeks 86-moddasiga muvofiq qoplanishini talab qilish huquqiga ega.",
+     "retrieval_score": 0.8969,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-152653#art-24.2#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "24²-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-07-18",
+     "text": "242-modda. Qishloq xoʻjaligiga moʻljallangan yerlarni ikkilamchi ijaraga berish\nQishloq xoʻjaligiga moʻljallangan yerlar qishloq xoʻjaligi mahsuloti yetishtirish maqsadida yuridik va jismoniy shaxslarga ikkilamchi ijaraga berilishi (ularni uchinchi shaxslarga berish huquqisiz) mumkin.\nQishloq xoʻjaligiga moʻljallangan yer uchastkasi bir yilgacha boʻlgan muddatga, qishloq xoʻjaligiga moʻljallangan yer uchastkalarining dala chetlaridagi kanallar, sugʻorish va kollektor-drenaj tarmoqlari atrofidagi maydonlari esa qishloq xoʻjaligi mahsulotini yetishtirish uchun oʻn yilgacha boʻlgan muddatga ikkilamchi ijaraga berilishi mumkin, bundan ushbu moddaning uchinchi qismida nazarda tutilgan hollar mustasno.\nFoydalanishga kiritilgan qishloq xoʻjaligiga moʻljallangan yer uchastkalarini ikkilamchi ijaraga berish shartnomasining muddati ushbu Kodeksning 241-moddasida nazarda tutilgan hollarda, taraflarning kelishuviga koʻra belgilanadi va u qishloq xoʻjaligiga moʻljallangan yer uchastkasini ijaraga berish shartnomasi muddatidan ortiq boʻlishi mumkin emas.\nIkkilamchi ijaraga berilgan qishloq xoʻjaligiga moʻljallangan yer uchastkasi oldi-sotdi, garov, hadya, ayirboshlash obyekti boʻlishi mumkin emas.",
+     "retrieval_score": 0.7396,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1521,
+    "retrieval_ms": 687,
+    "rerank_ms": 0,
+    "generation_ms": 2135,
+    "total_ms": 4345
+   },
+   "usage": {
+    "input_tokens": 13120,
+    "output_tokens": 457,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Qishloq xoʻjaligi korxonasida oilaga mahsulot yetishtirish uchun yer uchastkasi oila pudrat shartnomasi asosida kamida qancha muddatga beriladi?",
+    "search_queries": [
+     "Qishloq xoʻjaligi korxonasida oilaga mahsulot yetishtirish uchun yer uchastkasi oila pudrati shartnomasi asosida kamida qancha muddatga beriladi?",
+     "Qishloq xoʻjaligi korxonasida oilaga mahsulot yetishtirish uchun yer uchastkasi oila pudrat shartnomasi asosida kamida qancha muddatga beriladi?",
+     "oila pudrat shartnomasi asosida yer uchastkasi berish muddati",
+     "qishloq xoʻjaligi korxonasida oilaga mahsulot yetishtirish uchun yer uchastkasi",
+     "oila pudrati shartnomasi muddati kamida"
+    ],
+    "doc_hints": [
+     "Yer kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 559,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q055",
+   "status": "ok",
+   "answer": "Soliq kodeksining 159¹-moddasi birinchi qismiga koʻra, soliq organi xodimlari tomonidan aniqlangan soliqqa oid huquqbuzarlik yoki holatlar boʻyicha soliq toʻlovchi birinchi marta rasmiy ogohlantiriladi va bu hujjat elektron tarzda uning shaxsiy kabinetiga yuboriladi [1]. Mazkur huquqbuzarlik yoki holatlar rasmiy ogohlantirishdan keyin uch kun muddatda bartaraf etilishi kerak; shu muddatda bartaraf etilmasa va (yoki) qayta sodir etilsa, soliq toʻlovchida sayyor soliq tekshiruvlari oʻtkaziladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "159¹-modda",
+     "part": "1-qism",
+     "edition_date": "2026-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-159.1#p1",
+     "quote": "Mazkur soliqqa oid huquqbuzarliklar yoki holatlar rasmiy ogohlantirishdan keyin uch kun muddatda bartaraf etilmagan va (yoki) ular qayta sodir etilganligi aniqlangan taqdirda, ushbu soliq toʻlovchida sayyor soliq tekshiruvlari oʻtkaziladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-159.1#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "159¹-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-01-01",
+     "text": "1591-modda. Ayrim hollarda sayyor soliq tekshiruvini tashkil etish, tekshiruv materiallarini koʻrib chiqish hamda natijalari boʻyicha qaror qabul qilishning oʻziga xos xususiyatlari\nSoliq organlari xodimlari tomonidan ularga biriktirilgan korxonalardagi yoki mahallalardagi soliq toʻlovchilarda ushbu Kodeks 221-moddasining birinchi qismida, 223-moddasi uchinchi qismining oʻn uchinchi va oʻn beshinchi xatboshilarida, 429-moddasining oʻn yettinchi qismida belgilangan soliqqa oid huquqbuzarliklar yoki holatlar sodir etilgani aniqlangan taqdirda, birinchi marta rasmiy ogohlantiriladi va ushbu hujjat elektron tarzda soliq toʻlovchining shaxsiy kabinetiga yuboriladi. Mazkur soliqqa oid huquqbuzarliklar yoki holatlar rasmiy ogohlantirishdan keyin uch kun muddatda bartaraf etilmagan va (yoki) ular qayta sodir etilganligi aniqlangan taqdirda, ushbu soliq toʻlovchida sayyor soliq tekshiruvlari oʻtkaziladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-7944527#preamble#p133",
+     "doc_id": "lex:-7944527",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni soliq va budjet siyosatining 2026-yilga moʻljallangan asosiy yoʻnalishlari qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7944527",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-12-25",
+     "text": "“1591-modda. Ayrim hollarda sayyor soliq tekshiruvini tashkil etish, tekshiruv materiallarini koʻrib chiqish hamda natijalari boʻyicha qaror qabul qilishning oʻziga xos xususiyatlari\nSoliq organlari xodimlari tomonidan ularga biriktirilgan korxonalardagi yoki mahallalardagi soliq toʻlovchilarda ushbu Kodeks 221-moddasining birinchi qismida, 223-moddasi uchinchi qismining oʻn uchinchi va oʻn beshinchi xatboshilarida, 429-moddasining oʻn yettinchi qismida belgilangan soliqqa oid huquqbuzarliklar yoki holatlar sodir etilgani aniqlangan taqdirda, birinchi marta rasmiy ogohlantiriladi va ushbu hujjat elektron tarzda soliq toʻlovchining shaxsiy kabinetiga yuboriladi. Mazkur soliqqa oid huquqbuzarliklar yoki holatlar rasmiy ogohlantirishdan keyin uch kun muddatda bartaraf etilmagan va (yoki) ular qayta sodir etilganligi aniqlangan taqdirda, ushbu soliq toʻlovchida sayyor soliq tekshiruvlari oʻtkaziladi.",
+     "retrieval_score": 0.4801,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5206072#band-57s2#p15",
+     "doc_id": "lex:-5206072",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori soliq xavfini boshqarish, soliq xavfi mavjud soliq toʻlovchilarni (soliq agentlarini) aniqlash va soliq tekshiruvlarini tashkil etish va oʻtkazish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5206072",
+     "article": "57-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2026-07-21",
+     "text": "foydali qazilmalarni noqonuniy qazib olish yoki qazib olingan foydali qazilmalar hajmini soliq hisobotida toʻliq aks ettirmaslik.\nUshbu bandning oʻninchi xatboshisida nazarda tutilgan soliqqa oid huquqbuzarlik yoki holatlarni birinchi marta sodir etgan soliq toʻlovchilar rasmiy ogohlantiriladi. Mazkur huquqbuzarlik yoki holatlar rasmiy ogohlantirishdan soʻng uch kun muddatda bartaraf etilmagan va (yoki) qayta sodir etilganligi aniqlanganda ushbu soliq toʻlovchida sayyor soliq tekshiruvlari oʻtkaziladi.\nUshbu bandning oʻninchi xatboshisida nazarda tutilgan soliqqa oid huquqbuzarlik yoki holatlar joyida aniqlanganligi fotosuratlar va (yoki) videoyozuvlar orqali qayd qilinishi mumkin.\nKoʻrsatilgan soliqqa oid huquqbuzarlik holatlari va ularni sodir etgan jismoniy shaxslarning murojaati soliq organlariga avval kelib tushgan va uning asosida soliq organlari tomonidan sayyor soliq tekshiruvi oʻtkazayotgan yoki sayyor soliq tekshiruvi materiallarini koʻrib chiqish natijalari boʻyicha soliq organining rahbari (rahbar oʻrinbosari) tomonidan tegishli qaror qabul qilinayotgan boʻlsa, soliq organlari qonunchilik hujjatlarida evaziga haq toʻlanishi nazarda tutilgan soliqqa oid huquqbuzarlik holatlari va ularni sodir etgan shaxslar toʻgʻrisida takror kelib tushgan xabarlar asosida sayyor soliq tekshiruvlarini oʻtkazmaslik huquqiga ega.",
+     "retrieval_score": 0.4291,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5206072#band-57s2#p9",
+     "doc_id": "lex:-5206072",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori soliq xavfini boshqarish, soliq xavfi mavjud soliq toʻlovchilarni (soliq agentlarini) aniqlash va soliq tekshiruvlarini tashkil etish va oʻtkazish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5206072",
+     "article": "57-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2026-07-21",
+     "text": "soliq inspektorlari tomonidan oʻz xizmat vazifalarini amalga oshirish jarayonida majburiy raqamli markirovkalanishi lozim boʻlgan mahsulotlar boʻyicha qalbaki va kontrafakt holatlar hamda markirovkalash qoidalari buzilgani hamda xabardor qilish tartibida amalga oshiriladigan faoliyatning talablari va shartlari buzilganligi, aniqlanganda, shuningdek, jismoniy shaxslar tomonidan tadbirkorlik faoliyatini davlat roʻyxatidan oʻtmasdan amalga oshirish holatlarini aniqlashda;\nimport qilingan oziq-ovqat mahsulotlarining toʻqqiz oy (goʻsht va hoʻl meva-sabzavotlarning uch oy) davomida sotilmaganligi va qiymati bazaviy hisoblash miqdorining besh yuz baravaridan ortiq boʻlgan ushbu mahsulotlar qoldiqda turganligi holati aniqlanganda;\nsoliq organlari xodimlari tomonidan oʻz xizmat vazifalarini amalga oshirish jarayonida quyidagi soliqqa oid huquqbuzarlik yoki holatlar rasmiy ogohlantirishdan soʻng uch kun muddatda bartaraf etilmaganligi yoxud takroran aniqlanganda:\nnazorat-kassa texnikasini va (yoki) hisob-kitob terminallarini qoʻllash tartibini buzish;\nmehnat faoliyatini amalga oshiruvchi xodimlarni hamda mehnatga haq toʻlash fondini soliq hisobotida aks ettirmaslik;\nyer maydonlaridan hujjatlarsiz yoxud yer uchastkasiga boʻlgan huquqni tasdiqlovchi hujjatlarda koʻrsatilganidan kattaroq hajmda foydalanish;",
+     "retrieval_score": 0.3941,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-7606183#band-11s2#p44",
+     "doc_id": "lex:-7606183",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori Oʻzbekiston Respublikasi hukumatining ayrim qarorlariga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7606183",
+     "article": "11-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-01-07",
+     "text": "foydali qazilmalarni noqonuniy qazib olish yoki qazib olingan foydali qazilmalar hajmini soliq hisobotida toʻliq aks ettirmaslik.\nUshbu bandning oʻninchi xatboshisida nazarda tutilgan soliqqa oid huquqbuzarlik yoki holatlarni birinchi marta sodir etgan soliq toʻlovchilar rasmiy ogohlantiriladi. Mazkur huquqbuzarlik yoki holatlar rasmiy ogohlantirishdan soʻng uch kun muddatda bartaraf etilmagan va (yoki) qayta sodir etilganligi aniqlanganda ushbu soliq toʻlovchida sayyor soliq tekshiruvlari oʻtkaziladi.\nUshbu bandning oʻninchi xatboshisida nazarda tutilgan soliqqa oid huquqbuzarlik yoki holatlar joyida aniqlanganligi fotosuratlar va (yoki) videoyozuvlar orqali qayd qilinishi mumkin”;\noʻninchi xatboshi oʻn yettinchi xatboshi deb hisoblansin;\n99-band quyidagi tahrirda bayon etilsin:\n“99. Soliq organlari tomonidan yer qaʼridan foydalanuvchilar haqiqatda qazib olgan (ajratib olgan) foydali qazilmalar hajmini tekshirish va yer osti boyliklari va texnogen mineral hosilalardan oʻzboshimchalik bilan foydalanishning oldini olish uchun konchilik munosabatlari sohasidagi vakolatli davlat organlari mutaxassislari, shuningdek, marksheyderlik xizmatlarini koʻrsatuvchi tashkilotlar bilan toʻgʻridan-toʻgʻri shartnoma tuzgan holda ularning mutaxassislari jalb qilinishi mumkin.",
+     "retrieval_score": 0.3752,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1740,
+    "retrieval_ms": 2294,
+    "rerank_ms": 0,
+    "generation_ms": 2961,
+    "total_ms": 6996
+   },
+   "usage": {
+    "input_tokens": 14242,
+    "output_tokens": 633,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Soliq organi xodimi soliq toʻlovchida qonunbuzarlikni birinchi marta aniqlab, rasmiy ogohlantirish yuborganda, ushbu kamchiliklar qancha muddat ichida bartaraf etilishi kerak?",
+    "search_queries": [
+     "Soliq organi xodimi soliq toʻlovchida qonunbuzarlikni birinchi marta aniqlab, rasmiy ogohlantirish yuborsa, bu kamchiliklar qancha muddat ichida bartaraf etilishi kerak?",
+     "Soliq organi xodimi soliq toʻlovchida qonunbuzarlikni birinchi marta aniqlab, rasmiy ogohlantirish yuborganda, ushbu kamchiliklar qancha muddat ichida bartaraf etilishi kerak?",
+     "soliq organi tomonidan ogohlantirish yuborilganda kamchiliklarni bartaraf etish muddati",
+     "soliq toʻlovchiga rasmiy ogohlantirish berish tartibi va muddati",
+     "qonunbuzarlik birinchi marta aniqlanganda ogohlantirish kamchiliklarni bartaraf etish muddati"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 761,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q056",
+   "status": "ok",
+   "answer": "Jinoyat-ijroiya kodeksining 102¹-moddasiga koʻra, mahkumlarni ragʻbatlantirish masalalari jazoni ijro etish muassasasida tuzilgan komissiya tomonidan koʻrib chiqiladi va ular boʻyicha xulosa qabul qilinadi [1]. Komissiya jazoni ijro etish muassasasining xodimlari, shuningdek jamoatchilik vakillari orasidan kamida sakkiz nafar aʼzodan iborat tarkibda tuziladi [1]. Jamoatchilik vakillari komissiya aʼzolari umumiy sonining yarmini tashkil etishi kerak, jazoni ijro etish muassasasi boshligʻi esa komissiyaning raisi hisoblanadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-163629",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-ijroiya kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-163629",
+     "article": "102¹-modda",
+     "part": "1–6-qism",
+     "edition_date": "2023-02-16",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-163629#art-102.1#p1",
+     "quote": "Komissiya jazoni ijro etish muassasasining xodimlari, shuningdek jamoatchilik vakillari orasidan kamida sakkiz nafar aʼzodan iborat tarkibda tuziladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-163629",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-ijroiya kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-163629",
+     "article": "102¹-modda",
+     "part": "1–6-qism",
+     "edition_date": "2023-02-16",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-163629#art-102.1#p1",
+     "quote": "Jamoatchilik vakillari komissiya aʼzolari umumiy sonining yarmini tashkil etishi kerak. Jazoni ijro etish muassasasi boshligʻi komissiyaning raisi hisoblanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-163629#art-102.1#p1",
+     "doc_id": "lex:-163629",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-ijroiya kodeksi",
+     "url": "https://lex.uz/docs/-163629",
+     "article": "102¹-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-02-16",
+     "text": "1021-modda. Ragʻbatlantirish choralarini qoʻllash tartibi\nMahkumlarga nisbatan ragʻbatlantirish choralarini qoʻllash har yili kamida ikki marta, shuningdek bayram kunlari munosabati bilan koʻrib chiqiladi.\nMahkumlarni ragʻbatlantirish masalalari, shu jumladan qoʻllanilayotgan ragʻbatlantirish choralarining ushbu Kodeks 971-moddasining birinchi qismida nazarda tutilgan mezonlarga muvofiqligi jazoni ijro etish muassasasida tuzilgan komissiya tomonidan koʻrib chiqiladi va ular boʻyicha xulosa qabul qilinadi.\nKomissiya jazoni ijro etish muassasasining xodimlari, shuningdek jamoatchilik vakillari orasidan kamida sakkiz nafar aʼzodan iborat tarkibda tuziladi.\nKomissiya tarkibiga jamoatchilik vakillaridan, qoida tariqasida, xalq deputalari mahalliy Kengashlari deputatlari, Oʻzbekiston Respublikasi Oliy Majlisi Inson huquqlari boʻyicha vakilining (ombudsmanning) mintaqaviy vakillari, oʻzini oʻzi boshqarish organlarining, jamoat tashkilotlarining hayotiy tajribaga va aholi oʻrtasida obroʻ-eʼtiborga ega boʻlgan vakillari kiradi.\nJamoatchilik vakillari komissiya aʼzolari umumiy sonining yarmini tashkil etishi kerak. Jazoni ijro etish muassasasi boshligʻi komissiyaning raisi hisoblanadi.\nMahkumni ragʻbatlantirish uchun tavsiya etish, zarur hujjatlarni tayyorlash va komissiya aʼzolariga taqdim etish otryad boshligʻi tomonidan amalga oshiriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-2216121#band-426s2#p1",
+     "doc_id": "lex:-2216121",
+     "doc_title": "Oʻzbekiston Respublikasi ichki ishlar vazirining buyrugʻi Oʻzbekiston Respublikasi ichki ishlar vazirligi ozodlikdan mahrum qilish turidagi jazoni ijro etish muassasalarining ichki tartib qoidalarini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-2216121",
+     "article": "426-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-12-12",
+     "text": "426. Mahkumga nisbatan tashakkur tariqasidagi ragʻbatlantirish ogʻzaki yoki yozma, boshqa ragʻbatlantirish choralari esa, yozma ravishda qoʻllaniladi.\n4261. Mahkumlarni ragʻbatlantirish masalalari, shu jumladan qoʻllanilayotgan ragʻbatlantirish choralarining JIKning 971-moddasining birinchi qismida nazarda tutilgan mezonlarga muvofiqligi JIEMda tuzilgan komissiya tomonidan koʻrib chiqiladi va ular boʻyicha xulosa qabul qilinadi.\nKomissiya JIEMning xodimlari, shuningdek jamoatchilik vakillari orasidan kamida sakkiz nafar aʼzodan iborat tarkibda tuziladi.\nKomissiya tarkibiga jamoatchilik vakillaridan, qoida tariqasida, xalq deputatlari mahalliy Kengashlari deputatlari, Oʻzbekiston Respublikasi Oliy Majlisi Inson huquqlari boʻyicha vakilining (ombudsmanning) mintaqaviy vakillari, oʻzini oʻzi boshqarish organlarining, jamoat tashkilotlarining hayotiy tajribaga va aholi oʻrtasida obroʻ-eʼtiborga ega boʻlgan vakillari kiradi.\nJamoatchilik vakillari komissiya aʼzolari umumiy sonining yarmini tashkil etishi kerak. JIEM boshligʻi komissiyaning raisi hisoblanadi.\n4262. Mahkumni ragʻbatlantirish uchun tavsiya etish, zarur hujjatlarni tayyorlash va komissiya aʼzolariga taqdim etish otryad boshligʻi tomonidan amalga oshiriladi.\nKomissiya majlisi JIK 1021-moddasining birinchi qismida koʻrsatilgan muddatlardan bir hafta ilgari oʻtkaziladi.",
+     "retrieval_score": 0.5155,
+     "rerank_score": 0.8,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:6690763#band-101s2#p1",
+     "doc_id": "lex:6690763",
+     "doc_title": "Oʻzbekiston Respublikasi ichki ishlar vazirining buyrugʻi Oʻzbekiston Respublikasi ichki ishlar vazirligi ozodlikdan mahrum qilish turidagi jazoni ijro etish muassasalarining ichki tartib qoidalariga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/6690763",
+     "article": "101-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-12-12",
+     "text": "101. Quyidagi mazmundagi 4261-4262-bandlari bilan toʻldirilsin:\n“4261. Mahkumlarni ragʻbatlantirish masalalari, shu jumladan qoʻllanilayotgan ragʻbatlantirish choralarining JIKning 971-moddasining birinchi qismida nazarda tutilgan mezonlarga muvofiqligi JIEMda tuzilgan komissiya tomonidan koʻrib chiqiladi va ular boʻyicha xulosa qabul qilinadi.\nKomissiya JIEMning xodimlari, shuningdek jamoatchilik vakillari orasidan kamida sakkiz nafar aʼzodan iborat tarkibda tuziladi.\nKomissiya tarkibiga jamoatchilik vakillaridan, qoida tariqasida, xalq deputatlari mahalliy Kengashlari deputatlari, Oʻzbekiston Respublikasi Oliy Majlisi Inson huquqlari boʻyicha vakilining (ombudsmanning) mintaqaviy vakillari, oʻzini oʻzi boshqarish organlarining, jamoat tashkilotlarining hayotiy tajribaga va aholi oʻrtasida obroʻ-eʼtiborga ega boʻlgan vakillari kiradi.\nJamoatchilik vakillari komissiya aʼzolari umumiy sonining yarmini tashkil etishi kerak. JIEM boshligʻi komissiyaning raisi hisoblanadi.\n4262. Mahkumni ragʻbatlantirish uchun tavsiya etish, zarur hujjatlarni tayyorlash va komissiya aʼzolariga taqdim etish otryad boshligʻi tomonidan amalga oshiriladi.\nKomissiya majlisi JIK 1021-moddasining birinchi qismida koʻrsatilgan muddatlardan bir hafta ilgari oʻtkaziladi.",
+     "retrieval_score": 0.4726,
+     "rerank_score": 0.8,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-4877837#preamble#p47",
+     "doc_id": "lex:-4877837",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining jinoyat-ijroiya kodeksiga mahkumlarning huquqlari va qonuniy manfaatlari ishonchli himoya qilinishini taʼminlashga qaratilgan oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4877837",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-06-30",
+     "text": "Jamoatchilik vakillari komissiya aʼzolari umumiy sonining yarmini tashkil etishi kerak. Jazoni ijro etish muassasasi boshligʻi komissiyaning raisi hisoblanadi.\nMahkumni ragʻbatlantirish uchun tavsiya etish, zarur hujjatlarni tayyorlash va komissiya aʼzolariga taqdim etish otryad boshligʻi tomonidan amalga oshiriladi.\nKomissiya majlisi ushbu moddaning birinchi qismida koʻrsatilgan muddatlardan bir hafta ilgari oʻtkaziladi.\nKomissiya aʼzolari ragʻbatlantirish uchun tavsiya etilgan mahkum bilan uning xulq-atvori belgilangan mezonlarga muvofiqligi yuzasidan suhbat oʻtkazadi.\nKomissiya qarori majlisda ishtirok etayotgan aʼzolarning koʻpchilik ovozi bilan, ochiq ovoz berish orqali qabul qilinadi. Ovozlar soni teng boʻlgan taqdirda, mahkumni ragʻbatlantirish toʻgʻrisida qaror qabul qilinadi.\nKomissiya qarori majlisda hozir boʻlgan komissiya aʼzolari tomonidan imzolanadigan bayonnoma bilan rasmiylashtiriladi va komissiya raisi tomonidan tasdiqlanadi.\nKomissiyaning mahkumga nisbatan ragʻbatlantirish chorasini qoʻllash toʻgʻrisidagi qarorni oʻz ichiga olgan bayonnomasiga muvofiq jazoni ijro etish muassasasi boshligʻining buyrugʻi uch ish kuni ichida chiqariladi va uning mazmuni mahkumga eʼlon qilinadi.\nKomissiyani tuzish va faoliyatini amalga oshirish tartibi Oʻzbekiston Respublikasi Ichki ishlar vazirligi tomonidan tasdiqlanadi”;\n7) 125-modda:",
+     "retrieval_score": 0.7468,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-163629#art-102.1#p7",
+     "doc_id": "lex:-163629",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-ijroiya kodeksi",
+     "url": "https://lex.uz/docs/-163629",
+     "article": "102¹-modda",
+     "part": "7–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-02-16",
+     "text": "1021-modda. Ragʻbatlantirish choralarini qoʻllash tartibi\nKomissiya majlisi ushbu moddaning birinchi qismida koʻrsatilgan muddatlardan bir hafta ilgari oʻtkaziladi.\nKomissiya aʼzolari ragʻbatlantirish uchun tavsiya etilgan mahkum bilan uning xulq-atvori belgilangan mezonlarga muvofiqligi yuzasidan suhbat oʻtkazadi.\nKomissiya qarori majlisda ishtirok etayotgan aʼzolarning koʻpchilik ovozi bilan, ochiq ovoz berish orqali qabul qilinadi. Ovozlar soni teng boʻlgan taqdirda, mahkumni ragʻbatlantirish toʻgʻrisida qaror qabul qilinadi.\nKomissiya qarori majlisda hozir boʻlgan komissiya aʼzolari tomonidan imzolanadigan bayonnoma bilan rasmiylashtiriladi va komissiya raisi tomonidan tasdiqlanadi.\nKomissiyaning mahkumga nisbatan ragʻbatlantirish chorasini qoʻllash toʻgʻrisidagi qarorni oʻz ichiga olgan bayonnomasiga muvofiq jazoni ijro etish muassasasi boshligʻining buyrugʻi uch ish kuni ichida chiqariladi va uning mazmuni mahkumga eʼlon qilinadi.\nKomissiyani tuzish va faoliyatini amalga oshirish tartibi Oʻzbekiston Respublikasi Ichki ishlar vazirligi tomonidan tasdiqlanadi.",
+     "retrieval_score": 0.8167,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1724,
+    "retrieval_ms": 1211,
+    "rerank_ms": 0,
+    "generation_ms": 2474,
+    "total_ms": 5411
+   },
+   "usage": {
+    "input_tokens": 13327,
+    "output_tokens": 615,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Mahkumni ragʻbatlantirish masalalari qaysi komissiya tomonidan koʻrib chiqiladi, bu komissiya qanday tarkibda tuziladi va jamoatchilik vakillari uning umumiy sonining qancha qismini tashkil etishi kerak?",
+    "search_queries": [
+     "Mahkumni ragʻbatlantirish masalalari qanday komissiya tomonidan koʻrib chiqiladi va bu komissiya qanday tarkibda tuziladi, jamoatchilik vakillari uning umumiy sonining qancha qismini tashkil etishi kerak?",
+     "Mahkumni ragʻbatlantirish masalalari qaysi komissiya tomonidan koʻrib chiqiladi, bu komissiya qanday tarkibda tuziladi va jamoatchilik vakillari uning umumiy sonining qancha qismini tashkil etishi kerak?",
+     "mahkumni ragʻbatlantirish masalalari komissiya",
+     "jazo ijrosi komissiyasi tarkibi jamoatchilik vakillari",
+     "mahkumlarni ragʻbatlantirish komissiyasi tuzilishi"
+    ],
+    "doc_hints": [
+     "Jinoyat-ijroiya kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 558,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q057",
+   "status": "ok",
+   "answer": "Нет, собственник не вправе передать другому лицу свою долю в общем имуществе многоквартирного дома: согласно статье 211 Гражданского кодекса участник долевой собственности на общее имущество не вправе передавать свою долю другому лицу, отказываться от нее в пользу граждан или юридических лиц, а также совершать иные действия, влекущие переход права на жилое или нежилое помещение отдельно от права на долю [1]. Аналогичная норма закреплена в статье 125 Жилищного кодекса [2], а статья 124 Жилищного кодекса прямо указывает, что доля собственника в общем имуществе не может быть выделена в натуре [3]. При этом отдельные части общего имущества могут быть переданы другим лицам только по единогласному решению всех участников общей долевой собственности в соответствии с законодательством [4].",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": false,
+   "confidence": 0.93,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "211-modda",
+     "part": "3-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-211#p3",
+     "quote": "Koʻp kvartirali uydagi umumiy mol-mulkka nisbatan ulushli mulk ishtirokchisi oʻz ulushini boshqa shaxsga berishga, undan fuqarolar yoki yuridik shaxslar foydasiga voz kechishga, shuningdek uni oʻziga qarashli turar joyga yoki yashash uchun moʻljallanmagan joyga boʻlgan mulk huquqidan alohida tarzda boshqa shaxsga oʻtishiga sabab boʻluvchi oʻzga xatti-harakatlar sodir etishga haqli emas",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "125-modda",
+     "part": "1–4-qism",
+     "edition_date": "1998-12-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-106136#art-125#p1",
+     "quote": "Koʻp kvartirali uydagi umumiy mol-mulkka nisbatan ulushli mulk ishtirokchisi oʻz ulushini boshqa shaxsga berishga, undan fuqarolar yoki yuridik shaxslar foydasiga voz kechishga, shuningdek uni oʻziga qarashli turar joyga yoki yashash uchun moʻljallanmagan joyga boʻlgan mulk huquqidan alohida tarzda boshqa shaxsga oʻtishiga sabab boʻluvchi oʻzga xatti-harakatlar sodir etishga haqli emas",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "124-modda",
+     "part": "1–3-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-106136#art-124#p1",
+     "quote": "Koʻp kvartirali uydagi turar joy va yashash uchun moʻljallanmagan joy mulkdorining umumiy mol-mulkdagi ulushi asl holida ajratib berilishi mumkin emas",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "124-modda",
+     "part": "4–5-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-106136#art-124#p4",
+     "quote": "Koʻp kvartirali uydagi turar joylar va yashash uchun moʻljallanmagan joylar mulkdorlarining ulushli mulkida turgan umumiy mol-mulkning ayrim qismlari qonunchilikka muvofiq umumiy ulushli mulkning barcha ishtirokchilari tomonidan bir ovozdan qabul qilingan qaror asosida boshqa shaxslarga berilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-106136#art-125#p1",
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "125-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "1998-12-24",
+     "text": "125-modda. Koʻp kvartirali uydagi umumiy mol-mulkka boʻlgan mulk huquqidagi ulushlarni aniqlash\nKoʻp kvartirali uydagi umumiy mol-mulkka nisbatan ulushli mulk har bir ishtirokchisining ulushi shu uyning umumiy maydonidagi unga qarashli joy maydoni ulushiga mos boʻladi.\nKoʻp kvartirali uydagi umumiy mol-mulkka nisbatan ulushli mulk ishtirokchisi oʻz ulushini boshqa shaxsga berishga, undan fuqarolar yoki yuridik shaxslar foydasiga voz kechishga, shuningdek uni oʻziga qarashli turar joyga yoki yashash uchun moʻljallanmagan joyga boʻlgan mulk huquqidan alohida tarzda boshqa shaxsga oʻtishiga sabab boʻluvchi oʻzga xatti-harakatlar sodir etishga haqli emas.\nTurar joyga yoki yashash uchun moʻljallanmagan joyga boʻlgan mulk huquqi koʻp kvartirali uydagi umumiy mol-mulkka boʻlgan ulushli mulk huquqidan ajralmasdir.\nKoʻp kvartirali uydagi turar joyga yoki yashash uchun moʻljallanmagan joyga boʻlgan mulk huquqi yangi mulkdorga oʻtganda u shu uydagi umumiy mol-mulkka nisbatan ulushli mulk ishtirokchisi boʻladi.",
+     "retrieval_score": 0.9806,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111189#art-211#p3",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "211-modda",
+     "part": "3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "211-modda. Koʻp kvartirali uydagi turar joylar va yashash uchun moʻljallanmagan joylar mulkdorlarining umumiy mol-mulki\nKoʻp kvartirali uydagi umumiy mol-mulkka nisbatan ulushli mulk ishtirokchisi oʻz ulushini boshqa shaxsga berishga, undan fuqarolar yoki yuridik shaxslar foydasiga voz kechishga, shuningdek uni oʻziga qarashli turar joyga yoki yashash uchun moʻljallanmagan joyga boʻlgan mulk huquqidan alohida tarzda boshqa shaxsga oʻtishiga sabab boʻluvchi oʻzga xatti-harakatlar sodir etishga haqli emas.",
+     "retrieval_score": 0.9481,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-106136#art-124#p1",
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "124-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "124-modda. Turar joylar va yashash uchun moʻljallanmagan joylar mulkdorlarining koʻp kvartirali uydagi umumiy mol-mulkka boʻlgan huquqi\nKoʻp kvartirali uydagi turar joylar va yashash uchun moʻljallanmagan joylar mulkdorlariga shu uyning umumiy joylarini, tayanch va toʻsiq konstruksiyalar, kvartiralar oraligʻidagi ihotalangan (oʻralma) pillapoyalar, zinapoyalar, liftlar, liftning shaxtalari va boshqa shaxtalar, dahlizlar, texnik qavatlar, yertoʻlalar, cherdaklar va tomlar, uy ichidagi muhandislik tarmoqlari va kommunikatsiyalari, joylar tashqarisida yoki ichida joylashgan va bittadan ortiq joyga xizmat koʻrsatadigan mexanik, elektr, sanitariya-texnika uskunalari va qurilmalari hamda boshqa uskunalar va qurilmalarni oʻz ichiga olgan umumiy mol-mulk ulushli mulk huquqi asosida tegishli boʻladi.\nKoʻp kvartirali uydagi turar joy va yashash uchun moʻljallanmagan joy mulkdorining umumiy mol-mulkdagi ulushi asl holida ajratib berilishi mumkin emas.\nKoʻp kvartirali uydagi turar joylar va yashash uchun moʻljallanmagan joylar mulkdorlari umumiy mol-mulkdan hamda shu uyga tutash, obodonlashtirish elementlari boʻlgan yer uchastkasidan foydalanishda teng huquqqa egadir.",
+     "retrieval_score": 0.9153,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-106136#art-124#p4",
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "124-modda",
+     "part": "4–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "124-modda. Turar joylar va yashash uchun moʻljallanmagan joylar mulkdorlarining koʻp kvartirali uydagi umumiy mol-mulkka boʻlgan huquqi\nKoʻp kvartirali uydagi umumiy mol-mulkka nisbatan ulushli mulk ishtirokchilari tayanch va toʻsiq konstruksiyalarni, kvartiralar oraligʻidagi ihotalangan (oʻralma) pillapoyalarni, zinapoyalarni, liftlarni, liftning shaxtalari va boshqa shaxtalarni, dahlizlarni, texnik qavatlarni, yertoʻlalarni, cherdaklar va tomlarni, uy ichidagi muhandislik tarmoqlari va kommunikatsiyalarini, joylar tashqarisida yoki ichida joylashgan va bittadan ortiq joyga xizmat koʻrsatadigan mexanik, elektr, sanitariya-texnika uskunalari va qurilmalari hamda boshqa uskunalar va qurilmalarni boshqa shaxsga berishi mumkin emas.\nKoʻp kvartirali uydagi turar joylar va yashash uchun moʻljallanmagan joylar mulkdorlarining ulushli mulkida turgan umumiy mol-mulkning ayrim qismlari qonunchilikka muvofiq umumiy ulushli mulkning barcha ishtirokchilari tomonidan bir ovozdan qabul qilingan qaror asosida boshqa shaxslarga berilishi mumkin.",
+     "retrieval_score": 0.9544,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-106136#art-127#p1",
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "127-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1998-12-24",
+     "text": "127-modda. Koʻp kvartirali uydagi umumiy mol-mulkka boʻlgan mulk huquqini amalga oshirish\nKoʻp kvartirali uydagi umumiy mol-mulkka va shu uyga tutash, obodonlashtirish elementlari boʻlgan yer uchastkasiga egalik qilish hamda ulardan foydalanish turar joylarning va yashash uchun moʻljallanmagan joylarning barcha mulkdorlari kelishuviga koʻra amalga oshiriladi, bunday kelishuvga erishilmagan taqdirda esa mulkdorlardan istalgan birining daʼvosi boʻyicha sud tomonidan belgilanadi.\nKoʻp kvartirali uydagi umumiy mol-mulkni tasarruf etish turar joylarning va yashash uchun moʻljallanmagan joylarning barcha mulkdorlari kelishuviga koʻra amalga oshiriladi.\nKoʻp kvartirali uydagi umumiy mol-mulkning ayrim qismlari koʻp kvartirali uydagi turar joylar mulkdorlarining koʻpchiligi tomonidan qabul qilingan qarorga binoan boshqa shaxslarga foydalanishga, arendaga berilishi mumkin.",
+     "retrieval_score": 0.8964,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1966,
+    "retrieval_ms": 2085,
+    "rerank_ms": 0,
+    "generation_ms": 5035,
+    "total_ms": 9088
+   },
+   "usage": {
+    "input_tokens": 13436,
+    "output_tokens": 1052,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Koʻp kvartirali uydagi umumiy mol-mulkdagi oʻz ulushini kvartira egasi boshqa shaxsga oʻtkazishi mumkinmi yoki yoʻqmi?",
+    "search_queries": [
+     "Может ли собственник квартиры передать другому лицу свою долю в общем имуществе многоквартирного дома или нет?",
+     "Koʻp kvartirali uydagi umumiy mol-mulkdagi oʻz ulushini kvartira egasi boshqa shaxsga oʻtkazishi mumkinmi yoki yoʻqmi?",
+     "koʻp kvartirali uydagi umumiy mol-mulkdagi ulushni boshqa shaxsga oʻtkazish",
+     "koʻp kvartirali uyda umumiy mol-mulk ulushini tasarruf etish",
+     "umumiy mol-mulkdagi ulushni begonalashtirish koʻp kvartirali uy"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi",
+     "Uy-joy kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 590,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q058",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 262-moddasiga koʻra, sud qoʻshimcha hal qiluv qarorini quyidagi hollarda chiqarishi mumkin: huquq toʻgʻrisidagi masalani hal qilib, undiriladigan summaning miqdorini, olib berilishi kerak boʻlgan mol-mulkni yoki javobgar amalga oshirishi shart boʻlgan harakatlarni koʻrsatmagan boʻlsa; arz qilingan talablarning birortasi boʻyicha dalillar taqdim etilib, tushuntirishlar berilgan boʻlsa-da, bu xususda hal qiluv qarori qabul qilinmagan boʻlsa; hal qiluv qarorida sud xarajatlarini taqsimlash koʻrsatilmagan boʻlsa [1]. Qoʻshimcha hal qiluv qarorini chiqarish toʻgʻrisidagi masala hal qiluv qarori chiqarilgan kundan eʼtiboran oʻn kundan kechiktirmay qoʻzgʻatilishi mumkin [2]. Iqtisodiy protsessual kodeksining 189-moddasiga koʻra esa bunday masala hal qiluv qarori qonuniy kuchga kirguniga qadar qoʻyilishi mumkin [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "262-modda",
+     "part": "1–8-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-262#p1",
+     "quote": "Ish boʻyicha hal qiluv qarorini qabul qilgan sud ishda ishtirok etuvchi shaxslarning arizasiga koʻra yoki oʻz tashabbusi bilan quyidagi hollarda qoʻshimcha hal qiluv qarori chiqarishi mumkin, agar:",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "262-modda",
+     "part": "1–8-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-262#p1",
+     "quote": "Qoʻshimcha hal qiluv qarorini chiqarish toʻgʻrisidagi masala hal qiluv qarori chiqarilgan kundan eʼtiboran oʻn kundan kechiktirmay qoʻzgʻatilishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "189-modda",
+     "part": "1–8-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-189#p1",
+     "quote": "Qoʻshimcha hal qiluv qarorini qabul qilish toʻgʻrisidagi masala hal qiluv qarori qonuniy kuchga kirguniga qadar qoʻyilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-262#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "262-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "262-modda. Qoʻshimcha hal qiluv qarori\nIsh boʻyicha hal qiluv qarorini qabul qilgan sud ishda ishtirok etuvchi shaxslarning arizasiga koʻra yoki oʻz tashabbusi bilan quyidagi hollarda qoʻshimcha hal qiluv qarori chiqarishi mumkin, agar:\n1) huquq toʻgʻrisidagi masalani hal qilib, undiriladigan summaning miqdorini, olib berilishi kerak boʻlgan mol-mulkni yoki javobgar amalga oshirishi shart boʻlgan harakatlarni koʻrsatmagan boʻlsa;\n2) arz qilingan talablarning birortasi boʻyicha ishda ishtirok etuvchi shaxslar dalillar taqdim etgan va tushuntirishlar bergan boʻlsalarda, biroq bu xususda hal qiluv qarori qabul qilinmagan boʻlsa;\n3) hal qiluv qarorida sud xarajatlarini taqsimlash koʻrsatilmagan boʻlsa.\nQoʻshimcha hal qiluv qarorini chiqarish toʻgʻrisidagi masala hal qiluv qarori chiqarilgan kundan eʼtiboran oʻn kundan kechiktirmay qoʻzgʻatilishi mumkin.\nQoʻshimcha hal qiluv qarorini qabul qilish toʻgʻrisidagi masala ishda ishtirok etuvchi shaxslar xabardor qilingan holda sud majlisida koʻrib chiqiladi. Biroq bu shaxslarning kelmaganligi masalani koʻrib chiqish uchun toʻsqinlik qilmaydi. Qoʻshimcha hal qiluv qarori ustidan asosiy hal qiluv qarori bilan birga shikoyat qilinishi va protest keltirilishi mumkin.\nQoʻshimcha hal qiluv qarori asosiy hal qiluv qarori bilan birga qonuniy kuchga kiradi.\nQoʻshimcha hal qiluv qarorini chiqarish rad etilgan taqdirda, ajrim chiqariladi.",
+     "retrieval_score": 0.9618,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3523891#art-189#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "189-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "189-modda. Qoʻshimcha hal qiluv qarori\nHal qiluv qarorini qabul qilgan sud quyidagi hollarda qoʻshimcha hal qiluv qarorini qabul qiladi, agar:\n1) ishda ishtirok etuvchi shaxslar dalillar taqdim etgan biror-bir talab boʻyicha hal qiluv qarori qabul qilinmagan boʻlsa;\n2) sud huquq toʻgʻrisidagi masalani hal qilib, undiriladigan summa miqdorini, topshirilishi lozim boʻlgan mol-mulkni yoki javobgar amalga oshirishi shart boʻlgan harakatlarni koʻrsatmagan boʻlsa;\n3) sud xarajatlari toʻgʻrisidagi masala hal etilmagan boʻlsa.\nQoʻshimcha hal qiluv qarorini qabul qilish toʻgʻrisidagi masala hal qiluv qarori qonuniy kuchga kirguniga qadar qoʻyilishi mumkin.\nQoʻshimcha hal qiluv qarori ishda ishtirok etuvchi shaxslarning arizasiga yoki sudning tashabbusiga koʻra qabul qilinishi mumkin.\nSud tomonidan qoʻshimcha hal qiluv qarorini qabul qilish toʻgʻrisidagi masala mazkur bobda belgilangan qoidalar boʻyicha sud majlisida hal qilinadi. Ishda ishtirok etuvchi shaxslar sud majlisining vaqti va joyi toʻgʻrisida ushbu Kodeksning 127-moddasida nazarda tutilgan tartibda xabardor qilinadi. Tegishli tarzda xabardor qilingan shaxslarning kelmaganligi qoʻshimcha hal qiluv qarorini qabul qilish toʻgʻrisidagi masalani koʻrishga toʻsqinlik qilmaydi.\nQoʻshimcha hal qiluv qarori asosiy hal qiluv qarori bilan birga qonuniy kuchga kiradi.",
+     "retrieval_score": 0.804,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-189#p9",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "189-modda",
+     "part": "9–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "189-modda. Qoʻshimcha hal qiluv qarori\nQoʻshimcha hal qiluv qarori ustidan asosiy hal qiluv qarori bilan birga shikoyat qilinishi (protest keltirilishi) mumkin.\nQoʻshimcha hal qiluv qarorini qabul qilish rad etilgan taqdirda, ajrim chiqariladi.",
+     "retrieval_score": 0.9262,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-262#p9",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "262-modda",
+     "part": "9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "262-modda. Qoʻshimcha hal qiluv qarori\nQoʻshimcha hal qiluv qarorini chiqarishni rad etish haqidagi sudning ajrimi ustidan xususiy shikoyat (protest) berilishi mumkin.",
+     "retrieval_score": 0.9158,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:3523891#art-271#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "271-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "271-modda. Apellyatsiya instansiyasi sudi tomonidan hal qiluv qarorining ijrosini toʻxtatib turish\nApellyatsiya shikoyati (protesti) uni berish muddati oʻtkazib yuborilgan holda berilganda va ushbu muddatni tiklash toʻgʻrisidagi iltimosnoma qanoatlantirilganda, apellyatsiya instansiyasi sudi birinchi instansiya sudi tomonidan qabul qilingan hal qiluv qarorining ijrosini ishda ishtirok etuvchi shaxslarning iltimosnomasiga koʻra toʻxtatib turishga haqli.\nHal qiluv qarorining ijrosini toʻxtatib turish yoki uning ijrosini toʻxtatib turishni rad etish haqida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.\nHal qiluv qarorining ijrosi apellyatsiya instansiyasi sudi tomonidan apellyatsiya shikoyatini (protestini) koʻrib chiqish natijalari boʻyicha sud hujjati qabul qilingunga qadar boʻlgan muddatga toʻxtatib turiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1691,
+    "retrieval_ms": 1536,
+    "rerank_ms": 0,
+    "generation_ms": 3224,
+    "total_ms": 6453
+   },
+   "usage": {
+    "input_tokens": 12602,
+    "output_tokens": 842,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud qanday hollarda ish boʻyicha qoʻshimcha hal qiluv qarori chiqarishi mumkin va bunday masalani koʻrib chiqish uchun qancha muddat belgilangan?",
+    "search_queries": [
+     "Sud qanday hollarda ish boʻyicha qoʻshimcha hal qiluv qarori chiqarishi mumkin va bunday masalani koʻrib chiqish uchun qancha muddat belgilangan?",
+     "qoʻshimcha hal qiluv qarori chiqarish asoslari",
+     "qoʻshimcha hal qiluv qarori qabul qilish muddati",
+     "sud qoʻshimcha hal qiluv qarori koʻrib chiqish muddati"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 598,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q059",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlari soya (soyasini) uchinchi shaxsga sotish bitimini tartibga soluvchi maxsus qoidani oʻz ichiga olmaydi, shu sababli bu savolga javob berib boʻlmaydi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.6,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111189#art-184#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "184-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "184-modda. Bitim boʻyicha mol-mulkni olish\nMol-mulk olish-sotish, ayirboshlash, hadya qilish shartnomalari, hamda qonun bilan taqiqlanmagan boshqa bitimlar asosida mulk qilib olinishi mumkin.\nBasharti, qonun hujjatlarida boshqacha koʻrsatilmagan boʻlsa, mol-mulk yangi mulkdorga oʻtganida, universal huquqiy vorislik tartibida sobiq mulkdorning huquq va burchlari ham unga oʻtadi.",
+     "retrieval_score": 0.8385,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111189#art-101#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "101-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-21",
+     "text": "101-modda. Bitimlar tushunchasi\nBitimlar deb fuqarolar va yuridik shaxslarning fuqarolik huquq va burchlarini belgilash, oʻzgartirish yoki bekor qilishga qaratilgan harakatlariga aytiladi.",
+     "retrieval_score": 0.6369,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111189#art-2#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "2-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-09-25",
+     "text": "2-modda. Fuqarolik qonunchiligi bilan tartibga solinadigan munosabatlar\nFuqarolik qonunchiligi fuqarolik muomalasi ishtirokchilarining huquqiy holatini, mulk huquqi va boshqa ashyoviy huquqlarning, intellektual faoliyat natijalariga boʻlgan huquqlarning vujudga kelish asoslarini hamda ularni amalga oshirish tartibini belgilaydi, shartnoma majburiyatlari va oʻzga majburiyatlarni, shuningdek boshqa mulkiy hamda u bilan bogʻliq shaxsiy nomulkiy munosabatlarni tartibga soladi.\nFuqarolar, yuridik shaxslar va davlat fuqarolik qonunchiligi bilan tartibga solinadigan munosabatlarning ishtirokchilari boʻladilar.\nAgar qonunda boshqacha tartib nazarda tutilgan boʻlmasa, fuqarolik qonunchiligida belgilab qoʻyilgan qoidalar chet ellik fuqarolar, fuqaroligi boʻlmagan shaxslar hamda chet ellik yuridik shaxslar ishtirokidagi munosabatlarga qoʻllaniladi.\nShaxsiy nomulkiy munosabatlar va mulkiy munosabatlar bilan bogʻliq boʻlmagan shaxsiy munosabatlar, agar qonunlarda boshqacha tartib nazarda tutilgan boʻlmasa yoki bu munosabatlarning mohiyatidan oʻzgacha hol anglashilmasa, fuqarolik qonunchiligi bilan tartibga solinadi.",
+     "retrieval_score": 0.5494,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-180552#art-496#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "496-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "496-modda. Korxonani sotish shartnomasiga nisbatan bitimlarning haqiqiy emasligi oqibatlari va shartnomani oʻzgartirish yoki bekor qilish toʻgʻrisidagi qoidalarning qoʻllanilishi\nUshbu Kodeksning bitimlarning haqiqiy emasligi oqibatlari va oldi-sotdi shartnomasini oʻzgartirish yoki bekor qilish toʻgʻrisidagi, shartnoma boʻyicha bir yoki ikkala tarafdan olingan narsalarni qaytarishni yoki asl holida undirishni nazarda tutadigan qoidalari, agar bunday oqibatlar sotuvchi va sotib oluvchining kreditorlarining, boshqa shaxslarning huquqlarini va qonun bilan qoʻriqlanadigan manfaatlarini jiddiy buzmasa va ushbu Kodeks 116-moddasining qoidalariga zid kelmasa, korxonani sotish shartnomasiga nisbatan qoʻllanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-180552#art-490#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "490-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1999-08-20",
+     "text": "490-modda. Korxonani sotish shartnomasining shakli va uni davlat roʻyxatidan oʻtkazish\nKorxonani sotish shartnomasi taraflar imzolagan yozma shakldagi bitta hujjat tarzida tuzilib, unga ushbu Kodeksning 491-moddasi ikkinchi qismida koʻrsatilgan hujjatlar albatta ilova qilinadi va u notarial guvohlantirilishi hamda davlat roʻyxatidan oʻtkazilishi lozim. Vakolatli davlat organining qaroriga binoan tanlov (tender) asosida tuziladigan korxonani sotish shartnomasi notarial guvohlantirilishi shart emas, ushbu Kodeksning 110-moddasi ikkinchi qismining 2-bandida nazarda tutilgan hollar bundan mustasno.\nUshbu moddaning birinchi qismida nazarda tutilgan talablarga rioya qilmaslik shartnomaning haqiqiy boʻlmasligiga olib keladi. Bunday shartnoma oʻz-oʻzidan haqiqiy boʻlmagan bitim hisoblanadi, uni bajarishga yoʻl qoʻyilmaydi va unga nisbatan ushbu Kodeks 112-moddasining ikkinchi va uchinchi qismlarida nazarda tutilgan qoidalar qoʻllanmaydi.",
+     "retrieval_score": 0.906,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2003,
+    "retrieval_ms": 1974,
+    "rerank_ms": 0,
+    "generation_ms": 2031,
+    "total_ms": 6009
+   },
+   "usage": {
+    "input_tokens": 10275,
+    "output_tokens": 276,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻz soyasini uchinchi shaxsga sotish boʻyicha bitim qaysi qonun bilan tartibga solinadi?",
+    "search_queries": [
+     "Oʻz soyasini uchinchi shaxsga sotish boʻyicha bitim qaysi qonun bilan tartibga solinadi?",
+     "soyani uchinchi shaxsga sotish bitimi",
+     "soya sotish shartnomasi fuqarolik qonunchiligi",
+     "soyani begonalashtirish bitimi"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 569,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q060",
+   "status": "ok",
+   "answer": "Ichki ishlar organlarining tegishli ruxsatnomasiga ega boʻlgan jismoniy shaxs fuqaroviy qurolni realizatsiya qilish qoidalarini buzsa (masalan, ruxsat etilmagan tartibda sotib yuborsa yoki boshqasiga bersa), MJtKning 220-moddasi birinchi qismiga koʻra bazaviy hisoblash miqdorining besh baravaridan yetti baravarigacha miqdorda jarima solinadi yoki haqini toʻlab qurol olib qoʻyiladi [1]. Xuddi shunday huquqbuzarlik maʼmuriy jazo qoʻllanilganidan keyin bir yil davomida takror sodir etilsa, qurolni musodara qilib yoki musodara qilmay, bazaviy hisoblash miqdorining oʻn baravaridan oʻn besh baravarigacha miqdorda jarima solinadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.7,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "220-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-220#p1",
+     "quote": "Ichki ishlar organlarining tegishli ruxsatnomasiga ega boʻlgan jismoniy shaxslarning fuqaroviy, mukofot tarzida berilgan, kolleksiyalash, koʻrgazmaga qoʻyish uchun moʻljallangan qurolni va uning oʻq-dorilarini realizatsiya qilish, olish, saqlash, olib yurish, tashish, kolleksiyalash, koʻrgazmaga qoʻyish qoidalarini buzishi — bazaviy hisoblash miqdorining besh baravaridan yetti baravarigacha miqdorda jarima solishga yoki haqini toʻlab shu qurolni va oʻq-dorilarni olib qoʻyishga sabab boʻladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "220-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-220#p1",
+     "quote": "Xuddi shunday huquqbuzarlik maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, — qurolni va oʻq-dorilarni musodara qilib yoki musodara qilmay, bazaviy hisoblash miqdorining oʻn baravaridan oʻn besh baravarigacha miqdorda jarima solishga sabab boʻladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-97664#art-220#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "220-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "220-modda. Qurolning va uning oʻq-dorilarining muomalada boʻlishi qoidalarini buzish\nIchki ishlar organlarining tegishli ruxsatnomasiga ega boʻlgan jismoniy shaxslarning fuqaroviy, mukofot tarzida berilgan, kolleksiyalash, koʻrgazmaga qoʻyish uchun moʻljallangan qurolni va uning oʻq-dorilarini realizatsiya qilish, olish, saqlash, olib yurish, tashish, kolleksiyalash, koʻrgazmaga qoʻyish qoidalarini buzishi —\nbazaviy hisoblash miqdorining besh baravaridan yetti baravarigacha miqdorda jarima solishga yoki haqini toʻlab shu qurolni va oʻq-dorilarni olib qoʻyishga sabab boʻladi.\nXuddi shunday huquqbuzarlik maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, —\nqurolni va oʻq-dorilarni musodara qilib yoki musodara qilmay, bazaviy hisoblash miqdorining oʻn baravaridan oʻn besh baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.9069,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-97664#art-220.1#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "220¹-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "2201-modda. Qurolning qonunga xilof muomalasi\nPnevmatik, signal beruvchi, uloqtirish qurolini, oʻzini oʻzi himoya qilish qurolini ichki ishlar organlarining tegishli ruxsatnomalarisiz realizatsiya qilish, olish, saqlash, olib yurish, tashish, kolleksiyalash, koʻrgazmaga qoʻyish, ulardan foydalanish, Oʻzbekiston Respublikasi hududiga olib kirish yoki Oʻzbekiston Respublikasi hududidan olib chiqish, shuningdek Oʻzbekiston Respublikasi hududi orqali tranzit olib oʻtish —\nqurolni musodara qilib, fuqarolarga bazaviy hisoblash miqdorining oʻn besh baravaridan oʻttiz baravarigacha, mansabdor shaxslarga esa — yigirma besh baravaridan ellik baravarigacha miqdorda jarima solishga yoki oʻn besh sutkagacha maʼmuriy qamoqqa olishga sabab boʻladi.\nPnevmatik, signal beruvchi, tigʻli sovuq, uloqtirish qurolini, oʻzini oʻzi himoya qilish qurolini ichki ishlar organlarining tegishli litsenziyalarisiz ishlab chiqarish, taʼmirlash, realizatsiya qilish —\nqurolni musodara qilib, fuqarolarga bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha, mansabdor shaxslarga esa — yuz baravaridan bir yuz ellik baravarigacha miqdorda jarima solishga yoki oʻn besh sutkagacha maʼmuriy qamoqqa olishga sabab boʻladi.",
+     "retrieval_score": 0.8972,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-7085931#preamble#p8",
+     "doc_id": "lex:-7085931",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qurol toʻgʻrisidagi qonunchilik takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasi maʼmuriy javobgarlik toʻgʻrisidagi kodeksining 2201-moddasiga qoʻshimcha kiritish haqida",
+     "url": "https://lex.uz/docs/-7085931",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-08-27",
+     "text": "“Ushbu moddaning birinchi va ikkinchi qismlarida nazarda tutilgan harakatlarni sodir etgan shaxs, agar u pnevmatik, signal beruvchi, tigʻli sovuq, uloqtirish qurolini va oʻzini oʻzi himoya qilish qurolini oʻz ixtiyori bilan topshirsa, maʼmuriy javobgarlikdan ozod qilinadi”.",
+     "retrieval_score": 0.8432,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-4445288#art-21#p8",
+     "doc_id": "lex:-4445288",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qurol toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4445288",
+     "article": "21-modda",
+     "part": "8–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-09-02",
+     "text": "21-modda. Fuqaroviy va xizmat qurolini hamda uning oʻq-dorilarini saqlash\nChet el fuqarolari tomonidan Oʻzbekiston Respublikasi hududiga ov qilish, sport tadbirlarida ishtirok etish yoki koʻrgazmaga qoʻyish maqsadlarida olib kirilgan fuqaroviy va xizmat qurolini hamda uning oʻq-dorilarini vaqtincha saqlash chet el fuqarolariga taklifnomani rasmiylashtirgan yuridik shaxslar tomonidan amalga oshiriladi.\nJismoniy va yuridik shaxslarning oʻzi topib olgan yoki oʻziga topshirilgan, lekin oʻzi mulkdori boʻlmagan qurolni hamda uning oʻq-dorilarini saqlashi va ulardan foydalanishi taqiqlanadi. Bunday qurol hamda uning oʻq-dorilari darhol, biroq bir sutkadan kechiktirmay ichki ishlar organlariga topshirilishi lozim.\nQurolni va uning oʻq-dorilarini oʻz ixtiyori bilan topshirganlik uchun Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan taqdirlash choralari belgilanishi mumkin.\nOʻqotar qurolni va uning oʻq-dorilarini ixtiyoriy tartibda topshirgan shaxslarga uni olish boʻyicha imtiyozli huquq beriladi.",
+     "retrieval_score": 0.7171,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-97664#art-221#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "221-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "221-modda. Qurolni roʻyxatdan oʻtkazish (qayta roʻyxatdan oʻtkazish) qoidalarini yoki uning muomalasi sohasidagi ruxsatnomalarning amal qilish muddatini uzaytirish qoidalarini buzish\nFuqaroviy, xizmat qurolini, mukofot tarzida berilgan, kolleksiyalash, koʻrgazmaga qoʻyish uchun moʻljallangan qurolni va uning oʻq-dorilarini ichki ishlar organlarida roʻyxatdan oʻtkazish (qayta roʻyxatdan oʻtkazish) qoidalarini, shuningdek ichki ishlar organlarining qurolni saqlashga va olib yurishga, saqlashga, kolleksiyalashga yoki koʻrgazmaga qoʻyishga doir ruxsatnomalarining amal qilish muddatlarini uzaytirish qoidalarini buzish, —\nbazaviy hisoblash miqdorining oʻndan bir qismidan ikkidan bir qismigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.9611,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1730,
+    "retrieval_ms": 1500,
+    "rerank_ms": 0,
+    "generation_ms": 3594,
+    "total_ms": 6827
+   },
+   "usage": {
+    "input_tokens": 11875,
+    "output_tokens": 870,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Tutqazgan ruxsatim asosida uyimda saqlayotgan qurolimni sotib yuborsam yoki boshqa shaxsga bersam, qanday javobgarlik kelib chiqadi va jarima miqdori qancha?",
+    "search_queries": [
+     "Tutqazgan ruxsatim bilan uyimda saqlayotgan qurolimni sotib yuborsam yoki boshqaga bersam nima boʻladi, jarima qancha?",
+     "Tutqazgan ruxsatim asosida uyimda saqlayotgan qurolimni sotib yuborsam yoki boshqa shaxsga bersam, qanday javobgarlik kelib chiqadi va jarima miqdori qancha?",
+     "qurolni boshqa shaxsga berish yoki sotish javobgarlik",
+     "qurolni ruxsatsiz o'tkazish ma'muriy javobgarlik jarima",
+     "fuqarolik qurolini saqlash va o'tkazish tartibi"
+    ],
+    "doc_hints": [
+     "Qurol to'g'risidagi qonun",
+     "Ma'muriy javobgarlik to'g'risidagi kodeks",
+     "Jinoyat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 943,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

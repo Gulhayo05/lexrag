@@ -51,6 +51,9 @@ class Options(BaseModel):
     seed: int | None = None
     as_of_date: date | None = None
     answer_language: Literal["auto", "uz-Latn", "uz-Cyrl", "ru"] = "auto"
+    # opt-in: drop contexts whose rerank_score is below this (top_k becomes an upper bound).
+    # Default None = always return top_k contexts, as in the spec.
+    min_rerank_score: float | None = Field(None, ge=0, le=1)
 
 
 class Item(BaseModel):
@@ -151,6 +154,22 @@ def rate_limit(key: str = Depends(auth)) -> str:
 # --------------------------------------------------------------------------- #
 _sem: asyncio.Semaphore | None = None
 _running: dict[str, asyncio.Task] = {}
+_STARTED = time.time()  # rows still "processing" from before this process started were interrupted
+
+
+def _interrupted(batch_id: str, row: dict) -> bool:
+    """A batch left in "processing" by a previous server process (restart / crash mid-batch).
+
+    Only rows last updated before this process started count, so a batch that another
+    worker of the same deployment is still processing is never taken over."""
+    return (row["status"] == "processing" and batch_id not in _running
+            and (row.get("updated_at") or 0) < _STARTED)
+
+
+def _interrupted_response(batch_id: str, row: dict) -> dict:
+    return {"run_id": row.get("run_id"), "batch_id": batch_id, "status": "failed",
+            "error": {"code": "INTERRUPTED", "message": "batch processing was interrupted by a server restart; "
+                      "resend the same request with the same batch_id", "retryable": True}}
 
 
 def _semaphore() -> asyncio.Semaphore:
@@ -165,15 +184,18 @@ async def _one(item: dict, options: dict) -> dict:
     if lang and lang not in LANGS:
         return error_result(item, "INVALID_LANGUAGE", f"unsupported language {lang!r}; use uz-Latn, uz-Cyrl or ru", False)
     async with _semaphore():
+        t0 = time.perf_counter()
+        ms = lambda: int((time.perf_counter() - t0) * 1000)  # noqa: E731
         try:
             return await asyncio.wait_for(answer_item(item, options), timeout=settings.question_timeout_s)
         except asyncio.TimeoutError:
-            return error_result(item, "LLM_TIMEOUT", f"question exceeded {settings.question_timeout_s:.0f}s", True, status="timeout")
+            return error_result(item, "LLM_TIMEOUT", f"question exceeded {settings.question_timeout_s:.0f}s", True,
+                                status="timeout", total_ms=ms())
         except llm.LLMError as e:
-            return error_result(item, e.code, e.message, e.retryable)
+            return error_result(item, e.code, e.message, e.retryable, total_ms=ms())
         except Exception as e:  # noqa: BLE001 - one question must never fail the batch
             log.exception("question %s failed", item.get("id"))
-            return error_result(item, "INTERNAL_ERROR", str(e)[:300], True)
+            return error_result(item, "INTERNAL_ERROR", str(e)[:300], True, total_ms=ms())
 
 
 async def _process(req: dict, received: datetime, previous: dict | None = None) -> dict:
@@ -224,13 +246,15 @@ async def post_batch(body: BatchRequest, request: Request, _key: str = Depends(r
     if not created:
         if existing["request_hash"] != h:
             return err(409, "BATCH_ID_CONFLICT", "this batch_id was already used with different content; use a new batch_id")
-        if existing["status"] == "processing":
+        interrupted = _interrupted(body.batch_id, existing)
+        if existing["status"] == "processing" and not interrupted:
             return UTF8JSON({"batch_id": body.batch_id, "status": "processing"}, status_code=202)
         prev = existing["response"] or {}
         has_retryable = any((r.get("error") or {}).get("retryable") for r in prev.get("results", []))
         if existing["status"] == "completed" and not has_retryable:
             return UTF8JSON(prev, headers={"Idempotent-Replay": "true"})
-        previous = prev if existing["status"] == "completed" else None
+        # an interrupted retry may still hold the earlier completed results: keep their good answers
+        previous = prev if (existing["status"] == "completed" or interrupted) and prev.get("results") else None
         store.finish_batch(body.batch_id, "processing", prev or None)
 
     task = asyncio.create_task(_run_and_store(body.batch_id, req, received, previous))
@@ -252,6 +276,9 @@ async def get_batch(batch_id: str, _key: str = Depends(auth)):
     row = store.get_batch(batch_id)
     if row is None:
         return err(404, "NOT_FOUND", f"unknown batch_id {batch_id!r}")
+    if _interrupted(batch_id, row):
+        # not persisted: a resend of the same batch_id recomputes and keeps any earlier good answers
+        return UTF8JSON(_interrupted_response(batch_id, row))
     if row["status"] == "processing":
         return UTF8JSON({"batch_id": batch_id, "status": "processing"}, status_code=202, headers={"Retry-After": "10"})
     return UTF8JSON(row["response"])
@@ -311,8 +338,8 @@ async def demo_page():
 async def meta():
     return UTF8JSON({**system_info(), "languages": sorted(LANGS), "max_batch_items": 10,
                      "sync_timeout_s": settings.sync_timeout_s, "rate_limit_per_sec": settings.rate_limit_per_sec,
-                     "result_retention_days": 30, "error_codes": ["RETRIEVAL_FAILED", "INDEX_UNAVAILABLE", "LLM_TIMEOUT",
-                     "LLM_ERROR", "CONTEXT_TOO_LONG", "INVALID_LANGUAGE", "INTERNAL_ERROR"]})
+                     "result_retention_days": 30, "context_filter_option": "options.min_rerank_score (opt-in, default off)", "error_codes": ["RETRIEVAL_FAILED", "INDEX_UNAVAILABLE", "LLM_TIMEOUT",
+                     "LLM_ERROR", "CONTEXT_TOO_LONG", "INVALID_LANGUAGE", "INTERNAL_ERROR", "INTERRUPTED"]})
 
 
 @app.get("/v1/health")

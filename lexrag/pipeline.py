@@ -189,6 +189,8 @@ async def answer_item(item: dict, options: dict) -> dict:
             add_usage(u)
             models_used["rewrite"] = u.get("model") or llm.model_id("rewrite")
         rw = {**cached, "doc_hints": list(dict.fromkeys(cached["doc_hints"] + heur["doc_hints"]))}
+        if not (rw.get("question_uz") or "").strip():  # already formal Uzbek Latin: the rewriter does not copy it
+            rw["question_uz"] = heur["question_uz"]
     timing["rewrite_ms"] = int((time.perf_counter() - ts) * 1000)
 
     # 2. retrieval -------------------------------------------------------------
@@ -201,6 +203,8 @@ async def answer_item(item: dict, options: dict) -> dict:
     except Exception as e:  # noqa: BLE001
         if spec_task:
             spec_task.cancel()
+        if not index_meta():  # the index database itself cannot be opened / read
+            raise llm.LLMError("INDEX_UNAVAILABLE", f"search index unavailable: {e}"[:300], True) from e
         raise llm.LLMError("RETRIEVAL_FAILED", f"retrieval failed: {e}"[:300], True) from e
     timing["retrieval_ms"] = int((time.perf_counter() - ts) * 1000)
     pool = cands[:n_pool]
@@ -233,6 +237,29 @@ async def answer_item(item: dict, options: dict) -> dict:
                 gen, u = res
                 add_usage(u)
                 pool, speculative = spec_pool, True
+        elif spec_pool:
+            # Second chance, decided by content not timing: generate on the full pool in parallel and
+            # use the speculative answer if every chunk it cites is in the full pipeline's top-5
+            # (both pipelines agree on the evidence).  Generations are cached, so a repeated
+            # question reaches the same decision and the same answer.
+            full_task = asyncio.create_task(generate(pool))
+            full_task.add_done_callback(lambda t: t.cancelled() or t.exception())
+            try:
+                res = await spec_task if spec_task else await generate(spec_pool)
+            except Exception:  # noqa: BLE001 - fall back to the full answer
+                res = None
+            full_top = {c.chunk_id for c in pool[:5]}
+            if res and not res[0]["no_answer"] and res[0]["citations"]:
+                cited = [c["ctx"] for c in res[0]["citations"]]
+                if all(1 <= i <= len(spec_pool) and spec_pool[i - 1].chunk_id in full_top for i in cited):
+                    full_task.cancel()
+                    gen, u = res
+                    add_usage(u)
+                    pool, speculative = spec_pool, True
+            if gen is None:
+                gen, u = await full_task
+                add_usage(u)
+                speculative = False
         else:
             if spec_task:
                 spec_task.cancel()
@@ -252,7 +279,12 @@ async def answer_item(item: dict, options: dict) -> dict:
         c.rerank_score = (round(rel[i], 4) if i in rel else 0.0) if (use_llm and pool and not gen.get("_extractive")) else None
     order = list(range(1, len(pool) + 1))
     if rel:
-        order.sort(key=lambda i: (-(0.75 * rel.get(i, 0.0) + 0.25 * pool[i - 1].retrieval_score), pool[i - 1].chunk_id))
+        # contexts the reranker did not list fill the remaining slots; prefer ones from the act of the
+        # best-rated context (neighbouring parts / articles) over unrelated acts
+        valid = [i for i in rel if 1 <= i <= len(pool)]
+        best_doc = pool[max(valid, key=lambda i: (rel[i], -i)) - 1].doc_id if valid else None
+        order.sort(key=lambda i: (-(0.75 * rel.get(i, 0.0) + 0.25 * pool[i - 1].retrieval_score
+                                    + (0.1 if i not in rel and pool[i - 1].doc_id == best_doc else 0.0)), pool[i - 1].chunk_id))
     chosen = order[:top_k]
     cited_ctx = [c["ctx"] for c in gen["citations"] if 1 <= c["ctx"] <= len(pool)] if not gen["no_answer"] else []
     for ci in dict.fromkeys(cited_ctx):  # every cited chunk must appear in contexts
@@ -304,6 +336,13 @@ async def answer_item(item: dict, options: dict) -> dict:
     for c in citations:
         c.pop("_ctx"), c.pop("_quote_exact")
 
+    # opt-in: return only contexts the reranker found relevant (top_k stays the upper bound).
+    # Cited chunks are always kept; at least the best context is returned.
+    min_rr = options.get("min_rerank_score")
+    if min_rr is not None and chosen and any(pool[i - 1].rerank_score is not None for i in chosen):
+        kept = [i for i in chosen if (pool[i - 1].rerank_score or 0.0) >= min_rr or pool[i - 1].chunk_id in cited_chunks]
+        chosen = kept or chosen[:1]
+
     contexts = []
     for rank, i in enumerate(chosen, 1):
         c = pool[i - 1]
@@ -346,10 +385,12 @@ async def answer_item(item: dict, options: dict) -> dict:
     return res
 
 
-def error_result(item: dict, code: str, message: str, retryable: bool, status: str = "error") -> dict:
+def error_result(item: dict, code: str, message: str, retryable: bool, status: str = "error", total_ms: int = 0) -> dict:
     return {
         "id": item.get("id"), "status": status, "answer": None, "no_answer": False, "confidence": None,
-        "citations": [], "contexts": [], "timing": {"total_ms": 0}, "usage": None,
+        "citations": [], "contexts": [],
+        "timing": {"rewrite_ms": 0, "retrieval_ms": 0, "rerank_ms": 0, "generation_ms": 0, "total_ms": total_ms},
+        "usage": None,
         "error": {"code": code, "message": message, "retryable": retryable},
     }
 

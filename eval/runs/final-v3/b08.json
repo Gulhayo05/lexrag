@@ -1,0 +1,1085 @@
+{
+ "run_id": "final-v3",
+ "batch_id": "final-v3-b08",
+ "batch_index": 8,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.1.0",
+  "prompt_version": "p7",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125645,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-07T21:18:37+05:00",
+  "completed_at": "2026-11-07T21:18:44+05:00",
+  "total_ms": 7249
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q071",
+   "status": "ok",
+   "answer": "Ha, «Yoʻl harakati xavfsizligi toʻgʻrisida»gi qonunning 21-moddasiga koʻra, mototsikllar, motorollerlar va boshqa mototransport vositalarini boshqarish huquqini olish uchun fuqarolarning tegishli dasturlar hajmida mustaqil tayyorgarlik koʻrishiga yoʻl qoʻyiladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-24741",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yoʻl harakati xavfsizligi toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-24741",
+     "article": "21-modda",
+     "part": "1–3-qism",
+     "edition_date": "2007-04-05",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-24741#art-21#p1",
+     "quote": "Mototsikllar, motorollerlar va boshqa mototransport vositalarini boshqarish huquqini olish uchun fuqarolarning tegishli dasturlar hajmida mustaqil tayyorgarlik koʻrishiga yoʻl qoʻyiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-24741#art-21#p1",
+     "doc_id": "lex:-24741",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yoʻl harakati xavfsizligi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-24741",
+     "article": "21-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2007-04-05",
+     "text": "21-modda. Transport vositalarining haydovchilarini tayyorlashga doir talablar\nTegishli toifadagi transport vositalarining haydovchilarini tayyorlash oʻquv rejalari va dasturlarida nazarda tutilgan hajmda tegishli tayyorgarlikdan oʻtgan shaxslar transport vositalarini boshqarish huquqini olish uchun imtihonlar topshirishiga yoʻl qoʻyiladi.\nMototsikllar, motorollerlar va boshqa mototransport vositalarini boshqarish huquqini olish uchun fuqarolarning tegishli dasturlar hajmida mustaqil tayyorgarlik koʻrishiga yoʻl qoʻyiladi.\nTegishli toifalardagi transport vositalari haydovchilarini tayyorlashning yagona dasturlari Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibda tasdiqlanadi.",
+     "retrieval_score": 0.9277,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1349,
+    "retrieval_ms": 129,
+    "rerank_ms": 0,
+    "generation_ms": 2276,
+    "total_ms": 3756
+   },
+   "usage": {
+    "input_tokens": 12479,
+    "output_tokens": 381,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "«Qonuni yoʻl harakati xavfsizligi toʻgʻrisida»ga koʻra, mototsikl yoki motoroller boshqarish huquqini olishni istagan fuqaro buni oʻquv muassasasida oʻqimasdan, oʻzi mustaqil tayyorlanib imtihon topshirsa boʻladimi?",
+    "search_queries": [
+     "«Qonuni yoʻl harakati xavfsizligi toʻgʻrisida»ga koʻra, mototsikl yoki motoroller boshqarish huquqini olishni istagan fuqaro buni oʻquv muassasasida oʻqimasdan, oʻzi mustaqil tayyorlanib imtihon topshirsa boʻladimi?",
+     "mototsikl boshqarish huquqini olish uchun imtihon topshirish",
+     "oʻquv muassasasida oʻqimasdan mustaqil tayyorlanib imtihon topshirish",
+     "haydovchilik guvohnomasini olish tartibi mototsikl motoroller"
+    ],
+    "doc_hints": [
+     "Yoʻl harakati xavfsizligi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 658,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q072",
+   "status": "ok",
+   "answer": "Aviatsiya halokati yoki baxtsiz hodisadan xabar topgan shaxslar zudlik bilan bu haqda Havo kodeksining 81-moddasi toʻrtinchi qismida koʻrsatilgan organlarga maʼlum qilishlari kerak [1]. Fuqarolar bunday holatlarda zudlik bilan mahalliy ijro etuvchi hokimiyat organlariga yoki eng yaqin korxona, muassasa va tashkilotlarga xabar berishlari shart [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "87-modda",
+     "part": "1–2-qism",
+     "edition_date": "1993-05-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-55594#art-87#p1",
+     "quote": "Aviatsiya halokati yoki baxtsiz hodisadan xabar topgan shaxslar zudlik bilan bu haqda ushbu Kodeksning 81-moddasi toʻrtinchi qismida koʻrsatilgan organlarga maʼlum qilishlari kerak",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "81-modda",
+     "part": "1–4-qism",
+     "edition_date": "2025-12-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-55594#art-81#p1",
+     "quote": "Fuqarolar bunday holatlarda zudlik bilan mahalliy ijro etuvchi hokimiyat organlariga yoki eng yaqin korxona, muassasa va tashkilotlarga xabar berishlari shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-55594#art-87#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "87-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1993-05-07",
+     "text": "87-modda. Aviatsiya halokati yoki baxtsiz hodisa haqida xabar berish\nAviatsiya halokati yoki baxtsiz hodisadan xabar topgan shaxslar zudlik bilan bu haqda ushbu Kodeksning 81-moddasi toʻrtinchi qismida koʻrsatilgan organlarga maʼlum qilishlari kerak.\nShundan soʻng bu maʼlumotni aviatsiya halokatlari yoki baxtsiz hodisalarni tekshiruvchi organlarga yetkazish tartibi mazkur tekshirishlarni oʻtkazish qoidalari bilan belgilanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-55594#art-81#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "81-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "81-modda. Halokatga uchrayotgan yoki uchragan havo kemalari haqida xabar qilish\nAloqa vositalariga ega boʻlgan korxonalar, muassasalar va tashkilotlar shu vositalarni halokatga uchrayotgan yoki uchragan havo kemalari haqidagi maʼlumotlarni zudlik bilan xabar qilish uchun foydalanishga berib turishlari shart.\nAloqa vositalarini berish, halokatga uchrayotgan yoki uchragan havo kemasiga, uning yoʻlovchilari va ekipajiga yordam koʻrsatish haqidagi xabarlarni qabul qilish va joʻnatish hech qanday navbatsiz oddiy tarif boʻyicha haq olib amalga oshiriladi. Bunday hodisa toʻgʻrisidagi birinchi maʼlumotni xabar qilish bepul amalga oshiriladi.\nHalokatga uchrayotgan yoki uchragan havo kemalari haqida xabar berish uchun umumiy aloqa vositalaridan foydalanish tartibi Oʻzbekiston Respublikasi Axborot texnologiyalari va kommunikatsiyalarini rivojlantirish vazirligi tomonidan Aviatsiya maʼmuriyati va Mudofaa vazirligi bilan birgalikda belgilanadi.\nMahalliy ijro etuvchi hokimiyat organlari, korxonalar, muassasalar va tashkilotlar oʻzlariga maʼlum havo kemalarining halokati toʻgʻrisida Yagona aviatsiya qidiruv-qutqaruv xizmatiga yoki eng yaqin aerodromga zudlik bilan xabar berishlari shart. Fuqarolar bunday holatlarda zudlik bilan mahalliy ijro etuvchi hokimiyat organlariga yoki eng yaqin korxona, muassasa va tashkilotlarga xabar berishlari shart.",
+     "retrieval_score": 0.7353,
+     "rerank_score": 0.85,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1931,
+    "retrieval_ms": 679,
+    "rerank_ms": 0,
+    "generation_ms": 2402,
+    "total_ms": 5013
+   },
+   "usage": {
+    "input_tokens": 11636,
+    "output_tokens": 487,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar biror kishi aviatsiya halokati yoki baxtsiz hodisa sodir boʻlganini bilib qolsa, u bu haqda qanday muddatda va kimga xabar berishi kerak?",
+    "search_queries": [
+     "Agar biror kishi aviatsiya halokati yoki baxtsiz hodisa sodir boʻlganini bilib qolsa, u bu haqda qanday muddatda va kimga xabar berishi kerak?",
+     "aviatsiya halokati toʻgʻrisida xabar berish majburiyati",
+     "baxtsiz hodisa sodir boʻlgani haqida xabar berish muddati",
+     "aviatsiya hodisasi haqida darhol xabar berish"
+    ],
+    "doc_hints": [
+     "Havo kodeksi",
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 528,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q073",
+   "status": "ok",
+   "answer": "Elektr tarmogʻida avariya yuz berganda isteʼmolchilarni oldindan ogohlantirmasdan elektr taʼminotini vaqtincha toʻxtatib turish yoki cheklashga yoʻl qoʻyiladi, agar bu baxtsiz hodisalarning oldini olish yoki avariyalarni bartaraf etish uchun zarur boʻlsa [1]. Bunday hollarda tegishli tizim operatorlari isteʼmolchilarni uzilishlar yoki cheklovlar, ularning elektr taʼminotiga taʼsiri va kutilayotgan davomiyligi toʻgʻrisida zudlik bilan xabardor qilishlari kerak [1]. Fuqarolik kodeksining 476-moddasiga koʻra ham abonent bilan kelishmasdan va uni ogohlantirmasdan, biroq unga darhol xabar bergan holda energiya berishni vaqtincha uzib qoʻyishga avariyaning oldini olish yoki uni tugatish uchun kechiktirib boʻlmaydigan choralar zarur boʻlganda yoʻl qoʻyiladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-7051573",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni elektr energetikasi toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-7051573",
+     "article": "61-modda",
+     "part": "1–3-qism",
+     "edition_date": "2024-08-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7051573#art-61#p1",
+     "quote": "Isteʼmolchilarni oldindan ogohlantirmasdan elektr taʼminotini vaqtincha toʻxtatib turish yoki cheklash baxtsiz hodisalarning oldini olish yoki avariyalarni bartaraf etish zarur boʻlganda amalga oshiriladi. Bunday hollarda, tegishli tizim operatorlari isteʼmolchilarni bunday uzilishlar yoki cheklovlar, ularning elektr taʼminotiga taʼsiri va kutilayotgan davomiyligi toʻgʻrisida zudlik bilan xabardor qilish kerak",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "476-modda",
+     "part": "1–3-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-180552#art-476#p1",
+     "quote": "Abonent bilan kelishmasdan va uni ogohlantirmasdan, biroq unga darhol xabar bergan holda energiya berishni vaqtincha uzib qoʻyish, toʻxtatish yoki cheklashga energiya bilan taʼminlovchi tashkilot tizimida avariyaning oldini olish yoki uni tugatish uchun kechiktirib boʻlmaydigan choralarni koʻrish zarur boʻlgan hollarda yoʻl qoʻyiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7051573#art-61#p1",
+     "doc_id": "lex:-7051573",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni elektr energetikasi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7051573",
+     "article": "61-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-08-07",
+     "text": "61-modda. Elektr taʼminotini vaqtincha toʻxtatib turish yoki cheklash\nOʻzbekiston Respublikasida isteʼmolchilarning elektr taʼminotini vaqtincha toʻxtatib turish yoki cheklash jamoat manfaatlarini himoya qilish maqsadida, shu jumladan elektr tarmogʻida avariya vaziyatlari yuzaga kelganda, yagona elektr energetikasi tizimining muvozanatini saqlab turish yoki elektr taʼminoti tizimiga texnik xizmat koʻrsatish uchun amalga oshiriladi.\nIsteʼmolchilarni oldindan ogohlantirmasdan elektr taʼminotini vaqtincha toʻxtatib turish yoki cheklash baxtsiz hodisalarning oldini olish yoki avariyalarni bartaraf etish zarur boʻlganda amalga oshiriladi. Bunday hollarda, tegishli tizim operatorlari isteʼmolchilarni bunday uzilishlar yoki cheklovlar, ularning elektr taʼminotiga taʼsiri va kutilayotgan davomiyligi toʻgʻrisida zudlik bilan xabardor qilish kerak.\nUzatish yoki taqsimlash tizimlarida rejali profilaktika ishlari uchun elektr taʼminotini vaqtincha toʻxtatib turish yoki cheklash tegishli tizim operatorlari tomonidan qabul qilingan jadvalga muvofiq amalga oshiriladi. Texnik xizmat koʻrsatish jadvallari tegishli tizim operatorlari va taʼminotchilar tomonidan oʻz rasmiy veb-saytlarida eʼlon qilinadi. Tegishli tizim operatorlari elektr tarmoqlaridan foydalanish qoidalarida belgilangan muddatlarda isteʼmolchilarni rejali texnik xizmat koʻrsatish ishlari toʻgʻrisida oldindan xabardor qiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6954979#band-6s2#p1",
+     "doc_id": "lex:-6954979",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori elektr energiyasi va tabiiy gazdan foydalanish qoidalarini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6954979",
+     "article": "6-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2026-07-31",
+     "text": "6. Taʼminotchiga elektr tarmogʻi xoʻjaligi obyektlaridagi avariyalarning oldini olish va bartaraf etish yoki odamlar xavfsizligini taʼminlash ishlari bilan bogʻliq kechiktirib boʻlmaydigan chora-tadbirlarni amalga oshirish zarur boʻlganda, isteʼmolchi bilan kelishmasdan va uni ogohlantirmasdan, biroq uni darhol xabardor qilgan holda elektr energiyasini uzatishni uzib qoʻyish yoki cheklashga ruxsat etiladi.",
+     "retrieval_score": 0.7646,
+     "rerank_score": 0.8,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-180552#art-476#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "476-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "476-modda. Energiya taʼminoti shartnomasini oʻzgartirish va bekor qilish\nEnergiya berishdagi uzilishlarga, energiya berishni toʻxtatish yoki cheklashga taraflar kelishuviga muvofiq yoʻl qoʻyiladi, abonentga qarashli energetika qurilmalarining qoniqarsiz ahvoli avariya xavfini keltirib chiqarishi mumkinligi yoki fuqarolar hayoti va xavfsizligiga tahdid tugʻdirayotgani davlat energetika nazorati organi tomonidan tasdiqlangan hollar bundan mustasno. Energiya bilan taʼminlovchi tashkilot abonentni energiya berishdagi uzilishlar, energiya berishni toʻxtatish yoki cheklash toʻgʻrisida ogohlantirishi lozim.\nAbonent bilan kelishmasdan va uni ogohlantirmasdan, biroq unga darhol xabar bergan holda energiya berishni vaqtincha uzib qoʻyish, toʻxtatish yoki cheklashga energiya bilan taʼminlovchi tashkilot tizimida avariyaning oldini olish yoki uni tugatish uchun kechiktirib boʻlmaydigan choralarni koʻrish zarur boʻlgan hollarda yoʻl qoʻyiladi.\nEnergiya taʼminoti shartnomasiga muvofiq energiyadan turmushda foydalanadigan fuqaro abonent boʻlgan taqdirda u energiya bilan taʼminlovchi tashkilotga maʼlum qilish va foydalanilgan energiya haqini toʻliq toʻlash sharti bilan shartnomani bir tomonlama bekor qilish huquqiga ega.",
+     "retrieval_score": 0.6005,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1929,
+    "retrieval_ms": 897,
+    "rerank_ms": 0,
+    "generation_ms": 3053,
+    "total_ms": 5881
+   },
+   "usage": {
+    "input_tokens": 11563,
+    "output_tokens": 830,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Elektr tarmogʻida avariya yuz berganda isteʼmolchilarni oldindan ogohlantirmasdan tokni oʻchirishga yoʻl qoʻyiladimi va bunday holatda ularga qanday xabar berilishi kerak?",
+    "search_queries": [
+     "Elektr tarmogʻida avariya yuz berganda isteʼmolchilarni oldindan ogohlantirmasdan tokni oʻchirishga yoʻl qoʻyiladimi va bunday holatda ularga qanday xabar berilishi kerak?",
+     "elektr energiyasini yetkazib berishdagi uzilishlar",
+     "iste'molchilarni elektr energiyasidan uzish tartibi",
+     "avariya holatida elektr ta'minotini to'xtatish"
+    ],
+    "doc_hints": [
+     "Elektr energiyasidan foydalanish qoidalari",
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 653,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q074",
+   "status": "ok",
+   "answer": "Mehnat kodeksining 491-moddasiga koʻra, mavsumiy ishlarning davomiyligi, qoida tariqasida, olti oydan oshmasligi kerak [1]. Ayrim mavsumiy ishlar olti oydan ortiq davr ichida amalga oshirilishi mumkin, ularning roʻyxatlari va eng koʻp davomiyligi Vazirlar Mahkamasi tomonidan belgilanadi [1]. Mavsumiy xodimlar bilan mehnat shartnomasi mavsumning davomiyligidan oshmaydigan muddatga tuziladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "491-modda",
+     "part": "1–3-qism",
+     "edition_date": "2022-10-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-491#p1",
+     "quote": "Mavsumiy ishlarning davomiyligi, qoida tariqasida, olti oydan oshmasligi kerak",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "492-modda",
+     "part": "1–3-qism",
+     "edition_date": "2022-10-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-492#p1",
+     "quote": "Mavsumiy xodimlar bilan mehnat shartnomasi mavsumning davomiyligidan oshmaydigan muddatga tuziladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-491#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "491-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "491-modda. Mavsumiy ishlar\nIqlim va boshqa tabiiy sharoitlar tufayli muayyan davr (mavsum) davomida bajariladigan ishlar mavsumiy ishlardir.\nMavsumiy ishlarning davomiyligi, qoida tariqasida, olti oydan oshmasligi kerak.\nMavsumiy ishlarning, shu jumladan olti oydan ortiq davr (mavsum) ichida amalga oshirilishi mumkin boʻlgan ayrim mavsumiy ishlarning roʻyxatlari va mazkur ayrim mavsumiy ishlarning eng koʻp davomiyligi Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan Ijtimoiy-mehnat masalalari boʻyicha respublika uch tomonlama komissiyasi bilan kelishilgan holda belgilanadi.",
+     "retrieval_score": 0.9184,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6257288#art-492#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "492-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "492-modda. Mavsumiy ishlarni bajarish toʻgʻrisida mehnat shartnomasi tuzishning oʻziga xos xususiyatlari\nIshning mavsumiy xususiyati toʻgʻrisidagi shart mehnat shartnomasida koʻrsatilishi kerak.\nMavsumiy xodimlarni ishga qabul qilish chogʻida sinov muddati belgilanmaydi.\nMavsumiy xodimlar bilan mehnat shartnomasi mavsumning davomiyligidan oshmaydigan muddatga tuziladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1431,
+    "retrieval_ms": 160,
+    "rerank_ms": 0,
+    "generation_ms": 2307,
+    "total_ms": 3899
+   },
+   "usage": {
+    "input_tokens": 12011,
+    "output_tokens": 429,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Mavsumiy ishlar odatda koʻpi bilan qancha vaqt davom etishi mumkin?",
+    "search_queries": [
+     "Mavsumiy ishlar odatda koʻpi bilan qancha vaqt davom etishi mumkin?",
+     "mavsumiy ishlar muddati",
+     "mavsumiy ishlar koʻpi bilan qancha muddat",
+     "mavsumiy ishlarning davomiyligi"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 272,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q075",
+   "status": "ok",
+   "answer": "«Yaylovlar toʻgʻrisida»gi qonunning 13-moddasiga koʻra, foydalanishdan chiqib ketgan yaylovlar Oʻzbekiston Respublikasi rezidentlari boʻlgan investorlarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida qishloq xoʻjaligi ishlab chiqarishi maqsadida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-4344714",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yaylovlar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-4344714",
+     "article": "13-modda",
+     "part": "1–5-qism",
+     "edition_date": "2024-10-10",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-4344714#art-13#p1",
+     "quote": "Foydalanishdan chiqib ketgan yaylovlar Oʻzbekiston Respublikasi fuqarolariga, qishloq xoʻjaligi korxonalariga, shuningdek Oʻzbekiston Respublikasi rezidentlari boʻlgan investorlarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida qishloq xoʻjaligi ishlab chiqarishi maqsadida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-4344714#art-13#p1",
+     "doc_id": "lex:-4344714",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yaylovlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4344714",
+     "article": "13-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-10-10",
+     "text": "13-modda. Yaylovlardan foydalanish huquqi\nYuridik va jismoniy shaxslar yer uchastkalarini ijaraga, shu jumladan ikkilamchi ijaraga olish yoʻli bilan yaylovlardan foydalanishi mumkin.\nYaylovlar ijara huquqi asosida elektron onlayn-auksion orqali jismoniy va yuridik shaxslarga berilishi mumkin.\nOʻrmon fondi yerlarida yaylovlardan davlat oʻrmon xoʻjaligi organlarining ruxsatnomasi boʻyicha foydalaniladi.\nFoydalanishdan chiqib ketgan yaylovlar Oʻzbekiston Respublikasi fuqarolariga, qishloq xoʻjaligi korxonalariga, shuningdek Oʻzbekiston Respublikasi rezidentlari boʻlgan investorlarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida qishloq xoʻjaligi ishlab chiqarishi maqsadida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin.\nUshbu moddaning toʻrtinchi qismida koʻrsatilgan yuridik va jismoniy shaxslar foydalanishga kiritilgan yaylovlarni ikkilamchi ijaraga berishi (uchinchi shaxslarga berish huquqisiz) mumkin.",
+     "retrieval_score": 0.7188,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:5023143#art-7#p1",
+     "doc_id": "lex:5023143",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qishloq xoʻjaligi uchun moʻljallangan yerlardan va oʻrmon fondi yerlaridan foydalanish samaradorligini oshirish maqsadida Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/5023143",
+     "article": "7-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2020-09-29",
+     "text": "7-modda. Oʻzbekiston Respublikasining 2019-yil 20-mayda qabul qilingan “Yaylovlar toʻgʻrisida”gi OʻRQ-538-sonli Qonunining (Oʻzbekiston Respublikasi Oliy Majlisi palatalarining Axborotnomasi, 2019-yil, № 5, 263-modda) 13-moddasiga quyidagi oʻzgartish va qoʻshimcha kiritilsin:\nbirinchi qismidagi “ijaraga” degan soʻz “ijaraga, shu jumladan ikkilamchi ijaraga” degan soʻzlar bilan almashtirilsin;\nquyidagi mazmundagi toʻrtinchi va beshinchi qismlar bilan toʻldirilsin:\n“Foydalanishdan chiqib ketgan yaylovlar Oʻzbekiston Respublikasi fuqarolariga, qishloq xoʻjaligi korxonalariga, shuningdek Oʻzbekiston Respublikasi rezidentlari boʻlgan investorlarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida qishloq xoʻjaligi ishlab chiqarishi maqsadida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin.\nUshbu moddaning toʻrtinchi qismida koʻrsatilgan yuridik va jismoniy shaxslar foydalanishga kiritilgan yaylovlarni ikkilamchi ijaraga berishi (uchinchi shaxslarga berish huquqisiz) mumkin”.",
+     "retrieval_score": 0.616,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:5023143#preamble#p17",
+     "doc_id": "lex:5023143",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qishloq xoʻjaligi uchun moʻljallangan yerlardan va oʻrmon fondi yerlaridan foydalanish samaradorligini oshirish maqsadida Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/5023143",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-09-29",
+     "text": "2) quyidagi mazmundagi 241, 242 va 243-moddalar bilan toʻldirilsin:\n“241-modda. Qishloq xoʻjaligiga moʻljallangan yerlarni va oʻrmon fondi yerlarini investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida ijaraga berish\nInvestitsiya shartnomasi yoki davlat-xususiy sheriklik asosida quyidagilar:\nqishloq xoʻjaligida foydalanishdan chiqib ketgan sugʻoriladigan yerlar va lalmi yerlar — Oʻzbekiston Respublikasi fuqarolariga hamda qishloq xoʻjaligi korxonalariga;\noʻrmon fondining foydalanilmayotgan yerlari — jismoniy va yuridik shaxslarga;\nyaylovlar, boʻz yerlar, koʻp yillik dov-daraxtlar — Oʻzbekiston Respublikasi fuqarolariga, qishloq xoʻjaligi korxonalariga, shuningdek Oʻzbekiston Respublikasi rezidentlari boʻlgan investorlarga uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin.",
+     "retrieval_score": 0.6025,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1645,
+    "retrieval_ms": 124,
+    "rerank_ms": 0,
+    "generation_ms": 2937,
+    "total_ms": 4709
+   },
+   "usage": {
+    "input_tokens": 10558,
+    "output_tokens": 512,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "«Yaylovlar toʻgʻrisida»gi qonunga koʻra, foydalanishdan chiqib ketgan yaylovlar investorlarga qanday muddat oraligʻida ijaraga berilishi mumkin?",
+    "search_queries": [
+     "«Yaylovlar toʻgʻrisida»gi qonunga koʻra, foydalanishdan chiqib ketgan yaylovlar investorlarga qanday muddat oraligʻida ijaraga berilishi mumkin?",
+     "yaylovlarni ijaraga berish muddati",
+     "foydalanishdan chiqib ketgan yaylovlar investorga ijaraga berish",
+     "yaylovlar toʻgʻrisidagi qonun ijara muddati"
+    ],
+    "doc_hints": [
+     "Yaylovlar toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 340,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q076",
+   "status": "ok",
+   "answer": "Birjani davlat roʻyxatidan oʻtkazganlik uchun Oʻzbekiston Respublikasi Prezidenti huzuridagi Vazirlar Mahkamasi tomonidan belgilangan qatʼiy summalarda davlat poshlinasi undiriladi [1]. Davlat amaldagi qonunlarga zid boʻlmagan barcha turdagi birja bitimlari boʻyicha mulkchilik huquqlari muhofaza qilinishini kafolatlaydi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.8,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-108831",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni birjalar va birja faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-108831",
+     "article": "25-modda",
+     "part": "1–3-qism",
+     "edition_date": "1992-07-02",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-108831#art-25#p1",
+     "quote": "Davlat roʻyxatidan oʻtkazganlik uchun Oʻzbekiston Respublikasi Prezidenti huzuridagi Vazirlar Mahkamasi tomonidan belgilangan qatʼiy summalarda davlat poshlinasi undiriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-108831",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni birjalar va birja faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-108831",
+     "article": "30-modda",
+     "part": "1–2-qism",
+     "edition_date": "1992-07-02",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-108831#art-30#p1",
+     "quote": "Davlat amaldagi qonunlarga zid boʻlmagan barcha turdagi birja bitimlari boʻyicha mulkchilik huquqlari muhofaza qilinishini kafolatlaydi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-108831#art-25#p1",
+     "doc_id": "lex:-108831",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni birjalar va birja faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-108831",
+     "article": "25-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1992-07-02",
+     "text": "25-modda. Birjani va birja faoliyati qatnashchilarini davlat roʻyxatidan oʻtkazish\n1. Birjani davlat roʻyxatidan Oʻzbekiston Respublikasi Adliya vazirligi oʻtkazadi, birja faoliyati qatnashchilarini roʻyxatdan oʻtkazish esa “Oʻzbekiston Respublikasidagi korxonalar toʻgʻrisida”gi Oʻzbekiston Respublikasi Qonuniga muvofiq amalga oshiriladi. Davlat roʻyxatidan oʻtkazganlik uchun Oʻzbekiston Respublikasi Prezidenti huzuridagi Vazirlar Mahkamasi tomonidan belgilangan qatʼiy summalarda davlat poshlinasi undiriladi.\n2. Birjani qayta roʻyxatdan oʻtkazish uning taʼsis hujjatlari (taʼsis shartnomasi va ustavi) oʻzgargani taqdirdagina amalga oshiriladi.\n3. Asossiz ravishda roʻyxatdan oʻtkazishni rad etish ustidan sudga shikoyat qilinishi mumkin.",
+     "retrieval_score": 0.9038,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-108831#art-30#p1",
+     "doc_id": "lex:-108831",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni birjalar va birja faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-108831",
+     "article": "30-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1992-07-02",
+     "text": "30-modda. Birja faoliyatiga davlat kafolati\nDavlat amaldagi qonunlarga zid boʻlmagan barcha turdagi birja bitimlari boʻyicha mulkchilik huquqlari muhofaza qilinishini kafolatlaydi.\nDavlat boshqaruvi idoralari birja faoliyati qatnashchilarining faoliyatiga aralashishga haqli emas, qonunlarda nazarda tutilgan hollar bundan mustasnodir.",
+     "retrieval_score": 0.91,
+     "rerank_score": 0.85,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1905,
+    "retrieval_ms": 761,
+    "rerank_ms": 0,
+    "generation_ms": 2581,
+    "total_ms": 5249
+   },
+   "usage": {
+    "input_tokens": 10783,
+    "output_tokens": 503,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Birjani roʻyxatdan oʻtkazish uchun davlat boji qanday miqdorda olinadi va davlat birja bitimlari boʻyicha mulk huquqini himoya qiladimi?",
+    "search_queries": [
+     "Birjani roʻyxatdan oʻtkazish uchun davlat boji qanday miqdorda olinadi va davlat birja bitimlari boʻyicha mulk huquqini himoya qiladimi?",
+     "birjani roʻyxatdan oʻtkazish davlat boji miqdori",
+     "birja faoliyatini litsenziyalash davlat boji",
+     "birja bitimlari boʻyicha mulk huquqini himoya qilish"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi",
+     "Birjalar va birja faoliyati toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 631,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q077",
+   "status": "ok",
+   "answer": "Тармоқлараро уланишлар тегишли телекоммуникациялар тармоқларининг операторлари ва провайдерлари ўртасидаги шартномалар асосида амалга оширилади [1]. Бу «Телекоммуникациялар тўғрисида»ги қонуннинг 22-моддасида назарда тутилган [1].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-7283071",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni telekommunikatsiyalar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-7283071",
+     "article": "22-modda",
+     "part": "1–5-qism",
+     "edition_date": "2024-12-27",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7283071#art-22#p1",
+     "quote": "Tarmoqlararo ulanishlar tegishli telekommunikatsiyalar tarmoqlarining operatorlari va provayderlari oʻrtasidagi shartnomalar asosida amalga oshiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7283071#art-22#p1",
+     "doc_id": "lex:-7283071",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni telekommunikatsiyalar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7283071",
+     "article": "22-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-12-27",
+     "text": "22-modda. Tarmoqlararo ulanishlar\nTarmoqlararo ulanishlar texnologik xizmatlarning bir turidir.\nTarmoqlararo ulanishlar turli telekommunikatsiyalar tarmoqlaridan foydalanuvchilar oʻrtasida axborotni uzatish va qabul qilish uchun amalga oshiriladi.\nUlanayotgan operatorlar va provayderlar tarmoqlararo ulanishlarni ulayotgan operator yoki provayderning texnik shartlari boʻyicha hamda telekommunikatsiyalar sohasidagi normativ-huquqiy hujjatlarga va telekommunikatsiyalar faoliyatini texnik jihatdan tartibga solish sohasidagi normativ hujjatlarga muvofiq amalga oshirishi kerak.\nTarmoqlararo ulanishlar tegishli telekommunikatsiyalar tarmoqlarining operatorlari va provayderlari oʻrtasidagi shartnomalar asosida amalga oshiriladi.\nTelekommunikatsiyalar tarmoqlarini oʻzaro ulash, operatorlar tomonidan oʻzaro xizmat koʻrsatish hamda ular oʻrtasidagi oʻzaro hisob-kitoblarni amalga oshirish tartibi va shartlari tartibga soluvchi organ tomonidan tasdiqlanadi.",
+     "retrieval_score": 0.9568,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1841,
+    "retrieval_ms": 529,
+    "rerank_ms": 0,
+    "generation_ms": 1003,
+    "total_ms": 3375
+   },
+   "usage": {
+    "input_tokens": 12703,
+    "output_tokens": 372,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Turli operatorlar va provayderlar oʻz tarmoqlarini bir-biriga ulash qanday hujjat asosida amalga oshiriladi?",
+    "search_queries": [
+     "Турли операторлар ва провайдерлар ўз тармоқларини бир-бирига улаши қандай ҳужжат асосида амалга оширилади?",
+     "Turli operatorlar va provayderlar oʻz tarmoqlarini bir-biriga ulash qanday hujjat asosida amalga oshiriladi?",
+     "operatorlar tarmoqlarini bir-biriga ulash",
+     "telekommunikatsiya tarmoqlarini ulash shartnomasi",
+     "aloqa tarmoqlarini tutashtirish tartibi"
+    ],
+    "doc_hints": [
+     "Telekommunikatsiyalar toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 578,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q078",
+   "status": "ok",
+   "answer": "Sudning maʼmuriy huquqbuzarlik toʻgʻrisidagi qarori ustidan apellyatsiya shikoyati qaror oʻqib eshittirilgan kundan eʼtiboran oʻn sutka ichida, oʻziga nisbatan sud qarori chiqarilgan shaxs va jabrlanuvchi tomonidan esa qarorning koʻchirma nusxalari ularga topshirilgan yoki ular tomonidan olingan kundan eʼtiboran xuddi shu muddatda berilishi mumkin [1]. Demak, avvalgi besh kunlik muddat emas, balki oʻn sutkalik muddat amal qiladi. Muddat uzrli sababga koʻra oʻtkazib yuborilgan boʻlsa, qarorni chiqargan sud uni tiklashga haqli [2]. Belgilangan muddatda shikoyat berish qarorning ijrosini shikoyat koʻrib chiqilgunga qadar toʻxtatib turadi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "324³-modda",
+     "part": "1–3-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-324.3#p1",
+     "quote": "Birinchi instansiya sudining maʼmuriy huquqbuzarlik toʻgʻrisidagi ish boʻyicha qarori ustidan apellyatsiya shikoyati (protesti) qaror oʻqib eshittirilgan kundan eʼtiboran oʻn sutka ichida, oʻziga nisbatan sud qarori chiqarilgan shaxs va jabrlanuvchi tomonidan esa, qarorning koʻchirma nusxalari ularga topshirilgan yoki ular tomonidan ushbu koʻchirma nusxalar olingan kundan eʼtiboran xuddi shu muddatda berilishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "324³-modda",
+     "part": "1–3-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-324.3#p1",
+     "quote": "qarorni chiqargan sud, agar muddatning oʻtkazib yuborilganligi sabablarini uzrli deb topsa, oʻtkazib yuborilgan muddatni tiklashga haqli boʻlib, bu haqda ajrim chiqariladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "318-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-318#p1",
+     "quote": "Belgilangan muddatda shikoyat berish maʼmuriy jazo qoʻllanish toʻgʻrisidagi qarorning ijrosini shikoyat koʻrib chiqilgunga qadar toʻxtatib turadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "316-modda",
+     "part": "1-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-316#p1",
+     "quote": "Maʼmuriy huquqbuzarlik toʻgʻrisidagi ish yuzasidan chiqarilgan qaror xususida shu qarorning nusxasi olingan kundan eʼtiboran oʻn kun ichida shikoyat berilishi mumkin, bundan sud qarori mustasno",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-97664#art-324.3#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "324³-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "3243-modda. Apellyatsiya shikoyati (protesti) berish muddatlari\nBirinchi instansiya sudining maʼmuriy huquqbuzarlik toʻgʻrisidagi ish boʻyicha qarori ustidan apellyatsiya shikoyati (protesti) qaror oʻqib eshittirilgan kundan eʼtiboran oʻn sutka ichida, oʻziga nisbatan sud qarori chiqarilgan shaxs va jabrlanuvchi tomonidan esa, qarorning koʻchirma nusxalari ularga topshirilgan yoki ular tomonidan ushbu koʻchirma nusxalar olingan kundan eʼtiboran xuddi shu muddatda berilishi mumkin.\nUshbu moddaning birinchi qismida nazarda tutilgan muddat oʻtkazib yuborilgan taqdirda, apellyatsiya shikoyati (protesti) beruvchi shaxsning iltimosnomasiga koʻra, qarorni chiqargan sud, agar muddatning oʻtkazib yuborilganligi sabablarini uzrli deb topsa, oʻtkazib yuborilgan muddatni tiklashga haqli boʻlib, bu haqda ajrim chiqariladi.\nSudning maʼmuriy huquqbuzarlik toʻgʻrisidagi qarori ustidan apellyatsiya shikoyati (protesti) berish muddatini tiklash haqidagi iltimosnomani rad qilish toʻgʻrisida ajrim chiqariladi, uning ustidan xususiy shikoyat (xususiy protest) berilishi mumkin.",
+     "retrieval_score": 0.8922,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-97664#art-316#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "316-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "316-modda. Maʼmuriy huquqbuzarlik toʻgʻrisidagi ish yuzasidan chiqarilgan qaror xususida shikoyat berish muddati\nMaʼmuriy huquqbuzarlik toʻgʻrisidagi ish yuzasidan chiqarilgan qaror xususida shu qarorning nusxasi olingan kundan eʼtiboran oʻn kun ichida shikoyat berilishi mumkin, bundan sud qarori mustasno. Mazkur muddat uzrli sabablar bilan oʻtkazilib yuborilgan taqdirda, bu muddat shikoyatni koʻrib chiqishga vakolatli organ (mansabdor shaxs) tomonidan qayta tiklanishi mumkin.",
+     "retrieval_score": 0.8725,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-97664#art-318#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "318-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "318-modda. Maʼmuriy huquqbuzarlik toʻgʻrisidagi ish yuzasidan chiqarilgan qaror ijrosini toʻxtatib turish\nBelgilangan muddatda shikoyat berish maʼmuriy jazo qoʻllanish toʻgʻrisidagi qarorning ijrosini shikoyat koʻrib chiqilgunga qadar toʻxtatib turadi, maʼmuriy qamoq jazosi qoʻllanish toʻgʻrisidagi qaror va maʼmuriy huquqbuzarlik sodir etilgan joyda undirib olinadigan jarima solish hollari bundan mustasnodir.\nProkurorning protest bildirishi maʼmuriy huquqbuzarlik toʻgʻrisidagi ish yuzasidan qabul qilingan qaror ijrosini protest koʻrib chiqilgunga qadar toʻxtatib turadi.",
+     "retrieval_score": 0.7902,
+     "rerank_score": 0.4,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2140,
+    "retrieval_ms": 698,
+    "rerank_ms": 0,
+    "generation_ms": 4400,
+    "total_ms": 7240
+   },
+   "usage": {
+    "input_tokens": 11622,
+    "output_tokens": 995,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud jarima solgan boʻlsa, undan qutulish yoki miqdorini kamaytirishni soʻrab qancha muddat ichida murojaat qilish mumkin? Avval sud qarorining nusxasini olgandan keyin besh kun edi, hozir-chi?",
+    "search_queries": [
+     "Sud jarima solgan boʻlsa, undan qutulish yoki miqdorini kamaytirishni soʻrab qancha muddat ichida murojaat qilish mumkin? Avval sud qarorining nusxasini olgandan keyin besh kun edi, hozir-chi?",
+     "jarima miqdorini kamaytirish toʻgʻrisida ariza berish muddati",
+     "sud qarori ustidan shikoyat berish muddati",
+     "maʼmuriy jarima ustidan shikoyat muddati"
+    ],
+    "doc_hints": [
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeks",
+     "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 627,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q079",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida bu savolga aniq javob topilmadi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6600390#band-2s79#p1",
+     "doc_id": "lex:-6600390",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori “Oʻzbekiston — 2030” strategiyasini 2023-yilda sifatli va oʻz vaqtida amalga oshirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6600390",
+     "article": "2-band (79-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-09-11",
+     "text": "2. Avtobus qatnovi yoʻnalishi boʻyicha toʻxtash bekatlari shart-sharoitlarini yaxshilash boʻyicha takliflarni kiritish.\n2023-yil noyabr\n-\nTransport vazirligi\nI. Mahkamov,\nAvtomobil yoʻllari qoʻmitasi\nJ. Tursunov,\nIqtisodiyot va moliya vazirligi\nB. Xodjayev,\nmahalliy hokimliklar\n25.\u0007Tezyurar poyezdlarda yoʻlovchi tashish sonini 2,5 barobar koʻpaytirish.\u0007Toshkent — Samarqand yoʻnalishida yangi tezyurar temir yoʻlni qurish boʻyicha TIAni ishlab chiquvchi loyihachini aniqlash boʻyicha tender hujjatlarini ishlab chiqish va ekspertizadan oʻtkazish.\u00072023-yil dekabr\u0007-\u0007Transport vazirligi\nI. Mahkamov,\nAvtomobil yoʻllari qoʻmitasi\nJ. Tursunov,\nIqtisodiyot va moliya vazirligi\nB. Xodjayev\u0007\u0007\n“Toshkent — Samarqand”, “Samarqand — Navoiy — Buxoro” yoʻnalishlarida qoʻshimcha 6 ta tezyurar poyezdlar qatnovini yoʻlga qoʻyish hamda 600 kilometr qoʻshimcha temir yoʻllarini qurish boʻyicha dastlabki loyiha smeta hujjatlarini tayyorlash choralarini koʻrish.\nReja-grafik asosida\n26.\nAeroport xizmatlari tariflarini shakllantirishga bozor tamoyillarini joriy etish hamda samaradorligi past boʻlgan hududiy aeroportlarni modernizatsiya qilish va ishonchli boshqaruvga berish.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1814,
+    "retrieval_ms": 491,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 2306
+   },
+   "usage": {
+    "input_tokens": 949,
+    "output_tokens": 89,
+    "models": {
+     "rewrite": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Toshkentdan Samarqandga eng tez qaysi poyezdda borish mumkin?",
+    "search_queries": [
+     "Toshkentdan Samarqandga eng tez qaysi poyezdda borish mumkin?",
+     "Toshkent Samarqand poyezd qatnovi",
+     "yoʻlovchi tashish temir yoʻl jadvali",
+     "Afrosiyob poyezd harakatlanish tartibi"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 516,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": null,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q080",
+   "status": "ok",
+   "answer": "Ha, qarzdor kafillik bilan taʼminlangan majburiyatni bajarmasa yoki lozim darajada bajarmasa, kafil va qarzdor kreditor oldida solidar javob beradilar, basharti qonunda yoki kafillik shartnomasida kafilning subsidiar javobgar boʻlishi nazarda tutilgan boʻlmasa [1]. Kafillik shartnomasida boshqacha tartib nazarda tutilmagan boʻlsa, kafil kreditor oldida qarzdor bilan baravar hajmda javob beradi, shu jumladan foizlar toʻlaydi, qarzni undirib olish boʻyicha sud chiqimlarini va kreditor koʻrgan boshqa zararlarni toʻlaydi [1]. Majburiyatni bajargan kafilga kreditorning huquqlari u qanoatlantirgan hajmda oʻtadi va u qarzdordan toʻlangan summaga foizlar hamda boshqa zararini talab qilishga haqli [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "293-modda",
+     "part": "1–3-qism",
+     "edition_date": "1995-12-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-293#p1",
+     "quote": "Qarzdor kafillik bilan taʼminlangan majburiyatni bajarmagan yoki lozim darajada bajarmagan taqdirda kafil va qarzdor kreditor oldida solidar javob beradilar, basharti qonunda yoki kafillik shartnomasida kafilning subsidiar javobgar boʻlishi nazarda tutilgan boʻlmasa",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "295-modda",
+     "part": "1–3-qism",
+     "edition_date": "1995-12-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-295#p1",
+     "quote": "Majburiyatni bajargan kafilga kreditorning ushbu majburiyat boʻyicha huquqlari hamda garovga oluvchi sifatida kreditorga tegishli boʻlgan huquqlar kafil kreditorning talabini qancha hajmda qanoatlantirgan boʻlsa, shuncha hajmda oʻtadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111189#art-293#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "293-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-21",
+     "text": "293-modda. Kafilning javobgarligi\nQarzdor kafillik bilan taʼminlangan majburiyatni bajarmagan yoki lozim darajada bajarmagan taqdirda kafil va qarzdor kreditor oldida solidar javob beradilar, basharti qonunda yoki kafillik shartnomasida kafilning subsidiar javobgar boʻlishi nazarda tutilgan boʻlmasa.\nBasharti, kafillik shartnomasida boshqacha tartib nazarda tutilgan boʻlmasa, kafil kreditor oldida qarzdor bilan baravar hajmda javob beradi, shu jumladan foizlar toʻlaydi, qarzni undirib olish boʻyicha sud chiqimlarini va qarzdor majburiyatini bajarmaganligi yoki lozim darajada bajarmaganligi tufayli kreditor koʻpgan boshqa zararlarni toʻlaydi.\nAgar kafillik shartnomasida boshqacha tartib nazarda tutilgan boʻlmasa, birgalashib kafil boʻlgan shaxslar kreditor oldida solidar javob beradilar.",
+     "retrieval_score": 0.958,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111189#art-295#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "295-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-21",
+     "text": "295-modda. Majburiyatni bajargan kafilning huquqlari\nMajburiyatni bajargan kafilga kreditorning ushbu majburiyat boʻyicha huquqlari hamda garovga oluvchi sifatida kreditorga tegishli boʻlgan huquqlar kafil kreditorning talabini qancha hajmda qanoatlantirgan boʻlsa, shuncha hajmda oʻtadi. Kafil kreditorga toʻlangan summaga foizlar toʻlashni va qarzdor uchun javobgarlik munosabati bilan koʻrgan boshqa zararini toʻlashni qarzdordan talab qilishga haqli.\nKafil majburiyatni bajarganidan keyin kreditor qarzdorga boʻlgan talabni tasdiqlovchi hujjatlarni kafilga topshirishi va bu talabni taʼminlaydigan huquqlarni berishi shart.\nUshbu moddada belgilangan qoidalar agar qonunda yoki kafilning qarzdor bilan shartnomasida boshqacha tartib nazarda tutilgan boʻlmasa, qoʻllaniladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1766,
+    "retrieval_ms": 132,
+    "rerank_ms": 0,
+    "generation_ms": 4416,
+    "total_ms": 6316
+   },
+   "usage": {
+    "input_tokens": 9494,
+    "output_tokens": 808,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar men birovning qarziga kafil boʻlsam-u, u qarzini toʻlamasa, men toʻlashim kerakmi? Fuqarolik kodeksi Birinchi qism boʻyicha aytingchi, men qancha miqdorda javob beraman?",
+    "search_queries": [
+     "Agar men birovning qarziga kafil boʻlsam-u, u qarzini toʻlamasa, men toʻlashim kerakmi? Fuqarolik kodeksi Birinchi qism boʻyicha aytingchi, men qancha miqdorda javob beraman?",
+     "kafilning javobgarligi qarz boʻyicha",
+     "kafillik shartnomasi kafil qarzni toʻlash",
+     "kafil qarz oluvchi majburiyatini bajarmasa javobgarlik"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 360,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 1,
+    "generation_cached": null
+   }
+  }
+ ]
+}

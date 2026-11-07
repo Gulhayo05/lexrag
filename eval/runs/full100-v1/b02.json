@@ -1,0 +1,1566 @@
+{
+ "run_id": "full100-v1",
+ "batch_id": "full100-v1-b02",
+ "batch_index": 2,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p5",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:24:47+05:00",
+  "completed_at": "2026-11-06T18:24:55+05:00",
+  "total_ms": 8271
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q011",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni «Oʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasi toʻgʻrisida»ning 6-moddasiga koʻra, saylov kuni yigirma besh yoshga toʻlgan hamda kamida besh yil Oʻzbekiston Respublikasi hududida muqim yashayotgan Oʻzbekiston Respublikasi fuqarosi Qonunchilik palatasining deputati boʻlishi mumkin [1]. Shu bilan birga, ayni bir shaxs bir paytning oʻzida Qonunchilik palatasi deputati va Senat aʼzosi boʻlishi, shuningdek Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesining, viloyatlar, tumanlar, shaharlar davlat hokimiyati vakillik organlarining deputati boʻlishi mumkin emas [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:51961",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi toʻgʻrisida i. umumiy qoidalar",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/51961",
+     "article": "6-modda",
+     "part": "1–8-qism",
+     "edition_date": "2024-02-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:51961#art-6#p1",
+     "quote": "Saylov kuni yigirma besh yoshga toʻlgan hamda kamida besh yil Oʻzbekiston Respublikasi hududida muqim yashayotgan Oʻzbekiston Respublikasi fuqarosi Qonunchilik palatasining deputati boʻlishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:51961",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi toʻgʻrisida i. umumiy qoidalar",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/51961",
+     "article": "6-modda",
+     "part": "1–8-qism",
+     "edition_date": "2024-02-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:51961#art-6#p1",
+     "quote": "Ayni bir shaxs bir paytning oʻzida Qonunchilik palatasi deputati va Senat aʼzosi boʻlishi mumkin emas",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:51961#art-6#p1",
+     "doc_id": "lex:51961",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/51961",
+     "article": "6-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-19",
+     "text": "6-modda. Qonunchilik palatasi deputati\nSaylov kuni yigirma besh yoshga toʻlgan hamda kamida besh yil Oʻzbekiston Respublikasi hududida muqim yashayotgan Oʻzbekiston Respublikasi fuqarosi Qonunchilik palatasining deputati boʻlishi mumkin.\nAyni bir shaxs bir paytning oʻzida Qonunchilik palatasi deputati va Senat aʼzosi boʻlishi mumkin emas.\nQonunchilik palatasining deputati bir vaqtning oʻzida Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesining, viloyatlar, tumanlar, shaharlar davlat hokimiyati vakillik organlarining deputati boʻlishi mumkin emas.\nQonunchilik palatasi deputatlari oʻz vakolatlari davrida ilmiy, ijodiy va pedagogik faoliyatdan tashqari haq toʻlanadigan boshqa turdagi faoliyat bilan shugʻullanishlari mumkin emas.\nQonunchilik palatasi deputati daxlsizlik huquqidan foydalanadi. U Qonunchilik palatasining roziligisiz jinoiy javobgarlikka tortilishi, ushlab turilishi, qamoqqa olinishi yoki sud tomonidan beriladigan maʼmuriy jazoga tortilishi mumkin emas.\nQonunchilik palatasi deputatiga uning deputatlik faoliyati bilan bogʻliq xarajatlar belgilangan tartibda qoplanadi.\nQonunchilik palatasi deputatining vakolatlari qonunda nazarda tutilgan hollarda va tartibda muddatidan ilgari tugatilishi mumkin.\nQonunchilik palatasi deputatining maqomi qonun bilan belgilanadi.",
+     "retrieval_score": 0.8771,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:6445145#art-92#p5",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "92-modda",
+     "part": "5–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-04-30",
+     "text": "92-modda.\nAyni bir shaxs bir paytning oʻzida Oʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasi deputati va Senati aʼzosi boʻlishi mumkin emas.\nOʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasining deputati bir vaqtning oʻzida Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesining, viloyatlar, tumanlar, shaharlar davlat hokimiyati vakillik organlarining deputati boʻlishi mumkin emas.",
+     "retrieval_score": 0.9008,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:51255#art-7#p1",
+     "doc_id": "lex:51255",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni referendum yakunlari hamda davlat hokimiyati tashkil etilishining asosiy prinsiplari toʻgʻrisida",
+     "url": "https://lex.uz/docs/51255",
+     "article": "7-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-19",
+     "text": "7-modda. Oʻzbekiston Respublikasi Oliy Majlisi palatalarining ishini tashkil etish\nQonunchilik palatasining ishi palata barcha deputatlarining professional, doimiy faoliyat koʻrsatishiga asoslanadi. Qonunchilik palatasining deputatlari oʻz vakolatlari davrida ilmiy, pedagogik va ijodiy faoliyatdan tashqari boshqa turdagi haq toʻlanadigan faoliyat bilan shugʻullanishlari mumkin emas.\nSenat ishi vaqti-vaqti bilan chaqiriladigan Senatning yalpi majlislari hamda qoʻmitalari (komissiyalari) majlislaridagi senatorlarning faoliyatiga asoslanadi.\nAyni bir shaxs bir paytning oʻzida Qonunchilik palatasining deputati va Senat aʼzosi boʻlishi mumkin emas.\nQonunchilik palatasining deputati bir vaqtning oʻzida Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesining, viloyatlar, tumanlar, shaharlar davlat hokimiyati vakillik organlarining deputati boʻlishi mumkin emas.\nOʻzbekiston Respublikasi Oliy Majlisi palatalarining vakolatlari hamda faoliyat koʻrsatish tartibi, shuningdek Qonunchilik palatasi deputatlarining va Senat aʼzolarining maqomi qonun hujjatlari bilan belgilanadi.",
+     "retrieval_score": 0.8471,
+     "rerank_score": 0.35,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:5375205#band-1#p1",
+     "doc_id": "lex:5375205",
+     "doc_title": "Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasining qarori Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasi deputati r.x. kusherbayevga “xalqparvar deputat” maqomini berish toʻgʻrisida",
+     "url": "https://lex.uz/docs/5375205",
+     "article": "1-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-03-05",
+     "text": "1. Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasining deputati Rasul Xidraliyevich Kusherbayevga “Xalqparvar deputat” maqomi berilsin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5375671#band-1#p1",
+     "doc_id": "lex:5375671",
+     "doc_title": "Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasining qarori Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasi deputati sh.t. polvanovga “adolatli deputat” maqomini berish toʻgʻrisida",
+     "url": "https://lex.uz/docs/5375671",
+     "article": "1-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-03-05",
+     "text": "1. Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasining deputati Shuxrat Tagaymuratovich Polvanovga “Adolatli deputat” maqomi berilsin.",
+     "retrieval_score": 0.9889,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1568,
+    "retrieval_ms": 352,
+    "rerank_ms": 0,
+    "generation_ms": 2625,
+    "total_ms": 4547
+   },
+   "usage": {
+    "input_tokens": 9181,
+    "output_tokens": 590,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Kim Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi deputati hisoblanadi?",
+    "search_queries": [
+     "Kim Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi deputati hisoblanadi?",
+     "Oliy Majlisi Qonunchilik palatasi deputati",
+     "Qonunchilik palatasi deputatining maqomi",
+     "deputat hisoblanadi Qonunchilik palatasi"
+    ],
+    "doc_hints": [
+     "Oʻzbekiston Respublikasi Konstitutsiyasi",
+     "Oʻzbekiston Respublikasi Oliy Majlisi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 464,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q012",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati toʻgʻrisidagi qonunning 32-moddasiga koʻra, harbiy xizmatchilarning yuqori darajadagi kasbiy tayyorgarligini taʼminlash va saqlab turish uchun xizmatda rejali asosda jangovar va maxsus tayyorgarlik boʻyicha mashgʻulotlar, shuningdek har yili kasbga yaroqlilikni tekshirish tashkil etiladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5491505",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5491505",
+     "article": "32-modda",
+     "part": "1–3-qism",
+     "edition_date": "2021-07-06",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5491505#art-32#p1",
+     "quote": "Harbiy xizmatchilarning yuqori darajadagi kasbiy tayyorgarligini taʼminlash va saqlab turish uchun Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatida rejali asosda jangovar va maxsus tayyorgarlik boʻyicha mashgʻulotlar, shuningdek har yili kasbga yaroqlilikni tekshirish tashkil etiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5491505#art-32#p1",
+     "doc_id": "lex:-5491505",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5491505",
+     "article": "32-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-07-06",
+     "text": "32-modda. Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati harbiy xizmatchilarini tayyorlash, qayta tayyorlash va ularning malakasini oshirish\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati harbiy xizmatchilarini tayyorlash, qayta tayyorlash va ularning malakasini oshirish Oʻzbekiston Respublikasining oliy taʼlim tashkilotlarida, shuningdek Oʻzbekiston Respublikasining xalqaro shartnomalari asosida chet davlatlarning oliy taʼlim tashkilotlarida amalga oshiriladi.\nHarbiy xizmatchilarning yuqori darajadagi kasbiy tayyorgarligini taʼminlash va saqlab turish uchun Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatida rejali asosda jangovar va maxsus tayyorgarlik boʻyicha mashgʻulotlar, shuningdek har yili kasbga yaroqlilikni tekshirish tashkil etiladi.\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatining harbiy xizmatchilari jismoniy kuchni, maxsus vositalarni, sovuq va oʻqotar qurolni qoʻllash bilan bogʻliq sharoitlardagi harakatlarga yaroqlilik nuqtai nazaridan maxsus tayyorgarlikdan, davriy tekshiruvdan oʻtishi shart.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5491505#art-27#p1",
+     "doc_id": "lex:-5491505",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5491505",
+     "article": "27-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-07-06",
+     "text": "27-modda. Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatini kadrlar bilan toʻldirish\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati kasbga yaroqlilik boʻyicha tekshiruvdan muvaffaqiyatli oʻtgan, muddatli harbiy xizmatni yoki safarbarlik chaqiruvi rezervidagi xizmatni oʻtagan Oʻzbekiston Respublikasi fuqarolari bilan ixtiyoriy asosda toʻldiriladi.\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatiga Oʻzbekiston Respublikasi Qurolli Kuchlari, Oʻzbekiston Respublikasi davlat organlari va boshqa tashkilotlarining zaxirasidagi yoki rezervidagi fuqarolar, shuningdek Oʻzbekiston Respublikasining ayol jinsiga mansub boʻlgan, harbiy-hisob mutaxassisligi boʻyicha tegishli kasbiy tayyorgarlikka ega boʻlmagan fuqarolari qabul qilinadi.",
+     "retrieval_score": 0.9447,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5491505#art-27#p7",
+     "doc_id": "lex:-5491505",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5491505",
+     "article": "27-modda",
+     "part": "7–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-07-06",
+     "text": "27-modda. Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatini kadrlar bilan toʻldirish\nAlohida hollarda, Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati raisining qaroriga koʻra, oʻrta maxsus maʼlumotga ega serjantlar tarkibidagi yuqori kasbiy koʻrsatkichlarga erishgan harbiy xizmatchilarni ofitserlik lavozimlariga tayinlashga ruxsat etiladi.\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatiga qabul qilingan harbiy xizmatga majburlar harbiy hisobdan chiqariladi va Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatining maxsus hisobiga qoʻyiladi.\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatiga haqiqiy harbiy xizmatga yoki ishga kirayotgan shaxslar Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati raisi tomonidan belgilanadigan tartibda dastlabki tanlovdan, shuningdek oʻzlari taqdim etgan maʼlumotlarning haqqoniyligini Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatida haqiqiy harbiy xizmatni oʻtashga yoki ishlashga yaroqlilikni aniqlash maqsadida oʻrganishni va haqiqiy harbiy xizmatga yoki ishga qabul qilishga monelik qiladigan holatlarni aniqlashni, shu jumladan ruhiy-fiziologik tadqiqot oʻtkazish orqali aniqlashni oʻz ichiga oladigan tekshiruvdan oʻtadi.",
+     "retrieval_score": 0.8657,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5491505#art-33#p3",
+     "doc_id": "lex:-5491505",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5491505",
+     "article": "33-modda",
+     "part": "3–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-07-06",
+     "text": "33-modda. Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati harbiy xizmatchilarini ijtimoiy himoya qilish kafolatlari\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatining haqiqiy harbiy xizmatda boʻlishning belgilangan chegaradagi yoshiga toʻlgan, yuqori kasbiy tayyorgarlikka, egallab turgan lavozimida ish tajribasiga va sogʻligʻining holatiga koʻra kelgusida harbiy xizmatni oʻtashga yaroqli boʻlgan harbiy xizmatchilariga haqiqiy harbiy xizmat muddati Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati raisi tomonidan ular bilan oʻn yilgacha boʻlgan muddatga yangi kontrakt tuzish orqali bir necha bor uzaytirilishi mumkin.\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatining haqiqiy harbiy xizmatga rezervdan yoki zaxiradan ixtiyoriy tartibda qabul qilingan harbiy xizmatchilar, shuningdek qabul qilinguniga qadar harbiy xizmatga majbur boʻlmagan, kalendar hisobida oʻn yil xizmat qilgan ayollar ofitserlik unvonida boʻlgan chogʻida boʻshatilgan taqdirda, ularning:\noliy taʼlim tashkilotining kunduzgi oʻquv shaklida oʻqigan vaqti ushbu oʻqishning bir oyi xizmatning bir oyiga tenglashtirilgan holda haqiqiy harbiy xizmat muddatiga qoʻshiladi;",
+     "retrieval_score": 0.9026,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-78717#art-20.2#p15",
+     "doc_id": "lex:-78717",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni umumiy harbiy majburiyat va harbiy xizmat toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/-78717",
+     "article": "20²-modda",
+     "part": "15–26-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-09-30",
+     "text": "202-modda. Rahbariyat kengashi, harbiy-tibbiy komissiya, butlash komissiyasi, hududiy komissiya, hududiy tibbiy komissiya tomonidan qabul qilinadigan qarorlar (xulosalar)\nsogʻligʻining holatiga koʻra harbiy xizmatga vaqtincha yaroqsizlik toʻgʻrisida;\nushbu Qonunning 21 va 22-moddalariga muvofiq harbiy xizmatga chaqirishini kechiktirish toʻgʻrisida yoki harbiy xizmatga chaqirilishdan ozod qilish haqida;\nyigirma yetti yoshga toʻlganligi munosabati bilan Qurolli Kuchlar zaxirasiga oʻtkazish toʻgʻrisida;\nsogʻligʻining holatiga koʻra tinchlik davrida harbiy xizmatga yaroqsizlik, urush davridagi harbiy xizmatga cheklangan ravishda yaroqlilik va zaxiraga oʻtkazish haqida;\nharbiy hisobdan chiqarilgan holda, harbiy xizmatga yaroqsizlik haqida.\nHududiy komissiya qaror qabul qilishda chaqiriluvchilarni tibbiy koʻrikdan oʻtkazish xulosasi, ularning maʼnaviy yetukligi va kasbiy tayyorgarligi, oilaviy va moddiy holatini oʻrganish natijalariga asoslanadi.\nHududiy tibbiy komissiya quyidagi xulosalarni chiqaradi:\nharbiy xizmatga yaroqlilik toʻgʻrisida;\nayrim cheklovlar bilan harbiy xizmatga yaroqlilik haqida;\nharbiy xizmatga cheklangan ravishda yaroqlilik toʻgʻrisida;\nharbiy xizmatga vaqtincha yaroqsizlik haqida;\ntinchlik davrida harbiy xizmatga yaroqsizlik, urush davrida cheklangan ravishda harbiy xizmatga yaroqlilik toʻgʻrisida;",
+     "retrieval_score": 0.8346,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1406,
+    "retrieval_ms": 546,
+    "rerank_ms": 0,
+    "generation_ms": 2512,
+    "total_ms": 4466
+   },
+   "usage": {
+    "input_tokens": 14386,
+    "output_tokens": 518,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Prezident davlat xavfsizlik xizmati harbiy xizmatchilarining kasbga yaroqliligi qanchalik tez-tez tekshirib turiladi?",
+    "search_queries": [
+     "Prezident davlat xavfsizlik xizmati harbiy xizmatchilarining kasbga yaroqliligi qanchalik tez-tez tekshirib turiladi?",
+     "harbiy xizmatchilarning kasbga yaroqliligini tekshirish davriyligi",
+     "Prezident davlat xavfsizlik xizmati harbiy xizmatchilar kasbga yaroqlilik",
+     "harbiy xizmatchilar tibbiy koʻrikdan oʻtkazish muddatlari"
+    ],
+    "doc_hints": [
+     "Prezident davlat xavfsizlik xizmati toʻgʻrisidagi qonun",
+     "Harbiy xizmat toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 786,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q013",
+   "status": "ok",
+   "answer": "Iqtisodiy protsessual kodeksning 16-moddasiga koʻra, ishlarni apellyatsiya, kassatsiya va taftish tartibida koʻrish uch nafar sudyadan iborat tarkibda hayʼatda amalga oshiriladi [1]. Apellyatsiya instansiyasi sudi birinchi instansiya sudi hal qiluv qarorining qonuniyligini va asosliligini tekshiradi va uni toʻliq hajmda tekshirishi shart [2]. Tekshirish natijasi boʻyicha apellyatsiya instansiyasi sudi qaror qabul qiladi, qaror ishni koʻrgan sudyalar tomonidan imzolanadi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.75,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "16-modda",
+     "part": "1–6-qism",
+     "edition_date": "2024-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-16#p1",
+     "quote": "Ishlarni apellyatsiya, kassatsiya va taftish tartibida koʻrish uch nafar sudyadan iborat tarkibda hayʼatda amalga oshiriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "276-modda",
+     "part": "1–3-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-276#p1",
+     "quote": "Sud ishni apellyatsiya instansiyasida koʻrish chogʻida birinchi instansiya sudi hal qiluv qarorining qonuniyligini va asosliligini tekshiradi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "280-modda",
+     "part": "1–12-qism",
+     "edition_date": "2024-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-280#p1",
+     "quote": "Apellyatsiya instansiyasi sudi apellyatsiya shikoyatini (protestini) koʻrish natijalari boʻyicha qaror qabul qiladi, qaror ishni koʻrgan sudyalar tomonidan imzolanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:3523891#art-16#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "16-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "16-modda. Ishlarning yakka tartibda va hayʼatda koʻrilishi\nBirinchi instansiya boʻyicha ishlar barcha sudlarda sudya tomonidan yakka tartibda koʻriladi.\nIshlarni apellyatsiya, kassatsiya va taftish tartibida koʻrish uch nafar sudyadan iborat tarkibda hayʼatda amalga oshiriladi.\nIshni Oʻzbekiston Respublikasi Oliy sudining Rayosatida taftish tartibida koʻrish Rayosat aʼzolarining koʻpchiligi ishtirokida hayʼatda amalga oshiriladi.\nIsh hayʼatda koʻrilayotganda sudyalardan biri sud majlisida raislik qiladi.\nIshni koʻrishda barcha sudyalar teng huquqlardan foydalanadi.\nUshbu Kodeksga binoan sudyaga ishni yakka tartibda koʻrish va ayrim masalalarni hal qilish huquqi berilgan taqdirda, sudya sud nomidan ish koʻradi.",
+     "retrieval_score": 0.8988,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3523891#art-276#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "276-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "276-modda. Apellyatsiya instansiyasi sudida ishni koʻrish chegaralari\nSud ishni apellyatsiya instansiyasida koʻrish chogʻida birinchi instansiya sudi hal qiluv qarorining qonuniyligini va asosliligini tekshiradi. Sud yangi dalillarni tekshirishi va yangi faktlarni aniqlashi mumkin.\nApellyatsiya instansiyasining sudi birinchi instansiya sudining hal qiluv qarorini toʻliq hajmda tekshirishi shart.\nBirinchi instansiya sudida koʻrib chiqish predmeti boʻlmagan yangi talablar apellyatsiya instansiyasi sudi tomonidan qabul qilinmaydi va koʻrilmaydi.",
+     "retrieval_score": 0.8731,
+     "rerank_score": 0.5,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-280#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "280-modda",
+     "part": "1–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "280-modda. Apellyatsiya instansiyasi sudining qarori\nApellyatsiya instansiyasi sudi apellyatsiya shikoyatini (protestini) koʻrish natijalari boʻyicha qaror qabul qiladi, qaror ishni koʻrgan sudyalar tomonidan imzolanadi.\nApellyatsiya instansiyasi sudining qarorida quyidagilar koʻrsatiladi:\n1) apellyatsiya instansiyasi sudining nomi, qarorni qabul qilgan sud tarkibi, sud majlisi kotibi;\n2) ishning raqami, qaror qabul qilingan sana va joy;\n3) apellyatsiya shikoyatini (protestini) bergan shaxsning nomi (familiyasi, ismi, otasining ismi), uning protsessual holati;\n4) ishda ishtirok etuvchi shaxslarning, shuningdek ular vakillarining va sud protsessi boshqa ishtirokchilarining nomi (familiyasi, ismi, otasining ismi);\n5) nizo predmeti;\n6) birinchi instansiya sudining hal qiluv qarori qabul qilingan sana, uni qabul qilgan sudyaning familiyasi, ism-sharifining bosh harflari;\n7) ish boʻyicha qabul qilingan hal qiluv qarori mazmunining qisqacha bayoni;\n8) apellyatsiya shikoyatida (protestida) keltirilgan hal qiluv qarorining qonuniyligini va asosliligini tekshirish toʻgʻrisida talab bildirilishiga doir asoslar;\n9) apellyatsiya shikoyati (protesti) yuzasidan yozma fikrda bayon qilingan vajlar;\n10) ishda ishtirok etuvchi va sud majlisida hozir boʻlgan shaxslarning tushuntirishlari;",
+     "retrieval_score": 0.901,
+     "rerank_score": 0.4,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-277#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "277-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-15",
+     "text": "277-modda. Apellyatsiya shikoyatini (protestini) koʻrish muddati\nApellyatsiya instansiyasi sudi birinchi instansiya sudining hal qiluv qarori ustidan berilgan apellyatsiya shikoyatini (protestini) apellyatsiya shikoyati (protesti) ish yuritishga qabul qilingan kundan eʼtiboran bir oydan ortiq boʻlmagan muddatda koʻrib chiqadi.\nSudning soddalashtirilgan ish yuritish tartibida koʻrib chiqilgan, shuningdek huquqiy taʼsir chorasini qoʻllash, oʻzboshimchalik bilan egallab olingan, davlat mulkida boʻlgan yer uchastkasini qaytarish, oʻzboshimchalik bilan qurilgan imoratni buzib tashlash toʻgʻrisidagi ish boʻyicha hal qiluv qarori ustidan apellyatsiya shikoyati (protesti) sudga kelib tushgan kundan eʼtiboran oʻn besh kun ichida koʻrib chiqiladi.\nAlohida hollarda apellyatsiya shikoyatini (protestini) koʻrib chiqish muddati ishni koʻrayotgan sudlov hayʼati tomonidan koʻpi bilan bir oyga uzaytirilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:6711090#art-320#p1",
+     "doc_id": "lex:6711090",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni sud qarorlarining qonuniyligi va asosliligini tekshirish tartibi takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksiga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/6711090",
+     "article": "320-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-08-01",
+     "text": "320-modda. Taftish tartibidagi shikoyatni Oʻzbekiston Respublikasi Oliy sudining Iqtisodiy ishlar boʻyicha sudlov hayʼatiga koʻrib chiqish uchun oʻtkazishni rad etish toʻgʻrisidagi ajrim\nOʻzbekiston Respublikasi Oliy sudi sudyasining taftish tartibidagi shikoyatni Oʻzbekiston Respublikasi Oliy sudining Iqtisodiy ishlar boʻyicha sudlov hayʼatiga koʻrib chiqish uchun oʻtkazishni rad etish toʻgʻrisidagi ajrimida quyidagilar koʻrsatilishi kerak:\n1) ajrim chiqarilgan sana va joy;\n2) ajrim chiqargan sudyaning familiyasi va ismi-sharifining bosh harflari;\n3) taftish tartibidagi shikoyatni bergan shaxsning nomi (familiyasi, ismi, otasining ismi);\n4) ustidan shikoyat qilinayotgan sud hujjatlari;\n5) sud hujjatlari qabul qilingan ish mazmunining qisqacha bayoni;\n6) taftish tartibidagi shikoyatni Oʻzbekiston Respublikasi Oliy sudining Iqtisodiy ishlar boʻyicha sudlov hayʼatiga koʻrib chiqish uchun oʻtkazishni rad etish sabablari.\nTaftish tartibidagi shikoyatni Oʻzbekiston Respublikasi Oliy sudining Iqtisodiy ishlar boʻyicha sudlov hayʼatiga koʻrib chiqish uchun oʻtkazishni rad etish toʻgʻrisidagi ajrim chiqarilganda shikoyat va unga ilova qilingan hujjatlar sudda qoladi.",
+     "retrieval_score": 0.9911,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1478,
+    "retrieval_ms": 623,
+    "rerank_ms": 0,
+    "generation_ms": 3238,
+    "total_ms": 5341
+   },
+   "usage": {
+    "input_tokens": 14565,
+    "output_tokens": 645,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Xoʻjalik sudining hal qiluv qarori qonuniyligi va asosliligini tekshirish boʻyicha sudlov hayʼati nechta sudyadan iborat boʻladi va tekshirish natijasi qanday qabul qilinadi?",
+    "search_queries": [
+     "Xoʻjalik sudining hal qiluv qarori qonuniyligi va asosliligini tekshirish boʻyicha sudlov hayʼati nechta sudyadan iborat boʻladi va tekshirish natijasi qanday qabul qilinadi?",
+     "sudlov hayʼati tarkibi sudyalar soni apellyatsiya instansiyasi",
+     "hal qiluv qarori qonuniyligi va asosliligini tekshirish sudlov hayʼati",
+     "apellyatsiya shikoyati boʻyicha ishni koʻrib chiqish sudlov hayʼati tarkibi"
+    ],
+    "doc_hints": [
+     "Iqtisodiy protsessual kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 564,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q014",
+   "status": "ok",
+   "answer": "Binolarga, inshootlarga yoki boshqa joylarga joylashtirilgan axborot va tashviqot materiallarini saylovga yoki referendumga tayyorgarlik koʻrish va oʻtkazish jarayonida qasddan yoʻq qilib yuborish yoki ularga qasddan shikast yetkazish Maʼmuriy javobgarlik toʻgʻrisidagi kodeksning 517-moddasiga koʻra bazaviy hisoblash miqdorining uch baravaridan yetti baravarigacha miqdorda jarima solishga sabab boʻladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "51⁷-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-51.7#p1",
+     "quote": "Binolarga, inshootlarga yoki boshqa joylarga joylashtirilgan axborot, tashviqot materiallarini saylovga yoki referendumga tayyorgarlik koʻrish va saylov yoki referendum oʻtkazish jarayonida qasddan yoʻq qilib yuborish yoki ularga qasddan shikast yetkazish, — bazaviy hisoblash miqdorining uch baravaridan yetti baravarigacha miqdorda jarima solishga sabab boʻladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-97664#art-51.7#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "51⁷-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "517-modda. Saylovga yoki referendumga tayyorgarlik koʻrish va saylov yoki referendum oʻtkazish jarayonida axborot hamda tashviqot materiallarini qasddan yoʻq qilib yuborish yoki ularga qasddan shikast yetkazish\nBinolarga, inshootlarga yoki boshqa joylarga joylashtirilgan axborot, tashviqot materiallarini saylovga yoki referendumga tayyorgarlik koʻrish va saylov yoki referendum oʻtkazish jarayonida qasddan yoʻq qilib yuborish yoki ularga qasddan shikast yetkazish, —\nbazaviy hisoblash miqdorining uch baravaridan yetti baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.995,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-97664#art-51.5#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "51⁵-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "515-modda. Saylovoldi tashviqotini, referendumga qoʻyilgan masalalar yuzasidan tashviqot olib borish shartlari va tartibini buzish\nSaylovoldi tashviqotini, referendumga qoʻyilgan masalalar yuzasidan tashviqot olib borish shartlari va tartibini nomzod, ishonchli vakil, siyosiy partiya vakili, mansabdor shaxs tomonidan buzish, —\nbazaviy hisoblash miqdorining yetti baravaridan oʻn baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-97664#art-51.8#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "51⁸-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "518-modda. Saylovni yoki referendumni moliyalashtirish tartibini buzish\nSaylovni yoki referendumni moliyalashtirish tartibini buzish, —\nfuqarolarga bazaviy hisoblash miqdorining besh baravaridan oʻn baravarigacha, mansabdor shaxslarga esa oʻn baravaridan yigirma baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.7384,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111838#art-28.3#p1",
+     "doc_id": "lex:-111838",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti saylovi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-111838",
+     "article": "28³-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "1991-11-18",
+     "text": "283-modda. Saylovoldi tashviqotini bosma, koʻrgazmali, audiovizual va boshqa tashviqot materiallarini chiqarish hamda tarqatish orqali olib borish\nOʻzbekiston Respublikasi Prezidentligiga nomzodlarga bosma, koʻrgazmali, audiovizual materiallarni, fonogrammalarni, bosma mahsulotning elektron shakllarini va boshqa tashviqot materiallarini moneliksiz chiqarish hamda tarqatish uchun teng sharoitlar yaratib beriladi. Tashviqot materiallari Oʻzbekiston Respublikasi hududida tayyorlanishi kerak.\nBosma, koʻrgazmali, audiovizual va boshqa tashviqot materiallarida quyidagilar koʻrsatilishi kerak:\ntashviqot materiallarini tayyorlagan yuridik shaxsning nomi (jismoniy shaxsning familiyasi, ismi va otasining ismi), joylashgan yeri (pochta manzili) va u haqdagi boshqa maʼlumotlar;\ntashviqot materiallariga buyurtma bergan yuridik shaxsning nomi(jismoniy shaxsning familiyasi, ismi va otasining ismi);\ntashviqot materiallarining adadi, chiqarilgan sanasi toʻgʻrisidagi axborot.\nBinolarga, inshootlarga va boshqa joylarga ilgari joylashtirilgan saylovoldi tashviqoti materiallari saylovga bir kun qolganida mahalliy davlat hokimiyati organlari tomonidan olib qoʻyiladi.",
+     "retrieval_score": 0.7361,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-97664#art-51.10#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "51¹⁰-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "5110-modda. Saylov (ovoz berish) byulletenlarini berish tartibini buzish\nSaylov komissiyasi yoki referendum oʻtkazuvchi komissiya aʼzosi tomonidan fuqarolarga bir necha marta yoki boshqa shaxslar nomidan ovoz berish uchun saylov (ovoz berish) byulletenlarini berish, —\nbazaviy hisoblash miqdorining bir baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.7281,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1953,
+    "retrieval_ms": 841,
+    "rerank_ms": 0,
+    "generation_ms": 2556,
+    "total_ms": 5351
+   },
+   "usage": {
+    "input_tokens": 11646,
+    "output_tokens": 544,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Saylov oldidan koʻchaga osilgan tashviqot materiallarini kimdir ataylab yirtib tashlasa yoki buzib qoʻysa, qanday miqdorda jarima solinadi?",
+    "search_queries": [
+     "Saylov oldidan koʻchaga osilgan tashviqot materiallarini kimdir ataylab yirtib tashlasa yoki buzib qoʻysa, qanday miqdorda jarima solinadi?",
+     "saylov tashviqoti materiallarini buzish jarima",
+     "tashviqot materiallarini yirtish maʼmuriy javobgarlik",
+     "saylov qonunchiligini buzganlik uchun jarima miqdori"
+    ],
+    "doc_hints": [
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeks",
+     "Saylov toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 690,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q015",
+   "status": "ok",
+   "answer": "Fuqaro muhofazasi toʻgʻrisidagi qonunning 20-moddasiga koʻra, fuqaro muhofazasi tuzilmalariga Oʻzbekiston Respublikasi fuqarolaridan 18 yoshdan 60 yoshgacha boʻlgan erkaklar va 18 yoshdan 55 yoshgacha boʻlgan ayollar qabul qilinadi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-32994",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni fuqaro muhofazasi toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-32994",
+     "article": "20-modda",
+     "part": "1–6-qism",
+     "edition_date": "2022-05-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-32994#art-20#p1",
+     "quote": "Fuqaro muhofazasi tuzilmalariga Oʻzbekiston Respublikasi fuqarolari: 18 yoshdan 60 yoshgacha boʻlgan erkaklar, 18 yoshdan 55 yoshgacha boʻlgan ayollar qabul qilinadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-32994#art-20#p1",
+     "doc_id": "lex:-32994",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni fuqaro muhofazasi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-32994",
+     "article": "20-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-05-18",
+     "text": "20-modda. Fuqaro muhofazasi tuzilmalari\nFuqaro muhofazasi tuzilmalari qutqaruv va boshqa kechiktirib boʻlmaydigan ishlarni amalga oshirish uchun hududiy-ishlab chiqarish prinsipiga koʻra tashkil etiladi.\nFuqaro muhofazasi tuzilmalari:\nboʻysunuviga koʻra — hududiy (viloyatlar, tumanlar va shaharlardagi) hamda obyekt (xalq xoʻjaligi obyektlaridagi) tuzilmalariga;\nbelgilangan vazifasiga koʻra — umumiy maqsaddagi (zararlanish oʻchoqlarida qutqaruv ishlarini olib borish uchun) tuzilmalarga va maxsus tadbirlarni bajaruvchi xizmatlar (qidiruv ishlarini olib borish, tibbiy yordam koʻrsatish, yongʻinlarning tarqalishiga yoʻl qoʻymaslik va ularni oʻchirish, jamoat tartibini saqlash va hokazo) tuzilmalariga boʻlinadi.\nFuqaro muhofazasi tuzilmalariga Oʻzbekiston Respublikasi fuqarolari: 18 yoshdan 60 yoshgacha boʻlgan erkaklar, 18 yoshdan 55 yoshgacha boʻlgan ayollar qabul qilinadi, safarbarlik koʻrsatmasiga ega boʻlgan harbiy xizmatga majburlar, I, II, III guruh nogironligi boʻlgan shaxslar, homilador ayollar, sakkiz yoshga toʻlmagan bolalari bor ayollar, shuningdek uch yoshga toʻlmagan bolalari bor, oʻrta yoki oliy tibbiy maʼlumotli ayollar bundan mustasno.\nV. FUQARO MUHOFAZASINI MOLIYAVIY TAʼMINLASH. FUQARO MUHOFAZASI OBYEKTLARI VA MOL-MULKI",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-32994#art-18#p1",
+     "doc_id": "lex:-32994",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni fuqaro muhofazasi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-32994",
+     "article": "18-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "18-modda. Fuqaro muhofazasi kuchlarining tarkibi\nFuqaro muhofazasi kuchlari fuqaro muhofazasi qoʻshinlari tuzilmalaridan tarkib topadi.\nFuqaro muhofazasi kuchlari va vositalari tarkibi, uning tarkibiy tuzilishi, shuningdek, fuqaro muhofazasi tuzilmalari faoliyatining boshqa masalalari Oʻzbekiston Respublikasi fuqaro muhofazasi boshligʻi tomonidan belgilab qoʻyiladi.\nFuqaro muhofazasi vazifalarini hal etish uchun qonunchilikda belgilangan tartibda Oʻzbekiston Respublikasi Qurolli Kuchlarining qutqaruv tuzilmalari, qismlari va boʻlinmalari ham jalb etilishi mumkin.",
+     "retrieval_score": 0.7441,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-32994#art-8#p1",
+     "doc_id": "lex:-32994",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni fuqaro muhofazasi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-32994",
+     "article": "8-modda",
+     "part": "1–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "8-modda. Fuqaro muhofazasi sohasidagi maxsus vakolatli respublika ijro etuvchi hokimiyat organi\nFuqaro muhofazasi sohasidagi maxsus vakolatli respublika ijro etuvchi hokimiyat organi Oʻzbekiston Respublikasi Favqulodda vaziyatlar vazirligidir.\nOʻzbekiston Respublikasi Favqulodda vaziyatlar vazirligi:\nfuqaro muhofazasini rivojlantirish va takomillashtirishning asosiy yoʻnalishlarini ishlab chiqadi;\noʻz vakolati doirasida davlat hokimiyati organlari va respublika ijro etuvchi hokimiyat organlari, tashkilotlar, mansabdor shaxslar va fuqarolar uchun bajarilishi majburiy boʻlgan qarorlar qabul qiladi;\nOʻzbekiston Respublikasi fuqaro muhofazasi rejasi loyihasini ishlab chiqadi;\nharbiy qismlar va fuqaro muhofazasi tuzilmalari boshqarilishini tashkil etadi;\nfuqaro muhofazasi ehtiyojlarini koʻzlab zarur qurol-aslahalar, texnika, muhofazalanish vositalari va boshqa moddiy-texnika vositalari yetkazib berilishi uchun davlat buyurtmasi loyihasini shakllantiradi;\nxabar berishni tashkil etish va fuqaro muhofazasi tizimini shay holatga keltirish boʻyicha direktiv hujjatlar ishlab chiqadi;\nfuqaro muhofazasi kuchlari va vositalarining jangovarlik hamda safarbarlik tayyorgarligini taʼminlaydi;\nshaxsiy tarkib va aholi fuqaro muhofazasi sohasida oʻrgatilishini tashkil etadi;\nfuqaro muhofazasi tadbirlari bajarilishi ustidan davlat nazoratini amalga oshiradi;",
+     "retrieval_score": 0.7006,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6257288#art-522#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "522-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "522-modda. Chet el fuqarosini ishga qabul qilish yoshi\nMehnat faoliyatini amalga oshirish maqsadida Oʻzbekiston Respublikasi hududiga qonuniy ravishda kirib kelgan chet el fuqarolari oʻn sakkiz yoshga toʻlganida xodim sifatida yakka tartibdagi mehnat munosabatlariga kirishish huquqiga ega.",
+     "retrieval_score": 0.6883,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-32994#art-1#p1",
+     "doc_id": "lex:-32994",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni fuqaro muhofazasi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-32994",
+     "article": "1-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2000-05-26",
+     "text": "1-modda. Asosiy tushunchalar\nUshbu Qonunda quyidagi asosiy tushunchalar qoʻllaniladi:\nfuqaro muhofazasi — harbiy harakatlar olib borish paytida yoki shu harakatlar oqibatida yuzaga keladigan xavflardan Oʻzbekiston Respublikasi aholisini, hududlarini, moddiy va madaniy boyliklarini muhofaza qilish maqsadida oʻtkaziladigan tadbirlarning davlat tizimi;\nfuqaro muhofazasi xizmati — fuqaro muhofazasi maxsus tadbirlarini bajarish, fuqaro muhofazasi tuzilmalarining harakatlarini taʼminlash uchun kuchlar va vositalarni tayyorlash maqsadida tuzilgan funksional boʻlinmalar majmui;\nhimoya inshootlari — aholini va ishlab chiqarish xodimlarini zamonaviy qirgʻin vositalaridan muhofaza qilishga maxsus moʻljallangan muhandislik inshootlari majmui;\nfuqaro muhofazasi kuchlari — qutqaruv va boshqa kechiktirib boʻlmaydigan ishlarni amalga oshirish uchun tuziladigan fuqaro muhofazasi harbiy qismlari, umumiy va maxsus hududiy, funksional va obyekt tuzilmalari.",
+     "retrieval_score": 0.6703,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1877,
+    "retrieval_ms": 1556,
+    "rerank_ms": 0,
+    "generation_ms": 1681,
+    "total_ms": 5115
+   },
+   "usage": {
+    "input_tokens": 11633,
+    "output_tokens": 403,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Fuqaro muhofazasi tuzilmalariga qanday yoshdagi erkaklar va ayollar qabul qilinadi?",
+    "search_queries": [
+     "Fuqaro muhofazasi tuzilmalariga qanday yoshdagi erkaklar va ayollar qabul qilinadi?",
+     "fuqaro muhofazasi tuzilmalariga qabul qilish yoshi",
+     "fuqaro muhofazasi xizmatiga chaqiriluvchilar yoshi erkaklar ayollar",
+     "fuqaro muhofazasi tuzilmalari shaxsiy tarkibi yosh chegarasi"
+    ],
+    "doc_hints": [
+     "Fuqaro muhofazasi toʻgʻrisidagi qonun",
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 681,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q016",
+   "status": "ok",
+   "answer": "Shaharsozlik kodeksining 43-moddasiga koʻra, aholi punktining muqobil bosh rejasi taklif etilgan bosh rejadan norozi boʻlgan jamoatchilik nazorati subyektlarining tashabbusiga koʻra va ularning mablagʻlari hisobidan bajariladigan loyihaviy, ilmiy ishlanmadan iborat [1]. Aholi punktining bosh rejasi muqobil bosh reja deb topilgan taqdirda, tashabbuskorga uni ishlab chiqish bilan bogʻliq xarajatlarning oʻrni ushbu bosh rejaning buyurtmachisi tomonidan qoplanadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "43-modda",
+     "part": "1–6-qism",
+     "edition_date": "2021-02-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5307951#art-43#p1",
+     "quote": "Aholi punktining muqobil bosh rejasi aholi punktining taklif etilgan bosh rejasidan norozi boʻlgan jamoatchilik nazorati subyektlarining tashabbusiga koʻra va ularning mablagʻlari hisobidan bajariladigan loyihaviy, ilmiy ishlanmadan iborat",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "43-modda",
+     "part": "1–6-qism",
+     "edition_date": "2021-02-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5307951#art-43#p1",
+     "quote": "Aholi punktining bosh rejasi muqobil bosh reja deb topilgan taqdirda, tashabbuskorga uni ishlab chiqish bilan bogʻliq xarajatlarning oʻrni ushbu bosh rejaning buyurtmachisi tomonidan qoplanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:5307951#art-43#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "43-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "43-modda. Aholi punktining muqobil bosh rejasini ishlab chiqish tartibi\nAholi punktining muqobil bosh rejasi aholi punktining taklif etilgan bosh rejasidan norozi boʻlgan jamoatchilik nazorati subyektlarining tashabbusiga koʻra va ularning mablagʻlari hisobidan bajariladigan loyihaviy, ilmiy ishlanmadan iborat.\nAholi punkti muqobil bosh rejasining tashabbuskori mahalliy ijro etuvchi hokimiyat organiga oʻz aholi punktining bosh rejasini muqobil bosh reja deb topish toʻgʻrisida yozma ariza bilan murojaat qiladi.\nMahalliy ijro etuvchi hokimiyat organi yozma arizani olganidan keyin aholi punkti bosh rejasining tayyorlik darajasini hisobga olgan holda, uni muqobil bosh reja deb topish hamda jamoatchilik ekspertizasiga va jamoatchilik muhokamalariga taqdim etish yoki uni asoslangan holda rad etish haqida qaror qabul qiladi.\nAholi punktining bosh rejasini muqobil bosh reja deb topishni rad etish toʻgʻrisidagi qaror ustidan ushbu Kodeksning 39-moddasida nazarda tutilgan tartibda shikoyat qilinishi mumkin.\nAholi punktining muqobil bosh rejasini ishlab chiqish, ekspertiza qilish, kelishib olish va uning jamoatchilik muhokamasi ushbu Kodeksda belgilangan tartibda amalga oshiriladi.\nAholi punktining bosh rejasi muqobil bosh reja deb topilgan taqdirda, tashabbuskorga uni ishlab chiqish bilan bogʻliq xarajatlarning oʻrni ushbu bosh rejaning buyurtmachisi tomonidan qoplanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:5307951#art-40#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "40-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "40-modda. Aholi punktlari bosh rejalarining jamoatchilik ekspertizasi\nAholi punktlari bosh rejalarining jamoatchilik ekspertizasi ushbu rejalarning yuridik va jismoniy shaxslar huquqlari hamda qonuniy manfaatlariga, jamiyat va davlat manfaatlariga muvofiqligi yuzasidan oʻrganilishini hamda baholanishini nazarda tutadi.\nAholi punktlari bosh rejalarining jamoatchilik ekspertizasi jamoatchilik nazorati subyektlarining tashabbusiga koʻra va jamoatchilik muhokamasini oʻtkazuvchi shaharsozlik faoliyati sohasidagi davlat boshqaruvi organlariga jamoatchilik ekspertizasini oʻtkazish zaruratini asoslagan holda bergan arizasi asosida oʻtkaziladi.\nAholi punktlari bosh rejalarining jamoatchilik ekspertizasini oʻtkazishga doir ariza jamoatchilik muhokamasi oʻtkazilganidan keyin oʻn besh kun ichida shaharsozlik faoliyati sohasidagi davlat boshqaruvi organlari tomonidan qabul qilinadi.\nJamoatchilik ekspertizasi jamoatchilik asosida, jamoatchilik nazorati subyektlarining mablagʻlari, homiylik mablagʻlari yoki qonun hujjatlarida taqiqlanmagan boshqa mablagʻlar hisobidan amalga oshiriladi.\nAholi punktlari bosh rejalarining jamoatchilik ekspertizasi natijalari boʻyicha yakuniy hujjat tayyorlanib, u shaharsozlik faoliyati sohasidagi davlat boshqaruvi organiga va buyurtmachiga taqdim etiladi.",
+     "retrieval_score": 0.818,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5130468#band-4#p1",
+     "doc_id": "lex:-5130468",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining farmoni Oʻzbekiston Respublikasi qurilish tarmogʻini modernizatsiya qilish, jadal va innovatsion rivojlantirishning 2021 — 2025-yillarga moʻljallangan strategiyasini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5130468",
+     "article": "4-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-11-28",
+     "text": "4. Shunday tartib oʻrnatilsinki, unga muvofiq 2021-yil 1-yanvardan boshlab qurilish ustidan jamoat nazoratini taʼminlash maqsadida:\na) aholi punktlarining bosh rejalari jamoat muhokamasi natijalarini hisobga olgan holda tasdiqlanadi. Bunda aholi punktlari bosh rejalarining jamoat muhokamasi quyidagi tartibda amalga oshiriladi:\nI bosqich — fuqarolarni jamoat muhokamasini oʻtkazish muddatlari, joyi va tartibi bilan tanishtirish;\nII bosqich — aholi punkti bosh rejasining loyihasi boʻyicha jamoat muhokamalarini (yashovchilar, yerdan foydalanuvchilar va koʻchmas mulk obyektlari mulkdorlarining muhokamalari, ijtimoiy soʻrovlari, fikrlarini toʻplash va boshqa usullar) oʻtkazish;\nIII bosqich — jamoat muhokamasining qayd etilgan natijalari asosida jamoat fikrini tahlil qilish;\nIV bosqich — jamoat muhokamasi natijalari haqida ommaviy axborot vositalari, shu jumladan internet tarmogʻi orqali aholini xabardor qilish;\nb) aholi punktlari bosh rejalarining yuridik va jismoniy shaxslarning huquqlari va qonuniy manfaatlari, jamiyat va davlat manfaatlariga muvofiqligi yuzasidan jamoat ekspertizasini amalga oshirish imkoniyati joriy etiladi;\nv) aholi punktining taklif etilgan bosh rejasidan norozi boʻlgan jamoat nazorati subyektlarining tashabbusiga koʻra aholi punktining muqobil bosh rejasini ishlab chiqish yoki unga oʻzgartirish (tuzatish) kiritish mexanizmi joriy etiladi;",
+     "retrieval_score": 0.464,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:5307951#art-41#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "41-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "41-modda. Jamoatchilik nazorati subyektlari tomonidan aholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflar kiritilishi\nAholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisida takliflar berish huquqi oʻz qonuniy manfaatlariga daxl qilinayotgan jamoatchilik nazorati subyektlariga taqdim etiladi.\nJamoatchilik nazorati subyektlarining aholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflari faqat uni amalga oshirish boshlanguniga qadar qabul qilinadi.\nAholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflar mahalliy ijro etuvchi hokimiyat organlariga yozma yoki elektron shaklda beriladi.\nMahalliy ijro etuvchi hokimiyat organi kelib tushgan taklifni oʻn besh kun ichida koʻrib chiqadi. Aholi punktining bosh rejasiga oid oʻzgartirishlarning jamoatchilik muhokamasini oʻtkazish zarurati boʻlmagan taqdirda, mahalliy ijro etuvchi hokimiyat organi arizachilarga jamoatchilik muhokamasini oʻtkazishni rad etishga doir asoslantirilgan javob yuboradi.",
+     "retrieval_score": 0.7544,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5307951#art-36#p11",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "36-modda",
+     "part": "11–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "36-modda. Shaharsozlik faoliyati sohasidagi jamoatchilik nazorati subyektlari va ularning huquqlari\nzarur hollarda, aholi punktining bosh rejasi tasdiqlanguniga qadar qonun hujjatlarida taqiqlanmagan mablagʻlar hisobiga uni jamoatchilik ekspertizasidan oʻtkazishni tashkil etish.\nJamoatchilik nazorati subyektlari qonun hujjatlariga muvofiq boshqa huquqlarga ham ega boʻlishi mumkin.",
+     "retrieval_score": 0.7133,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1788,
+    "retrieval_ms": 1627,
+    "rerank_ms": 0,
+    "generation_ms": 2824,
+    "total_ms": 6241
+   },
+   "usage": {
+    "input_tokens": 14529,
+    "output_tokens": 652,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar jamoatchilik nazorati subyektlari taklif etilgan bosh rejadan norozi boʻlib, muqobil bosh reja ishlab chiqishni tashabbus qilsa, ular buni qanday mablagʻlar hisobidan amalga oshiradilar va bosh reja muqobil deb topilganda ularning xarajatlari kim tomonidan qoplanadi?",
+    "search_queries": [
+     "Agar jamoatchilik nazorati subyektlari taklif etilgan bosh rejadan norozi boʻlib, muqobil bosh reja ishlab chiqishni tashabbus qilsa, ular qanday mablagʻ hisobidan buni amalga oshiradi va bosh reja muqobil deb topilganda ularning xarajatlari kim tomonidan qoplanadi?",
+     "Agar jamoatchilik nazorati subyektlari taklif etilgan bosh rejadan norozi boʻlib, muqobil bosh reja ishlab chiqishni tashabbus qilsa, ular buni qanday mablagʻlar hisobidan amalga oshiradilar va bosh reja muqobil deb topilganda ularning xarajatlari kim tomonidan qoplanadi?",
+     "muqobil bosh reja ishlab chiqish jamoatchilik nazorati subyektlari mablagʻlari",
+     "bosh reja muqobil deb topilganda xarajatlarni qoplash",
+     "jamoatchilik nazorati subyektlari bosh reja tashabbusi xarajatlar"
+    ],
+    "doc_hints": [
+     "Shaharsozlik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 609,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q017",
+   "status": "ok",
+   "answer": "Alohida muhofaza etiladigan tabiiy hududlar toʻgʻrisidagi qonunning 21-moddasiga koʻra, tabiat obyektlarini davlat hokimiyatining mahalliy idoralari tabiatni muhofaza etish boʻyicha davlat idoralari taqdimiga binoan davlat tabiat yodgorliklari deb eʼlon qiladilar [1]. Yer egalari va yerdan foydalanuvchilardan ular egallab turgan yer uchastkalarini tortib olmay turib ham obyekt davlat tabiat yodgorligi deb eʼlon qilinishiga yoʻl qoʻyiladi [2], biroq korxona, muassasa va tashkilotlar yodgorlik muhofaza qilinishini taʼminlamagan hollarda yodgorlik egallab turgan yer maydoni hamda unga tutash zarur hudud yer egalaridan va yerdan foydalanuvchilardan olib qoʻyilishi mumkin [3]. Bunday tadbirlarni amalga oshirish chogʻida davlat idoralari jamoat tashkilotlari bilan ayrim fuqarolarning takliflarini inobatga oladilar [4].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:2718",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alohida muhofaza etiladigan tabiiy hududlar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/2718",
+     "article": "21-modda",
+     "part": "1–7-qism",
+     "edition_date": "1993-05-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2718#art-21#p1",
+     "quote": "Tabiat obyektlarini davlat hokimiyatining mahalliy idoralari tabiatni muhofaza etish boʻyicha davlat idoralari taqdimiga binoan davlat tabiat yodgorliklari deb eʼlon qiladilar",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:2718",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alohida muhofaza etiladigan tabiiy hududlar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/2718",
+     "article": "21-modda",
+     "part": "1–7-qism",
+     "edition_date": "1993-05-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2718#art-21#p1",
+     "quote": "Yer egalari va yerdan foydalanuvchilardan ular egallab turgan yer uchastkalarini tortib olmay turib ham obyekt davlat tabiat yodgorligi deb eʼlon qilinishiga yoʻl qoʻyiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:2718",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alohida muhofaza etiladigan tabiiy hududlar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/2718",
+     "article": "34-modda",
+     "part": "1–4-qism",
+     "edition_date": "1993-05-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2718#art-34#p1",
+     "quote": "Korxona, muassasa va tashkilotlar davlat buyurtma qoʻriqxonalari hamda davlat tabiat yodgorliklari muhofaza qilinishini taʼminlamaydigan hollarda davlat buyurtma qoʻriqxonasi va davlat tabiat yodgorligi egallab turgan yer maydoni hamda muhofaza qilinishini taʼminlash uchun zarur unga tutash hudud yer egalaridan va yerdan foydalanuvchilardan olib qoʻyilishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:2718",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alohida muhofaza etiladigan tabiiy hududlar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/2718",
+     "article": "9-modda",
+     "part": "1–2-qism",
+     "edition_date": "1993-05-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2718#art-9#p1",
+     "quote": "Ana shu tadbirlarni amalga oshirish chogʻida davlat idoralari jamoat tashkilotlari bilan ayrim fuqarolarning takliflarini inobatga oladilar",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:2718#art-21#p1",
+     "doc_id": "lex:2718",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alohida muhofaza etiladigan tabiiy hududlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/2718",
+     "article": "21-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "1993-05-07",
+     "text": "21-modda. Davlat tabiat yodgorliklari\nEkologik, ilmiy, estetik, madaniy jihatdan noyob, oʻrnini toʻldirib boʻlmas, qimmatli, kelib chiqishi tabiiy boʻlgan obyektlar davlat tabiat yodgorliklari deb eʼlon qilinadi.\nTabiat obyektlarini davlat hokimiyatining mahalliy idoralari tabiatni muhofaza etish boʻyicha davlat idoralari taqdimiga binoan davlat tabiat yodgorliklari deb eʼlon qiladilar.\nYer egalari va yerdan foydalanuvchilardan ular egallab turgan yer uchastkalarini tortib olmay turib ham obyekt davlat tabiat yodgorligi deb eʼlon qilinishiga yoʻl qoʻyiladi.\nDavlat tabiat yodgorliklari joylashgan hududda ularni asrab qolishga tahdid etuvchi har qanday faoliyat taqiqlanadi.\nTabiat yodgorliklarini muhofaza etish tartibini taʼminlashga oid majburiyatlar bu yodgorliklar qaysi korxona, muassasa va tashkilot hududida boʻlsa, shu korxona, muassasa va tashkilot zimmasiga yuklanadi.\nTabiiy obyektni davlat tabiat yodgorligi deb eʼlon qilish toʻgʻrisida qaror chiqargan idora obyektni muhofaza ostiga oʻtkazish va muhofaza etish majburiyatini rasmiylashtirish ishlarini amalga oshiradi.\nAholi diniy maqsadlarda foydalanib turgan davlat tabiat yodgorliklari ularni muhofaza etish va obodonlashtirish ishlari oʻtkazish maqsadida davlat tabiat yodgorligini asrab qolish sharti bilan diniy tashkilotlarga yoki alohida shaxslarga foydalanish uchun yoxud ijaraga berilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:2718#art-34#p1",
+     "doc_id": "lex:2718",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alohida muhofaza etiladigan tabiiy hududlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/2718",
+     "article": "34-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "1993-05-07",
+     "text": "34-modda. Davlat buyurtma qoʻriqxonalari va davlat tabiat yodgorliklarini muhofaza qilish\nDavlat buyurtma qoʻriqxonalari va davlat tabiat yodgorliklarini muhofaza qilishni davlat buyurtma qoʻriqxonalari va davlat tabiat yodgorliklari qaysi korxona, muassasa va tashkilotning yer maydonida joylashgan boʻlsa, ana shu korxona, muassasa va tashkilot amalga oshiradi.\nBasharti davlat buyurtma qoʻriqxonasi yoki davlat tabiat yodgorligi tasarruf etish yoxud foydalanish uchun berilmagan yer maydonida joylashgan boʻlsa, u holda bunday qoʻriqxona yoki tabiat yodgorligini muhofaza qilishni u qaysi idoraning qaramogʻida boʻlsa, ana shu idora taʼminlaydi.\nKorxona, muassasa va tashkilotlar davlat buyurtma qoʻriqxonalari hamda davlat tabiat yodgorliklari muhofaza qilinishini taʼminlamaydigan hollarda davlat buyurtma qoʻriqxonasi va davlat tabiat yodgorligi egallab turgan yer maydoni hamda muhofaza qilinishini taʼminlash uchun zarur unga tutash hudud yer egalaridan va yerdan foydalanuvchilardan olib qoʻyilishi mumkin.\nAgar davlat tabiat yodgorligi muayyan yerdan foydalanuvchi, yer egasi yoki suvdan foydalanuvchiga birkitib qoʻyilmagan yer maydonida yoki suv obyektida joylashgan boʻlsa, ularning muhofaza qilinishi davlat hokimiyati va boshqaruvi mahalliy idoralari tomonidan taʼminlanadi.",
+     "retrieval_score": 0.9453,
+     "rerank_score": 0.8,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2718#art-9#p1",
+     "doc_id": "lex:2718",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alohida muhofaza etiladigan tabiiy hududlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/2718",
+     "article": "9-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1993-05-07",
+     "text": "9-modda. Alohida muhofaza etiladigan tabiiy hududlardan foydalanish va ularni muhofaza qilishni yoʻlga qoʻyishda jamoat tashkilotlari bilan fuqarolarning ishtiroki\nJamoat tashkilotlari oʻz ustavlariga muvofiq va ayrim fuqarolar alohida muhofaza etiladigan tabiiy hududlarni tashkil etish, ulardan foydalanish va ularni muhofaza qilishga oid tadbirlarni amalga oshirishda davlat idoralariga hamkorlik qiladilar.\nAna shu tadbirlarni amalga oshirish chogʻida davlat idoralari jamoat tashkilotlari bilan ayrim fuqarolarning takliflarini inobatga oladilar.",
+     "retrieval_score": 0.6443,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-152653#art-29#p9",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "29-modda",
+     "part": "9–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "29-modda. Yer uchastkasini saqlash vazifasi\ntabiatni muhofaza qilish talablariga rioya qilish yoki muayyan ishlarni bajarish, shu jumladan yer uchastkasidagi tuproq qatlamini, noyob oʻsimliklarni, davlat tabiat yodgorliklarini, shuningdek moddiy madaniy meros obyektlarini asrash.\nYer uchastkasini saqlash vazifasi qonunchilikda belgilangan boshqa majburiyatlar, cheklashlar yoki shartlar bilan ham taʼminlanishi mumkin.\nYer uchastkasini saqlash vazifasi shartlari uning huquqiy maqomiga kiritilib, davlat roʻyxatiga olinishi lozim va u yer uchastkasi boshqa shaxsga oʻtganida saqlab qolinadi.\nYer uchastkasini saqlash vazifasining tartibi qonunchilik bilan belgilanadi.",
+     "retrieval_score": 0.8616,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-152653#art-72#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "72-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "72-modda. Tabiatni muhofaza qilish maqsadlariga moʻljallangan yerlar\nTabiatni muhofaza qilish maqsadlariga moʻljallangan yerlar jumlasiga davlat qoʻriqxonalarining, majmua (landshaft) buyurtma qoʻriqxonalarining, tabiat bogʻlarining, davlat tabiat yodgorliklarining, ayrim tabiiy obyektlar hamda majmualarni saqlab qolish, takror koʻpaytirish va tiklash uchun moʻljallangan hududlarning, muhofaza etiladigan landshaftlarning, ayrim tabiiy resurslarni boshqarish uchun moʻljallangan hududlarning, davlat biosfera rezervatlarining, milliy bogʻlarning qonunchilikda belgilangan tartibda yuridik va jismoniy shaxslarga tabiatni muhofaza qilish maqsadlari uchun berilgan yerlari kiradi. Mazkur yerlarda ulardan ruxsat etilgan foydalanishning asosiy turlariga zid boʻlgan har qanday faoliyat taqiqlanadi.\nMuhofaza etiladigan tabiiy hududlarga salbiy taʼsirning oldini olish maqsadida davlat qoʻriqxonalari, buyurtma qoʻriqxonalar va davlat tabiat yodgorliklari atrofida ularning rejimiga rioya etilishini taʼminlashga zararli taʼsir etadigan xoʻjalik faoliyati va boshqa faoliyat cheklangan yoki taqiqlangan holda muhofaza zonalari tashkil etiladi.\nMilliy bogʻlarning yerlari jamoat ehtiyojlari uchun olib qoʻyilishiga yoʻl qoʻyilmaydi.\nTabiatni muhofaza qilish maqsadlariga moʻljallangan yerlardan foydalanish va ularni muhofaza qilish tartibi qonunchilikda belgilanadi.",
+     "retrieval_score": 0.8292,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2319,
+    "retrieval_ms": 1234,
+    "rerank_ms": 0,
+    "generation_ms": 4710,
+    "total_ms": 8264
+   },
+   "usage": {
+    "input_tokens": 13946,
+    "output_tokens": 1040,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Aholi yashaydigan joyda joylashgan obyekt tabiat yodgorligi deb eʼlon qilinmoqda. Uni qaysi organ qanday hujjat asosida bunday maqomga oʻtkazadi va bu yer uchastkasini olib qoʻyishga olib keladimi? Bunday qarorlar qabul qilinishida mahalliy aholining fikri qanday hisobga olinadi?",
+    "search_queries": [
+     "Aholi yashaydigan joyda tabiat yodgorligi deb eʼlon qilinadigan obyekt bor. Uni qaysi organ qanday hujjat asosida shunday maqomga oʻtkazadi va bu yer uchastkasini olib qoʻyishga olib keladimi? Bunday qarorlar qabul qilinishida mahalliy aholining fikri qanday hisobga olinadi?",
+     "Aholi yashaydigan joyda joylashgan obyekt tabiat yodgorligi deb eʼlon qilinmoqda. Uni qaysi organ qanday hujjat asosida bunday maqomga oʻtkazadi va bu yer uchastkasini olib qoʻyishga olib keladimi? Bunday qarorlar qabul qilinishida mahalliy aholining fikri qanday hisobga olinadi?",
+     "tabiat yodgorligi deb eʼlon qilish tartibi",
+     "alohida muhofaza etiladigan tabiiy hududlar tashkil etish toʻgʻrisidagi qaror",
+     "tabiat yodgorligi yer uchastkasini olib qoʻyish mahalliy aholi fikri"
+    ],
+    "doc_hints": [
+     "Alohida muhofaza etiladigan tabiiy hududlar toʻgʻrisidagi qonun",
+     "Yer kodeksi",
+     "Ekologiya va atrof-muhitni muhofaza qilish toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 665,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q018",
+   "status": "ok",
+   "answer": "Фуқаролик процесуал кодексининг 368-моддасига кўра, суд аризани ушбу Кодекснинг 366, 367-моддалари талаблари бузилган ҳолда берилган деб топса, аризани ва унга илова қилинган ҳужжатларни ундирувчига қайтаради ҳамда бу ҳақда ажрим чиқаради; ажрим, ариза ва илова қилинган ҳужжатлар ундирувчига ажрим чиқарилган кундан эътиборан беш кун ичида юборилади [1].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "368-modda",
+     "part": "1–4-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-368#p1",
+     "quote": "Ajrim, ariza va unga ilova qilingan hujjatlar undiruvchiga ajrim chiqarilgan kundan eʼtiboran besh kun ichida yuboriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-368#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "368-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "368-modda. Chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani qaytarish\nSud chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani qabul qilish haqidagi masalani hal etishda ariza ushbu Kodeksning 366, 367-moddalari talablari buzilgan holda berilganligini aniqlasa, arizani va unga ilova qilingan hujjatlarni undiruvchiga qaytaradi.\nSud arizani qaytarish toʻgʻrisida ajrim chiqaradi.\nAjrim, ariza va unga ilova qilingan hujjatlar undiruvchiga ajrim chiqarilgan kundan eʼtiboran besh kun ichida yuboriladi.\nArizani qaytarish uchun asos boʻlgan holatlar bartaraf etilganidan keyin undiruvchi sudga umumiy tartibda yangidan ariza bilan murojaat qilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3523891#art-253#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "253-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "253-modda. Chet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani qaytarish\nOʻzbekiston Respublikasining iqtisodiy sudi chet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani ish yuritishga qabul qilish haqidagi masalani hal etishda, u ushbu Kodeks 249 — 252-moddalarining talablari buzilgan holda taqdim etilganligini aniqlasa, ariza va unga ilova qilingan hujjatlarni oʻz ajrimi bilan qaytaradi.\nAjrim, ariza va unga ilova qilingan hujjatlar arizachiga yoki uning vakiliga ajrim chiqarilgan kundan eʼtiboran besh kun ichida yuboriladi.\nArizani qaytarish uchun asos boʻlgan holatlar bartaraf etilganidan keyin manfaatdor shaxs umumiy tartibda ariza bilan Oʻzbekiston Respublikasining iqtisodiy sudiga yangidan murojaat etishga haqli.\nChet davlat sudining yoki arbitrajining hal qiluv qarorlarini tan olish va ijroga qaratish toʻgʻrisidagi arizani qaytarish haqidagi ajrim ustidan shikoyat qilinishi (protest keltirilishi) mumkin. Ajrim bekor qilingan taqdirda, ariza iqtisodiy sudga dastlabki murojaat etilgan kunda berilgan deb hisoblanadi.",
+     "retrieval_score": 0.5438,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3517337#art-367#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "367-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-10-12",
+     "text": "367-modda. Chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizaga ilova qilinadigan hujjatlar\nChet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizaga, agar Oʻzbekiston Respublikasining xalqaro shartnomasida boshqacha qoida nazarda tutilmagan boʻlsa, quyidagi hujjatlar ilova qilinadi:\n1) chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) undiruvchi tan olinishi va ijroga qaratilishini iltimos qilayotgan hal qiluv qarorining chet davlat yoki Oʻzbekiston Respublikasining vakolatli organi tomonidan tasdiqlangan koʻchirma nusxasi;\n2) hal qiluv qarorining qonuniy kuchga kirganligi toʻgʻrisidagi rasmiy hujjat, agar bu qaror matnining oʻzidan kelib chiqmasa;\n3) hal qiluv qarori ilgari tegishli chet davlat hududida ijro etilgan boʻlsa, uning ijro etilganligi toʻgʻrisidagi hujjat;\n4) hal qiluv qarori oʻz zarariga chiqarilgan va protsessda ishtirok etmagan taraf ishni koʻrib chiqish vaqti va joyi toʻgʻrisida oʻz vaqtida hamda tegishli tarzda xabardor qilinganligiga oid hujjat;\n5) vakilning vakolatlarini tasdiqlovchi ishonchnoma yoki boshqa hujjat;",
+     "retrieval_score": 0.7622,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-366#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "366-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "366-modda. Chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish hamda ijroga qaratish toʻgʻrisidagi arizaning shakli va mazmuni\nChet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish hamda ijroga qaratish toʻgʻrisidagi ariza yozma shaklda beriladi va undiruvchi yoki uning vakili tomonidan imzolangan boʻlishi kerak.\nArizada quyidagilar koʻrsatilgan boʻlishi kerak:\n1) ariza berilayotgan sudning nomi;\n2) chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) nomi va joylashgan yeri;\n3) ishda ishtirok etuvchi shaxslarning familiyasi, ismi, otasining ismi (nomi), yashash joyi yoki turgan joyi (pochta manzili), shuningdek, agar ariza vakil tomonidan berilayotgan boʻlsa, vakilning familiyasi, ismi, otasining ismi, yashash joyi;\n4) undiruvchi eʼtirof etilishini va ijro etilishini iltimos qilayotgan chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarori haqidagi maʼlumotlar;\n5) chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish hamda ijroga qaratish toʻgʻrisida undiruvchining iltimosnomasi;\n6) ilova qilinayotgan hujjatlarning roʻyxati.\nArizada undiruvchining yoki uning vakilining telefonlari, fakslari raqamlari, elektron pochta manzili koʻrsatilgan boʻlishi mumkin.",
+     "retrieval_score": 0.7732,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-366#p10",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "366-modda",
+     "part": "10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "366-modda. Chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish hamda ijroga qaratish toʻgʻrisidagi arizaning shakli va mazmuni\nAriza undiruvchilarning soniga qarab koʻchirma nusxalari bilan birga sudga beriladi, bundan elektron hujjat tarzida yuboriladigan ariza mustasno.",
+     "retrieval_score": 0.936,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1699,
+    "retrieval_ms": 1549,
+    "rerank_ms": 0,
+    "generation_ms": 2705,
+    "total_ms": 5954
+   },
+   "usage": {
+    "input_tokens": 14676,
+    "output_tokens": 498,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Chet davlat sudining qarorini tan olishni soʻrab sudga ariza bergan boʻlsam, unda talab qilingan hujjatlar toʻliq boʻlmasa, sud arizani qancha muddat ichida qaytarib yuboradi?",
+    "search_queries": [
+     "Агар мен чет давлат судининг қарорини тан олишни сўраб судга ариза берган бўлсам-у, унда талаб қилинган ҳужжатлар тўлиқ бўлмаса, суд аризани менга қанча муддат ичида қайтариб юборади?",
+     "Chet davlat sudining qarorini tan olishni soʻrab sudga ariza bergan boʻlsam, unda talab qilingan hujjatlar toʻliq boʻlmasa, sud arizani qancha muddat ichida qaytarib yuboradi?",
+     "chet davlat sudining qarorini tan olish toʻgʻrisidagi ariza",
+     "arizani qaytarish muddati hujjatlar toʻliq boʻlmagan taqdirda",
+     "chet davlat sudi qarorini tan olish tartibi"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 704,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q019",
+   "status": "ok",
+   "answer": "Masʼuliyati cheklangan jamiyatlar toʻgʻrisidagi qonunning 52-moddasiga koʻra, aktivlarining balans qiymati bazaviy hisoblash miqdorining yuz ming baravaridan koʻp boʻlgan va davlat ulushi ellik foiz va undan ortiq boʻlgan jamiyatda ichki audit xizmati tashkil etiladi [1]. Shu bilan birga, Prezidentning 2022-yil 9-noyabrdagi qarori bilan 2022-yil 1-dekabrdan boshlab aynan shu shartlarga javob bergan masʼuliyati cheklangan jamiyatlar uchun ichki audit xizmatini tashkil etish talabi bekor qilingan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.75,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-8151376",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni masʼuliyati cheklangan jamiyatlar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-8151376",
+     "article": "52-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-8151376#art-52#p1",
+     "quote": "Aktivlarining balans qiymati bazaviy hisoblash miqdorining yuz ming baravaridan koʻp boʻlgan, davlat ulushi ellik foiz va undan ortiq boʻlgan jamiyatda ichki audit xizmati tashkil etiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6277776",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori korporativ munosabatlarning huquqiy asoslarini yanada takomillashtirish chora-tadbirlari toʻgʻrisida",
+     "doc_type": "prezident_qarori",
+     "url": "https://lex.uz/docs/-6277776",
+     "article": "1-band",
+     "part": null,
+     "edition_date": "2022-11-09",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6277776#band-1#p1",
+     "quote": "masʼuliyati cheklangan jamiyatlar, bundan aktivlarining balans qiymati bazaviy hisoblash miqdorining yuz ming barobaridan koʻp boʻlgan, davlat ulushi 50 foiz va undan ortiq boʻlgan masʼuliyati cheklangan jamiyat, shuningdek, kredit tashkiloti mustasno;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-8151376#art-52#p1",
+     "doc_id": "lex:-8151376",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni masʼuliyati cheklangan jamiyatlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8151376",
+     "article": "52-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-21",
+     "text": "52-modda. Ichki audit xizmati\nAktivlarining balans qiymati bazaviy hisoblash miqdorining yuz ming baravaridan koʻp boʻlgan, davlat ulushi ellik foiz va undan ortiq boʻlgan jamiyatda ichki audit xizmati tashkil etiladi. Kredit tashkiloti boʻlgan jamiyatda ichki audit xizmati nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisidagi qonunchilikka muvofiq tashkil etiladi. Jamiyatning kuzatuv kengashi ichki audit xizmatini tashkil etadi va uning xodimlarini tayinlaydi. Ichki audit xizmati jamiyatning kuzatuv kengashiga hisobdordir.\nIchki audit xizmati jamiyatning ijro etuvchi organi, vakolatxonalari va filiallari tomonidan qonunchilikka, taʼsis hujjatlariga va boshqa hujjatlarga rioya etilishini, buxgalteriya hisobi va moliyaviy hisobotlarda maʼlumotlarning toʻliq hamda toʻgʻri aks ettirilishi taʼminlanishini, xoʻjalik operatsiyalarini amalga oshirishning belgilangan qoidalari va tartib-taomillariga rioya etilishini, aktivlarning saqlanishini, shuningdek jamiyatni boshqarish yuzasidan qonunchilikda belgilangan talablarga rioya etilishini tekshirish va bu borada monitoring olib borish orqali jamiyatning ijro etuvchi organi, vakolatxonalari va filiallari hamda shuʼba va qaram xoʻjalik jamiyatlari ishini nazorat qiladi hamda baholaydi.",
+     "retrieval_score": 0.691,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6277776#band-1#p1",
+     "doc_id": "lex:-6277776",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori korporativ munosabatlarning huquqiy asoslarini yanada takomillashtirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6277776",
+     "article": "1-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-11-09",
+     "text": "1. 2022-yil 1-dekabrdan boshlab tijorat tashkilotlari faoliyatiga oid quyidagi talablar bekor qilinsin:\na) quyidagi tashkilotlarga nisbatan ichki audit xizmatlarini tashkil etish:\nmasʼuliyati cheklangan jamiyatlar, bundan aktivlarining balans qiymati bazaviy hisoblash miqdorining yuz ming barobaridan koʻp boʻlgan, davlat ulushi 50 foiz va undan ortiq boʻlgan masʼuliyati cheklangan jamiyat, shuningdek, kredit tashkiloti mustasno;\naktivlarining balans qiymati bazaviy hisoblash miqdorining yuz ming barobaridan kam boʻlgan, davlat ulushi 50 foiz va undan ortiq boʻlgan aksiyadorlik jamiyatlari va davlat unitar korxonalari;\nb) masʼuliyati cheklangan jamiyatning taʼsis shartnomasini davlat roʻyxatidan oʻtkazish;\nv) masʼuliyati cheklangan jamiyatning yuridik shaxs hisoblangan ishtirokchilari vakillariga umumiy yigʻilishda ishtirok etish uchun beriladigan ishonchnomani notarial tartibda tasdiqlash;\ng) masʼuliyati cheklangan jamiyatda zaxira jamgʻarmasi tashkil etilganda, uning miqdorini ustav fondining (ustav kapitalining) kamida 15 foizi etib belgilash.",
+     "retrieval_score": 0.5744,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:5307886#art-35#p1",
+     "doc_id": "lex:5307886",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni auditorlik faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/5307886",
+     "article": "35-modda",
+     "part": "1–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-08-22",
+     "text": "35-modda. Majburiy auditorlik tekshiruvi\nQuyidagi tashkilotlar har yili majburiy auditorlik tekshiruvidan oʻtishi lozim:\naksiyadorlik jamiyatlari;\nbanklar va boshqa kredit tashkilotlari;\nsugʻurta tashkilotlari;\nqishloq xoʻjaligi kooperativlari;\ninvestitsiya fondlari hamda yuridik va jismoniy shaxslarning mablagʻlarini jamlovchi boshqa fondlar hamda ularning investitsiya aktivlarini ishonchli boshqaruvchilari;\nmanbalari yuridik va jismoniy shaxslarning ajratmalaridan iborat boʻlgan xayriya, jamoat fondlari va boshqa fondlar (bundan bir kalendar yilda bank hisobvaraqlarida pul aylanmasi mavjud boʻlmagan jamoat fondlari mustasno);\nustav fondida (ustav kapitalida) davlatga tegishli ulushga ega boʻlgan xoʻjalik yurituvchi subyektlar;\nbirjalar;\nhisobot yili yakunlariga koʻra quyidagi shartlardan bir vaqtning oʻzida ikkitasiga javob bergan tijorat tashkilotlari: aktivlarining balans qiymati bazaviy hisoblash miqdorining yuz ming baravari miqdoridan ortiq, mahsulotlarni (ishlarni, xizmatlarni) realizatsiya qilishdan olingan tushumi bazaviy hisoblash miqdorining ikki yuz ming baravari miqdoridan ortiq, xodimlarining oʻrtacha yillik soni yuz nafardan ortiq boʻlsa.\nQuyidagi shartlarga muvofiq boʻlgan auditorlik tashkilotlarining ushbu moddaning birinchi qismida koʻrsatilgan tashkilotlarning majburiy auditorlik tekshiruvini oʻtkazishiga yoʻl qoʻyiladi:",
+     "retrieval_score": 0.917,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:5307886#art-45#p1",
+     "doc_id": "lex:5307886",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni auditorlik faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/5307886",
+     "article": "45-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-25",
+     "text": "45-modda. Auditorlar ishi sifatining ichki nazorati\nAuditorlar ishi sifatining ichki nazorati auditorlik tashkiloti tomonidan amalga oshiriladigan, uning auditorlari va xodimlari tomonidan ushbu Qonun talablariga rioya etilishini taʼminlovchi tartib-taomillarga asoslangan tashkiliy chora-tadbirlar tizimidan iboratdir.\nAuditorlar ishi sifatining ichki nazorati auditorlik tashkiloti tomonidan auditorlik faoliyati standartlariga binoan amalga oshiriladi va u auditorlik xizmatlari koʻrsatish chogʻidagi majburiy shartdir.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5307886#art-29#p10",
+     "doc_id": "lex:5307886",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni auditorlik faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/5307886",
+     "article": "29-modda",
+     "part": "10–16-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-01-21",
+     "text": "29-modda. Auditorlik tashkilotining majburiyatlari\nauditorlik tekshiruvini oʻtkazishga doir auditning xalqaro standartlari talablari toʻgʻrisidagi, auditorning eʼtirozlariga asos boʻlgan qonunchilik hujjatlari normalari haqidagi axborotni xoʻjalik yurituvchi subyektning soʻroviga binoan taqdim etishi;\nauditorlik xizmatlarini koʻrsatish chogʻida olingan axborotning maxfiyligini taʼminlashi;\nauditorlik tekshiruvi natijalarini auditorlik faoliyati standartlariga muvofiq rasmiylashtirishi va auditorlik xulosalarining nusxalarini auditorlik tashkilotida kamida besh yil saqlashi;\noʻtkazilgan majburiy auditorlik tekshiruvlari toʻgʻrisidagi axborotni xoʻjalik yurituvchi subyektning identifikatsiya maʼlumotlarini va auditorlik xulosasini koʻrsatgan holda oʻz rasmiy veb-saytlariga yoki auditorlar respublika jamoat birlashmalarining rasmiy veb-saytlariga joylashtirishi;\nauditorlik tashkilotlari renkingini oʻtkazish uchun axborot taqdim etishi;\nbuxgalteriya hisobi toʻgʻrisidagi qonunchilikning aniqlangan buzilishlari toʻgʻrisida yoki korrupsiyaga oid huquqbuzarliklarni aniq tasdiqlovchi faktlar haqida xoʻjalik yurituvchi subyektning rahbariyatini va korporativ boshqaruv uchun masʼul boʻlgan shaxslarni, audit qoʻmitasini yozma shaklda xabardor qilishi;\nauditorlar ishi sifatining ichki nazorat tizimini oʻrnatishi va unga rioya etishi;",
+     "retrieval_score": 0.9001,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1972,
+    "retrieval_ms": 1477,
+    "rerank_ms": 0,
+    "generation_ms": 2500,
+    "total_ms": 5951
+   },
+   "usage": {
+    "input_tokens": 12569,
+    "output_tokens": 637,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Masʼuliyati cheklangan jamiyatda davlat ulushi qancha boʻlganda va aktivlarining balans qiymati qanday chegaradan oshganda ichki audit xizmatini tashkil etish majburiy hisoblanadi?",
+    "search_queries": [
+     "MChJda davlat ulushi qancha boʻlsa va aktivlarining balans qiymati qanday chegaradan oshsa, ichki audit xizmati tashkil etilishi shart?",
+     "Masʼuliyati cheklangan jamiyatda davlat ulushi qancha boʻlganda va aktivlarining balans qiymati qanday chegaradan oshganda ichki audit xizmatini tashkil etish majburiy hisoblanadi?",
+     "ichki audit xizmati tashkil etish majburiyati",
+     "davlat ulushi aktivlarning balans qiymati ichki audit",
+     "ichki audit xizmati tashkil etilishi shart boʻlgan holatlar"
+    ],
+    "doc_hints": [
+     "Masʼuliyati cheklangan va qoʻshimcha masʼuliyatli jamiyatlar toʻgʻrisidagi qonun",
+     "Auditorlik faoliyati toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 711,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q020",
+   "status": "no_answer",
+   "answer": "Mars sayyorasidagi yer uchastkalariga egalik huquqini rasmiylashtirish masalasi taqdim etilgan qonunchilikda tartibga solinmagan, chunki Oʻzbekiston Respublikasining yer kodeksi va boshqa kodekslar faqat Oʻzbekiston hududidagi yerga oid munosabatlarni qamrab oladi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-152653#art-22#p3",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "22-modda",
+     "part": "3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "22-modda. Yer uchastkasiga boʻlgan huquqning boshqa shaxsga oʻtishi\nUy-joy, korxona, bino, inshoot, koʻp yillik dov-daraxtlar yoki boshqa koʻchmas mulk band etgan yer uchastkasiga doimiy egalik qilish, meros qilib qoldiriladigan umrbod egalik qilish, undan doimiy foydalanish va ijara huquqining boshqa shaxsga oʻtishi mulkdorlarning yoki ular vakolat bergan organlar hamda shaxslarning tegishli shartnomalari, qarorlari asosida Koʻchmas mulk obyektlariga boʻlgan huquqlarning davlat reyestriga yerning yangi egasi yoki yerdan yangi foydalanuvchi yoxud yangi ijaraga oluvchi toʻgʻrisidagi maʼlumotlarni kiritish hamda yer uchastkasiga doimiy egalik qilish, undan doimiy foydalanish, ijara (ijara shartnomasining amal qilish muddatiga) yoki yer uchastkasiga meros qilib qoldiriladigan umrbod egalik qilish huquqini belgilangan tartibda davlat roʻyxatidan oʻtkazish yoʻli bilan rasmiylashtiriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-152653#art-33#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "33-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "33-modda. Yer uchastkasiga boʻlgan huquqni tasdiqlovchi hujjatlar\nKoʻchmas mulk obyektlariga boʻlgan huquqlarning davlat reyestridan elektron koʻchirma yer uchastkasiga boʻlgan huquqni tasdiqlovchi hujjatdir.\nKoʻchmas mulk obyektlariga boʻlgan huquqlarning davlat reyestridan elektron koʻchirma yer uchastkasiga boʻlgan mulk huquqini beruvchi davlat orderi, viloyat va Toshkent shahar hokimining yer uchastkasini doimiy foydalanishga berish toʻgʻrisidagi qarori, ijara shartnomasi, yer uchastkasi berilgan (ajratilgan) paytdagi qonunchilikka muvofiq yer uchastkasini berish (ajratish) vakolatiga ega boʻlgan tashkilotlar va mansabdor shaxslarning hujjatlari, Kadastr agentligining Davlat kadastrlari palatasi boʻlinmalarining yer uchastkasini boʻlish haqidagi hujjatlari, sud qarori, oldi-sotdi shartnomasi, mulkdorlarning yoki ular vakolat bergan shaxslarning qarori asosida beriladi.\nYer uchastkasiga boʻlgan huquq ushbu huquq belgilangan tartibda davlat roʻyxatiga olinganidan keyin kuchga kiradi.",
+     "retrieval_score": 0.9384,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-152653#art-35#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "35-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "35-modda. Yer uchastkalariga boʻlgan huquqlarni davlat roʻyxatiga olish\nYuridik va jismoniy shaxslarning yer uchastkalariga boʻlgan huquqlari davlat roʻyxatiga olinishi kerak.\nYer uchastkalariga boʻlgan huquqlarni davlat roʻyxatiga olish yer uchastkalari joylashgan yerda amalga oshiriladi. Koʻchmas mulk obyektlariga boʻlgan huquqlarning davlat reyestriga quyidagilar kiritiladi:\n1) yer uchastkasiga boʻlgan huquqni olgan shaxs toʻgʻrisidagi maʼlumotlar;\n2) yer uchastkasining tavsifi (yerlarning toifasi, ruxsat etilgan foydalanishning asosiy turi, maydonining turi, sathi, birgalikda egalik qilish yoki foydalanish ulushi, chegaralari, kadastr tartib raqami va boshqa tavsifnomalari);\n3) yer uchastkasi berish toʻgʻrisidagi shartnoma talablariga, yer uchastkasini saqlash vazifalari va servitutlarga oid maʼlumotlar;\n4) viloyatlar va Toshkent shahar hokimlarining yer uchastkasini jamoat ehtiyojlari uchun doimiy foydalanishga berish haqidagi qarorlari;\n5) qonunchilikda belgilangan boshqa maʼlumotlar.\nYuridik va jismoniy shaxslarning yer uchastkalariga boʻlgan huquqlarini davlat roʻyxatiga olish yer uchastkalariga boʻlgan huquqlar toʻgʻrisidagi zarur hujjatlar ham ilova etilgan ariza kelib tushgan paytdan eʼtiboran oʻn kunlik muddatda tegishli vakolatli organ tomonidan amalga oshiriladi, qonunchilikda nazarda tutilgan hollar bundan mustasno.",
+     "retrieval_score": 0.8021,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-152653#art-35#p9",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "35-modda",
+     "part": "9–13-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "35-modda. Yer uchastkalariga boʻlgan huquqlarni davlat roʻyxatiga olish\nYer uchastkalariga boʻlgan huquqlar davlat roʻyxatiga olinganligi toʻgʻrisida Koʻchmas mulk obyektlariga boʻlgan huquqlarning davlat reyestridan elektron koʻchirma beriladi.\nYer uchastkasiga boʻlgan huquqni davlat roʻyxatiga olishni rad etish uchun quyidagilar asos boʻladi:\ndavlat roʻyxatiga olish organida mazkur yer uchastkasi kimga tegishli ekanligi toʻgʻrisida nizo borligidan dalolat beruvchi hujjatlar mavjudligi;\ndavlat roʻyxatiga olish organida mazkur yer uchastkasi qonunda belgilangan tartibda olib qoʻyilganligi toʻgʻrisida maʼlumotlar mavjudligi.\nYer uchastkalariga boʻlgan huquqlarni davlat roʻyxatiga olish tartibi qonunchilik bilan belgilanadi.",
+     "retrieval_score": 0.9357,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111189#art-173#p4",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "173-modda",
+     "part": "4–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-10-25",
+     "text": "173-modda. Oʻzganing yer uchastkasidan cheklangan tarzda foydalanish (servitut) huquqi\nServitut belgilashni talab qilayotgan shaxs bilan oʻzga yer uchastkasining egasi oʻrtasidagi bitimga muvofiq servitut belgilanadi va u koʻchmas mulkka boʻlgan huquqlarni roʻyxatdan oʻtkazish uchun belgilangan tartibda roʻyxatdan oʻtkazilishi lozim. Servitutni belgilash xususida kelisha olinmasa yoki uning shartlarida murosaga kelinmasa, bahs servitut belgilashni talab qilayotgan shaxsning daʼvosi boʻyicha sud tomonidan hal etiladi. Jamoat ehtiyojlari uchun zarur boʻlgan hollarda servitut qonunga muvofiq tegishli davlat organi tomonidan belgilanishi mumkin (ommaviy servitut).\nUchastka meros qilib qoldiriladigan umrbod egalik qilish huquqi bilan berilgan yoki doimiy egalik qilish va foydalanish huquqi bilan berilgan shaxsning manfaatlari va talabi boʻyicha ham ushbu moddaning birinchi, ikkinchi, uchinchi va toʻrtinchi qismlarida nazarda tutilgan shartlarda va tartibda servitut belgilanishi mumkin.",
+     "retrieval_score": 0.9517,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1998,
+    "retrieval_ms": 1568,
+    "rerank_ms": 0,
+    "generation_ms": 2190,
+    "total_ms": 5757
+   },
+   "usage": {
+    "input_tokens": 12002,
+    "output_tokens": 342,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Mars sayyorasidagi yer uchastkasiga egalik huquqi qaysi organ tomonidan rasmiylashtiriladi?",
+    "search_queries": [
+     "Mars sayyorasida yer uchastkasiga egalik huquqi qaysi organ tomonidan rasmiylashtiriladi?",
+     "Mars sayyorasidagi yer uchastkasiga egalik huquqi qaysi organ tomonidan rasmiylashtiriladi?",
+     "yer uchastkasiga egalik huquqini rasmiylashtirish",
+     "yer uchastkasiga boʻlgan huquqlarni davlat roʻyxatidan oʻtkazish organi",
+     "yer uchastkasi mulk huquqini tasdiqlovchi hujjat beruvchi organ"
+    ],
+    "doc_hints": [
+     "Yer kodeksi",
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 792,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

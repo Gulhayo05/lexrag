@@ -196,6 +196,45 @@ class Checklist(unittest.TestCase):
         self.assertEqual(g.status_code, 200)
         self.assertEqual(g.json()["status"], "completed")
 
+    def test_10b_interrupted_batch_recovers(self):
+        """A batch left "processing" by a previous server process must not hang forever."""
+        from lexrag import store
+        b = batch(2, "b-interrupted")
+        req = api.BatchRequest(**b).model_dump(mode="json")
+        h = store.canonical_hash({k: req[k] for k in ("run_id", "batch_index", "total_batches", "options", "items")})
+        self.assertTrue(store.claim_batch("b-interrupted", "test-run", h)[0])
+        store.con().execute("UPDATE batches SET updated_at=? WHERE batch_id=?", (api._STARTED - 60, "b-interrupted"))
+        g = self.c.get("/v1/rag/batch/b-interrupted", headers=H)
+        self.assertEqual(g.status_code, 200)
+        self.assertEqual(g.json()["status"], "failed")
+        self.assertEqual(g.json()["error"]["code"], "INTERRUPTED")
+        self.assertTrue(g.json()["error"]["retryable"])
+        r = self.c.post("/v1/rag/batch", json=b, headers=H)
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.json()["status"], "completed")
+        self.assertEqual(self.c.get("/v1/rag/batch/b-interrupted", headers=H).json()["status"], "completed")
+        # a batch being processed right now (updated after start-up) is still reported as processing
+        self.assertTrue(store.claim_batch("b-live", "test-run", h)[0])
+        self.assertEqual(self.c.get("/v1/rag/batch/b-live", headers=H).status_code, 202)
+
+    def test_10c_min_rerank_score_opt_in(self):
+        """Default: top_k contexts.  With min_rerank_score: only reranked-relevant ones, cited kept."""
+        q = ["Yillik asosiy mehnat ta'tilining eng kam muddati qancha?"]
+        full = self.c.post("/v1/rag/batch", json=batch(1, "b-rr-off", q), headers=H).json()["results"][0]
+        self.assertEqual(len(full["contexts"]), 5)
+        b = batch(1, "b-rr-on", q, min_rerank_score=0.5)
+        res = self.c.post("/v1/rag/batch", json=b, headers=H).json()["results"][0]
+        self.assertGreaterEqual(len(res["contexts"]), 1)
+        self.assertLess(len(res["contexts"]), 5)
+        cited = {c["chunk_id"] for c in res["citations"]}
+        ctx = {c["chunk_id"] for c in res["contexts"]}
+        self.assertTrue(cited <= ctx)
+        for c in res["contexts"]:
+            self.assertTrue(c["rerank_score"] >= 0.5 or c["chunk_id"] in cited)
+        self.assertEqual([c["rank"] for c in res["contexts"]], list(range(1, len(res["contexts"]) + 1)))
+        bad = batch(1, "b-rr-bad", q, min_rerank_score=2)
+        self.assertEqual(self.c.post("/v1/rag/batch", json=bad, headers=H).status_code, 400)
+
     def test_11_meta_health(self):
         self.assertEqual(self.c.get("/v1/health").status_code, 200)
         m = self.c.get("/v1/meta").json()

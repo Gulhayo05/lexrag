@@ -1,0 +1,1070 @@
+{
+ "run_id": "final-v3",
+ "batch_id": "final-v3-b06",
+ "batch_index": 6,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.1.0",
+  "prompt_version": "p7",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125645,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-07T21:18:25+05:00",
+  "completed_at": "2026-11-07T21:18:32+05:00",
+  "total_ms": 7121
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q051",
+   "status": "ok",
+   "answer": "Davlat kadastrlarining axboroti Milliy geografik axborot tizimiga axborot xavfsizligi talablariga rioya etilgan holda, faqat telekommunikatsiya tarmoqlari orqali taqdim etiladi [1]. Davlat kadastrlarining yagona tizimiga kiritish uchun davlat kadastrlari axborotini taqdim etish tartibini Oʻzbekiston Respublikasi Vazirlar Mahkamasi belgilaydi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-29794",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat kadastrlari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-29794",
+     "article": "4-modda",
+     "part": "1–3-qism",
+     "edition_date": "2022-06-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-29794#art-4#p1",
+     "quote": "Davlat kadastrlarining axborotini Milliy geografik axborot tizimiga taqdim etish axborot xavfsizligi talablariga rioya etilgan holda, faqat telekommunikatsiya tarmoqlari orqali amalga oshiriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-29794",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat kadastrlari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-29794",
+     "article": "4-modda",
+     "part": "1–3-qism",
+     "edition_date": "2022-06-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-29794#art-4#p1",
+     "quote": "Davlat kadastrlarining yagona tizimiga kiritish uchun davlat kadastrlari axborotini taqdim etish tartibi Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-29794#art-4#p1",
+     "doc_id": "lex:-29794",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat kadastrlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-29794",
+     "article": "4-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-06-07",
+     "text": "4-modda. Davlat kadastrlari yagona tizimi\nDavlat kadastrlarining yagona tizimi Oʻzbekiston Respublikasi Milliy geografik axborot tizimida (bundan buyon matnda Milliy geografik axborot tizimi deb yuritiladi) shakllantiriladi hamda Oʻzbekiston Respublikasi va uning ayrim hududlari tabiiy-iqtisodiy salohiyatining yagona umumdavlat hisobi yuritilishini, baholanishini taʼminlash uchun moʻljallangan.\nDavlat kadastrlarining axborotini Milliy geografik axborot tizimiga taqdim etish axborot xavfsizligi talablariga rioya etilgan holda, faqat telekommunikatsiya tarmoqlari orqali amalga oshiriladi. Bunda davlat sirlari jumlasiga kiritilgan davlat kadastrlarining axborotini taqdim etish davlat sirlarini saqlash toʻgʻrisidagi qonunchilikka muvofiq amalga oshiriladi.\nDavlat kadastrlarining yagona tizimiga kiritish uchun davlat kadastrlari axborotini taqdim etish tartibi Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-29794#art-9#p1",
+     "doc_id": "lex:-29794",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat kadastrlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-29794",
+     "article": "9-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-06-07",
+     "text": "9-modda. Oʻzbekiston Respublikasi Vazirlar Mahkamasining davlat kadastrlarini yuritish sohasidagi vakolatlari\nOʻzbekiston Respublikasi Vazirlar Mahkamasi:\ndavlat kadastrlarining yagona davlat siyosatini amalga oshiradi, ularni takomillashtirishning ustuvor yoʻnalishlarini belgilaydi, moliyalashtirish va investitsiya masalalarini hal qiladi;\nDavlat kadastrlari yagona tizimini Milliy geografik axborot tizimida yuritish tartibini belgilaydi;\nDavlat kadastrlarining yagona tizimiga kiritish uchun davlat kadastrlari axborotini taqdim etish tartibini belgilaydi;\nkadastr obyektlariga boʻlgan huquqlarni davlat roʻyxatidan oʻtkazish, kadastrga doir axborotni foydalanuvchilarga taqdim etish tartibini belgilaydi;\nqonunchilikka muvofiq boshqa vakolatlarni amalga oshiradi.",
+     "retrieval_score": 0.8768,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-29794#art-10#p1",
+     "doc_id": "lex:-29794",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat kadastrlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-29794",
+     "article": "10-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "10-modda. Maxsus vakolatli organning davlat kadastrlarini yuritish sohasidagi vakolatlari\nKadastr agentligi Milliy geografik axborot tizimini va davlat kadastrlarini yuritish sohasidagi maxsus vakolatli organ hisoblanadi.\nKadastr agentligi:\nvazirliklar, idoralar va mahalliy ijro etuvchi hokimiyat organlarining davlat kadastrlarini yuritish sohasidagi faoliyatini muvofiqlashtiradi;\nDavlat kadastrlari yagona tizimini Milliy geografik axborot tizimida yuritadi;\nvazirliklar va idoralarni tegishli davlat kadastrlarini yuritish uchun zarur boʻlgan kartografiya materiallari bilan belgilangan tartibda taʼminlaydi;\ndavlat kadastrlari yuritilishiga doir normativ hujjatlarni belgilangan tartibda tasdiqlaydi;\nmutaxassislar tayyorlash va malakasini oshirish ishlarini tashkil etadi;\nqonunchilikka muvofiq boshqa vakolatlarni amalga oshiradi.",
+     "retrieval_score": 0.926,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1428,
+    "retrieval_ms": 429,
+    "rerank_ms": 0,
+    "generation_ms": 2615,
+    "total_ms": 4474
+   },
+   "usage": {
+    "input_tokens": 9782,
+    "output_tokens": 527,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Davlat kadastrlari maʼlumotlarini Milliy geografik axborot tizimiga qanday yoʻl bilan kiritish mumkin va bu tartibni kim tasdiqlaydi?",
+    "search_queries": [
+     "Davlat kadastrlari maʼlumotlarini Milliy geografik axborot tizimiga qanday yoʻl bilan kiritish mumkin va bu tartibni kim tasdiqlaydi?",
+     "davlat kadastrlari maʼlumotlarini Milliy geografik axborot tizimiga kiritish tartibi",
+     "Milliy geografik axborot tizimi maʼlumotlarini shakllantirish tartibi",
+     "davlat kadastrlari maʼlumotlarini axborot tizimiga kiritish"
+    ],
+    "doc_hints": [
+     "Davlat kadastrlari toʻgʻrisidagi qonun",
+     "Yer kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 508,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q052",
+   "status": "ok",
+   "answer": "Fuqarolik kodeksining 280-moddasiga koʻra, garovga oluvchining talabini garovga qoʻyilgan koʻchmas mol-mulk hisobidan sudga murojaat qilmasdan qondirishga, agar bu garov toʻgʻrisidagi shartnomada nazarda tutilgan boʻlsa yoxud undiruvni garov narsasiga qaratish uchun asoslar vujudga kelganidan keyin garovga oluvchining garovga qoʻyuvchi bilan tuzilgan, notarial tartibda tasdiqlangan kelishuvi asosida yoʻl qoʻyiladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "280-modda",
+     "part": "1–4-qism",
+     "edition_date": "2025-04-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-280#p1",
+     "quote": "garovga oluvchining garovga qoʻyuvchi bilan tuzilgan, notarial tartibda tasdiqlangan kelishuvi asosida yoʻl qoʻyiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111189#art-280#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "280-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-22",
+     "text": "280-modda. Undiruvni garovga qoʻyilgan mol-mulkka qaratish tartibi\nGarovga oluvchining (kreditorning) talablari garovga qoʻyilgan koʻchmas mol-mulk qiymatidan sudning qaroriga muvofiq qondiriladi.\nGarovga oluvchining talabini garovga qoʻyilgan koʻchmas mol-mulk hisobidan sudga murojaat qilmasdan qondirishga, agar bu garov toʻgʻrisidagi shartnomada nazarda tutilgan boʻlsa yoxud undiruvni garov narsasiga qaratish uchun asoslar vujudga kelganidan keyin garovga oluvchining garovga qoʻyuvchi bilan tuzilgan, notarial tartibda tasdiqlangan kelishuvi asosida yoʻl qoʻyiladi. Mazkur kelishuv tufayli huquqlari buzilgan shaxsning daʼvosiga koʻra bunday kelishuv sud tomonidan haqiqiy emas deb topilishi mumkin.\nAgar garovga qoʻyuvchining garovga oluvchi bilan kelishuvida boshqacha tartib nazarda tutilgan boʻlmasa, garovga oluvchining talablari garovga qoʻyilgan koʻchar mol-mulk hisobidan sud hujjatiga muvofiq qondiriladi. Agar qonunda boshqacha tartib belgilab qoʻyilgan boʻlmasa, undiruv garovga oluvchiga topshirilgan garov narsasiga garov toʻgʻrisidagi shartnomada belgilangan tartibda qaratilishi mumkin.\nUndiruv garov narsasiga quyidagi hollarda faqat sudning qaroriga muvofiq qaratilishi mumkin:",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-1448773#band-19#p1",
+     "doc_id": "lex:-1448773",
+     "doc_title": "Oʻzbekiston Respublikasi oliy sudi plenumining qarori fuqarolik kodeksini tatbiq qilishda sud amaliyotida vujudga keladigan ayrim masalalar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-1448773",
+     "article": "19-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2015-06-26",
+     "text": "19. Garovga oluvchining talabi boʻyicha undiruvni garovga qoʻyilgan koʻchmas mulkka qaratish sudning qarori asosida amalga oshiriladi va notariusning ijro yozuviga asosan amalga oshirilishi mumkin emas (FK 280-moddasi 1-qism).\nGarovga oluvchining talabini garovga qoʻyilgan koʻchmas mol-mulk hisobidan sudga murojaat qilmasdan qondirishga undiruvni garov narsasiga qaratish uchun asoslar vujudga kelganidan keyin garovga oluvchining garovga qoʻyuvchi bilan notarial tasdiqlangan kelishuvi asosida yoʻl qoʻyiladi.\nGarov shartnomasida garovga oluvchining undiruvni garovdagi mol-mulkka sudga daʼvo qoʻzgʻatmasdan qaratish huquqi koʻrsatilganligi haqiqiy emas deb topilishi lozim.",
+     "retrieval_score": 0.6257,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1523,
+    "retrieval_ms": 305,
+    "rerank_ms": 0,
+    "generation_ms": 2748,
+    "total_ms": 4577
+   },
+   "usage": {
+    "input_tokens": 11970,
+    "output_tokens": 411,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "FUQAROLIK KODEKSI Birinchi qismga koʻra, garovga qoʻyilgan koʻchmas mulk hisobidan qarzni sudga bormasdan qondirish uchun garovga oluvchi bilan garovga qoʻyuvchi oʻrtasidagi kelishuv qanday shaklda tuzilishi kerak?",
+    "search_queries": [
+     "FUQAROLIK KODEKSI Birinchi qismga koʻra, garovga qoʻyilgan koʻchmas mulk hisobidan qarzni sudga bormasdan qondirish uchun garovga oluvchi bilan garovga qoʻyuvchi oʻrtasidagi kelishuv qanday shaklda tuzilishi kerak?",
+     "garovga qoʻyilgan koʻchmas mulk hisobidan talablarni qondirish",
+     "garovga oluvchi va garovga qoʻyuvchi kelishuvi shakli",
+     "sudga bormasdan qarzni qondirish toʻgʻrisidagi kelishuv"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi",
+     "FUQAROLIK KODEKSi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 468,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q053",
+   "status": "ok",
+   "answer": "Qoʻriqlash faoliyati toʻgʻrisidagi qonunning 21-moddasiga koʻra, xizmat qurolidan foydalanish huquqiga ega boʻlmagan idoraviy harbiylashtirilgan qoʻriqlash hamda idoraviy qorovullik boʻlinmalarining ishchilari va xizmatchilari malakasini mustaqil ravishda oʻz boʻlinmalarida, shuningdek ixtiyoriy tartibda — shartnoma asosida Oʻzbekiston Respublikasi Ichki ishlar vazirligi va Milliy gvardiyasi taʼlim muassasalarining oʻquv kurslarida oshirishi mumkin [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6066682",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qoʻriqlash faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6066682",
+     "article": "21-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-05-20",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6066682#art-21#p1",
+     "quote": "xizmat qurolidan foydalanish huquqiga ega boʻlmagan idoraviy harbiylashtirilgan qoʻriqlash hamda idoraviy qorovullik boʻlinmalarining ishchilari va xizmatchilari — mustaqil ravishda oʻz boʻlinmalarida, shuningdek ixtiyoriy tartibda — shartnoma asosida Oʻzbekiston Respublikasi Ichki ishlar vazirligi va Milliy gvardiyasi taʼlim muassasalarining oʻquv kurslarida",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6066682#art-21#p1",
+     "doc_id": "lex:-6066682",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qoʻriqlash faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6066682",
+     "article": "21-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-05-20",
+     "text": "21-modda. Qoʻriqlash faoliyatini amalga oshiruvchi subyektlarning harbiy xizmatchilarini, xodimlarini, ishchilari va xizmatchilarini tayyorlash, qayta tayyorlash hamda ularning malakasini oshirish\nQoʻriqlash faoliyatini amalga oshiruvchi subyektlarning harbiy xizmatchilari, xodimlari, ishchilari va xizmatchilari quyidagi tartibda tayyorlash, qayta tayyorlash hamda malaka oshirish oʻquv kurslarida oʻquvdan oʻtadi:\ndavlat organlari qoʻriqlash boʻlinmalarining harbiy xizmatchilari, xodimlari, ishchilari va xizmatchilari — tegishli organlar tomonidan tasdiqlanadigan oʻquv dasturlari asosida;\nxizmat qurolidan foydalanish huquqiga ega boʻlgan idoraviy harbiylashtirilgan qoʻriqlash hamda idoraviy qorovullik boʻlinmalarining ishchilari va xizmatchilari — shartnoma asosida Oʻzbekiston Respublikasi Ichki ishlar vazirligining va Milliy gvardiyasining taʼlim muassasalarida hamda roʻyxati Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadigan boshqa taʼlim tashkilotlarida;\nxizmat qurolidan foydalanish huquqiga ega boʻlmagan idoraviy harbiylashtirilgan qoʻriqlash hamda idoraviy qorovullik boʻlinmalarining ishchilari va xizmatchilari — mustaqil ravishda oʻz boʻlinmalarida, shuningdek ixtiyoriy tartibda — shartnoma asosida Oʻzbekiston Respublikasi Ichki ishlar vazirligi va Milliy gvardiyasi taʼlim muassasalarining oʻquv kurslarida.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2045,
+    "retrieval_ms": 1266,
+    "rerank_ms": 0,
+    "generation_ms": 1474,
+    "total_ms": 4787
+   },
+   "usage": {
+    "input_tokens": 11322,
+    "output_tokens": 503,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Xizmat qurolidan foydalanish huquqiga ega boʻlmagan idoraviy qoʻriqlash boʻlinmasi xodimi malakasini qayerda oshirishi mumkin?",
+    "search_queries": [
+     "Xizmat qurolidan foydalanish huquqiga ega boʻlmagan idoraviy qoʻriqlash boʻlinmasi xodimi malakasini qayerda oshirishi mumkin?",
+     "idoraviy qoʻriqlash boʻlinmasi xodimi malakasini oshirish",
+     "xizmat qurolidan foydalanish huquqiga ega boʻlmagan qoʻriqlovchi",
+     "idoraviy qoʻriqlash xodimlarini tayyorlash va malakasini oshirish"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 429,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q054",
+   "status": "ok",
+   "answer": "Egasiz koʻchmas ashyo hisobga olinganidan keyin bir yil muddat oʻtgach, davlat mol-mulkini boshqarishga vakolati boʻlgan organ yoki fuqarolarning oʻzini oʻzi boshqarish organi bu ashyoni davlat mulkiga yoki fuqarolarning oʻzini oʻzi boshqarish organi mulkiga kirgan deb hisoblash toʻgʻrisidagi talab bilan sudga murojaat etishi mumkin [1]. Xuddi shu bir yillik muddat yer uchastkalarini kompensatsiya evaziga jamoat ehtiyojlari uchun olib qoʻyish toʻgʻrisidagi qonunning 28-moddasida ham nazarda tutilgan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "191-modda",
+     "part": "1–6-qism",
+     "edition_date": "2016-04-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-191#p1",
+     "quote": "Egasiz koʻchmas ashyo hisobga olinganidan keyin bir yil muddat oʻtgach, davlat mol-mulkini boshqarishga vakolati boʻlgan organ yoki fuqarolarning oʻzini oʻzi boshqarish organi bu ashyoni davlat mulkiga yoki fuqarolarning oʻzini oʻzi boshqarish organi mulkiga kirgan deb hisoblash toʻgʻrisidagi talab bilan sudga murojaat etishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6087433",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yer uchastkalarini kompensatsiya evaziga jamoat ehtiyojlari uchun olib qoʻyish tartib-taomillari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6087433",
+     "article": "28-modda",
+     "part": "1–3-qism",
+     "edition_date": "2022-02-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6087433#art-28#p1",
+     "quote": "Egasiz mol-mulk boʻlgan koʻchmas mulk obyekti hisobga qoʻyilgan kundan eʼtiboran bir yil oʻtgach, davlat mulkini boshqarishga vakolatli boʻlgan organ yoki fuqarolarning oʻzini oʻzi boshqarish organi bu koʻchmas mulk obyektini davlat mulkiga yoki fuqarolarning oʻzini oʻzi boshqarish organi mulkiga kiritilgan deb topish toʻgʻrisidagi talab bilan sudga murojaat qilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111189#art-191#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "191-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2016-04-25",
+     "text": "191-modda. Egasiz ashyo\nEgasi boʻlmagan yoki egasi nomaʼlum boʻlgan ashyo egasiz ashyo hisoblanadi.\nAgar bu hol topilma toʻgʻrisidagi, qarovsiz hayvonlar va xazina toʻgʻrisidagi qoidalarda rad etilmagan boʻlsa, egasiz koʻchar ashyolarga egalik qilish huquqini vujudga keltiruvchi muddat asosida qoʻlga kiritilishi mumkin.\nEgasiz koʻchmas ashyolar tegishli davlat organining yoki fuqarolar oʻzini oʻzi boshqarish organining arizasiga muvofiq koʻchmas mol-mulkni davlat roʻyxatiga oluvchi organ tomonidan hisobga olinadi.\nEgasiz koʻchmas ashyo hisobga olinganidan keyin bir yil muddat oʻtgach, davlat mol-mulkini boshqarishga vakolati boʻlgan organ yoki fuqarolarning oʻzini oʻzi boshqarish organi bu ashyoni davlat mulkiga yoki fuqarolarning oʻzini oʻzi boshqarish organi mulkiga kirgan deb hisoblash toʻgʻrisidagi talab bilan sudga murojaat etishi mumkin.\nSudning hal qiluv qaroriga binoan davlat mulkiga oʻtmagan deb hisoblangan egasiz koʻchmas ashyo uni tashlab ketgan mulkdorning egaligiga, foydalanishiga va tasarrufiga yana qabul qilinishi yoki egalik qilish huquqini vujudga keltiruvchi muddat asosida qoʻlga kiritilishi mumkin.\nEgasiz ashyolarni aniqlash va hisobga olish tartibi Oʻzbekiston Respublikasi Hukumati tomonidan belgilanadi.",
+     "retrieval_score": 0.8289,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6087433#art-28#p1",
+     "doc_id": "lex:-6087433",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yer uchastkalarini kompensatsiya evaziga jamoat ehtiyojlari uchun olib qoʻyish tartib-taomillari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6087433",
+     "article": "28-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-02-01",
+     "text": "28-modda. Olib qoʻyilgan yer uchastkasida joylashgan koʻchmas mulk obyektini egasiz mol-mulk deb topish tartibi\nOlib qoʻyilgan yer uchastkasida joylashgan koʻchmas mulk obyekti, agar uning mulkdori boʻlmasa (shu jumladan, agar koʻchmas mulk obyekti turar joy boʻlsa, doimiy yashash joyi boʻyicha roʻyxatga olingan fuqarolar) yoki uning mulkdori nomaʼlum boʻlsa, egasiz mol-mulk boʻladi.\nEgasiz mol-mulk boʻlgan koʻchmas mulk obyekti tegishli davlat organining yoki fuqarolar oʻzini oʻzi boshqarish organining arizasiga binoan koʻchmas mulkni davlat roʻyxatidan oʻtkazishni amalga oshiruvchi organ tomonidan hisobga olinadi.\nEgasiz mol-mulk boʻlgan koʻchmas mulk obyekti hisobga qoʻyilgan kundan eʼtiboran bir yil oʻtgach, davlat mulkini boshqarishga vakolatli boʻlgan organ yoki fuqarolarning oʻzini oʻzi boshqarish organi bu koʻchmas mulk obyektini davlat mulkiga yoki fuqarolarning oʻzini oʻzi boshqarish organi mulkiga kiritilgan deb topish toʻgʻrisidagi talab bilan sudga murojaat qilishi mumkin.",
+     "retrieval_score": 0.8158,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1875,
+    "retrieval_ms": 1370,
+    "rerank_ms": 0,
+    "generation_ms": 2914,
+    "total_ms": 6160
+   },
+   "usage": {
+    "input_tokens": 12870,
+    "output_tokens": 678,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Egasiz deb hisoblangan koʻchmas mulk obyekti hisobga olingandan keyin qancha vaqt oʻtgach, vakolatli organ yoki mahalla uni davlat yoki oʻz mulkiga oʻtkazishni sud orqali talab qilishi mumkin?",
+    "search_queries": [
+     "Egasiz deb hisoblangan koʻchmas mulk obyekti hisobga olingandan keyin qancha vaqt oʻtgach, vakolatli organ yoki mahalla uni davlat yoki oʻz mulkiga oʻtkazishni sud orqali talab qilishi mumkin?",
+     "egasiz deb hisoblangan koʻchmas mulk obyekti hisobga olingan",
+     "egasiz koʻchmas mulkni davlat mulkiga oʻtkazish sud tartibi",
+     "egasiz koʻchmas mulkni kommunal mulkka oʻtkazish muddati"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 495,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q055",
+   "status": "ok",
+   "answer": "Xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisidagi qonunning 12-moddasiga koʻra, deputatni daxlsizlik huquqidan mahrum qilishga rozilik olgan prokuror ish yuritish tamomlangan kundan eʼtiboran uch kunlik muddat ichida tegishli xalq deputatlari Kengashiga ishni tergov qilish, sudda koʻrib chiqish natijalari toʻgʻrisida xabar qilishi shart [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-436950",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-436950",
+     "article": "12-modda",
+     "part": "1–5-qism",
+     "edition_date": "2024-10-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-436950#art-12#p1",
+     "quote": "Deputatni daxlsizlik huquqidan mahrum qilishga rozilik olgan prokuror ish yuritish tamomlangan kundan eʼtiboran uch kunlik muddat ichida tegishli xalq deputatlari Kengashiga ishni tergov qilish, sudda koʻrib chiqish natijalari toʻgʻrisida xabar qilishi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-436950#art-12#p1",
+     "doc_id": "lex:-436950",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-436950",
+     "article": "12-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-10-19",
+     "text": "12-modda. Deputatni daxlsizlik huquqidan mahrum qilish tartibi\nDeputatni daxlsizlik huquqidan mahrum qilish toʻgʻrisidagi masala tegishincha viloyat, tuman, shahar prokurorining yoki yuqori turuvchi prokurorning taqdimnomasiga binoan xalq deputatlari Kengashi tomonidan oʻn kun ichida hal etiladi. Senator etib saylangan deputatni daxlsizlik huquqidan mahrum qilish masalasi “Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi deputatining va Senati aʼzosining maqomi toʻgʻrisida”gi Oʻzbekiston Respublikasi Qonunida belgilangan tartibda hal etiladi.\nDeputatni javobgarlikka tortishga rozilik olish toʻgʻrisida quyi prokuror tomonidan kiritilgan taqdimnomani yuqori turuvchi prokuror chaqirtirib olishi mumkin.\nDeputatni jinoiy javobgarlikka tortishga, ushlab turishga, qamoqqa olishga yoki unga nisbatan sud tartibida beriladigan maʼmuriy jazoni qoʻllashga rozilik olish toʻgʻrisidagi prokuror taqdimnomasi tegishli xalq deputatlari Kengashi tomonidan koʻrib chiqiladi.\nXalq deputatlari Kengashining deputatni daxlsizlik huquqidan mahrum qilishga rozilik berish masalasiga doir qarori darhol tegishli prokurorga yuboriladi.\nDeputatni daxlsizlik huquqidan mahrum qilishga rozilik olgan prokuror ish yuritish tamomlangan kundan eʼtiboran uch kunlik muddat ichida tegishli xalq deputatlari Kengashiga ishni tergov qilish, sudda koʻrib chiqish natijalari toʻgʻrisida xabar qilishi shart.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-436914#art-14#p4",
+     "doc_id": "lex:-436914",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasi deputatining va senati aʼzosining maqomi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-436914",
+     "article": "14-modda",
+     "part": "4–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-07-04",
+     "text": "14-modda. Deputatni va senatorni daxlsizlik huquqidan mahrum qilish tartibi\nDeputatni, senatorni daxlsizlik huquqidan mahrum qilishga rozilik olgan Oʻzbekiston Respublikasi Bosh prokurori ish yuritish tamomlangan kundan eʼtiboran uch kunlik muddat ichida Qonunchilik palatasiga yoki Senatga ishni tergov qilish, sudda koʻrib chiqish natijalari toʻgʻrisida xabar qilishi shart.\nOʻzbekiston Respublikasi Oliy Majlisi tegishli palatasining deputatni, senatorni daxlsizlik huquqidan mahrum qilishga rozilik berishni rad etishi unga nisbatan jinoyat ishini yuritishni yoki sud tartibida beriladigan maʼmuriy jazoni nazarda tutadigan maʼmuriy huquqbuzarlik toʻgʻrisidagi ishni yuritishni istisno etadigan va bunday ishlarni tugatishga sabab boʻladigan holat hisoblanadi. Tegishli ishni tugatish toʻgʻrisidagi qaror faqat yangi ochilgan holatlar mavjud boʻlgan taqdirda bekor qilinishi mumkin.",
+     "retrieval_score": 0.5892,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1872,
+    "retrieval_ms": 1545,
+    "rerank_ms": 0,
+    "generation_ms": 1398,
+    "total_ms": 4817
+   },
+   "usage": {
+    "input_tokens": 11806,
+    "output_tokens": 474,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Prokuror deputatni daxlsizlik huquqidan mahrum qilishga rozilik olgan boʻlsa, ish yuritish tugaganidan keyin qancha vaqt ichida xalq deputatlari Kengashiga ish natijalari haqida xabar berishi kerak?",
+    "search_queries": [
+     "Prokuror deputatni daxlsizlik huquqidan mahrum qilishga rozilik olgan boʻlsa, ish yuritish tugaganidan keyin qancha vaqt ichida xalq deputatlari Kengashiga ish natijalari haqida xabar berishi kerak?",
+     "deputat daxlsizlik huquqidan mahrum qilish prokuror roziligi",
+     "xalq deputatlari Kengashiga ish natijalari haqida xabar berish muddati",
+     "deputat daxlsizligi boʻyicha ish yuritish tugaganidan keyin xabar berish"
+    ],
+    "doc_hints": [
+     "Mahalliy davlat hokimiyati toʻgʻrisidagi qonun",
+     "Oʻzbekiston Respublikasi Konstitutsiyasi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 466,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q056",
+   "status": "ok",
+   "answer": "Oila kodeksining 164-moddasiga koʻra, zarur hollarda bolaning tugʻilgan sanasi bir yildan ortiq boʻlmagan farq bilan oʻzgartiriladi [1]. Tugʻilishni qayd etish bilan bir vaqtda otalikni belgilashda ota haqidagi maʼlumotlar ota-onaning birgalikdagi arizasi asosida yoziladi [2]. Tugʻilish qayd etilganidan keyin otalik ota-onaning arizasi, sudning hal qiluv qarori yoki otaning arizasiga asosan ota toʻgʻrisidagi maʼlumotlarni kiritish yoʻli bilan belgilanadi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "164-modda",
+     "part": "1–3-qism",
+     "edition_date": "2013-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-104720#art-164#p1",
+     "quote": "Zarur hollarda bolaning familiyasi, ismi, otasining ismigina emas, balki tugʻilgan sanasi ham bir yildan ortiq boʻlmagan farq bilan oʻzgartiriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "208-modda",
+     "part": "1-qism",
+     "edition_date": "1998-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-104720#art-208#p1",
+     "quote": "Agar ota-ona bolaning tugʻilishini qayd etish bilan bir vaqtda otalikni belgilash haqida birgalikda ariza bersalar, ota haqidagi maʼlumotlar berilgan ariza asosida yoziladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "209-modda",
+     "part": "1-qism",
+     "edition_date": "1998-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-104720#art-209#p1",
+     "quote": "Ota-onaning arizasi, sudning hal qiluv qarori, otaning arizasiga asosan (ona vafot etganda, uning turar joyini aniqlashning imkoniyati boʻlmaganda, muomalaga layoqatsiz deb topilganda, onalik huquqidan mahrum qilinganda) tugʻilish dalolatnomasi yozilgan joyda tugʻilish toʻgʻrisidagi yozuvlar daftariga ota toʻgʻrisidagi maʼlumotlarni kiritish yoʻli bilan otalik belgilanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-104720#art-164#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "164-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2013-04-30",
+     "text": "164-modda. Farzandlikka olishda tugʻilishni qayd etish daftariga oʻzgartirish kiritish\nSudning farzandlikka olish toʻgʻrisidagi hal qiluv qarori qonuniy kuchga kirgan kundan boshlab oʻn kun ichida fuqarolik holati dalolatnomalarini qayd etish organlari farzandlikka olinayotganning tugʻilishi qayd etilgan daftarga zarur oʻzgartirishlar kiritishi lozim.\nFarzandlikka oluvchilar bolaning tugʻilishi yozilgan daftarga, agar bu haqda sudning hal qiluv qarorida koʻrsatilgan boʻlsa, uning ota-onasi deb yozilishi kerak.\nZarur hollarda bolaning familiyasi, ismi, otasining ismigina emas, balki tugʻilgan sanasi ham bir yildan ortiq boʻlmagan farq bilan oʻzgartiriladi. Agar bola oʻn yoshdan oshmagan boʻlsa, tugʻilgan joyi ham Oʻzbekiston Respublikasi doirasida oʻzgartirilishi mumkin.",
+     "retrieval_score": 0.9994,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-104720#art-208#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "208-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1998-04-30",
+     "text": "208-modda. Tugʻilishni qayd etish bilan bir vaqtda otalikni belgilash\nAgar ota-ona bolaning tugʻilishini qayd etish bilan bir vaqtda otalikni belgilash haqida birgalikda ariza bersalar, ota haqidagi maʼlumotlar berilgan ariza asosida yoziladi, bolaga familiya ota-onaning kelishuviga binoan beriladi.",
+     "retrieval_score": 0.854,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-104720#art-209#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "209-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1998-04-30",
+     "text": "209-modda. Tugʻilish qayd etilganidan keyin otalik belgilanishi munosabati bilan oʻzgartishlar kiritish\nOta-onaning arizasi, sudning hal qiluv qarori, otaning arizasiga asosan (ona vafot etganda, uning turar joyini aniqlashning imkoniyati boʻlmaganda, muomalaga layoqatsiz deb topilganda, onalik huquqidan mahrum qilinganda) tugʻilish dalolatnomasi yozilgan joyda tugʻilish toʻgʻrisidagi yozuvlar daftariga ota toʻgʻrisidagi maʼlumotlarni kiritish yoʻli bilan otalik belgilanadi.",
+     "retrieval_score": 0.7536,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-104720#art-207#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "207-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "1998-04-30",
+     "text": "207-modda. Tugʻilish toʻgʻrisidagi yozuvlar daftariga bolaning ota-onasini yozish\nOʻzaro nikohda boʻlgan ota va onadan birining arizasiga koʻra tugʻilish toʻgʻrisidagi yozuvlar daftarida ular bolaning ota-onasi deb yoziladi.\nAgar ota-ona oʻzaro nikohda boʻlmasalar, bolaning onasi toʻgʻrisidagi yozuv onaning arizasiga koʻra, otasi toʻgʻrisidagi yozuv esa, bolaning otasi va onasining birgalikdagi arizasi boʻyicha yoxud sudning hal qiluv qaroriga asosan yoziladi. Ona vafot etgan yoki u muomalaga layoqatsiz deb topilgan yoxud onalik huquqidan mahrum etilganda, shuningdek onaning qayerda ekanligini aniqlash mumkin boʻlmaganda ota toʻgʻrisidagi yozuv otaning arizasiga koʻra vasiylik va homiylik organining roziligi bilan yoziladi.\nNikohda boʻlmagan onadan bola tugʻilganda ota-onaning birgalikdagi arizasi va otalikni belgilash toʻgʻrisida sudning hal qiluv qarori boʻlmasa, tugʻilish toʻgʻrisidagi yozuvlar daftarida otaning familiyasi onaning familiyasi boʻyicha, otaga tegishli ism, otasining ismi va millati — ona koʻrsatmasi boʻyicha yoziladi.\nAgar ota-onaning ikkalasi ham nomaʼlum boʻlsa, ota va ona haqidagi yozuvlar vasiylik va homiylik organi koʻrsatmasiga asosan yoziladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1985,
+    "retrieval_ms": 1112,
+    "rerank_ms": 0,
+    "generation_ms": 2744,
+    "total_ms": 5842
+   },
+   "usage": {
+    "input_tokens": 8532,
+    "output_tokens": 698,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oila kodeksiga koʻra, farzandlikka olingan bolaning tugʻilgan sanasini qancha farq bilan oʻzgartirish mumkin va otalikni belgilashda ota haqidagi maʼlumotlar qanday hujjat asosida yozuvlar daftariga kiritiladi?",
+    "search_queries": [
+     "Oila kodeksiga koʻra, farzandlikka olingan bolaning tugʻilgan sanasini qancha farq bilan oʻzgartirish mumkin va otalikni belgilashda ota haqidagi maʼlumotlar qanday hujjat asosida yozuvlar daftariga kiritiladi?",
+     "farzandlikka olingan bolaning tugʻilgan sanasini oʻzgartirish",
+     "tugʻilgan sanani oʻzgartirish farqi",
+     "otalikni belgilashda ota haqidagi maʼlumotlar",
+     "ota haqidagi maʼlumotlar yozuvlar daftariga kiritish"
+    ],
+    "doc_hints": [
+     "Oila kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 650,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q057",
+   "status": "ok",
+   "answer": "Да. Согласно статье 690 Гражданского кодекса, по договору подряда на выполнение проектных и изыскательских работ подрядчик гарантирует, что у третьих лиц нет права препятствовать выполнению работ или ограничивать их выполнение на основе подготовленной подрядчиком проектно-сметной документации [1].",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "690-modda",
+     "part": "1-qism",
+     "edition_date": "1996-08-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-180552#art-690#p1",
+     "quote": "Loyiha va qidiruv ishlari pudrat shartnomasi boʻyicha pudratchi uchinchi shaxslarda pudratchi tomonidan tayyorlangan loyiha-smeta hujjatlari asosida ishlarni bajarishga qarshilik qilish yoki bajarishni cheklash huquqi yoʻqligini kafolatlaydi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-180552#art-690#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "690-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "690-modda. Pudratchining kafolatlari\nLoyiha va qidiruv ishlari pudrat shartnomasi boʻyicha pudratchi uchinchi shaxslarda pudratchi tomonidan tayyorlangan loyiha-smeta hujjatlari asosida ishlarni bajarishga qarshilik qilish yoki bajarishni cheklash huquqi yoʻqligini kafolatlaydi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2264,
+    "retrieval_ms": 1187,
+    "rerank_ms": 0,
+    "generation_ms": 3014,
+    "total_ms": 6466
+   },
+   "usage": {
+    "input_tokens": 10806,
+    "output_tokens": 434,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Pudratchi loyiha-smeta hujjatlari asosida ishlarni bajarishga uchinchi shaxslar tomonidan toʻsqinlik qilinmasligiga kafolat beradimi?",
+    "search_queries": [
+     "Гарантирует ли подрядчик, что выполнению работ на основании проектно-сметной документации не будут препятствовать третьи лица?",
+     "Pudratchi loyiha-smeta hujjatlari asosida ishlarni bajarishga uchinchi shaxslar tomonidan toʻsqinlik qilinmasligiga kafolat beradimi?",
+     "pudrat shartnomasi uchinchi shaxslar toʻsqinlik qilmasligi kafolati",
+     "loyiha-smeta hujjatlari asosida ishlarni bajarish",
+     "pudratchi kafolat majburiyati uchinchi shaxslar"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 681,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q058",
+   "status": "ok",
+   "answer": "Yoʻq, sudya kreditor va qarzdorni chaqirtirmaydi va ularning tushuntirishlarini eshitmaydi: sud buyrugʻi sud muhokamasisiz, kreditor va qarzdorni chaqirtirmasdan, ularning tushuntirishlarini eshitmasdan yakka tartibda beriladi [1]. Fuqarolik protsessual kodeksining 177-moddasida ham sud buyrugʻi undiruvchi va qarzdorni sudga chaqirmasdan, ularning tushuntirishlarini eshitmasdan, sud muhokamasisiz berilishi belgilangan [2]. Sud buyrugʻi umuman nizosiz talablar boʻyicha sud muhokamasi oʻtkazmasdan berilgan sud hujjatidir [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "143-modda",
+     "part": "1–4-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-143#p1",
+     "quote": "Sud buyrugʻi sudya tomonidan sud muhokamasisiz, kreditor va qarzdorni chaqirtirmasdan, ularning tushuntirishlarini eshitmasdan yakka tartibda beriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "177-modda",
+     "part": "1–6-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-177#p1",
+     "quote": "Sud buyrugʻi sudya tomonidan undiruvchi va qarzdorni sudga chaqirmasdan, ularning tushuntirishlarini eshitmasdan yakka tartibda, sud muhokamasisiz beriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "170-modda",
+     "part": "1–3-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-170#p1",
+     "quote": "Sud buyrugʻi nizosiz talablar boʻyicha sud muhokamasi oʻtkazmasdan berilgan sud hujjatidir",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:3523891#art-143#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "143-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "143-modda. Sud buyrugʻini berish tartibi va muddati\nSud buyrugʻi sudya tomonidan sud muhokamasisiz, kreditor va qarzdorni chaqirtirmasdan, ularning tushuntirishlarini eshitmasdan yakka tartibda beriladi.\nSud buyrugʻi kreditor tomonidan arizaning koʻchirma nusxasi qarzdorga topshirilgan kundan eʼtiboran oʻn kun oʻtgach beriladi.\nSud buyrugʻi sudya tomonidan ikki nusxada imzolanadi, ulardan biri ishning yigʻma jildida qoladi, boshqasi sudning gerbli muhri bilan tasdiqlanadi va kreditorga beriladi. Qarzdorga sud buyrugʻining tegishli tarzda tasdiqlangan koʻchirma nusxasi yuboriladi.\nSud buyrugʻi elektron hujjat tarzida yuborilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-177#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "177-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "177-modda. Sud buyrugʻini berish tartibi va muddati\nArz qilingan talabning mazmuni boʻyicha sud buyrugʻi ariza sudga kelib tushgan kundan eʼtiboran uch kun ichida sudya tomonidan beriladi.\nSud buyrugʻi sudya tomonidan undiruvchi va qarzdorni sudga chaqirmasdan, ularning tushuntirishlarini eshitmasdan yakka tartibda, sud muhokamasisiz beriladi.\nSud buyrugʻi sudya tomonidan imzolanadi.\nAgar belgilangan muddatda qarzdordan sudga eʼtiroz kelib tushmasa, sudya undiruvchiga sudning muhri bilan tasdiqlangan buyruq koʻchirma nusxasini ijroga taqdim etish uchun beradi.\nUndiruvchining iltimosiga koʻra sud buyrugʻi ijro etish uchun bevosita sud tomonidan yuborilishi mumkin.\nQarzdordan davlat bojini undirish uchun sudning muhri bilan tasdiqlangan sud buyrugʻining alohida nusxasi bevosita sud tomonidan ijro etish uchun yuboriladi.",
+     "retrieval_score": 0.9263,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3517337#art-170#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "170-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "170-modda. Sud buyrugʻiga oid umumiy qoidalar\nSud buyrugʻi nizosiz talablar boʻyicha sud muhokamasi oʻtkazmasdan berilgan sud hujjatidir.\nSud buyrugʻi ijro hujjati kuchiga ega. Sud buyrugʻi boʻyicha undiruv buyruq berilganidan keyin oʻn kunlik muddat oʻtgandan keyin va sud hujjatlarini ijro etish uchun belgilangan tartibda amalga oshiriladi.\nAliment undirish va xodimga uch oylik ish haqidan ortiq boʻlmagan ish haqini undirib berish toʻgʻrisidagi sud buyruqlari darhol ijro etilishi lozim.",
+     "retrieval_score": 0.6522,
+     "rerank_score": 0.4,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2061,
+    "retrieval_ms": 1394,
+    "rerank_ms": 0,
+    "generation_ms": 3644,
+    "total_ms": 7100
+   },
+   "usage": {
+    "input_tokens": 10537,
+    "output_tokens": 600,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud buyrugʻi berilishida sudya kreditor va qarzdorni chaqirtirib, ularning tushuntirishlarini eshitadimi yoki ishni ularsiz ham koʻrib chiqadi? Avval boshqacha tartib bor deb eshlagan edim, hozirgi qoida qanday?",
+    "search_queries": [
+     "Sud buyrugʻi berilishida sudya kreditor va qarzdorni chaqirtirib, ularning tushuntirishlarini eshitadimi yoki ishni ularsiz ham koʻrib chiqadi? Avval boshqacha tartib bor deb eshlagan edim, hozirgi qoida qanday?",
+     "sud buyrugʻi berish tartibi",
+     "sudya kreditor qarzdor tushuntirishlarini eshitmasdan",
+     "sud buyrugʻi ish yuritish qoʻzgʻatmasdan"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 613,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q059",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida bu savolga aniq javob topilmadi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-31719#art-15#p1",
+     "doc_id": "lex:-31719",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-31719",
+     "article": "15-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1997-12-26",
+     "text": "15-modda. Hayvonot dunyosi obyektlaridan foydalanish\nHayvonot dunyosi obyektlaridan foydalanish umumiy va maxsus foydalanish tartibida amalga oshiriladi.\nHayvonot dunyosi obyektlaridan umumiy foydalanish jismoniy shaxslar tomonidan qonun hujjatlarida belgilangan tartib va miqdorda bepul amalga oshiriladi.\nHayvonot dunyosi obyektlaridan maxsus foydalanish Oʻzbekiston Respublikasi Vazirlar Mahkamasi belgilagan tartibda beriladigan ruxsatnomalar asosida haq evaziga amalga oshiriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1810,
+    "retrieval_ms": 470,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 2281
+   },
+   "usage": {
+    "input_tokens": 948,
+    "output_tokens": 92,
+    "models": {
+     "rewrite": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekistonda ajdaho boqish uchun qanday litsenziya kerak?",
+    "search_queries": [
+     "Oʻzbekistonda ajdaho boqish uchun qanday litsenziya kerak?",
+     "hayvonlarni boqish uchun litsenziya",
+     "yovvoyi hayvonlarni saqlash ruxsatnomasi",
+     "hayvonot dunyosidan foydalanish ruxsatnomasi"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 560,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": null,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q060",
+   "status": "ok",
+   "answer": "Ha. Fuqarolik kodeksining 1097-moddasiga koʻra, litsenziat shartnoma boʻyicha olgan axborotlarning maxfiyligini muhofaza qilishga doir kerakli choralarni koʻrishi shart [1]. Shartnomada oʻzgacha hol nazarda tutilgan boʻlmasa, axborotlarning maxfiyligini saqlash majburiyati, basharti tegishli maʼlumotlar oshkor etilmagan axborot tariqasida qolaversa, litsenziya shartnomasi bekor boʻlganidan keyin ham litsenziatning zimmasida boʻladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1097-modda",
+     "part": "1–2-qism",
+     "edition_date": "1996-08-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-180552#art-1097#p1",
+     "quote": "Litsenziat shartnoma boʻyicha olgan axborotlarning maxfiyligini muhofaza qilishga doir kerakli choralarni koʻrishi shart",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1097-modda",
+     "part": "1–2-qism",
+     "edition_date": "1996-08-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-180552#art-1097#p1",
+     "quote": "Shartnomada oʻzgacha hol nazarda tutilgan boʻlmasa, axborotlarning maxfiyligini saqlash majburiyati, basharti tegishli maʼlumotlar oshkor etilmagan axborot tariqasida qolaversa, litsenziya shartnomasi bekor boʻlganidan keyin ham litsenziatning zimmasida boʻladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-180552#art-1097#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1097-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "1097-modda. Oshkor etilmagan axborotni noqonuniy foydalanishdan muhofaza qilish huquqining boshqa shaxsga oʻtishi\nOshkor etilmagan axborotga ega boʻlgan shaxs bu axborot mazmunini tashkil etuvchi maʼlumotlarning hammasini yoki bir qismini litsenziya shartnomasi asosida boshqa shaxsga berishi mumkin.\nLitsenziat shartnoma boʻyicha olgan axborotlarning maxfiyligini muhofaza qilishga doir kerakli choralarni koʻrishi shart va uni uchinchi shaxslarning noqonuniy foydalanishidan muhofaza qilishda litsenziarniki singari huquqlarga ega. Shartnomada oʻzgacha hol nazarda tutilgan boʻlmasa, axborotlarning maxfiyligini saqlash majburiyati, basharti tegishli maʼlumotlar oshkor etilmagan axborot tariqasida qolaversa, litsenziya shartnomasi bekor boʻlganidan keyin ham litsenziatning zimmasida boʻladi.",
+     "retrieval_score": 0.8139,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1808,
+    "retrieval_ms": 1442,
+    "rerank_ms": 0,
+    "generation_ms": 2907,
+    "total_ms": 6159
+   },
+   "usage": {
+    "input_tokens": 12044,
+    "output_tokens": 504,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Yopiq maʼlumotlarni litsenziya boʻyicha olgan odam shartnoma tugagandan keyin ham ularni sir saqlashi kerakmi?",
+    "search_queries": [
+     "Yopiq maʼlumotlarni litsenziya boʻyicha olgan odam shartnoma tugagandan keyin ham ularni sir saqlashi kerakmi?",
+     "yopiq maʼlumotlar sir saqlash majburiyati",
+     "litsenziya shartnomasi tugagandan keyin konfidensiallik",
+     "sir saqlash majburiyati shartnoma amal qilish muddati"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 602,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

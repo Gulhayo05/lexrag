@@ -1,0 +1,1580 @@
+{
+ "run_id": "full100-v1",
+ "batch_id": "full100-v1-b07",
+ "batch_index": 7,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p5",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:25:28+05:00",
+  "completed_at": "2026-11-06T18:25:36+05:00",
+  "total_ms": 8194
+ },
+ "summary": {
+  "total": 10,
+  "ok": 8,
+  "no_answer": 2,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q061",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida sudya bir sudda qancha muddatdan kam boʻlmagan vaqt sudyalik lavozimida ishlashi kerakligi haqidagi qoida mavjud emas.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.7,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5534923#art-68#p1",
+     "doc_id": "lex:-5534923",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni sudlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5534923",
+     "article": "68-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-06-15",
+     "text": "68-modda. Sudyalik lavozimiga saylanadigan, tayinlanadigan shaxslarga qoʻyiladigan talablar\nUshbu Qonunning 67-moddasi talablariga javob beradigan, yuridik ixtisoslik boʻyicha kamida oʻn besh yillik ish stajiga, shu jumladan, qoida tariqasida, sudya sifatida kamida yetti yillik ish stajiga ega boʻlgan shaxs Oʻzbekiston Respublikasi Oliy sudi sudyasi boʻlishi mumkin.\nUshbu Qonunning 67-moddasi talablariga javob beradigan, yuridik ixtisoslik boʻyicha kamida oʻn yillik ish stajiga, shu jumladan, qoida tariqasida, sudya sifatida kamida ikki yillik ish stajiga ega boʻlgan shaxs Oʻzbekiston Respublikasi Harbiy sudining, Qoraqalpogʻiston Respublikasi sudining, Qoraqalpogʻiston Respublikasi maʼmuriy sudining, viloyat, Toshkent shahar sudining, viloyat, Toshkent shahar maʼmuriy sudining sudyasi boʻlishi mumkin.\nUshbu Qonunning 67-moddasi talablariga javob beradigan, oʻttiz besh yoshga toʻlgan va yuridik ixtisoslik boʻyicha kamida yetti yillik ish stajiga ega boʻlgan shaxs tumanlararo, tuman, shahar sudining, hududiy harbiy sudning sudyasi boʻlishi mumkin.",
+     "retrieval_score": 0.6802,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-8536927#art-13#p1",
+     "doc_id": "lex:-8536927",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8536927",
+     "article": "13-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-14",
+     "text": "13-modda. Konstitutsiyaviy sudning sudyasi lavozimi bilan bir vaqtda shugʻullanib boʻlmaydigan faoliyat\nKonstitutsiyaviy sudning sudyasi senator, davlat hokimiyati vakillik organining deputati boʻlishi mumkin emas.\nKonstitutsiyaviy sudning sudyasi siyosiy partiyaning aʼzosi boʻlishi, siyosiy harakatlarda ishtirok etishi, shuningdek ilmiy, ijodiy va pedagogik faoliyatdan tashqari haq toʻlanadigan boshqa biron-bir faoliyat turi bilan shugʻullanishi mumkin emas.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-8536927#art-18#p1",
+     "doc_id": "lex:-8536927",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8536927",
+     "article": "18-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-14",
+     "text": "18-modda. Konstitutsiyaviy sud sudyasining vakolatlari tugaganidan keyin uni ishga joylashtirish boʻyicha kafolatlar\nKonstitutsiyaviy sud sudyasining vakolatlari tugaganidan keyin unga Konstitutsiyaviy sud sudyasi lavozimiga saylanishiga qadar egallab turgan avvalgi ishi (lavozimi) beriladi, bunday ish (lavozim) mavjud boʻlmaganda esa, avvalgisiga teng boshqa ish (lavozim) beriladi.\nVakolatlari muddati tugagan sudyaning boshqa ish taqdim etish toʻgʻrisidagi masala hal boʻlayotgan davrda, biroq uch oydan ortiq boʻlmagan muddatda oʻrtacha oylik ish haqi saqlab qolinadi.",
+     "retrieval_score": 0.929,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-8536927#art-11#p1",
+     "doc_id": "lex:-8536927",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8536927",
+     "article": "11-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-14",
+     "text": "11-modda. Konstitutsiyaviy sudning sudyasi lavozimiga nomzodga nisbatan qoʻyiladigan talablar. Konstitutsiyaviy sud sudyalarining malaka darajalari\nSiyosat va huquq sohasi mutaxassisi boʻlgan, yuksak maʼnaviy fazilatlarga va zarur malakaga ega boʻlgan, oʻttiz besh yoshdan kichik boʻlmagan Oʻzbekiston Respublikasi fuqarosi Konstitutsiyaviy sudning sudyasi etib saylanishi mumkin.\nKonstitutsiyaviy sudning sudyasiga Oliy yoki Birinchi malaka darajalari beriladi. Oliy malaka darajasi Oʻzbekiston Respublikasi Prezidenti tomonidan, Birinchi malaka darajasi Konstitutsiyaviy sud tomonidan beriladi.",
+     "retrieval_score": 0.9259,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-114129#art-14#p1",
+     "doc_id": "lex:-114129",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-114129",
+     "article": "14-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-08-30",
+     "text": "14-modda. Konstitutsiyaviy sudning sudyasi vazifasi bilan bir vaqtda shugʻullanib boʻlmaydigan faoliyatlar\nKonstitutsiyaviy sudning sudyasi vazifalarini bajargan vaqtda deputatlik mandatiga ega boʻlish, siyosiy partiyalarga va harakatlarga aʼzolik, haq toʻlanadigan boshqa lavozimni egallash mumkin emas.",
+     "retrieval_score": 0.8946,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2207,
+    "retrieval_ms": 1467,
+    "rerank_ms": 0,
+    "generation_ms": 1237,
+    "total_ms": 4912
+   },
+   "usage": {
+    "input_tokens": 10490,
+    "output_tokens": 296,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sudya sudyalik lavozimiga tayinlanishi uchun sud sohasida qancha muddatdan kam boʻlmagan ish stajiga ega boʻlishi talab etiladi?",
+    "search_queries": [
+     "Sudya bir sudda qancha muddatdan kam boʻlmagan vaqt sudyalik lavozimida ishlashi kerak?",
+     "Sudya sudyalik lavozimiga tayinlanishi uchun sud sohasida qancha muddatdan kam boʻlmagan ish stajiga ega boʻlishi talab etiladi?",
+     "sudyalik lavozimiga tayinlash uchun ish staji talabi",
+     "sudya boʻlish uchun yuridik sohada ish staji",
+     "sudyalar maqomi toʻgʻrisidagi qonun sudyalikka talablar"
+    ],
+    "doc_hints": [
+     "Sudyalar maqomi toʻgʻrisidagi qonun",
+     "Konstitutsiya",
+     "Sudlar toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 645,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q062",
+   "status": "ok",
+   "answer": "Soliq kodeksining 27-moddasiga koʻra soliq organlari soliq toʻgʻrisidagi qonunchilik hujjatlarini Oʻzbekiston Respublikasi Davlat soliq qoʻmitasining rasmiy veb-saytida oʻz vaqtida eʼlon qilishi shart [1]. Soliq kodeksining 12-moddasiga koʻra soliq toʻgʻrisidagi qonunchilik hujjatlari rasman eʼlon qilinishi shart, rasman eʼlon qilinmagan hujjatlar esa kuchga kiritilmagan hujjat sifatida huquqiy oqibatlarni keltirib chiqarmaydi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.75,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "27-modda",
+     "part": "1–8-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-27#p1",
+     "quote": "soliq toʻgʻrisidagi qonunchilik hujjatlarini Oʻzbekiston Respublikasi Davlat soliq qoʻmitasining rasmiy veb-saytida oʻz vaqtida eʼlon qilishi;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "12-modda",
+     "part": "1–2-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-12#p1",
+     "quote": "Soliq toʻgʻrisidagi qonunchilik hujjatlari rasman eʼlon qilinishi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-27#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "27-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "27-modda. Soliq organlarining majburiyatlari\nSoliq organlari:\nsoliq toʻgʻrisidagi qonunchilikka rioya etishi;\nsoliq toʻgʻrisidagi qonunchilikka rioya etilishi, soliqlar va yigʻimlarning toʻgʻri hisoblab chiqarilishi, toʻliq hamda oʻz vaqtida toʻlanishi ustidan nazoratni amalga oshirishi;\nsoliq toʻlovchilar, soliq solish obyektlari va soliq solish bilan bogʻliq obyektlar, hisoblangan va toʻlangan soliqlar toʻliq va oʻz vaqtida hisobga olinishini taʼminlashi;\nsoliq tekshiruvlarini oʻtkazishda soliq toʻlovchilarga ularning huquqlari va majburiyatlari toʻgʻrisida maʼlumot berishi, shuningdek oʻtkazilgan tekshirishlar natijalari toʻgʻrisida xabardor qilishi;\nsoliq toʻgʻrisidagi qonunchilik hujjatlarini Oʻzbekiston Respublikasi Davlat soliq qoʻmitasining rasmiy veb-saytida oʻz vaqtida eʼlon qilishi;\nsoliq toʻlovchilarga soliq toʻgʻrisidagi qonunchilikni ijro etishida yordam berishi, soliq toʻgʻrisidagi qonunchilik normalarini va soliq imtiyozlarini qoʻllash tartibini tushuntirishi;\nsoliq toʻgʻrisidagi qonunchilik buzilganligi faktlarini tahlil qilishi va baholashi, soliqqa oid huquqbuzarliklarga olib keladigan sabablar va sharoitlarni bartaraf etish toʻgʻrisidagi takliflarni tegishli davlat organlariga kiritishi;",
+     "retrieval_score": 0.7542,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4674902#art-12#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "12-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "12-modda. Oshkoralik prinsipi\nSoliq toʻgʻrisidagi qonunchilik hujjatlari rasman eʼlon qilinishi shart.\nRasman eʼlon qilinmagan soliq toʻgʻrisidagi qonunchilik hujjatlari kuchga kiritilmagan hujjat sifatida huquqiy oqibatlarni keltirib chiqarmaydi.",
+     "retrieval_score": 0.9139,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4674902#art-4#p5",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "4-modda",
+     "part": "5–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "4-modda. Soliq toʻgʻrisidagi qonunchilikning vaqt boʻyicha amal qilishi\nYangi soliqlar va yigʻimlar belgilanishini nazarda tutuvchi soliq toʻgʻrisidagi qonunchilik hujjatlari rasman eʼlon qilingan kundan eʼtiboran kamida uch oy oʻtgach amalga kiritiladi. Soliq imtiyozlarini bekor qilishni, yangi majburiyatlarni joriy etishni, soliq toʻgʻrisidagi qonunchilikni buzganlik uchun javobgarlik choralarini kuchaytirishni yoki soliq munosabatlari subyektlarining holatini boshqacha tarzda ogʻirlashtirishni nazarda tutuvchi soliq toʻgʻrisidagi qonunchilik hujjatlari ham xuddi shunday tartibda amalga kiritiladi.\nSoliqlar va yigʻimlar stavkalarining oʻzgartirilishini nazarda tutuvchi soliq toʻgʻrisidagi qonunchilik hujjatlari, agar ularda kechroq muddat koʻrsatilmagan boʻlsa, ular rasman eʼlon qilingan oydan keyingi oyning birinchi kunidan eʼtiboran amalga kiritiladi.\nUshbu moddaning beshinchi va oltinchi qismlarida koʻrsatilmagan soliq toʻgʻrisidagi qonunchilik hujjatlari, agar hujjatlarning oʻzida kechroq muddat koʻrsatilmagan boʻlsa, rasman eʼlon qilingan kundan eʼtiboran kuchga kiradi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4674902#art-94#p4",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "94-modda",
+     "part": "4–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "94-modda. Jismoniy shaxs vafot etgan yoki u vafot etgan deb eʼlon qilingan taqdirda soliq majburiyatini bajarish\nSoliq qarzi boʻlgan jismoniy shaxs vafot etgan taqdirda, mazkur jismoniy shaxs hisobga qoʻyilgan joydagi va (yoki) uning mol-mulki turgan joydagi soliq organi vafot etgan shaxsning merosxoʻri (merosxoʻrlari) toʻgʻrisida axborot olingan paytdan eʼtiboran bir oy ichida unga (ularga) soliq qarzi mavjudligi toʻgʻrisida xabar qilishi shart.\nVafot etgan jismoniy shaxsning merosxoʻri (merosxoʻrlari) mazkur jismoniy shaxsning soliqlar boʻyicha qolgan qarzini meros qabul qilib olingan kundan eʼtiboran bir yildan kechiktirmay uzishi shart.\nSoliq organining qaroriga binoan uzish muddati, agar soliq qarzi mavjudligi toʻgʻrisidagi xabarni merosxoʻr (merosxoʻrlar) toʻlash muddati oʻtishiga olti oydan kam vaqt qolganida olgan boʻlsa, uzaytirilishi mumkin.\nVafot etgan jismoniy shaxsning jismoniy shaxslardan olinadigan daromad soligʻi va ijtimoiy soliqni toʻlash boʻyicha qarzi umidsiz qarz deb eʼtirof etiladi.\nUshbu moddada nazarda tutilgan qoidalar fuqarolik qonunchiligida belgilangan tartibda vafot etgan deb eʼlon qilingan jismoniy shaxsning soliq qarziga nisbatan ham qoʻllaniladi.",
+     "retrieval_score": 0.9081,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-1096349#art-2#p1",
+     "doc_id": "lex:-1096349",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining soliq kodeksiga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-1096349",
+     "article": "2-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2006-12-29",
+     "text": "2-modda. Ushbu Qonun rasmiy eʼlon qilingan kundan eʼtiboran kuchga kiradi.\nOʻzbekiston Respublikasining Prezidenti I. KARIMOV\nToshkent sh.,\n2006-yil 29-dekabr,\nOʻRQ-74-son",
+     "retrieval_score": 0.8987,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1536,
+    "retrieval_ms": 458,
+    "rerank_ms": 0,
+    "generation_ms": 1946,
+    "total_ms": 3941
+   },
+   "usage": {
+    "input_tokens": 8643,
+    "output_tokens": 509,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Soliq organlari soliq toʻgʻrisidagi qonunchilik hujjatlarini qayerda va qanday muddatda eʼlon qilishlari shart?",
+    "search_queries": [
+     "Soliq organlari soliq toʻgʻrisidagi qonunchilik hujjatlarini qayerda va qanday muddatda eʼlon qilishlari shart?",
+     "soliq toʻgʻrisidagi qonunchilik hujjatlarini eʼlon qilish",
+     "soliq organlari normativ-huquqiy hujjatlarni eʼlon qilish muddati",
+     "soliq qonunchiligi hujjatlarini rasmiy eʼlon qilish tartibi"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 639,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q063",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasi Yer kodeksining 76-moddasiga koʻra, oʻrmon fondining foydalanilmayotgan yerlari jismoniy va yuridik shaxslarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin [1]. Xuddi shu qoida “Oʻrmon toʻgʻrisida”gi qonunning 31-moddasida ham mustahkamlangan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "76-modda",
+     "part": "1–4-qism",
+     "edition_date": "2022-06-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-152653#art-76#p1",
+     "quote": "Oʻrmon fondining foydalanilmayotgan yerlari jismoniy va yuridik shaxslarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:3683529",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “oʻrmon toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/3683529",
+     "article": "31-modda",
+     "part": "9-qism",
+     "edition_date": "2026-02-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3683529#art-31#p9",
+     "quote": "Oʻrmon fondining foydalanilmayotgan yerlari jismoniy va yuridik shaxslarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-152653#art-76#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "76-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-06-07",
+     "text": "76-modda. Oʻrmon fondi yerlari\nOʻrmon xoʻjaligi ehtiyojlari uchun berilgan yerlar oʻrmon fondi yerlari deb eʼtirof etiladi.\nBoshqa maqsadlarga moʻljallangan yerlar oʻrmonzorlar barpo etish, jarliklarning kengayishini toʻxtatish, shaharlar va sanoat markazlari atrofida ihota oʻrmonzorlar va koʻkalamzor zonalar yaratish uchun belgilangan tartibda oʻrmon fondi yerlari tarkibiga oʻtkazilishi mumkin.\nDavlat oʻrmon xoʻjaligi organlari oʻrmon fondining foydalanilmayotgan yerlarini jismoniy va yuridik shaxslarga elektron onlayn-auksion orqali ijara huquqi asosida berishi mumkin. Oʻrmon fondining foydalanilmayotgan yerlari jismoniy va yuridik shaxslarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin.\nOʻrmon fondi yerlaridan foydalanish tartibi maxsus qonunchilik bilan belgilanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-4643150#band-4s2#p1",
+     "doc_id": "lex:-4643150",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori davlat oʻrmon fondi uchastkalarini ijaraga berish tartibi toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/-4643150",
+     "article": "4-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-02-04",
+     "text": "4. Mazkur Nizomga muvofiq oʻrmon fondi uchastkalari (ularning bir qismi) quyidagi shakllarda ijaraga beriladi:\noʻrmon fondining oʻzlashtirilmagan (oʻrmon bilan qoplanmagan) yerlarida yangidan barpo etilgan va kamida bir yilgacha boʻlgan muddatda parvarishlangan oʻrmonlar joylashgan yerlarni (keyingi oʻrinlarda parvarishlangan oʻrmonlar deb ataladi) hamda oʻrmon fondining foydalanilmayotgan yerlarini ijaraga olish huquqini kimoshdi savdolari asosida sotish;\noʻrmon fondining oʻzlashtirilmagan (oʻrmon bilan qoplanmagan) yerlarida yangidan oʻrmon barpo etish, shuningdek, ushbu yerlardan ilmiy-tadqiqot, madaniy-maʼrifiy, tarbiyaviy, sogʻlomlashtirish, rekreatsiya, estetik va ekologik turizmni rivojlantirish maqsadlarida foydalanish, ovchilik va baliqchilik xoʻjaliklari tashkil etish, dorivor oʻsimliklar va koʻchatlar yetishtirishni yoʻlga qoʻyishga qaratilgan investitsiya loyihalarini amalga oshirish uchun;\noʻrmon fondi yerlarida davlat-xususiy sheriklik loyihalarini amalga oshirish uchun. Bunda oʻrmon fondi uchastkalarini (ularning bir qismini) ijaraga berish davlat-xususiy sheriklik toʻgrisidagi bitim doirasida amalga oshiriladi.\nOʻrmon fondining foydalanilmayotgan yerlari jismoniy va yuridik shaxslarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin.",
+     "retrieval_score": 0.5167,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3683529#art-31#p9",
+     "doc_id": "lex:3683529",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “oʻrmon toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/3683529",
+     "article": "31-modda",
+     "part": "9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-02-07",
+     "text": "31-modda. Oʻrmondan foydalanish\nDavlat oʻrmon xoʻjaligi organlari oʻrmon fondining foydalanilmayotgan yerlarini jismoniy va yuridik shaxslarga elektron onlayn-auksion orqali ijara huquqi asosida berishi mumkin. Oʻrmon fondining foydalanilmayotgan yerlari jismoniy va yuridik shaxslarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin.",
+     "retrieval_score": 0.4474,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:5023143#preamble#p17",
+     "doc_id": "lex:5023143",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qishloq xoʻjaligi uchun moʻljallangan yerlardan va oʻrmon fondi yerlaridan foydalanish samaradorligini oshirish maqsadida Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/5023143",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-09-29",
+     "text": "2) quyidagi mazmundagi 241, 242 va 243-moddalar bilan toʻldirilsin:\n“241-modda. Qishloq xoʻjaligiga moʻljallangan yerlarni va oʻrmon fondi yerlarini investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida ijaraga berish\nInvestitsiya shartnomasi yoki davlat-xususiy sheriklik asosida quyidagilar:\nqishloq xoʻjaligida foydalanishdan chiqib ketgan sugʻoriladigan yerlar va lalmi yerlar — Oʻzbekiston Respublikasi fuqarolariga hamda qishloq xoʻjaligi korxonalariga;\noʻrmon fondining foydalanilmayotgan yerlari — jismoniy va yuridik shaxslarga;\nyaylovlar, boʻz yerlar, koʻp yillik dov-daraxtlar — Oʻzbekiston Respublikasi fuqarolariga, qishloq xoʻjaligi korxonalariga, shuningdek Oʻzbekiston Respublikasi rezidentlari boʻlgan investorlarga uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin.",
+     "retrieval_score": 0.4632,
+     "rerank_score": 0.8,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5023143#art-243#p5",
+     "doc_id": "lex:5023143",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qishloq xoʻjaligi uchun moʻljallangan yerlardan va oʻrmon fondi yerlaridan foydalanish samaradorligini oshirish maqsadida Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/5023143",
+     "article": "243-modda",
+     "part": "5–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-02",
+     "text": "243-modda. Meros qilib qoldiriladigan umrbod egalik qilish huquqini saqlab qolgan holda yer uchastkasini vaqtincha foydalanishga berish\n“Sugʻoriladigan yerlarni qishloq xoʻjaligidan boshqa maqsadlar uchun, shu jumladan sanoat va fuqarolik obyektlari (binolar va inshootlar) qurilishi uchun, shuningdek unumdor tuproq talab etilmaydigan ilgʻor texnologiyalarning (gidroponika va boshqalar) yangi usullari qoʻllaniladigan issiqxonalar qurilishi uchun ajratishga yoʻl qoʻyilmaydi, bundan Oʻzbekiston Respublikasi Prezidentining qaroriga muvofiq yerlarni ajratish hollari mustasno”;\n5) 45-moddaning uchinchi qismi quyidagi tahrirda bayon etilsin:\n“Korxonalar, binolar va inshootlar qurilishi uchun alohida qimmatga ega boʻlgan unumdor sugʻoriladigan qishloq xoʻjalik yerlari alohida hollarda Oʻzbekiston Respublikasi Prezidentining qaroriga binoan beriladi”;\n6) 76-moddaning uchinchi qismi quyidagi tahrirda bayon etilsin:\n“Davlat oʻrmon xoʻjaligi organlari oʻrmon fondining foydalanilmayotgan yerlarini jismoniy va yuridik shaxslarga ijaraga berishi, shu jumladan kimoshdi savdolari oʻtkazish orqali ijaraga berishi mumkin. Oʻrmon fondining foydalanilmayotgan yerlari jismoniy va yuridik shaxslarga investitsiya shartnomasi yoki davlat-xususiy sheriklik asosida uch yildan kam boʻlmagan va qirq toʻqqiz yildan oshmaydigan muddatga ijaraga berilishi mumkin”.",
+     "retrieval_score": 0.4359,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1735,
+    "retrieval_ms": 1293,
+    "rerank_ms": 0,
+    "generation_ms": 3275,
+    "total_ms": 6305
+   },
+   "usage": {
+    "input_tokens": 13675,
+    "output_tokens": 649,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻrmon fondining ishlatilmayotgan yerlarini jismoniy va yuridik shaxslarga investitsiya shartnomasi asosida eng koʻpi bilan qancha muddatga ijaraga berish mumkin?",
+    "search_queries": [
+     "Oʻrmon fondining ishlatilmayotgan yerlarini jismoniy va yuridik shaxslarga investitsiya shartnomasi asosida eng koʻpi bilan qancha muddatga ijaraga berish mumkin?",
+     "oʻrmon fondi yerlari investitsiya shartnomasi asosida ijaraga berish muddati",
+     "oʻrmon fondining ishlatilmayotgan yerlari ijara muddati",
+     "yer uchastkasini investitsiya shartnomasi asosida ijaraga berish eng koʻp muddat"
+    ],
+    "doc_hints": [
+     "Yer kodeksi",
+     "Oʻrmon kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 496,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q064",
+   "status": "ok",
+   "answer": "Xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisidagi qonunning 3-moddasiga koʻra, deputat tegishli Kengashning va oʻzi tarkibiga saylangan komissiyaning majlislarida bir kalendar yil ichida oʻttiz yoki undan ortiq ish kuni uzrli sabablarsiz ishtirok etmasa, uning vakolatlari muddatidan ilgari tugatiladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-436950",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-436950",
+     "article": "3-modda",
+     "part": "1–9-qism",
+     "edition_date": "2024-07-04",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-436950#art-3#p1",
+     "quote": "tegishli xalq deputatlari Kengashining, mazkur Kengash tomonidan tuzilgan, oʻzi tarkibiga saylangan komissiyaning majlislarida bir kalendar yil ichida oʻttiz yoki undan ortiq ish kuni uzrli sabablarsiz ishtirok etmagan taqdirda;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-436950#art-3#p1",
+     "doc_id": "lex:-436950",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-436950",
+     "article": "3-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-07-04",
+     "text": "3-modda. Deputat vakolatlarining muddati\nDeputat tegishli xalq deputatlari Kengashining vakolatlari muddatiga saylanadi.\nSaylov okrugining hududi boshqa maʼmuriy-hududiy birlik tarkibiga oʻtkazilganda yoki uning hududida yangi maʼmuriy-hududiy birlik tashkil etilgan taqdirda ushbu saylov okrugidan saylangan deputatning vakolatlari saqlab qolinadi. Bunda deputat saylov okrugining hududi joylashgan xalq deputatlari Kengashi yoxud yangi tashkil etilgan maʼmuriy-hududiy birlikda shakllantirilgan xalq deputatlari Kengashi tarkibiga kiradi, deputatning vakolatlari muddati esa mazkur xalq deputatlari Kengashining vakolatlari muddatiga muvofiq boʻladi.\nDeputatning vakolatlari quyidagi hollarda muddatidan ilgari tugatiladi:\nu oʻz vakolatlarini zimmasidan soqit qilish toʻgʻrisida yozma ariza bergan taqdirda;\nu qonunga koʻra deputatlik vakolatlarini amalga oshirishiga nomuvofiq boʻlgan lavozimga saylangan yoki tayinlangan taqdirda;\ntegishli xalq deputatlari Kengashining, mazkur Kengash tomonidan tuzilgan, oʻzi tarkibiga saylangan komissiyaning majlislarida bir kalendar yil ichida oʻttiz yoki undan ortiq ish kuni uzrli sabablarsiz ishtirok etmagan taqdirda;\nchet davlatning doimiy yashash guvohnomasini yoki chet davlat hududida doimiy yashash huquqini tasdiqlovchi boshqa hujjatni olgan taqdirda;\nunga nisbatan sudning ayblov hukmi qonuniy kuchga kirgan taqdirda;\nu chaqirib olingan taqdirda;",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-436950#art-3#p10",
+     "doc_id": "lex:-436950",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-436950",
+     "article": "3-modda",
+     "part": "10–16-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-07-04",
+     "text": "3-modda. Deputat vakolatlarining muddati\nsud uni muomalaga layoqatsiz deb topgan taqdirda;\nu sudning qonuniy kuchga kirgan qarori asosida bedarak yoʻqolgan deb topilgan yoki vafot etgan deb eʼlon qilingan taqdirda;\nu Oʻzbekiston Respublikasi fuqaroligini yoʻqotgan taqdirda;\nu vafot etgan taqdirda.\nAlohida hollarda deputatning vakolatlari tegishli xalq deputatlari Kengashi qaroriga binoan muddatidan ilgari tugatilishi mumkin. Deputat degan yuksak nomga dogʻ tushiruvchi xulq-atvor bunday masalani koʻrib chiqish uchun asos boʻlishi mumkin.\nUshbu modda uchinchi qismining toʻrtinchi xatboshisida nazarda tutilgan hollarda deputatning vakolatlari tegishli xalq deputatlari Kengashining qaroriga binoan muddatidan ilgari tugatiladi.\nDeputatning vakolatlarini boshqa shaxsga topshirish mumkin emas.",
+     "retrieval_score": 0.8598,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-436950#art-6#p1",
+     "doc_id": "lex:-436950",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-436950",
+     "article": "6-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "6-modda. Deputatning majburiyatlari\nDeputat tegishli xalq deputatlari Kengashining majlislarida hamda mazkur Kengash tomonidan tuzilgan qaysi komissiya tarkibiga saylangan boʻlsa, shu komissiyaning majlislarida qatnashishi, ovoz berishda tegishli xalq deputatlari Kengashining Reglamentida belgilangan tartibda shaxsan ishtirok etishi shart.\nDeputatning tegishli xalq deputatlari Kengashining hamda qaysi komissiya tarkibida boʻlsa, shu komissiyaning majlisida ishtirok etish imkoniyati boʻlmagan taqdirda, bu haqda mazkur xalq deputatlari Kengashi yoki komissiya rahbariga oldindan xabar qilishi shart.\nDeputatning zimmasida qonun hujjatlariga muvofiq boshqa majburiyatlar ham boʻlishi mumkin.",
+     "retrieval_score": 0.6622,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-436950#art-9.1#p1",
+     "doc_id": "lex:-436950",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-436950",
+     "article": "9¹-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-07-04",
+     "text": "91-modda. Deputatning odob-axloq qoidalari deputat tomonidan buzilganligi uchun qoʻllaniladigan choralar\nDeputatning odob-axloq qoidalari deputat tomonidan buzilganligi uchun deputatga nisbatan quyidagi taʼsir choralari qoʻllanilishi mumkin:\ndeputatning odob-axloq qoidalarini buzishga yoʻl qoʻyilmasligi koʻrsatib oʻtilgan holda deputatga ogohlantirish berish;\ndeputatdan tegishli xalq deputatlari Kengashi, shuningdek oʻzi tarkibiga saylangan komissiya majlislarida uzr soʻrashni talab qilish;\ndeputatning odob-axloq qoidalari buzilishiga deputat tomonidan yoʻl qoʻyilganligi faktini tegishli xalq deputatlari Kengashi majlisida oʻqib eshittirish;\ndeputatning vakolatlarini muddatidan ilgari tugatish.\nDeputatning odob-axloq qoidalari buzilgan taqdirda, odob-axloq komissiyasi yoki tegishli xalq deputatlari Kengashi qaroriga asosan deputatning xulq-atvori toʻgʻrisidagi masala koʻrib chiqiladi va unga nisbatan ushbu modda birinchi qismining ikkinchi, uchinchi va toʻrtinchi xatboshilarida nazarda tutilgan taʼsir choralari qoʻllaniladi. Ushbu modda birinchi qismining beshinchi xatboshisida nazarda tutilgan taʼsir chorasi tegishli xalq deputatlari Kengashining qaroriga asosan qoʻllaniladi.\nIII. Deputat faoliyatining asosiy kafolatlari",
+     "retrieval_score": 0.8285,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-112170#art-16.4#p1",
+     "doc_id": "lex:-112170",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni mahalliy davlat hokimiyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-112170",
+     "article": "16⁴-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-10-19",
+     "text": "164-modda. Xalq deputatlari Kengashi raisini muddatidan ilgari lavozimidan ozod qilish\nXalq deputatlari Kengashi raisi ovoz berish orqali Kengash deputatlari umumiy sonining uchdan ikki qismidan koʻprogʻining ovozi bilan qabul qilingan Kengash qaroriga binoan muddatidan ilgari lavozimidan ozod qilinishi mumkin.\nXalq deputatlari Kengashi raisini muddatidan ilgari lavozimidan ozod qilish toʻgʻrisidagi masala Kengash deputatlari umumiy sonining kamida uchdan bir qismidan iborat deputatlar guruhining taklifiga binoan Kengash tomonidan koʻrib chiqiladi.\nXalq deputatlari Kengashi raisini muddatidan ilgari lavozimidan ozod qilish toʻgʻrisidagi masala koʻrib chiqilayotganda sessiyada Kengashning doimiy komissiyalari raislaridan biri raislik qiladi.\nXalq deputatlari Kengashi raisini muddatidan ilgari lavozimidan ozod qilish toʻgʻrisida qaror qabul qilinadi, qaror sessiyada raislik qiluvchi tomonidan imzolanadi.",
+     "retrieval_score": 0.7402,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1883,
+    "retrieval_ms": 1185,
+    "rerank_ms": 0,
+    "generation_ms": 2334,
+    "total_ms": 5403
+   },
+   "usage": {
+    "input_tokens": 12469,
+    "output_tokens": 530,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Deputat bir kalendar yil davomida Kengash va uning komissiyalari majlislariga uzrli sababsiz necha ish kuni kelmasa, uning vakolatlari muddatidan ilgari tugatiladi?",
+    "search_queries": [
+     "Deputat bir kalendar yil davomida Kengash va uning komissiyalari majlislariga uzrli sababsiz necha ish kuni kelmasa, uning vakolatlari muddatidan ilgari tugatiladi?",
+     "deputat vakolatlarini muddatidan ilgari tugatish uzrli sababsiz kelmaslik",
+     "Kengash va uning komissiyalari majlislariga uzrli sababsiz ish kuni kelmaslik",
+     "deputat vakolatlari muddatidan ilgari tugatilishi kalendar yil majlislar"
+    ],
+    "doc_hints": [
+     "Mahalliy davlat hokimiyati toʻgʻrisidagi qonun",
+     "Xalq deputatlari Kengashi deputati maqomi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 528,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q065",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasi Konstitutsiyasining 132-moddasiga koʻra, Konstitutsiyaviy sudning sudyalari qayta saylanish huquqisiz oʻn yillik muddatga saylanadi [1]. Xuddi shu qoida «Oʻzbekiston Respublikasining Konstitutsiyaviy sudi toʻgʻrisida»gi konstitutsiyaviy qonunning 7-moddasida ham mustahkamlangan: sudyalar qayta saylanish huquqisiz oʻn yillik muddatga saylanadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "132-modda",
+     "part": "1–4-qism",
+     "edition_date": "2023-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:6445145#art-132#p1",
+     "quote": "Konstitutsiyaviy sudning sudyalari qayta saylanish huquqisiz oʻn yillik muddatga saylanadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-8536927",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-8536927",
+     "article": "7-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-10-14",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-8536927#art-7#p1",
+     "quote": "Konstitutsiyaviy sudning sudyalari qayta saylanish huquqisiz oʻn yillik muddatga saylanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-8536927#art-7#p1",
+     "doc_id": "lex:-8536927",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8536927",
+     "article": "7-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-14",
+     "text": "7-modda. Konstitutsiyaviy sud sudyasining vakolatlari muddati\nKonstitutsiyaviy sudning sudyalari qayta saylanish huquqisiz oʻn yillik muddatga saylanadi.\nKonstitutsiyaviy sudning sudyasi lavozimida boʻlishning eng yuqori yoshi, qoida tariqasida, yetmish yoshni tashkil etadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:6445145#art-132#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "132-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-04-30",
+     "text": "132-modda.\nOʻzbekiston Respublikasi Konstitutsiyaviy sudi qonun chiqaruvchi va ijro etuvchi hokimiyat hujjatlarining Konstitutsiyaga muvofiqligi toʻgʻrisidagi ishlarni koʻradi.\nKonstitutsiyaviy sud Oʻzbekiston Respublikasi Prezidentining taqdimiga binoan Oʻzbekiston Respublikasi Oliy Majlisining Senati tomonidan Oʻzbekiston Respublikasi Sudyalar oliy kengashi tavsiya etgan siyosat va huquq sohasidagi mutaxassislar orasidan, Qoraqalpogʻiston Respublikasi vakilini qoʻshgan holda saylanadi.\nKonstitutsiyaviy sudning sudyalari qayta saylanish huquqisiz oʻn yillik muddatga saylanadi.\nOʻzbekiston Respublikasi Konstitutsiyaviy sudi oʻz tarkibidan Oʻzbekiston Respublikasi Konstitutsiyaviy sudining raisini va uning oʻrinbosarini besh yillik muddatga saylaydi.",
+     "retrieval_score": 0.7869,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:6750808#preamble#p5",
+     "doc_id": "lex:6750808",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida”gi Oʻzbekiston Respublikasi konstitutsiyaviy qonuniga oʻzgartirish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/6750808",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-01-12",
+     "text": "Ushbu Qonun bilan “Oʻzbekiston Respublikasining Konstitutsiyaviy sudi toʻgʻrisida”gi Oʻzbekiston Respublikasi Konstitutsiyaviy Qonuniga Oʻzbekiston Respublikasi Konstitutsiyaviy sudi tomonidan Oʻzbekiston Respublikasi referendumiga chiqarilayotgan masalalarning Oʻzbekiston Respublikasi Konstitutsiyasiga muvofiqligi toʻgʻrisida xulosa berilishini, shuningdek Oʻzbekiston Respublikasi Konstitutsiyaviy sudining sudyalari qayta saylanish huquqisiz oʻn yillik muddatga saylanishini nazarda tutuvchi oʻzgartirish va qoʻshimchalar kiritilmoqda.\nUshbu Qonun yangi tahrirdagi Oʻzbekiston Respublikasi Konstitutsiyasining soʻzsiz va toʻliq amalga oshirilishini, unda mustahkamlangan ustuvor prinsiplarning Yangi Oʻzbekiston gʻoyasiga hamohang tarzda roʻyobga chiqarilishini, davlat organlarining faoliyati yangicha konstitutsiyaviy-huquqiy sharoitlarda yoʻlga qoʻyilishini taʼminlashga xizmat qiladi.",
+     "retrieval_score": 0.7446,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6449033#art-5#p6",
+     "doc_id": "lex:-6449033",
+     "doc_title": "Oʻzbekiston Respublikasi qonuni Oʻzbekiston Respublikasi konstitutsiyasi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6449033",
+     "article": "5-modda",
+     "part": "6–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "1992-12-08",
+     "text": "5-modda. Amaldagi chaqiriq Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi va Senati ushbu Konstitutsiyaviy Qonun kuchga kirgan paytdan eʼtiboran oʻz faoliyatini ushbu Konstitutsiyaviy Qonun tahriridagi Oʻzbekiston Respublikasi Konstitutsiyasida belgilangan vakolatlarga muvofiq amalga oshiradi.\nOʻzbekiston Respublikasi Konstitutsiyaviy sudining oʻziga nisbatan yangi saylanish shartlari va vakolatlar muddati joriy etilayotgan amaldagi sudyalari oʻz vakolatlarini ular saylangan muddat tugaguniga qadar davom ettiradi. Oʻzbekiston Respublikasi Konstitutsiyaviy sudining vakant sudyalik lavozimlari ushbu Konstitutsiyaviy Qonun tahriridagi Oʻzbekiston Respublikasi Konstitutsiyasida belgilangan tartibda toʻldiriladi.\n8-modda. Ushbu Konstitutsiyaviy Qonun va ushbu Konstitutsiyaviy Qonun tahriridagi Oʻzbekiston Respublikasi Konstitutsiyasiga oʻzgartirish va qoʻshimchalar tegishincha Oʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasi deputatlari va Senati aʼzolari umumiy sonining kamida uchdan ikki qismidan iborat koʻpchiligi tomonidan qabul qilingan konstitutsiyaviy qonun yoki Oʻzbekiston Respublikasining referendumi bilan kiritilishi mumkin.",
+     "retrieval_score": 0.729,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-8536927#art-18#p1",
+     "doc_id": "lex:-8536927",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8536927",
+     "article": "18-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-14",
+     "text": "18-modda. Konstitutsiyaviy sud sudyasining vakolatlari tugaganidan keyin uni ishga joylashtirish boʻyicha kafolatlar\nKonstitutsiyaviy sud sudyasining vakolatlari tugaganidan keyin unga Konstitutsiyaviy sud sudyasi lavozimiga saylanishiga qadar egallab turgan avvalgi ishi (lavozimi) beriladi, bunday ish (lavozim) mavjud boʻlmaganda esa, avvalgisiga teng boshqa ish (lavozim) beriladi.\nVakolatlari muddati tugagan sudyaning boshqa ish taqdim etish toʻgʻrisidagi masala hal boʻlayotgan davrda, biroq uch oydan ortiq boʻlmagan muddatda oʻrtacha oylik ish haqi saqlab qolinadi.",
+     "retrieval_score": 0.931,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2044,
+    "retrieval_ms": 1595,
+    "rerank_ms": 0,
+    "generation_ms": 2660,
+    "total_ms": 6301
+   },
+   "usage": {
+    "input_tokens": 9810,
+    "output_tokens": 466,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Konstitutsiyaviy sud sudyalari qancha muddatga saylanadi va ular qayta saylanishi mumkinmi?",
+    "search_queries": [
+     "Konstitutsiyaviy sud sudyalari qancha muddatga saylanadi va ular qayta saylanishi mumkinmi?",
+     "Konstitutsiyaviy sud sudyalari saylanish muddati",
+     "Konstitutsiyaviy sud sudyasining vakolat muddati qayta saylanish",
+     "Oʻzbekiston Respublikasi Konstitutsiyaviy sudi sudyalari"
+    ],
+    "doc_hints": [
+     "Konstitutsiya",
+     "Oʻzbekiston Respublikasining Konstitutsiyaviy sudi toʻgʻrisidagi qonun",
+     "Konstitutsiyaviy"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 294,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q066",
+   "status": "ok",
+   "answer": "Apellyatsiya yoki kassatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisida sud ajrim chiqaradi: fuqarolik ishlari boʻyicha apellyatsiya instansiyasida ajrimda sud majlisini oʻtkazish vaqti va joyi koʻrsatiladi [1], kassatsiyada ham xuddi shunday [2]; iqtisodiy sudlarda esa kassatsiya shikoyatini qabul qilish toʻgʻrisidagi ajrimda ajrim chiqarilgan sana va joy, sudya familiyasi va ism-sharifining bosh harflari, shikoyat bergan shaxsning nomi, ustidan shikoyat qilinayotgan sud hujjatlari hamda sud majlisini oʻtkazish vaqti va joyi koʻrsatilishi kerak [3]. Ajrimning koʻchirma nusxasi ishda ishtirok etuvchi shaxslarga ajrim chiqarilgan kunning ertasidan kechiktirmay yuboriladi [4][5].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.72,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "389²-modda",
+     "part": "1–3-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-389.2#p1",
+     "quote": "Apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda apellyatsiya shikoyatini (protestini) koʻrib chiqish boʻyicha sud majlisini oʻtkazish vaqti va joyi koʻrsatiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "407⁵-modda",
+     "part": "1–3-qism",
+     "edition_date": "2024-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-407.5#p1",
+     "quote": "Kassatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda kassatsiya shikoyatini (protestini) koʻrib chiqish uchun sud majlisini oʻtkazish vaqti va joyi koʻrsatiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "290-modda",
+     "part": "1–7-qism",
+     "edition_date": "2024-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-290#p1",
+     "quote": "Kassatsiya shikoyatini (protestni) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda quyidagilar koʻrsatilishi kerak:",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "407²-modda",
+     "part": "1–2-qism",
+     "edition_date": "2024-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-407.2#p1",
+     "quote": "Kassatsiya shikoyatini (protestini) qaytarish, qabul qilishni rad etish yoki ish yuritishga qabul qilish toʻgʻrisida ajrim chiqariladi, uning koʻchirma nusxasi ishda ishtirok etuvchi shaxslarga ajrim chiqarilgan kunning ertasidan kechiktirmay, ushbu Kodeksning 270-moddasida nazarda tutilgan tartibda yuboriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 5,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "289-modda",
+     "part": "1–2-qism",
+     "edition_date": "2024-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-289#p1",
+     "quote": "Kassatsiya shikoyatini (protestini) ish yuritishga qabul qilish, qabul qilishni rad etish yoki qaytarish toʻgʻrisida ajrim chiqariladi, uning koʻchirma nusxasi ishda ishtirok etuvchi shaxslarga u chiqarilgan kunning ertasidan kechiktirmay, ushbu Kodeksning 197-moddasida nazarda tutilgan tartibda yuboriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-389.2#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "389²-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "3892-modda. Apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish\nUshbu Kodeksda belgilangan shakl va mazmun talablariga rioya etilgan holda berilgan apellyatsiya shikoyati (protesti) apellyatsiya instansiyasi sudining ish yurituviga qabul qilinadi.\nApellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda apellyatsiya shikoyatini (protestini) koʻrib chiqish boʻyicha sud majlisini oʻtkazish vaqti va joyi koʻrsatiladi.\nApellyatsiya shikoyati (protesti) bergan shaxs, shuningdek ishda ishtirok etuvchi shaxslar ishni apellyatsiya instansiyasida koʻrish vaqti va joyi haqida xabardor qilinadi. Ish muhokamasining vaqti va joyi toʻgʻrisida belgilangan tartibda xabardor qilingan shaxslarning kelmaganligi ishning apellyatsiya tartibida koʻrilishiga toʻsqinlik qilmaydi.",
+     "retrieval_score": 0.8533,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-407.5#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "407⁵-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "4075-modda. Kassatsiya shikoyatini (protestini) ish yuritishga qabul qilish\nUshbu Kodeksda belgilangan shakl va mazmun talablariga rioya qilingan holda berilgan kassatsiya shikoyati (protesti) kassatsiya instansiyasi sudining ish yurituviga qabul qilinadi.\nKassatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda kassatsiya shikoyatini (protestini) koʻrib chiqish uchun sud majlisini oʻtkazish vaqti va joyi koʻrsatiladi.\nKassatsiya shikoyati (protesti) bergan shaxs, shuningdek ishda ishtirok etuvchi shaxslar ishni kassatsiya instansiyasida koʻrish vaqti va joyi haqida xabardor qilinadi. Ish muhokamasining vaqti va joyi toʻgʻrisida belgilangan tartibda xabardor qilingan shaxslarning kelmaganligi ishning kassatsiya tartibida koʻrilishiga toʻsqinlik qilmaydi.",
+     "retrieval_score": 0.7577,
+     "rerank_score": 0.85,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-290#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "290-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "290-modda. Kassatsiya shikoyatini (protestini) ish yuritishga qabul qilish\nUshbu Kodeksda belgilangan shakl va mazmun talablariga rioya qilingan holda berilgan kassatsiya shikoyati (protesti) kassatsiya instansiyasi sudining ish yurituviga qabul qilinadi.\nKassatsiya shikoyatini (protestni) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda quyidagilar koʻrsatilishi kerak:\n1) ajrim chiqarilgan sana va joy;\n2) ajrim chiqargan sudyaning familiyasi, ism-sharifining bosh harflari;\n3) shikoyatni (protestni) bergan shaxsning nomi (familiyasi, ismi, otasining ismi);\n4) ustidan shikoyat qilinayotgan (protest keltirilayotgan) sud hujjatlari;\n5) sud majlisini oʻtkazish vaqti va joyi.",
+     "retrieval_score": 0.8032,
+     "rerank_score": 0.8,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-289#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "289-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "289-modda. Kassatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi masalani hal etish tartibi va muddati\nKassatsiya shikoyatini (protestini) ish yuritishga qabul qilish, qabul qilishni rad etish yoki qaytarish toʻgʻrisidagi masala sudya tomonidan yakka tartibda shikoyat (protest) sudga kelib tushgan kundan eʼtiboran besh kundan kechiktirmay hal qilinadi.\nKassatsiya shikoyatini (protestini) ish yuritishga qabul qilish, qabul qilishni rad etish yoki qaytarish toʻgʻrisida ajrim chiqariladi, uning koʻchirma nusxasi ishda ishtirok etuvchi shaxslarga u chiqarilgan kunning ertasidan kechiktirmay, ushbu Kodeksning 197-moddasida nazarda tutilgan tartibda yuboriladi.",
+     "retrieval_score": 0.6858,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-407.2#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "407²-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "4072-modda. Kassatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi masalani hal etish tartibi va muddati\nKassatsiya shikoyatini (protestini) qaytarish, qabul qilishni rad etish yoki ish yuritishga qabul qilish masalasi kassatsiya instansiyasi sudining sudyasi tomonidan yakka tartibda shikoyat (protest) sudga kelib tushgan kundan eʼtiboran besh kundan kechiktirmay hal qilinadi.\nKassatsiya shikoyatini (protestini) qaytarish, qabul qilishni rad etish yoki ish yuritishga qabul qilish toʻgʻrisida ajrim chiqariladi, uning koʻchirma nusxasi ishda ishtirok etuvchi shaxslarga ajrim chiqarilgan kunning ertasidan kechiktirmay, ushbu Kodeksning 270-moddasida nazarda tutilgan tartibda yuboriladi.",
+     "retrieval_score": 0.6492,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2000,
+    "retrieval_ms": 1590,
+    "rerank_ms": 0,
+    "generation_ms": 4596,
+    "total_ms": 8188
+   },
+   "usage": {
+    "input_tokens": 13122,
+    "output_tokens": 1164,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud apellyatsiya yoki kassatsiya shikoyatini koʻrib chiqishga qabul qilganda qanday hujjat chiqaradi, unda qanday maʼlumotlar koʻrsatilishi va bu hujjat ishtirokchilarga qanday tartibda yuborilishi qonun bilan belgilangan?",
+    "search_queries": [
+     "Sud apellyatsiya yoki kassatsiya shikoyatini koʻrib chiqishni qabul qilganda qanday hujjat chiqaradi va unda nimalar koʻrsatilishi hamda bu hujjat ishtirokchilarga qanday tartibda yuborilishi belgilangan?",
+     "Sud apellyatsiya yoki kassatsiya shikoyatini koʻrib chiqishga qabul qilganda qanday hujjat chiqaradi, unda qanday maʼlumotlar koʻrsatilishi va bu hujjat ishtirokchilarga qanday tartibda yuborilishi qonun bilan belgilangan?",
+     "apellyatsiya shikoyatini koʻrib chiqishga qabul qilish toʻgʻrisida ajrim",
+     "kassatsiya shikoyatini qabul qilish haqida ajrim mazmuni",
+     "apellyatsiya shikoyati boʻyicha ish yuritishni qoʻzgʻatish ajrimi ishtirokchilarga yuborish"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi",
+     "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 741,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q067",
+   "status": "ok",
+   "answer": "Согласно статье 38 Воздушного кодекса, сертификат типа воздушного судна, выданный иностранным государством, может быть признан действительным в Узбекистане при условии, что воздушное судно соответствует нормам лётной годности гражданских воздушных судов, установленным Авиационной администрацией Республики Узбекистан [1].",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "38-modda",
+     "part": "1–2-qism",
+     "edition_date": "2014-12-11",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-55594#art-38#p1",
+     "quote": "Havo kemasi turining xorijiy davlat tomonidan berilgan sertifikati, basharti havo kemasi fuqaro havo kemalarining Oʻzbekiston Respublikasi Aviatsiya maʼmuriyati tomonidan belgilangan uchishga yaroqlilik normalariga muvofiq boʻlsa, Oʻzbekiston Respublikasida haqiqiy deb eʼtirof etilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-55594#art-38#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "38-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2014-12-11",
+     "text": "38-modda. Havo kemasi turining sertifikati\nHavo kemasi turining sertifikati havo kemasi turining tuzilishini belgilaydigan va uning fuqaro havo kemalarining uchishga yaroqlilik normalariga muvofiqligini tasdiqlaydigan Davlatlararo aviatsiya qoʻmitasi tomonidan beriladigan hujjatdir.\nHavo kemasi turining xorijiy davlat tomonidan berilgan sertifikati, basharti havo kemasi fuqaro havo kemalarining Oʻzbekiston Respublikasi Aviatsiya maʼmuriyati tomonidan belgilangan uchishga yaroqlilik normalariga muvofiq boʻlsa, Oʻzbekiston Respublikasida haqiqiy deb eʼtirof etilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:1369544#art-1#p20",
+     "doc_id": "lex:1369544",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining havo kodeksiga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/1369544",
+     "article": "1-modda",
+     "part": "20–28-qism",
+     "doc_status": "amalda",
+     "edition_date": "2008-07-08",
+     "text": "1-modda. 1993-yil 7-mayda qabul qilingan 863-XII-sonli Oʻzbekiston Respublikasining Havo kodeksiga (Oʻzbekiston Respublikasi Oliy Kengashining Axborotnomasi, 1993-yil, № 6, 247-modda; Oʻzbekiston Respublikasi Oliy Majlisining Axborotnomasi, 1998-yil, № 3, 38-modda; 2000-yil, № 5-6, 153-modda; 2003-yil, № 5, 67-modda) quyidagi oʻzgartish va qoʻshimchalar kiritilsin:\nDavlat havo kemalaridan Oʻzbekiston Respublikasi Mudofaa vazirligi tomonidan belgilanadigan tartibda foydalanishga yoʻl qoʻyiladi”;\n8) 38-modda quyidagi tahrirda bayon etilsin:\n“38-modda. Havo kemasi turining sertifikati\nHavo kemasi turining sertifikati havo kemasi turining tuzilishini belgilaydigan va uning fuqaro havo kemalarining uchishga yaroqlilik normalariga muvofiqligini tasdiqlaydigan hujjatdir.\nHavo kemasi turining sertifikati Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibda beriladi.\nHavo kemasi turining xorijiy davlat tomonidan berilgan sertifikati, basharti havo kemasi fuqaro havo kemalarining Oʻzbekiston Respublikasi Aviatsiya maʼmuriyati tomonidan belgilangan uchishga yaroqlilik normalariga muvofiq boʻlsa, Oʻzbekiston Respublikasida haqiqiy deb eʼtirof etilishi mumkin”;\n9) 44-moddaning:\nnomidagi “guvohnomasini” degan soʻz “sertifikatini” degan soʻz bilan almashtirilsin;\nbirinchi qismi quyidagi tahrirda bayon etilsin:",
+     "retrieval_score": 0.685,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-55594#art-37#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "37-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2014-09-04",
+     "text": "37-modda. Foydalanishga ruxsat berish\nFuqaro havo kemasi, shuningdek tijorat maqsadlarida ishlatiladigan davlat havo kemasi fuqaro havo kemalarining uchishga yaroqliligi borasidagi normalarga muvofiq boʻlsa, foydalanishga qoʻyiladi va bu haqda havo kemasining ekspluatantiga havo kemasining uchishga yaroqlilik sertifikati beriladi.\nFuqaro havo kemalarining uchishga yaroqlilik normalari Oʻzbekiston Respublikasi Aviatsiya maʼmuriyati tomonidan joriy etiladi. Fuqaro havo kemasining uchishga yaroqlilik sertifikatini berish tartibi Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadi.\nHavo kemasining xorijiy davlat tomonidan berilgan uchishga yaroqlilik sertifikati Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibda Oʻzbekiston Respublikasida haqiqiy deb eʼtirof etilishi mumkin.\nFuqaro havo kemasini havo kemasining uchishga yaroqlilik sertifikati talablariga muvofiq boʻlgan holatda saqlash havo kemasi ekspluatanti zimmasiga yuklanadi. Bunday muvofiqlikka rioya etilishi ustidan nazoratni Oʻzbekiston Respublikasi Aviatsiya maʼmuriyati amalga oshiradi.\nDavlat havo kemalaridan Oʻzbekiston Respublikasi Mudofaa vazirligi tomonidan belgilanadigan tartibda foydalanishga yoʻl qoʻyiladi.",
+     "retrieval_score": 0.987,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-55594#art-45#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "45-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2014-09-04",
+     "text": "45-modda. Ekspluatant sertifikatini eʼtirof etish\nXorijiy davlat tomonidan berilgan ekspluatant sertifikati yoki unga oʻxshash hujjat Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibda Oʻzbekiston Respublikasida haqiqiy deb eʼtirof etilishi mumkin.",
+     "retrieval_score": 0.8957,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-55594#art-130#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "130-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2013-04-30",
+     "text": "130-modda. Xorijiy ekspluatantlar va chet el investitsiyalari ishtirokidagi korxonalar tomonidan aviatsiya ishlarining bajarilishi\nOʻzbekiston Respublikasi hududida aviatsiya ishlari ekspluatant sertifikati asosida xorijiy ekspluatantlar, shuningdek chet el investitsiyalari ishtirokidagi korxonalar tomonidan bajarilishi mumkin.\nUshbu moddaning birinchi qismida koʻrsatilgan xorijiy ekspluatantlar va chet el investitsiyalari ishtirokidagi korxonalar oʻz xususiy havo kemalaridan, shu jumladan tegishli xorijiy davlatda roʻyxatdan oʻtkazilgan havo kemalaridan yoki Oʻzbekiston Respublikasining ijaraga olingan havo kemalaridan foydalanishlari mumkin. Oʻzbekiston Respublikasi hududida aviatsiya ishlarini bajaruvchi xorijiy ekspluatantlar va chet el investitsiyalari ishtirokidagi korxonalarga nisbatan ushbu Kodeksning tegishli qoidalari tatbiq etiladi.",
+     "retrieval_score": 0.8136,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1879,
+    "retrieval_ms": 1465,
+    "rerank_ms": 0,
+    "generation_ms": 1952,
+    "total_ms": 5297
+   },
+   "usage": {
+    "input_tokens": 12924,
+    "output_tokens": 434,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Xorijiy davlatda berilgan havo kemasi tipi sertifikati Oʻzbekistonda qanday shartlarda haqiqiy deb tan olinadi?",
+    "search_queries": [
+     "При каких условиях сертификат типа воздушного судна, выданный в иностранном государстве, признаётся действительным в Узбекистане?",
+     "Xorijiy davlatda berilgan havo kemasi tipi sertifikati Oʻzbekistonda qanday shartlarda haqiqiy deb tan olinadi?",
+     "havo kemasi tipi sertifikati xorijiy davlatda berilgan tan olinishi",
+     "havo kemasining yaroqliligi sertifikati xorijiy sertifikatni tan olish",
+     "aviatsiya texnikasini ekspluatatsiyaga yaroqli deb tan olish shartlari"
+    ],
+    "doc_hints": [
+     "Havo kodeksi",
+     "Fuqarolik aviatsiyasi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 635,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q068",
+   "status": "ok",
+   "answer": "Hozirgi qonunga koʻra, maktabgacha taʼlim va tarbiya olti yoshdan yetti yoshgacha boʻlgan bolalarni boshlangʻich taʼlimga bir yillik majburiy tayyorlashni nazarda tutadi [1]. Taʼlim toʻgʻrisidagi qonunning 4-moddasida ham olti yoshdan yetti yoshgacha boʻlgan bolalarni bir yil davomida umumiy oʻrta taʼlimga tayyorlashning majburiyligi belgilangan [2]. Maktabgacha taʼlim tashkilotlarida maktabga tayyorlov guruhi olti yoshdan yetti yoshgacha boʻlgan bolalarni qamrab oladi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:5013007",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni taʼlim toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/5013007",
+     "article": "8-modda",
+     "part": "1–3-qism",
+     "edition_date": "2020-09-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5013007#art-8#p1",
+     "quote": "Maktabgacha taʼlim va tarbiya olti yoshdan yetti yoshgacha boʻlgan bolalarni boshlangʻich taʼlimga bir yillik majburiy tayyorlashni ham nazarda tutadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:5013007",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni taʼlim toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/5013007",
+     "article": "4-modda",
+     "part": "1–17-qism",
+     "edition_date": "2020-09-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5013007#art-4#p1",
+     "quote": "oʻn bir yillik taʼlimning hamda olti yoshdan yetti yoshgacha boʻlgan bolalarni bir yil davomida umumiy oʻrta taʼlimga tayyorlashning majburiyligi;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:4646908",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni maktabgacha taʼlim va tarbiya toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/4646908",
+     "article": "34-modda",
+     "part": "1–14-qism",
+     "edition_date": "2026-09-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4646908#art-34#p1",
+     "quote": "maktabga tayyorlov guruhi (olti yoshdan yetti yoshgacha)",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:5013007#art-8#p1",
+     "doc_id": "lex:5013007",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni taʼlim toʻgʻrisida",
+     "url": "https://lex.uz/docs/5013007",
+     "article": "8-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2020-09-23",
+     "text": "8-modda. Maktabgacha taʼlim va tarbiya\nMaktabgacha taʼlim va tarbiya bolalarni oʻqitish va tarbiyalashga, ularni intellektual, maʼnaviy-axloqiy, etik, estetik va jismoniy jihatdan rivojlantirishga, shuningdek bolalarni umumiy oʻrta taʼlimga tayyorlashga qaratilgan taʼlim turidir.\nMaktabgacha taʼlim va tarbiya olti yoshdan yetti yoshgacha boʻlgan bolalarni boshlangʻich taʼlimga bir yillik majburiy tayyorlashni ham nazarda tutadi.\nMaktabgacha taʼlim va tarbiyani tashkil etish tartibi ushbu Qonun, shuningdek “Maktabgacha taʼlim va tarbiya toʻgʻrisida”gi Oʻzbekiston Respublikasi Qonuni bilan belgilanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:5013007#art-4#p1",
+     "doc_id": "lex:5013007",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni taʼlim toʻgʻrisida",
+     "url": "https://lex.uz/docs/5013007",
+     "article": "4-modda",
+     "part": "1–17-qism",
+     "doc_status": "amalda",
+     "edition_date": "2020-09-23",
+     "text": "4-modda. Taʼlim sohasidagi asosiy prinsiplar\nTaʼlim sohasidagi asosiy prinsiplar quyidagilardan iborat:\ntaʼlim ustuvorligining tan olinishi;\ntaʼlim olish shaklini tanlash erkinligi;\ntaʼlim sohasida kamsitishlarga yoʻl qoʻyilmasligi;\ntaʼlim olishga doir teng imkoniyatlarning taʼminlanishi;\ntaʼlim va tarbiyaga milliy hamda umuminsoniy qadriyatlarning singdirilganligi;\ntaʼlim va tarbiyaning insonparvarlik, demokratik xususiyati;\ntaʼlimning uzluksizligi va izchilligi;\noʻn bir yillik taʼlimning hamda olti yoshdan yetti yoshgacha boʻlgan bolalarni bir yil davomida umumiy oʻrta taʼlimga tayyorlashning majburiyligi;\ndavlat taʼlim standartlari va davlat taʼlim talablari doirasida taʼlim olishning hamma uchun ochiqligi;\noʻquv dasturlarini tanlashga doir yondashuvning yagonaligi va tabaqalashtirilganligi;\ninsonning butun hayoti davomida taʼlim olishi;\njamiyatda pedagoglarni ijtimoiy himoya qilishning kafolatlanganligi;\ntaʼlim tizimining dunyoviy xususiyatga egaligi;\nbilimlilik, qobiliyatlilik va isteʼdodning ragʻbatlantirilishi;\ntaʼlim tizimida davlat va jamoat boshqaruvining uygʻunligi;\ntaʼlim faoliyati sohasidagi ochiqlik va shaffoflik.",
+     "retrieval_score": 0.724,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4646908#art-34#p1",
+     "doc_id": "lex:4646908",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni maktabgacha taʼlim va tarbiya toʻgʻrisida",
+     "url": "https://lex.uz/docs/4646908",
+     "article": "34-modda",
+     "part": "1–14-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "34-modda. Maktabgacha taʼlim tashkiloti guruhlarini toʻldirish\nGuruh maktabgacha taʼlim tashkilotining tarkibiy birligidir.\nMaktabgacha taʼlim tashkilotidagi guruhlar yoshga doir toifalar yoki yoshga doir boʻlmagan toifalar boʻyicha toʻldirilishi mumkin.\nGuruhlar yoshga doir toifalar boʻyicha toʻldirilganda quyidagi yosh toifalari belgilanadi:\nilk rivojlanish guruhi (bir yoshdan uch yoshgacha);\nkichik guruh (uch yoshdan toʻrt yoshgacha);\noʻrta guruh (toʻrt yoshdan besh yoshgacha);\nkatta guruh (besh yoshdan olti yoshgacha);\nmaktabga tayyorlov guruhi (olti yoshdan yetti yoshgacha).\nMaktabgacha taʼlim tashkiloti guruhlarini toʻldirish va bolalarni bir guruhdan boshqasiga oʻtkazish har yili oʻquv yili boshlanguniga qadar amalga oshiriladi.\nUmumiy turdagi davlat maktabgacha taʼlim tashkilotlarida guruhlar tegishli ravishda quyidagi miqdorda toʻldiriladi:\nuch yoshdan yetti yoshgacha boʻlgan bolalar guruhlarida — koʻpi bilan oʻttiz nafar bola;\nbolalar qisqa vaqt boʻladigan guruhlarda — koʻpi bilan oʻttiz nafar bola;\nturli yoshdagilar guruhlarida — koʻpi bilan yigirma besh nafar bola;\nbolalar kechayu kunduz boʻladigan guruhlarda — koʻpi bilan oʻn nafar bola.",
+     "retrieval_score": 0.8734,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:5013007#art-9#p1",
+     "doc_id": "lex:5013007",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni taʼlim toʻgʻrisida",
+     "url": "https://lex.uz/docs/5013007",
+     "article": "9-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-09-09",
+     "text": "9-modda. Umumiy oʻrta va oʻrta maxsus taʼlim\nUmumiy oʻrta va oʻrta maxsus taʼlim umumtaʼlim oʻquv dasturlarini, zarur bilim, malaka hamda koʻnikmalarni oʻzlashtirishga qaratilgan.\nUmumiy oʻrta taʼlim (I — XI sinflar) bosqichlari quyidagilardan iborat:\nboshlangʻich taʼlim (I — IV sinflar);\ntayanch oʻrta taʼlim (V — IX sinflar);\noʻrta taʼlim (X — XI sinflar).\nUmumiy oʻrta taʼlim tashkilotining birinchi sinfiga bolalar ular yetti yoshga toʻladigan yilda qabul qilinadi.\nBoshlangʻich taʼlim taʼlim oluvchilarda umumiy oʻrta taʼlimni davom ettirish uchun zarur boʻlgan savodxonlik, bilim, malaka va koʻnikmalar asoslarini shakllantirishga qaratilgan.\nTayanch oʻrta taʼlim oʻquv dasturiga muvofiq taʼlim oluvchilarga bilim, malaka va koʻnikmalarning zaruriy hajmini beradi, ularda mustaqil fikrlash va tahlil qilish qobiliyatini rivojlantiradi.\nTayanch oʻrta taʼlim doirasida (VII sinfdan soʻng) taʼlim oluvchilarda kasblar boʻyicha birlamchi bilim va koʻnikmalarni shakllantirish uchun ularni professional tashxislash va kasb-hunarga yoʻnaltirish boʻyicha choralar amalga oshiriladi.\nOʻrta taʼlim oʻquv dasturiga muvofiq taʼlim oluvchilar tomonidan zarur bilim, malaka va koʻnikmalar oʻzlashtirilishini, shuningdek taʼlimning keyingi turi tanlanishini hamda yuqori malaka talab qilinmaydigan kasblar egallanishini taʼminlaydi.",
+     "retrieval_score": 0.5745,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4646908#art-37#p1",
+     "doc_id": "lex:4646908",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni maktabgacha taʼlim va tarbiya toʻgʻrisida",
+     "url": "https://lex.uz/docs/4646908",
+     "article": "37-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "37-modda. Maktabgacha boʻlgan yoshdagi bolalarning huquqlari\nMaktabgacha boʻlgan yoshdagi bolalar quyidagi huquqlarga ega:\ndavlat tomonidan kafolatlangan hajm doirasida bepul tibbiy yordam olish;\nsogʻliq uchun xavfsiz boʻlgan sharoitlarda taʼlim olish va tarbiyalanish;\nsogʻlom turmush tarzini olib borish, bolalarni mehnat qilishga majburlashning har qanday shakllaridan, jismoniy va ruhiy zoʻravonlikdan, oʻz shaʼni va qadr-qimmati kamsitilishidan himoyalanish;\noʻz sogʻligʻiga zarar yetkazadigan axborotdan himoyalanish;\numumiy oʻrta taʼlimga majburiy bir yillik tayyorgarlikdan oʻtish.\nMaktabgacha yoshdagi bolalar qonunchilikka muvofiq boshqa huquqlarga ham ega boʻlishi mumkin.",
+     "retrieval_score": 0.805,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1611,
+    "retrieval_ms": 1102,
+    "rerank_ms": 0,
+    "generation_ms": 2467,
+    "total_ms": 5181
+   },
+   "usage": {
+    "input_tokens": 13807,
+    "output_tokens": 624,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Bolalarni maktabga bir yillik majburiy tayyorlash hozirgi qonunchilikka koʻra qaysi yoshdan boshlanadi?",
+    "search_queries": [
+     "Avval bolalarni maktabga bir yil majburiy tayyorlash yetti yoshdan boshlanadi deb tushunardim, hozirgi qonunga koʻra bu tayyorlov qaysi yoshdan boshlanadi?",
+     "Bolalarni maktabga bir yillik majburiy tayyorlash hozirgi qonunchilikka koʻra qaysi yoshdan boshlanadi?",
+     "bolalarni maktabga bir yillik majburiy tayyorlash yoshi",
+     "umumiy oʻrta taʼlimga qabul qilish yoshi olti yoshdan yetti yoshgacha",
+     "maktabga tayyorlov bir yillik majburiy taʼlim yoshi"
+    ],
+    "doc_hints": [
+     "Taʼlim toʻgʻrisidagi qonun",
+     "Oʻzbekiston Respublikasi Konstitutsiyasi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 857,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q069",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonunchilik hujjatlarida bu savolga javob beradigan qoida mavjud emas.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:1556897#band-9#p1",
+     "doc_id": "lex:1556897",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori chimyon-chorvoq kurort-rekreatsiya zonasining tabiiy boyliklarini saqlab qolish hamda dam olish va sogʻlomlashtirish tizimini takomillashtirishga doir qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/1556897",
+     "article": "9-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-07-16",
+     "text": "9. Oʻzbekiston Respublikasi Qishloq va suv xoʻjaligi vazirligining Oʻrmon xoʻjaligi bosh boshqarmasi 2001-yil 1-dekabrgacha boʻlgan muddatda Chimyon—Chorvoq kurort-rekreatsiya zonasida oʻrmon daraxtlari va manzarali daraxtlarni joylashtirish sxemasini ishlab chiqsin.",
+     "retrieval_score": 0.7968,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:1556897#band-3#p8",
+     "doc_id": "lex:1556897",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori chimyon-chorvoq kurort-rekreatsiya zonasining tabiiy boyliklarini saqlab qolish hamda dam olish va sogʻlomlashtirish tizimini takomillashtirishga doir qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/1556897",
+     "article": "3-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-07-16",
+     "text": "Oʻzbekiston Respublikasi Qishloq va suv xoʻjaligi vazirligining Oʻrmon xoʻjaligi bosh boshqarmasi bilan birgalikda Ugom-Chatqol Davlat milliy tabiat bogʻi oʻrmon xoʻjaligi korxonalarining kuchi bilan yer uchastkalaridan foydalanuvchi buyurtmachilarning mablagʻlari hisobiga 2002 — 2005-yillarda kurort-rekreatsiya zonasi oʻrmonzorga aylantirilishini taʼminlasin;\nbir oy muddatda “Oʻzbekneftgaz” milliy xolding kompaniyasi, “Oʻzbekenergo” davlat-aksiyadorlik kompaniyasi, “Oʻzkommunxizmat” agentligi va Toshkent shahrining bosh rejasi ilmiy-tadqiqot va loyiha instituti bilan birgalikda Chimyon-Chorvoq kurort-rekreatsiya zonasida joylashgan turar joy va maʼmuriy binolarning energiya taʼminoti manbalarini (issiqlik taʼminoti va ovqat pishirish) variantlarini koʻrib chiqsin va qaror qabul qilsin.\nBelgilab qoʻyilsinki, yuqorida koʻrsatib oʻtilgan maqsadlar uchun yer uchastkalariga egalik qilish va ulardan foydalanish huquqi Toshkent viloyati hokimining tegishli qarori qabul qilingan holda kim oshdi savdosi orqali amalga oshiriladi.",
+     "retrieval_score": 0.787,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:1556897#band-3#p1",
+     "doc_id": "lex:1556897",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori chimyon-chorvoq kurort-rekreatsiya zonasining tabiiy boyliklarini saqlab qolish hamda dam olish va sogʻlomlashtirish tizimini takomillashtirishga doir qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/1556897",
+     "article": "3-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-07-16",
+     "text": "3. Toshkent viloyati hokimligi:\n2002-yilning I yarim yilligida Gʻazalkent-Chorvoq-Baqachoʻl magistral kanalizatsiya kollektori, shu jumladan ikkita kanalizatsiya nasos stansiyasi va Koʻpriksoy ustidagi vant koʻprik qurilishini tugallasin; 2003-yil oxirigacha — Chimyonsoy kollektori qurilishini va Chirchiq kanalizatsiya tozalash inshootlari kengaytirilishini tugallasin;\nOʻzbekiston Respublikasi Davlat arxitektura va qurilish qoʻmitasi bilan birgalikda 2001-yil oxirigacha Chimyon-Chorvoq kurort-rekreatsiya zonasini rivojlantirishning bosh rejasini ishlab chiqsin va belgilangan tartibda tasdiqlasin;\nChimyon-Chorvoq kurort-rekreatsiya zonasida imorat qurilishi uchun yer uchastkalarini faqat tasdiqlangan bosh rejaga muvofiq ajratsin;\n2001-yil oxirigacha Chorvoq suv omborining 100 metrlik sanitariya zonasida joylashgan binolar va inshootlar buzilishini (koʻchirilishini) taʼminlasin;\nChorvoq suv omborining oʻng qirgʻogʻida, shu jumladan sharqiy qirgʻoqda 100 metrlik sanitariya zonasida yer uchastkalari ajratilishini taqiqlasin;\nyuridik shaxslarga imorat qurish uchun, shuningdek aholining ommaviy dam olishini tashkil etishga faqat Chorvoq suv omborining soʻl qirgʻogʻidan, Baqachoʻldan Burchmullagacha boʻlgan joydan yer ajratsin;",
+     "retrieval_score": 0.7856,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:1556897#band-7s2#p1",
+     "doc_id": "lex:1556897",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori chimyon-chorvoq kurort-rekreatsiya zonasining tabiiy boyliklarini saqlab qolish hamda dam olish va sogʻlomlashtirish tizimini takomillashtirishga doir qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/1556897",
+     "article": "7-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-07-16",
+     "text": "7. “Oʻzsanoatqurilishbank”",
+     "retrieval_score": 0.6948,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-8093787#art-42#p6",
+     "doc_id": "lex:-8093787",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni jismoniy tarbiya va sport toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8093787",
+     "article": "42-modda",
+     "part": "6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-03-24",
+     "text": "42-modda. Fuqarolarning ish joyi, yashash joyi hamda dam olish joyida jismoniy tarbiya va sportni tashkil etish\nIsh beruvchilar xodimlarning jismoniy tarbiya va sport bilan faol shugʻullanishi, shu jumladan ish vaqti davomida yoki ish vaqtidan keyin ixtiyoriy ravishda jismoniy tarbiya va sport bilan shugʻullanishi uchun zarur shart-sharoitlar yaratishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1638,
+    "retrieval_ms": 259,
+    "rerank_ms": 0,
+    "generation_ms": 1582,
+    "total_ms": 3480
+   },
+   "usage": {
+    "input_tokens": 11309,
+    "output_tokens": 212,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Yozda eng salqin dam olish joyi qaysi togʻ etagida joylashgan?",
+    "search_queries": [
+     "Yozda eng salqin dam olish joyi qaysi togʻ etagida joylashgan?",
+     "yozgi dam olish joyi togʻ etagi",
+     "rekreatsiya zonasi togʻ etagida joylashgan"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 423,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q070",
+   "status": "ok",
+   "answer": "Yoʻq, bunday obyektga investitsiya kiritish taqiqlanadi. Investitsiyalar va investitsiya faoliyati toʻgʻrisidagi qonunning 8-moddasiga koʻra, barpo etilishi va foydalanilishi qonunchilikda belgilangan sanitariya-gigiyena, radiatsiya, ekologiya, arxitektura-shaharsozlik talablariga va boshqa talablarga javob bermaydigan, yuridik va jismoniy shaxslarning huquqlarini, erkinliklarini hamda qonun bilan qoʻriqlanadigan manfaatlarini buzadigan obyektlarga investitsiya qilish taqiqlanadi [1]. Xuddi shu taqiq investitsiya faoliyati toʻgʻrisidagi qonunning 6-moddasida ham mustahkamlangan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-4664142",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni investitsiyalar va investitsiya faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-4664142",
+     "article": "8-modda",
+     "part": "1–2-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-4664142#art-8#p1",
+     "quote": "Barpo etilishi va foydalanilishi qonunchilikda belgilangan sanitariya-gigiyena, radiatsiya, ekologiya, arxitektura-shaharsozlik talablariga va boshqa talablarga javob bermaydigan, yuridik va jismoniy shaxslarning huquqlarini, erkinliklarini hamda qonun bilan qoʻriqlanadigan manfaatlarini buzadigan obyektlarga investitsiya qilish taqiqlanadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-29905",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni investitsiya faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-29905",
+     "article": "6-modda",
+     "part": "1–2-qism",
+     "edition_date": "1998-12-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-29905#art-6#p1",
+     "quote": "Barpo etilishi va foydalanilishi qonun hujjatlarida belgilangan sanitariya-gigiyena, radiatsiya, ekologiya, arxitektura-shaharsozlikka oid va boshqa talablarga javob bermaydigan, yuridik va jismoniy shaxslarning huquqlarini hamda qonun bilan qoʻriqlanadigan manfaatlarini buzadigan obyektlarga investitsiya kiritish taqiqlanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-4664142#art-8#p1",
+     "doc_id": "lex:-4664142",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni investitsiyalar va investitsiya faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4664142",
+     "article": "8-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "8-modda. Investitsiya faoliyatining obyektlari\nIjtimoiy soha, tadbirkorlik, ilmiy va qonunchilik bilan taqiqlanmagan boshqa faoliyat turlarining obyektlari investitsiya faoliyati obyektlaridir.\nBarpo etilishi va foydalanilishi qonunchilikda belgilangan sanitariya-gigiyena, radiatsiya, ekologiya, arxitektura-shaharsozlik talablariga va boshqa talablarga javob bermaydigan, yuridik va jismoniy shaxslarning huquqlarini, erkinliklarini hamda qonun bilan qoʻriqlanadigan manfaatlarini buzadigan obyektlarga investitsiya qilish taqiqlanadi.",
+     "retrieval_score": 0.9837,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-29905#art-6#p1",
+     "doc_id": "lex:-29905",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni investitsiya faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-29905",
+     "article": "6-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1998-12-24",
+     "text": "6-modda. Investitsiya faoliyati obyektlari\nModdiy va nomoddiy neʼmatlar ishlab chiqarish obyektlari investitsiya faoliyatining obyektlaridir.\nBarpo etilishi va foydalanilishi qonun hujjatlarida belgilangan sanitariya-gigiyena, radiatsiya, ekologiya, arxitektura-shaharsozlikka oid va boshqa talablarga javob bermaydigan, yuridik va jismoniy shaxslarning huquqlarini hamda qonun bilan qoʻriqlanadigan manfaatlarini buzadigan obyektlarga investitsiya kiritish taqiqlanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2513898#art-8#p1",
+     "doc_id": "lex:2513898",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “investitsiya faoliyati toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/2513898",
+     "article": "8-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-07-27",
+     "text": "8-modda. Investitsiya faoliyati obyektlari\nQonun hujjatlarida taqiqlanmagan tadbirkorlik faoliyati va boshqa turdagi faoliyat obyektlari investitsiya faoliyati obyektlaridir.\nBarpo etilishi va foydalanilishi qonun hujjatlarida belgilangan sanitariya-gigiyena, radiatsiya, ekologiya, arxitektura-shaharsozlik talablariga va boshqa talablarga javob bermaydigan, yuridik va jismoniy shaxslarning huquqlarini hamda qonun bilan qoʻriqlanadigan manfaatlarini buzadigan obyektlarga investitsiya kiritish taqiqlanadi.",
+     "retrieval_score": 0.8248,
+     "rerank_score": 0.8,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-4664142#art-11#p1",
+     "doc_id": "lex:-4664142",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni investitsiyalar va investitsiya faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4664142",
+     "article": "11-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "11-modda. Investorning majburiyatlari\nInvestor:\nsoliqlar va toʻlovlarni toʻlashi;\ninvestitsiya qilish munosabati bilan oʻzi qabul qilgan shartnoma majburiyatlarini bajarishi;\nqonunchilik talablariga, shu jumladan raqobat toʻgʻrisidagi, korrupsiyaga qarshi kurashish toʻgʻrisidagi, investitsiyalar va investitsiya faoliyati toʻgʻrisidagi, mehnat toʻgʻrisidagi, shaharsozlik toʻgʻrisidagi, atrof-muhitni muhofaza qilish toʻgʻrisidagi qonunchilik talablariga, shuningdek texnika xavfsizligiga, sanitariya normalari va qoidalariga rioya etishi;\nshartnoma shartlarini bajarmaganligi yoki lozim darajada bajarmaganligi sababli investitsiya faoliyati ishtirokchisiga yetkazilgan zararlarning oʻrnini qoplashi;\nvakolatli davlat boshqaruvi organlarining va mahalliy davlat hokimiyati organlarining oʻz vakolatlari doirasida qoʻyiladigan talablarini bajarishi shart.",
+     "retrieval_score": 0.7452,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-4664142#art-60#p1",
+     "doc_id": "lex:-4664142",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni investitsiyalar va investitsiya faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4664142",
+     "article": "60-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "60-modda. Investitsiya faoliyatini cheklash, toʻxtatib turish yoki tugatish\nInvestitsiya faoliyatini cheklash, toʻxtatib turish yoki tugatish investorning qaroriga, vakolatli davlat organining qaroriga yoki sudning qaroriga koʻra amalga oshirilishi mumkin.\nInvestitsiya faoliyatini cheklash, toʻxtatib turish yoki tugatish toʻgʻrisidagi qaror quyidagi hollarda qabul qilinishi mumkin:\ninvestor qonunda belgilangan tartibda bankrot deb eʼlon qilinganda yoki tan olinganda;\nfavqulodda vaziyatlar, epidemiyalar hamda aholining hayoti va sogʻligʻiga boshqa haqiqiy tahdidlar yuzaga kelganda;\ninvestitsiya shartnomasida, shu jumladan Oʻzbekiston Respublikasi Hukumati bilan tuzilgan investitsiya shartnomasida belgilangan majburiyatlar bajarilmaganda va (yoki) qoʻpol ravishda buzilganda;\ninvestitsiya faoliyati jarayonida qonunchilikda belgilangan sanitariya-gigiyena, radiatsiyaviy, ekologik, arxitektura-shaharsozlik talablari hamda boshqa talablar, yuridik va jismoniy shaxslarning talablari, huquqlari hamda qonun bilan qoʻriqlanadigan manfaatlari buzilishiga olib kelishi mumkin boʻlgan holatlar aniqlanganda.",
+     "retrieval_score": 0.6873,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1987,
+    "retrieval_ms": 1631,
+    "rerank_ms": 0,
+    "generation_ms": 3335,
+    "total_ms": 6955
+   },
+   "usage": {
+    "input_tokens": 11121,
+    "output_tokens": 844,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar investitsiya kiritmoqchi boʻlgan obyekt sanitariya yoki ekologiya talablariga mos kelmasa, investitsiya kiritishga yoʻl qoʻyiladimi?",
+    "search_queries": [
+     "Investitsiya qilmoqchi boʻlgan joyim sanitariya yoki ekologiya talablariga mos kelmasa, baribir pul tikishim mumkinmi?",
+     "Agar investitsiya kiritmoqchi boʻlgan obyekt sanitariya yoki ekologiya talablariga mos kelmasa, investitsiya kiritishga yoʻl qoʻyiladimi?",
+     "investitsiya faoliyati sanitariya va ekologiya talablariga rioya etish",
+     "ekologik talablarga javob bermaydigan obyektga investitsiya kiritish taqiqlanadi",
+     "investitsiya loyihasini ekologik ekspertizadan oʻtkazish talabi"
+    ],
+    "doc_hints": [
+     "Investitsiyalar va investitsiya faoliyati toʻgʻrisidagi qonun",
+     "Ekologik ekspertiza toʻgʻrisidagi qonun",
+     "Ekologiya va atrof-muhitni muhofaza qilish toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 850,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

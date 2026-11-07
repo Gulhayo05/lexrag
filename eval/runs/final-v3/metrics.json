@@ -1,0 +1,1568 @@
+{
+ "metrics": {
+  "run_id": "final-v3",
+  "questions": 100,
+  "missing": [],
+  "hit5_doc": 0.9556,
+  "hit5_article": 0.9222,
+  "mrr": 0.8907,
+  "context_precision": 0.8341,
+  "citation_accuracy": 0.9431818181818182,
+  "fabricated_citations": 0,
+  "outdated_citations": 0,
+  "no_answer_accuracy": 1.0,
+  "latency_p50_s": 4.48,
+  "latency_p95_s": 7.1,
+  "error_rate": 0.0,
+  "answer_correctness": 1.833,
+  "faithfulness": 0.9576,
+  "citation_accuracy_judge": 0.7927,
+  "context_precision_proxy_same_doc": 0.7654,
+  "error_attribution": {
+   "retrieval": 7
+  }
+ },
+ "targets": {
+  "hit5_doc": {
+   "value": 0.9556,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "hit5_article": {
+   "value": 0.9222,
+   "target": ">= 0.8",
+   "pass": true
+  },
+  "mrr": {
+   "value": 0.8907,
+   "target": ">= 0.7",
+   "pass": true
+  },
+  "context_precision": {
+   "value": 0.8341,
+   "target": ">= 0.6",
+   "pass": true
+  },
+  "answer_correctness": {
+   "value": 1.833,
+   "target": ">= 1.6",
+   "pass": true
+  },
+  "faithfulness": {
+   "value": 0.9576,
+   "target": ">= 0.95",
+   "pass": true
+  },
+  "citation_accuracy": {
+   "value": 0.9431818181818182,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "fabricated_citations": {
+   "value": 0,
+   "target": "== 0",
+   "pass": true
+  },
+  "outdated_citations": {
+   "value": 0,
+   "target": "== 0",
+   "pass": true
+  },
+  "no_answer_accuracy": {
+   "value": 1.0,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "latency_p50_s": {
+   "value": 4.48,
+   "target": "<= 5.0",
+   "pass": true
+  },
+  "latency_p95_s": {
+   "value": 7.1,
+   "target": "<= 12.0",
+   "pass": true
+  },
+  "error_rate": {
+   "value": 0.0,
+   "target": "<= 0.02",
+   "pass": true
+  }
+ },
+ "per_question": [
+  {
+   "id": "q001",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The answer correctly states the required information about the witness from FPK 82 and adds accurate parallel provision from IPK 88. All four atomic factual claims are directly supported by the retrieved contexts, and both citations accurately support their corresponding statements."
+   }
+  },
+  {
+   "id": "q002",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "System answer correctly states the rule from Article 29: agreement amendment, addition, or termination for a project with total value over 1 million USD (but not over 10 million) is carried out in agreement with the authorized state body. Both atomic claims are supported by context rank1; citation supports the answer."
+   }
+  },
+  {
+   "id": "q003",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 2,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer correctly states the rule from Article 20. However, the second claim that it is in part 1 of Article 20 is not supported by the retrieved context, so that claim is not faithful and the citation does not support it."
+   }
+  },
+  {
+   "id": "q004",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The answer correctly states the constitutional rule and adds consistent Family Code provisions; all factual claims are supported by the cited contexts."
+   }
+  },
+  {
+   "id": "q005",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly states the minimum five-year term for providing land plots to families under a family contract according to Article 51 of the Land Code. The single factual claim is directly supported by the retrieved context, and the cited quote accurately supports it."
+   }
+  },
+  {
+   "id": "q006",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The system answer correctly states the rules from Articles 202 and 227: apellyatsiya shikoyati is sent to the appellate court but filed with the court that issued the decision, which must send it with the case within five days; kassatsiya shikoyati may be filed within six months from the date the first-instance decision enters into force. All four atomic factual claims are directly supported by retrieved contexts 1 and 2, and the citations match the supporting provisions."
+   }
+  },
+  {
+   "id": "q007",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 5,
+    "total_claims": 5,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2,
+     3
+    ],
+    "reason": "The system answer states the same rules: inviolability of home and voting age 18, citing valid sources. All claims are directly supported by the retrieved contexts and citations."
+   }
+  },
+  {
+   "id": "q008",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly states the units from Article 145 (years, months, weeks, days, hours) and includes additional correct details about calendar date and inevitable event, all supported by the retrieved context."
+   }
+  },
+  {
+   "id": "q009",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The answer correctly states that the birth date can be changed by at most one year and the place of birth only if the child is not older than ten, adding the correct territorial limitation. All factual claims are supported by retrieved contexts 1 and 2. However, citation [1] (FPK 299) does not mention the 'within Uzbekistan' limitation attached to the place-of-birth claim, so citation_supports is false."
+   }
+  },
+  {
+   "id": "q010",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q011",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "System answer accurately restates Article 9: free access to legal documents and court rulings, mandatory publication when directly required by law, and obligation of state administration/local government bodies to provide requested information in the prescribed manner. Both claims are directly supported by the retrieved context."
+   }
+  },
+  {
+   "id": "q012",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 5,
+    "total_claims": 6,
+    "citation_supports": false,
+    "relevant_contexts": [],
+    "reason": "Javobda Jinoyat kodeksining 268-moddasi keltirilgan, lekin savol haydovchining yoʻl harakati qoidalarini buzishi haqida boʻlib, bu holat 266-moddaga tegishli. 268-modda esa 266-moddada nazarda tutilgan shaxslarni istisno qiladi. Shuning uchun jazo notoʻgʻri va keltirilgan iqtibos savoldagi haydovchiga nisbatan qoʻllanishini tasdiqlamaydi."
+   }
+  },
+  {
+   "id": "q013",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer accurately restates the rule from Article 344 of the Customs Code, matching the expected answer. It contains one factual claim that is directly supported by retrieved context rank 1, and the citation quote matches the context."
+   }
+  },
+  {
+   "id": "q014",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 11,
+    "total_claims": 11,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "Javob 86-modda bo'yicha yozma shakl va ro'yxatdan o'tkazish talabini to'g'ri ko'rsatadi, shuningdek shartnoma mazmuni bo'yicha qo'shimcha talablarni ham to'g'ri keltiradi. Barcha da'volar 1 va 2-kontekstlar bilan qo'llab-quvvatlanadi; iqtiboslar da'voga mos keladi."
+   }
+  },
+  {
+   "id": "q015",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "System answer correctly states threshold >10 BHM for citizens, additional written requirement for legal entities, and consequences under Art 109, all supported by retrieved article 733 and Plenum para 21."
+   }
+  },
+  {
+   "id": "q016",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 1,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly states the procedure for execution against state targeted funds (by distributing organs per CM order) but omits the required part about who establishes such funds (President's decision), making it incomplete. Both factual claims are supported by retrieved context rank 1, and citations support them. Only context rank 1 is relevant."
+   }
+  },
+  {
+   "id": "q017",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "System answer accurately states both required rules from Articles 20 and 22; both factual claims are directly supported by the cited retrieved contexts, which are relevant."
+   }
+  },
+  {
+   "id": "q018",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly states the rule from Article 18 of the Water Code, matching the expected answer. The single factual claim is fully supported by the cited retrieved context, which contains the exact provision."
+   }
+  },
+  {
+   "id": "q019",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 5,
+    "total_claims": 5,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2,
+     3
+    ],
+    "reason": "System answer matches expected rule from Article 460 and adds correct extra detail about customs authorities. All factual claims are directly supported by retrieved contexts 1 and 3 (context 2 also contains the same rule), and citations support their attached claims."
+   }
+  },
+  {
+   "id": "q020",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q021",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "System answer correctly states the one-working-day deadline from the date of the refusal decision, matching Article 22 of the law. All factual claims are supported by retrieved context 1, and the citation supports the deadline claim."
+   }
+  },
+  {
+   "id": "q022",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q023",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer states the rule from Article 286 correctly, including the required compliance with Articles 313-321 and the validity condition. Both factual claims are supported by retrieved context 1, and each citation supports its attached claim."
+   }
+  },
+  {
+   "id": "q024",
+   "category": "faktik",
+   "status": "no_answer",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 0,
+    "total_claims": 0,
+    "citation_supports": false,
+    "relevant_contexts": null,
+    "reason": "system status no_answer"
+   }
+  },
+  {
+   "id": "q025",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "System answer matches the expected rule from Constitution Article 96 exactly, including both time limits and the Central Election Commission. All three atomic claims (two-month deadline for Legislative Chamber after election, one-month deadline for Senate after its formation, and convocation by the Central Election Commission) are directly supported by the cited constitution text. Relevant retrieved contexts include rank 1 (full Article 96) and rank 2 (constitutional law provision on Legislative Chamber's first meeting)."
+   }
+  },
+  {
+   "id": "q026",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Tizim javobi kutilgan javob bilan bir xil qoidalarni beradi: deputat maqomi ro‘yxatga olingan paytdan e’tiboran vujudga keladi va guvohnoma hamda ko‘krak nishoni o‘n kun ichida beriladi. Ikkala da’vo ham 1-darajali kontekstdan to‘g‘ridan-to‘g‘ri qo‘llab-quvvatlanadi va iqtiboslar tegishli da’volarni qo‘llab-quvvatlaydi."
+   }
+  },
+  {
+   "id": "q027",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 1,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "Tizim javobi Bojxona kodeksi 96-moddasidagi asosiy shartlarni (yozma xabardor qilish, deklaratsiya taqdim etish) va saqlash muddatiga ta'sir qilmasligini, shuningdek 94-moddadagi uch yillik muddatni to'g'ri ko'rsatgan. Biroq kutilgan javobda qo'shimcha ravishda erkin bojxona zonasi rejimi bo'yicha 108-modda talablari ham berilgan bo'lib, tizim javobi bu qismni o'tkazib yuborgan, shuning uchun to'liq emas. Iqtiboslar tekshirilganda [1] iqtibosda faqat yozma xabardor qilish ko'rsatilgan, huquqni oluvchining deklaratsiya taqdim etishi talabi iqtibosda yo'q, shu sababli citation_supports false."
+   }
+  },
+  {
+   "id": "q028",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 4,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1,
+     2,
+     3
+    ],
+    "reason": "Answer correctly states no license under Article 15 and is supported by Land Code; however the claim about Article 31 inaccurately renders 'kavlab olish' as 'вскрышные работы', so that citation does not support the attached claim. Contexts 1, 2, 3 are relevant; context 4 is not directly needed for the rule asked."
+   }
+  },
+  {
+   "id": "q029",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q030",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q031",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Tizim javobi Havo kodeksining 72-moddasiga to'g'ri asoslanadi: xavf ostidagi odamlar haqida xabar berish majburiyati doimo mavjud, yordam ko'rsatish esa faqat o'z kemasi, yo'lovchilari va ekipaj hayoti uchun xavf bo'lmaganda talab qilinadi. Barcha uchta da'vo keltirilgan kontekst bilan qo'llab-quvvatlanadi va iqtibos ularni tasdiqlaydi."
+   }
+  },
+  {
+   "id": "q032",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 6,
+    "total_claims": 6,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer lists all five statutory termination grounds and the additional provision that other grounds may be established by legislation, all supported by Article 27 in context 1."
+   }
+  },
+  {
+   "id": "q033",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer accurately restates Article 2 of the Electronic Commerce Law: if an international treaty of Uzbekistan establishes rules different from those in the electronic commerce legislation, the treaty rules apply. The single factual claim is directly supported by context 1, which contains the exact provision and is cited correctly. Context 2 is a general international treaties provision and is not needed for the specific question."
+   }
+  },
+  {
+   "id": "q034",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer accurately states both required rules from Article 5, so correctness is 2. All three factual claims are supported by retrieved context rank 1, so faithful_claims equals total_claims. However, the citation quote provided for [1] includes only the political party membership sentence, not the sentence about permissible paid activities, so citation_supports is false for the second claim. Only context rank 1 is relevant."
+   }
+  },
+  {
+   "id": "q035",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly states the one-month deadline under Article 395 and adds the permissible extension, which is also correct. Both factual claims are supported by the retrieved context, and the cited quotes support their respective claims."
+   }
+  },
+  {
+   "id": "q036",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q037",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q038",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Tizim javobi kutilgan javob bilan bir xil: 58-moddaga ko'ra yuridik shaxslarga kompensatsiya to'lovining uch baravari miqdorida jarima qo'llanilishi to'g'ri ko'rsatilgan. Bitta atomik da'vo mavjud va u keltirilgan kontekst va iqtibos bilan to'liq qo'llab-quvvatlanadi."
+   }
+  },
+  {
+   "id": "q039",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Tizim javobi 341-moddadagi istisno holatni va bir oylik muddatni to‘g‘ri ko‘rsatgan; barcha daʼvolar keltirilgan kontekstdan to‘liq qo‘llab-quvvatlangan va iqtibos ularni tasdiqlaydi."
+   }
+  },
+  {
+   "id": "q040",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q041",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Javob kutilgan qoidani to'liq va aniq ifodalaydi: yer solig'i va mol-mulk solig'i bo'yicha qarzdorlik bo'lmasligi sharti, shuningdek boshqa shartlar bilan birga bajarilishi kerakligi to'g'ri ko'rsatilgan. Ikkala da'vo ham 1-kontekst bilan qo'llab-quvvatlanadi va iqtiboslar da'volarga mos keladi."
+   }
+  },
+  {
+   "id": "q042",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly identifies the Ministry of Poverty Reduction and Employment as the accrediting body under Article 103 of the Employment Law. The single factual claim is fully supported by the cited context, and the citation directly supports the answer."
+   }
+  },
+  {
+   "id": "q043",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Tizim javobi Oila kodeksi 149-moddasiga mos keladi va toʻgʻri taqiqni keltiradi. Ikkala iqtibos ham tegishli daʼvolarni qoʻllab-quvvatlaydi, biroq savol Oila kodeksiga oid boʻlgani uchun faqat 1-kontekst bevosita tegishli."
+   }
+  },
+  {
+   "id": "q044",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly states the rule from Article 2 of the law on attracting funds from abroad: international treaty provisions prevail over national legislation if they differ. It cites the exact quote, which supports the claim."
+   }
+  },
+  {
+   "id": "q045",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 5,
+    "total_claims": 5,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Javob kutilgan qoidani to'liq aks ettiradi: 29-modda, 72 soat, apellyatsiya tartibi, shikoyat qilish huquqiga ega shaxslar. Barcha da'volar 1-o'rindagi kontekst bilan qo'llab-quvvatlanadi va iqtibos da'voni tasdiqlaydi."
+   }
+  },
+  {
+   "id": "q046",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 1,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "reason": "Temporary storage no duties correctly stated; but duty-free shop answer misses categories (temporarily staying foreigners and MFA-accredited foreigners). All four factual claims are supported by retrieved contexts. Citation [2] quote omits the perishable 10-day limit needed for that part, so citation support fails."
+   }
+  },
+  {
+   "id": "q047",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)"
+  },
+  {
+   "id": "q048",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Жавоб 15 кунлик муддатни тўғри кўрсатган ва қўшимча тартиб (имзо, муҳр) ҳам 18-моддада мавжуд. Иккала даъво ҳам келтирилган контекст билан бевосита тасдиқланган."
+   }
+  },
+  {
+   "id": "q049",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 5,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The system answer correctly states the current 60-day period per Article 119, matching the expected answer. It includes extra details about enforcement and the old 10-day rule, but those details are not fully supported by citations: the enforcement consequence omits the condition of 120-122 measures, and the claim about 2006 is unsupported. Faithfulness: among 5 atomic claims (current rule period, immediate levy on non-payment, old 10-day rule, 2006 source, mismatch conclusion), only 2 are directly supported by retrieved contexts (the current 60-day rule and the existence of a previous 10-day rule). Citations do not fully support the claims they are attached to."
+   }
+  },
+  {
+   "id": "q050",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q051",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The system answer correctly states both required rules from Article 4: information is provided only via telecommunication networks with information security requirements, and the procedure for providing information for inclusion in the unified system is determined by the Cabinet of Ministers. Both claims are directly supported by the retrieved context rank 1 and properly cited. Context rank 2 also contains the same rule about the Cabinet's authority, so it is relevant."
+   }
+  },
+  {
+   "id": "q052",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The system answer correctly states that the agreement must be notarially certified under Article 280, matching the expected answer. All atomic claims are supported by retrieved context 1 (context 2 confirms the same rule). The citation quote directly supports the notarial requirement."
+   }
+  },
+  {
+   "id": "q053",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer states the same rule as expected, citing the correct article. The single retrieved context contains the exact provision, so all atomic claims are supported by the citation and the citation supports the attached claim."
+   }
+  },
+  {
+   "id": "q054",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "System answer correctly states the one-year period and the authorized bodies. Both extracted claims are directly supported by the retrieved contexts, and the cited quotations accurately match those contexts."
+   }
+  },
+  {
+   "id": "q055",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer correctly states the three-day reporting requirement from Article 12 of the relevant law, matching the expected answer. The single factual claim is fully supported by context 1, the citation accurately quotes the supporting provision, and context 1 is the only relevant context."
+   }
+  },
+  {
+   "id": "q056",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2,
+     3
+    ],
+    "reason": "The answer correctly states the one-year limit for changing the date of birth (164-modda) and the grounds for establishing paternity after registration (209-modda: parents' application, court decision, or father's application). It additionally includes the simultaneous case under 208-modda, which is correct extra detail and supported by context. All three factual claims are directly supported by the cited contexts and the citations support their claims."
+   }
+  },
+  {
+   "id": "q057",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Answer matches expected rule from Article 690; all factual claims are directly supported by the cited context."
+   }
+  },
+  {
+   "id": "q058",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2,
+     3
+    ],
+    "reason": "The answer correctly states the current rule from both IPK 143 and FPK 177, and extra detail from FPK 170 is also correct. All four atomic claims are directly supported by the cited retrieved contexts, and the citations support the claims they are attached to."
+   }
+  },
+  {
+   "id": "q059",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q060",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer correctly states the post-termination confidentiality obligation with the two conditions (no contrary contract term and information remains undisclosed), matching the expected answer. Both factual claims are directly supported by the retrieved text of Article 1097, and the citations correspond accurately to those claims."
+   }
+  },
+  {
+   "id": "q061",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly states the rule from Article 308 of the Economic Procedural Code: when the Chairman of the Supreme Court or the Prosecutor General files a protest, the case is reviewed by the Presidium of the Supreme Court. The single factual claim is fully supported by the cited context, which quotes the exact provision."
+   }
+  },
+  {
+   "id": "q062",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "System answer correctly states the half requirement for grave crimes under Article 74 part 3 b. Both atomic claims (provision location and rule) are supported by the retrieved context. However, the cited quote [1] omits the phrase 'haqiqatda oʻtab boʻlganidan keyin qoʻllanilishi mumkin', so it does not fully support the temporal aspect of the claim."
+   }
+  },
+  {
+   "id": "q063",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer correctly states the rule from Article 179 of the Administrative Procedure Code, allowing a person to whom a departmental normative act applies to challenge it in court if it violates their rights. The extra statement about Article 180 requirements is also supported by the retrieved contexts. Both atomic claims are faithful, citations support the claims, and only context rank 1 is directly relevant to the question."
+   }
+  },
+  {
+   "id": "q064",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly states the five-year term from Article 112 and is fully supported by the retrieved context and citation."
+   }
+  },
+  {
+   "id": "q065",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Tizim javobi kutilgan qoidani to'liq aks ettiradi: ellik yil muqaddam va undan oldinroq yaratilgan madaniy boyliklarni olib chiqish taqiqlanadi, qonun va modda raqami to'g'ri ko'rsatilgan. Ikkala faktik da'vo ham 1-kontekstdagi iqtibos bilan qo'llab-quvvatlanadi."
+   }
+  },
+  {
+   "id": "q066",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer correctly states that the Academy of Sciences together with relevant state bodies and organizations performs seismic risk assessment and that various scale seismic risk maps are produced, as per Article 15. The extra claim about hazard and risk maps from Article 10 is also correct but not required. All four factual claims are supported by the retrieved contexts. However, the citation [1] quote only includes the definition sentence from Article 15 and does not explicitly support the who and maps parts, so citation support fails. Rank 1 contains the requested rule; rank 2 is supplementary and not directly needed."
+   }
+  },
+  {
+   "id": "q067",
+   "category": "rus_kirill",
+   "status": "no_answer",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 0,
+    "total_claims": 0,
+    "citation_supports": false,
+    "relevant_contexts": null,
+    "reason": "system status no_answer"
+   }
+  },
+  {
+   "id": "q068",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The system answer states the same rule with the same numbers and conditions as the expected answer: decisions and conclusions must be published within three days from adoption and enter into force from the day of official publication. The additional reference to Article 133 of the Constitution is accurate and supported by the retrieved context. All factual claims are directly supported by the cited contexts."
+   }
+  },
+  {
+   "id": "q069",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q070",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 5,
+    "total_claims": 6,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "System answer contradicts expected answer: expected says family enterprise must be a legal entity, system says it is not required. Most claims are supported by retrieved contexts, but the claim about involving close relatives omits the age condition from the context, so one claim is unsupported. Citation [1] does not support the hiring/relatives claim, and [2] does not support the organizational form claim."
+   }
+  },
+  {
+   "id": "q071",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Tizim javobi kutilgan javob bilan bir xil qoidani, jumladan 21-modda va mustaqil tayyorgarlik shartlarini toʻgʻri keltirgan. Iqtibos daʼvoni bevosita qoʻllab-quvvatlaydi."
+   }
+  },
+  {
+   "id": "q072",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "Tizim javobi 87-moddadagi talabni to‘g‘ri aks ettiradi va 81-moddaning to‘rtinchi qismida ko‘rsatilgan organlarni qo‘shimcha aniqlaydi. Ikkala da’vo ham tegishli iqtiboslar bilan qo‘llab-quvvatlanadi."
+   }
+  },
+  {
+   "id": "q073",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2,
+     3
+    ],
+    "reason": "The answer correctly states the rule from Elektr energetikasi qonuni 61-modda and adds consistent Civil Code 476; all factual claims are supported by retrieved contexts and citations align."
+   }
+  },
+  {
+   "id": "q074",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer correctly states the main rule from Article 491 that seasonal work duration, as a rule, must not exceed six months, and adds accurate additional details from the same article and Article 492. All three factual claims are supported by the retrieved contexts. The cited quotes correspond to and support the attached claims. Only context rank 1 is directly relevant to the question about maximum seasonal work duration; rank 2 concerns labor contract specifics, not the requested duration limit."
+   }
+  },
+  {
+   "id": "q075",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 5,
+    "total_claims": 5,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The system answer correctly states the lease term of 3 to 49 years for degraded pastures to resident investors under an investment agreement or PPP, matching Article 13 of the Law on Pastures. All factual claims are supported by the cited context (rank 1) and the amendment context (rank 2)."
+   }
+  },
+  {
+   "id": "q076",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "Both parts of the answer exactly match the expected rules from Articles 25 and 30 of the law, each claim is directly supported by its citation and the corresponding retrieved context."
+   }
+  },
+  {
+   "id": "q077",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Answer correctly states the rule from Article 22 of the Telecommunications Law and both factual claims are directly supported by the cited context."
+   }
+  },
+  {
+   "id": "q078",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 4,
+    "total_claims": 6,
+    "citation_supports": true,
+    "relevant_contexts": [],
+    "reason": "Tizim javobi Ma'muriy javobgarlik to'g'risidagi kodeksga asoslanib 10 kunlik apellyatsiya muddatini ko'rsatgan, ammo kutilgan javob Fuqarolik protsessual kodeksining 148-moddasiga muvofiq sud ajrimining ko'chirma nusxasini olgandan keyin 5 kun ichida jarima solgan sudga iltimos qilish kerakligini belgilaydi. Shuning uchun javob noto'g'ri. Olingan kontekstlarning hech biri so'ralgan qoidani o'z ichiga olmaydi, shuning uchun relevant_contexts bo'sh. Atomik da'volardan 4 tasi to'g'ridan-to'g'ri kontekstlar bilan qo'llab-quvvatlanadi, 2 tasi (oldingi 5 kunlik muddat bekor bo'lgani va ijro to'xtatilishi to'g'risidagi to'liq shartsiz da'vo) qo'llab-quvvatlanmaydi."
+   }
+  },
+  {
+   "id": "q079",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q080",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Answer correctly states joint liability and same extent of liability from Art 293; extra Art 295 detail is correct but not needed. All four factual claims are supported by retrieved contexts, but the citation snippets under [1] and [2] do not include the relevant second sentence of Art 293 or second sentence of Art 295, so citation support fails."
+   }
+  },
+  {
+   "id": "q081",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The system answer states the same criteria (labor and combat services, effective state, social and creative activity) and correctly identifies the Honorary Diploma as a state award, making the rule applicable. Both claims are directly supported by the cited contexts."
+   }
+  },
+  {
+   "id": "q082",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The answer correctly states the three-day written notification with copies from the date materials are received, matching Art. 5. Both claims are supported by retrieved context 1; citation quote accurately supports them. Contexts 1 and 2 both contain the three-day rule."
+   }
+  },
+  {
+   "id": "q083",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q084",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer matches the expected rule (up to five years per Article 20) and is fully supported by the retrieved context; the citation quotes the exact provision."
+   }
+  },
+  {
+   "id": "q085",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer correctly states the rule from Article 267: the petition is considered in a closed court session within 48 hours of receipt of materials. Both substantive claims are directly supported by the retrieved context, and the citation is accurate."
+   }
+  },
+  {
+   "id": "q086",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 1,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The first part of the answer correctly states the agreement requirement with district and city executive authorities for documents specified in Article 44 part 1 points 2-4. However, the second part does not answer who is entitled to develop such documents; it only describes the basis for development without mentioning the required license or notification, so the answer is partially correct. Both claims are supported by the retrieved context rank 1, and the citations accurately support these claims. Only context rank 1 is relevant to the question."
+   }
+  },
+  {
+   "id": "q087",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Tizim javobi 50 dan 60 gacha degan to'g'ri qiymatni ko'rsatadi va Senat o'zgartirishi haqidagi qo'shimcha ma'lumot ham 88-moddaga mos keladi. Ikkala da'vo ham tegishli kontekstlar bilan qo'llab-quvvatlanadi; faqat 1-rank kontekst savolga bevosita javob beradi."
+   }
+  },
+  {
+   "id": "q088",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "reason": "The answer correctly states the three-day deadline for signing the court session record after the session or separate procedural action, supported by both Administrative and Civil Procedure Code provisions. Both factual claims are directly supported by the retrieved contexts and citations."
+   }
+  },
+  {
+   "id": "q089",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q090",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 2,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Answer correctly states the exemption per Article 13 with full conditions. It makes two atomic claims; the first general claim omits the required condition that the exemption applies only to those bronlashtirib qo'yilgan for bodies listed by the President, so it is not fully supported by context, while the second claim is supported. The citation [1] does not support the first general claim as written."
+   }
+  },
+  {
+   "id": "q091",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer exactly replicates Article 2 of the Customs Code: international treaty rules prevail. The single claim is supported by the cited context."
+   }
+  },
+  {
+   "id": "q092",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The system answer correctly states the purpose from Article 1, matching the expected answer and including the exact statutory wording; the single factual claim is fully supported by the cited context, which is relevant."
+   }
+  },
+  {
+   "id": "q093",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "The answer correctly states the transfer condition and amount, plus extra correct detail. Both factual claims are supported by retrieved context 1, but the second claim about the CEC setting the per-candidate amount is cited to [1], whose quoted text does not include that sentence, so citation support fails."
+   }
+  },
+  {
+   "id": "q094",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "System answer correctly states the 6-month rule from Article 74 and includes the additional negotiation right. Both factual claims are supported by retrieved context rank 1, but the second claim's citation quote does not include the negotiation provision, so citation_supports is false."
+   }
+  },
+  {
+   "id": "q095",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Tizim javobi Jinoyat kodeksi 192-moddasidagi jazo chorasini to'g'ri ko'rsatgan: bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha jarima. Qo'shimcha jazo turlari ham moddada bor va iqtibos bilan tasdiqlangan. 1-o'rin kontekst bevosita tegishli; 2-o'rin ma'muriy javobgarlik to'g'risidagi kodeks bo'lib, savolga aloqador emas."
+   }
+  },
+  {
+   "id": "q096",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The answer correctly states both fine ranges matching the cited articles. Both claims are supported by retrieved contexts and citations accurately reflect them."
+   }
+  },
+  {
+   "id": "q097",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 6,
+    "total_claims": 6,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1
+    ],
+    "reason": "Ответ правильно указывает запрет использования средств Фонда гарантирования для рекапитализации санируемого банка или промежуточного банка, включая приобретение инструментов капитала, и перечисляет допустимые цели, что соответствует статье 36. Все фактические утверждения подтверждаются контекстом 1. Однако цитата [2] содержит только вводную часть нормы о допустимых целях, но не перечисляет сами цели, поэтому не полностью поддерживает прикреплённое к ней утверждение о конкретных примерах."
+   }
+  },
+  {
+   "id": "q098",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 5,
+    "total_claims": 5,
+    "citation_supports": false,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "System answer correctly states the rule from Article 283 that a donor gets a day off after each blood donation and that this is a type of rest time under Article 201. All five atomic factual claims are supported by retrieved contexts 1 and 2. However, citation [1] only quotes the general rule, not the details about adding to annual leave or using within a year, or the exception for working on the donation day, so it does not fully support all claims attached to it."
+   }
+  },
+  {
+   "id": "q099",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q100",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "relevant_contexts": [
+     1,
+     2
+    ],
+    "reason": "The answer correctly states the rule from Article 208 and additionally cites Article 331 for consistency. All three factual claims are supported by the cited contexts, and the citations directly back the claims. Contexts ranked 1 and 2 are relevant; rank 3 addresses a different aspect."
+   }
+  }
+ ]
+}

@@ -53,10 +53,10 @@ class Settings(BaseSettings):
 
     # retrieval
     candidates: int = 60                             # lexical candidates before rerank
-    rerank_pool: int = 32                            # candidates shown to the LLM reranker
+    rerank_pool: int = 20                            # candidates shown to the LLM reranker (recall@20 = recall@32 on the 100-question set)
     max_chunks_per_doc: int = 12                     # diversity cap in the candidate list
-    pipeline_version: str = "1.0.0"
-    prompt_version: str = "p6"
+    pipeline_version: str = "1.1.0"
+    prompt_version: str = "p7"
 
 
 def _load_anthropic_env() -> None:

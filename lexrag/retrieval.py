@@ -3,7 +3,7 @@
 Signals combined per chunk (all deterministic -> same question, same index, same
 sources):
 * BM25 (FTS5, fields title/heading/body) for every query variant -> RRF fusion
-* document-hint queries ("Mehnat kodeksi") restricted to matching titles
+* in-act search of the documents the question names ("Mehnat kodeksi") or whose title it covers
 * direct article lookup when the question names an article ("134-modda")
 * term coverage of the chunk, authority prior of the document type, citation
   in-degree, and a strong penalty for documents that lost force
@@ -263,12 +263,10 @@ def retrieve(
         if not terms:
             continue
         term_sets.append(terms)
-        expr = _fts_expr(terms)
-        jobs.append((expr, 150, None))
-        for h in doc_hints:
-            tf = _title_filter(h)
-            if tf:
-                jobs.append((expr, 80, tf))
+        # One global BM25 query per variant.  Named acts are searched by _in_doc_search below;
+        # extra title-filtered BM25 queries per hint cost 2x the FTS work and, measured on the
+        # 100-question set, lowered recall (they push hinted-but-wrong acts up the list).
+        jobs.append((_fts_expr(terms), 150, None))
     jobs = list(dict.fromkeys(jobs))
     # independent FTS queries run in parallel (sqlite releases the GIL; one connection per thread)
     results = list(_POOL.map(lambda j: _search(*j), jobs)) if len(jobs) > 1 else [_search(*j) for j in jobs]

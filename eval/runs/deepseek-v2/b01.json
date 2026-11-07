@@ -1,0 +1,1481 @@
+{
+ "run_id": "deepseek-v2",
+ "batch_id": "deepseek-v2-b01",
+ "batch_index": 1,
+ "total_batches": 1,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p4",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T17:58:10+05:00",
+  "completed_at": "2026-11-06T17:58:19+05:00",
+  "total_ms": 8852
+ },
+ "summary": {
+  "total": 10,
+  "ok": 8,
+  "no_answer": 2,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q001",
+   "status": "ok",
+   "answer": "Mehnat kodeksining 217-moddasiga koʻra, har yilgi asosiy eng kam mehnat taʼtilining davomiyligi yigirma bir kalendar kunni tashkil etadi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.98,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "217-modda",
+     "part": "1-qism",
+     "edition_date": "2026-10-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-217#p1",
+     "quote": "Har yilgi asosiy eng kam mehnat taʼtilining davomiyligi yigirma bir kalendar kunni tashkil etadi"
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-217#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "217-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "217-modda. Har yilgi asosiy eng kam mehnat taʼtilining davomiyligi\nHar yilgi asosiy eng kam mehnat taʼtilining davomiyligi yigirma bir kalendar kunni tashkil etadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6257288#art-449#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "449-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "449-modda. Kasanachining yillik mehnat taʼtili\nKasanachining yillik mehnat taʼtili davomiyligi, agar kasanachi qonunchilikka, mehnat haqidagi boshqa huquqiy hujjatlarga yoki mehnat shartnomasiga muvofiq davomiyligi koʻproq boʻlgan yillik mehnat taʼtiliga chiqish huquqiga ega boʻlmasa, yigirma bir kalendar kundan kam boʻlishi mumkin emas.\nKasanachilarga yillik mehnat taʼtilini berish vaqti va navbati kasanachi bilan kelishilgan holda ish beruvchi tomonidan tasdiqlangan jadvalda belgilanadi.",
+     "retrieval_score": 0.729,
+     "rerank_score": 0.4,
+     "used_in_answer": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6257288#art-218#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "218-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "218-modda. Har yilgi asosiy uzaytirilgan taʼtil\nQuyidagilarga yoshi va sogʻligʻining holati hisobga olingan holda har yilgi asosiy uzaytirilgan taʼtil beriladi:\noʻn sakkiz yoshgacha boʻlgan shaxslarga — oʻttiz kalendar kun;\nI va II guruh nogironligi boʻlgan xodimlarga — oʻttiz kalendar kun.\nDavlat hokimiyati organlari va respublika ijro etuvchi hokimiyat organlari xodimlariga davomiyligi yigirma yetti kalendar kun boʻlgan har yilgi asosiy uzaytirilgan taʼtil beriladi, bundan xodimlarning ayrim toifalari uchun qonunda har yilgi asosiy uzaytirilgan taʼtilning uzoqroq davomiyligi belgilangan hollar mustasno.\nHar yilgi asosiy uzaytirilgan taʼtillar ayrim toifadagi xodimlar uchun ham ular mehnat vazifalarining oʻziga xos jihatlari va xususiyatlariga hamda boshqa holatlarga qarab belgilanadi. Bunday taʼtillar olish huquqiga ega boʻlgan xodimlarning roʻyxati va ushbu taʼtillarning davomiyligi qonunchilikda belgilanadi.\nQonunchilikda belgilanganidan tashqari, har yilgi asosiy uzaytirilgan taʼtillar berish, shuningdek har yilgi asosiy uzaytirilgan taʼtilning davomiyligini uning qonunchilik bilan kafolatlangan davomiyligiga nisbatan koʻpaytirish jamoa kelishuvlarida, shuningdek jamoa shartnomasida, ichki hujjatlarda, mehnat shartnomasida nazarda tutilishi mumkin.",
+     "retrieval_score": 0.902,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6257288#art-216#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "216-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "216-modda. Har yilgi mehnat taʼtili tushunchasi va turlari\nHar yilgi mehnat taʼtili dam olish va ishlash qobiliyatini tiklash uchun ish oʻrni (lavozimi) hamda oʻrtacha ish haqi saqlab qolingan holda xodim ishdan ozod etiladigan, xodimga har yili ish yili davomida beriladigan vaqt davridir.\nBarcha xodimlar, shu jumladan oʻrindoshlik asosida ishlaydigan xodimlar har yilgi mehnat taʼtiliga chiqish huquqiga ega.\nHar yilgi mehnat taʼtilining turlari quyidagilardan iborat:\nasosiy mehnat taʼtili (har yilgi asosiy eng kam yoki har yilgi asosiy uzaytirilgan);\nushbu Kodeksning 222-moddasida nazarda tutilgan tartibda asosiy eng kam yoki asosiy uzaytirilgan taʼtil bilan jamlab hisoblanadigan qoʻshimcha mehnat taʼtili.",
+     "retrieval_score": 0.8444,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6257288#art-222#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "222-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "222-modda. Har yilgi asosiy va qoʻshimcha mehnat taʼtillarini jamlash tartibi\nHar yilgi mehnat taʼtilining umumiy davomiyligini hisoblab chiqarishda qoʻshimcha taʼtillar har yilgi asosiy eng kam taʼtil yoki har yilgi asosiy uzaytirilgan taʼtilga qoʻshib jamlanadi.\nBarcha hollarda qonunchilik bilan belgilangan taʼtillarni jamlashda ularning davomiyligi bir ish yili uchun ellik olti kalendar kundan oshib ketishi mumkin emas.\nUshbu moddaning ikkinchi qismida nazarda tutilgan cheklov qonunchilikda nazarda tutilmagan, jamoa kelishuvlarida, shuningdek jamoa shartnomasida, ish beruvchining kasaba uyushmasi qoʻmitasi bilan kelishuvga koʻra qabul qilingan ichki hujjatlarida yoxud mehnat shartnomasida belgilangan mehnat taʼtillariga nisbatan tatbiq etilmaydi.",
+     "retrieval_score": 0.9658,
+     "rerank_score": 0.2,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1972,
+    "retrieval_ms": 3872,
+    "rerank_ms": 0,
+    "generation_ms": 2288,
+    "total_ms": 8133
+   },
+   "usage": {
+    "input_tokens": 13651,
+    "output_tokens": 486,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Yillik asosiy mehnat taʼtilining eng kam muddati qancha?",
+    "search_queries": [
+     "Yillik asosiy mehnat taʼtilining eng kam muddati qancha?",
+     "yillik asosiy mehnat taʼtilining eng kam davomiyligi",
+     "har yilgi asosiy mehnat taʼtili davomiyligi",
+     "yillik asosiy taʼtil muddati mehnat kodeksi",
+     "asosiy mehnat taʼtili necha kalendar kun"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 368,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q002",
+   "status": "ok",
+   "answer": "Согласно статье 150 Гражданского кодекса Республики Узбекистан общий срок исковой давности составляет три года [1]. При этом для отдельных видов требований законодательством могут устанавливаться специальные сроки исковой давности — сокращенные или более длительные по сравнению с общим сроком (статья 151 ГК) [2].",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "150-modda",
+     "part": "1-qism",
+     "edition_date": "2026-09-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-150#p1",
+     "quote": "Umumiy daʼvo muddati — uch yil"
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "151-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-09-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-151#p1",
+     "quote": "Ayrim turdagi talablar uchun qonunchilikda umumiy daʼvo muddatiga qaraganda qisqartirilgan yoki uzaytirilgan maxsus daʼvo muddatlari belgilanishi mumkin"
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111189#art-150#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "150-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "150-modda. Umumiy daʼvo muddati\nUmumiy daʼvo muddati — uch yil.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111189#art-151#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "151-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "151-modda. Maxsus daʼvo muddatlari\nAyrim turdagi talablar uchun qonunchilikda umumiy daʼvo muddatiga qaraganda qisqartirilgan yoki uzaytirilgan maxsus daʼvo muddatlari belgilanishi mumkin.\nAgar qonunda boshqacha tartib belgilangan boʻlmasa, ushbu Kodeks 152-162-moddalarining qoidalari maxsus daʼvo muddatlariga ham joriy qilinadi.",
+     "retrieval_score": 0.9151,
+     "rerank_score": 0.6,
+     "used_in_answer": true
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111189#art-149#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "149-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "149-modda. Daʼvo muddati tushunchasi\nDaʼvo muddati — shaxs oʻzining buzilgan huquqini daʼvo qoʻzgʻatish yoʻli bilan himoya qilishi mumkin boʻlgan muddatdir.",
+     "retrieval_score": 0.8398,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-180552#art-652#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "652-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-08-08",
+     "text": "652-modda. Ish sifatining tegishli darajada emasligi xususida daʼvo qoʻzgʻatish muddati\nIsh sifatining tegishli darajada emasligi tufayli kelib chiqqan talablar uchun daʼvo qoʻzgʻatish muddati ushbu Kodeks 150-moddasining qoidalariga binoan belgilanadi.\nAgar qonunchilik yoki pudrat shartnomasida pudratchining ish sifatiga kafolat berishi nazarda tutilgan, kafolat muddati belgilangan va ishdagi kamchiliklar xususidagi ariza kafolat muddatida berilgan boʻlsa, daʼvo qoʻzgʻatish muddati kamchiliklar xususida ariza berilgan kundan eʼtiboran oʻta boshlaydi.\nAgar pudrat shartnomasiga muvofiq buyurtmachi ish natijasini qismlarga boʻlib qabul qilgan boʻlsa, daʼvo muddati ish natijasi butunlay qabul qilib olingan kundan eʼtiboran oʻta boshlaydi.",
+     "retrieval_score": 0.7837,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111189#art-153#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "153-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "153-modda. Daʼvo muddatini qoʻllash\nBuzilgan huquqni himoya qilish talabi daʼvo muddatining oʻtganligidan qatʼi nazar, sudda koʻrib chiqish uchun qabul qilinadi.\nDaʼvo muddati sud tomonidan faqat nizodagi tarafning sud qaror chiqargunicha bergan arizasiga muvofiq qoʻllanadi.\nQoʻllanish toʻgʻrisida nizodagi taraf bayon qilgan daʼvo muddatining oʻtishi sudning daʼvoni rad etish haqida qaror chiqarishi uchun asos boʻladi.",
+     "retrieval_score": 0.8423,
+     "rerank_score": 0.2,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1955,
+    "retrieval_ms": 3986,
+    "rerank_ms": 0,
+    "generation_ms": 2875,
+    "total_ms": 8818
+   },
+   "usage": {
+    "input_tokens": 8019,
+    "output_tokens": 659,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Fuqarolik kodeksida daʼvo muddati qanday muddat qilib belgilangan?",
+    "search_queries": [
+     "Какой срок исковой давности установлен Гражданским кодексом?",
+     "Fuqarolik kodeksida daʼvo muddati qanday muddat qilib belgilangan?",
+     "daʼvo muddati umumiy muddat",
+     "daʼvo muddati uch yil",
+     "daʼvo muddatining umumiy muddati Fuqarolik kodeksi",
+     "daʼvo muddati qoʻllanishi"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 687,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q003",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasi Oila kodeksining 15-moddasiga koʻra, nikoh yoshi erkaklar va ayollar uchun oʻn sakkiz yosh etib belgilanadi [1]. Uzrli sabablar boʻlganida, alohida hollarda (homiladorlik, bola tugʻilishi, emansipatsiya) nikoh davlat roʻyxatidan oʻtkaziladigan joydagi tuman, shahar hokimi nikoh yoshini koʻpi bilan bir yilga kamaytirishi mumkin [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.98,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "15-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-09-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-104720#art-15#p1",
+     "quote": "Nikoh yoshi erkaklar va ayollar uchun oʻn sakkiz yosh etib belgilanadi"
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "15-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-09-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-104720#art-15#p1",
+     "quote": "Uzrli sabablar boʻlganida, alohida hollarda (homiladorlik, bola tugʻilishi, voyaga yetmagan shaxsning toʻla muomalaga layoqatli deb eʼlon qilinishi (emansipatsiya), nikohga kirishni xohlovchilarning iltimosiga koʻra nikoh davlat roʻyxatidan oʻtkaziladigan joydagi tuman, shahar hokimi nikoh yoshini koʻpi bilan bir yilga kamaytirishi mumkin"
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-104720#art-15#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "15-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "15-modda. Nikoh yoshi\nNikoh yoshi erkaklar va ayollar uchun oʻn sakkiz yosh etib belgilanadi.\nUzrli sabablar boʻlganida, alohida hollarda (homiladorlik, bola tugʻilishi, voyaga yetmagan shaxsning toʻla muomalaga layoqatli deb eʼlon qilinishi (emansipatsiya), nikohga kirishni xohlovchilarning iltimosiga koʻra nikoh davlat roʻyxatidan oʻtkaziladigan joydagi tuman, shahar hokimi nikoh yoshini koʻpi bilan bir yilga kamaytirishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:6638940#band-69s4#p1",
+     "doc_id": "lex:6638940",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori nikoh, oila va fuqarolik holati dalolatnomalarini qayd etish sohasidagi normativ-huquqiy hujjatlarni tizimlashtirish toʻgʻrisida",
+     "url": "https://lex.uz/docs/6638940",
+     "article": "69-band (4-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2026-05-22",
+     "text": "69. Oʻzbekiston Respublikasi Oila kodeksining 14 va 15-moddalariga muvofiq, nikohlanuvchilarning oʻzaro roziliklari va ularning nikoh yoshiga yetganliklari nikoh tuzishning asosiy shartlari hisoblanadi.\nUzrli sabablar mavjud boʻlganda, alohida holatlarda (homiladorlik, bola tugʻilishi, voyaga yetmaganning toʻla muomalaga layoqatli deb eʼlon qilinishi — emansipatsiya), nikoh tuzishni xohlovchi shaxslarning iltimosiga koʻra, nikoh tuzilganligini qayd etish joyidagi tuman, shahar hokimi tomonidan nikohga kirish yoshi bir yildan koʻp boʻlmagan muddatga kamaytirilishi mumkin.",
+     "retrieval_score": 0.5111,
+     "rerank_score": 0.6,
+     "used_in_answer": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3064981#band-69s2#p1",
+     "doc_id": "lex:3064981",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori fuqarolik holati dalolatnomalarini qayd etish qoidalarini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/3064981",
+     "article": "69-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-08-01",
+     "text": "69. Oʻzbekiston Respublikasi Oila kodeksining 14 va 15-moddalariga muvofiq, nikohlanuvchilarning oʻzaro roziliklari va ularning nikoh yoshiga yetganliklari nikoh tuzishning asosiy shartlari hisoblanadi.\nUzrli sabablar mavjud boʻlganda, alohida holatlarda (homiladorlik, bola tugʻilishi, voyaga yetmaganning toʻla muomalaga layoqatli deb eʼlon qilinishi — emansipatsiya), nikoh tuzishni xohlovchi shaxslarning iltimosiga koʻra, nikoh tuzilganligini qayd etish joyidagi tuman, shahar hokimi tomonidan nikohga kirish yoshi bir yildan koʻp boʻlmagan muddatga kamaytirilishi mumkin.",
+     "retrieval_score": 0.5062,
+     "rerank_score": 0.6,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-104720#art-51#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "51-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "51-modda. Nikoh yoshiga yetmagan shaxs bilan tuzilgan nikohni haqiqiy emas deb topish\nNikoh yoshiga yetmagan shaxs bilan tuzilgan nikoh hali nikoh yoshiga yetmay nikohga kirgan shaxsning manfaatlari talab qilgan hollarda haqiqiy emas deb topilishi mumkin. Bunday nikohni haqiqiy emas deb topishni nikoh yoshiga yetmay nikohga kirgan shaxs, uning ona-otasi yoki homiysi, shuningdek vasiylik va homiylik organi hamda prokuror talab qilishga haqlidir.\nIsh sudda hal qilinish paytigacha er yoki xotin nikoh yoshiga yetgan boʻlsa, nikoh faqat uning talabi bilan haqiqiy emas deb topilishi mumkin.\nEr-xotindan biri nikoh yoshiga yetmaganligi tufayli nikohni haqiqiy emas deb topish toʻgʻrisidagi ish, agar er-xotin (ulardan biri) ish sudda koʻrilayotgan paytda nikoh yoshiga yetmagan boʻlsa, vasiylik va homiylik organining ishtirokida koʻrib chiqiladi.",
+     "retrieval_score": 0.9596,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-97664#art-47.3#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "47³-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "473-modda. Nikoh yoshi toʻgʻrisidagi qonunchilikni yoki nikoh tuzish tartibini buzish\nNikoh yoshiga yetmagan shaxs bilan haqiqatda nikoh munosabatlariga kirishish, —\nbazaviy hisoblash miqdorining oʻn baravaridan oʻn besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nOta-ona yoki ularning oʻrnini bosuvchi shaxslar tomonidan nikoh yoshiga yetmagan shaxsni erga berish yoxud uylantirish, —\nbazaviy hisoblash miqdorining yigirma baravaridan yigirma besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nNikohi qonunda belgilangan tartibda qayd etilmagan shaxslar oʻrtasida, shu jumladan nikoh yoshiga yetmagan shaxs bilan nikoh tuzishga doir diniy marosimni amalga oshirish, —\nbazaviy hisoblash miqdorining oʻttiz baravaridan ellik baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.6583,
+     "rerank_score": 0.2,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1952,
+    "retrieval_ms": 3853,
+    "rerank_ms": 0,
+    "generation_ms": 3025,
+    "total_ms": 8833
+   },
+   "usage": {
+    "input_tokens": 10670,
+    "output_tokens": 798,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Nikoh yoshi qonun boʻyicha necha yosh etib belgilangan?",
+    "search_queries": [
+     "Nikoh yoshi necha yosh etib belgilangan?",
+     "Nikoh yoshi qonun boʻyicha necha yosh etib belgilangan?",
+     "nikoh yoshi necha yosh etib belgilangan",
+     "nikoh yoshi Oʻzbekiston Respublikasida",
+     "nikoh tuzish uchun yosh chegarasi",
+     "nikoh yoshi toʻgʻrisidagi qonun"
+    ],
+    "doc_hints": [
+     "Oila kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 330,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q004",
+   "status": "ok",
+   "answer": "Jinoyat kodeksining 17-moddasiga koʻra, jinoyat sodir etgunga qadar oʻn olti yoshga toʻlgan, aqli raso jismoniy shaxslar javobgarlikka tortiladilar [1]. Shu moddaning ikkinchi qismida sanab oʻtilgan jinoyatlar uchun esa jinoyat sodir etgunga qadar oʻn toʻrt yoshga toʻlgan shaxslar javobgarlikka tortiladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "17-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-10-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111453#art-17#p1",
+     "quote": "Jinoyat sodir etgunga qadar oʻn olti yoshga toʻlgan, aqli raso jismoniy shaxslar javobgarlikka tortiladilar"
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "17-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-10-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111453#art-17#p1",
+     "quote": "Jinoyat sodir etgunga qadar oʻn toʻrt yoshga toʻlgan shaxslar ushbu Kodeks 97, 98, 104 — 106, 118, 119-moddalari, 1261-moddasining toʻrtinchi — sakkizinchi qismlarida, 137, 164 — 166, 169-moddalari, 173-moddasining ikkinchi va uchinchi qismlari, 220, 222, 247, 252, 263, 267, 271-moddalari, 277-moddasining ikkinchi va uchinchi qismlarida nazarda tutilgan jinoyatlar uchun javobgarlikka tortiladilar"
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111453#art-17#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "17-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "17-modda. Jismoniy shaxslarning javobgarligi\nJinoyat sodir etgunga qadar oʻn olti yoshga toʻlgan, aqli raso jismoniy shaxslar javobgarlikka tortiladilar.\nJinoyat sodir etgunga qadar oʻn toʻrt yoshga toʻlgan shaxslar ushbu Kodeks 97, 98, 104 — 106, 118, 119-moddalari, 1261-moddasining toʻrtinchi — sakkizinchi qismlarida, 137, 164 — 166, 169-moddalari, 173-moddasining ikkinchi va uchinchi qismlari, 220, 222, 247, 252, 263, 267, 271-moddalari, 277-moddasining ikkinchi va uchinchi qismlarida nazarda tutilgan jinoyatlar uchun javobgarlikka tortiladilar.\nUshbu Kodeksning 122, 123, 1251-moddalarida, 1261-moddasining birinchi va ikkinchi qismlarida, 127, 1271, 1281, 144, 146, 193 — 195, 205 — 210, 225, 226, 230 — 232, 234, 235, 27610, 279 — 302-moddalarida nazarda tutilgan jinoyatlar uchun jinoyat sodir etgunga qadar oʻn sakkiz yoshga toʻlgan shaxslar javobgarlikka tortiladilar.\nOʻn sakkiz yoshga toʻlgunga qadar jinoyat sodir etgan shaxslar umumiy qoidalarga muvofiq va ushbu Kodeksning Umumiy qismi oltinchi boʻlimida nazarda tutilgan xususiyatlar hisobga olingan holda javobgarlikka tortiladilar.",
+     "retrieval_score": 0.7813,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-7788391#preamble#p7",
+     "doc_id": "lex:-7788391",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni voyaga yetmaganlarga nisbatan jinoiy javobgarlik yanada liberallashtirilishi munosabati bilan Oʻzbekiston Respublikasining jinoyat kodeksiga qoʻshimcha va oʻzgartirishlar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7788391",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-10-24",
+     "text": "1) 77-modda kuyidagi mazmundagi oltinchi qism bilan toʻldirilsin:\n“Oʻn sakkiz yoshga toʻlguniga qadar sodir etgan jinoyati uchun tayinlangan jazoni oʻtab boʻlgan shaxs sudlanmagan hisoblanadi, bundan oʻta ogʻir jinoyatlar yoki sodir etgan jinoyati uchun tayinlangan jazoni oʻtab boʻlganidan keyin oʻn sakkiz yoshga toʻlguniga qadar qasddan yangi jinoyat sodir etish hollari mustasno”;\n2) 841-moddaning matnidagi “olti oydan” degan soʻzlar “bir oydan” degan soʻzlar bilan almashtirilsin;\n3) 85-moddaning birinchi qismidagi “olti oydan” degan soʻzlar “bir oydan” degan soʻzlar bilan almashtirilsin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.1,
+     "used_in_answer": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-87124#preamble#p16",
+     "doc_id": "lex:-87124",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni jinoiy jazolarning liberallashtirilishi munosabati bilan Oʻzbekiston Respublikasining jinoyat, jinoyat-protsessual kodekslari hamda maʼmuriy javobgarlik toʻgʻrisidagi kodeksiga oʻzgartishlar va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/-87124",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2001-08-29",
+     "text": "“a) ijtimoiy xavfi katta boʻlmagan jinoyati, ehtiyotsizlik oqibatida sodir etilgan uncha ogʻir boʻlmagan jinoyati uchun ozodlikdan mahrum etishga hukm qilinayotganlarga nisbatan jazoni manzil-koloniyalarda”;\noltinchi qismining “b” bandi quyidagi tahrirda bayon etilsin:\n“b) ijtimoiy xavfi katta boʻlmagan jinoyat, ehtiyotsizlik oqibatida uncha ogʻir boʻlmagan jinoyat sodir etganlarga nisbatan jazoni manzil-koloniyalarda”;\n5) 51-moddasining birinchi va ikkinchi qismlari quyidagi tahrirda bayon etilsin:\n“Otib oʻldirish tariqasidagi oʻlim jazosi faqat javobgarlikni ogʻirlashtiradigan holatlarda qasddan odam oʻldirish (97-moddaning ikkinchi qismi), agressiya (151-moddaning ikkinchi qismi), genotsid (153-modda), terrorizm (155-moddaning uchinchi qismi) uchun belgilanadi.\nOʻlim jazosi ayolga, oltmish yoshdan oshgan erkakka va oʻn sakkiz yoshga toʻlmasdan jinoyat sodir etgan shaxsga nisbatan tayinlanishi mumkin emas”;\n6) 53-moddasi chiqarib tashlansin;\n7) Kodeks quyidagi mazmundagi 66-1-modda bilan toʻldirilsin:\n“66-1-modda. Yarashilganligi munosabati bilan jinoiy javobgarlikdan ozod qilish",
+     "retrieval_score": 0.9994,
+     "rerank_score": 0.1,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-7788391#preamble#p1",
+     "doc_id": "lex:-7788391",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni voyaga yetmaganlarga nisbatan jinoiy javobgarlik yanada liberallashtirilishi munosabati bilan Oʻzbekiston Respublikasining jinoyat kodeksiga qoʻshimcha va oʻzgartirishlar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7788391",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-10-24",
+     "text": "Qonunchilik palatasi tomonidan 2023-yil 4-iyulda qabul qilingan Senat tomonidan 2025-yil 1-avgustda maʼqullangan\nKeyingi yillarda mamlakatimizda voyaga yetmaganlarning manfaatlarini himoya qilishga, ularning huquqlarini, erkinliklarini va qonuniy manfaatlarini davlat tomonidan kafolatlashga qaratilgan keng koʻlamli islohotlar amalga oshirilmoqda.\nShu bilan birga voyaga yetmaganlarga nisbatan jinoiy javobgarlikni yanada liberallashtirish, oʻn sakkiz yoshga toʻlguniga qadar sodir etgan jinoyati uchun jazoni oʻtab boʻlgan shaxsni sudlanmagan deb hisoblashning alohida tartibini belgilash zaruriyati yuzaga kelmoqda.\nMazkur Qonun bilan Oʻzbekiston Respublikasining Jinoyat kodeksiga oʻn sakkiz yoshga toʻlguniga qadar sodir etgan oʻta ogʻir boʻlmagan jinoyati uchun jazoni oʻtab boʻlgan shaxs sudlanmagan deb hisoblanishini, voyaga yetmaganlarga nisbatan ozodlikni cheklashning hamda ozodlikdan mahrum qilishning eng kam muddati olti oydan bir oygacha qisqartirilishini nazarda tutuvchi qoʻshimcha va oʻzgartirishlar kiritilmoqda.\nUshbu Qonun voyaga yetmaganlarning jinoiy javobgarligini yanada liberallashtirishga xizmat qiladi va oʻn sakkiz yoshga toʻlguniga qadar sodir etgan jinoyati uchun jazoni oʻtab boʻlgan shaxsga hayotini sudlanganlik tamgʻasidan holi tarzda davom ettirishi uchun sharoit yaratadi.",
+     "retrieval_score": 0.899,
+     "rerank_score": 0.1,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111460#art-600#p5",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "600-modda",
+     "part": "5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "600-modda. Oʻzbekiston Respublikasiga ushlab berilgan shaxsning jinoiy javobgarligi doirasi\nOʻzbekiston Respublikasi Bosh prokuraturasi xorijiy davlatning vakolatli organini u tomonidan ushlab berilgan shaxsga nisbatan jinoyat ishini yuritish natijalari haqida yozma ravishda xabardor qiladi. Mazkur organning iltimosiga koʻra jinoyat ishi boʻyicha uzil-kesil qarorning koʻchirma nusxasi ham yuborilishi mumkin.",
+     "retrieval_score": 0.8481,
+     "rerank_score": 0.0,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1621,
+    "retrieval_ms": 1772,
+    "rerank_ms": 0,
+    "generation_ms": 3446,
+    "total_ms": 6840
+   },
+   "usage": {
+    "input_tokens": 12798,
+    "output_tokens": 854,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Jinoiy javobgarlikka tortish qaysi yoshdan boshlanadi?",
+    "search_queries": [
+     "Jinoiy javobgarlikka tortish yoshi necha yoshdan boshlanadi?",
+     "Jinoiy javobgarlikka tortish qaysi yoshdan boshlanadi?",
+     "jinoiy javobgarlikka tortish yoshi",
+     "jinoyat sodir etgan shaxs jinoiy javobgarlikka tortiladigan yosh",
+     "jinoiy javobgarlik yoshi o'n olti yosh",
+     "Jinoyat kodeksi jinoiy javobgarlik yoshi"
+    ],
+    "doc_hints": [
+     "Jinoyat kodeksi"
+    ],
+    "article_hints": [
+     "23-modda"
+    ],
+    "in_scope": true,
+    "retrieved_total": 515,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q005",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonunchilik hujjatlarida Marsda yer uchastkasini xususiylashtirish tartibi toʻgʻrisidagi qoidalar mavjud emas, shu sababli bu savolga javob berib boʻlmaydi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.95,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-152653#art-23#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "23-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-11",
+     "text": "23-modda. Yer uchastkalari berish (realizatsiya qilish)\nYer uchastkalarini mulk qilib berish (realizatsiya qilish), doimiy foydalanish uchun va ijaraga berish yer ajratish tariqasida amalga oshiriladi.\nYer uchastkalarini berish (realizatsiya qilish) quyidagi tartibda amalga oshiriladi:\n1) mulk qilib berish (realizatsiya qilish) — qishloq xoʻjaligiga moʻljallanmagan yer uchastkalarini xususiylashtirish toʻgʻrisidagi qonunchilikka muvofiq, shu jumladan yakka tartibda uy-joy qurish hamda uy-joyni obodonlashtirish, tadbirkorlik, shaharsozlik faoliyatini va qonunchilik bilan taqiqlanmagan boshqa faoliyat turlarini amalga oshirish uchun elektron onlayn-auksion vositasida;\n2) doimiy foydalanishga berish — ushbu Kodeksning 20-moddasida nazarda tutilgan hollarda viloyatlar va Toshkent shahar hokimlari tomonidan;\n3) ijaraga berish — elektron onlayn-auksion vositasida, shuningdek ushbu Kodeksning 24-moddasida nazarda tutilgan hollarda Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan. Xususiy mulk boʻlgan yer uchastkasini ijaraga berish uning mulkdori tomonidan amalga oshiriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.9,
+     "used_in_answer": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-152653#art-18#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "18-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-11",
+     "text": "18-modda. Yuridik va jismoniy shaxslarning yer uchastkalariga boʻlgan mulk huquqining vujudga kelishi\nYuridik va jismoniy shaxslarning yer uchastkalariga boʻlgan mulk huquqi qishloq xoʻjaligiga moʻljallanmagan yer uchastkalari xususiylashtirilganda, qonunchilikda belgilangan tartibda yuzaga keladi.\nDiplomatiya vakolatxonalari va ularga tenglashtirilgan, Oʻzbekiston Respublikasida akkreditatsiya qilingan xalqaro tashkilotlarning yer uchastkalariga mulk huquqi ularga oʻzlari vakolatxona binosi sifatida foydalanayotgan imorat yoki imoratning qismlari, shu jumladan vakolatxona boshligʻining qarorgohi ular joylashgan yer uchastkalari bilan birga, shuningdek mazkur vakolatxonalarning imoratlarini qurish uchun yer uchastkalari qonunchilikda belgilangan tartibda realizatsiya qilinganda vujudga keladi.",
+     "retrieval_score": 0.7998,
+     "rerank_score": 0.6,
+     "used_in_answer": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6303013#band-33s3#p1",
+     "doc_id": "lex:-6303013",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori qishloq xoʻjaligiga moʻljallanmagan yer uchastkalarini xususiylashtirish va elektron onlayn-auksion orqali ijaraga berish tartib-taomillari soddalashtirilishi munosabati bilan Vazirlar mahkamasining “qishloq xoʻjaligiga moʻljallanmagan yer uchastkalarini xususiylashtirish toʻgʻrisida”gi Oʻzbekiston Respublikasi qonunini amalga oshirish chora-t",
+     "url": "https://lex.uz/docs/-6303013",
+     "article": "33-band (3-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-12-02",
+     "text": "33. Davlat orderi gʻolib nomiga yer uchastkasini mulk huquq asosida roʻyxatdan oʻtkazish uchun asos hisoblanadi. Davlat orderi berish uchun davlat boji undirilmaydi.",
+     "retrieval_score": 0.6602,
+     "rerank_score": 0.5,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-152653#art-23#p9",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "23-modda",
+     "part": "9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-11",
+     "text": "23-modda. Yer uchastkalari berish (realizatsiya qilish)\nYer uchastkalarini mulk qilib berish (realizatsiya qilish), ulardan doimiy foydalanish va ularni ijaraga berish tartibi Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadi.",
+     "retrieval_score": 0.9056,
+     "rerank_score": 0.4,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5729966#art-21#p12",
+     "doc_id": "lex:5729966",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qishloq xoʻjaligiga moʻljallanmagan yer uchastkalarini xususiylashtirish toʻgʻrisida",
+     "url": "https://lex.uz/docs/5729966",
+     "article": "21-modda",
+     "part": "12–13-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-03-17",
+     "text": "21-modda. Yer uchastkalarini xususiylashtirishga doir arizani berish va koʻrib chiqish tartibi\nSalbiy qaror mavjud boʻlgan xabarnomada yer uchastkasini xususiylashtirish mumkin emasligining asoslantirilgan sabablari shaharsozlik hujjatlarining aniq talablariga yoki qonunchilik normalariga havola qilingan holda koʻrsatiladi.\nArizani koʻrib chiqish natijalari ustidan sud tartibida shikoyat qilinishi mumkin.",
+     "retrieval_score": 0.6013,
+     "rerank_score": 0.5,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 0,
+    "retrieval_ms": 865,
+    "rerank_ms": 0,
+    "generation_ms": 2972,
+    "total_ms": 3837
+   },
+   "usage": {
+    "input_tokens": 6796,
+    "output_tokens": 432,
+    "models": {
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Marsda yer uchastkasini xususiylashtirish tartibi qanday?",
+    "search_queries": [
+     "Marsda yer uchastkasini xususiylashtirish tartibi qanday?",
+     "yer uchastkasini xususiylashtirish tartibi",
+     "yer uchastkalarini xususiy mulkka berish tartibi",
+     "yer uchastkasiga boʻlgan huquqlarni rasmiylashtirish"
+    ],
+    "doc_hints": [
+     "Yer kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 505,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q006",
+   "status": "ok",
+   "answer": "Amaldagi Mehnat kodeksining 217-moddasiga koʻra har yilgi asosiy eng kam mehnat taʼtilining davomiyligi yigirma bir kalendar kunni tashkil etadi [1]. 221-moddaga muvofiq taʼtillar davomiyligi kalendar kunlarda hisoblab chiqariladi [2], yaʼni eski kodeksdagi 15 ish kuni haqidagi qoida oʻzgargan.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "217-modda",
+     "part": "1-qism",
+     "edition_date": "2026-10-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-217#p1",
+     "quote": "Har yilgi asosiy eng kam mehnat taʼtilining davomiyligi yigirma bir kalendar kunni tashkil etadi"
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "221-modda",
+     "part": "1–3-qism",
+     "edition_date": "2026-10-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-221#p1",
+     "quote": "Xodimlarning har yilgi asosiy va qoʻshimcha mehnat taʼtillarining davomiyligi kalendar kunlarda hisoblab chiqariladi"
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-217#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "217-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "217-modda. Har yilgi asosiy eng kam mehnat taʼtilining davomiyligi\nHar yilgi asosiy eng kam mehnat taʼtilining davomiyligi yigirma bir kalendar kunni tashkil etadi.",
+     "retrieval_score": 0.973,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6257288#art-221#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "221-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "221-modda. Har yilgi mehnat taʼtillarining davomiyligini hisoblab chiqarish\nXodimlarning har yilgi asosiy va qoʻshimcha mehnat taʼtillarining davomiyligi kalendar kunlarda hisoblab chiqariladi.\nHar yilgi mehnat taʼtili davriga toʻgʻri keladigan ishlanmaydigan bayram kunlari mehnat taʼtillarining davomiyligini belgilashda hisobga olinmaydi.\nQonunchilikda nazarda tutilgan hollarda ayrim toifadagi xodimlarga beriladigan har yilgi asosiy va qoʻshimcha mehnat taʼtillarining davomiyligi olti kunlik ish haftasi hisobidan kalendar boʻyicha ish kunlarida hisoblab chiqariladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.6,
+     "used_in_answer": true
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6257288#art-218#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "218-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "218-modda. Har yilgi asosiy uzaytirilgan taʼtil\nQuyidagilarga yoshi va sogʻligʻining holati hisobga olingan holda har yilgi asosiy uzaytirilgan taʼtil beriladi:\noʻn sakkiz yoshgacha boʻlgan shaxslarga — oʻttiz kalendar kun;\nI va II guruh nogironligi boʻlgan xodimlarga — oʻttiz kalendar kun.\nDavlat hokimiyati organlari va respublika ijro etuvchi hokimiyat organlari xodimlariga davomiyligi yigirma yetti kalendar kun boʻlgan har yilgi asosiy uzaytirilgan taʼtil beriladi, bundan xodimlarning ayrim toifalari uchun qonunda har yilgi asosiy uzaytirilgan taʼtilning uzoqroq davomiyligi belgilangan hollar mustasno.\nHar yilgi asosiy uzaytirilgan taʼtillar ayrim toifadagi xodimlar uchun ham ular mehnat vazifalarining oʻziga xos jihatlari va xususiyatlariga hamda boshqa holatlarga qarab belgilanadi. Bunday taʼtillar olish huquqiga ega boʻlgan xodimlarning roʻyxati va ushbu taʼtillarning davomiyligi qonunchilikda belgilanadi.\nQonunchilikda belgilanganidan tashqari, har yilgi asosiy uzaytirilgan taʼtillar berish, shuningdek har yilgi asosiy uzaytirilgan taʼtilning davomiyligini uning qonunchilik bilan kafolatlangan davomiyligiga nisbatan koʻpaytirish jamoa kelishuvlarida, shuningdek jamoa shartnomasida, ichki hujjatlarda, mehnat shartnomasida nazarda tutilishi mumkin.",
+     "retrieval_score": 0.9176,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6257288#art-462#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "462-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "462-modda. Masofadan turib ishlovchi xodimning har yilgi mehnat taʼtili\nAgar masofadan turib ishlovchi xodim mehnat toʻgʻrisidagi qonunchilikka, mehnat haqidagi boshqa huquqiy hujjatlarga yoki mehnat shartnomasiga muvofiq davomiyligi uzoqroq boʻlgan har yilgi mehnat taʼtiliga chiqish huquqiga ega boʻlmasa, uning har yilgi mehnat taʼtilining davomiyligi yigirma bir kalendar kundan kam boʻlishi mumkin emas.\nMasofadan turib ishlovchi xodimga har yilgi mehnat taʼtilini va boshqa turdagi taʼtillarni berish tartibi masofadan turib ishlash haqidagi mehnat shartnomasida ushbu Kodeksga hamda mehnat toʻgʻrisidagi boshqa huquqiy hujjatlarga muvofiq belgilanadi.",
+     "retrieval_score": 0.7623,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6257288#art-222#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "222-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "222-modda. Har yilgi asosiy va qoʻshimcha mehnat taʼtillarini jamlash tartibi\nHar yilgi mehnat taʼtilining umumiy davomiyligini hisoblab chiqarishda qoʻshimcha taʼtillar har yilgi asosiy eng kam taʼtil yoki har yilgi asosiy uzaytirilgan taʼtilga qoʻshib jamlanadi.\nBarcha hollarda qonunchilik bilan belgilangan taʼtillarni jamlashda ularning davomiyligi bir ish yili uchun ellik olti kalendar kundan oshib ketishi mumkin emas.\nUshbu moddaning ikkinchi qismida nazarda tutilgan cheklov qonunchilikda nazarda tutilmagan, jamoa kelishuvlarida, shuningdek jamoa shartnomasida, ish beruvchining kasaba uyushmasi qoʻmitasi bilan kelishuvga koʻra qabul qilingan ichki hujjatlarida yoxud mehnat shartnomasida belgilangan mehnat taʼtillariga nisbatan tatbiq etilmaydi.",
+     "retrieval_score": 0.9524,
+     "rerank_score": 0.2,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 0,
+    "retrieval_ms": 2633,
+    "rerank_ms": 0,
+    "generation_ms": 2743,
+    "total_ms": 5378
+   },
+   "usage": {
+    "input_tokens": 13179,
+    "output_tokens": 454,
+    "models": {
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Mehnat kodeksiga koʻra har yilgi asosiy mehnat taʼtilining davomiyligi necha ish kunini tashkil etadi?",
+    "search_queries": [
+     "Mehnat kodeksiga koʻra yillik asosiy taʼtil necha ish kuni? (1995-yilgi kodeks boʻyicha 15 ish kuni edi)",
+     "Mehnat kodeksiga koʻra har yilgi asosiy mehnat taʼtilining davomiyligi necha ish kunini tashkil etadi?",
+     "har yilgi asosiy mehnat taʼtilining davomiyligi",
+     "asosiy mehnat taʼtili necha kalendar kun",
+     "yillik asosiy taʼtil muddati ish kunlari",
+     "mehnat taʼtili davomiyligi Mehnat kodeksi"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 394,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q007",
+   "status": "ok",
+   "answer": "Ўзбекистон Республикаси Конституциясининг 106-моддасига кўра, Президент лавозимига ўттиз беш ёшдан кичик бўлмаган фуқаро сайланиши мумкин [1]. Шу талаб Ўзбекистон Республикаси Сайлов кодексининг 61-моддасида ҳам такрорланган [2].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "106-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-07-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:6445145#art-106#p1",
+     "quote": "Oʻzbekiston Respublikasi Prezidenti lavozimiga oʻttiz besh yoshdan kichik boʻlmagan, davlat tilini yaxshi biladigan, bevosita saylovgacha kamida 10 yil Oʻzbekiston hududida muqim yashayotgan Oʻzbekiston Respublikasi fuqarosi saylanishi mumkin"
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "61-modda",
+     "part": "1–5-qism",
+     "edition_date": "2025-12-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-61#p1",
+     "quote": "Oʻttiz besh yoshdan kichik boʻlmagan, davlat tilini yaxshi biladigan, bevosita saylovgacha kamida oʻn yil Oʻzbekiston hududida muqim yashayotgan fuqaro Oʻzbekiston Respublikasi Prezidenti etib saylanishi mumkin"
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:6445145#art-106#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "106-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-25",
+     "text": "106-modda.\nOʻzbekiston Respublikasi Prezidenti lavozimiga oʻttiz besh yoshdan kichik boʻlmagan, davlat tilini yaxshi biladigan, bevosita saylovgacha kamida 10 yil Oʻzbekiston hududida muqim yashayotgan Oʻzbekiston Respublikasi fuqarosi saylanishi mumkin. Ayni bir shaxs surunkasiga ikki muddatdan ortiq Oʻzbekiston Respublikasining Prezidenti boʻlishi mumkin emas.\nOʻzbekiston Respublikasining Prezidenti Oʻzbekiston Respublikasining fuqarolari tomonidan umumiy, teng va toʻgʻridan-toʻgʻri saylov huquqi asosida yashirin ovoz berish yoʻli bilan yetti yil muddatga saylanadi. Oʻzbekiston Respublikasining Prezidentini saylash tartibi qonun bilan belgilanadi.",
+     "retrieval_score": 0.7307,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4386848#art-61#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "61-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "61-modda. Oʻzbekiston Respublikasi Prezidentligiga nomzodga qoʻyiladigan talablar\nOʻzbekiston Respublikasi Prezidenti yetti yil muddatga saylanadi. Ayni bir shaxs surunkasiga ikki muddatdan ortiq Oʻzbekiston Respublikasi Prezidenti boʻlishi mumkin emas.\nOʻttiz besh yoshdan kichik boʻlmagan, davlat tilini yaxshi biladigan, bevosita saylovgacha kamida oʻn yil Oʻzbekiston hududida muqim yashayotgan fuqaro Oʻzbekiston Respublikasi Prezidenti etib saylanishi mumkin.\nQuyidagilar:\nqasddan sodir etilgan jinoyati uchun ilgari sudlangan fuqarolar;\ndiniy tashkilotlar va birlashmalarning professional xizmatchilari Oʻzbekiston Respublikasi Prezidentligiga nomzod etib roʻyxatga olinmaydi.",
+     "retrieval_score": 0.6028,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111838#art-24.2#p8",
+     "doc_id": "lex:-111838",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti saylovi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-111838",
+     "article": "24²-modda",
+     "part": "8–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2015-12-29",
+     "text": "242-modda. Oʻzbekiston Respublikasi Prezidentligiga nomzodlar koʻrsatish tartibi\nOʻzbekiston Respublikasi Prezidentligiga nomzodning oʻz nomzodi ovozga qoʻyilishiga rozi ekanligi toʻgʻrisidagi arizasi;\nOʻzbekiston Respublikasi Prezidentligiga koʻrsatilgan nomzodni qoʻllab-quvvatlovchi imzo varaqalari. Siyosiy partiya tomonidan taqdim etilgan imzo varaqalari Oʻzbekiston Respublikasi jami saylovchilarining umumiy soni kamida bir foizining, kamida sakkizta maʼmuriy-hududiy tuzilma namoyandasi boʻlgan saylovchilarning imzosini qamrab olgan boʻlishi kerak. Maʼmuriy-hududiy tuzilmalardan birida (Qoraqalpogʻiston Respublikasi, viloyat, Toshkent shahri) siyosiy partiya imzolar umumiy miqdorining koʻpi bilan sakkiz foizini toʻplashi mumkin.\nSiyosiy partiya oʻzining vakolatli vakiliga roʻyxatga olinganlik guvohnomasi berilganidan keyingina Oʻzbekiston Respublikasi Prezidentligiga nomzodni qoʻllab-quvvatlash yuzasidan saylovchilar imzosini toʻplashga haqli. Bu sanaga qadar toʻplangan imzolar hisobga olinmaydi.\nSaylovchilar faqat bitta nomzodni qoʻllab-quvvatlab, bir martagina imzo qoʻyishga haqli. Bunda saylovchi oʻz familiyasini, ismini, otasining ismini, tugʻilgan yilini (yoshi oʻn sakkizda boʻlsa, qoʻshimcha ravishda tugʻilgan kuni va oyini), yashash joyi manzilini, pasportining seriyasi va tartib raqamini, shuningdek imzo qoʻygan sanani koʻrsatadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.1,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-8536927#art-11#p1",
+     "doc_id": "lex:-8536927",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8536927",
+     "article": "11-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "11-modda. Konstitutsiyaviy sudning sudyasi lavozimiga nomzodga nisbatan qoʻyiladigan talablar. Konstitutsiyaviy sud sudyalarining malaka darajalari\nSiyosat va huquq sohasi mutaxassisi boʻlgan, yuksak maʼnaviy fazilatlarga va zarur malakaga ega boʻlgan, oʻttiz besh yoshdan kichik boʻlmagan Oʻzbekiston Respublikasi fuqarosi Konstitutsiyaviy sudning sudyasi etib saylanishi mumkin.\nKonstitutsiyaviy sudning sudyasiga Oliy yoki Birinchi malaka darajalari beriladi. Oliy malaka darajasi Oʻzbekiston Respublikasi Prezidenti tomonidan, Birinchi malaka darajasi Konstitutsiyaviy sud tomonidan beriladi.",
+     "retrieval_score": 0.9098,
+     "rerank_score": 0.1,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111838#art-24#p1",
+     "doc_id": "lex:-111838",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti saylovi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-111838",
+     "article": "24-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2015-12-29",
+     "text": "24-modda. Oʻzbekiston Respublikasi Prezidentligiga nomzodlar koʻrsatish huquqi\nOʻzbekiston Respublikasi Prezidentligiga nomzod koʻrsatish huquqiga siyosiy partiyalar egadirlar.\nSiyosiy partiya saylov kampaniyasi boshlanganligi eʼlon qilingan kundan kamida olti oy oldin Oʻzbekiston Respublikasi Adliya vazirligi tomonidan roʻyxatga olingan taqdirdagina Oʻzbekiston Respublikasi Prezidentligiga nomzod koʻrsatishi mumkin.",
+     "retrieval_score": 0.8209,
+     "rerank_score": 0.1,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 0,
+    "retrieval_ms": 2483,
+    "rerank_ms": 0,
+    "generation_ms": 3321,
+    "total_ms": 5805
+   },
+   "usage": {
+    "input_tokens": 11232,
+    "output_tokens": 641,
+    "models": {
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Prezidentlikka nomzod kamida necha yoshda boʻlishi kerak?",
+    "search_queries": [
+     "Президентликка номзод камида неча ёшда бўлиши керак?",
+     "Prezidentlikka nomzod kamida necha yoshda boʻlishi kerak?",
+     "Prezidentlikka nomzod kamida necha yoshda boʻlishi kerak",
+     "Oʻzbekiston Respublikasi Prezidenti lavozimiga nomzod yoshi talabi",
+     "Prezidentlikka nomzod boʻlish uchun yosh chegarasi",
+     "Prezident saylovi nomzodiga qoʻyiladigan talablar"
+    ],
+    "doc_hints": [
+     "Konstitutsiya",
+     "Oʻzbekiston Respublikasi Prezidenti saylovi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 813,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q008",
+   "status": "ok",
+   "answer": "Mehnat kodeksining 129-moddasiga koʻra, dastlabki sinov faqat mehnat shartnomasida shartlashilgan boʻlsa belgilanadi; bunday shartlashuv boʻlmasa, xodim sinovsiz ishga qabul qilingan hisoblanadi [1]. Mehnat kodeksining 130-moddasiga koʻra, dastlabki sinov muddati uch oydan, tashkilot rahbarlari va ularning oʻrinbosarlari, bosh buxgalterlar hamda tashkilot alohida boʻlinmalarining rahbarlari uchun esa olti oydan oshmasligi kerak [2]. Shuningdek, homilador ayol, uch yoshga toʻlmagan bolasi bor ayol yoki bunday bolani yolgʻiz tarbiyalayotgan ota (vasiy), shuningdek oʻzi bilan olti oygacha muddatga mehnat shartnomasi tuzilayotgan xodimlar kabi toifalarga dastlabki sinov belgilanmaydi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "129-modda",
+     "part": "1–10-qism",
+     "edition_date": "2026-10-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-129#p1",
+     "quote": "Dastlabki sinovdan oʻtish mehnat shartnomasida shartlashilgan boʻlishi kerak. Bunday shartlashuv mavjud boʻlmagan taqdirda, xodim dastlabki sinovsiz ishga qabul qilingan deb hisoblanadi"
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "130-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-10-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-130#p1",
+     "quote": "Dastlabki sinov muddati uch oydan, tashkilotlarning rahbarlari va ularning oʻrinbosarlari, bosh buxgalterlar hamda tashkilotlar alohida boʻlinmalarining rahbarlari uchun esa olti oydan oshmasligi kerak"
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "129-modda",
+     "part": "1–10-qism",
+     "edition_date": "2026-10-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-129#p1",
+     "quote": "homilador ayol, uch yoshga toʻlmagan bolasi bor ayol yoki uch yoshga toʻlmagan bolani yolgʻiz oʻzi tarbiyalayotgan ota (vasiy);"
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-130#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "130-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "130-modda. Dastlabki sinov muddati\nDastlabki sinov muddati uch oydan, tashkilotlarning rahbarlari va ularning oʻrinbosarlari, bosh buxgalterlar hamda tashkilotlar alohida boʻlinmalarining rahbarlari uchun esa olti oydan oshmasligi kerak.\nVaqtincha mehnatga qobiliyatsizlik davri va xodim haqiqatda ishda boʻlmagan boshqa davrlar dastlabki sinov muddatiga qoʻshilmaydi.",
+     "retrieval_score": 0.8746,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6257288#art-129#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "129-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "129-modda. Ishga qabul qilish chogʻidagi dastlabki sinov\nMehnat shartnomasi quyidagi maqsadda dastlabki sinov bilan tuzilishi mumkin:\nxodimning topshirilayotgan ishga muvofiqligini tekshirish;\nmehnat shartnomasida shart qilib koʻrsatilgan ishni davom ettirish maqsadga muvofiqligi haqida xodim tomonidan qaror qabul qilish.\nDastlabki sinovdan oʻtish mehnat shartnomasida shartlashilgan boʻlishi kerak. Bunday shartlashuv mavjud boʻlmagan taqdirda, xodim dastlabki sinovsiz ishga qabul qilingan deb hisoblanadi.\nQuyidagilar ishga qabul qilinganda dastlabki sinov belgilanmaydi:\nhomilador ayol, uch yoshga toʻlmagan bolasi bor ayol yoki uch yoshga toʻlmagan bolani yolgʻiz oʻzi tarbiyalayotgan ota (vasiy);\nzaxiraga qoʻyiladigan ish oʻrinlariga ishga joylashtirish uchun yuborilgan aholining ijtimoiy ehtiyojmand toifalaridan boʻlgan shaxslar;\ndavlat grantlari asosida oʻqigan va oliy taʼlim tashkilotini tamomlagan kundan eʼtiboran uch oy ichida yoʻllanma boʻyicha olingan mutaxassisligiga doir ishga kirayotgan oliy taʼlim tashkilotlarining bitiruvchilari;\ntegishli taʼlim tashkilotini tamomlagan kundan eʼtiboran bir yil ichida birinchi bor ishga kirayotganda olingan mutaxassisligi boʻyicha mustaqil ravishda ishga joylashayotgan umumiy oʻrta, oʻrta maxsus, professional va oliy taʼlim tashkilotlarining bitiruvchilari;\noʻzi bilan olti oygacha muddatga mehnat shartnomasi tuzilayotgan xodimlar;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.9,
+     "used_in_answer": true
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6257288#art-129#p11",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "129-modda",
+     "part": "11–15-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "129-modda. Ishga qabul qilish chogʻidagi dastlabki sinov\noʻn sakkiz yoshga toʻlmagan shaxslar;\nishga qaytadan qabul qilingan taqdirda ish beruvchi ilgari qaysi xodimlar bilan mehnat shartnomasini alohida asoslar boʻyicha bekor qilgan boʻlsa, oʻsha shaxslar;\nishlab chiqarishda oʻqitish shartnomasi boʻyicha ushbu ish beruvchida oʻqishni oʻtagan oʻquvchilar;\njamoa kelishuvlarida, shuningdek jamoa shartnomasida va ish beruvchining ichki hujjatlarida nazarda tutilgan boshqa xodimlar.\nDastlabki sinov faqat xodimni ishga qabul qilish chogʻida belgilanishi mumkin. Xodim boshqa ishga oʻtkazilayotganda va boshqa ish beruvchiga xizmat safariga yuborilganda dastlabki sinov belgilanishiga yoʻl qoʻyilmaydi.",
+     "retrieval_score": 0.9072,
+     "rerank_score": 0.7,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6257288#art-486#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "486-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "486-modda. Tashkilot rahbari, uning oʻrinbosarlari, tashkilot bosh buxgalteri, tashkilot alohida boʻlinmasining rahbari bilan mehnat shartnomasi tuzish\nTashkilot rahbari, uning oʻrinbosarlari, tashkilot bosh buxgalteri va tashkilot alohida boʻlinmasining rahbari bilan tashkilotning taʼsis hujjatlarida yoki taraflarning kelishuvida belgilangan muddatga muddatli mehnat shartnomasi tuzilishi mumkin.\nAksiyadorlik jamiyatining rahbari bilan qonunda belgilangan muddatga muddatli mehnat shartnomasi tuziladi.\nQonunda va boshqa normativ-huquqiy hujjatlarda, tashkilotning taʼsis hujjatlarida tashkilot rahbari bilan mehnat shartnomasi tuzilishidan oldingi tartib-taomillar (tanlov oʻtkazish, lavozimga saylash yoki tayinlash va hokazo) belgilanishi mumkin.\nTashkilot rahbarini, uning oʻrinbosarlarini, tashkilot bosh buxgalterini va tashkilotning alohida boʻlinmasi rahbarini ishga qabul qilish chogʻida olti oygacha muddat bilan dastlabki sinov belgilanishi mumkin.",
+     "retrieval_score": 0.7563,
+     "rerank_score": 0.6,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6257288#art-492#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "492-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "492-modda. Mavsumiy ishlarni bajarish toʻgʻrisida mehnat shartnomasi tuzishning oʻziga xos xususiyatlari\nIshning mavsumiy xususiyati toʻgʻrisidagi shart mehnat shartnomasida koʻrsatilishi kerak.\nMavsumiy xodimlarni ishga qabul qilish chogʻida sinov muddati belgilanmaydi.\nMavsumiy xodimlar bilan mehnat shartnomasi mavsumning davomiyligidan oshmaydigan muddatga tuziladi.",
+     "retrieval_score": 0.9241,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1669,
+    "retrieval_ms": 2569,
+    "rerank_ms": 0,
+    "generation_ms": 4124,
+    "total_ms": 8363
+   },
+   "usage": {
+    "input_tokens": 12751,
+    "output_tokens": 1015,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Ishga qabul qilinishda sinov muddati belgilanadimi va uning muddati qancha?",
+    "search_queries": [
+     "ishga kirsam sinov muddati boʻladimi, qancha?",
+     "Ishga qabul qilinishda sinov muddati belgilanadimi va uning muddati qancha?",
+     "ishga qabul qilishda sinov muddati",
+     "sinov muddatining davomiyligi",
+     "sinov muddati belgilash shartlari",
+     "mehnat shartnomasida sinov muddati"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 928,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q009",
+   "status": "ok",
+   "answer": "Fuqarolik kodeksining 150-moddasiga koʻra umumiy daʼvo muddati uch yil [1]. 151-moddasiga koʻra ayrim turdagi talablar uchun qonunchilikda umumiy daʼvo muddatiga qaraganda qisqartirilgan yoki uzaytirilgan maxsus daʼvo muddatlari belgilanishi mumkin [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.98,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "150-modda",
+     "part": "1-qism",
+     "edition_date": "2026-09-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-150#p1",
+     "quote": "Umumiy daʼvo muddati — uch yil"
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "151-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-09-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-151#p1",
+     "quote": "Ayrim turdagi talablar uchun qonunchilikda umumiy daʼvo muddatiga qaraganda qisqartirilgan yoki uzaytirilgan maxsus daʼvo muddatlari belgilanishi mumkin"
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111189#art-151#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "151-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "151-modda. Maxsus daʼvo muddatlari\nAyrim turdagi talablar uchun qonunchilikda umumiy daʼvo muddatiga qaraganda qisqartirilgan yoki uzaytirilgan maxsus daʼvo muddatlari belgilanishi mumkin.\nAgar qonunda boshqacha tartib belgilangan boʻlmasa, ushbu Kodeks 152-162-moddalarining qoidalari maxsus daʼvo muddatlariga ham joriy qilinadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111189#art-150#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "150-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "150-modda. Umumiy daʼvo muddati\nUmumiy daʼvo muddati — uch yil.",
+     "retrieval_score": 0.8819,
+     "rerank_score": 1.0,
+     "used_in_answer": true
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2866376#band-12#p9",
+     "doc_id": "lex:2866376",
+     "doc_title": "Xoʻjalik sudlari tomonidan 2012 — 2014-yillar davomida daʼvo muddatiga oid qonun hujjatlarini qoʻllanishi bilan bogʻliq sud amaliyotini umumlashtirish natijalari haqida maʼlumotnoma",
+     "url": "https://lex.uz/docs/2866376",
+     "article": "12-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2014-12-31",
+     "text": "Sud daʼvo muddatini qoʻllashga FKning 150 va 151-moddalariga koʻra umumiy daʼvo muddati uch yil, ayrim turdagi talablar uchun qonunlarda umumiy daʼvo muddatiga qaraganda qisqartirilgan yoki uzaytirilgan maxsus daʼvo muddatlari belgilanishi mumkinligini, Oʻzbekiston Respublikasi Temir yoʻl ustavining 115-moddasiga binoan temir yoʻlga nisbatan daʼvogar faqat eʼtirozni qanoatlantirishni toʻliq yoki qisman rad etish toʻgʻrisidagi javob olingandan soʻng ikki oy davomida vakolatli sudga berishi mumkinligini, FK 158-moddasining birinchi qismida, agar daʼvo sud tomonidan koʻrilmasdan qoldirilgan boʻlsa, daʼvo qoʻzgʻatilgunga qadar oʻta boshlagan daʼvo muddati umumiy tartibda davom etishi belgilanganligini asos qilib keltirgan.",
+     "retrieval_score": 0.5293,
+     "rerank_score": 0.6,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111189#art-160#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "160-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "160-modda. Maxsus daʼvo muddatining toʻxtatilishi, uzilishi va tiklanishi\nDaʼvo muddatining toʻxtatilishi, uzilishi va tiklanishi haqidagi qoidalar (ushbu Kodeksning 156, 157 va 159-moddalari), agar qonunda boshqacha tartib belgilangan boʻlmasa, maxsus daʼvo muddatiga nisbatan ham qoʻllanadi.",
+     "retrieval_score": 0.8598,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111189#art-149#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "149-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "149-modda. Daʼvo muddati tushunchasi\nDaʼvo muddati — shaxs oʻzining buzilgan huquqini daʼvo qoʻzgʻatish yoʻli bilan himoya qilishi mumkin boʻlgan muddatdir.",
+     "retrieval_score": 0.633,
+     "rerank_score": 0.3,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 0,
+    "retrieval_ms": 4124,
+    "rerank_ms": 0,
+    "generation_ms": 2407,
+    "total_ms": 6532
+   },
+   "usage": {
+    "input_tokens": 7744,
+    "output_tokens": 434,
+    "models": {
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Umumiy daʼvo muddati qancha va qonunda maxsus daʼvo muddatlari belgilanishi mumkinmi?",
+    "search_queries": [
+     "Umumiy daʼvo muddati qancha va maxsus daʼvo muddatlari belgilanishi mumkinmi?",
+     "Umumiy daʼvo muddati qancha va qonunda maxsus daʼvo muddatlari belgilanishi mumkinmi?",
+     "daʼvo muddati umumiy muddat",
+     "daʼvo muddatining umumiy muddati uch yil",
+     "maxsus daʼvo muddatlari belgilanishi mumkin",
+     "daʼvo muddati qonun bilan maxsus muddat"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 632,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q010",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlari bu savolga javob bermaydi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.95,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:1120461#band-2#p1",
+     "doc_id": "lex:1120461",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori futbol boʻyicha bolalar-oʻsmirlar sport maktablarining faoliyatini ragʻbatlantirish va moddiy-texnika bazasini yaxshilash boʻyicha qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/1120461",
+     "article": "2-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-05-08",
+     "text": "2. Oʻzbekiston Respublikasi Jismoniy tarbiya va sport vazirligi:\nOʻzbekiston Futbol assotsiatsiyasi bilan birgalikda muntazam ravishda oliy va birinchi liga oʻyinlaridan oldin bolalar va oʻsmirlar jamoalari oʻrtasida futbol uchrashuvlarini oʻtkazsin. Har yili har bir sport mavsumi yakunlariga koʻra eng yaxshi futbolchilarni va futbol boʻyicha bolalar-oʻsmirlar sport maktablari bilan ishlaydigan eng yaxshi trenerlarni aniqlasin;\nbir oy muddatda:\nmanfaatdor vazirliklar va idoralar bilan birgalikda professional futbol klublari huzuridagi futbol boʻyicha bolalar-oʻsmirlar sport maktablari faoliyatiga oid normativ hujjatlarni;\nOʻzbekiston Futbol federatsiyasi hamda boshqa manfaatdor vazirliklar va idoralar bilan birgalikda futbol boʻyicha bolalar-oʻsmirlar sport maktablari uchun Yagona oʻquv dasturini;\nOʻzbekiston Futbol federatsiyasi bilan birgalikda bolalar-oʻsmirlar sport maktablarining moddiy-texnika bazasiga talablarni, ushbu maktablar jamoalari oʻrtasida respublika musobaqalarini oʻtkazish tizimini ishlab chiqsin va tasdiqlasin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.05,
+     "used_in_answer": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-370213#band-21#p1",
+     "doc_id": "lex:-370213",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori Oʻzbekistonda futbolni rivojlantirishning tashkiliy asoslari va prinsiplarini tubdan takomillashtirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-370213",
+     "article": "21-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "21. Ommaviy axborot vositalari mamlakatda ommaviy futbol harakati rivojlanishini, eng yaxshi futbol klublari, sport maktablari, fizkultura jamoalari, mutaxassislar va trenyerlarning faoliyatini muntazam va keng yoritsinlar.",
+     "retrieval_score": 0.989,
+     "rerank_score": 0.05,
+     "used_in_answer": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-370213#band-8#p1",
+     "doc_id": "lex:-370213",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori Oʻzbekistonda futbolni rivojlantirishning tashkiliy asoslari va prinsiplarini tubdan takomillashtirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-370213",
+     "article": "8-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "8. Futbol mavsumi yakunlari boʻyicha yilning eng yaxshi futbolchisi uchun va yilning eng yaxshi treneri uchun jurnalistlardan soʻrov yoʻli bilan aniqlab topshiriladigan Oʻzbekiston Respublikasi Prezidentining maxsus sovrini taʼsis etilsin.",
+     "retrieval_score": 0.8189,
+     "rerank_score": 0.1,
+     "used_in_answer": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:619840#band-16#p1",
+     "doc_id": "lex:619840",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori Oʻzbekiston Respublikasida futbolni yanada rivojlantirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/619840",
+     "article": "16-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-10-09",
+     "text": "16. Ommaviy axborot vositalari, Oʻzbekiston televideniye va radioeshittirish kompaniyasi respublikada futbol harakatining rivojlanishini, eng yaxshi sport klublari, sport maktablari, jismoniy tarbiya jamoalari, mutaxassislar va trenerlarning faoliyatini muntazam ravishda batafsil yoritib borsinlar, respublikada futbol musobaqalari haqida yuksak saviyada sharhlar tayyorlasinlar, “Sport” gazetasi huzurida “Oʻzbekistonda futbol” haftanomasini chiqarish tashkil etilsin.",
+     "retrieval_score": 0.9616,
+     "rerank_score": 0.05,
+     "used_in_answer": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:1554095#band-8#p1",
+     "doc_id": "lex:1554095",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori Oʻzbekiston Respublikasida futbolni rivojlantirishni davlat tomonidan yanada qoʻllab-quvvatlash chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/1554095",
+     "article": "8-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-05-22",
+     "text": "8. Oʻzbekiston matbuot va axborot agentligi, Oʻzbekiston milliy teleradiokompaniyasi hamda boshqa ommaviy axborot vositalari Qoraqalpogʻiston Respublikasida, viloyatlar va Toshkent shahrida ommaviy futbol harakatining rivojlanishini, eng yaxshi futbol klublari, sport maktablari, jismoniy tarbiya jamoalari, futbol boʻyicha trenyerlar va boshqa mutaxassislar faoliyatini muntazam ravishda va keng yoritsinlar, rasmiy futbol oʻyinlari oʻtkazilishini targʻib va reklama qilsinlar.",
+     "retrieval_score": 0.95,
+     "rerank_score": 0.05,
+     "used_in_answer": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1085,
+    "retrieval_ms": 427,
+    "rerank_ms": 0,
+    "generation_ms": 2776,
+    "total_ms": 4290
+   },
+   "usage": {
+    "input_tokens": 10014,
+    "output_tokens": 442,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Eng yaxshi futbol jamoasi qaysi?",
+    "search_queries": [
+     "Eng yaxshi futbol jamoasi qaysi?"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 150,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

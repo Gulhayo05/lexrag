@@ -37,19 +37,22 @@ def canonical_hash(obj) -> str:
 
 def get_batch(batch_id: str) -> dict | None:
     with _lock:
-        r = con().execute("SELECT batch_id, run_id, request_hash, status, response FROM batches WHERE batch_id=?", (batch_id,)).fetchone()
+        r = con().execute("SELECT batch_id, run_id, request_hash, status, response, updated_at FROM batches WHERE batch_id=?",
+                          (batch_id,)).fetchone()
     if not r:
         return None
-    return {"batch_id": r[0], "run_id": r[1], "request_hash": r[2], "status": r[3], "response": json.loads(r[4]) if r[4] else None}
+    return {"batch_id": r[0], "run_id": r[1], "request_hash": r[2], "status": r[3],
+            "response": json.loads(r[4]) if r[4] else None, "updated_at": r[5]}
 
 
 def claim_batch(batch_id: str, run_id: str, request_hash: str) -> tuple[bool, dict | None]:
     """Atomically register a batch.  Returns (created, existing_row)."""
     with _lock:
         c = con()
-        r = c.execute("SELECT request_hash, status, response FROM batches WHERE batch_id=?", (batch_id,)).fetchone()
+        r = c.execute("SELECT request_hash, status, response, updated_at FROM batches WHERE batch_id=?", (batch_id,)).fetchone()
         if r:
-            return False, {"request_hash": r[0], "status": r[1], "response": json.loads(r[2]) if r[2] else None}
+            return False, {"request_hash": r[0], "status": r[1], "response": json.loads(r[2]) if r[2] else None,
+                           "updated_at": r[3]}
         now = time.time()
         c.execute("INSERT INTO batches VALUES (?,?,?,?,?,?,NULL)", (batch_id, run_id, request_hash, "processing", now, now))
         return True, None

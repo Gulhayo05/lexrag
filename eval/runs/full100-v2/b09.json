@@ -1,0 +1,1505 @@
+{
+ "run_id": "full100-v2",
+ "batch_id": "full100-v2-b09",
+ "batch_index": 9,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p6",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125645,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:46:26+05:00",
+  "completed_at": "2026-11-06T18:46:34+05:00",
+  "total_ms": 8149
+ },
+ "summary": {
+  "total": 10,
+  "ok": 8,
+  "no_answer": 2,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q081",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida Oʻzbekiston Respublikasining Faxriy yorligʻi qanday yutuqlari uchun berilishi koʻrsatilmagan, shu sababli bu savolga javob berib boʻlmaydi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.7,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:98221#art-1#p1",
+     "doc_id": "lex:98221",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat mukofotlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/98221",
+     "article": "1-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-22",
+     "text": "1-modda.\nOʻzbekiston Respublikasining fuqarolari mehnat va jangovar xizmatlari, samarali davlat, ijtimoiy va ijodiy faoliyatlari uchun davlat mukofotlari bilan taqdirlanishlari mumkin.\nOʻzbekiston Respublikasi uchun xizmat koʻrsatgan chet el fuqarolari va fuqaroligi boʻlmagan shaxslar ham Oʻzbekiston Respublikasining davlat mukofotlari bilan taqdirlanishlari mumkin.",
+     "retrieval_score": 0.5069,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:98221#art-7#p1",
+     "doc_id": "lex:98221",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat mukofotlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/98221",
+     "article": "7-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-22",
+     "text": "7-modda.\nBir shaxs ayni bir orden, medal yoki Faxriy yorliq bilan, qoida tariqasida, bir marta taqdirlanadi.\nFaxriy unvonlar takroran berilmaydi.\nOʻzbekiston Respublikasining davlat mukofotlari bilan taqdirlash shaxsning vafotidan keyin ham amalga oshirilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3676244#art-10#p1",
+     "doc_id": "lex:-3676244",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “davlat mukofotlari toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/-3676244",
+     "article": "10-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-04-12",
+     "text": "10-modda. Oʻzbekiston Respublikasining Faxriy yorligʻi\nOʻzbekiston Respublikasining Faxriy yorligʻi belgilangan namunadagi Faxriy yorliqning jildga solingan blankasi tarzida boʻladi.",
+     "retrieval_score": 0.755,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3676244#art-5#p1",
+     "doc_id": "lex:-3676244",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “davlat mukofotlari toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/-3676244",
+     "article": "5-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-04-12",
+     "text": "5-modda. Davlat mukofotlarining turlari\nDavlat mukofotlari quyidagilardan iborat:\n“Oʻzbekiston Qahramoni” unvoni;\nOʻzbekiston Respublikasining faxriy unvonlari;\nOʻzbekiston Respublikasining ordenlari;\nOʻzbekiston Respublikasining medallari;\nOʻzbekiston Respublikasining Faxriy yorligʻi.",
+     "retrieval_score": 0.5807,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:98221#art-17#p1",
+     "doc_id": "lex:98221",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat mukofotlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/98221",
+     "article": "17-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-22",
+     "text": "17-modda.\nDavlat mukofotlari bilan taqdirlangan shaxslar mukofotlar saqlanishini taʼminlashlari lozim.\nDavlat mukofotlari, shuningdek ularga doir hujjatlar yoʻqolgan taqdirda, taqdirlanganlar mukofotlarga nisbatan oʻz huquqlarini saqlab qoladilar.\nDavlat mukofotlari tang ahvolga tushish natijasida yoʻqotilgan taqdirda istisno tariqasida ordenlar, medallar va koʻkrak nishonlarining asliga teng nusxalari berilishi mumkin.\nMukofot bilan taqdirlanganlik toʻgʻrisidagi hujjatlar, shuningdek Faxriy yorliq yoʻqolgan taqdirda ularning asliga teng nusxalari belgilangan tartibda beriladi.",
+     "retrieval_score": 0.8499,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1537,
+    "retrieval_ms": 91,
+    "rerank_ms": 0,
+    "generation_ms": 2369,
+    "total_ms": 3999
+   },
+   "usage": {
+    "input_tokens": 9823,
+    "output_tokens": 320,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekiston Respublikasining Faxriy yorligʻi bilan qanday yutuqlari uchun fuqarolar taqdirlanadi?",
+    "search_queries": [
+     "Oʻzbekiston Respublikasining Faxriy yorligʻi bilan qanday yutuqlari uchun fuqarolar taqdirlanadi?",
+     "Oʻzbekiston Respublikasining Faxriy yorligʻi bilan taqdirlash",
+     "Faxriy yorliq bilan mukofotlash tartibi va asoslari",
+     "davlat mukofotlari Faxriy yorliq taqdirlash"
+    ],
+    "doc_hints": [
+     "Oʻzbekiston Respublikasining davlat mukofotlari toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 484,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q082",
+   "status": "ok",
+   "answer": "Deputatni chaqirib olish haqidagi masala koʻrib chiqilayotganda, tegishli Kengash, Qonunchilik palatasi yoki Senat chaqirib olish uchun asoslar boʻlgan materiallar tushgan kundan eʼtiboran uch kunlik muddatdan kechiktirmay deputatga (senatorga) hujjatlar nusxalarini ilova qilgan holda yozma xabarnoma yuboradi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-503992",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari mahalliy kengashi deputatini, Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi deputatini va senati aʼzosini chaqirib olish toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-503992",
+     "article": "5-modda",
+     "part": "1–3-qism",
+     "edition_date": "2004-12-02",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-503992#art-5#p1",
+     "quote": "Xalq deputatlari viloyat, tuman, shahar Kengashi, Qonunchilik palatasi yoki Senat (Senat Kengashi) deputatni, senatorni chaqirib olish uchun ushbu Qonunning 1-moddasida nazarda tutilgan asoslar boʻlgan materiallar tushgan kundan eʼtiboran uch kunlik muddatdan kechiktirmay deputatga, senatorga tushgan hujjatlarning nusxalarini ilova qilgan holda yozma xabarnoma yuboradi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-503992#art-5#p1",
+     "doc_id": "lex:-503992",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari mahalliy kengashi deputatini, Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi deputatini va senati aʼzosini chaqirib olish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-503992",
+     "article": "5-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2004-12-02",
+     "text": "5-modda. Chaqirib olish haqidagi masalasi koʻrib chiqilayotganda deputatning, senatorning huquqlari kafolatlari\nXalq deputatlari viloyat, tuman, shahar Kengashi, Qonunchilik palatasi yoki Senat (Senat Kengashi) deputatni, senatorni chaqirib olish uchun ushbu Qonunning 1-moddasida nazarda tutilgan asoslar boʻlgan materiallar tushgan kundan eʼtiboran uch kunlik muddatdan kechiktirmay deputatga, senatorga tushgan hujjatlarning nusxalarini ilova qilgan holda yozma xabarnoma yuboradi.\nChaqirib olish haqidagi masalasi qoʻyilgan deputat saylovchilar bilan uchrashishga, saylovchilarning yigʻilishlarida, davlat hokimiyati vakillik organlarining sessiyalari va majlislarida chaqirib olinishi haqidagi masala koʻrib chiqilayotganda ishtirok etishga hamda oʻzini himoya qilib soʻzga chiqishga haqli.\nDeputatni, senatorni chaqirib olish haqidagi masala qoʻyilishiga sabab boʻlgan yolgʻon axborotni bilaturib taqdim etgan shaxslar qonunga muvofiq javobgar boʻladilar.",
+     "retrieval_score": 0.7212,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-436950#art-3#p1",
+     "doc_id": "lex:-436950",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari viloyat, tuman va shahar kengashi deputatining maqomi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-436950",
+     "article": "3-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-07-04",
+     "text": "3-modda. Deputat vakolatlarining muddati\nDeputat tegishli xalq deputatlari Kengashining vakolatlari muddatiga saylanadi.\nSaylov okrugining hududi boshqa maʼmuriy-hududiy birlik tarkibiga oʻtkazilganda yoki uning hududida yangi maʼmuriy-hududiy birlik tashkil etilgan taqdirda ushbu saylov okrugidan saylangan deputatning vakolatlari saqlab qolinadi. Bunda deputat saylov okrugining hududi joylashgan xalq deputatlari Kengashi yoxud yangi tashkil etilgan maʼmuriy-hududiy birlikda shakllantirilgan xalq deputatlari Kengashi tarkibiga kiradi, deputatning vakolatlari muddati esa mazkur xalq deputatlari Kengashining vakolatlari muddatiga muvofiq boʻladi.\nDeputatning vakolatlari quyidagi hollarda muddatidan ilgari tugatiladi:\nu oʻz vakolatlarini zimmasidan soqit qilish toʻgʻrisida yozma ariza bergan taqdirda;\nu qonunga koʻra deputatlik vakolatlarini amalga oshirishiga nomuvofiq boʻlgan lavozimga saylangan yoki tayinlangan taqdirda;\ntegishli xalq deputatlari Kengashining, mazkur Kengash tomonidan tuzilgan, oʻzi tarkibiga saylangan komissiyaning majlislarida bir kalendar yil ichida oʻttiz yoki undan ortiq ish kuni uzrli sabablarsiz ishtirok etmagan taqdirda;\nchet davlatning doimiy yashash guvohnomasini yoki chet davlat hududida doimiy yashash huquqini tasdiqlovchi boshqa hujjatni olgan taqdirda;\nunga nisbatan sudning ayblov hukmi qonuniy kuchga kirgan taqdirda;\nu chaqirib olingan taqdirda;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:6445145#art-100#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "100-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-04-30",
+     "text": "100-modda.\nOʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasi oʻz tarkibidan Qonunchilik palatasining Spikeri va uning oʻrinbosarlarini saylaydi.\nOʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasi Spikeri va uning oʻrinbosarlari yashirin ovoz berish orqali deputatlar umumiy sonining koʻpchilik ovozi bilan Qonunchilik palatasining vakolati muddatiga saylanadi.\nAyni bir shaxs surunkasiga ikki muddatdan ortiq Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasining Spikeri boʻlishi mumkin emas.\nOʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasi Spikeri va uning oʻrinbosarlari yashirin ovoz berish orqali Qonunchilik palatasi deputatlari umumiy sonining uchdan ikki qismidan koʻprogʻining ovozi bilan qabul qilingan Qonunchilik palatasi qaroriga binoan muddatidan ilgari chaqirib olinishi mumkin.\nOʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasi Spikeri:\n1) Qonunchilik palatasining majlislarini chaqiradi, ularda raislik qiladi;\n2) Qonunchilik palatasi muhokamasiga kiritiladigan masalalarni tayyorlashga umumiy rahbarlik qiladi;\n3) Qonunchilik palatasi qoʻmitalari va komissiyalarining faoliyatini muvofiqlashtirib boradi;\n4) Oʻzbekiston Respublikasi qonunlarining va Qonunchilik palatasi qarorlarining ijrosi ustidan nazoratni tashkil etadi;",
+     "retrieval_score": 0.9044,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-436914#art-4#p1",
+     "doc_id": "lex:-436914",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasi deputatining va senati aʼzosining maqomi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-436914",
+     "article": "4-modda",
+     "part": "1–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-07-04",
+     "text": "4-modda. Deputat va senator vakolatlarining muddati\nDeputat Qonunchilik palatasining vakolatlari muddatiga saylanadi. Senator Senatning vakolatlari muddatiga saylanadi (tayinlanadi).\nDeputatning, senatorning vakolatlari quyidagi hollarda muddatidan ilgari tugatiladi:\nu oʻz vakolatlarini zimmasidan soqit qilish haqida yozma ariza bergan taqdirda;\nu qonunga koʻra deputatlik, senatorlik vakolatlarini amalga oshirishiga nomuvofiq boʻlgan lavozimga saylangan yoki tayinlangan taqdirda;\nunga nisbatan sudning ayblov hukmi qonuniy kuchga kirgan taqdirda;\ndeputat, Senatda doimiy asosda ishlovchi senator haq toʻlanadigan tegishli turdagi faoliyat bilan shugʻullanishga yoʻl qoʻyilmasligi toʻgʻrisida ogohlantirish olganidan keyin haq toʻlanadigan boshqa turdagi faoliyat (ilmiy, ijodiy va pedagogik faoliyatdan tashqari) bilan shugʻullangan taqdirda;\ntegishli palata, siyosiy partiya fraksiyasi, oʻzi tarkibiga saylangan qoʻmita, komissiya faoliyatida bir kalendar yil ichida oʻttiz yoki undan ortiq ish kuni uzrli sabablarsiz ishtirok etmagan taqdirda;\nchet davlatning doimiy yashash guvohnomasini yoki chet davlat hududida doimiy yashash huquqini tasdiqlovchi boshqa hujjatni olgan taqdirda;\npartiya roʻyxati asosida saylangan deputat oʻzini deputatlikka nomzod etib koʻrsatgan siyosiy partiya aʼzoligidan chiqqan taqdirda;\nu chaqirib olingan taqdirda;\nsud uni muomalaga layoqatsiz deb topgan taqdirda;",
+     "retrieval_score": 0.8981,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4953674#art-82#p1",
+     "doc_id": "lex:4953674",
+     "doc_title": "QORAQALPOGʻISTON RESPUBLIKASINING KONSTITUTSIYASI Qoraqalpogʻiston Respublikasi Oliy Kengashi tomonidan 1993-yil 9-aprelda qabul qilingan",
+     "url": "https://lex.uz/docs/4953674",
+     "article": "82-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-02-26",
+     "text": "82-modda. Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesining Raisi oʻz vakolatiga tegishli masalalar yuzasidan farmoyishlar chiqaradi.\n83-modda. Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesining Raisi Qoraqalpogʻiston Respublikasi Konstitutsiyalarini va qonunlarini buzgan taqdirda Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesi tomonidan chaqirib olinishi mumkin. Chaqirib olinishi toʻgʻrisidagi qaror Qoraqalpogʻiston Respublikasi Konstitutsiyaviy nazorat qoʻmitasining xulosasi hisobga olingan holda, Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesi jami deputatlarining uchdan bir qismi tashabbusi boʻyicha Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesi deputatlari umumiy sonining eng kamida uchdan ikki qismining koʻpchilik ovozi bilan qabul qilinadi.\nQoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesi Raisi shaxsiy arizasi, shuningdek betobligi sababli oʻz vazifasini bajara olmasligi Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesi tuzgan tibbiy komissiyasi xulosasi bilan tasdiqlangan taqdirda, oʻz vakolatini toʻxtatishi mumkin. Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesi Raisining vakolatini toʻxtatish haqidagi qaror Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesi deputatlari umumiy sonining koʻpchilik ovozi bilan qabul qilinadi. Bu holda oʻn kun muddat ichida Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesi yangi Raisining saylovi oʻtkaziladi.",
+     "retrieval_score": 0.8965,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1838,
+    "retrieval_ms": 1227,
+    "rerank_ms": 0,
+    "generation_ms": 2492,
+    "total_ms": 5558
+   },
+   "usage": {
+    "input_tokens": 13278,
+    "output_tokens": 514,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Deputatni chaqirib olish masalasi koʻrib chiqilayotganda unga tegishli hujjatlar qancha muddat ichida yuborilishi kerak?",
+    "search_queries": [
+     "Deputatni chaqirib olish masalasi koʻrib chiqilayotganda unga tegishli hujjatlar qancha muddat ichida yuborilishi kerak?",
+     "deputatni chaqirib olish masalasi koʻrib chiqilayotganda hujjatlar yuborilishi muddati",
+     "deputatni chaqirib olish toʻgʻrisidagi hujjatlar deputatga yuborish muddati",
+     "deputatni chaqirib olish boʻyicha hujjatlar bilan tanishtirish muddati"
+    ],
+    "doc_hints": [
+     "Oʻzbekiston Respublikasi Konstitutsiyasi",
+     "Deputat maqomi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 563,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q083",
+   "status": "ok",
+   "answer": "Jinoyat-protsessual kodeksining 456-moddasiga koʻra, sudya hukmni alohida xonada chiqaradi va bu xonada faqat sudyaning oʻzi yoki ish boʻyicha sud tarkibiga kirgan sudyalar hozir boʻlishi mumkin, boshqa shaxslarning hozir boʻlishiga yoʻl qoʻyilmaydi [1]. Sudyalar maslahatlashuv vaqtida aytilgan mulohazalarni oshkor qilishga haqli emas [1]. Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksning 155-moddasida ham sudyalar maslahati sirini saqlash taʼminlanishi va uni oshkor qilish taqiqlanishi belgilangan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "456-modda",
+     "part": "1–2-qism",
+     "edition_date": "1994-09-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111460#art-456#p1",
+     "quote": "Sudya hukmni alohida xonada, sud esa maslahatxonada chiqaradi. Bunday paytda mazkur xonada faqat sudyaning oʻzi yoki ushbu ish boʻyicha sud tarkibiga kirgan sudyalar hozir boʻlishlari mumkin. Boshqa shaxslarning hozir boʻlishlariga yoʻl qoʻyilmaydi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "155-modda",
+     "part": "1–4-qism",
+     "edition_date": "2018-01-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3527353#art-155#p1",
+     "quote": "Sudyalar hal qiluv qarorini qabul qilish chogʻidagi muhokama mazmuni toʻgʻrisidagi, sud tarkibiga kirgan ayrim sudyalarning nuqtai nazari haqidagi maʼlumotlarni biror-bir shaxsga xabar qilishga, sudyalar maslahati sirini boshqa usulda oshkor qilishga haqli emas",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111460#art-456#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "456-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-09-22",
+     "text": "456-modda. Sudyalar maslahatlashuvining sir tutilishi\nSudya hukmni alohida xonada, sud esa maslahatxonada chiqaradi. Bunday paytda mazkur xonada faqat sudyaning oʻzi yoki ushbu ish boʻyicha sud tarkibiga kirgan sudyalar hozir boʻlishlari mumkin. Boshqa shaxslarning hozir boʻlishlariga yoʻl qoʻyilmaydi.\nKech kirishi bilan, zarurat boʻlgan taqdirda esa, kun davomida ham sud maslahatni toʻxtatishga haqlidir. Maslahatlashuv dam olish kuni va bayram kunida ham toʻxtatiladi. Sudyalar maslahatlashuv vaqtida aytilgan mulohazalarni oshkor qilishga haqli emas.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3527353#art-155#p1",
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "155-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-25",
+     "text": "155-modda. Hal qiluv qarori qabul qilinishining sir tutilishi\nSudning hal qiluv qarori alohida xonada (maslahatxonada) qabul qilinadi.\nIsh hayʼatda koʻrib chiqilayotganda hal qiluv qarori sudyalar maslahati sirini saqlash taʼminlanadigan sharoitlarda, sud majlisida ishtirok etayotgan sudyalar tomonidan koʻpchilik ovoz bilan qabul qilinadi.\nSud hal qiluv qarorini qabul qilayotgan maslahatxonada faqat ishni koʻrib chiqayotgan sud tarkibiga kiradigan sudyalar boʻlishi mumkin. Ushbu xonaga boshqa shaxslarning kirishi, shuningdek sud tarkibiga kirmaydigan shaxslar bilan muloqotda boʻlishning boshqa usullari taqiqlanadi.\nSudyalar hal qiluv qarorini qabul qilish chogʻidagi muhokama mazmuni toʻgʻrisidagi, sud tarkibiga kirgan ayrim sudyalarning nuqtai nazari haqidagi maʼlumotlarni biror-bir shaxsga xabar qilishga, sudyalar maslahati sirini boshqa usulda oshkor qilishga haqli emas.",
+     "retrieval_score": 0.6061,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-8536927#art-82#p6",
+     "doc_id": "lex:-8536927",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasining konstitutsiyaviy sudi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8536927",
+     "article": "82-modda",
+     "part": "6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-14",
+     "text": "82-modda. Konstitutsiyaviy sud qarorini qabul qilish tartibi\nKonstitutsiyaviy sudning sudyalari qaror qabul qilish chogʻidagi muhokama mazmuni toʻgʻrisidagi, Konstitutsiyaviy sud tarkibiga kirgan ayrim sudyalarning nuqtai nazari haqidagi maʼlumotlarni biror-bir shaxsga maʼlum qilishga va sudyalar maslahatlashuvi sirini boshqa usulda oshkor qilishga haqli emas.",
+     "retrieval_score": 0.5961,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-250#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "250-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "250-modda. Hal qiluv qarori qabul qilinishining sir tutilishi\nHal qiluv qarori sudya tomonidan alohida xonada (maslahatxonada) qabul qilinadi. Hal qiluv qarorini qabul qilish vaqtida boshqa shaxslarning hozir boʻlishiga yoʻl qoʻyilmaydi.",
+     "retrieval_score": 0.6459,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111460#art-460#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "460-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-09-22",
+     "text": "460-modda. Sudyalarning maslahatlashuv tartibi\nIsh sud tarkibi tomonidan koʻrilayotgan boʻlsa, hukm chiqarish oldidan raislik qiluvchi boshchiligida sudyalarning maslahatlashuvi oʻtkazilib, raislik qiluvchi sud hal qilishi lozim boʻlgan savollarni ushbu Kodeksning 457-moddasida koʻrsatilgan izchillikda qoʻyadi. Har bir savol shunday shaklda qoʻyilishi kerakki, toki bu savolga maʼqullovchi, yoki rad etuvchi javob qaytariladigan boʻlsin. Javob qaytarganidan soʻng sudya javobning sabab-asoslarini ifodalashi mumkin.\nHar bir savolni hal qilishda sudyalardan hech biri ovoz berishda betaraf qolishga haqli emas. Barcha masalalar ovozlarning oddiy koʻpchiligi bilan hal qilinadi. Raislik qiluvchi hammadan keyin ovoz beradi.\nBirinchi navbatda sudlanuvchining manfaatiga toʻlaroq mos keladigan fikr ovozga qoʻyiladi. Basharti oqlash toʻgʻrisida ovoz bergan sudya yoki sudyalar ozchilikni tashkil qilib, boshqa sudyalar esa jinoyatning tavsifi yoki jazo chorasi toʻgʻrisida har xil fikrda boʻlsalar, oqlash uchun berilgan ovoz yoki ovozlar Jinoyat kodeksining yengilroq jazo chorasini nazarda tutgan tegishli moddasi boʻyicha tavsif qilish uchun berilgan ovozga qoʻshiladi.\nIshni sudya koʻrayotgan boʻlsa, ushbu Kodeksning 457 — 459-moddalarida koʻrsatilgan masalalarni yakka oʻzi hal qiladi.",
+     "retrieval_score": 0.8482,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2069,
+    "retrieval_ms": 2273,
+    "rerank_ms": 0,
+    "generation_ms": 3802,
+    "total_ms": 8146
+   },
+   "usage": {
+    "input_tokens": 12021,
+    "output_tokens": 779,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sudya qaror chiqarayotganda uning maslahatlashuv xonasidagi muhokama siri toʻgʻrisida qanday qoida amal qiladi va bu sirni oshkor qilishni talab qilish mumkinmi?",
+    "search_queries": [
+     "Sudya qaror chiqarayotganda uning maslahatlashuvi siri haqida qanday qoida amal qiladi va bu sirni oshkor qilishni talab qilish mumkinmi?",
+     "Sudya qaror chiqarayotganda uning maslahatlashuv xonasidagi muhokama siri toʻgʻrisida qanday qoida amal qiladi va bu sirni oshkor qilishni talab qilish mumkinmi?",
+     "maslahatlashuv xonasi siri sudya qaror",
+     "sudyalar maslahatlashuvi siri oshkor qilish taqiqlanadi",
+     "maslahatlashuv xonasida muhokama qilish siri sud qarori"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Jinoyat-protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi",
+     "Sudyalar toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 851,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 1,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q084",
+   "status": "ok",
+   "answer": "Toshkent xalqaro moliya markazi toʻgʻrisidagi qonunning 20-moddasi ikkinchi qismiga koʻra, Moliya markazining shaxsi hisoblangan chet el fuqarolari va fuqaroligi boʻlmagan shaxslar kirish vizasini besh yilgacha boʻlgan muddatga olishi mumkin [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-8323797",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Toshkent xalqaro moliya markazi toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-8323797",
+     "article": "20-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-07-13",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-8323797#art-20#p1",
+     "quote": "Moliya markazining shaxsi hisoblangan chet el fuqarolari va fuqaroligi boʻlmagan shaxslar kirish vizasini besh yilgacha boʻlgan muddatga olishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-8323797#art-20#p1",
+     "doc_id": "lex:-8323797",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Toshkent xalqaro moliya markazi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8323797",
+     "article": "20-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-13",
+     "text": "20-modda. Chet el fuqarolari va fuqaroligi boʻlmagan shaxslar uchun viza rejimi\nMoliya markazida faoliyatni amalga oshirish uchun Oʻzbekiston Respublikasi hududiga kelayotgan chet el fuqarosi va fuqaroligi boʻlmagan shaxs kirish vizasini Oʻzbekiston Respublikasining elchixonasida yoki boshqa diplomatik vakolatxonasida yoxud Oʻzbekiston Respublikasi hududidagi xalqaro aeroportga yetib kelganidan keyin olishi mumkin. Faoliyatni amalga oshirish maqsadini tasdiqlash uchun zarur boʻlgan hujjatlar va tartib-taomillar Moliya markazining qarorlarida belgilanishi mumkin.\nMoliya markazining shaxsi hisoblangan chet el fuqarolari va fuqaroligi boʻlmagan shaxslar kirish vizasini besh yilgacha boʻlgan muddatga olishi mumkin.\nMoliya markazining jismoniy shaxslari uchun vizalar berish, ularni bekor qilish, qayta tiklash va ularning amal qilish muddatini qisqartirish Oʻzbekiston Respublikasining qonunchiligiga muvofiq, Moliya markazi maʼmuriyatining iltimosnomasiga asosan amalga oshiriladi.\nMoliya markazining ushbu moddaning birinchi yoki ikkinchi qismida koʻrsatilgan jismoniy shaxsiga berilgan vizaning amal qilish muddati mazkur shaxs Oʻzbekiston Respublikasi hududidan tashqariga chiqmasidan turib, Moliya markazi maʼmuriyatining arizasiga binoan, Oʻzbekiston Respublikasining qonunchiligiga muvofiq uzaytirilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-8323797#art-20#p5",
+     "doc_id": "lex:-8323797",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Toshkent xalqaro moliya markazi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8323797",
+     "article": "20-modda",
+     "part": "5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-13",
+     "text": "20-modda. Chet el fuqarolari va fuqaroligi boʻlmagan shaxslar uchun viza rejimi\nMoliya markazida faoliyatni amalga oshirish uchun Oʻzbekiston Respublikasiga kelayotgan chet el fuqarolarining va fuqaroligi boʻlmagan shaxslarning Oʻzbekiston Respublikasiga kirishi va Oʻzbekiston Respublikasidan chiqishi shartlari hamda tartibining oʻziga xos xususiyatlari Moliya markazi kengashining Oʻzbekiston Respublikasining vakolatli vazirlik va idoralari bilan kelishilgan qarori bilan belgilanadi.",
+     "retrieval_score": 0.9277,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-8323797#art-13#p11",
+     "doc_id": "lex:-8323797",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Toshkent xalqaro moliya markazi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8323797",
+     "article": "13-modda",
+     "part": "11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-13",
+     "text": "13-modda. Moliya markazining investitsiyaviy soliq rezidentligi dasturi\nushbu Konstitutsiyaviy Qonunning 29-moddasiga muvofiq Toshkent xalqaro tijorat sudiga murojaat qilish hamda vasiyatnomalar va vorislik reyestriga kirish (undan foydalanish) huquqini.",
+     "retrieval_score": 0.7524,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-8323797#art-29#p42",
+     "doc_id": "lex:-8323797",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Toshkent xalqaro moliya markazi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8323797",
+     "article": "29-modda",
+     "part": "42-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-13",
+     "text": "29-modda. Toshkent xalqaro tijorat sudi\nToshkent xalqaro tijorat sudi Moliya markazi ishtirokchilarining, xodimlarining, investitsiyaviy soliq rezidentlarining hamda ular oila aʼzolarining, shuningdek Raqamli texnologiyalar xalqaro markazining qarorlarida belgilangan hollarda Raqamli texnologiyalar xalqaro markazi bilan bogʻliq jismoniy shaxslarning vasiyatnomalarini tasdiqlash uchun vasiyatnomalar va vorislik reyestrini yuritadi. Bunday vasiyatnomalar Moliya markazining qarorlariga va tegishli hollarda Raqamli texnologiyalar xalqaro markazining qarorlariga muvofiq ijro etiladi va Toshkent xalqaro tijorat sudi tomonidan amalga kiritiladi. Ushbu qismga muvofiq vasiyatnomalarni roʻyxatdan oʻtkazish, oʻzgartirish va ijro etish tartibi, ularni rasmiylashtirish talablari hamda bunday vasiyatnomalarning Oʻzbekiston Respublikasining vorislik huquqi bilan oʻzaro munosabati Toshkent xalqaro tijorat sudining qarorlari bilan belgilanadi.",
+     "retrieval_score": 0.7431,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-8323797#art-13#p5",
+     "doc_id": "lex:-8323797",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Toshkent xalqaro moliya markazi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8323797",
+     "article": "13-modda",
+     "part": "5–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-13",
+     "text": "13-modda. Moliya markazining investitsiyaviy soliq rezidentligi dasturi\nDasturda ishtirok etish toʻgʻrisidagi ariza bilan murojaat qilishdan oldingi oʻn yillik davr mobaynida shaxsning Oʻzbekiston Respublikasi fuqaroligi tugatilmaganligi.\nAgar Dasturda ishtirok etishning asosiy maqsadi yoki asosiy maqsadlaridan biri Oʻzbekiston Respublikasi bilan sezilarli darajada bogʻliq boʻlgan daromadlarga, aktivlarga, foydaga yoki faoliyatga oid soliqdan qochishdan yoxud soliqni kamaytirishdan iborat boʻlsa, shaxs Moliya markazi maʼmuriyatining asoslantirilgan xulosasiga koʻra Moliya markazining investitsiyaviy soliq rezidenti deb eʼtirof etilmaydi.\nMoliya markazining qarorlarida Dasturning shaffofligini va ishonchliligini taʼminlash maqsadida benefitsiar mulkdorlar toʻgʻrisidagi maʼlumotlarni, mablagʻlar manbaini, mol-mulk manbaini, soliq rezidentligi tarixini, sanksiyaviy maqomni hamda zarur boʻlgan boshqa axborotni oshkor etish talablari belgilanishi mumkin.\nMoliya markazining investitsiyaviy soliq rezidenti maqomini olish quyidagi huquqlar va imkoniyatlarni beradi:\nushbu Konstitutsiyaviy Qonunning 18-moddasida belgilangan soliq imtiyozlarini qoʻllash maqsadida Oʻzbekiston Respublikasining soliq rezidenti deb eʼtirof etilishni;\nushbu Konstitutsiyaviy Qonunning 20-moddasida belgilangan vizaga oid huquqlarni;",
+     "retrieval_score": 0.7403,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1875,
+    "retrieval_ms": 2673,
+    "rerank_ms": 0,
+    "generation_ms": 2236,
+    "total_ms": 6786
+   },
+   "usage": {
+    "input_tokens": 11457,
+    "output_tokens": 453,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Toshkent xalqaro moliya markazining shaxsi hisoblangan chet ellik xodim kirish vizasini eng koʻpi bilan qancha muddatga olishi mumkin?",
+    "search_queries": [
+     "Toshkent xalqaro moliya markazining shaxsi hisoblangan chet ellik xodim kirish vizasini eng koʻpi bilan qancha muddatga olishi mumkin?",
+     "Toshkent xalqaro moliya markazi chet ellik xodim kirish vizasi muddati",
+     "kirish vizasi amal qilish muddati chet ellik xodim",
+     "Toshkent xalqaro moliya markazi ishtirokchisi vizasi"
+    ],
+    "doc_hints": [
+     "Toshkent xalqaro moliya markazini tashkil etish toʻgʻrisidagi qonun",
+     "Toshkent xalqaro moliya markazi maʼmuriyati xodimlarining vizasi toʻgʻrisidagi nizom"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 543,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q085",
+   "status": "ok",
+   "answer": "Jinoyat-protsessual kodeksining 267-moddasiga koʻra, shaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnoma yopiq sud majlisida, materiallar kelib tushgan paytdan eʼtiboran qirq sakkiz soat ichida koʻrib chiqiladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "267-modda",
+     "part": "1–2-qism",
+     "edition_date": "2025-01-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111460#art-267#p1",
+     "quote": "Shaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnoma yopiq sud majlisida, materiallar kelib tushgan paytdan eʼtiboran qirq sakkiz soat ichida koʻrib chiqiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111460#art-267#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "267-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-01-29",
+     "text": "267-modda. Shaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi yoki ayblanuvchining tibbiy muassasada boʻlishi muddatini uzaytirish haqidagi iltimosnomani koʻrib chiqish\nShaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnoma surishtiruv yoki dastlabki tergov yuritilayotgan joydagi jinoyat ishlari boʻyicha tuman (shahar) sudining tergov sudyasi tomonidan, mazkur sudning sudyasi boʻlmagan yoxud tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnomani koʻrib chiqishda uning ishtirokini istisno etuvchi holatlar mavjud boʻlgan taqdirda, Qoraqalpogʻiston Respublikasi sudi, viloyat, Toshkent shahar sudi raisining koʻrsatmasiga binoan boshqa tegishli sudning tergov sudyasi tomonidan yakka tartibda koʻrib chiqiladi.\nShaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnoma yopiq sud majlisida, materiallar kelib tushgan paytdan eʼtiboran qirq sakkiz soat ichida koʻrib chiqiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111460#art-31.1#p2",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "31¹-modda",
+     "part": "2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-08-15",
+     "text": "311-modda. Tergov sudyasining vakolatlari\nTergov sudyasining vakolatlari jumlasiga: qamoqqa olish yoki uy qamogʻi tarzidagi ehtiyot chorasini qoʻllash toʻgʻrisidagi iltimosnomani koʻrib chiqish; qamoqda saqlash yoki uy qamogʻi muddatini uzaytirish toʻgʻrisidagi iltimosnomani koʻrib chiqish; ushlab turish muddatini qirq sakkiz soatgacha uzaytirish toʻgʻrisidagi iltimosnomani koʻrib chiqish; pasportning (harakatlanish hujjatining) amal qilishini toʻxtatib turish toʻgʻrisidagi iltimosnomani koʻrib chiqish; Oʻzbekiston Respublikasidan chiqish huquqini vaqtincha cheklash haqidagi iltimosnomani koʻrib chiqish; ayblanuvchini lavozimidan chetlashtirish toʻgʻrisidagi iltimosnomani koʻrib chiqish; shaxsni tibbiy muassasaga joylashtirish haqidagi iltimosnomani koʻrib chiqish; ayblanuvchining tibbiy muassasada boʻlishi muddatini uzaytirish toʻgʻrisidagi iltimosnomani koʻrib chiqish; murdani eksgumatsiya qilish haqidagi iltimosnomani koʻrib chiqish; pochta-telegraf joʻnatmalarini xatlash toʻgʻrisidagi iltimosnomani koʻrib chiqish; prokurorning guvoh va jabrlanuvchining (fuqaroviy daʼvogarning) koʻrsatuvlarini oldindan mustahkamlash toʻgʻrisidagi iltimosnomalarini koʻrib chiqish; tintuv oʻtkazish toʻgʻrisidagi iltimosnomani koʻrib chiqish; telefonlar va boshqa telekommunikatsiya qurilmalari orqali olib boriladigan soʻzlashuvlarni eshitib turish, ular orqali uzatiladigan axborotni olish toʻgʻrisidagi iltimosnomalarni koʻrib chiqish; mol-mulkni xatlash toʻgʻrisidagi iltimosnomani koʻrib chiqish kiradi.",
+     "retrieval_score": 0.8733,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111460#art-29#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "29-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-08-15",
+     "text": "29-modda. Sudning vakolatlari\nSudning vakolatlariga: qamoqqa olish yoki uy qamogʻi tarzidagi ehtiyot chorasini qoʻllash yoxud qamoqda saqlash yoki uy qamogʻi muddatini uzaytirish masalalari bilan bogʻliq iltimosnoma, shikoyat va protestni ehtiyot chorasini qoʻllash toʻgʻrisida ajrim chiqargan sudni albatta xabardor qilgan holda koʻrib chiqish; pasportning (harakatlanish hujjatining) amal qilishini toʻxtatib turish toʻgʻrisidagi iltimosnomani koʻrib chiqish; Oʻzbekiston Respublikasidan chiqish huquqini vaqtincha cheklash haqidagi iltimosnomani koʻrib chiqish; ayblanuvchini lavozimidan chetlashtirish toʻgʻrisidagi, shaxsni tibbiy muassasaga joylashtirish haqidagi yoki ayblanuvchining tibbiy muassasada boʻlishi muddatini uzaytirish toʻgʻrisidagi, murdani eksgumatsiya qilish haqidagi, pochta-telegraf joʻnatmalarini xatlash toʻgʻrisidagi, tintuv oʻtkazish haqidagi, telefonlar va boshqa telekommunikatsiya qurilmalari orqali olib boriladigan soʻzlashuvlarni eshitib turish, ular orqali uzatiladigan axborotni olish toʻgʻrisidagi, mol-mulkni xatlash haqidagi iltimosnomalarni koʻrib chiqish; prokurorning amnistiya aktiga asosan jinoyat ishini qoʻzgʻatishni rad qilish toʻgʻrisidagi yoki jinoyat ishini tugatish haqidagi yoxud mahkumni jazodan ozod qilish toʻgʻrisidagi iltimosnomasini koʻrib chiqish; prokurorning guvoh va jabrlanuvchining (fuqaroviy daʼvogarning) koʻrsatuvlarini oldindan mustahkamlash toʻgʻrisidagi iltimosnomasini koʻrib chiqish; prokurorning xorijiy davlat sudining qarorini tan olish va ijroga qaratish toʻgʻrisidagi iltimosnomasini koʻrib chiqish; jinoyat ishini sud muhokamasiga tayyorlash; dastlabki eshituv oʻtkazish; ishni muhokama qilish va hukm chiqarish yoki boshqa qaror qabul qilish; ishni apellyatsiya, kassatsiya va taftish tartibida koʻrib chiqish; hukmni ijro ettirish kiradi.",
+     "retrieval_score": 0.796,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111460#art-267#p5",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "267-modda",
+     "part": "5–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-01-29",
+     "text": "267-modda. Shaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi yoki ayblanuvchining tibbiy muassasada boʻlishi muddatini uzaytirish haqidagi iltimosnomani koʻrib chiqish\nShaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnomani koʻrib chiqish prokurorning maʼruzasi bilan boshlanadi, u mazkur protsessual majburlov chorasini qoʻllash zaruratini asoslab beradi. Soʻngra tibbiy muassasaga joylashtirilayotgan shaxs, agar u sud majlisida ishtirok etayotgan boʻlsa, himoyachi, sudda hozir boʻlgan boshqa shaxslar eshitiladi, taqdim qilingan materiallar tekshiriladi. Shundan keyin sudya ajrim chiqarish uchun alohida xonaga kiradi.\nAyblanuvchining tibbiy muassasada boʻlishi muddatini uzaytirish toʻgʻrisidagi iltimosnoma surishtiruv yoki dastlabki tergov yuritilayotgan joyda yoki tibbiy muassasa joylashgan yerda, ushbu moddada nazarda tutilgan tartibda koʻrib chiqiladi.\nAyblanuvchining tibbiy muassasada boʻlishi muddatini uzaytirish toʻgʻrisidagi iltimosnomani koʻrib chiqishda sud taqdim etilgan materiallarning asosliligini, shuningdek protsessual normalarga va talablarga rioya etilganligini hisobga oladi.",
+     "retrieval_score": 0.9732,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111460#art-267#p3",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "267-modda",
+     "part": "3–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-01-29",
+     "text": "267-modda. Shaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi yoki ayblanuvchining tibbiy muassasada boʻlishi muddatini uzaytirish haqidagi iltimosnomani koʻrib chiqish\nShaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnoma prokuror, himoyachi, shuningdek, agar ishda qatnashayotgan boʻlsa, oʻziga nisbatan ekspertiza oʻtkazish uchun tibbiy muassasaga joylashtirish masalasi koʻrib chiqilayotgan shaxslarning manfaatlarini ifodalovchi jabrlanuvchining vakili, guvohning advokati, qonuniy vakillar ishtirokida koʻrib chiqiladi. Tibbiy muassasaga joylashtirilayotgan shaxs, agar uning sogʻligʻi imkon bersa, sud majlisida qatnashishga haqli. Zarur hollarda surishtiruvchi yoki tergovchi sudga chaqirilishi mumkin.\nSud majlisining joyi, sanasi va vaqti haqida lozim darajada xabardor qilingan shaxslarning kelmaganligi shaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnomani koʻrib chiqish uchun monelik qilmaydi.",
+     "retrieval_score": 0.9702,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1714,
+    "retrieval_ms": 2305,
+    "rerank_ms": 0,
+    "generation_ms": 1538,
+    "total_ms": 5559
+   },
+   "usage": {
+    "input_tokens": 14985,
+    "output_tokens": 485,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Jinoyat-protsessual kodeksiga koʻra, shaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnoma sudga kelib tushgandan keyin qancha muddat ichida koʻrib chiqilishi kerak?",
+    "search_queries": [
+     "Jinoyat-protsessual kodeksiga koʻra, odamni tibbiy muassasaga joylashtirish haqidagi iltimosnoma sudga kelib tushgandan keyin qancha vaqt ichida koʻrib chiqilishi kerak?",
+     "Jinoyat-protsessual kodeksiga koʻra, shaxsni tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnoma sudga kelib tushgandan keyin qancha muddat ichida koʻrib chiqilishi kerak?",
+     "tibbiy muassasaga joylashtirish toʻgʻrisidagi iltimosnoma sudda koʻrib chiqish muddati",
+     "shaxsni tibbiy muassasaga majburiy joylashtirish iltimosnomasini sud koʻrib chiqish muddati",
+     "iltimosnoma sudga kelib tushgandan keyin koʻrib chiqish muddati Jinoyat-protsessual kodeksi"
+    ],
+    "doc_hints": [
+     "Jinoyat-protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 429,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q086",
+   "status": "ok",
+   "answer": "Shaharsozlik kodeksining 45-moddasiga koʻra, shaharsozlik hujjatlarini ishlab chiqish ishlab chiquvchilar tomonidan shartnoma, buyurtmachi tomonidan beriladigan loyihalashtirish topshirigʻi, boshlangʻich-ruxsat beruvchi hujjatlar va muhandislik-texnik qidiruvlar natijalari asosida amalga oshiriladi [1]. Ishlab chiqishga doir topshiriqlar tumanlar va shaharlar ijro etuvchi hokimiyat organlari bilan Kodeks 44-moddasi birinchi qismining 2—4-bandlarida nazarda tutilgan shaharsozlik hujjatlari boʻyicha kelishib olinishi lozim [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "45-modda",
+     "part": "1–5-qism",
+     "edition_date": "2024-09-11",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5307951#art-45#p1",
+     "quote": "Shaharsozlik hujjatlarini ishlab chiqish ishlab chiquvchilar tomonidan shartnoma, buyurtmachi tomonidan beriladigan loyihalashtirish topshirigʻi, boshlangʻich-ruxsat beruvchi hujjatlar va muhandislik-texnik qidiruvlar natijalari asosida amalga oshiriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "45-modda",
+     "part": "1–5-qism",
+     "edition_date": "2024-09-11",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5307951#art-45#p1",
+     "quote": "tumanlar va shaharlar ijro etuvchi hokimiyat organlari bilan — ushbu Kodeks 44-moddasi birinchi qismining 2 — 4-bandlarida nazarda tutilgan shaharsozlik hujjatlari boʻyicha;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:5307951#art-45#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "45-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-09-11",
+     "text": "45-modda. Shaharsozlik hujjatlarini ishlab chiqish, kelishib olish va tasdiqlash\nShaharsozlik hujjatlarini ishlab chiqish ishlab chiquvchilar tomonidan shartnoma, buyurtmachi tomonidan beriladigan loyihalashtirish topshirigʻi, boshlangʻich-ruxsat beruvchi hujjatlar va muhandislik-texnik qidiruvlar natijalari asosida amalga oshiriladi.\nShaharsozlik hujjatlarini ishlab chiqishga doir topshiriqlar quyidagilar bilan kelishib olinishi lozim:\nOʻzbekiston Respublikasi Vazirlar Mahkamasi bilan — ushbu Kodeks 44-moddasi birinchi qismining 1-bandida nazarda tutilgan shaharsozlik hujjatlari boʻyicha;\nQoraqalpogʻiston Respublikasi Vazirlar Kengashi, viloyatlar ijro etuvchi hokimiyat organlari, tegishli vazirliklar, idoralar bilan — ushbu Kodeks 44-moddasi birinchi qismining 1 va 2-bandlarida nazarda tutilgan shaharsozlik hujjatlari boʻyicha;\ntumanlar va shaharlar ijro etuvchi hokimiyat organlari bilan — ushbu Kodeks 44-moddasi birinchi qismining 2 — 4-bandlarida nazarda tutilgan shaharsozlik hujjatlari boʻyicha;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:5307951#art-45#p10",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "45-modda",
+     "part": "10–13-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-09-11",
+     "text": "45-modda. Shaharsozlik hujjatlarini ishlab chiqish, kelishib olish va tasdiqlash\nushbu Kodeks 44-moddasi birinchi qismining 2 — 4-bandlarida nazarda tutilgan shaharsozlik hujjatlari tegishli vazirliklar, idoralarning hududiy boʻlinmalari vakillari ishtirokida Qoraqalpogʻiston Respublikasi Qurilish va uy-joy kommunal xoʻjaligi vazirligi, viloyatlar va Toshkent shahar qurilish bosh boshqarmalari huzuridagi hududiy arxitektura-shaharsozlik kengashlari hamda mahalliy ijro etuvchi hokimiyat organlari bilan.\nShaharsozlik hujjatlarini kelishib olish muddati bir oydan oshmasligi kerak.\nOʻzbekiston Respublikasi Vazirlar Mahkamasi va maxsus vakolatli davlat organi tomonidan tasdiqlanadigan shaharsozlik hujjatlari Oʻzbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Respublika arxitektura-shaharsozlik kengashi bilan kelishib olinishi lozim.\nUshbu Kodeks 44-moddasi birinchi qismining 5-bandida nazarda tutilgan shaharsozlik hujjatlari sanitariya-epidemiologiya xizmatlari va davlat yongʻin nazorati organlari, ekologiya va atrof-muhitni muhofaza qilish organlari, Qoraqalpogʻiston Respublikasi Qurilish va uy-joy kommunal xoʻjaligi vazirligi, viloyatlar va Toshkent shahar qurilish bosh boshqarmalari bilan, qonun hujjatlarida nazarda tutilgan hollarda esa ular huzuridagi arxitektura-shaharsozlik kengashlari bilan kelishiladi.",
+     "retrieval_score": 0.9591,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:5307951#art-45#p6",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "45-modda",
+     "part": "6–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-09-11",
+     "text": "45-modda. Shaharsozlik hujjatlarini ishlab chiqish, kelishib olish va tasdiqlash\nmaxsus vakolatli davlat organi bilan — ushbu Kodeks 44-moddasi birinchi qismining 1 — 3-bandlarida, 4-bandida (ularning ishlab chiqilishi budjet tizimining budjetlar mablagʻlari hisobidan moliyalashtirilganda), 5-bandida (budjet tizimining budjetlar mablagʻlari hamda hukumat kafolati ostida moliyalashtiriladigan noyob va alohida muhim davlat ahamiyatiga molik obyektlar boʻyicha) nazarda tutilgan shaharsozlik hujjatlari boʻyicha;\nmaxsus vakolatli davlat organining hududiy boʻlinmalari bilan — ushbu Kodeks 44-moddasi birinchi qismining 4-5-bandlarida nazarda tutilgan shaharsozlik hujjatlari boʻyicha (ularning ishlab chiqilishi budjet tizimining budjetlar mablagʻlari hisobidan moliyalashtirilganda).\nShaharsozlik hujjatlari quyidagilar bilan kelishib olinishi lozim:\nushbu Kodeks 44-moddasi birinchi qismining 1 — 3-bandlarida nazarda tutilgan shaharsozlik hujjatlari tegishli vazirliklar, idoralar va ularning hududiy boʻlinmalari, shuningdek mahalliy ijro etuvchi hokimiyat organlari bilan;",
+     "retrieval_score": 0.8845,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:5307951#art-45#p14",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "45-modda",
+     "part": "14–15-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-09-11",
+     "text": "45-modda. Shaharsozlik hujjatlarini ishlab chiqish, kelishib olish va tasdiqlash\nShaharsozlik hujjatlari ushbu Kodeksda belgilangan vakolatlarga muvofiq Oʻzbekiston Respublikasi Vazirlar Mahkamasi, maxsus vakolatli davlat organi, Qoraqalpogʻiston Respublikasi Joʻqorgʻi Kengesi, xalq deputatlari viloyatlar va Toshkent shahar Kengashlari, buyurtmachi tomonidan tasdiqlanadi.\nTasdiqlangan shaharsozlik hujjatlariga oʻzgartirishlar ushbu hujjatlarni tasdiqlagan organning yoki buyurtmachining qaroriga binoan kiritiladi.",
+     "retrieval_score": 0.8176,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5307951#art-22#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "22-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-28",
+     "text": "22-modda. Tumanlar (shaharlar) ijro etuvchi hokimiyat organlarining shaharsozlik faoliyati sohasidagi vakolatlari\nTumanlar (shaharlar) ijro etuvchi hokimiyat organlari:\nshaharsozlik toʻgʻrisidagi qonun hujjatlariga rioya etilishi ustidan nazoratni amalga oshiradi, shuningdek shaharsozlik faoliyati obyektlarining but saqlanishini taʼminlaydi;\nshaharlar hududlarining ijtimoiy-iqtisodiy rivojlanish koʻrsatkichlari va istiqboldagi urbanizatsiya jarayonlari asosida aholini oqilona joylashtirish, muhandislik, transportga oid va ijtimoiy infratuzilmalarni rivojlantirish masalalarini hal qiladi;\nmahalliy ahamiyatga molik obyektlarni qurishga doir shaharsozlik hujjatlarini ishlab chiqish boʻyicha buyurtmachi vazifalarini bajaradi va bu obyektlarning moliyalashtirilishini taʼminlaydi;\noʻz hududidagi shaharsozlik faoliyatini, agar bu faoliyat shaharsozlik toʻgʻrisidagi qonun hujjatlari talablariga mos kelmasa, cheklaydi, toʻxtatib turadi yoki taqiqlaydi. Tadbirkorlik subyektlarining shaharsozlik faoliyatini cheklash, toʻxtatib turish va taqiqlash sud tartibida amalga oshiriladi, bundan favqulodda vaziyatlar, epidemiyalar hamda aholining hayoti va sogʻligʻi uchun boshqa real tahdid yuzaga kelishining oldini olish bilan bogʻliq holda faoliyatni oʻn ish kunidan koʻp boʻlmagan muddatga cheklash, toʻxtatib turish hollari mustasno;",
+     "retrieval_score": 0.8822,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1880,
+    "retrieval_ms": 2854,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 4735
+   },
+   "usage": {
+    "input_tokens": 13464,
+    "output_tokens": 712,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Shaharsozlik hujjatlarini ishlab chiqish boʻyicha topshiriqni tuman va shahar hokimiyatlari bilan qaysi hollarda kelishib olish zarur va bunday hujjatlarni ishlab chiqishga kim haqli?",
+    "search_queries": [
+     "Shaharsozlik hujjatlarini ishlab chiqish boʻyicha topshiriqni tuman va shahar hokimiyatlari bilan qaysi hollarda kelishib olish kerak va bunday hujjatlarni kim ishlab chiqishga haqli?",
+     "Shaharsozlik hujjatlarini ishlab chiqish boʻyicha topshiriqni tuman va shahar hokimiyatlari bilan qaysi hollarda kelishib olish zarur va bunday hujjatlarni ishlab chiqishga kim haqli?",
+     "shaharsozlik hujjatlarini ishlab chiqish boʻyicha topshiriqni kelishib olish",
+     "shaharsozlik hujjatlarini ishlab chiqishga haqli shaxslar",
+     "shaharsozlik hujjatlarini ishlab chiqish topshirigʻi tuman va shahar hokimiyatlari bilan kelishish"
+    ],
+    "doc_hints": [
+     "Shaharsozlik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 592,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q087",
+   "status": "ok",
+   "answer": "Сайлов кодексининг 88-моддасига кўра, аҳолиси уч миллион нафардан ортиқ бўлган ҳудудда Халқ депутатлари вилоят ёки Тошкент шаҳар Кенгашидаги депутатлик ўринлари сони элликтaдан олтмиштaгача этиб белгиланади [1].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "88-modda",
+     "part": "1–10-qism",
+     "edition_date": "2023-12-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-88#p1",
+     "quote": "aholi soni uch million nafardan ortiq boʻlgan hududlarda — elliktadan oltmishtagacha",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4386848#art-88#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "88-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-19",
+     "text": "88-modda. Mahalliy Kengashlarga saylov\nMahalliy Kengashlarga saylov hududiy bir mandatli saylov okruglari boʻyicha koʻppartiyaviylik asosida besh yil muddatga oʻtkaziladi.\nXalq deputatlari viloyatlar va Toshkent shahar Kengashlaridagi deputatlik oʻrinlari soni aholi sonidan kelib chiqqan holda tegishli mahalliy Kengash tomonidan quyidagicha belgilanadi:\naholi soni ikki million nafargacha boʻlgan hududlarda — oʻttiztadan qirqtagacha;\naholi soni ikki milliondan uch million nafargacha boʻlgan hududlarda — qirqtadan elliktagacha;\naholi soni uch million nafardan ortiq boʻlgan hududlarda — elliktadan oltmishtagacha.\nXalq deputatlari tuman va shahar Kengashlaridagi deputatlik oʻrinlari soni aholi sonidan kelib chiqqan holda tegishli mahalliy Kengash tomonidan quyidagicha belgilanadi:\naholi soni oʻttiz ming nafargacha boʻlgan hududlarda — oʻntadan oʻn beshtagacha;\naholi soni oʻttiz mingdan yuz ming nafargacha boʻlgan hududlarda — oʻn beshtadan yigirmatagacha;\naholi soni yuz mingdan uch yuz ming nafargacha boʻlgan hududlarda — yigirmatadan yigirma beshtagacha;\naholi soni uch yuz ming nafardan ortiq boʻlgan hududlarda — yigirma beshtadan oʻttiztagacha.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6697581#art-20.1#p222",
+     "doc_id": "lex:-6697581",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining ayrim qonun hujjatlariga saylov va referendum oʻtkazish tartibini yanada takomillashtirishga qaratilgan oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6697581",
+     "article": "20¹-modda",
+     "part": "222–232-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-18",
+     "text": "201-modda. Tuman, shahar saylov komissiyasining vakolatlari\nAgar nomzod deputat boʻlishdan voz kechsa yoki ushbu Kodeks 961-moddasining oʻninchi qismida nazarda tutilgan talablarni bajarmasa, Markaziy saylov komissiyasi tegishli partiya roʻyxatidagi tartib raqami boʻyicha mandat olmagan keyingi nomzodga xabarnoma yuboradi.\nUshbu moddaning toʻrtinchi qismida nazarda tutilgan tartib boʻshab qolgan deputatlik mandati toʻldirilgunga qadar amalga oshiriladi”;\n51) 75-moddaning:\nikkinchi qismidagi “olti kishidan” degan soʻzlar “toʻrt kishidan” degan soʻzlar bilan almashtirilsin;\nuchinchi qismidagi “oʻn olti nafar aʼzosi” degan soʻzlar “toʻqqiz nafar aʼzosi” degan soʻzlar bilan almashtirilsin;\n52) 79-moddaning sakkizinchi qismidagi “olti” degan soʻz “toʻrt” degan soʻz bilan almashtirilsin;\n53) 88-moddaning matni quyidagi tahrirda bayon etilsin:\n“Mahalliy Kengashlarga saylov hududiy bir mandatli saylov okruglari boʻyicha koʻppartiyaviylik asosida besh yil muddatga oʻtkaziladi.\nXalq deputatlari viloyatlar va Toshkent shahar Kengashlaridagi deputatlik oʻrinlari soni aholi sonidan kelib chiqqan holda tegishli mahalliy Kengash tomonidan quyidagicha belgilanadi:\naholi soni ikki million nafargacha boʻlgan hududlarda — oʻttiztadan qirqtagacha;\naholi soni ikki milliondan uch million nafargacha boʻlgan hududlarda — qirqtadan elliktagacha;",
+     "retrieval_score": 0.4232,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4386848#art-88#p11",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "88-modda",
+     "part": "11–13-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-19",
+     "text": "88-modda. Mahalliy Kengashlarga saylov\nHududiy va boshqa mahalliy sharoitlardan kelib chiqib, xalq deputatlari viloyatlar, Toshkent shahar, tuman va shahar Kengashlaridagi deputatlik oʻrinlari soniga ushbu moddaning ikkinchi va uchinchi qismlarida belgilangan norma doirasida Senat tomonidan oʻzgartirish kiritilishi mumkin.\nSaylov okrugining hududi boshqa maʼmuriy-hududiy birlik tarkibiga oʻtkazilganda yoki uning hududida yangi maʼmuriy-hududiy birlik tashkil etilgan taqdirda, ushbu saylov okrugidan saylangan deputatning vakolatlari saqlab qolinadi. Bunda deputat saylov okrugining hududi joylashgan xalq deputatlari Kengashi yoxud yangi tashkil etilgan maʼmuriy-hududiy birlikda shakllantirilgan xalq deputatlari Kengashi tarkibiga kiradi, deputatning vakolatlari muddati esa mazkur xalq deputatlari Kengashining vakolatlari muddatiga muvofiq boʻladi. Bunday hollarda deputatlik oʻrinlari soni ushbu modda ikkinchi va uchinchi qismlarida belgilangan normadan oshishi yoki kamayishiga yoʻl qoʻyilishi mumkin.\nYangidan tashkil etilgan maʼmuriy-hududiy birliklarda mahalliy Kengashlarga saylov xalq deputatlari viloyat, tuman va shahar Kengashlariga navbatdagi umumiy saylovlarga qadar qolgan davrdan oshmaydigan muddatga oʻtkaziladi.",
+     "retrieval_score": 0.777,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6697581#art-20.1#p233",
+     "doc_id": "lex:-6697581",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining ayrim qonun hujjatlariga saylov va referendum oʻtkazish tartibini yanada takomillashtirishga qaratilgan oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6697581",
+     "article": "20¹-modda",
+     "part": "233–239-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-18",
+     "text": "201-modda. Tuman, shahar saylov komissiyasining vakolatlari\naholi soni uch million nafardan ortiq boʻlgan hududlarda — elliktadan oltmishtagacha.\nXalq deputatlari tuman va shahar Kengashlaridagi deputatlik oʻrinlari soni aholi sonidan kelib chiqqan holda tegishli mahalliy Kengash tomonidan quyidagicha belgilanadi:\naholi soni oʻttiz ming nafargacha boʻlgan hududlarda — oʻntadan oʻn beshtagacha;\naholi soni oʻttiz mingdan yuz ming nafargacha boʻlgan hududlarda — oʻn beshtadan yigirmatagacha;\naholi soni yuz mingdan uch yuz ming nafargacha boʻlgan hududlarda — yigirmatadan yigirma beshtagacha;\naholi soni uch yuz ming nafardan ortiq boʻlgan hududlarda — yigirma beshtadan oʻttiztagacha.\nHududiy va boshqa mahalliy sharoitlardan kelib chiqib, xalq deputatlari viloyatlar, Toshkent shahar, tuman va shahar Kengashlaridagi deputatlik oʻrinlari soniga ushbu moddaning ikkinchi va uchinchi qismlarida belgilangan norma doirasida Senat tomonidan oʻzgartirish kiritilishi mumkin.",
+     "retrieval_score": 0.43,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4386848#art-19#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "19-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-19",
+     "text": "19-modda. Hududiy, tuman va shahar saylov komissiyalarini tuzish\nHududiy saylov komissiyalari aʼzoligiga nomzodlar xalq deputatlari viloyatlar va Toshkent shahar Kengashlarining majlislarida muhokama qilinadi hamda Markaziy saylov komissiyasiga tasdiqlash uchun tavsiya etiladi.\nMarkaziy saylov komissiyasi saylovga kamida sakson kun qolganida hududiy saylov komissiyalarini komissiya raisi, rais oʻrinbosari, kotibidan va komissiyaning oʻn ikki — oʻn sakkiz nafar boshqa aʼzolaridan iborat tarkibda tuzadi.\nTuman, shahar saylov komissiyalari aʼzoligiga nomzodlar xalq deputatlari tuman va shahar Kengashlarining majlislarida muhokama qilinadi hamda hududiy saylov komissiyasiga tasdiqlash uchun tavsiya etiladi.\nHududiy saylov komissiyasi saylovga kamida yetmish besh kun qolganida tuman, shahar saylov komissiyalarini komissiya raisi, rais oʻrinbosari, kotibidan va komissiyaning sakkiz — oʻn sakkiz nafar boshqa aʼzolaridan iborat tarkibda tuzadi.",
+     "retrieval_score": 0.9099,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1783,
+    "retrieval_ms": 2056,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 3839
+   },
+   "usage": {
+    "input_tokens": 13149,
+    "output_tokens": 426,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Saylov kodeksiga koʻra, aholisi uch million nafardan ortiq boʻlgan hududda Xalq deputatlari viloyat yoki Toshkent shahar Kengashida nechta deputatlik oʻrni belgilanishi mumkin?",
+    "search_queries": [
+     "Сайлов кодексига кўра, аҳолиси уч миллион нафардан ортиқ бўлган ҳудудда Халқ депутатлари вилоят ёки Тошкент шаҳар Кенгашида нечта депутатлик ўрни белгиланиши мумкин?",
+     "Saylov kodeksiga koʻra, aholisi uch million nafardan ortiq boʻlgan hududda Xalq deputatlari viloyat yoki Toshkent shahar Kengashida nechta deputatlik oʻrni belgilanishi mumkin?",
+     "Xalq deputatlari viloyat Kengashi deputatlik oʻrinlari soni aholisi uch million nafardan ortiq",
+     "Saylov kodeksi viloyat Kengashi deputatlari soni",
+     "Toshkent shahar Kengashi deputatlik oʻrinlari belgilanishi"
+    ],
+    "doc_hints": [
+     "Saylov kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 576,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q088",
+   "status": "ok",
+   "answer": "Sud majlisi bayonnomasi sud majlisi tugaganidan yoki alohida protsessual harakat amalga oshirilganidan soʻng uch kundan kechiktirmasdan raislik qiluvchi va sud majlisi kotibi tomonidan imzolanishi kerak [1]. Fuqarolik protsessual kodeksining 278-moddasiga koʻra ham bayonnoma sud majlisi tamom boʻlganidan yoki alohida protsessual harakat amalga oshirilganidan keyin kechi bilan uch kunda imzolanishi kerak [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "176-modda",
+     "part": "1–2-qism",
+     "edition_date": "2018-01-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3527353#art-176#p1",
+     "quote": "Bayonnoma sud majlisi tugaganidan yoki alohida protsessual harakat amalga oshirilganidan soʻng uch kundan kechiktirmasdan raislik qiluvchi va sud majlisi kotibi tomonidan imzolanishi kerak",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "278-modda",
+     "part": "1–3-qism",
+     "edition_date": "2019-03-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-278#p1",
+     "quote": "Bayonnoma sud majlisi tamom boʻlganidan yoki alohida protsessual harakat amalga oshirilganidan keyin kechi bilan uch kunda raislik qiluvchi va sud majlisining kotibi tomonidan imzolanishi kerak",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3527353#art-176#p1",
+     "doc_id": "lex:-3527353",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-3527353",
+     "article": "176-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-25",
+     "text": "176-modda. Bayonnoma yuritish\nBayonnoma sud majlisi kotibi tomonidan sud majlisining oʻzida yoki alohida protsessual harakat bajarilganida sud majlisi zalidan tashqarida yuritiladi.\nBayonnoma sud majlisi tugaganidan yoki alohida protsessual harakat amalga oshirilganidan soʻng uch kundan kechiktirmasdan raislik qiluvchi va sud majlisi kotibi tomonidan imzolanishi kerak.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3523891#art-202#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "202-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "202-modda. Bayonnoma yuritish\nBayonnoma sud majlisi kotibi tomonidan sud majlisining oʻzida yoki alohida protsessual harakat bajarilganida sud majlisi zalidan tashqarida yuritiladi.\nBayonnoma sud majlisi tugaganidan yoki alohida protsessual harakat bajarilganidan soʻng uch kundan kechiktirmasdan raislik qiluvchi va sud majlisi kotibi tomonidan imzolanishi kerak.",
+     "retrieval_score": 0.9983,
+     "rerank_score": 1.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3517337#art-278#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "278-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-03-21",
+     "text": "278-modda. Bayonnoma tuzish\nBayonnoma sud majlisi kotibi tomonidan sud majlisining oʻzida yoki sud majlisi zalidan tashqarida alohida protsessual harakat bajarilganida yuritiladi.\nIshda ishtirok etuvchi shaxslar oʻzlari ish uchun ahamiyatga ega deb hisoblangan holatlarni bayonnomaga kiritish toʻgʻrisida iltimosnomalar berishga haqli.\nTaraflarning, uchinchi shaxslarning oʻzlari qoʻygan talablardan butunlay yoki qisman voz kechganligi haqidagi, qoʻyilgan talablarni tan olishi, ishni kelishuv bitimi yoki mediativ kelishuv bilan tamomlash toʻgʻrisidagi arizalari bayonnomaga kiritiladi. Bayonnoma sud majlisi tamom boʻlganidan yoki alohida protsessual harakat amalga oshirilganidan keyin kechi bilan uch kunda raislik qiluvchi va sud majlisining kotibi tomonidan imzolanishi kerak. Kiritilgan barcha oʻzgarishlar, tuzatishlar, qoʻshimchalar bayonnomada izohlanishi kerak.",
+     "retrieval_score": 0.9669,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-2712887#band-20#p1",
+     "doc_id": "lex:-2712887",
+     "doc_title": "Oʻzbekiston Respublikasi oliy xoʻjalik sudi plenumining qarori iqtisodiy sudlar tomonidan protsessual muddatlarga oid qonun normalarini qoʻllashning ayrim masalalari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-2712887",
+     "article": "20-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-05-19",
+     "text": "20. IPK 203-moddasining birinchi qismiga koʻra iqtisodiy sudlov ishlarini yuritishning ishtirokchilari bayonnoma imzolanganidan keyin besh kunlik muddatda sud majlisining yoki protsessual harakatning bayonnomasi bilan tanishish hamda uning toʻla-toʻkisligi va toʻgʻri tuzilganligi xususida oʻz fikr-mulohazalarini berish huquqiga ega.\nSudlar shuni inobatga olishi kerakki, besh kunlik muddat bayonnoma raislik qiluvchi va sud majlisi kotibi tomonidan imzolangan kundan eʼtiboran boshlanadi. Bunda, bayonnoma sud majlisi tugaganidan yoki alohida protsessual harakat bajarilganidan soʻng uch kundan kechiktirmasdan raislik qiluvchi va sud majlisi kotibi tomonidan imzolanishi kerak.",
+     "retrieval_score": 0.9538,
+     "rerank_score": 0.8,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:3780952#band-27#p47",
+     "doc_id": "lex:3780952",
+     "doc_title": "Oʻzbekiston Respublikasi oliy sudi plenumining qarori Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasi oliy sudi plenumi va oliy xoʻjalik sudi plenumining ayrim qarorlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrimlarini oʻz kuchini yoʻqotgan deb topish toʻgʻrisida",
+     "url": "https://lex.uz/docs/3780952",
+     "article": "27-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-05-19",
+     "text": "Sudlar shuni inobatga olishi kerakki, besh kunlik muddat bayonnoma raislik qiluvchi va sud majlisi kotibi tomonidan imzolangan kundan eʼtiboran boshlanadi. Bunda, bayonnoma sud majlisi tugaganidan yoki alohida protsessual harakat bajarilganidan soʻng uch kundan kechiktirmasdan raislik qiluvchi va sud majlisi kotibi tomonidan imzolanishi kerak”;\n21-bandi quyidagi tahrirda bayon etilsin:\n“21. Sud majlisida eʼlon qilinadigan tanaffusning muddati XPKning 164 va 221-moddalarida nazarda tutilgan ishni koʻrish muddatiga kiradi.\nSudlar shuni hisobga olishlari kerakki, asoslantirilgan hal qiluv qarorini tuzish uchun IPK 186-moddasining ikkinchi qismida belgilangan muddat hal qiluv qarorini ishda ishtirok etuvchi shaxslarga yuborish uchun IPK 188-moddasining birinchi qismida nazarda tutilgan besh kunlik muddat hisobiga kiradi”;\n21.1-bandi quyidagi tahrirda bayon etilsin:\n“21.1. IPKning 17 va 128-moddalariga koʻra har bir ish boʻyicha muhokama uzluksiz davom etadi. Sud ishda ishtirok etuvchi shaxsning iltimosnomasiga yoki oʻz tashabbusiga koʻra, sud majlisida tanaffus eʼlon qilishi mumkin. Bunda sudlar shuni eʼtiborga olishlari lozimki, majlisda tanaffus bir necha marotaba eʼlon qilinishi mumkin, biroq uzluksiz tanaffuslarning umumiy davomiyligi uch kundan oshmasligi lozim, bu muddatga ish kuni boʻlmagan kunlar kirmaydi”;\n21.2-bandi quyidagi tahrirda bayon etilsin:",
+     "retrieval_score": 0.8112,
+     "rerank_score": 0.8,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1949,
+    "retrieval_ms": 2658,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 4608
+   },
+   "usage": {
+    "input_tokens": 12777,
+    "output_tokens": 604,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud majlisi bayonnomasi majlis tugaganidan keyin qancha muddat ichida raislik qiluvchi va kotib tomonidan imzolanishi kerak?",
+    "search_queries": [
+     "Sud majlisi bayonnomasi majlis tugaganidan keyin qancha muddat ichida raislik qiluvchi va kotib tomonidan imzolanishi kerak?",
+     "sud majlisi bayonnomasi imzolanish muddati",
+     "sud majlisi bayonnomasini raislik qiluvchi va kotib imzolashi",
+     "bayonnoma tuzilgan kundan keyin uch kun ichida imzolanadi"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi",
+     "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 736,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q089",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida bu savolga aniq javob topilmadi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:5378966#art-49#p1",
+     "doc_id": "lex:5378966",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni normativ-huquqiy hujjatlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/5378966",
+     "article": "49-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-11-29",
+     "text": "49-modda. Oʻzbekiston Respublikasi Vazirlar Mahkamasining normativ-huquqiy hujjatlar ijrosini tashkil etish va taʼminlashga doir vakolatlari\nOʻzbekiston Respublikasi Vazirlar Mahkamasi oʻz vakolatlari doirasida:\nnormativ-huquqiy hujjatlarning oʻz vaqtida ijro etilishiga qaratilgan zarur tadbirlarni ishlab chiqadi va (yoki) qarorlar qabul qiladi;\nvazirliklar va idoralarning ishlarini muvofiqlashtiradi hamda yoʻnaltiradi, ularning normativ-huquqiy hujjatlarni ijro etishga doir vakolatlarini belgilaydi;\nOʻzbekiston Respublikasi qonunlarini va boshqa normativ-huquqiy hujjatlarni ijro etish uchun zimmasiga javobgarlik yuklatiladigan vazirliklarni, idoralarni hamda mansabdor shaxslarni belgilaydi;\nnormativ-huquqiy hujjatlar oʻz vaqtida ijro etilishi ustidan nazoratni amalga oshiradi.\nOʻzbekiston Respublikasi Vazirlar Mahkamasi qonunchilikka muvofiq boshqa vakolatlarni ham amalga oshirishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:5378966#art-51#p7",
+     "doc_id": "lex:5378966",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni normativ-huquqiy hujjatlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/5378966",
+     "article": "51-modda",
+     "part": "7–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-11-29",
+     "text": "51-modda. Vazirliklar va idoralarning normativ-huquqiy hujjatlar ijrosini tashkil etish hamda taʼminlashga doir vakolatlari\nnormativ-huquqiy hujjatlarning tizimlashtirilgan hisobini belgilangan tartibda yuritadi.\nVazirliklar va idoralar qonunchilikka muvofiq boshqa vakolatlarni ham amalga oshirishi mumkin.",
+     "retrieval_score": 0.9403,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2467536#band-4#p1",
+     "doc_id": "lex:2467536",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori “vasiylik va homiylik toʻgʻrisida”gi Oʻzbekiston Respublikasi qonunini amalga oshirishga doir normativ-huquqiy hujjatlarni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/2467536",
+     "article": "4-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2017-12-23",
+     "text": "4. Vazirliklar va idoralar oʻzlari qabul qilgan normativ-huquqiy hujjatlarni bir oy muddatda ushbu qarorga muvofiqlashtirsinlar.",
+     "retrieval_score": 0.8913,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:2467536#band-2s3#p1-2",
+     "doc_id": "lex:2467536",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori “vasiylik va homiylik toʻgʻrisida”gi Oʻzbekiston Respublikasi qonunini amalga oshirishga doir normativ-huquqiy hujjatlarni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/2467536",
+     "article": "2-band (3-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2017-12-23",
+     "text": "2. Vasiylik va homiylik organlarining vakolatlari, ularning vazifalari",
+     "retrieval_score": 0.8593,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5378966#art-51#p1",
+     "doc_id": "lex:5378966",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni normativ-huquqiy hujjatlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/5378966",
+     "article": "51-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-11-29",
+     "text": "51-modda. Vazirliklar va idoralarning normativ-huquqiy hujjatlar ijrosini tashkil etish hamda taʼminlashga doir vakolatlari\nVazirliklar va idoralar oʻz vakolatlari doirasida:\nnormativ-huquqiy hujjatlarning oʻz vaqtida ijro etilishiga qaratilgan zarur tadbirlarni ishlab chiqadi va (yoki) choralar koʻradi;\nOʻzbekiston Respublikasi qonunlarining, Oʻzbekiston Respublikasi Oliy Majlisi palatalari qarorlarining, Oʻzbekiston Respublikasi Prezidenti farmonlari va qarorlarining, Oʻzbekiston Respublikasi Vazirlar Mahkamasi qarorlarining ijro etilishiga qaratilgan normativ-huquqiy hujjatlar loyihalari ishlab chiqilishini amalga oshiradi;\nnormativ-huquqiy hujjatlar matnlarining tarqatilishini taʼminlaydi, shuningdek normativ-huquqiy hujjatlarning ijrochilarga yetkazilishi hamda mohiyati va ahamiyati aholi oʻrtasida tushuntirilishiga doir ishlarni boshqa davlat organlari hamda tashkilotlar bilan birgalikda tashkil etadi;\nnormativ-huquqiy hujjatlar toʻgʻri va bir xilda qoʻllanilishini taʼminlash uchun oʻz xodimlarini tayyorlashni, qayta tayyorlashni hamda ularning malakasini oshirishni tashkil etadi;\nnormativ-huquqiy hujjatlarning ijro etilishi ustidan nazoratni amalga oshiradi, tegishli tarmoqda qonunchilikning qoʻllanilish amaliyotini oʻrganadi va, zarur boʻlganda, qonunchilikni takomillashtirish yuzasidan takliflar kiritadi;",
+     "retrieval_score": 0.8568,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1716,
+    "retrieval_ms": 3230,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 4946
+   },
+   "usage": {
+    "input_tokens": 908,
+    "output_tokens": 166,
+    "models": {
+     "rewrite": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekistonning Oy boʻyicha vazirligi qanday qarorlar qabul qiladi?",
+    "search_queries": [
+     "Oʻzbekistonning Oy boʻyicha vazirligi qanday qarorlar qabul qiladi?",
+     "vazirlik qarorlari qabul qilish tartibi",
+     "vazirliklar normativ-huquqiy hujjatlar qabul qilish vakolati",
+     "Oʻzbekiston Respublikasi Vazirlar Mahkamasi qarorlari"
+    ],
+    "doc_hints": [
+     "Oʻzbekiston Respublikasi Konstitutsiyasi",
+     "Normativ-huquqiy hujjatlar toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 1202,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": null,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q090",
+   "status": "ok",
+   "answer": "Ha, bronlashtirib qoʻyilgan harbiy xizmatga majburlar harbiy yigʻinlarda qatnashishdan ozod etiladi [1]. Bu qoida Oʻzbekiston Respublikasi Prezidenti tomonidan tasdiqlanadigan roʻyxatda belgilanadigan davlat hokimiyati va boshqaruv organlari, korxonalar, muassasalar va tashkilotlar uchun bronlashtirib qoʻyilganlarga nisbatan qoʻllaniladi [1]. Shuningdek, harbiy yigʻinlar davrida rezervchilarning ish joyi (lavozimi) hamda ish joyidagi oʻrtacha ish haqi saqlanib qoladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.8,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-33419",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi qurolli kuchlari rezervidagi xizmat toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-33419",
+     "article": "13-modda",
+     "part": "1-qism",
+     "edition_date": "2006-06-26",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-33419#art-13#p1",
+     "quote": "Oʻzbekiston Respublikasi Prezidenti tomonidan tasdiqlanadigan roʻyxatda belgilanadigan davlat hokimiyati va boshqaruv organlari, korxonalar, muassasalar va tashkilotlar uchun bronlashtirib qoʻyilgan harbiy xizmatga majburlar harbiy yigʻinlarda qatnashishdan ozod etiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-33419",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi qurolli kuchlari rezervidagi xizmat toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-33419",
+     "article": "17-modda",
+     "part": "1–6-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-33419#art-17#p1",
+     "quote": "Harbiy yigʻinlar davrida, shu jumladan, ular oʻtkaziladigan joyga borish va u yerdan qaytib kelish davrida rezervchilarning ish joyi (lavozimi) hamda ish joyidagi oʻrtacha ish haqi saqlanib qoladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-33419#art-13#p1",
+     "doc_id": "lex:-33419",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi qurolli kuchlari rezervidagi xizmat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-33419",
+     "article": "13-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2006-06-26",
+     "text": "13-modda. Harbiy yigʻinlarda qatnashishdan ozod qilish\nOʻzbekiston Respublikasi Prezidenti tomonidan tasdiqlanadigan roʻyxatda belgilanadigan davlat hokimiyati va boshqaruv organlari, korxonalar, muassasalar va tashkilotlar uchun bronlashtirib qoʻyilgan harbiy xizmatga majburlar harbiy yigʻinlarda qatnashishdan ozod etiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-78717#art-33#p1",
+     "doc_id": "lex:-78717",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni umumiy harbiy majburiyat va harbiy xizmat toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/-78717",
+     "article": "33-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2006-06-26",
+     "text": "33-modda. Harbiy yigʻinlarda qatnashishdan ozod qilish\nOʻzbekiston Respublikasi Prezidenti tomonidan tasdiqlanadigan roʻyxatda belgilanadigan davlat hokimiyati va boshqaruv organlari, korxonalar, muassasalar va tashkilotlar uchun bronlashtirib qoʻyilgan harbiy xizmatga majburlar harbiy yigʻinlarda qatnashishdan ozod etiladi.",
+     "retrieval_score": 0.7555,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-33419#art-17#p1",
+     "doc_id": "lex:-33419",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi qurolli kuchlari rezervidagi xizmat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-33419",
+     "article": "17-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "17-modda. Rezervchilarga beriladigan kafolatlar\nHarbiy yigʻinlarga jalb etilgan rezervchilar Oʻzbekiston Respublikasi Prezidenti tomonidan belgilanadigan tartibda va miqdorlarda pul hamda boshqa turdagi taʼminot oladilar. Harbiy yigʻinlar davrida, shu jumladan, ular oʻtkaziladigan joyga borish va u yerdan qaytib kelish davrida rezervchilarning ish joyi (lavozimi) hamda ish joyidagi oʻrtacha ish haqi saqlanib qoladi. Mazkur shaxslar bilan tuzilgan mehnat shartnomasi chaqiruv qogʻozi olingan kundan harbiy yigʻinlardan qaytilgunga qadar boʻlgan davrda ish beruvchining tashabbusi bilan bekor qilinishi mumkin emas, korxona, muassasa va tashkilot tugatilgan hollar bundan mustasno.\nAgar harbiy yigʻinlar vaqtida rezervchi kasal boʻlib qolsa va yigʻin tugaganidan keyin ham kasalligi davom etsa, uning ish joyi (lavozimi) saqlanib qoladi, harbiy yigʻinlar tugagan kundan boshlab qonunchilikka muvofiq unga vaqtincha mehnatga qobiliyatsizlik nafaqasi toʻlanadi.\nRezervchilar harbiy yigʻinlarda qatnashish davrida quyidagi huquqlarga ega:\nharbiy yigʻinlar oʻtkaziladigan joyga temir yoʻl hamda avtomobil transportida (taksidan tashqari) bepul borish va qaytib kelish;\nharbiy qismlar tomonidan joʻnatiladigan xatlarni bepul yuborish;\nharbiy-tibbiy muassasalarda bepul tibbiy xizmat bilan taʼminlanish.",
+     "retrieval_score": 0.8446,
+     "rerank_score": 0.4,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-78717#art-6#p1",
+     "doc_id": "lex:-78717",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni umumiy harbiy majburiyat va harbiy xizmat toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/-78717",
+     "article": "6-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-09-30",
+     "text": "6-modda. Safarbarlik chaqiruvi rezervidagi harbiy xizmat\nHarbiy xizmatga yaroqli, shu jumladan cheklovlar bilan yaroqli boʻlgan hamda chaqirilish muddatini kechiktirish va chaqirilishdan ozod etilish huquqiga ega boʻlmagan, biroq Qurolli Kuchlar safiga navbatdagi muddatga chaqirilmagan shaxslar safarbarlik chaqiruvi rezervi safiga olinadilar.\nSafarbarlik chaqiruvi rezervidagi xizmat hududiy prinsip asosida oylik yigʻinlar tarzida tashkil etiladi hamda chaqiriluvchilar tomonidan Oʻzbekiston Respublikasi Mudofaa vazirligining maxsus hisobvaragʻiga pul badallari kiritilishini nazarda tutadi.\nSafarbarlik chaqiruvi rezervidagi xizmat safiga shaxslar yigirma yetti yoshga toʻlgunga qadar olinadilar va har yilgi harbiy yigʻinlarga jalb etilishlari mumkin, favqulodda vaziyatlar yoki Oʻzbekiston Respublikasiga qarshi harbiy tajovuz roʻy bergan taqdirda esa haqiqiy harbiy xizmatga chaqiriladilar.\nSafarbarlik chaqiruvi rezervida oylik yigʻinni oʻtagan fuqarolar Qurolli Kuchlar rezerviga oʻtkaziladilar.",
+     "retrieval_score": 0.9843,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-78717#art-21#p13",
+     "doc_id": "lex:-78717",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni umumiy harbiy majburiyat va harbiy xizmat toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/-78717",
+     "article": "21-modda",
+     "part": "13-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-05-18",
+     "text": "21-modda. Muddatli harbiy xizmatga hamda safarbarlik chaqiruvi rezervidagi xizmatga chaqirilish muddatini kechiktirish\nChaqirilish muddatini kechiktirish asoslarini yoʻqotgan chaqiriluvchilar, shuningdek ushbu Qonunga muvofiq chaqirilish muddatini kechiktirish huquqiga yoxud chaqirilishdan ozod etish uchun asoslarga ega boʻlmagan va turli sabablarga koʻra muddatli harbiy xizmatga yoki safarbarlik chaqiruvi rezervidagi xizmatga chaqirilmagan shaxslar chaqirilish kuni yigirma yetti yoshga toʻlguniga qadar Qurolli Kuchlar safiga navbatdagi chaqiruv paytida chaqiriladilar.",
+     "retrieval_score": 0.8525,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2419,
+    "retrieval_ms": 2345,
+    "rerank_ms": 0,
+    "generation_ms": 2819,
+    "total_ms": 7584
+   },
+   "usage": {
+    "input_tokens": 12332,
+    "output_tokens": 770,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekiston Respublikasi Qurolli Kuchlari rezervidagi xizmat toʻgʻrisidagi qonunga koʻra, ish joyi (tashkilot) tomonidan harbiy xizmatga chaqiriluvchi shaxs uchun bron qilingan boʻlsa, harbiy yigʻinga chaqirilganda qatnashmaslikka haqlimi?",
+    "search_queries": [
+     "Qonuni Oʻzbekiston Respublikasi qurolli kuchlari rezervidagi xizmat toʻgʻrisida — meni ishxonam bron qilgan, shu sababli harbiy yigʻinga chaqirsalar bormasam boʻladimi?",
+     "Oʻzbekiston Respublikasi Qurolli Kuchlari rezervidagi xizmat toʻgʻrisidagi qonunga koʻra, ish joyi (tashkilot) tomonidan harbiy xizmatga chaqiriluvchi shaxs uchun bron qilingan boʻlsa, harbiy yigʻinga chaqirilganda qatnashmaslikka haqlimi?",
+     "harbiy yigʻinga chaqirilganda ish joyi bron qilingan shaxslar ozod qilinishi",
+     "Qurolli Kuchlar rezervidagi xizmat harbiy yigʻin chaqiruvdan ozod qilish",
+     "bron qilingan harbiy xizmatga majbur shaxslar yigʻinga chaqirilmaydi"
+    ],
+    "doc_hints": [
+     "Oʻzbekiston Respublikasi Qurolli Kuchlari rezervidagi xizmat toʻgʻrisidagi qonun",
+     "Umumiy harbiy majburiyat va harbiy xizmat toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 614,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

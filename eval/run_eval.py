@@ -100,10 +100,20 @@ def post_with_policy(client: httpx.Client, url: str, body: dict, headers: dict) 
             while True:
                 time.sleep(int(r.headers.get("Retry-After", "5")))
                 r = client.get(url.rsplit("/batch", 1)[0] + f"/batch/{bid}", headers=headers, timeout=60)
-                if r.status_code == 200:
-                    return r.json()
                 if r.status_code != 202:
-                    raise RuntimeError(f"poll failed {r.status_code}: {r.text[:300]}")
+                    break
+            if r.status_code != 200:
+                raise RuntimeError(f"poll failed {r.status_code}: {r.text[:300]}")
+            data = r.json()
+            if data.get("status") != "failed":
+                return data
+            err = data.get("error") or {}
+            if not err.get("retryable") or attempt >= 3:
+                raise RuntimeError(f"batch {bid} failed: {err}")
+            # e.g. INTERRUPTED (server restart mid-batch): resend the same batch_id
+            print(f"   batch failed ({err.get('code')}); resending same batch_id in {backoff[attempt]}s", file=sys.stderr)
+            time.sleep(backoff[attempt]); attempt += 1
+            continue
         if r.status_code == 429:
             wait = int(r.headers.get("Retry-After", "2"))
             time.sleep(wait)
@@ -130,7 +140,8 @@ def cmd_run(a) -> str:
             body = {
                 "run_id": run_id, "batch_id": f"{run_id}-b{i:02d}", "batch_index": i, "total_batches": len(batches),
                 "options": {"top_k": 5, "return_contexts": True, "return_debug": True, "temperature": 0, "seed": a.seed,
-                            "as_of_date": a.as_of_date, "answer_language": "auto"},
+                            "as_of_date": a.as_of_date, "answer_language": "auto",
+                            **({"min_rerank_score": a.min_rerank_score} if a.min_rerank_score is not None else {})},
                 "items": [{"id": r["id"], "question": r["question"]} for r in b],
             }
             t = time.time()
@@ -160,7 +171,7 @@ correctness (compare with the expected answer; language/script of the answer may
 faithfulness: split the system answer into atomic factual claims. total_claims = their number; faithful_claims = how many
 are directly supported by the retrieved contexts (not by your own knowledge).
 citation_supports: true if every cited quote actually supports the claim it is attached to.
-relevant_contexts: the rank numbers (1-5) of the TOP-5 retrieved contexts that are relevant to the question
+relevant_contexts: the rank numbers (1-5) of the retrieved contexts shown (at most 5) that are relevant to the question
 (contain the rule asked about or information directly needed to answer it)."""
 
 
@@ -306,8 +317,15 @@ def cmd_score(a) -> dict:
             m["faithfulness"] = round(sum(x["faithful_claims"] for x in answered) / tot, 4) if tot else None
             m["citation_accuracy_judge"] = round(sum(x["citation_supports"] for x in answered) / len(answered), 4) if answered else None
             m["answer_correctness"] = round(m["answer_correctness"], 3)
-            precs = [len({r for r in x["relevant_contexts"] if 1 <= r <= 5}) / 5 for x in v.values() if x.get("relevant_contexts") is not None]
-            if precs:  # spec definition: share of the top-5 contexts that are relevant to the question
+            # spec definition: share of the top-5 contexts that are relevant to the question.  The
+            # denominator is the number of contexts returned (5 unless options.min_rerank_score is used)
+            precs = []
+            for qid, x in v.items():
+                if x.get("relevant_contexts") is None:
+                    continue
+                n_ctx = min(5, len(results[qid].get("contexts") or [])) or 5
+                precs.append(len({r for r in x["relevant_contexts"] if 1 <= r <= n_ctx}) / n_ctx)
+            if precs:
                 m["context_precision_proxy_same_doc"] = m["context_precision"]
                 m["context_precision"] = round(sum(precs) / len(precs), 4)
             for q in per_q:
@@ -373,6 +391,8 @@ def main() -> None:
     r.add_argument("--api-key", default=os.environ.get("LEXRAG_TEST_KEY") or _project_test_key())
     r.add_argument("--run-id")
     r.add_argument("--as-of-date", default=None)
+    r.add_argument("--min-rerank-score", type=float, default=None,
+                   help="opt-in: return only contexts with rerank_score >= this (top_k becomes an upper bound)")
     r.add_argument("--seed", type=int, default=42, help="a new seed bypasses the answer cache (fresh generation, real latency)")
     r.add_argument("--score", action="store_true", help="score right after the run")
     r.add_argument("--judge", action="store_true")

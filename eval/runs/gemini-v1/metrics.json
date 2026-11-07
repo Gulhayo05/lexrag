@@ -1,0 +1,140 @@
+{
+ "metrics": {
+  "run_id": "gemini-v1",
+  "questions": 10,
+  "missing": [],
+  "hit5_doc": 0.75,
+  "hit5_article": 0.75,
+  "mrr": 0.75,
+  "context_precision": 0.45,
+  "citation_accuracy": 1.0,
+  "fabricated_citations": 0,
+  "outdated_citations": 0,
+  "no_answer_accuracy": 1.0,
+  "latency_p50_s": 35.16,
+  "latency_p95_s": 48.0,
+  "error_rate": 0.2,
+  "error_attribution": {
+   "retrieval": 2
+  }
+ },
+ "targets": {
+  "hit5_doc": {
+   "value": 0.75,
+   "target": ">= 0.9",
+   "pass": false
+  },
+  "hit5_article": {
+   "value": 0.75,
+   "target": ">= 0.8",
+   "pass": false
+  },
+  "mrr": {
+   "value": 0.75,
+   "target": ">= 0.7",
+   "pass": true
+  },
+  "context_precision": {
+   "value": 0.45,
+   "target": ">= 0.6",
+   "pass": false
+  },
+  "citation_accuracy": {
+   "value": 1.0,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "fabricated_citations": {
+   "value": 0,
+   "target": "== 0",
+   "pass": true
+  },
+  "outdated_citations": {
+   "value": 0,
+   "target": "== 0",
+   "pass": true
+  },
+  "no_answer_accuracy": {
+   "value": 1.0,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "latency_p50_s": {
+   "value": 35.16,
+   "target": "<= 5.0",
+   "pass": false
+  },
+  "latency_p95_s": {
+   "value": 48.0,
+   "target": "<= 12.0",
+   "pass": false
+  },
+  "error_rate": {
+   "value": 0.2,
+   "target": "<= 0.02",
+   "pass": false
+  }
+ },
+ "per_question": [
+  {
+   "id": "q001",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q002",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q003",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q004",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q005",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q006",
+   "category": "ozgargan",
+   "status": "timeout",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)"
+  },
+  {
+   "id": "q007",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q008",
+   "category": "noaniq",
+   "status": "timeout",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)"
+  },
+  {
+   "id": "q009",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q010",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  }
+ ]
+}

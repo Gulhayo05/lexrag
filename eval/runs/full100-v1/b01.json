@@ -1,0 +1,1591 @@
+{
+ "run_id": "full100-v1",
+ "batch_id": "full100-v1-b01",
+ "batch_index": 1,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p5",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:24:37+05:00",
+  "completed_at": "2026-11-06T18:24:47+05:00",
+  "total_ms": 9186
+ },
+ "summary": {
+  "total": 10,
+  "ok": 10,
+  "no_answer": 0,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q001",
+   "status": "ok",
+   "answer": "Saylov kodeksining 99-moddasiga koʻra, saylov komissiyasining doimiy ish joyiga ega boʻlmagan aʼzolariga, shu jumladan pensionerlarga mehnatga haq toʻlashning yagona tarif setkasiga muvofiq ish haqi toʻlanadi [1]. Markaziy saylov komissiyasining qarori bilan tasdiqlangan Yoʻriqnomaga koʻra, bunday shaxslarga yagona tarif setkasi boʻyicha komissiya raisiga 9-razryad, rais oʻrinbosariga 8-razryad, kotibi va boshqa aʼzolariga 4-razryad boʻyicha ish haqi hisoblanadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "99-modda",
+     "part": "1–5-qism",
+     "edition_date": "2023-12-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-99#p1",
+     "quote": "Saylov komissiyasining doimiy ish joyiga ega boʻlmagan aʼzolariga, shu jumladan pensionerlarga mehnatga haq toʻlashning yagona tarif setkasiga muvofiq ish haqi toʻlanadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4584371",
+     "doc_title": "Oʻzbekiston Respublikasi markaziy saylov komissiyasining qarori Oʻzbekiston Respublikasi Prezidenti, Oliy majlisi qonunchilik palatasi, Qoraqalpogʻiston Respublikasi joʻqorgʻi kengesi, xalq deputatlari viloyat, tuman va shahar kengashlari deputatlari saylovlariga tayyorgarlik koʻrish va ularni oʻtkazishni moliyalashtirish hamda mablagʻlardan foydalanish tartibi toʻgʻrisidagi yoʻriqnomani tasdiqlas",
+     "doc_type": "qaror",
+     "url": "https://lex.uz/docs/4584371",
+     "article": "27-band (2-boʻlim)",
+     "part": null,
+     "edition_date": "2024-07-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4584371#band-27s2#p1",
+     "quote": "Saylov jarayonlarida saylov komissiyasi aʼzolari boʻlgan, lekin doimiy ish joyiga ega boʻlmagan shaxslarga, pensionerlarga mehnatga haq toʻlashning yagona tarif setkasiga muvofiq saylov komissiyasi raisiga 9-razryad boʻyicha, saylov komissiyasi rais oʻrinbosariga 8-razryad boʻyicha, saylov komissiyasining kotibi va boshqa aʼzolariga 4-razryad boʻyicha ish haqi hisoblanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4386848#art-99#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "99-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-19",
+     "text": "99-modda. Saylov komissiyalarini moliyalashtirish\nMarkaziy saylov komissiyasini, hududiy, tuman, shahar saylov komissiyalarini, okrug va uchastka saylov komissiyalarini saylovga tayyorgarlik koʻrish va uni oʻtkazish boʻyicha moliyalashtirish Oʻzbekiston Respublikasi Davlat budjetidan amalga oshiriladi.\nMarkaziy saylov komissiyasini moliyalashtirish Oʻzbekiston Respublikasining Davlat budjetida alohida satrda nazarda tutiladi.\nSaylov komissiyalari ishiga jalb etiladigan shaxslarning mehnatiga haq toʻlash saylovni oʻtkazish uchun ajratilgan mablagʻlar hisobidan amalga oshiriladi.\nSaylov komissiyalarining aʼzolariga saylovga tayyorgarlik koʻrish hamda uni oʻtkazishga doir xarajatlar smetasida koʻrsatilgan miqdorda transport, ovqatlanish xarajatlarining va boshqa xarajatlarning oʻrnini qoplash maqsadida kompensatsiya toʻlanadi.\nSaylov komissiyasining doimiy ish joyiga ega boʻlmagan aʼzolariga, shu jumladan pensionerlarga mehnatga haq toʻlashning yagona tarif setkasiga muvofiq ish haqi toʻlanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4584371#band-27s2#p1",
+     "doc_id": "lex:4584371",
+     "doc_title": "Oʻzbekiston Respublikasi markaziy saylov komissiyasining qarori Oʻzbekiston Respublikasi Prezidenti, Oliy majlisi qonunchilik palatasi, Qoraqalpogʻiston Respublikasi joʻqorgʻi kengesi, xalq deputatlari viloyat, tuman va shahar kengashlari deputatlari saylovlariga tayyorgarlik koʻrish va ularni oʻtkazishni moliyalashtirish hamda mablagʻlardan foydalanish tartibi toʻgʻrisidagi yoʻriqnomani tasdiqlas",
+     "url": "https://lex.uz/docs/4584371",
+     "article": "27-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-07-19",
+     "text": "27. Saylov jarayonlarida saylov komissiyasi aʼzolari boʻlgan, lekin doimiy ish joyiga ega boʻlmagan shaxslarga, pensionerlarga mehnatga haq toʻlashning yagona tarif setkasiga muvofiq saylov komissiyasi raisiga 9-razryad boʻyicha, saylov komissiyasi rais oʻrinbosariga 8-razryad boʻyicha, saylov komissiyasining kotibi va boshqa aʼzolariga 4-razryad boʻyicha ish haqi hisoblanadi.\nYagona tarif setkasi boʻyicha haq toʻlash birinchi va ikkinchi imzo huquqiga ega shaxslar tomonidan mazkur Yoʻriqnomaning 4a-ilovasiga muvofiq toʻldiriladigan maʼlumotlar asosida amalga oshiriladi.",
+     "retrieval_score": 0.4346,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-7042370#band-2s2#p39",
+     "doc_id": "lex:-7042370",
+     "doc_title": "Oʻzbekiston Respublikasi markaziy saylov komissiyasining qarori Oʻzbekiston Respublikasi markaziy saylov komissiyasining 2019-yil 25-oktabrdagi “Oʻzbekiston Respublikasi Prezidenti, Oliy majlisi qonunchilik palatasi, Qoraqalpogʻiston Respublikasi joʻqorgʻi kengesi, xalq deputatlari viloyat, tuman va shahar kengashlari deputatlari saylovlariga tayyorgarlik koʻrish va ularni oʻtkazishni moliyalashti",
+     "url": "https://lex.uz/docs/-7042370",
+     "article": "2-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2019-10-25",
+     "text": "“27. Saylov jarayonlarida saylov komissiyasi aʼzolari boʻlgan, lekin doimiy ish joyiga ega boʻlmagan shaxslarga, pensionerlarga mehnatga haq toʻlashning yagona tarif setkasiga muvofiq saylov komissiyasi raisiga 9-razryad boʻyicha, saylov komissiyasi rais oʻrinbosariga 8-razryad boʻyicha, saylov komissiyasining kotibi va boshqa aʼzolariga 4-razryad boʻyicha ish haqi hisoblanadi.”;\nikkinchi va uchinchi xatboshilari chiqarib tashlansin;\ntoʻrtinchi xatboshi ikkinchi xatboshi deb hisoblansin;\nm) 28-bandda:\nbirinchi xatboshisidagi “Okrug” degan soʻz “Qoraqalpogʻiston Respublikasi Markaziy saylov komissiyasi, hududiy, tuman, shahar, okrug” degan soʻzlar bilan almashtirilsin;\nikkinchi — toʻrtinchi xatboshilaridagi “okrug” degan soʻzdan oldin “Qoraqalpogʻiston Respublikasi Markaziy saylov komissiyasi, hududiy, tuman, shahar,” degan soʻzlar bilan toʻldirilsin;\nquyidagi mazmundagi oʻninchi xatboshi bilan toʻldirilsin:\n“Mazkur Yoʻriqnomaning 27-bandi boʻyicha saylov komissiyalari aʼzolariga ish haqi hisoblanganda ularga kompensatsiya toʻlovlari amalga oshirilmaydi. Hududiy saylov komissiyasida doimiy asosda ishlovchi komissiya aʼzolari bundan mustasno.”;\nn) 29-bandidagi “Qoraqalpogʻiston Respublikasi, viloyatlar hamda Toshkent shahar” degan soʻzlar “Qoraqalpogʻiston Respublikasi Markaziy saylov komissiyasi, hududiy” degan soʻzlar bilan almashtirilsin;\no) 30-bandda:",
+     "retrieval_score": 0.409,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5522635#band-26s2#p1",
+     "doc_id": "lex:-5522635",
+     "doc_title": "Oʻzbekiston Respublikasi markaziy saylov komissiyasining qarori Oʻzbekiston Respublikasi Prezidenti, Oliy majlisi qonunchilik palatasi, Qoraqalpogʻiston Respublikasi joʻqorgʻi kengesi, xalq deputatlari viloyat, tuman va shahar kengashlari deputatlari saylovlariga tayyorgarlik koʻrish va ularni oʻtkazishni moliyalashtirish hamda mablagʻlardan foydalanish tartibi toʻgʻrisidagi yoʻriqnomaga oʻzgartir",
+     "url": "https://lex.uz/docs/-5522635",
+     "article": "26-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-02-08",
+     "text": "26. Saylov komissiyasining qaroriga binoan komissiyaning raisi, rais oʻrinbosari, kotibi yoki boshqa aʼzosi saylovga tayyorgarlik koʻrish va uni oʻtkazish davrida ishlab chiqarish yoki xizmat vazifalarini bajarishdan oʻrtacha oylik ish haqi saqlangan holda ozod qilinishi mumkin.\nAgar xodim va ish beruvchining oʻzaro kelishuvida boshqacha hol nazarda tutilmagan boʻlsa, saylov oʻtkazish uchun ajratiladigan mablagʻlar hisobidan oʻrtacha oylik ish haqi toʻlanadi.\nBunda, saylov oʻtkazish uchun ajratiladigan mablagʻlar hisobidan oʻrtacha oylik ish haqini toʻlash quyidagi hujjatlar asosida amalga oshiriladi:\nkomissiya aʼzosining (rais, rais oʻrinbosari, kotib yoki komissiyaning boshqa aʼzosi) oylik ish haqisini tasdiqlaydigan maʼlumotnoma;\nbirinchi va ikkinchi imzo huquqiga ega shaxslar tomonidan mazkur Yoʻriqnomaning 4-ilovasiga muvofiq toʻldiriladigan maʼlumotnoma;\nsaylov komissiyasi aʼzosining (rais, rais oʻrinbosari, kotib yoki komissiyaning boshqa aʼzosi) asosiy ish joyidagi ishlab chiqarish yoki xizmat vazifalarini bajarishdan ozod etilganligini tasdiqlaydigan saylov komissiyasining qarori.",
+     "retrieval_score": 0.564,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4386848#art-26#p5",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "26-modda",
+     "part": "5–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-19",
+     "text": "26-modda. Saylov komissiyalarining ishini tashkil etish va ularning vakolatlari muddati\nKomissiyaning jamoatchilik asosida ishlovchi aʼzosi saylovga tayyorgarlik koʻrish va uni oʻtkazish davrida ishlab chiqarish yoki xizmat vazifalarini bajarishdan saylov komissiyasining qaroriga binoan oʻrtacha oylik ish haqi saqlangan holda ozod qilinishi mumkin.\nHududiy, tuman, shahar, okrug va uchastka saylov komissiyasi aʼzolari Markaziy saylov komissiyasi tomonidan belgilangan tartibda tegishli guvohnomaga ega boʻladi.\nDavlat organlari va jamoat birlashmalarining organlari, korxonalar, muassasalar, tashkilotlar, mansabdor shaxslar saylov komissiyalariga oʻz vakolatlarini amalga oshirishida koʻmaklashishi, ularning ishi uchun zarur maʼlumotlarni taqdim etishi shart.\nDavlat organlari, korxonalar, muassasalar, tashkilotlar saylovga tayyorgarlik koʻrish va uni oʻtkazish uchun kerakli boʻlgan binolar va jihozlarni saylov komissiyalari ixtiyoriga bepul berib turishi shart.\nSaylov komissiyasi saylovga tayyorgarlik koʻrish va uni oʻtkazish bilan bogʻliq masalalar yuzasidan davlat organlariga hamda jamoat birlashmalarining organlariga, korxonalarga, muassasalarga, tashkilotlarga, mansabdor shaxslarga murojaat qilish huquqiga ega, ular qoʻyilgan masalani koʻpi bilan uch kunlik muddatda koʻrib chiqishi va saylov komissiyasiga javob qaytarishi shart.",
+     "retrieval_score": 0.5566,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1928,
+    "retrieval_ms": 2498,
+    "rerank_ms": 0,
+    "generation_ms": 2847,
+    "total_ms": 7275
+   },
+   "usage": {
+    "input_tokens": 13376,
+    "output_tokens": 690,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Doimiy ish joyi boʻlmagan, shu jumladan nafaqaxoʻr boʻlgan saylov komissiyasi aʼzosiga haq toʻlash qanday meʼyor asosida amalga oshiriladi?",
+    "search_queries": [
+     "Saylov komissiyasi aʼzosi boʻlib ishlaydigan, lekin doimiy ish joyi yoʻq odamga, jumladan nafaqaxoʻrga pul qanday meʼyor asosida toʻlanadi?",
+     "Doimiy ish joyi boʻlmagan, shu jumladan nafaqaxoʻr boʻlgan saylov komissiyasi aʼzosiga haq toʻlash qanday meʼyor asosida amalga oshiriladi?",
+     "saylov komissiyasi aʼzosiga haq toʻlash meʼyori",
+     "saylov komissiyasi aʼzosi mehnatiga haq toʻlash doimiy ish joyi boʻlmagan",
+     "saylov komissiyasi aʼzosi nafaqaxoʻr haq toʻlash tartibi"
+    ],
+    "doc_hints": [
+     "Saylov kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 388,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q002",
+   "status": "ok",
+   "answer": "Iqtisodiy protsessual kodeksning 254-moddasiga koʻra, chet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi ariza, agar Oʻzbekiston Respublikasining tegishli xalqaro shartnomalarida boshqacha qoida nazarda tutilmagan boʻlsa, u iqtisodiy sudga kelib tushgan kundan eʼtiboran olti oydan oshmagan muddatda sud majlisida koʻriladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "254-modda",
+     "part": "1–4-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-254#p1",
+     "quote": "Chet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi ariza, agar Oʻzbekiston Respublikasining tegishli xalqaro shartnomalarida boshqacha qoida nazarda tutilmagan boʻlsa, mazkur bobda belgilangan xususiyatlarni eʼtiborga olgan holda ushbu Kodeksning qoidalari boʻyicha u iqtisodiy sudga kelib tushgan kundan eʼtiboran olti oydan oshmagan muddatda sud majlisida koʻriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:3523891#art-254#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "254-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "254-modda. Chet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani koʻrib chiqish tartibi\nChet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi ariza, agar Oʻzbekiston Respublikasining tegishli xalqaro shartnomalarida boshqacha qoida nazarda tutilmagan boʻlsa, mazkur bobda belgilangan xususiyatlarni eʼtiborga olgan holda ushbu Kodeksning qoidalari boʻyicha u iqtisodiy sudga kelib tushgan kundan eʼtiboran olti oydan oshmagan muddatda sud majlisida koʻriladi.\nIshda ishtirok etuvchi shaxslar sud majlisining vaqti va joyi toʻgʻrisida Oʻzbekiston Respublikasining iqtisodiy sudi ajrimi bilan ushbu Kodeksning 127-moddasida nazarda tutilgan tartibda xabardor qilinadi. Sud majlisining vaqti va joyi toʻgʻrisida tegishli tarzda xabardor qilingan shaxslarning kelmaganligi ishni koʻrish uchun toʻsqinlik qilmaydi.\nOʻzbekiston Respublikasining iqtisodiy sudi ishni koʻrishda ushbu Kodeksning 255-256-moddalarida nazarda tutilgan holatlarni Oʻzbekiston Respublikasining iqtisodiy sudiga taqdim etilgan, bildirilgan talablar va eʼtirozlarni asoslovchi dalillarni tekshirish yoʻli bilan aniqlaydi.\nOʻzbekiston Respublikasining iqtisodiy sudi ishni koʻrishda chet davlat sudining yoki arbitrajining hal qiluv qarorini mazmunan qayta koʻrib chiqishga haqli emas.",
+     "retrieval_score": 0.9877,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-369#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "369-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "369-modda. Chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani koʻrib chiqish tartibi\nChet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi ariza, agar Oʻzbekiston Respublikasining tegishli xalqaro shartnomalarida boshqacha qoida nazarda tutilmagan boʻlsa, u sudga kelib tushgan kundan eʼtiboran bir oydan oshmaydigan muddatda sud majlisida koʻrib chiqiladi.\nIshda ishtirok etuvchi shaxslar sud majlisining vaqti va joyi toʻgʻrisida xabardor qilinadi. Sud majlisining vaqti va joyi haqida belgilangan tartibda xabardor qilingan shaxslarning sudga kelmaganligi ishni koʻrib chiqish uchun toʻsqinlik qilmaydi.\nSud arizani koʻrib chiqishda sudga taqdim etilgan, arz qilingan talablarni va bildirilgan eʼtirozlarni asoslovchi dalillarni tekshirish yoʻli bilan holatlarni aniqlaydi.\nSud arizani koʻrib chiqishda chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini qayta koʻrib chiqishga haqli emas.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-253#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "253-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "253-modda. Chet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani qaytarish\nOʻzbekiston Respublikasining iqtisodiy sudi chet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani ish yuritishga qabul qilish haqidagi masalani hal etishda, u ushbu Kodeks 249 — 252-moddalarining talablari buzilgan holda taqdim etilganligini aniqlasa, ariza va unga ilova qilingan hujjatlarni oʻz ajrimi bilan qaytaradi.\nAjrim, ariza va unga ilova qilingan hujjatlar arizachiga yoki uning vakiliga ajrim chiqarilgan kundan eʼtiboran besh kun ichida yuboriladi.\nArizani qaytarish uchun asos boʻlgan holatlar bartaraf etilganidan keyin manfaatdor shaxs umumiy tartibda ariza bilan Oʻzbekiston Respublikasining iqtisodiy sudiga yangidan murojaat etishga haqli.\nChet davlat sudining yoki arbitrajining hal qiluv qarorlarini tan olish va ijroga qaratish toʻgʻrisidagi arizani qaytarish haqidagi ajrim ustidan shikoyat qilinishi (protest keltirilishi) mumkin. Ajrim bekor qilingan taqdirda, ariza iqtisodiy sudga dastlabki murojaat etilgan kunda berilgan deb hisoblanadi.",
+     "retrieval_score": 0.9366,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-249#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "249-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-01-13",
+     "text": "249-modda. Chet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi ariza\nChet davlat sudining yoki arbitrajining hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi ariza arizachi tomonidan Qoraqalpogʻiston Respublikasi sudi, viloyatlar va Toshkent shahar sudlariga qarzdorning joylashgan yeri yoki yashash joyi boʻyicha yoxud, agar qarzdorning joylashgan yeri yoki yashash joyi nomaʼlum boʻlsa, qarzdor davlat roʻyxatidan oʻtkazilgan joy boʻyicha beriladi.",
+     "retrieval_score": 0.9305,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-368#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "368-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "368-modda. Chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani qaytarish\nSud chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini tan olish va ijroga qaratish toʻgʻrisidagi arizani qabul qilish haqidagi masalani hal etishda ariza ushbu Kodeksning 366, 367-moddalari talablari buzilgan holda berilganligini aniqlasa, arizani va unga ilova qilingan hujjatlarni undiruvchiga qaytaradi.\nSud arizani qaytarish toʻgʻrisida ajrim chiqaradi.\nAjrim, ariza va unga ilova qilingan hujjatlar undiruvchiga ajrim chiqarilgan kundan eʼtiboran besh kun ichida yuboriladi.\nArizani qaytarish uchun asos boʻlgan holatlar bartaraf etilganidan keyin undiruvchi sudga umumiy tartibda yangidan ariza bilan murojaat qilishi mumkin.",
+     "retrieval_score": 0.9289,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1840,
+    "retrieval_ms": 3249,
+    "rerank_ms": 0,
+    "generation_ms": 2856,
+    "total_ms": 7947
+   },
+   "usage": {
+    "input_tokens": 13840,
+    "output_tokens": 599,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Chet davlat sudining qarorini tan olish va ijroga qaratish haqidagi ariza iqtisodiy sudga kelib tushganidan keyin koʻpi bilan qancha muddat ichida sud majlisida koʻrib chiqilishi kerak?",
+    "search_queries": [
+     "Chet davlat sudining qarorini tan olish va ijroga qaratish haqidagi ariza iqtisodiy sudga tushganidan keyin koʻpi bilan qancha muddat ichida sud majlisida koʻrib chiqilishi kerak?",
+     "Chet davlat sudining qarorini tan olish va ijroga qaratish haqidagi ariza iqtisodiy sudga kelib tushganidan keyin koʻpi bilan qancha muddat ichida sud majlisida koʻrib chiqilishi kerak?",
+     "chet davlat sudining qarorini tan olish va ijroga qaratish haqidagi ariza koʻrib chiqish muddati",
+     "chet davlat sudi qarorini tan olish va ijro etish arizani sud majlisida koʻrib chiqish muddati",
+     "iqtisodiy sud chet davlat sudi qarorini tan olish ijroga qaratish ariza"
+    ],
+    "doc_hints": [
+     "Iqtisodiy protsessual kodeksi",
+     "Fuqarolik protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 525,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q003",
+   "status": "ok",
+   "answer": "Mehnat kodeksining 540-moddasiga koʻra, kasaba uyushmalari mehnatni muhofaza qilish qoidalarining buzilishi sabablarini aniqlashda, ishlab chiqarishdagi baxtsiz hodisalarni va kasb kasalliklarini tekshirishda, shuningdek tibbiy-ijtimoiy ekspert komissiyasining majlislarida ishtirok etishga haqlidir [1]. Shuningdek, «Kasaba uyushmalari toʻgʻrisida»gi qonunning 33-moddasiga koʻra kasaba uyushmalari tibbiy-ijtimoiy ekspert komissiyasi majlislarida ishtirok etish huquqiga ega [2]. «Nogironligi boʻlgan shaxslarning huquqlari toʻgʻrisida»gi qonunning 31-moddasiga koʻra esa tibbiy-ijtimoiy ekspert komissiyasining majlislarida kasaba uyushmalarining vakillari ishtirok etishi mumkin [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "540-modda",
+     "part": "1–2-qism",
+     "edition_date": "2025-12-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-540#p1",
+     "quote": "mehnatni muhofaza qilish qoidalarining buzilishi sabablarini aniqlashda, ishlab chiqarishdagi baxtsiz hodisalarni va kasb kasalliklarini tekshirishda, tibbiy-ijtimoiy ekspert komissiyasining majlislarida ishtirok etishga haqlidir",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4631281",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni kasaba uyushmalari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/4631281",
+     "article": "33-modda",
+     "part": "8–12-qism",
+     "edition_date": "2022-05-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4631281#art-33#p8",
+     "quote": "tibbiy-ijtimoiy ekspert komissiyasi majlislarida ishtirok etish;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:5049511",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nogironligi boʻlgan shaxslarning huquqlari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/5049511",
+     "article": "31-modda",
+     "part": "1–5-qism",
+     "edition_date": "2025-12-17",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5049511#art-31#p1",
+     "quote": "Tibbiy-ijtimoiy ekspert komissiyasining majlislarida mahalliy mehnat organlarining, mahalliy davlat hokimiyati organlarining, kasaba uyushmalarining, sugʻurta tashkilotlarining va boshqa tashkilotlarning vakillari, shuningdek nogironligi boʻlgan shaxslarning jamoat birlashmalari vakillari ishtirok etishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-540#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "540-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "540-modda. Kasaba uyushmalarining mehnat toʻgʻrisidagi qonunchilikka, mehnat haqidagi boshqa huquqiy hujjatlarga va mehnatni muhofaza qilish qoidalariga rioya etilishi ustidan jamoatchilik nazoratini amalga oshirish chogʻidagi huquqlari\nKasaba uyushmalari, ularning birlashmalari, boʻlinmalari va boshlangʻich kasaba uyushmasi tashkilotlari ish joylarida ish beruvchilarning mehnat toʻgʻrisidagi qonunchilik talablariga va mehnatni muhofaza qilish qoidalariga, shuningdek jamoa kelishuvlari hamda jamoa shartnomasi, ish beruvchi tomonidan kasaba uyushmasi qoʻmitasi bilan kelishilgan holda qabul qilingan boshqa hujjatlar qoidalariga rioya etishi ustidan jamoatchilik nazoratini amalga oshirish huquqiga ega.\nKasaba uyushmalari loyihalashtirilayotgan, qurilayotgan va foydalanilayotgan ishlab chiqarish obyektlarida mehnat sharoitlari xavfsizligini ekspertizadan oʻtkazishda, shuningdek loyihalashtirilayotgan hamda foydalanilayotgan mexanizmlar va asbob-uskunalarning xavfsizligini ekspertizadan oʻtkazishda, mehnatni muhofaza qilish qoidalarining buzilishi sabablarini aniqlashda, ishlab chiqarishdagi baxtsiz hodisalarni va kasb kasalliklarini tekshirishda, tibbiy-ijtimoiy ekspert komissiyasining majlislarida ishtirok etishga haqlidir.",
+     "retrieval_score": 0.7935,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4631281#art-33#p8",
+     "doc_id": "lex:4631281",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni kasaba uyushmalari toʻgʻrisida",
+     "url": "https://lex.uz/docs/4631281",
+     "article": "33-modda",
+     "part": "8–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-05-18",
+     "text": "33-modda. Mehnatni muhofaza qilish sohasidagi huquqlar\nishlab chiqarish obyektlarini va ishlab chiqarish vositalarini sinovlardan oʻtkazish hamda foydalanishga qabul qilish boʻyicha komissiyalarning ishida mustaqil ekspertlar sifatida ishtirok etish;\ntibbiy-ijtimoiy ekspert komissiyasi majlislarida ishtirok etish;\ntexnik jihatdan tartibga solish sohasidagi normativ hujjatlar va mehnatni muhofaza qilish masalalari boʻyicha normativ-huquqiy hujjatlar loyihalarini ishlab chiqishda ishtirok etish;\nmehnatni muhofaza qilish talablarini buzganlikda, ishlab chiqarishdagi baxtsiz hodisalar faktlarini yashirganlikda aybdor boʻlgan shaxslarni javobgarlikka tortish toʻgʻrisidagi talablar bilan tegishli organlarga murojaat etish;\nxodimning mehnat majburiyatlarini bajarishi bilan bogʻliq holda mayib boʻlishi yoki sogʻligʻiga boshqacha tarzda shikast yetkazilishi tufayli yetkazilgan zararning oʻrnini qoplash hamda xodimlarning sogʻligʻi va mehnatini muhofaza qilishga boʻlgan huquqlari kamsitilgan boshqa hollarda xodimning huquqini himoya qilib sudga murojaat qilish huquqiga ega.",
+     "retrieval_score": 0.7419,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:5049511#art-31#p1",
+     "doc_id": "lex:5049511",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nogironligi boʻlgan shaxslarning huquqlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/5049511",
+     "article": "31-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-17",
+     "text": "31-modda. Tibbiy-ijtimoiy ekspertiza\nFuqaroni nogironligi boʻlgan shaxs yoki oʻn sakkiz yoshgacha boʻlgan bolani nogironligi boʻlgan bola deb topish tibbiy-ijtimoiy ekspert komissiyalari tomonidan amalga oshiriladi.\nShaxs tibbiy-ijtimoiy ekspertizaga davlat tibbiyot muassasasi tomonidan yuboriladi, bundan ushbu moddaning uchinchi qismida nazarda tutilgan hollar mustasno.\nTashkiliy-huquqiy shaklidan qatʼi nazar, tibbiyot tashkilotlari nogironligi belgilari aniq koʻrinib turgan shaxslarni klinik-funksional maʼlumotlarni olishga doir qoʻshimcha tekshiruvlarni oʻtkazmasdan turib, tibbiy-ijtimoiy ekspertizaga yuborishga haqli.\nAgar shaxs sogʻligʻining holatiga koʻra tibbiy-ijtimoiy ekspert komissiyasiga borish imkoniga ega boʻlmasa va bu tibbiyot muassasasining xulosasi bilan tasdiqlansa, tibbiy-ijtimoiy ekspertiza shaxsning xohishiga koʻra uning uyida yoki shaxs davolanishda boʻlgan statsionarda oʻtkaziladi.\nTibbiy-ijtimoiy ekspert komissiyasining majlislarida mahalliy mehnat organlarining, mahalliy davlat hokimiyati organlarining, kasaba uyushmalarining, sugʻurta tashkilotlarining va boshqa tashkilotlarning vakillari, shuningdek nogironligi boʻlgan shaxslarning jamoat birlashmalari vakillari ishtirok etishi mumkin.",
+     "retrieval_score": 0.8233,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:18156#art-7#p1",
+     "doc_id": "lex:18156",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni kasaba uyushmalari, ularning huquqlari va faoliyatining kafolatlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/18156",
+     "article": "7-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2016-11-28",
+     "text": "7-modda. Oʻzbekiston kasaba uyushmalari federatsiyasining normativ-huquqiy hujjatlarni ishlab chiqishda ishtirok etish huquqlari\nOʻzbekiston kasaba uyushmalari federatsiyasi mehnatga va boshqa ijtimoiy-iqtisodiy masalalarga doir normativ-huquqiy hujjatlarni ishlab chiqishda ishtirok etish huquqiga ega.\nOʻzbekiston kasaba uyushmalari federatsiyasi mehnatga va boshqa ijtimoiy-iqtisodiy masalalarga doir normativ-huquqiy hujjatlarni qabul qilish toʻgʻrisidagi takliflarni tegishli davlat organlariga kiritishga haqlidir.\nXodimlarning mehnat huquqlari va boshqa ijtimoiy-iqtisodiy huquqlari hamda qonuniy manfaatlariga daxldor boʻlgan normativ-huquqiy hujjatlar Oʻzbekiston kasaba uyushmalari federatsiyasi oldindan xabardor etilgan holda davlat organlari tomonidan qabul qilinadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:18156#art-16#p1",
+     "doc_id": "lex:18156",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni kasaba uyushmalari, ularning huquqlari va faoliyatining kafolatlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/18156",
+     "article": "16-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2016-11-28",
+     "text": "16-modda. Kasaba uyushmalarining Oʻzbekiston Respublikasining xalqaro shartnomalarini tuzishdagi ishtiroki\nKasaba uyushmalari migratsiya, ish bilan taʼminlash, mehnat, narx belgilash va ijtimoiy taʼminot masalalariga doir Oʻzbekiston Respublikasining xalqaro shartnomalarini tuzishda qonun hujjatlarida belgilangan tartibda ishtirok etishi mumkin.",
+     "retrieval_score": 0.963,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2346,
+    "retrieval_ms": 2770,
+    "rerank_ms": 0,
+    "generation_ms": 3492,
+    "total_ms": 8610
+   },
+   "usage": {
+    "input_tokens": 12307,
+    "output_tokens": 839,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Kasaba uyushmalari qanday hollarda tibbiy-ijtimoiy ekspert komissiyasining majlislarida qatnashish huquqiga ega?",
+    "search_queries": [
+     "Kasaba uyushmalari qanday hollarda tibbiy-ijtimoiy ekspert komissiyasining majlislarida qatnashish huquqiga ega?",
+     "kasaba uyushmalari tibbiy-ijtimoiy ekspert komissiyasi majlislarida qatnashish huquqi",
+     "tibbiy-ijtimoiy ekspert komissiyasi majlislarida kasaba uyushmasi vakilining ishtiroki",
+     "nogironlikni aniqlash tibbiy-ijtimoiy ekspertiza kasaba uyushmasi ishtiroki"
+    ],
+    "doc_hints": [
+     "Kasaba uyushmalari, ularning huquqlari va faoliyatining kafolatlari toʻgʻrisidagi qonun",
+     "Aholini ijtimoiy himoya qilish toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 471,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q004",
+   "status": "ok",
+   "answer": "Ha, mumkin. Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi toʻgʻrisida 24¹-moddasiga koʻra, fraksiya rahbari Qonunchilik palatasi majlislarida koʻrib chiqilayotgan masalalar yuzasidan fraksiyaning kelishilgan nuqtai nazarini bayon etadi va ular boʻyicha rasmiy bayonotlar bilan chiqadi, fraksiya qaroriga koʻra mazkur vakolat fraksiyaning boshqa aʼzolari zimmasiga ham yuklatilishi mumkin [1]. Demak, buning asosi fraksiyaning qarori hisoblanadi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:51961",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi toʻgʻrisida i. umumiy qoidalar",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/51961",
+     "article": "24¹-modda",
+     "part": "1–11-qism",
+     "edition_date": "2024-02-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:51961#art-24.1#p1",
+     "quote": "Qonunchilik palatasi majlislarida koʻrib chiqilayotgan masalalar yuzasidan fraksiyaning kelishilgan nuqtai nazarini bayon etadi, ular boʻyicha rasmiy bayonotlar bilan chiqadi (fraksiya qaroriga koʻra mazkur vakolat fraksiyaning boshqa aʼzolari zimmasiga ham yuklatilishi mumkin);",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:51961#art-24.1#p1",
+     "doc_id": "lex:51961",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/51961",
+     "article": "24¹-modda",
+     "part": "1–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-19",
+     "text": "241-modda. Fraksiya rahbari\nFraksiya oʻz tarkibidan fraksiya rahbarini saylaydi.\nFraksiya rahbari:\nfraksiya faoliyatiga umumiy rahbarlikni amalga oshiradi;\nQonunchilik palatasi majlislarida koʻrib chiqilayotgan masalalar yuzasidan fraksiyaning kelishilgan nuqtai nazarini bayon etadi, ular boʻyicha rasmiy bayonotlar bilan chiqadi (fraksiya qaroriga koʻra mazkur vakolat fraksiyaning boshqa aʼzolari zimmasiga ham yuklatilishi mumkin);\nQonunchilik palatasi, uning organlari va mansabdor shaxslari bilan fraksiya nomidan muzokaralar olib boradi;\nfraksiyaning partiya rahbar organlari bilan hamkorligini taʼminlaydi;\ndavlat organlari, chet davlatlar, xalqaro va boshqa tashkilotlar bilan oʻzaro munosabatlarda fraksiya nomidan ish yuritadi;\nfraksiyaning qarorlarini va boshqa hujjatlarini imzolaydi;\nfraksiya majlislarining kun tartibini shakllantirish boʻyicha tavsiyalar beradi hamda muhokamaga kiritilgan masalalarni tayyorlash ustidan umumiy rahbarlikni amalga oshiradi;\nfraksiya majlislarini chaqiradi, ularda raislik qiladi;\nfraksiya ishida ishtirok etish uchun Oʻzbekiston Respublikasi Vazirlar Mahkamasi aʼzolarini va boshqa davlat organlarining rahbarlarini, ekspertlarni, fuqarolik jamiyati institutlarining vakillarini taklif etadi;",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6804077#preamble#p201",
+     "doc_id": "lex:-6804077",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yangi tahrirdagi Oʻzbekiston Respublikasi konstitutsiyasi qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga Oʻzbekiston Respublikasi Oliy majlisining faoliyatini takomillashtirishga qaratilgan oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6804077",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-11-18",
+     "text": "“81) qonunchilik taklifi tashabbuskorlari tomonidan kiritilgan qonunchilik taklifiga taalluqli masalalar yuzasidan ushbu tashabbuskorlar vakillarining fikrlarini eshitadi”;\n11-bandidagi “xoʻjalik boshqaruvi organlari” degan soʻzlar chiqarib tashlansin;\n12-bandidagi “xoʻjalik boshqaruvi organlari” degan soʻzlar chiqarib tashlansin;\n8) quyidagi mazmundagi 241-modda bilan toʻldirilsin:\n“241-modda. Fraksiya rahbari\nFraksiya oʻz tarkibidan fraksiya rahbarini saylaydi.\nFraksiya rahbari:\nfraksiya faoliyatiga umumiy rahbarlikni amalga oshiradi;\nQonunchilik palatasi majlislarida koʻrib chiqilayotgan masalalar yuzasidan fraksiyaning kelishilgan nuqtai nazarini bayon etadi, ular boʻyicha rasmiy bayonotlar bilan chiqadi (fraksiya qaroriga koʻra mazkur vakolat fraksiyaning boshqa aʼzolari zimmasiga ham yuklatilishi mumkin);\nQonunchilik palatasi, uning organlari va mansabdor shaxslari bilan fraksiya nomidan muzokaralar olib boradi;\nfraksiyaning partiya rahbar organlari bilan hamkorligini taʼminlaydi;\ndavlat organlari, chet davlatlar, xalqaro va boshqa tashkilotlar bilan oʻzaro munosabatlarda fraksiya nomidan ish yuritadi;\nfraksiyaning qarorlarini va boshqa hujjatlarini imzolaydi;\nfraksiya majlislarining kun tartibini shakllantirish boʻyicha tavsiyalar beradi hamda muhokamaga kiritilgan masalalarni tayyorlash ustidan umumiy rahbarlikni amalga oshiradi;",
+     "retrieval_score": 0.7022,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6804077#art-22#p105",
+     "doc_id": "lex:-6804077",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yangi tahrirdagi Oʻzbekiston Respublikasi konstitutsiyasi qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga Oʻzbekiston Respublikasi Oliy majlisining faoliyatini takomillashtirishga qaratilgan oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6804077",
+     "article": "22-modda",
+     "part": "105–112-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-19",
+     "text": "22-modda. Oʻzbekiston Respublikasi Markaziy banki boshqaruvining raisini, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalari rahbarlarini tayinlash va ularni lavozimidan ozod etish\nsiyosiy partiya fraksiyasining faoliyatiga umumiy rahbarlikni amalga oshiradi;\nQonunchilik palatasi majlislarida koʻrib chiqilayotgan masalalar yuzasidan siyosiy partiya fraksiyasining kelishilgan nuqtai nazarini bayon etadi, ular boʻyicha rasmiy bayonotlar bilan chiqadi (siyosiy partiya fraksiyasining qaroriga koʻra mazkur vakolat siyosiy partiya fraksiyasining boshqa aʼzolari zimmasiga ham yuklatilishi mumkin);\nQonunchilik palatasi, uning organlari va mansabdor shaxslari bilan siyosiy partiya fraksiyasi nomidan muzokaralar olib boradi;\nsiyosiy partiya fraksiyasining partiya rahbar organlari bilan hamkorligini taʼminlaydi;\ndavlat organlari, chet davlatlar, xalqaro va boshqa tashkilotlar bilan oʻzaro munosabatlarda siyosiy partiya fraksiyasi nomidan ish yuritadi;\nsiyosiy partiya fraksiyasining qarorlarini va boshqa hujjatlarini imzolaydi;\nsiyosiy partiya fraksiyasi majlislarining kun tartibini shakllantirish boʻyicha tavsiyalar beradi hamda muhokamaga kiritilgan masalalarni tayyorlash ustidan umumiy rahbarlikni amalga oshiradi;\nsiyosiy partiya fraksiyasining majlislarini chaqiradi, ularda raislik qiladi;",
+     "retrieval_score": 0.6884,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:51961#art-25#p1",
+     "doc_id": "lex:51961",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/51961",
+     "article": "25-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-19",
+     "text": "25-modda. Fraksiya vakolatlari\nFraksiya:\n1) Qonunchilik palatasi majlisining kun tartibi, muhokama qilinayotgan masalalarni koʻrib chiqish tartibi va mohiyati yuzasidan takliflar hamda fikr-mulohazalar kiritadi;\n2) Qonunchilik palatasi majlisida muhokama qilinayotgan har bir masala yuzasidan muzokaralarda fraksiya vakiliga kafolatlangan tarzda soʻz berilishi huquqidan foydalanadi;\n3) kelishuv komissiyasi va boshqa komissiyalar tuzish toʻgʻrisida masala qoʻyadi;\n4) Qonunchilik palatasi majlisida davlat hokimiyati organlarining va respublika ijro etuvchi hokimiyat organlarining mansabdor shaxslariga ularning tasarrufiga kiradigan masalalar yuzasidan asoslantirilgan tushuntirish berish yoki oʻz nuqtai nazarini bayon qilish talabi bilan murojaat etadi;\n5) Qonunchilik palatasi majlisida muhokama qilinayotgan masala yuzasidan fraksiyaning fikrini Qonunchilik palatasi deputatlari oʻrtasida tarqatadi;\n6) palataning Kengashi, qoʻmitalari va komissiyalari ishida ishtirok etadi;\n7) Qonunchilik palatasida muhokama qilinayotgan qonun loyihalari, qonunchilik takliflari va boshqa qarorlarning loyihalari yuzasidan oʻz takliflarini kiritadi;\n8) hukumat aʼzolarini ularning faoliyati masalalari yuzasidan eshitish toʻgʻrisida masala qoʻyadi;\n9) fraksiyaning faoliyati uchun zarur materiallar va hujjatlarni davlat organlari hamda ularning mansabdor shaxslaridan talab qilib oladi;",
+     "retrieval_score": 0.8326,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:51961#art-24.1#p12",
+     "doc_id": "lex:51961",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/51961",
+     "article": "24¹-modda",
+     "part": "12–17-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-19",
+     "text": "241-modda. Fraksiya rahbari\nfraksiya oldida turgan vazifalardan kelib chiqqan holda fraksiya aʼzolariga ularning oʻz saylov okruglaridagi faoliyatini tashkil etishda har tomonlama koʻmaklashadi;\nfraksiyaning samarali faoliyati uchun zarur boʻlgan boshqa vakolatlarni amalga oshiradi.\nFraksiya rahbari mehnatga haq toʻlash, tibbiy va transport taʼminoti shart-sharoitlariga koʻra Spiker oʻrinbosariga tenglashtiriladi.\nFraksiya rahbari fraksiya majlisida saylanadigan oʻrinbosariga (oʻrinbosarlariga) ega boʻladi.\nFraksiya rahbari yoʻqligida uning vakolatlarini fraksiya rahbarining oʻrinbosarlaridan biri amalga oshiradi.\nFraksiya rahbari vakolatlarining muddatidan ilgari tugatilishi toʻgʻrisidagi qaror fraksiya majlisi tomonidan qabul qilinadi.",
+     "retrieval_score": 0.8742,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1968,
+    "retrieval_ms": 651,
+    "rerank_ms": 0,
+    "generation_ms": 3353,
+    "total_ms": 5973
+   },
+   "usage": {
+    "input_tokens": 12620,
+    "output_tokens": 586,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Qonunchilik palatasida muhokama qilinayotgan masalalar boʻyicha fraksiya nomidan rasmiy bayonot bilan chiqish huquqi fraksiya rahbaridan boshqa aʼzolarga ham berilishi mumkinmi va buning uchun nima asos boʻladi?",
+    "search_queries": [
+     "Qonunchilik palatasida muhokama qilinayotgan masalalar boʻyicha fraksiya nomidan rasmiy bayonot bilan chiqish huquqi fraksiya rahbaridan boshqa aʼzolarga ham berilishi mumkinmi va buning uchun nima asos boʻladi?",
+     "fraksiya nomidan rasmiy bayonot bilan chiqish huquqi",
+     "Qonunchilik palatasi fraksiyasi aʼzolarining huquqlari",
+     "fraksiya rahbari va fraksiya aʼzolari vakolatlari"
+    ],
+    "doc_hints": [
+     "Oliy Majlis Qonunchilik palatasi toʻgʻrisidagi qonun",
+     "Oliy Majlis toʻgʻrisidagi qonun",
+     "Reglament"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 467,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q005",
+   "status": "ok",
+   "answer": "Shaharsozlik kodeksining 42-moddasiga koʻra, aholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflar ekspert baholash natijalari olinganidan keyin oʻn besh kunlik muddatda buyurtmachilar tomonidan arizachi yoki uning vakolatli vakili ishtirokida koʻrib chiqiladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "42-modda",
+     "part": "1–3-qism",
+     "edition_date": "2021-02-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5307951#art-42#p1",
+     "quote": "Aholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflar ekspert baholash natijalari olinganidan keyin oʻn besh kunlik muddatda buyurtmachilar tomonidan arizachi yoki uning vakolatli vakili ishtirokida koʻrib chiqiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:5307951#art-42#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "42-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "42-modda. Aholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisida qarorlar qabul qilish\nAholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflar ekspert baholash natijalari olinganidan keyin oʻn besh kunlik muddatda buyurtmachilar tomonidan arizachi yoki uning vakolatli vakili ishtirokida koʻrib chiqiladi.\nAholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflarni ekspert baholash buyurtmachi mablagʻlari hisobidan tegishli tashkilotlarni jalb etgan holda oʻtkaziladi.\nAholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish ishlab chiquvchi tomonidan buyurtmachining mablagʻlari hisobidan amalga oshiriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:5307951#art-41#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "41-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "41-modda. Jamoatchilik nazorati subyektlari tomonidan aholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflar kiritilishi\nAholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisida takliflar berish huquqi oʻz qonuniy manfaatlariga daxl qilinayotgan jamoatchilik nazorati subyektlariga taqdim etiladi.\nJamoatchilik nazorati subyektlarining aholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflari faqat uni amalga oshirish boshlanguniga qadar qabul qilinadi.\nAholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflar mahalliy ijro etuvchi hokimiyat organlariga yozma yoki elektron shaklda beriladi.\nMahalliy ijro etuvchi hokimiyat organi kelib tushgan taklifni oʻn besh kun ichida koʻrib chiqadi. Aholi punktining bosh rejasiga oid oʻzgartirishlarning jamoatchilik muhokamasini oʻtkazish zarurati boʻlmagan taqdirda, mahalliy ijro etuvchi hokimiyat organi arizachilarga jamoatchilik muhokamasini oʻtkazishni rad etishga doir asoslantirilgan javob yuboradi.",
+     "retrieval_score": 0.7954,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:5307951#art-23#p15",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "23-modda",
+     "part": "15–18-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-11-29",
+     "text": "23-modda. Shaharsozlik hujjatlari ekspertizasini oʻtkazish\nShaharsozlik hujjatlarining ekspertizasi buyurtmachilar va ekspert tashkilotlari tomonidan tuziladigan shartnomalar asosida amalga oshiriladi, bunda xarajatlar koʻrib chiqilayotgan loyihani ishlab chiqish qiymatiga kiritiladi.\nEkspertizaning ijobiy xulosalari (bundan davlat sirlari yoki qonun bilan muhofaza qilinadigan boshqa sirlarni oʻz ichiga olgan shaharsozlik hujjatlariga doir xulosalar mustasno) ular ekspertiza xulosalarining yagona reyestriga kiritilgan taqdirdagina haqiqiy deb tan olinadi.\nEkspertizaning ijobiy xulosalari shaharsozlik hujjatlarini kelishib olish, tasdiqlash va kelgusida amalga oshirish uchun asos boʻladi.\nShaharsozlik hujjatlarini ekspertizadan oʻtkazish tartibi va muddatlari Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadi.",
+     "retrieval_score": 0.768,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:5307951#art-43#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "43-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "43-modda. Aholi punktining muqobil bosh rejasini ishlab chiqish tartibi\nAholi punktining muqobil bosh rejasi aholi punktining taklif etilgan bosh rejasidan norozi boʻlgan jamoatchilik nazorati subyektlarining tashabbusiga koʻra va ularning mablagʻlari hisobidan bajariladigan loyihaviy, ilmiy ishlanmadan iborat.\nAholi punkti muqobil bosh rejasining tashabbuskori mahalliy ijro etuvchi hokimiyat organiga oʻz aholi punktining bosh rejasini muqobil bosh reja deb topish toʻgʻrisida yozma ariza bilan murojaat qiladi.\nMahalliy ijro etuvchi hokimiyat organi yozma arizani olganidan keyin aholi punkti bosh rejasining tayyorlik darajasini hisobga olgan holda, uni muqobil bosh reja deb topish hamda jamoatchilik ekspertizasiga va jamoatchilik muhokamalariga taqdim etish yoki uni asoslangan holda rad etish haqida qaror qabul qiladi.\nAholi punktining bosh rejasini muqobil bosh reja deb topishni rad etish toʻgʻrisidagi qaror ustidan ushbu Kodeksning 39-moddasida nazarda tutilgan tartibda shikoyat qilinishi mumkin.\nAholi punktining muqobil bosh rejasini ishlab chiqish, ekspertiza qilish, kelishib olish va uning jamoatchilik muhokamasi ushbu Kodeksda belgilangan tartibda amalga oshiriladi.\nAholi punktining bosh rejasi muqobil bosh reja deb topilgan taqdirda, tashabbuskorga uni ishlab chiqish bilan bogʻliq xarajatlarning oʻrni ushbu bosh rejaning buyurtmachisi tomonidan qoplanadi.",
+     "retrieval_score": 0.7355,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5307951#art-38#p10",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "38-modda",
+     "part": "10–13-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "38-modda. Aholi punktlari bosh rejalarining jamoatchilik muhokamasi\n3) bildirilgan mulohazalarni qayd etish (soʻrovnomalar, audiovideoyozuv, kelishib olish varaqasi, ishtirokchilarning yozma takliflari, jamoatchilik muhokamasi yigʻilishining bayonnomasi);\n4) jamoatchilik muhokamasi yakunlari boʻyicha xulosaning muhokama yakunlanganidan keyin oʻn besh kundan kechiktirmay jamoatchilik nazorati subyektlari tomonidan ommaviy axborot vositalarida va maxsus vakolatli davlat organining Internet tarmogʻidagi rasmiy veb-saytida eʼlon qilinishi.\nAholi punktlarining bosh rejalari jamoatchilik muhokamasi natijalari hisobga olingan holda tasdiqlanadi.\nAholi punkti bosh rejasining oʻtkazilgan jamoatchilik muhokamasi materiallari bosh reja amal qiladigan butun muddat mobaynida buyurtmachida va mahalliy ijro etuvchi hokimiyat organida saqlanadi.",
+     "retrieval_score": 0.7264,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2046,
+    "retrieval_ms": 2499,
+    "rerank_ms": 0,
+    "generation_ms": 1878,
+    "total_ms": 6425
+   },
+   "usage": {
+    "input_tokens": 14328,
+    "output_tokens": 443,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Ekspert baholash natijalari olingandan soʻng, tasdiqlangan bosh rejaga oʻzgartirish kiritish takliflari qancha muddat ichida koʻrib chiqilishi kerak?",
+    "search_queries": [
+     "Ekspert baholash natijalari olingandan soʻng, tasdiqlangan bosh rejaga oʻzgartirish kiritish takliflari qancha muddat ichida koʻrib chiqilishi kerak?",
+     "bosh rejaga oʻzgartirish kiritish takliflarini koʻrib chiqish muddati",
+     "ekspert baholash natijalari bosh plan oʻzgartirish takliflari",
+     "bosh reja loyihasi ekspertizadan soʻng takliflarni koʻrib chiqish muddati"
+    ],
+    "doc_hints": [
+     "Shaharsozlik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 661,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q006",
+   "status": "ok",
+   "answer": "Shaharsozlik kodeksining 37-moddasiga koʻra, davlat boshqaruvi organlari va mahalliy ijro etuvchi hokimiyat organlari jamoatchilik nazorati subyektlarini aholi punktlarining bosh rejalari tasdiqlanganligi haqida tegishli qaror qabul qilingan paytdan eʼtiboran besh kundan koʻp boʻlmagan muddat ichida xabardor qilishi shart [1]. Bosh rejada esa aholi punktlarini rivojlantirishning asosiy yoʻnalishlari va chegaralari, hududning funksional vazifasi va qurilishni zonalashtirish, muhandislik, transport va ijtimoiy infratuzilmani kompleks rivojlantirish, hududlarni oʻzlashtirishning navbatma-navbatligi, tarixiy-madaniy meros obyektlarini saqlashga, ekologik va sanitariya holatiga qoʻyiladigan talablar va boshqalar belgilanadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "37-modda",
+     "part": "1–6-qism",
+     "edition_date": "2021-02-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5307951#art-37#p1",
+     "quote": "Davlat boshqaruvi organlari, mahalliy ijro etuvchi hokimiyat organlari jamoatchilik muhokamalarining yakuniy hujjatlarini, jamoatchilik ekspertizalarining xulosalarini ommaviy axborot vositalarida va maxsus vakolatli davlat organining Internet tarmogʻidagi rasmiy veb-saytida eʼlon qilish, dasturlar va shaharsozlik hujjatlarini namoyish qilishga doir tadbirlar orqali jamoatchilik nazorati subyektlarini aholi punktlarining bosh rejalari tasdiqlanganligi haqida tegishli qaror qabul qilingan paytdan eʼtiboran besh kundan koʻp boʻlmagan muddat ichida xabardor qilishi shart",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:347886",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori shaharlar, tuman markazlari va shahar tipidagi posyolkalarning bosh rejalarini ishlab chiqish va ularni qurish tartibi toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/347886",
+     "article": "3-band",
+     "part": null,
+     "edition_date": "2016-01-05",
+     "doc_status": "amalda",
+     "chunk_id": "lex:347886#band-3#p11",
+     "quote": "Aholi punktining bosh rejasi aholi punktlarini rivojlantirishning asosiy yoʻnalishlarini va chegaralarini, ular hududining funksional vazifasini va qurilishni zonalashtirishni, muhandislik, transport ijtimoiy infratuzilmasini kompleks rivojlantirishni, shaharsozlik hujjatlarini amalga oshirishda shaharsozlik faoliyati reglamentlarini, shu jumladan hududlarni oʻzlashtirishning navbatma-navbatligini, tarixiy-madaniy meros obyektlarini saqlashga, ekologik va sanitariya holatiga qoʻyiladigan talablarni va boshqalarni belgilab beradi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:5307951#art-37#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "37-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "37-modda. Aholi punktlarining bosh rejalari tasdiqlanganligi toʻgʻrisidagi axborot\nAholi punktlarining bosh rejalari tasdiqlanganligi toʻgʻrisidagi axborot jumlasiga quyidagilar kiradi:\nshaharsozlik toʻgʻrisidagi qonun hujjatlari;\ndavlat boshqaruvi organlarining, mahalliy davlat hokimiyati organlarining aholi punktlari bosh rejalarini tasdiqlash toʻgʻrisidagi qarorlari haqidagi maʼlumotlar;\naholi punktlarining bosh rejalari toʻgʻrisidagi hujjatlar va maʼlumotlar.\nDavlat boshqaruvi organlari, mahalliy ijro etuvchi hokimiyat organlari jamoatchilik muhokamalarining yakuniy hujjatlarini, jamoatchilik ekspertizalarining xulosalarini ommaviy axborot vositalarida va maxsus vakolatli davlat organining Internet tarmogʻidagi rasmiy veb-saytida eʼlon qilish, dasturlar va shaharsozlik hujjatlarini namoyish qilishga doir tadbirlar orqali jamoatchilik nazorati subyektlarini aholi punktlarining bosh rejalari tasdiqlanganligi haqida tegishli qaror qabul qilingan paytdan eʼtiboran besh kundan koʻp boʻlmagan muddat ichida xabardor qilishi shart.\nAholi punktlarining bosh rejalari tasdiqlanganligi toʻgʻrisidagi axborot Oʻzbekiston Respublikasi Vazirlar Mahkamasi, shaharsozlik faoliyati sohasidagi maxsus vakolatli davlat organi, mahalliy ijro etuvchi hokimiyat organlari tomonidan taqdim etiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:347886#band-3#p11",
+     "doc_id": "lex:347886",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori shaharlar, tuman markazlari va shahar tipidagi posyolkalarning bosh rejalarini ishlab chiqish va ularni qurish tartibi toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/347886",
+     "article": "3-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2016-01-05",
+     "text": "1.2. Nizom shaharlar, tuman markazlari va shahar tipidagi posyolkalarning (keyingi oʻrinlarda aholi yashaydigan joylar deb yuritiladi) bosh rejalarini ishlab chiqish va ularni qurishning yagona tartibini belgilab beradi hamda, mulkchilik shakllaridan qatʼi nazar, shahar qurilishi faoliyatining barcha subyektlari uchun majburiy hisoblanadi.\n1.3. Aholi punktining bosh rejasi:\nuzoq muddatli ijtimoiy-iqtisodiy dasturlar, respublikani va uning mintaqalarini rivojlantirish prognozlari, tumanni rejalashtirish sxemalari yoki loyihalari;\naholi punktining oldingi bosh rejasini amalga oshirishning holatini tahlil qilish natijalari asosida ishlab chiqiladi.\nAholi punktining bosh rejasi aholi punktlarini rivojlantirishning asosiy yoʻnalishlarini va chegaralarini, ular hududining funksional vazifasini va qurilishni zonalashtirishni, muhandislik, transport ijtimoiy infratuzilmasini kompleks rivojlantirishni, shaharsozlik hujjatlarini amalga oshirishda shaharsozlik faoliyati reglamentlarini, shu jumladan hududlarni oʻzlashtirishning navbatma-navbatligini, tarixiy-madaniy meros obyektlarini saqlashga, ekologik va sanitariya holatiga qoʻyiladigan talablarni va boshqalarni belgilab beradi.",
+     "retrieval_score": 0.3975,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:5307951#art-38#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "38-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "38-modda. Aholi punktlari bosh rejalarining jamoatchilik muhokamasi\nJamoatchilik nazorati subyektlari tomonidan shaharsozlik hujjatlarining yuridik va jismoniy shaxslar, jamiyat va davlat manfaatlariga muvofiqligi yuzasidan muhokama qilinishi aholi punktlari bosh rejalarining jamoatchilik muhokamasidir.\nAholi punktlari bosh rejalarining jamoatchilik muhokamasi quyidagi tartibda oʻtkaziladi:\n1) muhokama boshlanishidan oʻn kun avval jamoatchilik nazorati subyektlarini jamoatchilik muhokamasini oʻtkazish muddatlari va tartibi bilan aholi punktining bosh rejasi toʻgʻrisidagi axborotni taqdim etgan holda tanishtirish. Jamoatchilik nazorati subyektlarini tanishtirish:\nommaviy axborot vositalarida va maxsus vakolatli davlat organining Internet tarmogʻidagi rasmiy veb-saytida tegishli eʼlonlar berish;\nkorxonalarning, muassasalarning va tashkilotlarning binolarida, jamoat joylarida, taxmin qilinayotgan qurilish maydonchasi hududida bannerlar (plakatlar) va tashqi reklama vositalarini oʻrnatish;\nekspozitsiyalar tashkil etish;\nqonun hujjatlarida taqiqlanmagan boshqa shakllardan foydalanish orqali amalga oshiriladi;\n2) jamoatchilik muhokamasini oʻtkazish, aholi punktining bosh rejasiga oid fikrlarni toʻplash va qonun hujjatlarida taqiqlanmagan boshqa shakllar.\nAholi punkti bosh rejasining jamoatchilik muhokamasini oʻtkazish davomiyligi kamida oʻn besh kundan iborat boʻlishi kerak;",
+     "retrieval_score": 0.8694,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5130468#band-4#p1",
+     "doc_id": "lex:-5130468",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining farmoni Oʻzbekiston Respublikasi qurilish tarmogʻini modernizatsiya qilish, jadal va innovatsion rivojlantirishning 2021 — 2025-yillarga moʻljallangan strategiyasini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5130468",
+     "article": "4-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-11-28",
+     "text": "4. Shunday tartib oʻrnatilsinki, unga muvofiq 2021-yil 1-yanvardan boshlab qurilish ustidan jamoat nazoratini taʼminlash maqsadida:\na) aholi punktlarining bosh rejalari jamoat muhokamasi natijalarini hisobga olgan holda tasdiqlanadi. Bunda aholi punktlari bosh rejalarining jamoat muhokamasi quyidagi tartibda amalga oshiriladi:\nI bosqich — fuqarolarni jamoat muhokamasini oʻtkazish muddatlari, joyi va tartibi bilan tanishtirish;\nII bosqich — aholi punkti bosh rejasining loyihasi boʻyicha jamoat muhokamalarini (yashovchilar, yerdan foydalanuvchilar va koʻchmas mulk obyektlari mulkdorlarining muhokamalari, ijtimoiy soʻrovlari, fikrlarini toʻplash va boshqa usullar) oʻtkazish;\nIII bosqich — jamoat muhokamasining qayd etilgan natijalari asosida jamoat fikrini tahlil qilish;\nIV bosqich — jamoat muhokamasi natijalari haqida ommaviy axborot vositalari, shu jumladan internet tarmogʻi orqali aholini xabardor qilish;\nb) aholi punktlari bosh rejalarining yuridik va jismoniy shaxslarning huquqlari va qonuniy manfaatlari, jamiyat va davlat manfaatlariga muvofiqligi yuzasidan jamoat ekspertizasini amalga oshirish imkoniyati joriy etiladi;\nv) aholi punktining taklif etilgan bosh rejasidan norozi boʻlgan jamoat nazorati subyektlarining tashabbusiga koʻra aholi punktining muqobil bosh rejasini ishlab chiqish yoki unga oʻzgartirish (tuzatish) kiritish mexanizmi joriy etiladi;",
+     "retrieval_score": 0.5103,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5307951#art-41#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "41-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "41-modda. Jamoatchilik nazorati subyektlari tomonidan aholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflar kiritilishi\nAholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisida takliflar berish huquqi oʻz qonuniy manfaatlariga daxl qilinayotgan jamoatchilik nazorati subyektlariga taqdim etiladi.\nJamoatchilik nazorati subyektlarining aholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflari faqat uni amalga oshirish boshlanguniga qadar qabul qilinadi.\nAholi punktining tasdiqlangan bosh rejasiga oʻzgartirishlar kiritish toʻgʻrisidagi takliflar mahalliy ijro etuvchi hokimiyat organlariga yozma yoki elektron shaklda beriladi.\nMahalliy ijro etuvchi hokimiyat organi kelib tushgan taklifni oʻn besh kun ichida koʻrib chiqadi. Aholi punktining bosh rejasiga oid oʻzgartirishlarning jamoatchilik muhokamasini oʻtkazish zarurati boʻlmagan taqdirda, mahalliy ijro etuvchi hokimiyat organi arizachilarga jamoatchilik muhokamasini oʻtkazishni rad etishga doir asoslantirilgan javob yuboradi.",
+     "retrieval_score": 0.9166,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2085,
+    "retrieval_ms": 2825,
+    "rerank_ms": 0,
+    "generation_ms": 4256,
+    "total_ms": 9167
+   },
+   "usage": {
+    "input_tokens": 14630,
+    "output_tokens": 1024,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Aholi punktining bosh rejasini tasdiqlash toʻgʻrisida qaror qabul qilingandan soʻng jamoatchilik nazorati subyektlarini qancha muddat ichida xabardor qilish shart va bosh rejada qanday masalalar (masalan, hududlarni zonalashtirish yoki zaxira hududlar) belgilanishi kerak?",
+    "search_queries": [
+     "Aholi punktining bosh rejasini tasdiqlash toʻgʻrisida qaror qabul qilingandan keyin jamoatchilik nazorati subyektlarini qancha muddat ichida xabardor qilishlari shart va bosh rejada qanday masalalar (masalan, hududlarni zonalashtirish yoki zaxira hududlar) belgilanishi kerak?",
+     "Aholi punktining bosh rejasini tasdiqlash toʻgʻrisida qaror qabul qilingandan soʻng jamoatchilik nazorati subyektlarini qancha muddat ichida xabardor qilish shart va bosh rejada qanday masalalar (masalan, hududlarni zonalashtirish yoki zaxira hududlar) belgilanishi kerak?",
+     "aholi punktining bosh rejasini tasdiqlash jamoatchilik nazorati subyektlarini xabardor qilish muddati",
+     "bosh rejada hududlarni zonalashtirish zaxira hududlar belgilanishi",
+     "bosh reja tasdiqlanganligi toʻgʻrisida jamoatchilik nazorati subyektlarini xabardor qilish"
+    ],
+    "doc_hints": [
+     "Shaharsozlik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 666,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q007",
+   "status": "ok",
+   "answer": "Saylov kodeksining 25-moddasiga koʻra, uchastka saylov komissiyasiga aʼzo boʻlish uchun yigirma bir yoshga toʻlgan, oʻrta yoki oliy maʼlumotga ega boʻlgan fuqaro talab qilinadi [1]. Saylov kodeksining 49-moddasiga koʻra, lozim boʻlgan darajada jihozlangan ovoz berish binolari saylov komissiyalariga saylovdan kamida oʻn bir kun oldin taqdim etilishi kerak [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "25-modda",
+     "part": "1–12-qism",
+     "edition_date": "2023-12-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-25#p1",
+     "quote": "Yigirma bir yoshga toʻlgan, oʻrta yoki oliy maʼlumotga, qoida tariqasida, saylovga tayyorgarlik koʻrish va uni oʻtkazish borasida ish tajribasiga ega boʻlgan, aholi oʻrtasida obroʻ-eʼtibor qozongan fuqarolar hududiy, tuman, shahar saylov komissiyasining, okrug va uchastka saylov komissiyasining aʼzosi boʻlishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "49-modda",
+     "part": "1–3-qism",
+     "edition_date": "2025-12-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-49#p1",
+     "quote": "Lozim boʻlgan darajada jihozlangan ovoz berish binolari saylov komissiyalariga saylovdan kamida oʻn bir kun oldin taqdim etilishi kerak",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4386848#art-25#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "25-modda",
+     "part": "1–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-19",
+     "text": "25-modda. Hududiy, tuman, shahar, okrug va uchastka saylov komissiyasiga aʼzolik\nYigirma bir yoshga toʻlgan, oʻrta yoki oliy maʼlumotga, qoida tariqasida, saylovga tayyorgarlik koʻrish va uni oʻtkazish borasida ish tajribasiga ega boʻlgan, aholi oʻrtasida obroʻ-eʼtibor qozongan fuqarolar hududiy, tuman, shahar saylov komissiyasining, okrug va uchastka saylov komissiyasining aʼzosi boʻlishi mumkin.\nQuyidagilar hududiy, tuman, shahar, okrug va uchastka saylov komissiyasining aʼzosi boʻlishi mumkin emas:\nQonunchilik palatasi deputati, mahalliy Kengash deputati, Senat aʼzosi;\nboshqa saylov komissiyasining aʼzolari;\nsiyosiy partiyalarning aʼzolari va vakolatli vakillari;\nviloyatlar, tumanlar va shaharlar hokimlari hamda ularning oʻrinbosarlari;\nprokuratura organlarining, sudlarning mansabdor shaxslari;\nnomzodlar, nomzodlarning yaqin qarindoshlari va ishonchli vakillari;\nnomzodlarga bevosita boʻysunuvchi shaxslar;\nogʻir yoki oʻta ogʻir jinoyatlar sodir etganligi uchun sudlanganlik holati tugallanmagan yoxud sudlanganligi olib tashlanmagan fuqarolar.\nMarkaziy saylov komissiyasining qaroriga asosan hududiy saylov komissiyasining uch nafargacha aʼzosi komissiyada doimiy, qolgan aʼzolari jamoatchilik asosida ishlaydi.\nTuman va shahar saylov komissiyasining aʼzolari jamoatchilik asosida ishlaydi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4386848#art-49#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "49-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "49-modda. Ovoz berish binolari hamda uchastka saylov komissiyalari binolari\nOvoz berish binolari maxsus ajratilgan joylar boʻlib, ularda yashirin ovoz berish uchun yetarli miqdorda kabinalar yoki xonalar jihozlanishi, saylov byulletenlarini berish uchun joylar ajratilishi hamda saylov qutilari oʻrnatilishi kerak. Saylov qutilari ovoz beruvchilar ularning yoniga albatta yashirin ovoz berish kabinalari yoki xonalari orqali oʻtib keladigan qilib oʻrnatiladi. Ovoz berish binosida boshqa hech qanday siyosiy tadbirlar oʻtkazilishiga ruxsat etilmaydi. Binolarni jihozlash va ularda zarur tartibni saqlab turish masʼuliyati uchastka saylov komissiyasining zimmasida boʻladi.\nDavlat organlari, korxonalar, muassasalar, tashkilotlar saylovga tayyorgarlik koʻrish va uni oʻtkazish uchun zarur binolar va jihozlarni saylov komissiyalari ixtiyoriga bepul berib turishi shart.\nLozim boʻlgan darajada jihozlangan ovoz berish binolari saylov komissiyalariga saylovdan kamida oʻn bir kun oldin taqdim etilishi kerak.",
+     "retrieval_score": 0.6533,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6994966#band-6s2#p1",
+     "doc_id": "lex:-6994966",
+     "doc_title": "Oʻzbekiston Respublikasi markaziy saylov komissiyasining qarori uchastka saylov komissiyasi toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/-6994966",
+     "article": "6-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": null,
+     "text": "6. Yigirma bir yoshga toʻlgan, oʻrta yoki oliy maʼlumotga, qoida tariqasida, saylovga tayyorgarlik koʻrish va uni oʻtkazish borasida ish tajribasiga ega boʻlgan, aholi oʻrtasida obroʻ-eʼtibor qozongan Oʻzbekiston Respublikasi fuqarolari uchastka saylov komissiyasining aʼzosi boʻlishi mumkin.",
+     "retrieval_score": 0.4968,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5233886#art-25#p1",
+     "doc_id": "lex:-5233886",
+     "doc_title": "Qoraqalpogʻiston Respublikasining qonuni saylov toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5233886",
+     "article": "25-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-12-26",
+     "text": "25-modda. Saylov komissiyasi aʼzolariga qoʻyiladigan talablar\nYigirma bir yoshga toʻlgan, oʻrta yoki oliy maʼlumotga, qoida tariqasida, saylovga tayyorgarlik koʻrish va uni oʻtkazish borasida ish tajribasiga ega boʻlgan, aholi oʻrtasida obroʻ-eʼtibor qozongan fuqarolar tuman va shahar saylov komissiyasining, okrug va uchastka saylov komissiyasining aʼzosi boʻlishi mumkin.\nBoshqa saylov komissiyalarining aʼzolari, siyosiy partiyalarning aʼzolari, tuman va shahar hokimlari, prokuratura organlarining, sudlarning mansabdor shaxslari, nomzodlarning yaqin qarindoshlari va ishonchli vakillari, shuningdek nomzodlarga bevosita boʻysunuvchi shaxslar saylov komissiyasining aʼzosi boʻlishi mumkin emas.\nUchastka saylov komissiyasi aʼzolarining yarmidan koʻpi bitta tashkilotdan tavsiya etilishi mumkin emas.\nKomissiya aʼzosi shaxsiy arizasiga koʻra, shuningdek vakolatlaridan mahrum etilgan taqdirda, oʻz vazifalarini bajarishdan ozod etilishi mumkin.\nKomissiya aʼzosi ushbu Qonun talablarini buzgan yoki zimmasidagi majburiyatlariga muntazam ravishda eʼtiborsizlik qilgan taqdirda, uni vakolatlaridan mahrum etish huquqi komissiyani tuzgan organga tegishli boʻladi.\nZarur boʻlgan taqdirda, ushbu Qonunda belgilangan tartibda saylov komissiyasining yangi aʼzosi saylanadi.",
+     "retrieval_score": 0.5511,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4386848#art-53#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "53-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-06-25",
+     "text": "53-modda. Uchastka saylov komissiyasining ovoz berishdan oldingi faoliyati\nSaylov kuni ovoz berish binosi uchastka saylov komissiyasi aʼzolarining kamida uchdan ikki qismi hozir boʻlganda ochiladi.\nUchastka saylov komissiyalari:\nyashirin ovoz berish uchun binoni ovoz berish boshlanguniga qadar tayyor holatga keltiradi;\nuchastka saylov komissiyasi aʼzolari orasida vazifalarni taqsimlaydi;\nkomissiyaning ikki aʼzosi tomonidan imzolangan, muhr bilan tasdiqlangan saylov byulletenlarini tayyorlaydi.",
+     "retrieval_score": 0.9323,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2368,
+    "retrieval_ms": 2796,
+    "rerank_ms": 0,
+    "generation_ms": 3297,
+    "total_ms": 8461
+   },
+   "usage": {
+    "input_tokens": 13016,
+    "output_tokens": 632,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Saylov uchastkasi komissiyasi aʼzosi boʻlish uchun shaxs qanday yoshga toʻlgan va qanday maʼlumotga (maʼlumoti darajasiga) ega boʻlishi kerak, hamda ushbu komissiya joylashadigan bino saylovdan qancha vaqt oldin tayyorlab berilishi shart?",
+    "search_queries": [
+     "Saylov uchastkasi komissiyasiga aʼzo boʻlish uchun odam qanday yoshga toʻlgan va qanday maʼlumotga ega boʻlishi kerak, va bu komissiya joylashadigan bino saylovdan qancha vaqt oldin tayyorlab berilishi shart?",
+     "Saylov uchastkasi komissiyasi aʼzosi boʻlish uchun shaxs qanday yoshga toʻlgan va qanday maʼlumotga (maʼlumoti darajasiga) ega boʻlishi kerak, hamda ushbu komissiya joylashadigan bino saylovdan qancha vaqt oldin tayyorlab berilishi shart?",
+     "saylov uchastkasi komissiyasi aʼzosi boʻlish talablari yosh maʼlumot",
+     "saylov uchastkasi komissiyasi aʼzosi saylov qonunchiligini bilishi",
+     "saylov uchastkasi binosi saylovdan necha kun oldin tayyorlab berilishi shart"
+    ],
+    "doc_hints": [
+     "Saylov kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 469,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q008",
+   "status": "ok",
+   "answer": "Согласно статье 10 Закона Республики Узбекистан «О санации и ликвидации банков», убытки при санации покрываются в первую очередь за счёт акционеров санируемого банка [1]. При этом каждый акционер отвечает пропорционально своей доле в уставном капитале банка и в пределах стоимости принадлежащих ему акций [1]. Этот принцип также закреплён в статье 9 указанного Закона [2].",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-7592967",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklarni sanatsiya qilish va tugatish toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-7592967",
+     "article": "10-modda",
+     "part": "1-qism",
+     "edition_date": "2025-06-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7592967#art-10#p1",
+     "quote": "Sanatsiya qilishda zararlarning oʻrni birinchi navbatda sanatsiya qilinayotgan bank aksiyadorlari hisobidan qoplanadi. Bunda har bir aksiyador zararning umumiy miqdoriga nisbatan bank ustav kapitalidagi oʻz ulushi miqdoriga mutanosib ravishda hamda oʻziga tegishli aksiyalar qiymati doirasida javobgar boʻladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-7592967",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklarni sanatsiya qilish va tugatish toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-7592967",
+     "article": "9-modda",
+     "part": "1–7-qism",
+     "edition_date": "2025-06-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7592967#art-9#p1",
+     "quote": "zararlarning oʻrni birinchi navbatda sanatsiya qilinayotgan bank aksiyadorlari hisobidan qoplanishi;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7592967#art-10#p1",
+     "doc_id": "lex:-7592967",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklarni sanatsiya qilish va tugatish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7592967",
+     "article": "10-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-06-23",
+     "text": "10-modda. Zararlarning oʻrni birinchi navbatda sanatsiya qilinayotgan bank aksiyadorlari hisobidan qoplanishi prinsipi\nSanatsiya qilishda zararlarning oʻrni birinchi navbatda sanatsiya qilinayotgan bank aksiyadorlari hisobidan qoplanadi. Bunda har bir aksiyador zararning umumiy miqdoriga nisbatan bank ustav kapitalidagi oʻz ulushi miqdoriga mutanosib ravishda hamda oʻziga tegishli aksiyalar qiymati doirasida javobgar boʻladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-7592967#art-9#p1",
+     "doc_id": "lex:-7592967",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklarni sanatsiya qilish va tugatish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7592967",
+     "article": "9-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-06-23",
+     "text": "9-modda. Bankni sanatsiya qilish prinsiplari\nBankni sanatsiya qilish prinsiplari quyidagilardan iborat:\nzararlarning oʻrni birinchi navbatda sanatsiya qilinayotgan bank aksiyadorlari hisobidan qoplanishi;\nbank omonatchilari hamda kreditorlari huquqlari va qonuniy manfaatlarining kafolatlanishi;\nkafolatlangan omonatlarni va ularning kafolatlash chegarasidan oshadigan qismini toʻliq himoya qilish;\nboshqaruv organlari vakolatlarining oʻtishi;\njavobgarlikning muqarrarligi;\nbank omonatchilari va kreditorlari zararlarining cheklanishi.",
+     "retrieval_score": 0.9675,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-7592967#art-32#p1",
+     "doc_id": "lex:-7592967",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklarni sanatsiya qilish va tugatish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7592967",
+     "article": "32-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-06-23",
+     "text": "32-modda. Kapital vositalarini va (yoki) maqbul majburiyatlarni ulushli vositalarga konvertatsiya qilish koeffitsiyenti\nMarkaziy bank sanatsiya qilish maqsadlariga erishishni taʼminlash va sanatsiya qilish prinsiplariga rioya etish sharti bilan bir navbatda hisobdan chiqariladigan va (yoki) konvertatsiya qilinadigan kapital vositalari va (yoki) majburiyatlar uchun yagona konvertatsiya qilish koeffitsiyentini qoʻllaydi.\nMarkaziy bank sanatsiya qilish maqsadlariga erishish uchun turli navbatda hisobdan chiqariladigan va (yoki) konvertatsiya qilinadigan kapital vositalari hamda majburiyatlar uchun turli konvertatsiya qilish koeffitsiyentini quyidagi talablarning barchasiga rioya etgan taqdirda qoʻllashi mumkin:\nhar bir turdagi aksiyadorlar va kreditorlar uchun konvertatsiya qilish koeffitsiyentlari alohida belgilanishi hamda har bir aksiyador va kreditor olishi kutilayotgan summaning, bank sanatsiya qilingan sanada mazkur bank tugatilgan taqdirda, har bir aksiyador yoki kreditor olishi mumkin boʻlgan summaga teng yoki undan ortiq boʻlishi;\nzararlarning oʻrni sanatsiya qilinayotgan bank aksiyadorlari tomonidan birinchi navbatda qoplanishi;",
+     "retrieval_score": 0.8515,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-7592967#art-32#p5",
+     "doc_id": "lex:-7592967",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklarni sanatsiya qilish va tugatish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7592967",
+     "article": "32-modda",
+     "part": "5–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-06-23",
+     "text": "32-modda. Kapital vositalarini va (yoki) maqbul majburiyatlarni ulushli vositalarga konvertatsiya qilish koeffitsiyenti\nagar ushbu Qonunda boshqacha qoida nazarda tutilmagan boʻlsa, sanatsiya qilinayotgan bank kreditorlari tomonidan zararlarning oʻrni aksiyadorlardan keyin va bankni majburiy tugatish tartib-taomili doirasida talablarni qanoatlantirish navbatiga muvofiq qoplanishi;\nbir turdagi kreditorlarga nisbatan bir xil tartibda yondashuv qoʻllanilishi.",
+     "retrieval_score": 0.8768,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-7592967#art-43#p8",
+     "doc_id": "lex:-7592967",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklarni sanatsiya qilish va tugatish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7592967",
+     "article": "43-modda",
+     "part": "8–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-06-23",
+     "text": "43-modda. Aksiyadorlar va kreditorlarning zararlarini baholash\nbankni majburiy tugatish jarayoni mazkur bankni sanatsiya qilishni boshlash toʻgʻrisida qaror qabul qilingan sanadan eʼtiboran boshlangan deb hisoblanishi;\nhech qanday sanatsiya qilish vositalari yoki vakolatlari qoʻllanilmaganligi;\ndavlat tomonidan bankka moliyaviy yordam koʻrsatilmaganligi.\nUshbu Qonunning 42-moddasiga muvofiq kompensatsiyalar toʻlash tartibi, shuningdek zararlarni baholashni oʻtkazish qoidalari, baholovchiga qoʻyiladigan talablar hamda baholovchilarni tanlab olish shartlari va tartibi Markaziy bank tomonidan belgilanadi.",
+     "retrieval_score": 0.9031,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2156,
+    "retrieval_ms": 2824,
+    "rerank_ms": 0,
+    "generation_ms": 2424,
+    "total_ms": 7405
+   },
+   "usage": {
+    "input_tokens": 11519,
+    "output_tokens": 498,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Bankni sanatsiya qilishda yuzaga kelgan zararlar birinchi navbatda kimning hisobidan qoplanadi?",
+    "search_queries": [
+     "За чей счет в первую очередь покрываются убытки, возникшие при санации банка?",
+     "Bankni sanatsiya qilishda yuzaga kelgan zararlar birinchi navbatda kimning hisobidan qoplanadi?",
+     "bankni sanatsiya qilish zararlar qoplash",
+     "sanatsiya jarayonida zararlarni qoplash tartibi",
+     "bank aksiyadorlari hisobidan zararlar qoplanishi"
+    ],
+    "doc_hints": [
+     "Banklar va bank faoliyati toʻgʻrisidagi qonun",
+     "Banklarni sanatsiya qilish toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 851,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q009",
+   "status": "ok",
+   "answer": "Soliq kodeksining 36-moddasiga koʻra, tabiiy resurslarni oʻrganish (qidirish), ishlatish, qazib olish va (yoki) ulardan foydalanish uchun qoʻllaniladigan qurilma yoki inshoot (shu jumladan uni montaj qilish) doimiy muassasa deb eʼtirof etiladi, faqat qurilma yoki inshoot bir yuz sakson uch kundan ortiq muddat mobaynida foydalanilayotgan boʻlishi yoki foydalanish uchun tayyor boʻlishi shart [1]. Yaʼni qurilma yoki inshoot 183 kundan ortiq foydalanilsa yoki foydalanishga tayyor boʻlsa, doimiy muassasa hisoblanadi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "36-modda",
+     "part": "1–8-qism",
+     "edition_date": "2019-12-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-36#p1",
+     "quote": "5) tabiiy resurslarni oʻrganish (qidirish), ishlatish, qazib olish va (yoki) ulardan foydalanish uchun qoʻllaniladigan qurilma yoki inshoot (shu jumladan uni montaj qilish), faqat qurilma yoki inshoot bir yuz sakson uch kundan ortiq muddat mobaynida foydalanilayotgan boʻlishi yoki foydalanish uchun tayyor boʻlishi shart;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-36#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "36-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-30",
+     "text": "36-modda. Doimiy muassasa\nUshbu Kodeksning maqsadlarida chet el yuridik shaxsi Oʻzbekiston Respublikasidagi tadbirkorlik faoliyatini toʻliq yoki qisman qaysi doimiy faoliyat joyida amalga oshirayotgan boʻlsa, oʻsha joy chet el yuridik shaxsining Oʻzbekiston Respublikasidagi doimiy muassasasi deb eʼtirof etiladi.\nDoimiy muassasa deganda quyidagilar tushuniladi, chunonchi:\n1) har qanday boshqaruv joyi, filial, boʻlinma, byuro, idora, ofis, xona, agentlik, fabrika, ustaxona, sex, laboratoriya;\n2) tovarni ishlab chiqarish, qayta ishlash, butlash, qadoqlash va oʻrab-joylash amalga oshiriladigan joy;\n3) savdo shoxobchasi sifatida foydalaniladigan har qanday joy, shu jumladan ombor;\n4) kon (shaxta), neft yoki gaz qudugʻi, karyer yoki tabiiy resurslar qazib olinadigan boshqa har qanday joy;\n5) tabiiy resurslarni oʻrganish (qidirish), ishlatish, qazib olish va (yoki) ulardan foydalanish uchun qoʻllaniladigan qurilma yoki inshoot (shu jumladan uni montaj qilish), faqat qurilma yoki inshoot bir yuz sakson uch kundan ortiq muddat mobaynida foydalanilayotgan boʻlishi yoki foydalanish uchun tayyor boʻlishi shart;\n6) quvur, gaz quvuri bilan bogʻliq faoliyat (shu jumladan nazorat yoki kuzatuv) amalga oshiriladigan har qanday joy;",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4674902#art-36#p9",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "36-modda",
+     "part": "9–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-30",
+     "text": "36-modda. Doimiy muassasa\n7) oʻyin avtomatlarini (shu jumladan ularga qoʻshimchalarni), kompyuter tarmoqlari va aloqa kanallarini, attraksionlarni oʻrnatish, sozlash hamda ulardan foydalanish bilan bogʻliq faoliyat amalga oshiriladigan har qanday joy.\nQuyidagilar ham doimiy muassasa deb eʼtirof etiladi:\n1) qurilish maydoni, qurilish, montaj qilish yoki yigʻish obyekti yoxud ular bilan bogʻliq kuzatuv (nazorat qilish) faoliyati, basharti bunday maydon, obyekt yoki faoliyat istalgan ketma-ketlikdagi oʻn ikki oylik davr mobaynida bir yuz sakson uch kundan ortiq muddat mobaynida mavjud boʻlsa yoki davom etsa;\n2) xizmatlar koʻrsatish, shu jumladan ushbu chet el yuridik shaxsi tomonidan oʻz xizmatchilari yoki shu maqsadlar uchun uning tomonidan yollangan boshqa xodimlar orqali bajariladigan maslahat xizmatlari, basharti bunday faoliyat (ayni bir loyiha bilan bogʻliq shaxs yoki chet el yuridik shaxsining bogʻlangan tarafi uchun) istalgan ketma-ketlikdagi oʻn ikki oylik davr mobaynida kamida bir yuz sakson uch kun davom etsa.",
+     "retrieval_score": 0.7468,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2427161#art-5#p1",
+     "doc_id": "lex:2427161",
+     "doc_title": "Oʻzbekiston Respublikasi hukumati va gruziya hukumati oʻrtasida konvensiya ikki tomonlama soliq solishga yoʻl qoʻymaslik hamda daromad (foyda)ga va mulkka soliqlar toʻlashdan boʻyin tovlashlarning oldini olish toʻgʻrisida",
+     "url": "https://lex.uz/docs/2427161",
+     "article": "5-modda",
+     "part": "1–13-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-05-28",
+     "text": "5-modda Doimiy muassasa\n1. Mazkur Konvensiyaning maqsadi uchun “doimiy muassasa” atamasi faoliyatning doimiy joyini anglatadi, bu orqali Ahdlashayotgan Davlat korxonasi tadbirkorlik faoliyatini boshqa Ahdlashayotgan davlatda toʻliq yoki qisman amalga oshiradi.\n2. “Doimiy muassasa” atamasi, jumladan, quyidagilarni oʻz ichiga oladi:\na) boshqaruv organi;\nv) boʻlinma (filial);\nc) ofis (idora);\nd) fabrika;\ne) ustaxona;\nf) shaxta, kon, neft yoki gaz qudugʻi, karyer, qurilma, inshoot yoki tabiiy resurslar olinadigan har qanday boshqa joy.\n3. “Doimiy muassasa” atamasi quyidagilarni ham oʻz ichiga oladi:\na) qurilish maydoni yoki montaj qilinadigan joy yoki yigʻuv obyekti yoki bu ishlarga tayyorgarlik koʻrish joyi, biroq faqat ushbu maydon, obyekt yoki ishlar 6 oydan koʻp ishlab tursa;\nv) xizmatlar koʻrsatish, shuningdek, korxonalar tomonidan shunday maqsadlar uchun yollangan xizmatchilar yoki boshqa xodimlar orqali korxonalar tomonidan koʻrsatiladigan maslahat xizmatlari, lekin faqat bunday turdagi faoliyat (bir yoki bir nechta obyektlar uchun) oʻn ikki oylik davr mobaynida davr yoki davrlarda mamlakat miqyosida olti oydan koʻp muddatdan iborat boʻlsa.\n4. Ushbu moddaning oldingi qoidalariga qaramasdan “doimiy muassasa” atamasi quyidagilarni oʻz ichiga olmaydi:\na) faqat ushbu korxonaga tegishli buyumlarni saqlash, namoyish qilish maqsadlari uchun inshootlardan foydalanish;",
+     "retrieval_score": 0.3741,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4674902#art-36#p13",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "36-modda",
+     "part": "13–18-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-30",
+     "text": "36-modda. Doimiy muassasa\nAgar ushbu moddaning uchinchi qismi 1-bandida koʻrsatilgan qurilish maydonida yoki boshqa obyektda turli vaqt davrlarida, bir yoki bir nechta oʻzaro bogʻliq chet el yuridik shaxsi tomonidan xizmatlar koʻrsatish amalga oshirilsa, bu davrlarning har biri alohida olinganda ushbu moddaning uchinchi qismi 1 va 2-bandlarida koʻrsatilgan muddatdan yoki muddatlardan oshmasa, ushbu xizmatlarga doir faoliyat davrlari mazkur qurilish maydonida yoki boshqa obyektda faoliyat amalga oshirilgan jami vaqt davriga qoʻshiladi.\nFaqat tayyorgarlik yoki yordamchi xususiyatga ega boʻlgan va chet el yuridik shaxsi tadbirkorlik faoliyatining asosiy turlari hisoblanmaydigan quyidagi faoliyat turlari doimiy muassasani tashkil etishga olib kelmaydi:\n1) obyektlardan faqat ushbu yuridik shaxsga tegishli tovarlarni yoki buyumlarni saqlash yoxud namoyish etish maqsadida foydalanish;\n2) oʻziga tegishli tovarlar yoki buyumlar zaxiralarini faqat saqlash yoki namoyish etish maqsadida asrab turish;\n3) oʻziga tegishli tovarlar yoki buyumlar zaxiralarini faqat ularning boshqa shaxs tomonidan qayta ishlanishi maqsadida saqlab turish;\n4) doimiy faoliyat joyini faqat tovarlarni, buyumlarni xarid qilish yoki ushbu chet el yuridik shaxsi uchun axborot yigʻish maqsadida saqlab turish;",
+     "retrieval_score": 0.7284,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4674902#art-36#p49",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "36-modda",
+     "part": "49-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-30",
+     "text": "36-modda. Doimiy muassasa\nAgar doimiy muassasa Oʻzbekiston Respublikasining Yagona soliq toʻlovchilar reyestridan chiqarilganidan keyin chet el yuridik shaxsi oʻn ikki oylik davr ichida ushbu moddaning ikkinchi yoki uchinchi qismlarida koʻrsatilgan faoliyatini tiklasa, u doimiy muassasani tashkil etgan deb eʼtirof etiladi va bunday faoliyat tiklangan sanadan eʼtiboran soliq toʻlovchi sifatida roʻyxatdan oʻtkazilishi lozim.",
+     "retrieval_score": 0.6486,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2016,
+    "retrieval_ms": 2833,
+    "rerank_ms": 0,
+    "generation_ms": 2994,
+    "total_ms": 7844
+   },
+   "usage": {
+    "input_tokens": 14273,
+    "output_tokens": 586,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Chet el kompaniyasining qurilmasi yoki inshooti Oʻzbekistonda qancha muddat foydalanilsa yoki foydalanishga tayyor boʻlsa, doimiy muassasa deb eʼtirof etiladi?",
+    "search_queries": [
+     "Avval chet el kompaniyasining qurilmasi Oʻzbekistonda 183 kundan ortiq ishlatilsa, doimiy muassasa hisoblanadi degan qoida bor edi, hozir-chi — qurilma yoki inshoot qancha muddat foydalanilsa yoki foydalanishga tayyor boʻlsa, doimiy muassasa deb eʼtirof etiladi?",
+     "Chet el kompaniyasining qurilmasi yoki inshooti Oʻzbekistonda qancha muddat foydalanilsa yoki foydalanishga tayyor boʻlsa, doimiy muassasa deb eʼtirof etiladi?",
+     "doimiy muassasa qurilma yoki inshoot foydalanish muddati",
+     "qurilma yoki inshoot doimiy muassasa deb eʼtirof etilishi",
+     "doimiy muassasa foydalanishga tayyor boʻlgan muddat"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 738,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q010",
+   "status": "ok",
+   "answer": "Qonunchilikda ertak aytib berishning \"eng samarali usuli\" bevosita belgilanmagan, biroq davlat standartida bolaga turli hikoyalar, ertaklar aytib berish, birgalikda yorqin kitoblarni tomosha qilish va bolani diqqat bilan tinglashga qiziqtirish tavsiya etiladi [1]. Shuningdek, bolaga kitob oʻqib, turli hikoya va ertaklarni soʻzlab berish, ertakni oʻqib berganda diqqat bilan tinglashini ragʻbatlantirish koʻzda tutilgan [2][3]. 3 yoshdan 5 yoshgacha bolalarda bolaning ertaklarni tinglashini ragʻbatlantirish va kitoblarni ovoz chiqarib oʻqib berish tavsiya qilinadi [4].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.55,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5179335",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori maktabgacha taʼlim va tarbiyaning davlat standartini tasdiqlash toʻgʻrisida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/-5179335",
+     "article": "17-band (3-boʻlim)",
+     "part": null,
+     "edition_date": "2022-04-05",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5179335#band-17s3#p252",
+     "quote": "bolaga turli hikoyalar, ertaklar aytib berish, birgalikda yorqin kitoblarni tomosha qilish va bolani diqqat bilan tinglashga qiziqtirish;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-5179335",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori maktabgacha taʼlim va tarbiyaning davlat standartini tasdiqlash toʻgʻrisida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/-5179335",
+     "article": "17-band (3-boʻlim)",
+     "part": null,
+     "edition_date": "2022-04-05",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5179335#band-17s3#p252",
+     "quote": "bolaga kitob oʻqib, turli hikoya va ertaklarni soʻzlab berish;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:2254493",
+     "doc_title": "Oʻzbekiston Respublikasi xalq taʼlimi vazirining buyrugʻi maktabgacha taʼlimga qoʻyiladigan davlat talablarini tasdiqlash haqida",
+     "doc_type": "buyruq",
+     "url": "https://lex.uz/docs/2254493",
+     "article": "103-band (2-boʻlim)",
+     "part": null,
+     "edition_date": "2013-09-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2254493#band-103s2#p1",
+     "quote": "turli hikoyalar, ertaklar aytib berish, bola bilan rang-barang kitoblarni tomosha qilish, oʻqib berish va uning diqqat bilan tinglashini ragʻbatlantirish;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:2254493",
+     "doc_title": "Oʻzbekiston Respublikasi xalq taʼlimi vazirining buyrugʻi maktabgacha taʼlimga qoʻyiladigan davlat talablarini tasdiqlash haqida",
+     "doc_type": "buyruq",
+     "url": "https://lex.uz/docs/2254493",
+     "article": "236-band (2-boʻlim)",
+     "part": null,
+     "edition_date": "2013-09-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2254493#band-236s2#p1",
+     "quote": "bolaning ertaklarni tinglashini ragʻbatlantirish;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5179335#band-17s3#p252",
+     "doc_id": "lex:-5179335",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori maktabgacha taʼlim va tarbiyaning davlat standartini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5179335",
+     "article": "17-band (3-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-04-05",
+     "text": "oʻrindosh soʻzlarni qoʻllaydi, kattalar ketidan yengil soʻzlarni qaytaradi;\nkattalar nutqiga taqlid qiladi;\nkitoblarni oʻrganadi.\nistak va iltimosni ifoda etadi;\nkattalar nutqini toʻgʻri tushunadi;\nkattalarning oddiy topshiriqlarini bajaradi;\nharakatlarni nutq bilan birga olib boradi;\nsoʻzlardan foydalanadi;\nkitob oʻqib berishlarini soʻrashi mumkin;\nrasmlar boʻyicha kitobni taniydi.\nBOLANI RIVOJLANTIRISH BOʻYICHA FAOLIYAT\nbolani parvarishlash jarayonida (emizish, choʻmiltirish, uxlashga yotqizish) u bilan gaplashish, tana aʼzolari, kiyim, buyumlar nomini aytish;\nbolaga turli hikoyalar, ertaklar aytib berish, birgalikda yorqin kitoblarni tomosha qilish va bolani diqqat bilan tinglashga qiziqtirish;\nbola bilan muloqot mobaynida unga savollar berish va maʼnosi boʻyicha toʻgʻri javobni takrorlashga undash.\nbolaga kitob oʻqib, turli hikoya va ertaklarni soʻzlab berish;\nsayr davomida koʻrgan narsalarni muhokama qilish (kuchuk yuguryapti, bolakay maktabga ketyapti);\nbola bilan birga kitob doʻkonlari va kutubxonalarga borish;\ntelevizor koʻrish va elektron texnika qoʻllashni chegaralash.\nbola bilan muloqot vaziyatlarini yaratish, savollar berish;\nbolaga topshiriqlar berish, masalan, “qiyom uchun likopcha olib kel”, “qizil qalamni ol”, “kichik ayiqchaga qoʻshiq aytib ber”;\nbolaning soʻz boyligini turli didaktik oʻyinlar, kuzatuv va tomoshalar orqali boyitib borish;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:2254493#band-236s2#p1",
+     "doc_id": "lex:2254493",
+     "doc_title": "Oʻzbekiston Respublikasi xalq taʼlimi vazirining buyrugʻi maktabgacha taʼlimga qoʻyiladigan davlat talablarini tasdiqlash haqida",
+     "url": "https://lex.uz/docs/2254493",
+     "article": "236-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2013-09-18",
+     "text": "236. 3 yoshdan 5 yoshgacha boʻlgan bolalar taʼlimiga quyidagicha yondashish lozim:\nnutqni rivojlantiruvchi muhit yaratish;\nbola bilan nutqni rivojlantiruvchi mashqlarni oʻtkazish, didaktik oʻyinlarni oʻynash;\nbolaga turli rasmlar, albomlarni koʻrsatish;\nbola bilan birga tavsiflovchi hikoyalarni tuzish;\nbolaning ertaklarni tinglashini ragʻbatlantirish;\nbolaning boshqa odamlar bilan rolli oʻyinlar oʻynashini ragʻbatlantirish;\nbolaga kitoblarni ovoz chiqarib oʻqib berish;\nbolaga koʻproq qiziqarli va kulgili hikoyalarni aytib berish;\nbolaning sheʼr yodlab olishini ragʻbatlantirish;\nbolaning yaqin atrofidagi narsalar toʻgʻrisida soʻzlab berishini ragʻbatlantirish;\nbolani imkoniyat boʻlganda doimo suhbatlarga jalb qilish;\nbolani koʻrgan va eshitganlariga nisbatan oʻz munosabatini bildirish hamda oʻzi tushungan narsalarni bayon etishga ragʻbatlantirish;\nbolaga hikoyalar, ertaklarning boshi va eng muhim jihatlarini ajratishga yordam berish.",
+     "retrieval_score": 0.9449,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2254493#band-282s2#p1",
+     "doc_id": "lex:2254493",
+     "doc_title": "Oʻzbekiston Respublikasi xalq taʼlimi vazirining buyrugʻi maktabgacha taʼlimga qoʻyiladigan davlat talablarini tasdiqlash haqida",
+     "url": "https://lex.uz/docs/2254493",
+     "article": "282-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2013-09-18",
+     "text": "282. 5 yoshdan 7 yoshgacha boʻlgan bolalar taʼlimiga quyidagicha yondashish lozim:\nmusobaqa, munozara va boshqa tadbirlarni tashkil etish, savollar berish va bolani toʻgʻri javob berish yoki koʻrsatmalarni bajarishga ragʻbatlantirish;\nbolaning yangi soʻzlardan foydalanish va ularning maʼnosini bilish istaklarini ragʻbatlantirish;\nbolaga muntazam ravishda hikoyalar aytib turish, teatrga olib borish, bola bilan taassurotlarini muhokama qilish;\nrasmga qarab mazmunli hikoya tuzish, nutqni rivojlantirish boʻyicha maxsus trening va oʻyinlar oʻtkazishga yordam berish, qofiya va soʻz oʻyinlari, sheʼrlarni ifodali oʻqish, ertaklarni aytib berish, shaxsiy hayotdan hikoya tuzishga koʻmaklashish;\nbolani ijodiy dramatik, rol ijro etiladigan oʻyinlarda ishtirok etishga jalb qilish.",
+     "retrieval_score": 0.9369,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3805404#band-18s2#p246",
+     "doc_id": "lex:3805404",
+     "doc_title": "Oʻzbekiston Respublikasi maktabgacha taʼlim vazirining buyrugʻi Oʻzbekiston Respublikasining ilk va maktabgacha yoshdagi bolalar rivojlanishiga qoʻyiladigan davlat talablarini tasdiqlash haqida",
+     "url": "https://lex.uz/docs/3805404",
+     "article": "18-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-07-04",
+     "text": "ba-ba, ma-ma, bu-bu va boshqa boʻgʻinlarni talaffuz qiladi;\nbolalar qoʻshiqlari, ovutmachoqlar, ertaklar, qisqa va sodda hikoyalarni tinglaydi;\nnomi tilga olingan obyekt tomon qaraydi (oyisi qani…);\nyorqin rasmli kitobchalarni koʻrishga qiziqish bildiradi.\nkundalik hayotda bajariladigan harakatlarni anglatuvchi soʻzlar maʼnosini tushunadi;\noʻrindosh soʻzlarni qoʻllaydi, kattalar ketidan yengil soʻzlarni qaytaradi;\nkattalar nutqiga taqlid qiladi;\nkitoblarni oʻrganadi.\nistak va iltimosni ifoda etadi;\nkattalar nutqini toʻgʻri tushunadi;\nkattalarning oddiy topshiriqlarini bajaradi;\nharakatlarni nutq bilan birga olib boradi;\nsoʻzlardan foydalanadi;\nkitob oʻqib berishlarini soʻrashi mumkin;\nrasmlar boʻyicha kitobni taniydi.\nBOLANI RIVOJLANTIRISh BOʻYIChA FAOLIYAT\nbolani parvarishlash jarayonida (emizish, choʻmiltirish, uxlashga yotqizish) u bilan gaplashish, tana aʼzolari, kiyim, buyumlar nomini aytish;\nbolaga turli hikoyalar, ertaklar aytib berish, birgalikda yorqin kitoblarni tomosha qilish va bolani diqqat bilan tinglashga qiziqtirish;\nbola bilan muloqot mobaynida unga savollar berish va maʼnosi boʻyicha toʻgʻri javobni takrorlashga undash.\nbolaga kitob oʻqib, turli hikoya va ertaklarni soʻzlab berish;\nsayr davomida koʻrgan narsalarni muhokama qilish (kuchuk yuguryapti, bolakay maktabga ketyapti);\nbola bilan birga kitob doʻkonlari va kutubxonalarga borish;",
+     "retrieval_score": 0.9069,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:2254493#band-103s2#p1",
+     "doc_id": "lex:2254493",
+     "doc_title": "Oʻzbekiston Respublikasi xalq taʼlimi vazirining buyrugʻi maktabgacha taʼlimga qoʻyiladigan davlat talablarini tasdiqlash haqida",
+     "url": "https://lex.uz/docs/2254493",
+     "article": "103-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2013-09-18",
+     "text": "103. 6 — 12 oylik bola bilan munosabatlarda quyidagilarga amal qilish lozim:\nbola bilan koʻproq soʻzlashish, unga sheʼrlar, latifalar aytib berish;\nparvarishlash jarayonida (ovqatlantirish, choʻmiltirish, uxlatish) u bilan gaplashish, tana aʼzolari va kiyimlarining nomini aytib turish;\nturli hikoyalar, ertaklar aytib berish, bola bilan rang-barang kitoblarni tomosha qilish, oʻqib berish va uning diqqat bilan tinglashini ragʻbatlantirish;\nhikoyalardagi muhim va ahamiyatli jihatlarga bolaning eʼtiborini qaratish;\nbola bilan muomalada boʻlganda unga oddiy savollar berish va maʼnosi boʻyicha toʻgʻri keladigan javob qaytarishga undash;\nkishi atrofida harakatlanayotganda yoki oldida oʻynayotganda uning ketidan kuzatish, “yoʻq” deyilganda bola oʻyinini toʻxtatishi lozimligini oʻrgatish;\nbolaga javoban bidirlash, uning ovozlariga taqlid qilish, uni uzoq vaqt bidirlashini ragʻbatlantirish va toʻxtatmaslik;\nbola aytayotgan barcha narsalarni qaytarish, u chiqarayotgan har bir tovushni rivojlantirish, unga savol berish, soʻng unga toʻgʻri javobni qaytarib aytish;\nbolaning talablariga ijobiy javob berish.",
+     "retrieval_score": 0.9152,
+     "rerank_score": 0.4,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1695,
+    "retrieval_ms": 114,
+    "rerank_ms": 0,
+    "generation_ms": 3747,
+    "total_ms": 5559
+   },
+   "usage": {
+    "input_tokens": 15816,
+    "output_tokens": 654,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Bolalarga ertak aytib berishning eng samarali usuli qanday?",
+    "search_queries": [
+     "Bolalarga ertak aytib berishning eng samarali usuli qanday?",
+     "bolalarga ertak aytib berish usullari",
+     "maktabgacha taʼlim ertak aytib berish metodikasi",
+     "bolalar badiiy adabiyotini oʻqib berish metodikasi"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 453,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

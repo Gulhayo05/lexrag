@@ -1,0 +1,1556 @@
+{
+ "run_id": "full100-v1",
+ "batch_id": "full100-v1-b10",
+ "batch_index": 10,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p5",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:25:54+05:00",
+  "completed_at": "2026-11-06T18:26:03+05:00",
+  "total_ms": 8798
+ },
+ "summary": {
+  "total": 10,
+  "ok": 8,
+  "no_answer": 2,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q091",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 105-moddasiga koʻra, sud (sudya) daʼvoni taʼminlash choralarini ishda ishtirok etuvchi shaxslarning arizasi yoki oʻz tashabbusi boʻyicha koʻrishi mumkin, bunda asosiy shart — daʼvoni taʼminlash choralarini koʻrmaslik sud hujjati ijrosini qiyinlashtirsa yoki uni bajarib boʻlmaydigan qilib qoʻysa, daʼvoni taʼminlashga yoʻl qoʻyiladi [1]. Daʼvoni taʼminlashga sud protsessining har qanday bosqichida yoʻl qoʻyiladi [1]. Iqtisodiy protsessual kodeksining 93-moddasida ham shunga mos qoida belgilangan: daʼvoni taʼminlashga, agar shunday choralarni koʻrmaslik sud hujjatining ijrosini qiyinlashtirishi yoxud bajarib boʻlmaydigan qilib qoʻyishi mumkin boʻlsa, yoʻl qoʻyiladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "105-modda",
+     "part": "1–6-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-105#p1",
+     "quote": "Agar daʼvoni taʼminlash choralarini koʻrmaslik sud hujjati ijrosini qiyinlashtirsa yoki uni bajarib boʻlmaydigan qilib qoʻysa, daʼvoni taʼminlashga yoʻl qoʻyiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "93-modda",
+     "part": "1–6-qism",
+     "edition_date": "2022-05-17",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-93#p1",
+     "quote": "Daʼvoni taʼminlashga, agar shunday choralarni koʻrmaslik sud hujjatining ijrosini qiyinlashtirishi yoxud bajarib boʻlmaydigan qilib qoʻyishi mumkin boʻlsa, iqtisodiy sud ishlarini yuritishning har qanday bosqichida yoʻl qoʻyiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-105#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "105-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "105-modda. Daʼvoni taʼminlash asoslari\nSud (sudya) daʼvoni taʼminlash choralarini ishda ishtirok etuvchi shaxslarning arizasi yoki oʻz tashabbusi boʻyicha koʻrishi mumkin. Agar daʼvoni taʼminlash choralarini koʻrmaslik sud hujjati ijrosini qiyinlashtirsa yoki uni bajarib boʻlmaydigan qilib qoʻysa, daʼvoni taʼminlashga yoʻl qoʻyiladi.\nDaʼvoni taʼminlashga sud protsessining har qanday bosqichida yoʻl qoʻyiladi.\nDavlat foydasiga mulkiy undiruvlar bilan bogʻliq ishlarni koʻrib chiqayotganda sud (sudya) daʼvoni taʼminlash choralarini koʻrishi shart.\nDaʼvoni taʼminlash toʻgʻrisidagi arizada daʼvoni taʼminlash choralarini koʻrish asoslari va zaruriyati koʻrsatilgan boʻlishi lozim.\nHakamlik sudida koʻrib chiqilayotgan daʼvoni taʼminlash choralari hakamlik muhokamasi tarafining tanloviga koʻra, hakamlik sudi joylashgan yerdagi yoxud javobgar turgan joydagi yoki yashaydigan joydagi yoinki javobgarning mol-mulki turgan joydagi fuqarolik ishlari boʻyicha sud tomonidan koʻrilishi mumkin. Daʼvoni taʼminlash toʻgʻrisidagi arizaga daʼvoning hakamlik sudiga taqdim etilganligini isbotlovchi dalillar ilova qilinadi.\nHakamlik sudida koʻrib chiqilayotgan daʼvoni taʼminlash toʻgʻrisidagi arizani fuqarolik ishlari boʻyicha sud tomonidan koʻrib chiqish va daʼvoni taʼminlash haqida ajrim chiqarish ushbu bobda nazarda tutilgan tartibda amalga oshiriladi.",
+     "retrieval_score": 0.9989,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3523891#art-93#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "93-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-05-17",
+     "text": "93-modda. Daʼvoni taʼminlash asoslari\nIshda ishtirok etuvchi shaxsning arizasi daʼvoni taʼminlash choralarini koʻrish uchun asos boʻladi.\nDaʼvoni taʼminlashga, agar shunday choralarni koʻrmaslik sud hujjatining ijrosini qiyinlashtirishi yoxud bajarib boʻlmaydigan qilib qoʻyishi mumkin boʻlsa, iqtisodiy sud ishlarini yuritishning har qanday bosqichida yoʻl qoʻyiladi.\nDavlat foydasiga mulkiy undirish bilan bogʻliq ishlar boʻyicha sud daʼvogarning arizasiga koʻra daʼvoni taʼminlash choralarini koʻrishi shart.\nDavlat organining, fuqarolar oʻzini oʻzi boshqarish organining qonunga zid hujjati qabul qilinganligi yoxud ularning mansabdor shaxslari tomonidan qonunga zid harakatlar (harakatsizlik) sodir etilganligi natijasida tadbirkorlik subyektiga yetkazilgan zararning oʻrnini qoplash toʻgʻrisidagi daʼvoni koʻrishda sud daʼvogarning arizasi boʻyicha daʼvoni taʼminlash choralarini koʻrishi shart.\nHakamlik sudida koʻrib chiqilayotgan ish boʻyicha daʼvoni taʼminlash choralari hakamlik muhokamasi tarafining arizasiga koʻra iqtisodiy sud tomonidan koʻrilishi mumkin.\nArbitraj sudida koʻrilayotgan daʼvoni taʼminlash choralari arbitraj muhokamasi tarafining arizasiga koʻra iqtisodiy sud tomonidan koʻrilishi mumkin.",
+     "retrieval_score": 0.9624,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3517337#art-107#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "107-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "107-modda. Daʼvoni taʼminlash toʻgʻrisidagi arizani koʻrib chiqish\nDaʼvoni taʼminlash toʻgʻrisidagi ariza sudya (sud) tomonidan ariza tushgan kuniyoq javobgarni va ishda ishtirok etuvchi boshqa shaxslarni xabardor qilmagan holda hal qilinadi.\nDaʼvoni taʼminlash toʻgʻrisidagi arizani koʻrib chiqish natijalari boʻyicha ajrim chiqariladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-95#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "95-modda",
+     "part": "1–14-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "95-modda. Daʼvoni taʼminlash toʻgʻrisidagi ariza\nDaʼvoni taʼminlash toʻgʻrisidagi ariza sudga daʼvo arizasi bilan bir vaqtda yoki ishni yuritish jarayonida berilishi mumkin.\nDaʼvoni taʼminlash toʻgʻrisidagi arizada quyidagilar koʻrsatilishi kerak:\n1) ariza berilayotgan sudning nomi;\n2) taraflarning nomlari (familiyasi, ismi, otasining ismi), joylashgan yeri (pochta manzili) va yashash joyi;\n3) nizo predmeti;\n4) daʼvoni taʼminlash chorasini koʻrish zaruriyatining asosi;\n5) daʼvogar qabul qilishni soʻrayotgan daʼvoni taʼminlash chorasining turi;\n6) ilova qilinayotgan hujjatlarning roʻyxati.\nDaʼvoni taʼminlash toʻgʻrisidagi arizada boshqa maʼlumotlar ham koʻrsatilishi mumkin.\nDaʼvoni taʼminlash toʻgʻrisidagi ariza daʼvogar yoki uning vakili tomonidan imzolanadi.\nVakil tomonidan imzolangan arizaga ishonchnoma yoki uning arizani imzolashga boʻlgan vakolatini tasdiqlovchi boshqa hujjat ilova qilinadi.\nDaʼvoni taʼminlash toʻgʻrisidagi iltimosnoma daʼvo arizasida bayon etilishi mumkin.\nAgar daʼvoni taʼminlash toʻgʻrisidagi iltimosnoma daʼvo arizasida bayon etilsa, mazkur iltimosnomada ushbu modda ikkinchi qismining 4 va 5-bandlarida nazarda tutilgan maʼlumotlar koʻrsatilgan boʻlishi lozim.\nHakamlik sudida koʻrilayotgan daʼvoni taʼminlash toʻgʻrisidagi arizaga hakamlik sudiga daʼvo taqdim etilganligining dalillari ilova qilinadi.",
+     "retrieval_score": 0.9057,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:3523891#art-96#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "96-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "96-modda. Daʼvoni taʼminlash toʻgʻrisidagi arizani koʻrib chiqish\nDaʼvo arizasi bilan birga berilgan daʼvoni taʼminlash toʻgʻrisidagi ariza daʼvo arizasini ish yuritishga qabul qilish va ish qoʻzgʻatish toʻgʻrisidagi masalani hal qilish bilan bir vaqtda, ishda ishtirok etuvchi shaxslarni xabardor qilmasdan sud tomonidan koʻrib chiqiladi.\nDaʼvoni taʼminlash toʻgʻrisidagi ariza sud majlisida berilgan taqdirda, u shu majlisda koʻrib chiqilishi lozim.\nAgar daʼvoni taʼminlash toʻgʻrisidagi ariza ishni yuritish jarayonida berilgan boʻlsa, u kelib tushganidan keyingi kundan kechiktirmay ishda ishtirok etuvchi shaxslarni xabardor qilmasdan koʻrib chiqiladi.\nDaʼvoni taʼminlash toʻgʻrisidagi arizani koʻrish natijalari boʻyicha ajrim chiqarilib, uning koʻchirma nusxasi ishda ishtirok etuvchi shaxslarga yuboriladi.\nDaʼvoni taʼminlash haqidagi yoki daʼvoni taʼminlashni rad etish toʻgʻrisidagi ajrim ustidan shikoyat qilinishi (protest keltirilishi) mumkin. Shikoyat berilishi (protest keltirilishi) ajrimning ijrosini toʻxtatib qoʻymaydi.\nHakamlik sudida koʻrilayotgan daʼvoni taʼminlash toʻgʻrisidagi ariza kelib tushganidan keyingi kundan kechiktirmay, ishda ishtirok etuvchi shaxslarni xabardor qilmagan holda koʻrib chiqiladi.",
+     "retrieval_score": 0.9686,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1737,
+    "retrieval_ms": 1214,
+    "rerank_ms": 0,
+    "generation_ms": 3487,
+    "total_ms": 6440
+   },
+   "usage": {
+    "input_tokens": 11646,
+    "output_tokens": 725,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud qanday hollarda daʼvoni taʼminlash chorasini qoʻllashi mumkin, yaʼni buning uchun qanday shartlar boʻlishi kerak?",
+    "search_queries": [
+     "Sud qanday hollarda daʼvoni taʼminlash chorasini qoʻllashi mumkin, yaʼni buning uchun qanday shart boʻlishi kerak?",
+     "Sud qanday hollarda daʼvoni taʼminlash chorasini qoʻllashi mumkin, yaʼni buning uchun qanday shartlar boʻlishi kerak?",
+     "daʼvoni taʼminlash choralari qoʻllanishi shartlari",
+     "daʼvoni taʼminlash asoslari sud",
+     "daʼvoni taʼminlash toʻgʻrisidagi ariza koʻrib chiqish"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 882,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q092",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 419¹⁰-moddasiga koʻra, taftish instansiyasi sudining sudyasi taftish tartibidagi shikoyatni (protestni) qaytaradi, agar u imzolanmagan boʻlsa yoki uni imzolash huquqiga ega boʻlmagan yoxud mansab mavqeyi yoki familiyasi va ismi-sharifining bosh harflari koʻrsatilmagan shaxs tomonidan imzolangan boʻlsa [1]. Iqtisodiy protsessual kodeksining 317-moddasida ham xuddi shunday asos nazarda tutilgan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "419¹⁰-modda",
+     "part": "1–5-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-419.10#p1",
+     "quote": "Taftish instansiyasi sudining sudyasi taftish tartibidagi shikoyatni (protestni) quyidagi hollarda qaytaradi, agar: 1) taftish tartibidagi shikoyat (protest) imzolanmagan boʻlsa yoki uni imzolash huquqiga ega boʻlmagan shaxs tomonidan yoxud mansab mavqeyi yoki familiyasi va ismi-sharifining bosh harflari koʻrsatilmagan shaxs tomonidan imzolangan boʻlsa;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "317-modda",
+     "part": "1–4-qism",
+     "edition_date": "2024-09-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-317#p1",
+     "quote": "Taftish instansiyasi sudining sudyasi taftish tartibidagi shikoyatni (protestni) quyidagi hollarda qaytaradi, agar: 1) shikoyat (protest) imzolanmagan boʻlsa yoxud uni imzolash huquqiga ega boʻlmagan shaxs tomonidan yoki mansab mavqeyi yoki familiyasi, ismi-sharifining bosh harflari koʻrsatilmagan shaxs tomonidan imzolangan boʻlsa;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-419.10#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "419¹⁰-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "41910-modda. Taftish tartibidagi shikoyatni (protestni) qaytarish\nTaftish instansiyasi sudining sudyasi taftish tartibidagi shikoyatni (protestni) quyidagi hollarda qaytaradi, agar:\n1) taftish tartibidagi shikoyat (protest) imzolanmagan boʻlsa yoki uni imzolash huquqiga ega boʻlmagan shaxs tomonidan yoxud mansab mavqeyi yoki familiyasi va ismi-sharifining bosh harflari koʻrsatilmagan shaxs tomonidan imzolangan boʻlsa;\n2) taftish tartibidagi shikoyatning (protestning) mazmuniga nisbatan ushbu Kodeksning 4197-moddasida belgilangan talablarga rioya etilmagan yoki shikoyatga (protestga) ushbu Kodeks 4198-moddasining ikkinchi, uchinchi, beshinchi va oltinchi qismlarida koʻrsatilgan hujjatlar ilova qilinmagan boʻlsa;\n3) taftish tartibidagi shikoyatga davlat boji va pochta xarajatlari belgilangan tartibda va miqdorda toʻlanganligini tasdiqlovchi hujjatlar ilova qilinmagan boʻlsa, qonunda davlat bojini toʻlash muddatini kechiktirish, boʻlib-boʻlib toʻlash yoki uning miqdorini kamaytirish imkoniyati nazarda tutilgan hollarda esa, bu haqda iltimosnoma mavjud boʻlmasa yoxud iltimosnoma rad etilgan boʻlsa;\n4) taftish tartibidagi shikoyat (protest) belgilangan muddat oʻtganidan keyin berilgan boʻlsa va oʻtkazib yuborilgan muddatni tiklash toʻgʻrisida iltimosnoma mavjud boʻlmasa;",
+     "retrieval_score": 0.8708,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-419.19#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "419¹⁹-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "41919-modda. Taftish tartibidagi shikoyatni (protestni) koʻrmasdan qoldirish\nAgar shikoyat (protest) ish yuritishga qabul qilinganidan keyin shikoyatning (protestning) imzolanmaganligi yoki uni imzolash huquqiga ega boʻlmagan yoxud mansab mavqeyi koʻrsatilmagan shaxs tomonidan imzolanganligi aniqlansa, taftish instansiyasi sudi taftish tartibidagi shikoyatni (protestni) koʻrmasdan qoldiradi.\nTaftish tartibidagi shikoyatni (protestni) koʻrmasdan qoldirish toʻgʻrisida sud ajrim chiqaradi.\nTaftish tartibidagi shikoyatni (protestni) koʻrmasdan qoldirish uchun asos boʻlib xizmat qilgan holat bartaraf etilganidan keyin shikoyat (protest) ushbu Kodeksda belgilangan tartibda sudga yangidan berilishi mumkin.",
+     "retrieval_score": 0.8669,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-317#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "317-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-09-30",
+     "text": "317-modda. Taftish tartibidagi shikoyatni (protestni) qaytarish\nTaftish instansiyasi sudining sudyasi taftish tartibidagi shikoyatni (protestni) quyidagi hollarda qaytaradi, agar:\n1) shikoyat (protest) imzolanmagan boʻlsa yoxud uni imzolash huquqiga ega boʻlmagan shaxs tomonidan yoki mansab mavqeyi yoki familiyasi, ismi-sharifining bosh harflari koʻrsatilmagan shaxs tomonidan imzolangan boʻlsa;\n2) shikoyatning (protestning) mazmuniga nisbatan ushbu Kodeksning 11-moddasida belgilangan talablarga rioya etilmagan yoki taftish tartibidagi shikoyatga (protestga) ushbu Kodeks 313-moddasining uchinchi va toʻrtinchi qismlarida koʻrsatilgan hujjatlar yoxud prokuror ishtirokisiz koʻrilgan ish boʻyicha protestga ishda ishtirok etuvchi shaxslar, ishda ishtirok etishga jalb qilinmagan, ammo huquqlari va majburiyatlari toʻgʻrisida sud hal qiluv qarori qabul qilgan shaxslar murojaatining koʻchirma nusxasi ilova qilinmagan boʻlsa, bundan qonunda prokurorning ishtirok etishi nazarda tutilgan boʻlib, biroq u sud muhokamasining vaqti va joyi toʻgʻrisida tegishli tarzda xabardor qilinmasdan koʻrilgan ishlar mustasno;\n3) shikoyatga (protestga) uning koʻchirma nusxalari ishda ishtirok etuvchi shaxslarga yuborilganligini tasdiqlovchi dalillar ilova qilinmagan boʻlsa;",
+     "retrieval_score": 0.8498,
+     "rerank_score": 0.85,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-324.1#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "324¹-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "3241-modda. Taftish tartibidagi shikoyatni (protestni) koʻrmasdan qoldirish\nAgar taftish tartibidagi shikoyat (protest) ish yuritishga qabul qilinganidan soʻng uning imzolanmaganligi yoxud uni imzolash huquqiga ega boʻlmagan, yoki mansab mavqeyi yoki familiyasi va ismi-sharifining bosh harflari koʻrsatilmagan shaxs tomonidan imzolanganligi aniqlansa, ishni taftish tartibida koʻrayotgan sud shikoyatni (protestni) koʻrmasdan qoldiradi.\nTaftish tartibidagi shikoyatni (protestni) koʻrmasdan qoldirish toʻgʻrisida sud ajrim chiqaradi.\nTaftish tartibidagi shikoyatni (protestni) koʻrmasdan qoldirish uchun asos boʻlgan holatlar bartaraf etilganidan keyin shikoyat (protest) ushbu Kodeksda belgilangan tartibda sudga yangidan berilishi mumkin.",
+     "retrieval_score": 0.8504,
+     "rerank_score": 0.8,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-419.11#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "419¹¹-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "41911-modda. Taftish tartibidagi shikoyatni (protestni) ish yuritishga qabul qilishni rad etish\nTaftish instansiyasi sudining sudyasi taftish tartibidagi shikoyatni (protestni) ish yuritishga qabul qilishni quyidagi hollarda rad etadi, agar:\n1) shikoyat (protest) sud hujjati ustidan shikoyat qilish (protest keltirish) huquqiga ega boʻlmagan shaxs tomonidan berilgan boʻlsa;\n2) shikoyat (protest) qonunga muvofiq taftish tartibida shikoyat qilinishi (protest keltirilishi) mumkin boʻlmagan sud hujjati ustidan berilgan boʻlsa;\n3) shikoyat (protest) Qoraqalpogʻiston Respublikasi sudiga, viloyatlar va Toshkent shahar sudlariga, Oʻzbekiston Respublikasi Harbiy sudiga apellyatsiya yoki kassatsiya tartibida koʻrilmagan sud hujjati ustidan berilgan boʻlsa;\n4) shikoyat (protest) Oʻzbekiston Respublikasi Oliy sudining Fuqarolik ishlari boʻyicha sudlov hayʼatiga Qoraqalpogʻiston Respublikasi sudida, viloyatlar va Toshkent shahar sudlarida, Oʻzbekiston Respublikasi Harbiy sudida taftish tartibida koʻrilmagan sud hujjati ustidan berilgan boʻlsa;\n5) shikoyat (protest) ishni taftish tartibida koʻrayotgan sud tomonidan ilgari taftish tartibida koʻrilgan sud hujjati ustidan berilgan boʻlsa;\n6) shikoyatni (protestni) berish muddati oʻtkazib yuborilgan va oʻtkazilgan muddatni tiklash rad etilgan boʻlsa;",
+     "retrieval_score": 0.7498,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1845,
+    "retrieval_ms": 1453,
+    "rerank_ms": 0,
+    "generation_ms": 3360,
+    "total_ms": 6660
+   },
+   "usage": {
+    "input_tokens": 14633,
+    "output_tokens": 795,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar apellyatsiya tartibidagi shikoyat imzolanmagan boʻlsa yoki uni imzolash huquqiga ega boʻlmagan shaxs imzolagan boʻlsa, sudya ushbu shikoyat boʻyicha qanday chora koʻradi?",
+    "search_queries": [
+     "Agar taftish tartibidagi shikoyat imzolanmagan boʻlsa yoki uni imzolash huquqiga ega boʻlmagan shaxs imzolagan boʻlsa, sudya bu shikoyatni nima qiladi?",
+     "Agar apellyatsiya tartibidagi shikoyat imzolanmagan boʻlsa yoki uni imzolash huquqiga ega boʻlmagan shaxs imzolagan boʻlsa, sudya ushbu shikoyat boʻyicha qanday chora koʻradi?",
+     "apellyatsiya shikoyati imzolanmagan boʻlsa ish yuritishni qaytarish",
+     "shikoyatni imzolash huquqiga ega boʻlmagan shaxs imzolagan boʻlsa",
+     "apellyatsiya shikoyatini ish yuritishga qabul qilishni rad etish"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi",
+     "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 718,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q093",
+   "status": "ok",
+   "answer": "Mehnat kodeksining 139-moddasiga koʻra, xodimni vaqtincha boshqa ishga oʻtkazish muddati quyidagilar vositasida belgilanishi mumkin: vaqtincha oʻtkazishning umumiy davomiyligini kunlar, oylar, yillar bilan koʻrsatish; oʻtkazish amalga oshirilgan ishni bajarish boshlanadigan kalendar sanani va oʻtkazish muddati tugaydigan kalendar sanani koʻrsatish; boshqa ishga oʻtish muddati qaysi hodisaning yuz berishi bilan tugaydigan boʻlsa, oʻsha hodisani aniqlash (vaqtincha yoʻq boʻlgan xodimning ishga chiqishi va boshqalar) [1]. Shuningdek, vaqtincha boshqa ishga oʻtkazish oʻtkazishning muddati koʻrsatilgan holda buyruq bilan rasmiylashtiriladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "139-modda",
+     "part": "1–8-qism",
+     "edition_date": "2022-10-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-139#p1",
+     "quote": "Xodimni vaqtincha boshqa ishga oʻtkazish muddati quyidagilar vositasida belgilanishi mumkin: vaqtincha oʻtkazishning umumiy davomiyligini kunlar, oylar, yillar bilan koʻrsatish; qaysi ishga oʻtkazish amalga oshirilgan boʻlsa, oʻsha ishni bajarish boshlanadigan kalendar sanani va oʻtkazish muddati tugaydigan kalendar sanani koʻrsatish; boshqa ishga oʻtish muddati qaysi hodisaning yuz berishi bilan tugaydigan boʻlsa, oʻsha hodisani aniqlash (vaqtincha yoʻq boʻlgan xodimning ishga chiqishi va boshqalar)",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "149-modda",
+     "part": "3–7-qism",
+     "edition_date": "2022-10-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-149#p3",
+     "quote": "Xodimni vaqtincha boshqa ishga oʻtkazish oʻtkazishning muddati koʻrsatilgan holda buyruq bilan rasmiylashtiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-139#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "139-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "139-modda. Xodimni boshqa ishga oʻtkazish muddati\nXodim boshqa ishga oʻtkazilayotganda u oʻzi bajarish uchun oʻtkazilgan ishga kirishishi kerak boʻlgan sana belgilanishi kerak.\nXodimni boshqa ishga oʻtkazish qaysi muddatga amalga oshirilayotganligiga qarab boshqa ishga oʻtkazish turlari doimiy va vaqtinchaga ajratiladi.\nAgar xodimni vaqtincha boshqa ishga oʻtkazish yuz bergan boʻlsa, bunday oʻtkazish muddati belgilanishi kerak.\nXodimni vaqtincha boshqa ishga oʻtkazish muddati quyidagilar vositasida belgilanishi mumkin:\nvaqtincha oʻtkazishning umumiy davomiyligini kunlar, oylar, yillar bilan koʻrsatish;\nqaysi ishga oʻtkazish amalga oshirilgan boʻlsa, oʻsha ishni bajarish boshlanadigan kalendar sanani va oʻtkazish muddati tugaydigan kalendar sanani koʻrsatish;\nboshqa ishga oʻtish muddati qaysi hodisaning yuz berishi bilan tugaydigan boʻlsa, oʻsha hodisani aniqlash (vaqtincha yoʻq boʻlgan xodimning ishga chiqishi va boshqalar).\nXodimni vaqtincha boshqa ishga oʻtkazish muddati tugagach, ish beruvchi xodimga mehnat shartnomasida shart qilib koʻrsatilgan avvalgi ishini berishi shart.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6257288#art-141#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "141-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "141-modda. Mehnat shartnomasi taraflarining kelishuviga koʻra xodimni vaqtincha boshqa ishga oʻtkazish\nMehnat shartnomasi taraflarining kelishuviga koʻra xodim boshqa ishga bir yil muddatgacha vaqtincha oʻtkazilishi mumkin, bunday oʻtkazish qonunga muvofiq oʻzining ish joyi saqlanib qolinadigan vaqtincha yoʻq boʻlgan xodimning oʻrnini egallash uchun amalga oshirilayotgan taqdirda ushbu xodim ishga chiqquniga qadar oʻtkazilishi mumkin. Agar xodimni boshqa ishga oʻtkazish muddati tugagach unga avvalgi ishi berilmagan, xodim uning berilishini talab qilmagan va ishlashni davom ettirayotgan boʻlsa, oʻtkazishning vaqtinchalik xususiyati toʻgʻrisidagi kelishuvning sharti oʻz kuchini yoʻqotadi hamda oʻtkazish doimiy deb hisoblanadi.",
+     "retrieval_score": 0.9881,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6257288#art-149#p3",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "149-modda",
+     "part": "3–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "149-modda. Mehnat shartnomasini oʻzgartirishni rasmiylashtirish\nXodimni doimiy boshqa ishga oʻtkazish, mehnat shartnomasida nazarda tutilgan mehnat shartlarini oʻzgartirish, shuningdek mehnat shartnomasida shart qilib koʻrsatilgan ish joyini oʻzgartirish toʻgʻrisidagi buyruqlar mehnat shartnomasi taraflari tomonidan qoʻshimcha kelishuv tuzish orqali ushbu shartnomaga kiritilgan oʻzgartishlarning mazmuniga aynan muvofiq ravishda chiqariladi va xodimga imzo qoʻydirib eʼlon qilinadi.\nXodimni vaqtincha boshqa ishga oʻtkazish oʻtkazishning muddati koʻrsatilgan holda buyruq bilan rasmiylashtiriladi.\nMehnat shartnomasi taraflarining kelishuviga koʻra va xodimning tashabbusi bilan xodimni vaqtincha boshqa ishga oʻtkazish toʻgʻrisida buyruq chiqarish uchun xodimning yozma arizasi asos boʻladi.\nXodim sogʻligʻining holatiga koʻra xodimni vaqtincha boshqa ishga oʻtkazish, homilador ayolni, shuningdek ikki yoshga toʻlmagan bolasini parvarishlayotgan ota-onadan birini (vasiyni) ularning avvalgi ishni bajarish imkoniyati boʻlmagan taqdirda vaqtincha boshqa ishga oʻtkazish haqida buyruq chiqarish uchun ularning arizasi va tibbiy xulosa asos boʻladi.\nIsh beruvchining tashabbusiga koʻra xodimni vaqtincha boshqa ishga oʻtkazish toʻgʻrisida buyruq chiqarish uchun ishlab chiqarish zaruriyati yoki bekor turib qolish faktlarining mavjudligi asos boʻladi.",
+     "retrieval_score": 0.8791,
+     "rerank_score": 0.4,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6257288#art-145#p3",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "145-modda",
+     "part": "3–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "145-modda. Ish beruvchining tashabbusiga koʻra xodimni vaqtincha boshqa ishga oʻtkazish\nIshni iqtisodiy, texnologik, tashkiliy sabablarga, boshqa ishlab chiqarishga doir yoki tabiiy xususiyatga ega boʻlgan sabablarga koʻra vaqtincha toʻxtatib turish bekor turib qolishdir.\nIshlab chiqarish zaruriyati yoki bekor turib qolish munosabati bilan xodim vaqtincha boshqa ishga oʻtkazilgan davrda xodimning mehnatiga haq toʻlash bajarayotgan ishiga qarab, biroq avvalgi oʻrtacha oylik ish haqidan kam boʻlmagan miqdorda amalga oshiriladi.\nIshlab chiqarish zaruriyati yoki bekor turib qolish munosabati bilan xodimni boshqa ishga oʻtkazish davrlari bir kalendar yil davomida jami oltmish kalendar kundan oshishi mumkin emas.\nIshlab chiqarish zaruriyati yoki bekor turib qolish munosabati bilan xodimni boshqa ishga oʻtkazishning oxirgi muddatlari, mehnatga haq toʻlashning aniq miqdorlari, shuningdek ishlab chiqarish zaruriyatining alohida hollari jamoa shartnomasida belgilanadi, agar u tuzilmagan boʻlsa, ish beruvchi tomonidan kasaba uyushmasi qoʻmitasi bilan kelishuvga koʻra aniqlanadi.",
+     "retrieval_score": 0.922,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6257288#art-114#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "114-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "114-modda. Mehnat shartnomasining muddatini belgilash usullari\nMuddatli mehnat shartnomasida uning muddati quyidagilar orqali belgilanishi mumkin:\nmehnat shartnomasi muddatining umumiy davomiyligini kunlarda, oylarda, yillarda koʻrsatish;\nmehnat shartnomasi boʻyicha ish boshlanadigan kalendar sanani va mehnat shartnomasining muddati tugaydigan kalendar sanani koʻrsatish;\nyuz berishi bilan mehnat shartnomasining muddati tugaydigan hodisani aniqlash (obyektni foydalanishga topshirish, oʻrniga ishlab turish vaqtiga boshqa xodim bilan muddatli mehnat shartnomasi tuzilgan vaqtincha yoʻq boʻlgan xodimning ishga chiqishi va boshqalar).",
+     "retrieval_score": 0.8899,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1630,
+    "retrieval_ms": 810,
+    "rerank_ms": 0,
+    "generation_ms": 3501,
+    "total_ms": 5943
+   },
+   "usage": {
+    "input_tokens": 13802,
+    "output_tokens": 751,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Xodimni vaqtincha boshqa ishga oʻtkazishda bu muddat qanday usullar bilan belgilanishi mumkin?",
+    "search_queries": [
+     "Xodimni vaqtincha boshqa ishga oʻtkazishda bu muddat qanday usullar bilan belgilanishi mumkin?",
+     "xodimni vaqtincha boshqa ishga oʻtkazish muddati",
+     "vaqtincha boshqa ishga oʻtkazish muddatini belgilash",
+     "mehnat shartnomasi boʻyicha vaqtincha boshqa ishga oʻtkazish"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 539,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q094",
+   "status": "ok",
+   "answer": "Havo kodeksining 106-moddasiga koʻra, qabul qiluvchi xabardor qilingan kundan boshlab 30 kun ichida yuk olib ketilmagan va bu yukka nisbatan yuk joʻnatuvchining biror-bir farmoyishi olinmagan boʻlsa, bunday yuk talab qilib olinmagan deb hisoblanadi [1]. Giyohvandlik vositalari, psixotrop moddalar, ularning analoglari va prekursorlarga nisbatan ham xuddi shunday oʻttiz kunlik muddat belgilangan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "106-modda",
+     "part": "1–4-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-55594#art-106#p1",
+     "quote": "Qabul qiluvchi xabardor qilingan kundan boshlab 30 kun ichida yuk olib ketilmagan va bu yukka nisbatan yuk joʻnatuvchining biror-bir farmoyishi olinmagan boʻlsa, bunday yuk talab qilib olinmagan deb hisoblanadi va Oʻzbekiston Respublikasi qonunchiligida belgilangan tartibda realizatsiya qilinadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-4735441",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori giyohvandlik vositalari, psixotrop moddalar, ularning analoglari va prekursorlarning muomalasi sohasidagi nizomlarni tasdiqlash toʻgʻrisida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/-4735441",
+     "article": "31-band (2-boʻlim)",
+     "part": null,
+     "edition_date": "2022-11-16",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-4735441#band-31s2#p1",
+     "quote": "Yukni oluvchi xabardor qilingan kundan boshlab oʻttiz kun ichida yuk olib ketilmagan va bu yukka nisbatan yuk joʻnatuvchining biror-bir qarori olinmagan boʻlsa, bunday yuk talab qilib olinmagan deb hisoblanadi va huquqni muhofaza qilish organlariga topshiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-55594#art-106#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "106-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "106-modda. Yukning yoki qoʻl yukining olinmasligi va kechikib olinishi\nAgar qabul qiluvchi yetib kelgan yukni tashish qoidalarida belgilangan muddatda talab qilib olmasa yoki uni olishdan voz kechsa, tashuvchi joʻnatuvchini bu haqda xabardor qilgan holda yukni joʻnatuvchining hisobidan saqlash uchun oʻzida qoldirishga haqlidir. Qabul qiluvchi xabardor qilingan kundan boshlab 30 kun ichida yuk olib ketilmagan va bu yukka nisbatan yuk joʻnatuvchining biror-bir farmoyishi olinmagan boʻlsa, bunday yuk talab qilib olinmagan deb hisoblanadi va Oʻzbekiston Respublikasi qonunchiligida belgilangan tartibda realizatsiya qilinadi.\nUchib kelgan reys yoʻlovchilariga qoʻl yuki topshirilganidan keyin talab qilib olinmagan qoʻl yuki uni olib kelgan tashuvchi hisobidan saqlash va bunday qoʻl yukining egasini qidirish hamda uni egasiga yetkazib berishni tashkil etish uchun aeroportning tegishli xizmatiga topshiriladi.\nTashuvchilar tomonidan olib kelinib, talab qilib olinmagan qoʻl yuki aeroportda koʻpi bilan 3 oy saqlanadi va keyin Oʻzbekiston Respublikasining qonunchiligida belgilangan tartibda yoʻq qilinadi.\nChet ellik tashuvchilar tomonidan olib kelinib, talab qilib olinmagan qoʻl yuki aeroportda koʻpi bilan 7 kun saqlanadi va uni olib kelgan tashuvchining reysi bilan qaytarib yuboriladi.",
+     "retrieval_score": 0.7627,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:2057449#preamble#p45",
+     "doc_id": "lex:2057449",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining havo kodeksiga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/2057449",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2012-09-27",
+     "text": "“Charter (havo kemalarini kira qilish) shartnomalari boʻyicha tashishni bajarish uchun shartnoma tariflari belgilanishi mumkin”;\n17) 106-modda quyidagi tahrirda bayon etilsin:\n“106-modda. Yukning yoki qoʻl yukining olinmasligi va kechikib olinishi\nAgar qabul qiluvchi yetib kelgan yukni tashish qoidalarida belgilangan muddatda talab qilib olmasa yoki uni olishdan voz kechsa, tashuvchi joʻnatuvchini bu haqda xabardor qilgan holda yukni joʻnatuvchining hisobidan saqlash uchun oʻzida qoldirishga haqlidir. Qabul qiluvchi xabardor qilingan kundan boshlab 30 kun ichida yuk olib ketilmagan va bu yukka nisbatan yuk joʻnatuvchining biror-bir farmoyishi olinmagan boʻlsa, bunday yuk talab qilib olinmagan deb hisoblanadi va Oʻzbekiston Respublikasi qonun hujjatlarida belgilangan tartibda realizatsiya qilinadi.\nUchib kelgan reys yoʻlovchilariga qoʻl yuki topshirilganidan keyin talab qilib olinmagan qoʻl yuki uni olib kelgan tashuvchi hisobidan saqlash va bunday qoʻl yukining egasini qidirish hamda uni egasiga yetkazib berishni tashkil etish uchun aeroportning tegishli xizmatiga topshiriladi.\nTashuvchilar tomonidan olib kelinib, talab qilib olinmagan qoʻl yuki aeroportda koʻpi bilan 3 oy saqlanadi va keyin Oʻzbekiston Respublikasining qonun hujjatlarida belgilangan tartibda yoʻq qilinadi.",
+     "retrieval_score": 0.5924,
+     "rerank_score": 0.85,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-4735441#band-31s2#p1",
+     "doc_id": "lex:-4735441",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori giyohvandlik vositalari, psixotrop moddalar, ularning analoglari va prekursorlarning muomalasi sohasidagi nizomlarni tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4735441",
+     "article": "31-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-11-16",
+     "text": "31. Agar yukni oluvchi giyohvandlik vositalari, psixotrop moddalar, ularning analoglari va prekursorlar Oʻzbekiston Respublikasi hududida joylashgan yetkazish punktiga yetib kelganligi toʻgʻrisidagi xabarnoma joʻnatilgandan soʻng yukni talab qilib olmasa, qabul qilishdan bosh tortsa yoki qabul qila olmasa, tashuvchi yukni joʻnatuvchiga giyohvandlik vositalarini, psixotrop moddalarni, ularning analoglari va prekursorlarni yukni oluvchiga berish imkoni yoʻqligi haqida xabar berishga va yukni joʻnatuvchi giyohvandlik vositalari, psixotrop moddalar, ularning analoglari va prekursorlar boʻyicha qaror qabul qilguniga qadar ularni yukni joʻnatuvchi hisobiga saqlash uchun oʻzida qoldirishga majbur.\nYukni oluvchi xabardor qilingan kundan boshlab oʻttiz kun ichida yuk olib ketilmagan va bu yukka nisbatan yuk joʻnatuvchining biror-bir qarori olinmagan boʻlsa, bunday yuk talab qilib olinmagan deb hisoblanadi va huquqni muhofaza qilish organlariga topshiriladi.",
+     "retrieval_score": 0.5399,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-180552#art-897#p5",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "897-modda",
+     "part": "5-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "897-modda. Ashyolarni transport tashkilotlarining yukxonalarida saqlash\nAshyo maxsus qoidalar yoki taraflarning kelishuvi bilan belgilangan muddatga yukxonaga topshirilishi mumkin. Koʻrsatilgan muddatda talab qilib olinmagan ashyoni yukxona yana oʻttiz kun saqlab turishi shart. Ushbu muddat tamom boʻlgach, talab qilib olinmagan ashyo sotilishi, sotishdan tushgan pul esa ushbu Kodeksning 895-moddasiga muvofiq taqsimlanishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-180552#art-895#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "895-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "895-modda. Lombarddan talab qilib olinmagan ashyolar\nYuk topshiruvchi ashyolarni qaytarib olishdan bosh tortgan taqdirda, lombard ularni uch oy mobaynida saqlab turishi shart. Bu muddat oʻtganidan keyin talab qilib olinmagan ashyolar lombard tomonidan ushbu Kodeks 289-moddasining yettinchi qismida belgilab qoʻyilgan tartibda sotilishi mumkin.\nAshyolarni sotishdan tushgan puldan saqlash haqi va lombardga tegishli boshqa toʻlovlar qoplanadi. Pulning qolgan qismi lombard tomonidan saqlov pattasining egasiga u taqdim etilganida qaytarib beriladi.",
+     "retrieval_score": 0.9509,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1647,
+    "retrieval_ms": 870,
+    "rerank_ms": 0,
+    "generation_ms": 3319,
+    "total_ms": 5837
+   },
+   "usage": {
+    "input_tokens": 11200,
+    "output_tokens": 676,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar qabul qiluvchi yuk kelgani haqida xabardor qilingandan keyin uni olib ketmasa va joʻnatuvchi ham hech qanday koʻrsatma bermasa, qancha vaqtdan soʻng yuk talab qilib olinmagan deb hisoblanadi?",
+    "search_queries": [
+     "Agar qabul qiluvchi yuk kelgani haqida xabardor qilingandan keyin uni olib ketmasa va joʻnatuvchi ham hech qanday koʻrsatma bermasa, qancha vaqtdan soʻng yuk talab qilib olinmagan deb hisoblanadi?",
+     "yuk talab qilib olinmagan deb hisoblash muddati",
+     "qabul qiluvchi yukni olib ketmasa talab qilib olinmagan yuk",
+     "joʻnatuvchi koʻrsatma bermasa yukni saqlash muddati"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 783,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q095",
+   "status": "ok",
+   "answer": "Iqtisodiy sudda apellyatsiya shikoyati (protesti) birinchi instansiya sudi hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy ichida berilishi mumkin [1]. Soddalashtirilgan ish yuritish tartibida koʻrilgan, shuningdek huquqiy taʼsir chorasini qoʻllash, oʻzboshimchalik bilan egallab olingan davlat yer uchastkasini qaytarish va oʻzboshimchalik bilan qurilgan imoratni buzib tashlash toʻgʻrisidagi ishlar boʻyicha bu muddat oʻn kun [1]. Fuqarolik sudida esa apellyatsiya shikoyati (protesti) hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy, soddalashtirilgan tartibdagi ishlar boʻyicha esa oʻn kun ichida beriladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "262-modda",
+     "part": "1–4-qism",
+     "edition_date": "2024-11-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-262#p1",
+     "quote": "Agar qonunchilikda boshqacha muddat belgilanmagan boʻlsa, apellyatsiya shikoyati (protesti) birinchi instansiya sudi tomonidan shikoyat qilinayotgan (protest keltirilayotgan) hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy ichida berilishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "385¹-modda",
+     "part": "1–5-qism",
+     "edition_date": "2024-11-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-385.1#p1",
+     "quote": "Apellyatsiya shikoyati (protesti) sud tomonidan hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy ichida berilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:3523891#art-262#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "262-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-15",
+     "text": "262-modda. Apellyatsiya shikoyatini (protestini) berish muddati\nAgar qonunchilikda boshqacha muddat belgilanmagan boʻlsa, apellyatsiya shikoyati (protesti) birinchi instansiya sudi tomonidan shikoyat qilinayotgan (protest keltirilayotgan) hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy ichida berilishi mumkin.\nSudning soddalashtirilgan ish yuritish tartibida koʻrib chiqilgan, shuningdek huquqiy taʼsir chorasini qoʻllash, oʻzboshimchalik bilan egallab olingan, davlat mulkida boʻlgan yer uchastkasini qaytarish, oʻzboshimchalik bilan qurilgan imoratni buzib tashlash toʻgʻrisidagi ishlar boʻyicha hal qiluv qarori ustidan apellyatsiya shikoyati (protesti) hal qiluv qarori qabul qilinganidan keyin oʻn kun ichida berilishi mumkin.\nApellyatsiya shikoyatini (protestini) berishning oʻtkazib yuborilgan muddati, shikoyat (protest) bergan shaxsning iltimosnomasi boʻyicha apellyatsiya instansiyasi sudi tomonidan, agar iltimosnoma hal qiluv qarori qabul qilingan kundan eʼtiboran ikki oydan kechiktirmasdan berilgan va apellyatsiya shikoyatini (protestini) berish muddati oʻtkazib yuborilishining sabablari sud tomonidan uzrli deb topilgan boʻlsa, tiklanishi mumkin.\nApellyatsiya shikoyatini (protestini) berishning oʻtkazib yuborilgan muddatini tiklash haqida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-385.1#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "385¹-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-15",
+     "text": "3851-modda. Apellyatsiya shikoyatini (protestini) berish muddati\nApellyatsiya shikoyati (protesti) sud tomonidan hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy ichida berilishi mumkin.\nSudning soddalashtirilgan ish yuritish tartibida koʻrib chiqilgan, shuningdek oʻzboshimchalik bilan egallab olingan, davlat mulkida boʻlgan yer uchastkasini qaytarish, oʻzboshimchalik bilan qurilgan imoratni buzib tashlash toʻgʻrisidagi ishlar boʻyicha hal qiluv qarori ustidan apellyatsiya shikoyati (protesti) hal qiluv qarori qabul qilinganidan keyin oʻn kun ichida berilishi mumkin.\nOʻtkazib yuborilgan muddat, agar iltimosnoma hal qiluv qarori qabul qilingan kundan eʼtiboran uch oydan kechiktirmay berilgan va muddatni oʻtkazib yuborish sabablari uzrli deb topilgan boʻlsa, apellyatsiya shikoyati (protesti) berayotgan shaxsning iltimosnomasiga koʻra apellyatsiya instansiyasi sudining sudyasi tomonidan tiklanishi mumkin.\nApellyatsiya shikoyatini (protestini) berishning oʻtkazib yuborilgan muddatini tiklash haqida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.\nApellyatsiya shikoyatini (protestini) berish muddatini tiklashni rad etish haqida apellyatsiya shikoyatini (protestini) qabul qilishni rad etish toʻgʻrisidagi ajrimda koʻrsatiladi.",
+     "retrieval_score": 0.9655,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-262#p5",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "262-modda",
+     "part": "5–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-15",
+     "text": "262-modda. Apellyatsiya shikoyatini (protestini) berish muddati\nApellyatsiya shikoyatini (protestini) berish muddatini tiklashni rad etish haqida apellyatsiya shikoyatini (protestini) qabul qilishni rad etish toʻgʻrisidagi ajrimda koʻrsatiladi.\nIshda ishtirok etishga jalb qilinmagan, ammo huquqlari va majburiyatlari toʻgʻrisida sud hal qiluv qarori qabul qilgan shaxslar, shuningdek sud majlisining vaqti va joyi toʻgʻrisida tegishli tarzda xabardor qilinmagan ishda ishtirok etuvchi shaxslar uchun ushbu moddaning birinchi va ikkinchi qismlarida nazarda tutilgan apellyatsiya shikoyatini berish muddati ularga hal qiluv qarori qabul qilinganligi maʼlum boʻlgan kundan eʼtiboran hisoblanadi.",
+     "retrieval_score": 0.8628,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:6711090#art-310#p1",
+     "doc_id": "lex:6711090",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni sud qarorlarining qonuniyligi va asosliligini tekshirish tartibi takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksiga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/6711090",
+     "article": "310-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-08-01",
+     "text": "310-modda. Taftish tartibida shikoyat (protest) berish muddati\nTaftish tartibidagi shikoyat (protest) birinchi instansiya sudining hal qiluv qarori, ajrimi, qarori qonuniy kuchga kirgan kundan eʼtiboran bir yil ichida beriladi.\nQoraqalpogʻiston Respublikasi sudiga, viloyatlar va Toshkent shahar sudlariga taftish tartibidagi shikoyat (protest) berish muddati kassatsiya instansiyasi sudi tomonidan qaror qabul qilinguniga qadar oʻtgan boʻlsa, taftish tartibdagi shikoyat (protest) kassatsiya instansiyasi sudi qaror qabul qilgan kundan eʼtiboran uch oy ichida berilishi mumkin.\nOʻzbekiston Respublikasi Oliy sudining Iqtisodiy ishlar boʻyicha sudlov hayʼatiga taftish tartibida shikoyat (protest) berish muddati Qoraqalpogʻiston Respublikasi sudi, viloyatlar va Toshkent shahar sudlari tomonidan ishni taftish tartibida koʻrish natijalari boʻyicha qaror qabul qilinguniga qadar oʻtgan boʻlsa, taftish tartibidagi shikoyat (protest) ushbu sudlar tomonidan ishni koʻrish natijalari boʻyicha qaror qabul qilingan kundan eʼtiboran uch oy ichida berilishi mumkin.",
+     "retrieval_score": 0.8193,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6708694#art-419.6#p6",
+     "doc_id": "lex:-6708694",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni sud qarorlarining qonuniyligi, asosliligi va adolatliligini tekshirish tartibi takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining fuqarolik protsessual kodeksiga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6708694",
+     "article": "419⁶-modda",
+     "part": "6–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-25",
+     "text": "4196-modda. Taftish tartibida shikoyat (protest) berish tartibi va muddati\nQoraqalpogʻiston Respublikasi sudiga, viloyatlar va Toshkent shahar sudlariga, Oʻzbekiston Respublikasi Harbiy sudiga taftish tartibida shikoyat (protest) berish muddati kassatsiya instansiyasi sudi tomonidan ajrim chiqarilguniga qadar oʻtgan taqdirda, shikoyat (protest) kassatsiya instansiyasi sudi tomonidan ajrim qabul qilingan kundan eʼtiboran uch oy ichida berilishi mumkin.\nOʻzbekiston Respublikasi Oliy sudining Fuqarolik ishlari boʻyicha sudlov hayʼatiga taftish tartibida shikoyat (protest) berish muddati Qoraqalpogʻiston Respublikasi sudi, viloyatlar va Toshkent shahar sudlari, Oʻzbekiston Respublikasi Harbiy sudi tomonidan taftish tartibida ajrim chiqarilguniga qadar oʻtgan taqdirda, shikoyat (protest) ushbu sudlar tomonidan ishni taftish tartibida koʻrish natijalari boʻyicha ajrim qabul qilingan kundan eʼtiboran uch oy ichida berilishi mumkin.",
+     "retrieval_score": 0.7652,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2025,
+    "retrieval_ms": 2082,
+    "rerank_ms": 0,
+    "generation_ms": 4685,
+    "total_ms": 8793
+   },
+   "usage": {
+    "input_tokens": 13302,
+    "output_tokens": 1063,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud qarorining qonuniy va asosli ekanligini tekshirish uchun apellyatsiya shikoyati yoki protest qanday muddat ichida berilishi mumkin?",
+    "search_queries": [
+     "Sud qarori qonuniy va asosli ekanini tekshirish uchun shikoyat yoki protest qanday muddat ichida berilishi mumkin?",
+     "Sud qarorining qonuniy va asosli ekanligini tekshirish uchun apellyatsiya shikoyati yoki protest qanday muddat ichida berilishi mumkin?",
+     "apellyatsiya shikoyati yoki protest berish muddati",
+     "sud qarori ustidan apellyatsiya shikoyati berish muddati",
+     "qaror qonuniy va asosli ekanligini tekshirish apellyatsiya tartibi"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi",
+     "Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeks",
+     "Jinoyat-protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 727,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 2,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q096",
+   "status": "ok",
+   "answer": "Shaharsozlik kodeksining 79-moddasiga koʻra, qurish uchun yer uchastkalari berilayotganda mahalliy davlat hokimiyati organlari tomonidan maxsus vakolatli davlat organining hududiy boʻlinmalari bergan arxitektura-rejalashtirish topshirigʻiga binoan hududni qurish loyihasini ishlab chiqish, qurilishga tutash umumiy foydalanishdagi hududni obodonlashtirish hamda obyektlar qurilishini boshlash va tamomlash muddatlariga rioya etish boʻyicha shaharsozlik talablari va yer uchastkasini saqlash vazifalari belgilanishi mumkin [1]. Obyekt qurilishi qurilish boshlangan sanadan eʼtiboran ikki yil ichida yoki shaharsozlik hujjatlarida belgilangan muddatlarda tugallanmagan taqdirda, obyekt tugallanmagan deb hisoblanadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "79-modda",
+     "part": "1–7-qism",
+     "edition_date": "2021-02-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5307951#art-79#p1",
+     "quote": "Yuridik va jismoniy shaxslarga qurish uchun yer uchastkalari berilayotganda (realizatsiya qilinayotganda) mahalliy davlat hokimiyati organlari tomonidan yer uchastkalariga nisbatan quyidagi shaharsozlik talablari va yer uchastkasini saqlash vazifalari belgilanishi mumkin:",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "79-modda",
+     "part": "1–7-qism",
+     "edition_date": "2021-02-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:5307951#art-79#p1",
+     "quote": "Obyekt qurilishi qurilish boshlangan sanadan eʼtiboran ikki yil ichida yoki shaharsozlik hujjatlarida belgilangan muddatlarda tugallanmagan taqdirda, obyekt tugallanmagan deb hisoblanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:5307951#art-79#p1",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "79-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "79-modda. Aholi punktlarida yer uchastkalaridan foydalanishga doir shaharsozlik talablari\nYer uchastkalaridan foydalanishga doir shaharsozlik talablari aholi punktlarining bosh rejalari, batafsil rejalashtirish loyihalari, qurish loyihalari va qoidalari bilan belgilanadi.\nMahalliy ijro etuvchi hokimiyat organlari yer uchastkalari berilayotganda yuridik va jismoniy shaxslarni yer uchastkalaridan foydalanishga doir shaharsozlik talablari toʻgʻrisidagi axborot bilan taʼminlaydi.\nYuridik va jismoniy shaxslarga qurish uchun yer uchastkalari berilayotganda (realizatsiya qilinayotganda) mahalliy davlat hokimiyati organlari tomonidan yer uchastkalariga nisbatan quyidagi shaharsozlik talablari va yer uchastkasini saqlash vazifalari belgilanishi mumkin:\nmaxsus vakolatli davlat organining hududiy boʻlinmalari tomonidan berilgan arxitektura-rejalashtirish topshirigʻiga binoan hududni qurish loyihasini ishlab chiqish boʻyicha;\nqurilishga tutash boʻlgan umumiy foydalanishdagi hududni obodonlashtirish boʻyicha;\nobyektlar qurilishini boshlash va tamomlash muddatlariga rioya etish boʻyicha.\nObyekt qurilishi qurilish boshlangan sanadan eʼtiboran ikki yil ichida yoki shaharsozlik hujjatlarida belgilangan muddatlarda tugallanmagan taqdirda, obyekt tugallanmagan deb hisoblanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:5307951#art-79#p8",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "79-modda",
+     "part": "8–13-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "79-modda. Aholi punktlarida yer uchastkalaridan foydalanishga doir shaharsozlik talablari\nYangi qurilish mazkur qurilish hududi aholisining tegishli xizmatlar bilan taʼminlanishi shaharsozlik normalari va qoidalarida nazarda tutilgan normalardan pasayishiga olib keladigan boʻlsa, yuridik va jismoniy shaxslarga yer uchastkalari ular muhandislik, transportga oid va ijtimoiy infratuzilmalarning qoʻshimcha obyektlarini qurishda ulushli ishtirok etganda berilishi (realizatsiya qilinishi) mumkin.\nUshbu moddaning uchinchi qismida koʻrsatilgan talablar va yer uchastkasini saqlash vazifalari yer uchastkasiga boʻlgan huquqlar boshqa shaxsga oʻtgan taqdirda saqlanib qoladi.\nUshbu moddaning uchinchi, toʻrtinchi va beshinchi qismlari yakka tartibdagi uy-joy qurilishi uchun berilgan (realizatsiya qilingan) yer uchastkalarida amalga oshiriladigan qurilishga nisbatan qoʻllanilmaydi.\nYer uchastkasiga boʻlgan huquqni tasdiqlaydigan hujjatlarda quyidagilar koʻrsatilishi kerak:\nhududiy zonaning qurish qoidalarida belgilangan kodi;\ndoirasida yer uchastkasi joylashgan hududiy zonaning funksional maqsadi;",
+     "retrieval_score": 0.7533,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-152653#art-29#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "29-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "29-modda. Yer uchastkasini saqlash vazifasi\nEgalik qilishga, foydalanishga, ijaraga berilgan yoki boshqa asoslarga binoan olingan yer uchastkasini saqlash vazifasi qonunchilikka muvofiq quyidagi majburiyatlar bilan taʼminlanishi mumkin:\nyer uchastkasini sotish yoki oʻzgacha tarzda boshqa shaxsga oʻtkazishni taqiqlash, bundan xususiy mulk boʻlgan yer uchastkalarining boshqa shaxsga oʻtkazilishi va ushbu Kodeks 24-moddasining oʻn uchinchi qismida hamda 245-moddasida nazarda tutilgan hollar mustasno;\nyer uchastkasini ikkilamchi ijaraga va yordamchi pudratga, ushbu Kodeks 51-moddasining oʻninchi qismida nazarda tutilgan holatda esa, ijaraga berishni taqiqlash;\nyer uchastkasidan ruxsat etilgan foydalanishning asosiy turini oʻzgartirishni taqiqlash;\nfaoliyatning ayrim turlarini taqiqlash;\nbelgilangan tartibda kelishuvsiz koʻchmas mol-mulkning tashqi koʻrinishini oʻzgartirishni, imorat, bino, inshootni rekonstruksiya qilish yoki buzishni taqiqlash;\nyer unumdorligini saqlash va oshirish, irrigatsiya va melioratsiya tizimlarini soz holatda saqlash chora-tadbirlarini amalga oshirish;\nyer uchastkasida qurilish qilishni yoki uni oʻzlashtirishni belgilangan muddatlar mobaynida boshlash va tugallash;",
+     "retrieval_score": 0.6259,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:5307951#art-79#p14",
+     "doc_id": "lex:5307951",
+     "doc_title": "Oʻzbekiston Respublikasining shaharsozlik kodeksi",
+     "url": "https://lex.uz/docs/5307951",
+     "article": "79-modda",
+     "part": "14–17-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-22",
+     "text": "79-modda. Aholi punktlarida yer uchastkalaridan foydalanishga doir shaharsozlik talablari\nyer uchastkasi yoki uning qismi madaniy meros obyektlarini muhofaza qilish zonalarining, muhofaza etiladigan tabiiy hududlarning va suvni muhofaza qilish zonalarining chegaralarida, shuningdek tabiiy hamda texnogen xususiyatga ega favqulodda vaziyatlarning taʼsiriga duchor boʻlgan hududlar va aholi punktlarining hamda foydalanilishiga qonunda cheklovlar belgilanadigan boshqa hududlarning chegaralarida joylashganligi;\nyer uchastkasi chegaralarida muhandislik, transportga oid va ijtimoiy infratuzilmalar obyektlarining mavjudligi ushbu obyektlarning koʻrsatkichlari va ulardan foydalanishga doir cheklovlar koʻrsatilgan holda;\nyer uchastkasi chegaralarida yer uchastkasining mulkdoriga, egasiga yoki bu uchastkadan foydalanuvchiga tegishli boʻlmagan binolar va inshootlarning mavjudligi ushbu yer uchastkasida koʻrsatib oʻtilgan obyektlar joylashganligi munosabati bilan undan foydalanishga doir cheklovlar koʻrsatilgan holda.\nYer uchastkalari boʻlib berilayotganda yoki ularning chegaralari va koʻrsatkichlari oʻzgarganda qizil chiziqlarga, qurishni tartibga solish chiziqlariga hamda shaharsozlik reglamentlarining eng kichik oʻlchamdagi yer uchastkalariga doir talablariga rioya etiladi.",
+     "retrieval_score": 0.6096,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4674902#art-429#p61",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "429-modda",
+     "part": "61–64-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-14",
+     "text": "429-modda. Soliq stavkalari\nQishloq xoʻjaligi yerlarining sifati yaxshilangan taqdirda (bonitet bali oshganda), soliq yuridik shaxslar tomonidan tuproq bonitirovkasi oʻtkazilgan yildan keyingi yilning boshidan yangi bonitet balidan kelib chiqqan holda, qishloq xoʻjaligi yerlarining normativ qiymati boʻyicha, agrotexnik tadbirlar tugagan davrlarda qayta hisob-kitob qilinmasdan toʻlanadi.\nQurilishi tugallanmagan obyektlar egallagan yer uchastkalari uchun, agar qonunchilikda boshqacha tartib nazarda tutilmagan boʻlsa, soliq ikki baravar soliq stavkalari boʻyicha toʻlanadi, shuningdek qonunchilikda belgilangan soliq imtiyozlari va kamaytiruvchi koeffitsiyentlar mazkur yer uchastkalarida qurilish tugallanguniga qadar ularga nisbatan tatbiq etilmaydi.\nTugallanmagan qurilish obyektlari jumlasiga ushbu qurilish obyektiga doir loyiha-smeta hujjatlarida belgilangan normativ muddatda qurilishi tugallanmagan obyektlar, agar qurilishning normativ muddati belgilanmagan boʻlsa, ushbu obyektlarning qurilishiga vakolatli boʻlgan organning ruxsatnomasi olingan oydan eʼtiboran yigirma toʻrt oy ichida qurilishi tugallanmagan obyektlar kiradi.\nYer maydonlaridan hujjatlarsiz yoxud yer uchastkasiga boʻlgan huquqni tasdiqlovchi hujjatlarda koʻrsatilganidan kattaroq hajmda foydalanilganda soliq stavkasi belgilangan soliq stavkalarining toʻrt baravari miqdorida belgilanadi.",
+     "retrieval_score": 0.6533,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1808,
+    "retrieval_ms": 2194,
+    "rerank_ms": 0,
+    "generation_ms": 3614,
+    "total_ms": 7617
+   },
+   "usage": {
+    "input_tokens": 14293,
+    "output_tokens": 742,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Qurilish uchun yer uchastkasi berilganda mahalliy davlat hokimiyati organi qanday shaharsozlik talablarini qoʻyishi mumkin va qurilish qancha muddat ichida tugallanmasa obyekt tugallanmagan qurilish deb hisoblanadi?",
+    "search_queries": [
+     "Qurilish uchun yer uchastkasi berilganda mahalliy hokimiyat qanday shaharsozlik talablarini qoʻyishi mumkin va qurilish qancha vaqt ichida tugallanmasa obyekt tugallanmagan hisoblanadi?",
+     "Qurilish uchun yer uchastkasi berilganda mahalliy davlat hokimiyati organi qanday shaharsozlik talablarini qoʻyishi mumkin va qurilish qancha muddat ichida tugallanmasa obyekt tugallanmagan qurilish deb hisoblanadi?",
+     "qurilish uchun yer uchastkasi berishda shaharsozlik talablari va shartlari",
+     "obyektni tugallanmagan qurilish deb hisoblash muddati",
+     "qurilish muddati tugallanmagan obyekt yer uchastkasi"
+    ],
+    "doc_hints": [
+     "Yer kodeksi",
+     "Shaharsozlik kodeksi",
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 757,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q097",
+   "status": "no_answer",
+   "answer": "В предоставленных нормах не содержится правила о том, как оценивается (облагается) продажа или сдача в аренду товаров, ввезённых в качестве безвозмездной (гуманитарной/благотворительной) помощи, поэтому ответить на вопрос на их основе невозможно.",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": true,
+   "confidence": 0.55,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-246#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "246-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-27",
+     "text": "246-modda. Soliq solishdan ozod etiladigan tovarlarni Oʻzbekiston Respublikasi hududiga olib kirish\nQuyidagilarni Oʻzbekiston Respublikasi hududiga olib kirish soliq solishdan ozod etiladi:\n1) jismoniy shaxslar tomonidan tovarlarni bojsiz olib kirishning bojxona toʻgʻrisidagi qonunchilikda tasdiqlangan normalari doirasida olib kirilayotgan tovarlar;\n2) Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadigan tartibda insonparvarlik yordami sifatida olib kirilayotgan tovarlar;\n3) davlatlar, hukumatlar, xalqaro tashkilotlar, shuningdek Oʻzbekiston Respublikasi Vazirlar Mahkamasining qarorlarida nazarda tutilgan hollarda — boshqa tashkilotlar va shaxslar yoʻnalishlari boʻyicha xayriya yordami maqsadlarida, shu jumladan texnik yordam koʻrsatish (grantlar) uchun olib kiriladigan tovarlar;\n4) chet el diplomatik vakolatxonalari va ularga tenglashtirilgan vakolatxonalar rasmiy foydalanishi uchun, shuningdek ushbu vakolatxonalarning diplomatik va maʼmuriy-texnik xodimlari, shu jumladan ularning oʻzlari bilan birga yashayotgan oila aʼzolari shaxsiy foydalanishi uchun moʻljallangan tovarlar;",
+     "retrieval_score": 0.9353,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4674902#art-284#p19",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "284-modda",
+     "part": "19–25-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-01-01",
+     "text": "284-modda. Soliq solish obyekti\n2) bojxona hududida qayta ishlash bojxona tartib-taomiliga joylashtirilgan tovarlardan ishlab chiqarilgan, qayta ishlash mahsuli boʻlgan aksiz toʻlanadigan tovarlarni keyinchalik Oʻzbekiston Respublikasining bojxona hududidan olib chiqib ketish sharti bilan berish;\n3) ixtisoslashtirilgan gaz taʼminoti korxonalari orqali aholiga suyultirilgan gazni maishiy ehtiyojlar uchun realizatsiya qilish;\n4) Oʻzbekiston Respublikasining bojxona hududiga quyidagi aksiz toʻlanadigan tovarlarni:\nOʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadigan tartibda insonparvarlik yordami sifatida olib kirish;\ndavlatlar, hukumatlar, xalqaro tashkilotlar orqali xayriya yordami maqsadida, shu jumladan texnik koʻmak koʻrsatish maqsadida olib kirish;\nagar ular olib kirilayotganda soliqdan ozod etilishi qonunda nazarda tutilgan boʻlsa, xalqaro moliya institutlarining qarzlari va hukumat tashkilotlarining xalqaro qarzlari hisobidan olib kirish;\n5) aksiz toʻlanadigan tovarlarni Oʻzbekiston Respublikasining bojxona hududiga soliq solinmaydigan tovarlarni olib kirish normalari doirasida jismoniy shaxslar tomonidan import qilish. Oʻzbekiston Respublikasi hududiga soliq solinmaydigan tovarlarni jismoniy shaxslar tomonidan olib kirishning eng yuqori normalari qonunchilikda belgilanadi;",
+     "retrieval_score": 0.8986,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4674902#art-239#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "239-modda",
+     "part": "1–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "239-modda. Tovarlarni (xizmatlarni) realizatsiya qilish boʻyicha aylanma\nTovarlarni realizatsiya qilish boʻyicha aylanma quyidagilardan iborat:\n1) tovarga boʻlgan mulk huquqini pullik asosda, shu jumladan tovarning qarz shartnomasi boʻyicha oʻtkazish;\n2) tovarni bepul berish, bundan shunday berish iqtisodiy jihatdan oʻzini oqlaydigan hollar mustasno;\n3) mol-mulkni moliyaviy ijaraga (lizingga) berish;\n4) tovarni boʻlib-boʻlib toʻlash shartlari asosida berish.\nTovarni realizatsiya qilishdan farq qiluvchi har qanday faoliyat, shu jumladan quyidagilar xizmatlarni realizatsiya qilish boʻyicha aylanma deb eʼtirof etiladi:\n1) pullik asosda xizmatlar koʻrsatish;\n2) bepul xizmatlar koʻrsatish, shu jumladan mol-mulkni soliq toʻlovchining bepul foydalanishi uchun berish, bundan shunday xizmatlarni koʻrsatish iqtisodiy jihatdan oʻzini oqlaydigan hollar mustasno.\nTovarlarni bepul berish yoki bepul xizmatlar koʻrsatish quyidagi shartlardan hech boʻlmaganda biriga rioya etilganda iqtisodiy jihatdan oʻzini oqlaydi deb eʼtirof etiladi:\n1) daromad olishga qaratilgan faoliyatni amalga oshirish maqsadida ishlab chiqarilgan boʻlsa;\n2) shunday tadbirkorlik faoliyatini saqlash yoki rivojlantirish uchun zarur boʻlsa va xarajatlarning tadbirkorlik faoliyati bilan bogʻliqligi asoslantirilgan boʻlsa;\n3) qonunchilikning qoidalaridan kelib chiqsa.",
+     "retrieval_score": 0.5778,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4674902#art-254#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "254-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "254-modda. Tovarlarni Oʻzbekiston Respublikasi hududiga olib kirishda soliq bazasini aniqlash tartibi\nTovarlarni Oʻzbekiston Respublikasi hududiga olib kirishda soliq bazasi quyidagilarni qoʻshgan holda hisoblab chiqarilgan ushbu tovarlarning qiymati sifatida aniqlanadi:\n1) tovarlarning bojxona toʻgʻrisidagi qonunchilikka muvofiq aniqlanadigan bojxona qiymatini;\n2) tovarlar Oʻzbekiston Respublikasiga olib kirilayotganda toʻlanishi lozim boʻlgan aksiz soligʻi va bojxona bojini.\nOʻzbekiston Respublikasining bojxona hududidan tashqarida qayta ishlash bojxona tartib-taomiliga muvofiq Oʻzbekiston Respublikasi hududidan ilgari olib chiqilgan tovarlarning qayta ishlash mahsulotlari ushbu hududga olib kirilayotganda soliq bazasi bunday qayta ishlashning qiymati sifatida aniqlanadi.\nSoliq bazasi Oʻzbekiston Respublikasi hududiga olib kiriladigan bir nomdagi, turdagi va markadagi tovarlarning har bir guruhi boʻyicha alohida aniqlanadi.\nAgar Oʻzbekiston Respublikasining bojxona hududiga olib kiriladigan tovarlarning bir turkumi tarkibida bir vaqtning oʻzida ham aksiz toʻlanadigan, ham aksiz toʻlanmaydigan tovarlar mavjud boʻlsa, soliq bazasi mazkur tovarlarning har bir guruhiga nisbatan alohida aniqlanadi.",
+     "retrieval_score": 0.7703,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:2876354#art-299#p1",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "299-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-06",
+     "text": "299-modda. Bojxona rasmiylashtiruvi uchun bojxona yigʻimlarini toʻlash boʻyicha imtiyozlar\nBojxona rasmiylashtiruvi uchun bojxona yigʻimlarini toʻlashdan quyidagilar ozod etiladi:\n1) bojxona chegarasi orqali begʻaraz, insonparvarlik yordami yoki xayriya maqsadlari, shu jumladan texnik koʻmak uchun olib oʻtilayotgan tovarlar;\n2) notijorat maqsadlar uchun jismoniy shaxslar tomonidan qonunchilikda belgilangan bojsiz olib kirish normasi doirasida olib oʻtiladigan tovarlar;\n4) bojxona imtiyozlaridan foydalanuvchi chet davlatlarning diplomatik vakolatxonalari va konsullik muassasalari, xalqaro birlashmalar va tashkilotlar rasmiy foydalanishi uchun bojxona hududiga olib kiriladigan tovarlar, shuningdek bojxona hududidan olib chiqiladigan hamda Oʻzbekiston Respublikasining diplomatik vakolatxonalari va ularga tenglashtirilgan vakolatxonalarning faoliyat koʻrsatishini taʼminlash uchun moʻljallangan tovarlar;\n5) davlat muzeylarining, axborot-kutubxona muassasalarining, arxivlarining fondlarida va Oʻzbekiston Respublikasining madaniy boyliklari saqlanadigan davlatga qarashli boshqa joylarda doimiy saqlanadigan, bojxona hududidan vaqtincha olib chiqiladigan va ushbu hududga qaytarib olib kiriladigan madaniy boyliklar;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1847,
+    "retrieval_ms": 2058,
+    "rerank_ms": 0,
+    "generation_ms": 1916,
+    "total_ms": 5823
+   },
+   "usage": {
+    "input_tokens": 15231,
+    "output_tokens": 328,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekistonga begʻaraz yordam sifatida olib kirilgan tovarlarni sotish yoki ijaraga berish qanday baholanadi?",
+    "search_queries": [
+     "Как оценивается продажа или сдача в аренду товаров, ввезённых в Узбекистан в качестве безвозмездной помощи?",
+     "Oʻzbekistonga begʻaraz yordam sifatida olib kirilgan tovarlarni sotish yoki ijaraga berish qanday baholanadi?",
+     "begʻaraz yordam sifatida olib kirilgan tovarlarni sotish yoki ijaraga berish",
+     "begʻaraz yordam tovarlarini realizatsiya qilishda bojxona qiymati",
+     "begʻaraz yordam tovarlari bojxona toʻlovlari hisoblash"
+    ],
+    "doc_hints": [
+     "Bojxona kodeksi",
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 911,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q098",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 118-moddasiga koʻra, mediatsiya tartib-taomilini amalga oshirish toʻgʻrisida kelishuv tuzilganda ish yuritish mediatsiya tartib-taomilini amalga oshirish tugaguniga qadar, biroq oltmish kundan ortiq boʻlmagan muddatda toʻxtatib turiladi [1]. Iqtisodiy protsessual kodeksining 103-moddasida ham xuddi shunday qoida — mediatsiya tugaguniga qadar, biroq oltmish kundan ortiq boʻlmagan muddatda toʻxtatib turish nazarda tutilgan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "118-modda",
+     "part": "1–6-qism",
+     "edition_date": "2019-03-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-118#p1",
+     "quote": "41) ushbu Kodeks 116-moddasining 6-bandida nazarda tutilgan hollarda — mediatsiya tartib-taomilini amalga oshirish tugaguniga qadar, biroq oltmish kundan ortiq boʻlmagan muddatda;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "103-modda",
+     "part": "1–6-qism",
+     "edition_date": "2019-03-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-103#p1",
+     "quote": "31) ushbu Kodeks 101-moddasining 6-bandida nazarda tutilgan hollarda — mediatsiya tartib-taomilini amalga oshirish tugaguniga qadar, biroq oltmish kundan ortiq boʻlmagan muddatda;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-118#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "118-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-03-21",
+     "text": "118-modda. Ish yuritishni toʻxtatib turish vaqti\nIsh yuritish:\n1) ushbu Kodeks 116-moddasining 1 va 2-bandlarida nazarda tutilgan hollarda — huquqiy voris ishga kirishguniga yoki ishga jalb qilinguniga qadar yoxud muomalaga layoqatsiz shaxsga qonuniy vakil tayinlanguniga qadar;\n2) ushbu Kodeks 116-moddasining 3-bandida nazarda tutilgan hollarda — tarafning Oʻzbekiston Respublikasi Qurolli Kuchlarining harakatdagi qismida boʻlishi tugaguniga qadar;\n3) ushbu Kodeks 116-moddasining 4-bandida nazarda tutilgan hollarda — sudning hal qiluv qarori yoki hukmi qonuniy kuchga kirguniga qadar yoki maʼmuriy tartibda koʻrilayotgan ish boʻyicha qaror chiqarilguniga yoxud tergov tamom boʻlguniga qadar;\n4) ushbu Kodeks 116-moddasining 5-bandida nazarda tutilgan hollarda — chet davlat sudining yoki hakamlik sudining (arbitrajining) hal qiluv qarorini bekor qilish toʻgʻrisidagi yoxud uning ijrosini toʻxtatib turish haqidagi iltimosnoma chet davlatning vakolatli organi tomonidan hal qilinguniga qadar;\n41) ushbu Kodeks 116-moddasining 6-bandida nazarda tutilgan hollarda — mediatsiya tartib-taomilini amalga oshirish tugaguniga qadar, biroq oltmish kundan ortiq boʻlmagan muddatda;",
+     "retrieval_score": 0.9806,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3523891#art-103#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "103-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-03-21",
+     "text": "103-modda. Ish yuritishni toʻxtatib turish muddatlari\nIsh yuritish:\n1) ushbu Kodeks 101-moddasining 1-bandida nazarda tutilgan hollarda — tegishli sudning sud hujjati qonuniy kuchga kirguniga yoki tergov harakatlari tugallanguniga qadar;\n2) ushbu Kodeks 101-moddasining 2 va 5-bandlarida, 102-moddasining 3 va 4-bandlarida nazarda tutilgan hollarda — ish yuritishni toʻxtatib turish uchun asos boʻlgan holatlar bartaraf qilinguniga qadar;\n3) ushbu Kodeks 101-moddasining 3 va 4-bandlarida va 102-moddasining 2-bandida nazarda tutilgan hollarda — ishda ishtirok etuvchi shaxsning huquqiy vorisi aniqlanguniga, muomalaga layoqatsiz shaxsga vakil tayinlanguniga, yangi tashkil etilgan yuridik shaxs davlat roʻyxatidan oʻtguniga qadar;\n31) ushbu Kodeks 101-moddasining 6-bandida nazarda tutilgan hollarda — mediatsiya tartib-taomilini amalga oshirish tugaguniga qadar, biroq oltmish kundan ortiq boʻlmagan muddatda;\n4) ushbu Kodeks 102-moddasining 1-bandida nazarda tutilgan hollarda — sud tomonidan ekspertiza xulosasi olinguniga qadar toʻxtatib turiladi.",
+     "retrieval_score": 0.972,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3517337#art-116#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "116-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-03-21",
+     "text": "116-modda. Sudning ish yuritishni toʻxtatib turish majburiyati\nSud quyidagi hollarda ish yuritishni toʻxtatib turishi shart:\n1) ishda taraf boʻlgan fuqaro vafot etganda, agar nizoli huquqiy munosabat huquqiy vorislikka yoʻl qoʻysa yoki ishda taraf boʻlgan yuridik shaxs qayta tashkil etilganda;\n2) fuqaro (taraf) muomala layoqatini yoʻqotganda;\n3) javobgar — fuqaro Oʻzbekiston Respublikasi Qurolli Kuchlarining harakatdagi qismida boʻlganda yoki Oʻzbekiston Respublikasi Qurolli Kuchlarining harakatdagi qismidagi daʼvogar — fuqaro tegishli iltimosnoma bilan murojaat qilganda;\n4) mazkur ishni Oʻzbekiston Respublikasi Konstitutsiyaviy sudi, fuqarolik ishlari boʻyicha sud, jinoyat ishlari boʻyicha sud, maʼmuriy sud yoki iqtisodiy sud tomonidan koʻrilayotgan boshqa ish yoki masala yuzasidan, shuningdek tergov olib borilayotgan ish yuzasidan qaror qabul qilguniga qadar koʻrish imkoni boʻlmaganda;\n5) taraf chet davlat sudining yoki chet davlat hakamlik sudining (arbitrajining) hal qiluv qarorini bekor qilish toʻgʻrisida yoki uning ijrosini toʻxtatib turish haqida chet davlatning vakolatli organiga iltimosnoma berganda;\n6) mediatsiya tartib-taomilini amalga oshirish toʻgʻrisida kelishuv tuzilganda.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-101#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "101-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-03-21",
+     "text": "101-modda. Sudning ish yuritishni toʻxtatib turish majburiyati\nSud quyidagi hollarda ish yuritishni toʻxtatib turishi shart:\n1) mazkur ishni Oʻzbekiston Respublikasi Konstitutsiyaviy sudi, fuqarolik ishlari boʻyicha sud, jinoyat ishlari boʻyicha sud, maʼmuriy sud yoki iqtisodiy sud tomonidan koʻrilayotgan boshqa ish yoki masala yuzasidan, shuningdek tergov harakatlari olib borilayotgan ish yuzasidan qaror qabul qilinguniga qadar koʻrish mumkin boʻlmaganda;\n2) javobgar fuqaro Oʻzbekiston Respublikasi Qurolli Kuchlarining harakatdagi qismida boʻlganda yoki Oʻzbekiston Respublikasi Qurolli Kuchlarining harakatdagi qismidagi daʼvogar-fuqaro tegishli iltimosnoma bilan murojaat qilganda;\n3) ishda ishtirok etuvchi shaxs boʻlgan fuqaro vafot etganda, agar nizoli huquqiy munosabatlar huquqiy vorislikka yoʻl qoʻysa;\n4) ishda ishtirok etuvchi shaxs boʻlgan fuqaro muomala layoqatini yoʻqotganda;\n5) taraf sud tomonidan tan olinishi va ijroga qaratilishi toʻgʻrisida koʻrilayotgan chet davlat sudining yoki arbitrajining hal qiluv qarorini bekor qilish yoki uning ijrosini toʻxtatib turish haqida vakolatli organga iltimosnoma berganda;\n6) mediatsiya tartib-taomilini amalga oshirish toʻgʻrisida kelishuv tuzilganda.",
+     "retrieval_score": 0.9907,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-120#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "120-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "120-modda. Ish yuritishni toʻxtatib turishning huquqiy oqibatlari\nIsh yuritish toʻxtatib turilganida, ushbu Kodeksda belgilangan yoki sud tomonidan tayinlangan muddatlarning oʻtishi toʻxtatib turiladi.\nIsh yuritish tiklanguniga qadar sud biror-bir protsessual harakatlarni amalga oshirishga haqli emas, bundan daʼvoni va dalillarni taʼminlashga qaratilgan harakatlar mustasno.",
+     "retrieval_score": 0.8743,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1764,
+    "retrieval_ms": 839,
+    "rerank_ms": 0,
+    "generation_ms": 2785,
+    "total_ms": 5390
+   },
+   "usage": {
+    "input_tokens": 10412,
+    "output_tokens": 657,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar tomonlar nizoni mediatsiya yoʻli bilan hal qilishga qaror qilsa, sud ish yuritishni qancha muddatga toʻxtatib turishi mumkin?",
+    "search_queries": [
+     "Agar tomonlar nizoni mediatsiya yoʻli bilan hal qilishga qaror qilsa, sud ish yuritishni qancha muddatga toʻxtatib turishi mumkin?",
+     "ish yuritishni toʻxtatib turish mediatsiya muddati",
+     "mediatsiya kelishuvi tuzilganda sud ish yuritishni toʻxtatib turish",
+     "fuqarolik ish yuritishni toʻxtatib turish asoslari mediatsiya"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi",
+     "Mediatsiya toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 553,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q099",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida koʻrinmas odam bilan tuzilgan mehnat shartnomasini notarial tasdiqlash tartibi toʻgʻrisidagi qoida mavjud emas.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.95,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-149#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "149-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "149-modda. Mehnat shartnomasini oʻzgartirishni rasmiylashtirish\nMehnat shartnomasini oʻzgartirish ish beruvchining buyrugʻi bilan rasmiylashtiriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6257288#art-149#p8",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "149-modda",
+     "part": "8–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "149-modda. Mehnat shartnomasini oʻzgartirishni rasmiylashtirish\nXodimni vaqtincha boshqa ishga oʻtkazish mehnat shartnomasida aks ettirilmaydi.\nXodimni boshqa ish beruvchiga vaqtincha xizmat safariga yuborish haqida buyruq chiqarish uchun xodim hamda mazkur xodimni vaqtincha xizmat safariga yuborgan ish beruvchi bilan kelishuvga koʻra xodim qaysi ish beruvchiga xizmat safariga yuborilgan boʻlsa, oʻsha ish beruvchi oʻrtasida tuzilgan alohida muddatli mehnat shartnomasi asos boʻladi.",
+     "retrieval_score": 0.9877,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6257288#art-317#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "317-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "317-modda. Mehnat shartnomasi taraflarining moddiy javobgarligini aniqlashtirish\nMehnat shartnomasi yoki unga yozma shaklda tuziladigan qoʻshimcha kelishuv, shuningdek jamoa shartnomasi mehnat shartnomasi taraflarining moddiy javobgarligini aniqlashtirishi mumkin. Bunda ish beruvchining xodim oldidagi shartnomaviy javobgarligi ushbu Kodeksda nazarda tutilganidan kam boʻlmasligi, xodimning ish beruvchi oldidagi javobgarligi esa ushbu Kodeksda nazarda tutilganidan yuqori boʻlmasligi kerak.",
+     "retrieval_score": 0.9566,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6257288#art-32#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "32-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "32-modda. Ish beruvchining zimmasiga mehnat shartnomasini tuzish majburiyatini yuklatish toʻgʻrisidagi sud qarori qabul qilinishi natijasida mehnat shartnomasi asosida yuzaga keladigan yakka tartibdagi mehnatga oid munosabatlar\nIsh beruvchi tomonidan ishga qabul qilish qonunga xilof ravishda rad etilgan shaxslar bilan yakka tartibdagi mehnatga oid munosabatlar ish beruvchining zimmasiga mehnat shartnomasini tuzish majburiyatini yuklatish toʻgʻrisidagi sud qarori qabul qilinishi natijasida tuzilgan mehnat shartnomasi asosida yuzaga keladi.",
+     "retrieval_score": 0.897,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6257288#art-107#p15",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "107-modda",
+     "part": "15–16-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-02-14",
+     "text": "107-modda. Mehnat shartnomasining rekvizitlari\nAgar mehnat shartnomasini tuzishda ushbu moddaning birinchi, ikkinchi va uchinchi qismlarida nazarda tutilgan rekvizitlardan biror-biri shartnomaga kiritilmagan boʻlsa, bu mehnat shartnomasini tuzilmagan deb eʼtirof etish yoki uni bekor qilish uchun asos boʻlmaydi. Mehnat shartnomasi yetishmayotgan rekvizitlar bilan toʻldirilishi kerak. Bunda yetishmayotgan rekvizitlar mehnat shartnomasiga doir yozma shaklda tuziladigan qoʻshimcha kelishuv bilan belgilanadi, ushbu kelishuv mehnat shartnomasining ajralmas qismidir.\nRekvizitlar oʻzgargan taqdirda, mehnat shartnomasining tarafi ular oʻzgartirilgan paytdan eʼtiboran uch ish kuni ichida bu haqda boshqa tarafga yozma shaklda xabar qilishi kerak.",
+     "retrieval_score": 0.8965,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2102,
+    "retrieval_ms": 2062,
+    "rerank_ms": 0,
+    "generation_ms": 1358,
+    "total_ms": 5524
+   },
+   "usage": {
+    "input_tokens": 10807,
+    "output_tokens": 242,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Koʻrinmas (vakil boʻlmagan) shaxs bilan tuzilgan mehnat shartnomasini notarial tasdiqlash tartibi qanday?",
+    "search_queries": [
+     "Koʻrinmas odam bilan tuzilgan mehnat shartnomasini notarial tasdiqlash tartibi qanday?",
+     "Koʻrinmas (vakil boʻlmagan) shaxs bilan tuzilgan mehnat shartnomasini notarial tasdiqlash tartibi qanday?",
+     "mehnat shartnomasini notarial tasdiqlash tartibi",
+     "mehnat shartnomasi yozma shaklda tuzish va notarial tasdiqlash",
+     "ish beruvchi bilan mehnat shartnomasini rasmiylashtirish tartibi"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 742,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q100",
+   "status": "ok",
+   "answer": "Mehnat kodeksining 45-moddasiga koʻra ish beruvchi xodimlar vakillarining huquqlarini buzmasligi va ularning faoliyatiga koʻmaklashishi, shuningdek xodimlarning manfaatlariga daxldor qarorlar qabul qilinguniga qadar xodimlar vakillari bilan maslahatlashuvlar oʻtkazishi, qonunchilikda nazarda tutilgan hollarda esa ularning roziligini olishi shart [1]. U vakillarning takliflarini oʻz vaqtida koʻrib chiqishi va qabul qilingan qarorlar toʻgʻrisida yozma shaklda asoslangan tarzda xabar qilishi, shuningdek vakillarga zarur axborotni bepul taqdim etishi va ish uchun shart-sharoitlar yaratishi kerak [1]. Bundan tashqari, ishlab chiqarishdagi ishidan ozod etilmagan vakilga oʻrtacha ish haqi saqlangan holda, ish haftasi soatlari miqdorining kamida oʻttiz foizi hajmida vaqt berilishi lozim [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "45-modda",
+     "part": "1–7-qism",
+     "edition_date": "2022-10-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-45#p1",
+     "quote": "xodimlarning manfaatlariga daxldor qarorlar qabul qilinguniga qadar xodimlar vakillari bilan maslahatlashuvlar oʻtkazishi, qonunchilikda va mehnat haqidagi boshqa huquqiy hujjatlarda nazarda tutilgan hollarda esa ularning roziligini olishi;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "45-modda",
+     "part": "8–10-qism",
+     "edition_date": "2022-10-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-45#p8",
+     "quote": "xodimlarning vakili boʻlgan va ishlab chiqarishdagi ishidan ozod etilmagan shaxslarga ish vaqtida xodimlarning manfaatlarini ifodalash hamda himoya qilish majburiyatlarini bajarish uchun oʻrtacha ish haqi saqlangan holda vaqt berishi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-45#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "45-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "45-modda. Ish beruvchilarning xodimlar vakillarining faoliyatini amalga oshirish uchun sharoitlar yaratishga doir majburiyatlari\nIsh beruvchilar:\nxodimlar vakillarining huquqlarini buzmasligi, ularning faoliyatiga koʻmaklashishi;\nxodimlarning manfaatlariga daxldor qarorlar qabul qilinguniga qadar xodimlar vakillari bilan maslahatlashuvlar oʻtkazishi, qonunchilikda va mehnat haqidagi boshqa huquqiy hujjatlarda nazarda tutilgan hollarda esa ularning roziligini olishi;\nxodimlar vakillarining takliflarini oʻz vaqtida koʻrib chiqishi va qabul qilingan qarorlar toʻgʻrisida ularga yozma shaklda asoslangan tarzda xabar qilishi;\nxodimlarning vakillarini ular qaysi xodimlar manfaatlarini ifodalayotgan boʻlsa, oʻsha xodimlarning ish joylariga moneliksiz kiritishi;\nxodimlarning ijtimoiy-iqtisodiy huquq va manfaatlari masalalariga oid zarur axborotni xodimlar vakillariga bepul taqdim etishi;\nxodimlarning vakillari oʻz vazifalarini bajarishi uchun zarur shart-sharoitlar bilan taʼminlashi;",
+     "retrieval_score": 0.9746,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6257288#art-45#p8",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "45-modda",
+     "part": "8–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "45-modda. Ish beruvchilarning xodimlar vakillarining faoliyatini amalga oshirish uchun sharoitlar yaratishga doir majburiyatlari\nxodimlarning vakili boʻlgan va ishlab chiqarishdagi ishidan ozod etilmagan shaxslarga ish vaqtida xodimlarning manfaatlarini ifodalash hamda himoya qilish majburiyatlarini bajarish uchun oʻrtacha ish haqi saqlangan holda vaqt berishi. Koʻrsatilgan shaxslarga taqdim etiladigan vaqtning aniq davomiyligi jamoa kelishuvlarida, jamoa shartnomasida, agar ular tuzilmagan boʻlsa, ish beruvchilar yoki ularning vakillari bilan kelishib belgilanadi. Bunda ushbu vaqtning davomiyligi ish haftasi soatlari miqdorining oʻttiz foizidan kam boʻlishi mumkin emas;\nxodimlarning vakillariga jamoa kelishuvlarida, jamoa shartnomasida belgilangan maqsadlar uchun va miqdorlarda mablagʻlar ajratishi shart.\nIsh beruvchilarning zimmasida xodimlar vakillariga nisbatan qonunchilikda va mehnat haqidagi boshqa huquqiy hujjatlarda nazarda tutilgan boshqa majburiyatlar ham boʻladi.",
+     "retrieval_score": 0.9186,
+     "rerank_score": 0.8,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4631281#art-18#p1",
+     "doc_id": "lex:4631281",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni kasaba uyushmalari toʻgʻrisida",
+     "url": "https://lex.uz/docs/4631281",
+     "article": "18-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-06",
+     "text": "18-modda. Ish beruvchining kasaba uyushmalari faoliyatini amalga oshirish uchun shart-sharoitlar yaratishga doir majburiyatlari\nIsh beruvchi:\nkasaba uyushmalarining huquqlariga rioya etishi, ularning faoliyatiga koʻmaklashishi;\nxodimlarning manfaatlariga daxldor qarorlar qabul qilinguniga qadar kasaba uyushmalari bilan maslahatlashuvlar oʻtkazishi, mehnat toʻgʻrisidagi qonun hujjatlarida va normativ hujjatlarda nazarda tutilgan hollarda esa ularning roziligini olishi;\nkasaba uyushmalarining takliflarini oʻz vaqtida koʻrib chiqishi va ularga qabul qilingan qarorlar haqida yozma shaklda, sabablarini koʻrsatgan holda xabar qilishi;\nkasaba uyushmalari organlari vakillarini ular manfaatlarini ifoda etayotgan xodimlarning ish joylariga moneliksiz kiritishi;\nkasaba uyushmalariga xodimlarning ijtimoiy-iqtisodiy huquq va manfaatlariga taalluqli boʻlgan masalalar boʻyicha zarur axborotni bepul taqdim etishi;\nkasaba uyushmalariga oʻz vazifalarini bajarishi uchun zarur sharoitlarni taʼminlash;\nkasaba uyushmalari organlari tarkibiga saylangan va ishlab chiqarishdagi ishidan ozod etilmagan shaxslarga kasaba uyushmalariga oid majburiyatlarini ish vaqtida bajarishi uchun vaqt berishi. Bunda kasaba uyushmalariga oid majburiyatlarni bajarish vaqti ish haftasi soatlari sonining 30 foizidan kam boʻlmasligi kerak;",
+     "retrieval_score": 0.4395,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6257288#art-44#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "44-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "44-modda. Xodimlarning vakillik organlari tarkibiga saylangan shaxslarga beriladigan mehnat kafolatlari\nXodimlarning vakillik organlari tarkibiga saylangan shaxslarga xodimlarning huquq va manfaatlarini ifoda etishga hamda himoya qilishga doir faoliyatni amalga oshirishi munosabati bilan ish beruvchilar, ularning vakillari tomonidan biror-bir shakldagi taʼqib qilinishdan himoya qilinish kafolatlanadi.\nXodimlarning vakillik organlari tarkibiga saylangan va ishlab chiqarishdagi ishidan ozod etilmagan xodimlarga nisbatan intizomiy jazo choralarini qoʻllashga, ular bilan tuzilgan mehnat shartnomasini ish beruvchining tashabbusi bilan bekor qilishga, shuningdek xodimlarning vakillik organlari tarkibiga saylangan xodimlar bilan mehnatga oid munosabatlarni ularning saylab qoʻyiladigan lavozimdagi vakolatlari tugaganidan keyin ikki yil ichida ish beruvchining tashabbusi bilan mazkur shaxslar oʻz faoliyatini amalga oshirgan vakillik organining oldindan roziligini olmasdan bekor qilishga yoʻl qoʻyilmaydi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6257288#art-47#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "47-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "47-modda. Xodimlar va ish beruvchilar vakillarining faoliyatiga toʻsqinlik qilishni taqiqlash\nXodimlar va ish beruvchilar vakillarining qonuniy faoliyatiga har qanday shaklda toʻsqinlik qilish taqiqlanadi.\nIsh beruvchilarning tashabbusi bilan xodimlar vakillarining faoliyatini tugatishga yoʻl qoʻyilmaydi.\nXodimlar vakillarining qonuniy faoliyatini amalga oshirishga toʻsqinlik qiladigan yoxud ushbu moddaning ikkinchi qismida koʻrsatilgan harakatlarni sodir etgan ish beruvchilar, ular vakolat bergan shaxslar qonunga muvofiq javobgar boʻladi.\nXodimlar va ish beruvchilar vakillarining faoliyati oʻz taʼsis hujjatlarida belgilangan tartibda, shuningdek sudning qarori bilan tugatilishi mumkin.",
+     "retrieval_score": 0.8659,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1932,
+    "retrieval_ms": 2248,
+    "rerank_ms": 0,
+    "generation_ms": 4094,
+    "total_ms": 8276
+   },
+   "usage": {
+    "input_tokens": 13929,
+    "output_tokens": 781,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Men ish joyimda xodimlarning vakili sifatida faoliyat yuritaman; ish beruvchi menga qanday sharoitlar yaratishi va yordam koʻrsatishi shart? Xususan, ish beruvchi qaror qabul qilishdan oldin men bilan maslahatlashishi shartmi?",
+    "search_queries": [
+     "Ish joyimda xodimlar vakili boʻlib ishlayman, ish beruvchi menga qanday yordam berishi kerak? Masalan, qaror qabul qilishdan oldin men bilan gaplashishi shartmi yoki yoʻqmi?",
+     "Men ish joyimda xodimlarning vakili sifatida faoliyat yuritaman; ish beruvchi menga qanday sharoitlar yaratishi va yordam koʻrsatishi shart? Xususan, ish beruvchi qaror qabul qilishdan oldin men bilan maslahatlashishi shartmi?",
+     "xodimlar vakili ish beruvchi maslahatlashuv majburiyati",
+     "xodimlarning vakili kafolatlari mehnat kodeksi",
+     "ish beruvchi qaror qabul qilishdan oldin xodimlar vakili bilan maslahatlashish"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 663,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

@@ -1,0 +1,982 @@
+{
+ "run_id": "final-v3",
+ "batch_id": "final-v3-b02",
+ "batch_index": 2,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.1.0",
+  "prompt_version": "p7",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125645,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-07T21:17:58+05:00",
+  "completed_at": "2026-11-07T21:18:04+05:00",
+  "total_ms": 5225
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q011",
+   "status": "ok",
+   "answer": "Chet ellik investorlar oʻz manfaatlariga daxl qiluvchi qonun hujjatlari, shu jumladan idoraviy normativ hujjatlar hamda sudning hal qiluv qarorlaridan erkin foydalana oladilar, qonun hujjatlarida bevosita nazarda tutilgan hollarda esa bunday hujjatlar eʼlon qilinishi shart [1]. Davlat boshqaruv organlari va davlat hokimiyati mahalliy organlari chet ellik investorlarning soʻrovlariga koʻra ularni qiziqtirgan axborotni qonun hujjatlarida nazarda tutilgan tartibda berishlari shart [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-35333",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni chet ellik investorlar huquqlarining kafolatlari va ularni himoya qilish choralari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-35333",
+     "article": "9-modda",
+     "part": "1–2-qism",
+     "edition_date": "1998-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-35333#art-9#p1",
+     "quote": "Chet ellik investorlar oʻzlarining manfaatlariga biron-bir tarzda daxl qiluvchi qonun hujjatlari, shu jumladan idoraviy normativ hujjatlar, shuningdek sudning hal qiluv qarorlaridan erkin foydalana olishlari",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-35333",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni chet ellik investorlar huquqlarining kafolatlari va ularni himoya qilish choralari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-35333",
+     "article": "9-modda",
+     "part": "1–2-qism",
+     "edition_date": "1998-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-35333#art-9#p1",
+     "quote": "Davlat boshqaruv organlari va davlat hokimiyati mahalliy organlari chet ellik investorlarning soʻrovlariga koʻra ularni qiziqtirgan axborotni qonun hujjatlarida nazarda tutilgan tartibda berishlari shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-35333#art-9#p1",
+     "doc_id": "lex:-35333",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni chet ellik investorlar huquqlarining kafolatlari va ularni himoya qilish choralari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-35333",
+     "article": "9-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1998-04-30",
+     "text": "9-modda. Ochiq axborotdan erkin foydalana olish\nChet ellik investorlar oʻzlarining manfaatlariga biron-bir tarzda daxl qiluvchi qonun hujjatlari, shu jumladan idoraviy normativ hujjatlar, shuningdek sudning hal qiluv qarorlaridan erkin foydalana olishlari, Oʻzbekiston Respublikasi qonun hujjatlarida bevosita nazarda tutilgan hollarda esa – bunday hujjatlar eʼlon qilinishi shart.\nDavlat boshqaruv organlari va davlat hokimiyati mahalliy organlari chet ellik investorlarning soʻrovlariga koʻra ularni qiziqtirgan axborotni qonun hujjatlarida nazarda tutilgan tartibda berishlari shart.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1459,
+    "retrieval_ms": 492,
+    "rerank_ms": 0,
+    "generation_ms": 3272,
+    "total_ms": 5224
+   },
+   "usage": {
+    "input_tokens": 10775,
+    "output_tokens": 564,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Chet ellik investor oʻz manfaatlariga taʼsir qiluvchi qonun hujjatlari va sud qarorlari bilan qanday sharoitda tanishishi mumkin, va davlat organlari uning soʻroviga javob berishga majburmi?",
+    "search_queries": [
+     "Chet ellik investor oʻz manfaatlariga taʼsir qiluvchi qonun hujjatlari va sud qarorlari bilan qanday sharoitda tanishishi mumkin, va davlat organlari uning soʻroviga javob berishga majburmi?",
+     "chet ellik investor qonun hujjatlari bilan tanishish",
+     "investor soʻroviga davlat organlari javob berish majburiyati",
+     "investor manfaatlariga taʼsir qiluvchi sud qarorlari"
+    ],
+    "doc_hints": [
+     "Chet ellik investitsiyalar toʻgʻrisidagi qonun",
+     "Investitsiyalar va investitsiya faoliyati toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 558,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q012",
+   "status": "ok",
+   "answer": "Haydovchi yoʻl harakati qoidalarini buzib, birovning sogʻligʻiga oʻrtacha ogʻir shikast yetkazsa, Jinoyat kodeksining 268-moddasi birinchi qismiga koʻra bazaviy hisoblash miqdorining yigirma besh baravarigacha miqdorda jarima yoki uch yuz oltmish soatgacha majburiy jamoat ishlari yoki uch yilgacha axloq tuzatish ishlari yoxud bir yildan uch yilgacha ozodlikni cheklash yoki uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "268-modda",
+     "part": "1–8-qism",
+     "edition_date": "2019-12-04",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111453#art-268#p1",
+     "quote": "bazaviy hisoblash miqdorining yigirma besh baravarigacha miqdorda jarima yoki uch yuz oltmish soatgacha majburiy jamoat ishlari yoki uch yilgacha axloq tuzatish ishlari yoxud bir yildan uch yilgacha ozodlikni cheklash yoki uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111453#art-268#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "268-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-04",
+     "text": "268-modda. Transportning xavfsiz ishlashini taʼminlashga doir qoidalarni buzish\nYoʻlovchi, piyoda, velosiped, ot-ulov transportining haydovchisi yoki yoʻl harakatining boshqa qatnashchilari tomonidan, ushbu Kodeksning 261-263, 265 yoki 266-moddalarida nazarda tutilgan shaxslardan tashqari, harakat xavfsizligi qoidalarini yoki barcha turdagi transport vositalaridan foydalanish qoidalarini buzish badanga oʻrtacha ogʻir yoki ogʻir shikast yetkazilishiga sabab boʻlsa, —\nbazaviy hisoblash miqdorining yigirma besh baravarigacha miqdorda jarima yoki uch yuz oltmish soatgacha majburiy jamoat ishlari yoki uch yilgacha axloq tuzatish ishlari yoxud bir yildan uch yilgacha ozodlikni cheklash yoki uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha harakat odam oʻlishiga sabab boʻlsa, —\nuch yildan besh yilgacha ozodlikni cheklash yoki uch yildan besh yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻsha harakat:\na) odamlar oʻlimiga;\nb) boshqa ogʻir oqibatlarga sabab boʻlsa, —\nbesh yildan sakkiz yilgacha ozodlikdan mahrum qilish bilan jazolanadi.",
+     "retrieval_score": 0.9569,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1616,
+    "retrieval_ms": 1488,
+    "rerank_ms": 0,
+    "generation_ms": 996,
+    "total_ms": 4101
+   },
+   "usage": {
+    "input_tokens": 12769,
+    "output_tokens": 486,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Haydovchi yoʻl harakati qoidalarini buzib, birovning sogʻligʻiga oʻrtacha ogʻir shikast yetkazsa, unga qanday jazo tayinlanishi mumkin?",
+    "search_queries": [
+     "Haydovchi yoʻl harakati qoidalarini buzib, birovning sogʻligʻiga oʻrtacha ogʻir shikast yetkazsa, unga qanday jazo tayinlanishi mumkin?",
+     "yoʻl harakati qoidalarini buzish sogʻliqqa oʻrtacha ogʻir shikast yetkazish",
+     "transport vositalari harakati xavfsizligi qoidalarini buzish jazo",
+     "sogʻliqqa oʻrtacha ogʻir shikast yetkazish jinoyat javobgarlik"
+    ],
+    "doc_hints": [
+     "Jinoyat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 455,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q013",
+   "status": "ok",
+   "answer": "Bojxona kodeksining 344-moddasiga koʻra, bank kafolatida koʻrsatilgan bojxona toʻlovlari toʻlanishini taʼminlash summasi toʻlanishi lozim boʻlgan bojxona toʻlovlarining va foizlarning summasidan kam boʻlmasligi kerak [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "344-modda",
+     "part": "1–3-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2876354#art-344#p1",
+     "quote": "Bank kafolatida koʻrsatilgan bojxona toʻlovlari toʻlanishini taʼminlash summasining miqdori toʻlanishi lozim boʻlgan bojxona toʻlovlarining va foizlarning summasidan kam boʻlmasligi kerak",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:2876354#art-344#p1",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "344-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "344-modda. Bojxona toʻlovlari toʻlanishini taʼminlash sifatida bank kafolatini qoʻllash\nBojxona toʻlovlari toʻlanishini taʼminlash sifatida Oʻzbekiston Respublikasida bank operatsiyalarini oʻtkazish huquqiga ega boʻlgan bankning kafolati qoʻllanilishi mumkin.\nBank kafolatida koʻrsatilgan bojxona toʻlovlari toʻlanishini taʼminlash summasining miqdori toʻlanishi lozim boʻlgan bojxona toʻlovlarining va foizlarning summasidan kam boʻlmasligi kerak.\nToʻlovchi tomonidan bank kafolati bilan taʼminlangan majburiyat bajarilmagan taqdirda, toʻlanishi lozim boʻlgan bojxona toʻlovlarining summasi va foizlar qonunchilikka muvofiq soʻzsiz tartibda kafolat bergan bankdan bojxona organi tomonidan undirib olinadi.",
+     "retrieval_score": 0.6252,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1457,
+    "retrieval_ms": 1214,
+    "rerank_ms": 0,
+    "generation_ms": 1076,
+    "total_ms": 3748
+   },
+   "usage": {
+    "input_tokens": 11044,
+    "output_tokens": 378,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Bojxona toʻlovlari toʻlanishini kafolatlash uchun bank kafolati berilganda, unda koʻrsatilgan summa qancha boʻlishi kerak?",
+    "search_queries": [
+     "Bojxona toʻlovlari toʻlanishini kafolatlash uchun bank kafolati berilganda, unda koʻrsatilgan summa qancha boʻlishi kerak?",
+     "bojxona toʻlovlari toʻlanishini kafolatlash bank kafolati summasi",
+     "bank kafolati bojxona toʻlovlari miqdori",
+     "bojxona toʻlovlari boʻyicha bank kafolati shartlari"
+    ],
+    "doc_hints": [
+     "Bojxona kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 450,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q014",
+   "status": "ok",
+   "answer": "Uy-joy kodeksining 86-moddasiga koʻra, turar joy arendasi shartnomasi yozma shaklda tuzilishi hamda qonunchilikda belgilangan tartibda hisobga olinishi (roʻyxatdan oʻtkazilishi) lozim [1]. Shartnomada turar-joyni arendaga berish tartibi va qiymati, arenda muddatlari, shartlari va arenda haqi miqdori, uni toʻlash muddatlari, turar joy va muhandislik qurilmalari holati toʻgʻrisidagi maʼlumotlar, shartnoma muddati oʻtishi bilan turar joyni qaytarish tartibi, uni saqlash va taʼmirlash boʻyicha majburiyatlar, ikkilamchi arendaga berish imkoniyatlari hamda taraflarning javobgarligi koʻrsatilishi kerak [1]. Xuddi shu talab 25-moddada ham mustahkamlangan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "86-modda",
+     "part": "1–12-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-106136#art-86#p1",
+     "quote": "Turar joy arendasi shartnomasi yozma shaklda tuzilishi hamda qonunchilikda belgilangan tartibda hisobga olinishi (roʻyxatdan oʻtkazilishi) lozim",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "25-modda",
+     "part": "1–4-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-106136#art-25#p1",
+     "quote": "Turar joy ijarasi yoki arendasi shartnomasi yozma shaklda tuziladi hamda qonunchilikda belgilangan tartibda hisobga olinishi (roʻyxatdan oʻtkazilishi) lozim",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-106136#art-86#p1",
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "86-modda",
+     "part": "1–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "86-modda. Turar joy arendasi shartnomasi\nTurar joy fuqarolar va yuridik shaxslarga egalik qilish va foydalanish uchun arenda shartnomasi asosida berilishi mumkin. Yuridik shaxs turar joydan faqat fuqarolar yashashi uchun foydalanishi mumkin.\nTurar joy arendasi shartnomasi yozma shaklda tuzilishi hamda qonunchilikda belgilangan tartibda hisobga olinishi (roʻyxatdan oʻtkazilishi) lozim.\nTurar joy arendasi shartnomasi quyidagilarni oʻz ichiga olishi kerak:\nturar-joyni arendaga berish tartibi va uning qiymati;\nturar joy arendasining muddatlari;\nturar joyni arendaga berish shartlari va arenda haqi miqdori, uni toʻlash muddatlari;\narendaga beruvchi arendaga berayotgan turar joyning, muhandislik qurilmalarining holati toʻgʻrisidagi maʼlumotlar;\nshartnoma muddati oʻtishi bilan turar joyni arendaga beruvchiga qaytarish tartibi;\narendaga berilgan turar joyga qarash, xizmat koʻrsatish va uni taʼmirlash boʻyicha taraflarning majburiyatlari;\narendaga berilgan turar joyni ijaraga berish yoki ikkilamchi arendaga berish imkoniyatlari, shartlari va tartibi;\ntaraflarning javobgarligi.\nTurar joy arendasi shartnomasiga taraflarning kelishuvi boʻyicha qonunchilikka muvofiq boshqa shartlar ham kiritilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-106136#art-25#p1",
+     "doc_id": "lex:-106136",
+     "doc_title": "Oʻzbekiston Respublikasining uy-joy kodeksi",
+     "url": "https://lex.uz/docs/-106136",
+     "article": "25-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "25-modda. Fuqarolar va yuridik shaxslarga tegishli uylar, kvartiralardagi turar joylarni ijaraga, arendaga berish\nUy, kvartira mulkdori oʻzi bilan birga yashayotgan voyaga yetgan oila aʼzolarining roziligi bilan yoki yuridik shaxsning vakolatli organi qaroriga binoan uyni, kvartirani yoxud ularning bir qismini fuqarolarga va yuridik shaxslarga ijaraga yoki arendaga berishga haqlidir.\nTaraflarning huquq va majburiyatlari, ijara yoki arenda shartnomasi tuzilayotgan muddat, toʻlov haqi miqdori va boshqa shartlar, agar qonunchilikda boshqacha tartib belgilanmagan boʻlsa, taraflarning kelishuviga binoan belgilanadi.\nTurar joy ijarasi yoki arendasi shartnomasi yozma shaklda tuziladi hamda qonunchilikda belgilangan tartibda hisobga olinishi (roʻyxatdan oʻtkazilishi) lozim.\nTurar joy ijarasi yoki arendasi shartnomasiga nisbatan ushbu Kodeks qoidalari qoʻllaniladi. Turar joy ijarasi yoki arendasi shartnomasining ushbu Kodeks bilan tartibga solinmagan munosabatlari fuqarolik qonunchiligi bilan tartibga solinadi.",
+     "retrieval_score": 0.8739,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4216319#band-11s2#p1",
+     "doc_id": "lex:4216319",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori davlat uy-joy fondidagi turar joylarni taqsimlash va fuqarolarga ijara shartnomasi shartlari asosida berishni tartibga solishga qaratilgan normativ-huquqiy hujjatlarni tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/4216319",
+     "article": "11-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2019-02-26",
+     "text": "11. Turar joyning ijara shartnomasi turar joyning balansda saqlovchisi yoki vakolatli organlari tomonidan turar joyni olayotgan fuqarolar bilan Fuqarolik kodeksi va Uy-joy kodeksida belgilangan tartibda yozma shaklda tuziladi. Shartnomaning yozma shaklda tuzilishiga rioya qilinmasligi va uning hisobga olinmasligi shartnomaning haqiqiy emasligiga olib keladi.",
+     "retrieval_score": 0.6987,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1864,
+    "retrieval_ms": 1339,
+    "rerank_ms": 0,
+    "generation_ms": 184,
+    "total_ms": 3387
+   },
+   "usage": {
+    "input_tokens": 10491,
+    "output_tokens": 596,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Turar joy arendasi shartnomasi qanday shaklda tuzilishi va u qanday rasmiylashtirilishi kerak?",
+    "search_queries": [
+     "Turar joy arendasi shartnomasi qanday shaklda tuzilishi va u qanday rasmiylashtirilishi kerak?",
+     "turar joy arendasi shartnomasi shakli",
+     "turar joyni ijaraga berish shartnomasi yozma shakl",
+     "uy-joy arendasi shartnomasini rasmiylashtirish tartibi"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi",
+     "Uy-joy kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 459,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q015",
+   "status": "ok",
+   "answer": "Fuqarolar oʻrtasida qarz shartnomasi, agar qarz summasi bazaviy hisoblash miqdorining oʻn baravaridan ortiq boʻlsa, oddiy yozma shaklda tuzilishi shart [1]. Shartnomadagi taraflardan biri yuridik shaxs boʻlganida esa summasidan qatʼi nazar yozma shaklda tuzilishi shart [1]. Yozma shaklga rioya qilmaslik Fuqarolik kodeksining 109-moddasida nazarda tutilgan oqibatlarga olib keladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "733-modda",
+     "part": "1–4-qism",
+     "edition_date": "2019-12-04",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-180552#art-733#p1",
+     "quote": "Fuqarolar oʻrtasida qarz shartnomasi, agar bu qarzning summasi bazaviy hisoblash miqdorining oʻn baravaridan ortiq boʻlsa, oddiy yozma shaklda tuzilishi shart, shartnomadagi taraflardan biri yuridik shaxs boʻlganida esa summasidan qatʼi nazar, yozma shaklda tuzilishi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-180552#art-733#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "733-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-04",
+     "text": "733-modda. Qarz shartnomasining shakli\nFuqarolar oʻrtasida qarz shartnomasi, agar bu qarzning summasi bazaviy hisoblash miqdorining oʻn baravaridan ortiq boʻlsa, oddiy yozma shaklda tuzilishi shart, shartnomadagi taraflardan biri yuridik shaxs boʻlganida esa summasidan qatʼi nazar, yozma shaklda tuzilishi shart.\nQarz shartnomasining yozma shakliga rioya qilmaslik ushbu Kodeksning 109-moddasida nazarda tutilgan oqibatlarga olib keladi.\nAgar qarz oluvchining tilxati yoki unga qarz beruvchi tomonidan muayyan summa yoki muayyan miqdordagi ashyolar topshirilganligini tasdiqlaydigan boshqa hujjat mavjud boʻlsa, qarz shartnomasi yozma shaklda tuzilgan hisoblanadi.\nAgar qarz majburiyati qarz oluvchi tomonidan berilgan veksel, obligatsiya yoki qarz summasini va qarz beruvchining uni undirib olish huquqini belgilaydigan boshqa qimmatli qogʻoz bilan tasdiqlangan boʻlsa, qarz shartnomasining yozma shakliga rioya qilingan hisoblanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-1448773#band-21#p1",
+     "doc_id": "lex:-1448773",
+     "doc_title": "Oʻzbekiston Respublikasi oliy sudi plenumining qarori fuqarolik kodeksini tatbiq qilishda sud amaliyotida vujudga keladigan ayrim masalalar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-1448773",
+     "article": "21-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-04-29",
+     "text": "21. FKning 733-moddasi 1-qismiga binoan qarz beruvchi yuridik shaxs boʻlganida yoki fuqarolar oʻrtasida tuzilgan qarz shartnomasining summasi bazaviy hisoblash miqdorining oʻn baravaridan ortiq boʻlgan hollarda qarz shartnomasini oddiy yozma shaklda tuzilishi talab qilinadi. Sudlar qarz shartnomasining oddiy yozma shakliga rioya qilmaslik uning haqiqiy emasligiga olib kelmasligini nazarda tutishlari lozim.\nFK 109-moddasining birinchi va ikkinchi qismlariga muvofiq taraflar bunday holda guvohlarning koʻrsatuvlariga asoslanishga haqli emas, lekin bu ularni yozma va boshqa dalillar keltirish imkoniyatidan mahrum qilmaydi.\nAgar pul yoki ashyo olganlik fakti inkor etilmasa, u holda uni yozma dalillar bilan tasdiqlash talab qilinmaydi, har bir taraf oʻz talablarini asoslash uchun keltirayotgan holatlarni isbotlashga majbur.\nShunga koʻra bir taraf pul yoki ashyoni qarz uchun berganini daʼvo qilib, ikkinchi taraf uni olganini inkor qilmasdan bu pul yoki ashyo qarzga emas, balki hadya tariqasida bergan deb vaj keltirsa, sud pul yoki ashyoni olgan tarafdan bitim qarz emas, balki hadya bitimi ekanligini tasdiqlovchi dalillarni talab qilishi va shu asosga koʻra nizoni hal qilishi lozim.",
+     "retrieval_score": 0.742,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1482,
+    "retrieval_ms": 1659,
+    "rerank_ms": 0,
+    "generation_ms": 1199,
+    "total_ms": 4341
+   },
+   "usage": {
+    "input_tokens": 11616,
+    "output_tokens": 459,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Ikki fuqaro oʻrtasida qarz berilganda, qanday summadan boshlab shartnomani albatta yozma ravishda tuzish talab qilinadi?",
+    "search_queries": [
+     "Ikki fuqaro oʻrtasida qarz berilganda, qanday summadan boshlab shartnomani albatta yozma ravishda tuzish talab qilinadi?",
+     "qarz shartnomasi yozma shakl talabi",
+     "qarz shartnomasi summasi yozma tuzish",
+     "fuqarolar oʻrtasida qarz shartnomasi shakli"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 456,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q016",
+   "status": "ok",
+   "answer": "Budjet kodeksining 128-moddasiga koʻra, undiruvni davlat maqsadli jamgʻarmalari mablagʻlariga qaratishni nazarda tutuvchi ijro hujjatlari davlat maqsadli jamgʻarmalarini taqsimlovchi organlar tomonidan Oʻzbekiston Respublikasi Vazirlar Mahkamasi belgilagan tartibda ijro etiladi [1]. Undiruvchi oʻz foydasiga pul olishi uchun ijro hujjatining asl nusxasini ilova qilgan holda ariza taqdim etadi, arizada uning bank hisobvaragʻi koʻrsatilishi lozim [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.6,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:2304138",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING BUDJET KODEKSI Umumiy qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/2304138",
+     "article": "128-modda",
+     "part": "1–5-qism",
+     "edition_date": "2025-12-26",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2304138#art-128#p1",
+     "quote": "Undiruvni davlat maqsadli jamgʻarmalari mablagʻlariga qaratishni nazarda tutuvchi ijro hujjatlarini ijro etish davlat maqsadli jamgʻarmalarini taqsimlovchi organlar tomonidan Oʻzbekiston Respublikasi Vazirlar Mahkamasi belgilagan tartibda amalga oshiriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:2304138",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING BUDJET KODEKSI Umumiy qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/2304138",
+     "article": "128-modda",
+     "part": "1–5-qism",
+     "edition_date": "2025-12-26",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2304138#art-128#p1",
+     "quote": "tegishli iqtisodiyot va moliya organlariga ijro hujjatining asl nusxasini ilova qilgan holda ariza taqdim etadi. Arizada budjet mablagʻlari oʻtkazilishi talab qilinayotgan undiruvchining bank hisobvaragʻi koʻrsatilgan boʻlishi lozim",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:2304138#art-128#p1",
+     "doc_id": "lex:2304138",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING BUDJET KODEKSI Umumiy qism",
+     "url": "https://lex.uz/docs/2304138",
+     "article": "128-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-26",
+     "text": "128-modda. Ijro hujjatlari boʻyicha undiruvni Davlat budjeti va davlat maqsadli jamgʻarmalari mablagʻlariga qaratish\nUndiruvni Davlat budjeti mablagʻlariga qaratishni nazarda tutuvchi ijro hujjatlarini ijro etish iqtisodiyot va moliya organlari tomonidan tegishli budjet mablagʻlari hisobidan amalga oshiriladi.\nIjro hujjatlari boʻyicha tegishli budjetdan mablagʻlar olish uchun ijro hujjatida kimning foydasiga budjet mablagʻlari oʻtkazilishi nazarda tutilgan boʻlsa, oʻsha shaxslar yoxud ularning vakillari (bundan buyon matnda undiruvchilar deb yuritiladi) tegishli iqtisodiyot va moliya organlariga ijro hujjatining asl nusxasini ilova qilgan holda ariza taqdim etadi. Arizada budjet mablagʻlari oʻtkazilishi talab qilinayotgan undiruvchining bank hisobvaragʻi koʻrsatilgan boʻlishi lozim.\nIjro varaqasi yoki sud buyrugʻi sudyaning elektron raqamli imzosi bilan tasdiqlangan elektron hujjat tarzida axborot tizimi orqali taqdim etilishi mumkin.\nIqtisodiyot va moliya organi ijro hujjati kelib tushgan kundan eʼtiboran belgilangan tartibda uning ijro etilishini taʼminlaydi.\nUndiruvni davlat maqsadli jamgʻarmalari mablagʻlariga qaratishni nazarda tutuvchi ijro hujjatlarini ijro etish davlat maqsadli jamgʻarmalarini taqsimlovchi organlar tomonidan Oʻzbekiston Respublikasi Vazirlar Mahkamasi belgilagan tartibda amalga oshiriladi.",
+     "retrieval_score": 0.6882,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1680,
+    "retrieval_ms": 1302,
+    "rerank_ms": 0,
+    "generation_ms": 1794,
+    "total_ms": 4778
+   },
+   "usage": {
+    "input_tokens": 10123,
+    "output_tokens": 587,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Davlat maqsadli jamgʻarmasi mablagʻlaridan undiruvchi oʻz foydasiga pul olishi uchun ijro hujjati qanday tartibda ijro etiladi va bunday jamgʻarmalar kimning qarori bilan tashkil etiladi?",
+    "search_queries": [
+     "Davlat maqsadli jamgʻarmasi mablagʻlaridan undiruvchi oʻz foydasiga pul olishi uchun ijro hujjati qanday tartibda ijro etiladi va bunday jamgʻarmalar kimning qarori bilan tashkil etiladi?",
+     "davlat maqsadli jamgʻarmasi mablagʻlaridan undirish tartibi",
+     "ijro hujjatini ijro etish davlat maqsadli jamgʻarmasi",
+     "davlat maqsadli jamgʻarmalarini tashkil etish qarori"
+    ],
+    "doc_hints": [
+     "Ijro ishi yuritish toʻgʻrisidagi qonun",
+     "Budjet kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 582,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q017",
+   "status": "ok",
+   "answer": "Organik mahsulot ishlab chiqaruvchi organik mahsulotlarning muvofiqligini tasdiqlash tartib-taomilidan oʻtganidan va organik jihatdan muvofiqlik sertifikatini olganidan keyin milliy muvofiqlik belgisidan foydalanish huquqiga ega boʻladi [1]. Organik mahsulotlar sohasida ekvivalentlikni baholash vakolatli davlat organi tomonidan amalga oshiriladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5980334",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni organik mahsulotlar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5980334",
+     "article": "20-modda",
+     "part": "1–5-qism",
+     "edition_date": "2022-04-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5980334#art-20#p1",
+     "quote": "Organik mahsulotlarni ishlab chiqaruvchi organik mahsulotlarning muvofiqligini tasdiqlash tartib-taomilidan oʻtganidan va organik jihatdan muvofiqlik sertifikatini olganidan keyin organik mahsulotlarning milliy muvofiqlik belgisidan foydalanish huquqiga ega boʻladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-5980334",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni organik mahsulotlar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5980334",
+     "article": "22-modda",
+     "part": "1–2-qism",
+     "edition_date": "2022-04-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5980334#art-22#p1",
+     "quote": "Organik mahsulotlar sohasida ekvivalentlikni baholash vakolatli davlat organi tomonidan amalga oshiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5980334#art-20#p1",
+     "doc_id": "lex:-5980334",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni organik mahsulotlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5980334",
+     "article": "20-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-04-25",
+     "text": "20-modda. Organik mahsulotlarning muvofiqligini baholash\nOrganik mahsulotlarni ishlab chiqarish, qayta ishlash, saqlashning muvofiqligini baholashni tashkil etish organik mahsulotlarni ishlab chiqaruvchilar uchun ixtiyoriydir.\nOrganik mahsulotlarni ishlab chiqarish, qayta ishlash, saqlash, transportda tashish, tamgʻalash va realizatsiya qilishning muvofiqligini baholash chogʻida inspeksiya nazorati organik mahsulotlar toʻgʻrisidagi qonunchilik hamda texnik jihatdan tartibga solish sohasidagi normativ hujjatlar talablariga rioya etilishi nuqtai nazaridan amalga oshiriladi.\nOrganik jihatdan muvofiqlik sertifikati organik mahsulotlarni ishlab chiqarish, qayta ishlash, saqlash, transportda tashish, tamgʻalash va realizatsiya qilishning muvofiqligini baholash natijasidir.\nOrganik mahsulotlarni ishlab chiqaruvchi organik mahsulotlarning muvofiqligini tasdiqlash tartib-taomilidan oʻtganidan va organik jihatdan muvofiqlik sertifikatini olganidan keyin organik mahsulotlarning milliy muvofiqlik belgisidan foydalanish huquqiga ega boʻladi.\nOrganik mahsulotlarning milliy muvofiqlik belgisining tavsifi, shakli va unga doir texnik talablar texnik jihatdan tartibga solish sohasidagi normativ hujjatlarda belgilanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5980334#art-22#p1",
+     "doc_id": "lex:-5980334",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni organik mahsulotlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5980334",
+     "article": "22-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-04-25",
+     "text": "22-modda. Organik mahsulotlar sohasida ekvivalentlikni baholash\nOrganik mahsulotlar sohasida ekvivalentlikni baholash vakolatli davlat organi tomonidan amalga oshiriladi.\nOrganik mahsulotlarni ishlab chiqarish sohasida ekvivalentlikni baholash chogʻida organik mahsulotlar toʻgʻrisidagi qonunchilik hamda texnik jihatdan tartibga solish sohasidagi normativ hujjatlar talablari xorijiy mamlakatlar qonunchiligiga va xalqaro standartlarga muvofiq oʻrganiladi.",
+     "retrieval_score": 0.8721,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1555,
+    "retrieval_ms": 1431,
+    "rerank_ms": 0,
+    "generation_ms": 929,
+    "total_ms": 3917
+   },
+   "usage": {
+    "input_tokens": 12032,
+    "output_tokens": 480,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Organik mahsulot ishlab chiqaruvchi milliy muvofiqlik belgisidan foydalanish huquqini qanday qoʻlga kiritadi va ekvivalentlikni baholashni kim amalga oshiradi?",
+    "search_queries": [
+     "Organik mahsulot ishlab chiqaruvchi milliy muvofiqlik belgisidan foydalanish huquqini qanday qoʻlga kiritadi va ekvivalentlikni baholashni kim amalga oshiradi?",
+     "organik mahsulot milliy muvofiqlik belgisi",
+     "organik mahsulot ekvivalentlikni baholash",
+     "milliy muvofiqlik belgisidan foydalanish huquqi"
+    ],
+    "doc_hints": [
+     "Organik mahsulotlar toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 498,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q018",
+   "status": "ok",
+   "answer": "Suv kodeksining 18-moddasiga koʻra, suv xoʻjaligining foydalanuvchi tashkilotlari va suv yetkazib beruvchi tashkilotlar suv resurslarini boshqarishda suvdan foydalanuvchilarning, nodavlat notijorat tashkilotlari hamda fuqarolarning, shu jumladan aholining ijtimoiy himoyaga muhtoj qatlamlarining takliflarini hisobga oladi [1].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "18-modda",
+     "part": "1–2-qism",
+     "edition_date": "2025-07-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7655343#art-18#p1",
+     "quote": "Suv xoʻjaligining foydalanuvchi tashkilotlari va suv yetkazib beruvchi tashkilotlar suv resurslarini boshqarishda, suvdan va suv obyektlaridan oqilona foydalanish hamda ularni muhofaza qilish tadbirlarini amalga oshirishda suvdan foydalanuvchilarning, nodavlat notijorat tashkilotlari hamda fuqarolarning, shu jumladan aholining ijtimoiy himoyaga muhtoj qatlamlarining takliflarini hisobga oladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7655343#art-18#p1",
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "18-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-30",
+     "text": "18-modda. Suv resurslarini boshqarishda fuqarolarning va nodavlat birlashmalarining ishtirok etishi\nYuridik shaxslar, nodavlat notijorat tashkilotlari boʻlgan suvdan foydalanuvchilar oʻz taʼsis hujjatlariga muvofiq, shuningdek fuqarolar suv resurslarini boshqarishda, suvdan va suv obyektlaridan oqilona foydalanish, ularni muhofaza qilish tadbirlarini amalga oshirishda ishtirok etish huquqiga ega.\nSuv xoʻjaligining foydalanuvchi tashkilotlari va suv yetkazib beruvchi tashkilotlar suv resurslarini boshqarishda, suvdan va suv obyektlaridan oqilona foydalanish hamda ularni muhofaza qilish tadbirlarini amalga oshirishda suvdan foydalanuvchilarning, nodavlat notijorat tashkilotlari hamda fuqarolarning, shu jumladan aholining ijtimoiy himoyaga muhtoj qatlamlarining takliflarini hisobga oladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1860,
+    "retrieval_ms": 1354,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 3215
+   },
+   "usage": {
+    "input_tokens": 11656,
+    "output_tokens": 523,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Suv xoʻjaligi va suv yetkazib beruvchi tashkilotlar suv resurslarini boshqarishda kimlarning takliflarini hisobga olishlari shart?",
+    "search_queries": [
+     "Сув хўжалиги ва сув етказиб берувчи ташкилотлар сув ресурсларини бошқаришда кимларнинг таклифларини ҳисобга олишлари шарт?",
+     "Suv xoʻjaligi va suv yetkazib beruvchi tashkilotlar suv resurslarini boshqarishda kimlarning takliflarini hisobga olishlari shart?",
+     "suv resurslarini boshqarishda takliflarni hisobga olish",
+     "suv xoʻjaligi tashkilotlari takliflarni hisobga olishi shart",
+     "suvdan foydalanuvchilar takliflari suv resurslarini boshqarish"
+    ],
+    "doc_hints": [
+     "Suv kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 542,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q019",
+   "status": "ok",
+   "answer": "Soliq kodeksining 460-moddasiga koʻra, chet davlatlar avtotransport vositalarining Oʻzbekiston Respublikasi hududiga kirganligi va uning hududi orqali tranziti uchun yigʻim chet davlatning avtotransport vositasi Oʻzbekiston Respublikasi hududiga kirayotganda yoki Vazirlar Mahkamasi tomonidan belgilangan tartibga muvofiq Oʻzbekiston Respublikasining bojxona hududida undiriladi [1]. Yigʻimlarni undirish bojxona organlari tomonidan amalga oshiriladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "460-modda",
+     "part": "1–2-qism",
+     "edition_date": "2025-05-17",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-460#p1",
+     "quote": "yigʻim chet davlatning avtotransport vositasi Oʻzbekiston Respublikasi hududiga kirayotganda yoki Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibga muvofiq Oʻzbekiston Respublikasining bojxona hududida undiriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-532681",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori avtomobilda xorijiy yuk tashuvchilarning Oʻzbekiston Respublikasi hududiga kirishlari, boʻlishlari, yuk olib oʻtishlari va undan chiqib ketishlari tartibi toʻgʻrisida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/-532681",
+     "article": "5-band",
+     "part": null,
+     "edition_date": "2026-02-08",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-532681#band-5#p1",
+     "quote": "Hujjatlarni rasmiylashtirish, xorijiy davlatlar avtotransport vositalarining Oʻzbekiston Respublikasi hududiga kirganligi hamda tranzit oʻtishi uchun yigʻimlarning belgilangan tartibda undirilishi bojxona organlari tomonidan amalga oshiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-460#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "460-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-17",
+     "text": "460-modda. Yigʻimlarni toʻlash tartibi\nChet davlatlar avtotransport vositalarining Oʻzbekiston Respublikasi hududiga kirganligi va uning hududi orqali tranziti uchun yigʻim chet davlatning avtotransport vositasi Oʻzbekiston Respublikasi hududiga kirayotganda yoki Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibga muvofiq Oʻzbekiston Respublikasining bojxona hududida undiriladi.\nYuk koʻtarish quvvati 10 tonnadan yuqori boʻlgan yuk avtotransporti vositalari va tirkamalarining avtomobil yoʻllari boʻylab harakatlanishi huquqi uchun yigʻim qonunchilikda belgilangan tartibda Qoraqalpogʻiston Respublikasi Transport vazirligi va hududiy transport boshqarmalari tomonidan undiriladi. Bunda toʻlangan yigʻim yuk avtotransporti vositalari va tirkamalariga avtomobil yoʻllari boʻylab bir yil davomida harakatlanish huquqini beradi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:6718864#preamble#p456",
+     "doc_id": "lex:6718864",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni soliq va budjet siyosatining 2024-yilga moʻljallangan asosiy yoʻnalishlari qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/6718864",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-12-28",
+     "text": "Ushbu modda birinchi qismining uchinchi xatboshisida nazarda tutilgan soliq solish obyekti jumlasiga quyidagilar kirmaydi:\n1) karyerlar hududida ishlaydigan ogʻir yuk koʻtaradigan avtosamosvallar;\n2) avtokranlar;\n3) Oʻzbekiston Respublikasi Favqulodda vaziyatlar vazirligi, Mudofaa vazirligi, Milliy gvardiyasi va huquqni muhofaza qiluvchi organlar tasarrufidagi avtotransport vositalari”;\n44) 458-moddaning matni quyidagi tahrirda bayon etilsin:\n“Quyidagilar yigʻimlarning soliq bazasi hisoblanadi:\nOʻzbekiston Respublikasi hududiga kirayotganida yoki uning hududi orqali tranzit oʻtayotganida — chet davlatlarning avtotransport vositalari;\nyuk koʻtarish quvvati 10 tonnadan yuqori boʻlgan yuk avtotransporti vositalari va tirkamalari”;\n45) 460-modda:\nbirinchi qismi quyidagi tahrirda bayon etilsin:\n“Chet davlatlar avtotransport vositalarining Oʻzbekiston Respublikasi hududiga kirganligi va uning hududi orqali tranziti uchun yigʻim chet davlatning avtotransport vositasi Oʻzbekiston Respublikasi hududiga kirayotganda yoki Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibga muvofiq Oʻzbekiston Respublikasining bojxona hududida undiriladi”;\nquyidagi mazmundagi ikkinchi qism bilan toʻldirilsin:",
+     "retrieval_score": 0.6862,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-532681#band-5#p1",
+     "doc_id": "lex:-532681",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori avtomobilda xorijiy yuk tashuvchilarning Oʻzbekiston Respublikasi hududiga kirishlari, boʻlishlari, yuk olib oʻtishlari va undan chiqib ketishlari tartibi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-532681",
+     "article": "5-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2026-02-08",
+     "text": "5. Hududga kirish hujjatlarini rasmiylashtirganlik uchun stavka va xorijiy davlatlar avtotransport vositalarining Oʻzbekiston Respublikasi hududiga kirganligi hamda tranzit oʻtishi uchun yigʻim qonunchilik bilan belgilanadi.\nYigʻimlar milliy valyuta “soʻm”da naqd yoki naqd pulsiz shaklda tijorat banklarida yigʻimlar hisoblangan kundagi Oʻzbekiston Respublikasi Markaziy bankining kursi boʻyicha undiriladi. Bunda chet davlatlar avtotransport vositalarining Oʻzbekiston Respublikasi hududiga kirganligi va uning hududi orqali tranziti uchun olingan mablagʻlarning 70 foizi Oʻzbekiston Respublikasi Davlat budjetiga, 20 foizi Oʻzbekiston Respublikasi Transport vazirligi huzuridagi Avtomobil yoʻllari qoʻmitasi faoliyatini rivojlantirish va qoʻllab-quvvatlash jamgʻarmasiga, 10 foizi bojxona organlarining budjetdan tashqari jamgʻarmasiga qonunchilikda belgilangan tartibda oʻtkaziladi.\nHujjatlarni rasmiylashtirish, xorijiy davlatlar avtotransport vositalarining Oʻzbekiston Respublikasi hududiga kirganligi hamda tranzit oʻtishi uchun yigʻimlarning belgilangan tartibda undirilishi bojxona organlari tomonidan amalga oshiriladi.\nBunda belgilangan yigʻimlarni undirish mezonlari va talablari Transport vazirligi tomonidan bojxona organlari axborot tizimlariga kiritilgan maʼlumotlarga asosan belgilanadi.",
+     "retrieval_score": 0.8505,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1994,
+    "retrieval_ms": 1350,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 3344
+   },
+   "usage": {
+    "input_tokens": 12773,
+    "output_tokens": 562,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Chet davlat yuk mashinasi Oʻzbekiston hududiga kirganda yigʻim qachon undiriladi?",
+    "search_queries": [
+     "Chet davlat yuk mashinasi Oʻzbekiston hududiga kirganda yigʻim qachon undiriladi?",
+     "chet davlat yuk avtomobillari uchun yigʻim undirish",
+     "chet davlat transporti hududga kirganda yigʻim",
+     "avtomobil transporti yigʻimi undirish tartibi"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi",
+     "Yoʻl harakati toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 608,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q020",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida bu savolga aniq javob topilmadi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-180552#art-1115#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1115-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-06-07",
+     "text": "1115-modda. Yer uchastkasiga boʻlgan huquqni meros qilib olish\nYer uchastkasiga boʻlgan huquqni meros qilib olish, agar qonunda boshqacha tartib belgilanmagan boʻlsa, ushbu Kodeks qoidalari bilan tartibga solinadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1708,
+    "retrieval_ms": 1051,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 2759
+   },
+   "usage": {
+    "input_tokens": 947,
+    "output_tokens": 126,
+    "models": {
+     "rewrite": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Mars sayyorasida yer uchastkasini meros qilib olish tartibi qanday?",
+    "search_queries": [
+     "Mars sayyorasida yer uchastkasini meros qilib olish tartibi qanday?",
+     "yer uchastkasini meros qilib olish tartibi",
+     "meros boʻyicha yer uchastkasiga boʻlgan huquq",
+     "yer uchastkasini meros qilib olish"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi",
+     "Yer kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 287,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": null,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

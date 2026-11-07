@@ -1,0 +1,1559 @@
+{
+ "run_id": "full100-v2",
+ "batch_id": "full100-v2-b10",
+ "batch_index": 10,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p6",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125645,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:46:34+05:00",
+  "completed_at": "2026-11-06T18:46:42+05:00",
+  "total_ms": 7954
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q091",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasi Bojxona kodeksining 2-moddasiga koʻra, agar Oʻzbekiston Respublikasining xalqaro shartnomasida bojxona toʻgʻrisidagi qonunchiligida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnoma qoidalari qoʻllaniladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.98,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "2-modda",
+     "part": "1–3-qism",
+     "edition_date": "2026-07-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2876354#art-2#p1",
+     "quote": "Agar Oʻzbekiston Respublikasining xalqaro shartnomasida Oʻzbekiston Respublikasining bojxona toʻgʻrisidagi qonunchiligida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnoma qoidalari qoʻllaniladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:2876354#art-2#p1",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "2-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-25",
+     "text": "2-modda. Bojxona toʻgʻrisidagi qonunchilik\nBojxona toʻgʻrisidagi qonunchilik ushbu Kodeksdan va boshqa qonunchilik hujjatlaridan iborat.\nOʻzbekiston Respublikasining Konstitutsiyaviy Qonuni bilan maxsus huquqiy rejim oʻrnatilgan hududda muayyan bojxona munosabatlari ushbu Qonunda belgilanganidan boshqacha qoidalar bilan tartibga solinadi.\nAgar Oʻzbekiston Respublikasining xalqaro shartnomasida Oʻzbekiston Respublikasining bojxona toʻgʻrisidagi qonunchiligida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnoma qoidalari qoʻllaniladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:1950884#band-1#p1",
+     "doc_id": "lex:1950884",
+     "doc_title": "Oʻzbekiston Respublikasi oliy xoʻjalik sudi plenumining qarori xoʻjalik sudlari tomonidan bojxona haqidagi qonun hujjatlarini qoʻllashning ayrim masalalari toʻgʻrisida",
+     "url": "https://lex.uz/docs/1950884",
+     "article": "1-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2009-04-24",
+     "text": "1. Xoʻjalik sudlarining eʼtibori Oʻzbekiston Respublikasining bojxona haqidagi qonun hujjatlari Oʻzbekiston Respublikasi Bojxona kodeksi (bundan buyon matnda BK deb yuritiladi) hamda boshqa qonun hujjatlaridan iboratligiga qaratilsin. Ishlarni koʻrishda Oʻzbekiston Respublikasining davlat bojxona xizmati organi (bundan buyon matnda bojxona organi deb yuritiladi) bojxona deklaratsiyasini va boshqa hujjatlarni qabul qilib olayotgan kuni amalda boʻlgan BK va boshqa qonun hujjatlari qoʻllaniladi, qonun hujjatlarida nazarda tutilgan hollar bundan mustasno.\nAgar Oʻzbekiston Respublikasining xalqaro shartnomasida bojxona haqidagi qonun hujjatlarida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnoma qoidalari qoʻllaniladi.\nNormativ-huquqiy hujjatlardagi barcha bartaraf etib boʻlmaydigan qarama-qarshiliklar va noaniqliklar xoʻjalik yurituvchi subyekt foydasiga talqin qilinadi.",
+     "retrieval_score": 0.4432,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2876354#art-165#p1",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "165-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "165-modda. Xalqaro pochta va kuryerlik joʻnatmalari\nBojxona chegarasi orqali olib oʻtiladigan pochta yoki kuryerlik joʻnatmalari xalqaro pochta yoki kuryerlik joʻnatmalaridir.\nXalqaro pochta joʻnatmalari Umumjahon pochta ittifoqining hujjatlarida nazarda tutilgan hujjatlar bilan birga yuborilishi kerak.\nXalqaro kuryerlik joʻnatmalari tijorat hujjatlari bilan birga yuborilishi kerak.\nXalqaro pochta va kuryerlik joʻnatmalarida tegishincha bojxona hududiga olib kirilishi yoki ushbu hududdan olib chiqilishi qonunchilikda taqiqlangan tovarlarni yuborishga yoʻl qoʻyilmaydi.",
+     "retrieval_score": 0.7673,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:2876354#art-295#p1",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "295-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2016-01-20",
+     "text": "295-modda. Bojxona toʻlovlarini toʻlovchilar\nBojxona toʻlovlarini toʻlovchi (bundan buyon matnda toʻlovchi deb yuritiladi) quyidagilardan iborat:\ndeklarant;\nbojxona brokeri, agar deklarant bilan tuzilgan shartnomada bu nazarda tutilgan boʻlsa;\nbojxona omborining, erkin omborning, boj olinmaydigan savdo doʻkonining egasi, tashuvchi, ular tomonidan bojxona rejimlarining qoʻllanilish talablari va shartlariga amal qilinmaganda;\nxalqaro pochta va kuryerlik joʻnatmalarining pochta aloqasi operatorlari va provayderlari, basharti bojxona nazorati ostida boʻlgan xalqaro pochta va kuryerlik joʻnatmalari yoʻqolsa yoki bojxona nazoratisiz berilsa.\nHar qanday manfaatdor shaxs toʻlovchi uchun bojxona toʻlovlarini toʻlashga haqli.",
+     "retrieval_score": 0.7667,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:2876354#art-300#p5",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "300-modda",
+     "part": "5–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-02-28",
+     "text": "300-modda. Tarif preferensiyalari\nOʻzbekiston Respublikasi erkin savdo zonasini tashkil etish toʻgʻrisida xalqaro shartnoma tuzgan davlatlarda ishlab chiqarilgan tovarlarga nisbatan, agar tovar erkin savdo zonasini tashkil etish toʻgʻrisidagi xalqaro shartnoma ishtirokchilari boʻlgan davlatlardan birining rezidenti tomonidan eksport qilinayotgan boʻlsa va ushbu shartnoma ishtirokchisi boʻlgan davlatning rezidenti tomonidan shartnoma ishtirokchisi boʻlgan boshqa davlatning bojxona hududidan olib kirilgan boʻlsa, bojxona bojlari qoʻllanilmaydi. Bunda rezident deganda shu davlat hududida tashkil etilgan tashkilot yoxud shu davlat hududida doimiy yashaydigan jismoniy shaxs tushuniladi. Boshqa hollarda boj tarifiga muvofiq bojxona boji stavkasi qoʻllaniladi.\nTarif preferensiyalari ushbu Kodeksning 50-bobi qoidalariga rioya etgan holda beriladi.",
+     "retrieval_score": 0.7624,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2385,
+    "retrieval_ms": 2292,
+    "rerank_ms": 0,
+    "generation_ms": 2137,
+    "total_ms": 6814
+   },
+   "usage": {
+    "input_tokens": 11099,
+    "output_tokens": 478,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Bojxona kodeksiga koʻra, agar Oʻzbekiston Respublikasining xalqaro shartnomasida bojxona qonunchiligida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, qaysi qoidalar qoʻllaniladi?",
+    "search_queries": [
+     "Bojxona kodeksiga koʻra, agar Oʻzbekistonning xalqaro shartnomasida bojxona qonunchiligidagidan boshqacha qoidalar belgilangan boʻlsa, qaysi qoidalar qoʻllaniladi?",
+     "Bojxona kodeksiga koʻra, agar Oʻzbekiston Respublikasining xalqaro shartnomasida bojxona qonunchiligida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, qaysi qoidalar qoʻllaniladi?",
+     "xalqaro shartnoma bojxona qonunchiligidan boshqacha qoidalar belgilangan boʻlsa qaysi qoidalar qoʻllaniladi",
+     "bojxona qonunchiligi xalqaro shartnomalar ustunligi",
+     "xalqaro shartnoma qoidalari bojxona qonunchiligiga nisbatan qoʻllanilishi"
+    ],
+    "doc_hints": [
+     "Bojxona kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 639,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q092",
+   "status": "ok",
+   "answer": "«Raqobat toʻgʻrisida»gi qonunning 1-moddasiga koʻra, ushbu Qonunning maqsadi tovar yoki moliya bozorlarida raqobatning cheklanishiga, shuningdek raqobat yoki tabiiy monopoliya sharoitlarida isteʼmolchilarning huquqlari va qonuniy manfaatlari kamsitilishiga olib keladigan yoki olib kelishi mumkin boʻlgan harakatlarni nazorat qilishni amalga oshirish hamda ularga chek qoʻyish bilan bogʻliq munosabatlarni tartibga solishdan iborat [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6518381",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni raqobat toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6518381",
+     "article": "1-modda",
+     "part": "1-qism",
+     "edition_date": "2023-07-03",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6518381#art-1#p1",
+     "quote": "Ushbu Qonunning maqsadi tovar yoki moliya bozorlarida raqobatning cheklanishiga, shuningdek raqobat yoki tabiiy monopoliya sharoitlarida isteʼmolchilarning huquqlari va qonuniy manfaatlari kamsitilishiga olib keladigan yoki olib kelishi mumkin boʻlgan harakatlarni nazorat qilishni amalga oshirish hamda ularga chek qoʻyish bilan bogʻliq boʻlgan, raqobat sohasidagi munosabatlarni tartibga solishdan iborat",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6518381#art-1#p1",
+     "doc_id": "lex:-6518381",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni raqobat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6518381",
+     "article": "1-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-07-03",
+     "text": "1-modda. Ushbu Qonunning maqsadi\nUshbu Qonunning maqsadi tovar yoki moliya bozorlarida raqobatning cheklanishiga, shuningdek raqobat yoki tabiiy monopoliya sharoitlarida isteʼmolchilarning huquqlari va qonuniy manfaatlari kamsitilishiga olib keladigan yoki olib kelishi mumkin boʻlgan harakatlarni nazorat qilishni amalga oshirish hamda ularga chek qoʻyish bilan bogʻliq boʻlgan, raqobat sohasidagi munosabatlarni tartibga solishdan iborat.",
+     "retrieval_score": 0.9177,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:7012410#preamble#p1",
+     "doc_id": "lex:7012410",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori Oʻzbekiston Respublikasining “raqobat toʻgʻrisida”gi qonuni qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasi hukumatining ayrim qarorlariga oʻzgartirish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/7012410",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-06-15",
+     "text": "Mamlakatimizda tovar yoki moliya bozorlarida raqobat cheklanishiga, raqobat yoki tabiiy monopoliya sharoitlarida isteʼmolchilarning huquqlari va qonuniy manfaatlari kamsitilishiga olib keladigan yoxud olib kelishi mumkin boʻlgan harakatlarni nazorat qilish hamda ularga chek qoʻyish sohasida keng koʻlamli islohotlar amalga oshirilmoqda.\nRaqobat sohasidagi munosabatlarni tartibga solish maqsadida Oʻzbekiston Respublikasining “Raqobat toʻgʻrisida”gi Qonuni qabul qilindi.\nRaqobat sohasidagi munosabatlarni tartibga solish hamda Oʻzbekiston Respublikasining “Raqobat toʻgʻrisida”gi Qonuni ijrosini taʼminlash maqsadida Vazirlar Mahkamasi qaror qiladi:",
+     "retrieval_score": 0.7938,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:6694117#preamble#p1",
+     "doc_id": "lex:6694117",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori Oʻzbekiston Respublikasining “raqobat toʻgʻrisida”gi qonuni qabul qilinganligi munosabati bilan Vazirlar mahkamasining “davlat ishtirokidagi xoʻjalik yurituvchi subyektlarni, shuningdek, ularning affillangan shaxslarini va xoʻjalik faoliyatini amalga oshirish vakolatlari berilgan davlat muassasalarini tashkil etishda (qayta tashkil etishda) mo",
+     "url": "https://lex.uz/docs/6694117",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-12-18",
+     "text": "Mamlakatimizda tovar yoki moliya bozorlarida raqobatning cheklanishiga, shuningdek, raqobat yoki tabiiy monopoliya sharoitlarida isteʼmolchilarning huquqlari va qonuniy manfaatlari kamsitilishiga olib keladigan yoki olib kelishi mumkin boʻlgan harakatlarni nazorat qilish hamda ularga chek qoʻyish bilan bogʻliq boʻlgan, raqobat sohasidagi munosabatlarni tartibga solish maqsadida Oʻzbekiston Respublikasining “Raqobat toʻgʻrisida”gi Qonuni qabul qilindi.\nDavlat ishtirokidagi korxonalar va ularning affillangan shaxslarini, shuningdek, xoʻjalik faoliyatini amalga oshirish vakolati berilgan davlat muassasalarini tashkil etish (qayta tashkil etish) sohasini tartibga soluvchi qonunosti hujjatlarni muvofiqlashtirish maqsadida Vazirlar Mahkamasi qaror qiladi:",
+     "retrieval_score": 0.6714,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6518381#art-41#p1",
+     "doc_id": "lex:-6518381",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni raqobat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6518381",
+     "article": "41-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-07-03",
+     "text": "41-modda. Raqobat toʻgʻrisidagi qonunchilikka rioya etilishi ustidan jamoatchilik nazorati\nOʻz ustavlariga muvofiq raqobatni rivojlantirishga koʻmaklashish hamda isteʼmolchilarning huquqlari va qonuniy manfaatlarini raqobatga qarshi harakatlardan himoya qilish maqsadiga ega boʻlgan jamoat birlashmalari raqobat toʻgʻrisidagi qonunchilikka rioya etilishi ustidan jamoatchilik nazoratini amalga oshirishga haqli.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6518381#art-29#p10",
+     "doc_id": "lex:-6518381",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni raqobat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6518381",
+     "article": "29-modda",
+     "part": "10–16-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-07-03",
+     "text": "29-modda. Savdolarda raqobatni cheklashga qarshi talablar\nelektron tarzda oʻtkaziladigan savdolarda narxlarning sunʼiy ravishda shakllantirilishiga olib keladigan narx algoritmidan, yaʼni tovarlar narxini oldindan belgilangan parametrlarga asosan monitoring qilish, hisob-kitob qilish, belgilash va nazorat qilish imkoniyatini beruvchi dasturiy taʼminotdan foydalanish;\nsavdolarda savdo shartlarini bir necha marta bajarmaslik natijasida tovarning narxlarini raqobat mavjud boʻlganda shakllangan narxlardan (talab, taklif yoki ishlar hajmidan) ancha oshirish;\nbuyurtmachining yoki sotuvchining savdolar natijalariga koʻra shartnoma tuzishdan asossiz ravishda boʻyin tovlashi.\nBirja savdolarini oʻtkazish chogʻida raqobatni cheklaydigan yoki cheklashga olib kelishi mumkin boʻlgan harakatlar, shu jumladan quyidagilar taqiqlanadi:\nbirja savdolarini oʻtkazish jarayoniga taʼsir koʻrsatadigan, shu jumladan hiyla-nayrang hisoblanadigan harakatlar, bundan qonunchilikda nazarda tutilgan hollar mustasno;\nbirja savdolari ishtirokchilarining muvofiqlashtirilgan harakatlari natijasida joriy birja narxlarining keskin oshishiga yoki qatʼiy belgilanishiga olib keladigan harakatlar;\nbirja shartnomasi boʻyicha barcha xaridorlarga savdolarda teng ishtirok etish imkoniyatini cheklaydigan lotlarni belgilash;",
+     "retrieval_score": 0.9184,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2055,
+    "retrieval_ms": 2643,
+    "rerank_ms": 0,
+    "generation_ms": 3253,
+    "total_ms": 7952
+   },
+   "usage": {
+    "input_tokens": 13629,
+    "output_tokens": 581,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "«Raqobat toʻgʻrisida»gi qonunga koʻra, ushbu qonunning maqsadi nimalardan iborat — yaʼni qanday holatlar va harakatlar ustidan nazorat qilishni nazarda tutadi?",
+    "search_queries": [
+     "«Qonuni raqobat toʻgʻrisida»gi qonunga koʻra, bu qonun qanday maqsadni koʻzlaydi — yaʼni qanday holatlar va harakatlar ustidan nazorat qilishni nazarda tutadi?",
+     "«Raqobat toʻgʻrisida»gi qonunga koʻra, ushbu qonunning maqsadi nimalardan iborat — yaʼni qanday holatlar va harakatlar ustidan nazorat qilishni nazarda tutadi?",
+     "Raqobat toʻgʻrisidagi qonunning maqsadi va qoʻllanish doirasi",
+     "raqobatni cheklovchi harakatlar va holatlar ustidan nazorat",
+     "raqobat toʻgʻrisidagi qonun tartibga soladigan munosabatlar"
+    ],
+    "doc_hints": [
+     "Raqobat toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 763,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q093",
+   "status": "ok",
+   "answer": "Saylov kodeksining 100-moddasiga koʻra, siyosiy partiyaning saylovda ishtirok etishini moliyalashtirish uchun davlat mablagʻlari shu partiyadan koʻrsatilgan nomzodlar roʻyxatga olinganidan keyin roʻyxatga olingan nomzodlar soniga muvofiq hajmda siyosiy partiyaning hisobvaragʻiga oʻtkaziladi [1]. Markaziy saylov komissiyasi qaroriga koʻra, bu mablagʻlar nomzodlar roʻyxatga olinganidan keyingi ish kunidan kechikmay, roʻyxatga olingan nomzodlar soniga muvofiq hajmda MSKning shaxsiy gʻazna hisobvaragʻidan partiyaning hisob raqamiga oʻtkaziladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "100-modda",
+     "part": "1–7-qism",
+     "edition_date": "2021-02-09",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-100#p1",
+     "quote": "Siyosiy partiyaning saylovda ishtirok etishini moliyalashtirish uchun davlat mablagʻlari shu partiyadan koʻrsatilgan nomzodlar roʻyxatga olinganidan keyin roʻyxatga olingan nomzodlar soniga muvofiq hajmda siyosiy partiyaning hisobvaragʻiga oʻtkaziladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4584371",
+     "doc_title": "Oʻzbekiston Respublikasi markaziy saylov komissiyasining qarori Oʻzbekiston Respublikasi Prezidenti, Oliy majlisi qonunchilik palatasi, Qoraqalpogʻiston Respublikasi joʻqorgʻi kengesi, xalq deputatlari viloyat, tuman va shahar kengashlari deputatlari saylovlariga tayyorgarlik koʻrish va ularni oʻtkazishni moliyalashtirish hamda mablagʻlardan foydalanish tartibi toʻgʻrisidagi yoʻriqnomani tasdiqlas",
+     "doc_type": "qaror",
+     "url": "https://lex.uz/docs/4584371",
+     "article": "17-band (2-boʻlim)",
+     "part": null,
+     "edition_date": "2024-07-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4584371#band-17s2#p1",
+     "quote": "Siyosiy partiyaning saylovda ishtirok etishini moliyalashtirish uchun Davlat budjeti mablagʻlari shu partiyadan koʻrsatilgan nomzodlar roʻyxatga olinganidan keyingi ish kunidan kechikmay roʻyxatga olingan nomzodlar soniga muvofiq hajmda MSKning shaxsiy gʻazna hisobvaragʻidan siyosiy partiyaning hisob raqamiga oʻtkaziladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4386848#art-100#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "100-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-09",
+     "text": "100-modda. Siyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish\nSiyosiy partiyalarning Oʻzbekiston Respublikasi Prezidenti saylovida, Oʻzbekiston Respublikasi Oliy Majlisiga saylovda, mahalliy Kengashlarga saylovda ishtirok etishini moliyalashtirish belgilangan tartibda Oʻzbekiston Respublikasi Davlat budjetining ana shu maqsadlar uchun ajratiladigan mablagʻlari hisobidan amalga oshiriladi.\nSiyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish uchun ajratiladigan davlat mablagʻlarining bir nomzod hisobiga toʻgʻri keladigan miqdori Markaziy saylov komissiyasi tomonidan belgilanadi. Bu haqdagi axborot Markaziy saylov komissiyasining rasmiy veb-saytida, shuningdek zarur hollarda, boshqa manbalarda eʼlon qilinadi.\nSiyosiy partiyaning saylovda ishtirok etishini moliyalashtirish uchun davlat mablagʻlari shu partiyadan koʻrsatilgan nomzodlar roʻyxatga olinganidan keyin roʻyxatga olingan nomzodlar soniga muvofiq hajmda siyosiy partiyaning hisobvaragʻiga oʻtkaziladi.\nSiyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish uchun ajratilgan davlat mablagʻlari:\ntashviqot olib borishga;\nnomzodlarning ishonchli vakillari va tashviqot oʻtkazish uchun jalb qilinadigan boshqa faollar ishini tashkil etishga;\nsaylov kampaniyasini oʻtkazishga doir umumpartiyaviy tadbirlarga sarflanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-168391#art-8#p1",
+     "doc_id": "lex:-168391",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni siyosiy partiyalarni moliyalashtirish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-168391",
+     "article": "8-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-09",
+     "text": "8-modda. Siyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish\nSiyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish belgilangan tartibda faqat ana shu maqsadlar uchun ajratiladigan davlat mablagʻlari hisobidan amalga oshiriladi. Siyosiy partiyalarni saylovda boshqa mablagʻlar hisobidan moliyalashtirish va moddiy jihatdan oʻzgacha tarzda qoʻllab-quvvatlash taqiqlanadi.\nSiyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish uchun ajratiladigan davlat mablagʻlarining bir nomzod hisobiga toʻgʻri keladigan miqdori Oʻzbekiston Respublikasi Markaziy saylov komissiyasi tomonidan belgilanadi.\nSiyosiy partiyaning saylovda ishtirok etishini moliyalashtirish uchun ajratiladigan davlat mablagʻlari shu partiyadan koʻrsatilgan nomzodlar roʻyxatga olinganidan keyin roʻyxatga olingan nomzodlar soniga muvofiq hajmda siyosiy partiyaning hisob-kitob varagʻiga belgilangan tartibda oʻtkaziladi.\nSaylovda siyosiy partiyalarning ishtirok etishini moliyalashtirish uchun ajratilgan mablagʻlar siyosiy partiya tomonidan:\ntashviqot olib borishga;\nnomzodlarning ishonchli vakillari va tashviqot oʻtkazish uchun jalb qilinadigan boshqa faollar ishini tashkil etishga;\nsaylov kampaniyasini oʻtkazishga doir umumpartiyaviy tadbirlarga sarflanishi kerak.",
+     "retrieval_score": 0.4855,
+     "rerank_score": 0.85,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4584371#band-17s2#p1",
+     "doc_id": "lex:4584371",
+     "doc_title": "Oʻzbekiston Respublikasi markaziy saylov komissiyasining qarori Oʻzbekiston Respublikasi Prezidenti, Oliy majlisi qonunchilik palatasi, Qoraqalpogʻiston Respublikasi joʻqorgʻi kengesi, xalq deputatlari viloyat, tuman va shahar kengashlari deputatlari saylovlariga tayyorgarlik koʻrish va ularni oʻtkazishni moliyalashtirish hamda mablagʻlardan foydalanish tartibi toʻgʻrisidagi yoʻriqnomani tasdiqlas",
+     "url": "https://lex.uz/docs/4584371",
+     "article": "17-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-07-19",
+     "text": "17. Siyosiy partiyaning saylovda ishtirok etishini moliyalashtirish uchun Davlat budjeti mablagʻlari shu partiyadan koʻrsatilgan nomzodlar roʻyxatga olinganidan keyingi ish kunidan kechikmay roʻyxatga olingan nomzodlar soniga muvofiq hajmda MSKning shaxsiy gʻazna hisobvaragʻidan siyosiy partiyaning hisob raqamiga oʻtkaziladi.",
+     "retrieval_score": 0.396,
+     "rerank_score": 0.8,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-7020453#band-16s2#p1",
+     "doc_id": "lex:-7020453",
+     "doc_title": "Oʻzbekiston Respublikasi markaziy saylov komissiyasining qarori Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasi, xalq deputatlari viloyat, tuman va shahar kengashlari deputatligiga nomzodlarning va siyosiy partiyalarning saylovoldi tashviqotini olib borish tartibi toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/-7020453",
+     "article": "16-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-12-18",
+     "text": "16. Deputatlikka nomzod va siyosiy partiyaning saylov kampaniyasida ishtirok etishini moliyalashtirish uchun ajratiladigan budjet mablagʻlarining hajmi Markaziy saylov komissiyasi tomonidan teng ulushlarda belgilanadi va siyosiy partiyaning tegishli hisobvaragʻiga oʻtkaziladi.",
+     "retrieval_score": 0.4047,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4386848#art-100#p8",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "100-modda",
+     "part": "8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-02-09",
+     "text": "100-modda. Siyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish\nSiyosiy partiyalar oʻzining saylovda ishtirok etishini moliyalashtirish toʻgʻrisidagi axborotni saylov yakunlari eʼlon qilinganidan keyin bir oy ichida oʻz rasmiy veb-saytlarida va bosma nashrlarida eʼlon qiladi.",
+     "retrieval_score": 0.8728,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1767,
+    "retrieval_ms": 2025,
+    "rerank_ms": 0,
+    "generation_ms": 865,
+    "total_ms": 4657
+   },
+   "usage": {
+    "input_tokens": 12615,
+    "output_tokens": 767,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Saylov kodeksiga koʻra, siyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish uchun davlat byudjetidan ajratilgan mablagʻlar partiyaning hisobvaragʻiga qachon va qanday hajmda oʻtkaziladi?",
+    "search_queries": [
+     "Saylov kodeksiga koʻra, siyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish uchun davlatdan ajratilgan pullar partiyaning hisobvaragʻiga qachon va qanday hajmda oʻtkaziladi?",
+     "Saylov kodeksiga koʻra, siyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish uchun davlat byudjetidan ajratilgan mablagʻlar partiyaning hisobvaragʻiga qachon va qanday hajmda oʻtkaziladi?",
+     "siyosiy partiyalarning saylovda ishtirok etishini moliyalashtirish davlat mablagʻlari",
+     "saylov fondi mablagʻlari partiya hisobvaragʻiga oʻtkazish muddati",
+     "davlat byudjetidan saylovga ajratilgan mablagʻlar hajmi"
+    ],
+    "doc_hints": [
+     "Saylov kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 489,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q094",
+   "status": "ok",
+   "answer": "Mehnat kodeksining 74-moddasiga koʻra, tashkilotning mulkdori oʻzgarganda jamoa shartnomasining amal qilishi olti oy mobaynida saqlab qolinadi [1]. Bu davrda taraflar yangi jamoa shartnomasini tuzish yoxud amaldagisini saqlab qolish, unga oʻzgartish va (yoki) qoʻshimchalar kiritish haqida muzokaralar boshlashga haqli [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "74-modda",
+     "part": "1–2-qism",
+     "edition_date": "2022-10-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-74#p1",
+     "quote": "Tashkilotning mulkdori oʻzgarganda jamoa shartnomasining amal qilishi olti oy mobaynida saqlab qolinadi. Bu davrda taraflarning yangi jamoa shartnomasini tuzish yoxud amaldagisini saqlab qolish, unga oʻzgartish va (yoki) qoʻshimchalar kiritish haqida muzokaralar boshlashga haqli",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-74#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "74-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "74-modda. Tashkilotning mulkdori oʻzgarganda jamoa shartnomasi amal qilishining saqlanib qolishi\nTashkilotning mulkdori oʻzgarganda jamoa shartnomasining amal qilishi olti oy mobaynida saqlab qolinadi. Bu davrda taraflarning yangi jamoa shartnomasini tuzish yoxud amaldagisini saqlab qolish, unga oʻzgartish va (yoki) qoʻshimchalar kiritish haqida muzokaralar boshlashga haqli.\nJamoa shartnomasini qayta koʻrib chiqish chogʻida avvalgi jamoa shartnomasida xodimlar uchun nazarda tutilgan imtiyozlarni saqlab qolish mumkinligi haqidagi va boshqa shartlarni bajarish toʻgʻrisidagi masala koʻrib chiqiladi.",
+     "retrieval_score": 0.9257,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6257288#art-76#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "76-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "76-modda. Jamoa shartnomasi amal qilishining boshqa hollarda saqlanib qolishi\nJamoa shartnomasi tashkilotning tuzilmasi, nomi, boshqaruv organi tarkibi oʻzgargan yoki tashkilot rahbari bilan tuzilgan mehnat shartnomasi bekor qilingan hollarda oʻzining amal qilishini saqlab qoladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-127010#art-19#p6",
+     "doc_id": "lex:-127010",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat tasarrufidan chiqarish va xususiylashtirish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-127010",
+     "article": "19-modda",
+     "part": "6–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "19-modda. Davlat tasarrufidan chiqarilayotgan va xususiylashtirilayotgan korxonalarning xodimlariga beriladigan yengilliklar va kafolatlar\ndavlat tasarrufidan chiqarish va xususiylashtirish amalga oshirilayotgan davrda korxona maʼmuriyati ilgari tuzilgan jamoa shartnomasining barcha qoidalariga rioya etishga majburdir;\negalik huquqi yangi mulkdorga oʻtgan kundan boshlab olti oy davomida mulkdor bilan korxona mehnat jamoasi oʻrtasida yangi jamoa shartnomasi tuziladi.\n5. Boʻshatilayotgan xodimlarni ishga joylashtirish Oʻzbekiston Respublikasining mehnat toʻgʻrisidagi hamda ish bilan taʼminlash toʻgʻrisidagi qonunchiligiga muvofiq amalga oshiriladi.",
+     "retrieval_score": 0.4387,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6257288#art-71#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "71-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "71-modda. Jamoa shartnomasining kuchga kirishi va amal qilish muddati\nJamoa shartnomasi imzolangan kundan eʼtiboran yoki jamoa shartnomasida belgilangan kundan eʼtiboran kuchga kiradi va shartnomada nazarda tutilgan muddat ichida, biroq koʻpi bilan uch yil amal qiladi. Mazkur muddat tugagach, jamoa shartnomasi taraflar yangi shartnoma tuzguniga yoki amaldagi jamoa shartnomasini oʻzgartirguniga, toʻldirguniga qadar amal qiladi. Taraflar jamoa shartnomasining amal qilish muddati tugaguniga qadar uni uzaytirishi mumkin.",
+     "retrieval_score": 0.9961,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6257288#art-73#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "73-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "73-modda. Tashkilot qayta tashkil etilgan taqdirda jamoa shartnomasi amal qilishining saqlanib qolishi\nTashkilot qayta tashkil etilayotganda shu qayta tashkil qilish davrida jamoa shartnomasi oʻzining amal qilishini saqlab qoladi.\nTashkilotni qayta tashkil etish yakunlangan paytdan eʼtiboran bir oy ichida jamoaviy muzokaralarning istalgan tarafi amaldagi jamoa shartnomasini qayta koʻrib chiqish yoki oʻz kuchida saqlab qolish toʻgʻrisida taklif kiritishga haqli.",
+     "retrieval_score": 0.9459,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1647,
+    "retrieval_ms": 2613,
+    "rerank_ms": 0,
+    "generation_ms": 2549,
+    "total_ms": 6811
+   },
+   "usage": {
+    "input_tokens": 11407,
+    "output_tokens": 500,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Korxona egasi (mulkdori) almashganda, avval tuzilgan jamoa shartnomasi qancha muddat davomida oʻz kuchida qoladi?",
+    "search_queries": [
+     "Korxona egasi almashsa, avval tuzilgan jamoa shartnomasi qancha vaqt davomida oʻz kuchida qoladi?",
+     "Korxona egasi (mulkdori) almashganda, avval tuzilgan jamoa shartnomasi qancha muddat davomida oʻz kuchida qoladi?",
+     "jamoa shartnomasining amal qilish muddati",
+     "korxona egasi almashganda jamoa shartnomasi amal qilishi",
+     "jamoa shartnomasi tomonlar almashganda kuchda qolish muddati"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 703,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q095",
+   "status": "ok",
+   "answer": "Raqobatchining ishbilarmonlik nufuziga putur yetkazish maqsadida bila turib yolgʻon, noaniq yoki buzib koʻrsatilgan maʼlumotlarni tarqatish Jinoyat kodeksining 192-moddasiga koʻra bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha miqdorda jarima yoki uch yuz oltmish soatgacha majburiy jamoat ishlari yoxud uch yilgacha axloq tuzatish ishlari bilan jazolanadi [1]. Raqobat toʻgʻrisidagi qonunning 21-moddasiga koʻra bunday harakatlar insofsiz raqobat sifatida taqiqlanadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "192-modda",
+     "part": "1–2-qism",
+     "edition_date": "2019-12-04",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111453#art-192#p1",
+     "quote": "bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha miqdorda jarima yoki uch yuz oltmish soatgacha majburiy jamoat ishlari yoxud uch yilgacha axloq tuzatish ishlari bilan jazolanadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6518381",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni raqobat toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6518381",
+     "article": "21-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-02-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6518381#art-21#p1",
+     "quote": "raqobatchini obroʻsizlantirish, yaʼni raqobatchi xoʻjalik yurituvchi subyektning faoliyatiga salbiy taʼsir koʻrsatishi yoki uning ishchanlik obroʻsiga putur yetkazishi mumkin boʻlgan",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111453#art-192#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "192-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-04",
+     "text": "192-modda. Raqobatchini obroʻsizlantirish\nRaqobatchini obroʻsizlantirish, yaʼni bosma yoki boshqacha usulda koʻpaytirilgan matnlarda yoki ommaviy axborot vositalari orqali xoʻjalik yurituvchi subyektning ishbilarmonlik nufuziga putur yetkazish maqsadida bila turib yolgʻon, noaniq yoki buzib koʻrsatilgan maʼlumotlarni tarqatish —\nbazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha miqdorda jarima yoki uch yuz oltmish soatgacha majburiy jamoat ishlari yoxud uch yilgacha axloq tuzatish ishlari bilan jazolanadi.",
+     "retrieval_score": 0.7395,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6518381#art-21#p1",
+     "doc_id": "lex:-6518381",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni raqobat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6518381",
+     "article": "21-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-02-07",
+     "text": "21-modda. Insofsiz raqobatni taqiqlash\nXoʻjalik yurituvchi subyektlar yoki ularning manfaatlarini koʻzlab boshqa shaxslar tomonidan raqobatchilarga nisbatan insofsiz raqobatni amalga oshirish, shu jumladan quyidagi harakatlarni amalga oshirish taqiqlanadi:\nraqobatchini obroʻsizlantirish, yaʼni raqobatchi xoʻjalik yurituvchi subyektning faoliyatiga salbiy taʼsir koʻrsatishi yoki uning ishchanlik obroʻsiga putur yetkazishi mumkin boʻlgan, u sotuvga taklif qilayotgan tovarning sifati va isteʼmol xossalari toʻgʻrisida, mazkur tovarni tayyorlash hamda undan foydalanish usullari va sharoitlari haqida, undan foydalanishdan kutilayotgan natijalar toʻgʻrisida, tovarning muayyan maqsadlarga yaroqliligi haqida, tovarni sotuvga taklif etish shartlari, shu jumladan uning narxi toʻgʻrisida yolgʻon, noaniq yoki buzib koʻrsatilgan maʼlumotlarni tarqatish;\nnotoʻgʻri taqqoslash, yaʼni raqobatchi xoʻjalik yurituvchi subyektni yoki uning tovarini tovarning ustunligi haqida tasavvur hosil qiluvchi soʻzlardan yoki ramzlardan tovarning xolisona tasdiqqa ega boʻlgan tavsifini yoki taqqoslash parametrlarini koʻrsatmagan holda foydalanib taqqoslash;\ntovarning xususiyati, ishlab chiqarilish usuli va joyi, isteʼmol xossalari, narxi va sifati, ishlab chiqaruvchining (bajaruvchining) kafolat majburiyatlari xususida isteʼmolchilarni chalgʻitish;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111189#art-100#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "100-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "100-modda. Shaʼn, qadr-qimmat va ishchanlik obroʻsini himoya qilish\nFuqaro oʻzining shaʼni, qadr-qimmati yoki ishchanlik obroʻsiga putur yetkazuvchi maʼlumotlar yuzasidan, basharti bunday maʼlumotlarni tarqatgan shaxs ularning haqiqatga toʻgʻri kelishini isbotlay olmasa, sud yoʻli bilan raddiya talab qilishga haqli.\nManfaatdor shaxslarning talabiga koʻra fuqaroning shaʼni va qadr-qimmatini uning vafotidan keyin ham himoya qilishga yoʻl qoʻyiladi.\nBasharti, fuqaroning shaʼni, qadr-qimmati yoki ishchanlik obroʻsiga putur yetkazuvchi maʼlumotlar ommaviy-axborot vositalarida tarqatilgan boʻlsa, ayni shu ommaviy-axborot vositalarida raddiya berilishi lozim.\nBasharti, bunday maʼlumotlar tashkilotdan olingan hujjatda uchrasa, bunday hujjat almashtirilishi yoki chaqirib olinishi kerak.\nBoshqa hollarda raddiya berish tartibi sud tomonidan belgilanadi.\nFuqaro ommaviy axborot vositalarida uning huquqlari yoki qonun bilan qoʻriqlanadigan manfaatlarini kamsituvchi maʼlumotlar eʼlon qilinganda u ayni oʻsha ommaviy axborot vositalari orqali chiqib, oʻzini himoya qilish huquqiga ega.\nBasharti, sudning hal qiluv qarori bajarilmasa, sud qoidabuzarga qonunchilikda belgilangan miqdorda va tartibda undiriladigan jarima solishga haqlidir. Jarimani toʻlash qoidabuzarni sudning hal qiluv qarorida nazarda tutilgan harakatlarni bajarish vazifasidan ozod etmaydi.",
+     "retrieval_score": 0.8996,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111189#art-100#p8",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "100-modda",
+     "part": "8–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "100-modda. Shaʼn, qadr-qimmat va ishchanlik obroʻsini himoya qilish\nOʻzining shaʼni, qadr-qimmati yoki ishchanlik obroʻsiga putur yetkazuvchi maʼlumotlar tarqatilgan fuqaro bunday maʼlumotlar rad etilishi bilan bir qatorda ularni tarqatish oqibatida yetkazilgan zararlar va maʼnaviy ziyonning oʻrnini qoplashni talab qilishga haqlidir.\nUshbu moddadagi fuqaroning ishchanlik obroʻsini himoya qilish toʻgʻrisidagi qoidasi yuridik shaxsning ishchanlik obroʻsini himoya etishga nisbatan ham tegishli yoʻsinda tatbiq etiladi.",
+     "retrieval_score": 0.8953,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-180552#art-1021#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1021-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-03-30",
+     "text": "1021-modda. Umumiy qoidalar\nMaʼnaviy zarar uni yetkazuvchining aybi boʻlgan taqdirda, zarar yetkazuvchi tomonidan qoplanadi, ushbu moddaning ikkinchi qismida nazarda tutilgan hollar bundan mustasno.\nMaʼnaviy zarar uni yetkazuvchining aybidan qatʼi nazar, quyidagi hollarda qoplanadi, agar:\nzarar fuqaroning hayoti va sogʻligʻiga oshiqcha xavf manbai tomonidan yetkazilgan boʻlsa;\nzarar fuqaroga uni qonunga xilof tarzda hukm qilish, qonunga xilof tarzda jinoiy javobgarlikka tortish, ehtiyot chorasi sifatida qamoqqa olishni yoki munosib xulq-atvorda boʻlish haqida tilxat olishni qonunga xilof tarzda qoʻllanish, qonunga xilof tarzda maʼmuriy jazo qoʻllanish va qonunga xilof tarzda ushlab turish, shuningdek har qanday qiynoqqa solish va boshqa shafqatsiz, gʻayriinsoniy yoki qadr-qimmatni kamsituvchi muomala hamda jazo turlarini qoʻllash natijasida yetkazilgan boʻlsa;\nzarar or-nomus, qadr-qimmat va ishchanlik obroʻ-eʼtiborini haqoratlovchi maʼlumotlarni tarqatish tufayli yetkazilgan boʻlsa;\nqonunda nazarda tutilgan boshqa hollarda.",
+     "retrieval_score": 0.7629,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1914,
+    "retrieval_ms": 1572,
+    "rerank_ms": 0,
+    "generation_ms": 2705,
+    "total_ms": 6193
+   },
+   "usage": {
+    "input_tokens": 12965,
+    "output_tokens": 664,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Raqobatchi toʻgʻrisida yolgʻon maʼlumot tarqatib, uning ishbilarmonlik obroʻsiga putur yetkazgan shaxsga qanday miqdorda jarima solinishi mumkin?",
+    "search_queries": [
+     "Raqobatchi haqida yolgʻon maʼlumot tarqatib, uning ishbilarmonlik obroʻsiga putur yetkazgan odamga qanday miqdorda jarima solinishi mumkin?",
+     "Raqobatchi toʻgʻrisida yolgʻon maʼlumot tarqatib, uning ishbilarmonlik obroʻsiga putur yetkazgan shaxsga qanday miqdorda jarima solinishi mumkin?",
+     "ishbilarmonlik obroʻsiga putur yetkazish yolgʻon maʼlumot tarqatish javobgarlik",
+     "raqobatchi haqida yolgʻon maʼlumot tarqatish jarima miqdori",
+     "ishbilarmonlik obroʻsiga zarar yetkazish moddiy javobgarlik"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi",
+     "Raqobat toʻgʻrisidagi qonun",
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 766,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q096",
+   "status": "ok",
+   "answer": "Maʼmuriy javobgarlik toʻgʻrisidagi kodeksning 91¹-moddasi ikkinchi qismiga koʻra, belgilanmagan joyga qattiq maishiy chiqindi tashlash maʼmuriy jazo qoʻllanilganidan keyin bir yil davomida takror sodir etilsa, fuqarolarga bazaviy hisoblash miqdorining oʻn baravaridan oʻn besh baravarigacha miqdorda jarima solinadi [1]. Oʻsimliklarni himoya qilish vositalarini saqlash qoidalarini birinchi marta buzgan fuqaroga esa kodeksning 89-moddasi birinchi qismiga koʻra bazaviy hisoblash miqdorining uchdan bir qismidan bir baravarigacha miqdorda jarima solinadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "91¹-modda",
+     "part": "1–7-qism",
+     "edition_date": "2026-06-28",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-91.1#p1",
+     "quote": "Xuddi shunday huquqbuzarlik maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, — fuqarolarga bazaviy hisoblash miqdorining oʻn baravaridan oʻn besh baravarigacha, mansabdor shaxslarga esa — yuz baravaridan bir yuz ellik baravarigacha miqdorda jarima solishga sabab boʻladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "89-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-89#p1",
+     "quote": "fuqarolarga bazaviy hisoblash miqdorining uchdan bir qismidan bir baravarigacha, mansabdor shaxslarga esa — bir baravaridan uch baravarigacha miqdorda jarima solishga sabab boʻladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-97664#art-91.1#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "91¹-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-28",
+     "text": "911-modda. Belgilanmagan joylarga qattiq maishiy chiqindilarni va qurilish chiqindilarini tashlash, shuningdek suyuq maishiy chiqindilarni toʻkish\nBelgilanmagan joylarga qattiq maishiy chiqindilarni va qurilish chiqindilarini tashlash, shuningdek suyuq maishiy chiqindilarni toʻkish —\nfuqarolarga bazaviy hisoblash miqdorining uch baravaridan besh baravarigacha, mansabdor shaxslarga esa — ellik baravaridan yuz baravarigacha miqdorda jarima solishga sabab boʻladi.\nXuddi shunday huquqbuzarlik maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, —\nfuqarolarga bazaviy hisoblash miqdorining oʻn baravaridan oʻn besh baravarigacha, mansabdor shaxslarga esa — yuz baravaridan bir yuz ellik baravarigacha miqdorda jarima solishga sabab boʻladi.\nMaishiy va qurilish chiqindilari poligonlariga joylashtirilishi kerak boʻlgan chiqindilarni belgilanmagan joylarga tashlash, —\nfuqarolarga bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha, mansabdor shaxslarga esa — ikki yuz baravaridan uch yuz baravarigacha miqdorda jarima solishga sabab boʻladi.\nUshbu moddaning uchinchi qismida nazarda tutilgan huquqbuzarlik maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, —",
+     "retrieval_score": 0.9989,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-97664#art-89#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "89-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "89-modda. Oʻsimliklarni himoya qilish vositalari va boshqa dorilarni shuningdek kuchli taʼsir etuvchi zaharli moddalarni hamda bugʻlanuvchan birikmalarni tashish, saqlash va qoʻllanish qoidalarini buzish\nOʻsimliklarni himoya qilish vositalarini, ularning oʻsishini tezlashtiruvchi vositalarni, mineral oʻgʻitlarni hamda boshqa dorilarni, shuningdek kuchli taʼsir etuvchi zaharli moddalarni va bugʻlanuvchan birikmalarni tashish, saqlash, ulardan foydalanish, ularni qoʻllash hamda ulardan boʻshagan idishlarni zararsizlantirish qoidalarini tuproqning, suvning, atmosfera havosining ifloslanishiga yoki oʻsimliklar, hayvonot dunyosi yoʻq qilib yuborilishiga olib kelishi mumkin boʻlgan tarzda buzish —\nfuqarolarga bazaviy hisoblash miqdorining uchdan bir qismidan bir baravarigacha, mansabdor shaxslarga esa — bir baravaridan uch baravarigacha miqdorda jarima solishga sabab boʻladi.\nXuddi shunday huquqbuzarliklar maʼmuriy jazo chorasi qoʻllanilgandan keyin bir yil davomida takror sodir etilgan boʻlsa yoxud tuproq, suv, atmosfera havosining ifloslanishiga, oʻsimlik va hayvonot dunyosiga zarar yetishiga olib kelsa, —\nfuqarolarga bazaviy hisoblash miqdorining bir baravaridan uch baravarigacha, mansabdor shaxslarga esa — uch baravaridan yetti baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.967,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-97664#art-91.1#p8",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "91¹-modda",
+     "part": "8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-28",
+     "text": "911-modda. Belgilanmagan joylarga qattiq maishiy chiqindilarni va qurilish chiqindilarini tashlash, shuningdek suyuq maishiy chiqindilarni toʻkish\nmaʼmuriy huquqbuzarlikni sodir etish quroli boʻlgan ashyoni musodara qilib, fuqarolarga bazaviy hisoblash miqdorining yuz baravaridan bir yuz ellik baravarigacha, mansabdor shaxslarga esa — bir yuz ellik baravaridan ikki yuz ellik baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-97664#art-91#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "91-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-28",
+     "text": "91-modda. Sanoat chiqindilarini, maishiy chiqindilarni va boshqa chiqindilarni toʻplash, tashish, joylashtirish, zararsizlantirish, saqlash, utilizatsiya qilish, qayta ishlash, realizatsiya qilish chogʻida tabiatni muhofaza qilish talablarini buzish\nSanoat chiqindilarini, maishiy chiqindilarni va boshqa chiqindilarni toʻplash, tashish, joylashtirish, zararsizlantirish, saqlash, utilizatsiya qilish, qayta ishlash, realizatsiya qilish chogʻida tabiatni muhofaza qilish talablarini buzish —\nfuqarolarga bazaviy hisoblash miqdorining yetti baravaridan oʻn baravarigacha, mansabdor shaxslarga esa — oʻn besh baravaridan yigirma besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nXuddi shunday huquqbuzarlik maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa yoxud tabiiy muhitga zarar yetkazgan boʻlsa, —\nfuqarolarga bazaviy hisoblash miqdorining oʻn besh baravaridan yigirma besh baravarigacha, mansabdor shaxslarga esa — ellik baravaridan yetmish besh baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.9441,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-97664#art-79#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "79-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "79-modda. Daraxtlarni, butalarni, boshqa oʻsimliklarni va nihollarni qonunga xilof ravishda kesish, kundakov qilish, shikastlantirish, yoʻq qilish yoki boshqa joyga koʻchirib oʻtkazish\nDaraxtlarni, butalarni, boshqa oʻsimliklarni va nihollarni qonunga xilof ravishda kesish, kundakov qilish, shikastlantirish, yoʻq qilish yoki boshqa joyga koʻchirib oʻtkazish, —\nfuqarolarga bazaviy hisoblash miqdorining yigirma besh baravaridan ellik baravarigacha, mansabdor shaxslarga esa — ellik baravaridan yetmish besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nOʻz hududida binolarni, inshootlarni yoki boshqa obyektlarni qurish, rekonstruksiya qilish chogʻida belgilangan talablarni buzib, kimyoviy, biologik vositalarni qoʻllagan holda daraxtlarni, butalarni yoki boshqa oʻsimliklarni qasddan shikastlantirish, payhon qilish yoki yoʻq qilish, —\nfuqarolarga bazaviy hisoblash miqdorining oʻttiz besh baravaridan ellik baravarigacha, mansabdor shaxslarga esa — oltmish baravaridan yetmish besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nUshbu moddaning birinchi va ikkinchi qismlarida nazarda tutilgan huquqbuzarliklarni maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etish, —",
+     "retrieval_score": 0.9759,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2250,
+    "retrieval_ms": 2570,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 4820
+   },
+   "usage": {
+    "input_tokens": 14982,
+    "output_tokens": 736,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Maʼmuriy javobgarlik toʻgʻrisidagi kodeksga koʻra, fuqaro belgilanmagan joyga qattiq maishiy chiqindilarni tashlagan va bir yil ichida takroran shunday qilgan boʻlsa, qancha miqdorda jarima toʻlaydi? Oʻsimliklarni himoya qilish vositalarini saqlash qoidalarini birinchi marta buzgan fuqaro qancha miqdorda jarima toʻlaydi?",
+    "search_queries": [
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeksiga koʻra, oddiy fuqaro belgilanmagan joyga qattiq maishiy chiqindi tashlasa va bundan bir yil ichida yana shu ishni qilsa, qancha jarima toʻlaydi? Oʻsimliklarni himoya qilish vositalarini saqlash qoidalarini birinchi marta buzgan fuqaro esa qancha jarima toʻlaydi?",
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeksga koʻra, fuqaro belgilanmagan joyga qattiq maishiy chiqindilarni tashlagan va bir yil ichida takroran shunday qilgan boʻlsa, qancha miqdorda jarima toʻlaydi? Oʻsimliklarni himoya qilish vositalarini saqlash qoidalarini birinchi marta buzgan fuqaro qancha miqdorda jarima toʻlaydi?",
+     "qattiq maishiy chiqindilarni belgilanmagan joyga tashlash jarima",
+     "chiqindilarni belgilanmagan joyga tashlash takroran bir yil ichida",
+     "oʻsimliklarni himoya qilish vositalarini saqlash qoidalarini buzish jarima"
+    ],
+    "doc_hints": [
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeks",
+     "toʻgʻrisidagi kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 906,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q097",
+   "status": "ok",
+   "answer": "Да, средства Фонда могут использоваться для финансирования применения мер санации банков — это прямо предусмотрено в перечне целей использования средств Фонда [1]. При этом Агентство вправе использовать средства Фонда в размере, не превышающем одной из следующих минимальных величин: суммы гарантированных вкладов санируемого банка либо сорока процентов остатка средств Фонда на дату принятия решения о санации [2]. Решение об использовании средств Фонда и средств фонда санации при санации банков принимает Совет [3].",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-7389404",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklardagi omonatlarni himoya qilish kafolatlari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-7389404",
+     "article": "21-modda",
+     "part": "1–10-qism",
+     "edition_date": "2025-02-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7389404#art-21#p1",
+     "quote": "Agentlik banklarning sanatsiya vositalarini qoʻllashni moliyalashtirish uchun Jamgʻarma mablagʻlaridan quyidagi eng kam miqdorlarning biridan foydalanishga haqli:",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-7389404",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklardagi omonatlarni himoya qilish kafolatlari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-7389404",
+     "article": "21-modda",
+     "part": "1–10-qism",
+     "edition_date": "2025-02-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7389404#art-21#p1",
+     "quote": "Agentlik banklarning sanatsiya vositalarini qoʻllashni moliyalashtirish uchun Jamgʻarma mablagʻlaridan quyidagi eng kam miqdorlarning biridan foydalanishga haqli: sanatsiya qilinayotgan bankning kafolatlangan omonatlari jami summasidan oshmagan miqdorda; banklarni sanatsiya qilish toʻgʻrisida qaror qabul qilingan sanaga Jamgʻarma mablagʻlari qoldigʻining qirq foizidan oshmagan miqdorda",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-7389404",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklardagi omonatlarni himoya qilish kafolatlari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-7389404",
+     "article": "10-modda",
+     "part": "12–19-qism",
+     "edition_date": "2026-06-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7389404#art-10#p12",
+     "quote": "Jamgʻarma mablagʻlaridan va sanatsiya jamgʻarmasi mablagʻlaridan banklarni sanatsiya qilishda foydalanish toʻgʻrisida qaror qabul qiladi;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7389404#art-21#p1",
+     "doc_id": "lex:-7389404",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklardagi omonatlarni himoya qilish kafolatlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7389404",
+     "article": "21-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-02-18",
+     "text": "21-modda. Jamgʻarma mablagʻlaridan foydalanish\nJamgʻarmaning mablagʻlaridan quyidagi maqsadlarda foydalaniladi:\nushbu Qonunga muvofiq kompensatsiyalar toʻlash;\nbanklarning sanatsiya vositalarini qoʻllashni moliyalashtirish;\nushbu qismning ikkinchi va uchinchi xatboshilarida nazarda tutilgan tartib-taomillarni amalga oshirish bilan bogʻliq boʻlgan operatsion xarajatlarni, shuningdek Agentlikning budjetida nazarda tutilgan boshqa operatsion xarajatlarni moliyalashtirish;\nAgentlik tomonidan ushbu Qonunga muvofiq jalb etilgan kreditlarni va boshqa qarz mablagʻlarini toʻlash;\nAgentlikning budjetida nazarda tutilgan maʼmuriy xarajatlarni moliyalashtirish.\nAgentlik banklarning sanatsiya vositalarini qoʻllashni moliyalashtirish uchun Jamgʻarma mablagʻlaridan quyidagi eng kam miqdorlarning biridan foydalanishga haqli:\nsanatsiya qilinayotgan bankning kafolatlangan omonatlari jami summasidan oshmagan miqdorda;\nbanklarni sanatsiya qilish toʻgʻrisida qaror qabul qilingan sanaga Jamgʻarma mablagʻlari qoldigʻining qirq foizidan oshmagan miqdorda.\nAgentlikning aktivlari hamda kelgusida yuzaga kelishi mumkin boʻlgan mulkiy huquqlari (talablari) Jamgʻarmaga jalb etiladigan mablagʻlar boʻyicha majburiyatlarning bajarilish taʼminoti sifatida garovga kiritilishi mumkin.",
+     "retrieval_score": 0.7619,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-7389404#art-4#p1",
+     "doc_id": "lex:-7389404",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklardagi omonatlarni himoya qilish kafolatlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7389404",
+     "article": "4-modda",
+     "part": "1–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-02-18",
+     "text": "4-modda. Omonatlarni kafolatlash agentligining faoliyati toʻgʻrisida umumiy qoidalar\nOmonatlarni kafolatlash agentligi (bundan buyon matnda Agentlik deb yuritiladi) davlat muassasasi boʻlib, u banklardagi omonatlarning himoya qilinishini kafolatlash sohasidagi vakolatli organ hisoblanadi.\nAgentlikning asosiy vazifalari quyidagilardan iborat:\nJamgʻarmani boshqarish;\nJamgʻarma mablagʻlari hisobidan ushbu Qonunga muvofiq kompensatsiyalar toʻlash;\nbankni sanatsiya qilishda Jamgʻarma va sanatsiya jamgʻarmasi mablagʻlaridan foydalanish;\nkafolatlash obyektlarining egalari boʻlgan omonatchilarning manfaatlarini himoya qilish;\njamoatchilikning bank tizimiga boʻlgan ishonchini oshirish va bank tizimi barqarorligini taʼminlash.\nAgentlik oʻz vakolatlarini amalga oshirishda mustaqildir.\nAgentlik Jamgʻarma mablagʻlarini va sanatsiya jamgʻarmasi mablagʻlarini saqlash uchun Markaziy bankda, shuningdek Agentlikning operatsion faoliyatini amalga oshirish uchun tijorat bankida hisobvaraqlar ochadi.\nAgentlik moliyaviy yordam koʻrsatishi va xayriya faoliyati bilan shugʻullanishi, shuningdek yuridik shaxslarning muassisi boʻlishi mumkin emas, bundan qonunda nazarda tutilgan hollar mustasno.\nDavlat organlariga va ularning mansabdor shaxslariga, shuningdek yuridik shaxslarga, shu jumladan banklarga Agentlikning faoliyatiga aralashish taqiqlanadi, bundan ushbu Qonunda nazarda tutilgan hollar mustasno.",
+     "retrieval_score": 0.854,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-7389404#art-6#p1",
+     "doc_id": "lex:-7389404",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklardagi omonatlarni himoya qilish kafolatlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7389404",
+     "article": "6-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-02-18",
+     "text": "6-modda. Agentlikning majburiyatlari\nAgentlik:\nomonatlarni kafolatlash tizimida ishtirok etayotgan banklarning reyestrini yuritishi;\nkalendar badal stavkasini belgilashi;\nushbu Qonunga muvofiq banklar tomonidan Jamgʻarmaga toʻlanishi lozim boʻlgan badallarning toʻgʻri hisoblab chiqilganligi, oʻz vaqtida va toʻliq oʻtkazilganligi ustidan nazoratni amalga oshirishi;\nJamgʻarma mablagʻlaridan va sanatsiya jamgʻarmasi mablagʻlaridan banklarni sanatsiya qilishda foydalanishi;\nmuntazam ravishda, biroq uch yilda kamida bir marta kafolatlangan omonat miqdorini va Jamgʻarma mablagʻlarining maqsadli miqdorini baholashi;\nkafolatlash hodisasi yuzaga kelganda kompensatsiyani ushbu Qonunda nazarda tutilgan tartibda, shartlarda va miqdorlarda toʻlashi;\nkafolatlash obyektlari egalariga kompensatsiyalar toʻlash uchun Agentlikka taqdim etilgan reyestrdagi oʻzlariga taalluqli maʼlumotlar bilan tanishish imkoniyatini berishi;\nkafolatlash hodisasi yuzaga kelganda kompensatsiyalar toʻlash jarayoni toʻgʻrisidagi dolzarb axborotni oʻz rasmiy veb-saytida eʼlon qilishi, shuningdek omonatchilarning soʻrovlariga koʻra ularning talablari toʻgʻrisidagi axborotni taqdim etishi;\nushbu Qonun talablariga muvofiq jamoatchilikni omonatlarni kafolatlash tizimi toʻgʻrisida xabardor qilishi;",
+     "retrieval_score": 0.8026,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-7389404#art-10#p12",
+     "doc_id": "lex:-7389404",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklardagi omonatlarni himoya qilish kafolatlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7389404",
+     "article": "10-modda",
+     "part": "12–19-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-29",
+     "text": "10-modda. Kengashning vakolatlari\nJamgʻarma mablagʻlarining maqsadli miqdorining, kafolatlangan omonat miqdorining yetarliligini baholash va bankning depozit bazasini aniqlash uslubiyatini tasdiqlaydi, shuningdek unga muvofiq Jamgʻarma mablagʻlarining maqsadli miqdorini va kafolatlangan omonat miqdorini muntazam ravishda baholaydi;\nkafolatlash hodisasi yuzaga kelganda ushbu Qonunda nazarda tutilgan shartlarda va miqdorlarda kompensatsiyalar toʻlash toʻgʻrisida qaror qabul qiladi hamda ularning toʻlanishini tashkil etadi;\nJamgʻarma mablagʻlaridan va sanatsiya jamgʻarmasi mablagʻlaridan banklarni sanatsiya qilishda foydalanish toʻgʻrisida qaror qabul qiladi;\nAgentlikning ichki nazorat hamda ichki audit xizmati ishini tashkil etadi;\nhar yilgi majburiy auditorlik tekshiruvini oʻtkazish uchun auditorlik tashkilotini tanlash mezonlarini tasdiqlaydi va auditorlik tashkilotini belgilash toʻgʻrisida qaror qabul qiladi;\nJamgʻarma mablagʻlarining haqiqatdagi yoki ehtimoliy taqchilligi mavjudligi toʻgʻrisida qaror qabul qiladi;\nJamgʻarma mablagʻlarini investitsiya qilish siyosatini tasdiqlaydi;\njamoatchilikni omonatlarni kafolatlash tizimi toʻgʻrisida xabardor etish strategiyasini tasdiqlaydi;",
+     "retrieval_score": 0.7896,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-7389404#art-21#p11",
+     "doc_id": "lex:-7389404",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni banklardagi omonatlarni himoya qilish kafolatlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7389404",
+     "article": "21-modda",
+     "part": "11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-02-18",
+     "text": "21-modda. Jamgʻarma mablagʻlaridan foydalanish\nUshbu moddaning uchinchi qismida nazarda tutilgan aktivlardan hamda kelgusida yuzaga kelishi mumkin boʻlgan mulkiy huquqlardan (talablardan) Agentlikning kompensatsiyalar toʻlash bilan bogʻliq boʻlmagan majburiyatlarining, shuningdek uning xodimlari va boshqa shaxslar majburiyatlarining bajarilish taʼminoti sifatida foydalanilishi mumkin emas.",
+     "retrieval_score": 0.77,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2031,
+    "retrieval_ms": 2499,
+    "rerank_ms": 0,
+    "generation_ms": 3204,
+    "total_ms": 7739
+   },
+   "usage": {
+    "input_tokens": 12608,
+    "output_tokens": 760,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Bankni sanatsiya qilishda Banklardagi omonatlarni kafolatlash fondi mablagʻlaridan bankni qayta kapitallashtirish uchun foydalanish mumkinmi?",
+    "search_queries": [
+     "Можно ли использовать средства Фонда гарантирования при санации банка для рекапитализации банка?",
+     "Bankni sanatsiya qilishda Banklardagi omonatlarni kafolatlash fondi mablagʻlaridan bankni qayta kapitallashtirish uchun foydalanish mumkinmi?",
+     "Banklardagi omonatlarni kafolatlash fondi mablagʻlaridan foydalanish",
+     "bankni sanatsiya qilish va qayta kapitallashtirish",
+     "omonatlarni kafolatlash fondi mablagʻlari bankni qayta kapitallashtirish"
+    ],
+    "doc_hints": [
+     "Banklardagi omonatlarni kafolatlash toʻgʻrisidagi qonun",
+     "Banklar va bank faoliyati toʻgʻrisidagi qonun",
+     "Markaziy bank toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 652,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q098",
+   "status": "ok",
+   "answer": "Mehnat kodeksining 283-moddasiga koʻra, donor boʻlgan xodimga bevosita qon va uning tarkibiy qismlari topshirilgan har bir kundan keyin dam olish kuni beriladi, xodimning xohishiga koʻra bu kun yillik mehnat taʼtiliga qoʻshiladi yoki yil davomida boshqa vaqtda foydalanilishi mumkin [1]. Agar ish beruvchi bilan kelishuvga binoan xodim qon topshirish kunida ishga chiqqan boʻlsa, unga oʻz xohishiga koʻra boshqa dam olish kuni beriladi [1]. Bu dam olish kuni 201-moddaga koʻra dam olish vaqtining turi sifatida — qon va uning tarkibiy qismlari topshirilgan har bir kundan keyin donorlarga beriladigan dam olish kuni sifatida belgilangan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "283-modda",
+     "part": "1–5-qism",
+     "edition_date": "2022-10-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-283#p1",
+     "quote": "Donor boʻlgan xodimlarga bevosita qon va uning tarkibiy qismlari topshirilgan har bir kundan keyin dam olish kuni beriladi. Xodimning xohishiga koʻra bu kun yillik mehnat taʼtiliga qoʻshiladi yoki qon va uning tarkibiy qismlari topshirilgan kundan keyin yil davomida boshqa vaqtda bu kundan foydalanilishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "201-modda",
+     "part": "1–8-qism",
+     "edition_date": "2022-10-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6257288#art-201#p1",
+     "quote": "xodimning istagiga koʻra dam olish kunida yoki ishlanmaydigan bayram kunida ishlaganlik uchun kompensatsiya sifatida taqdim etiladigan ishdan boʻsh boʻlgan qoʻshimcha kunlar, shuningdek qon va uning tarkibiy qismlari topshirilgan har bir kundan keyin donorlarga beriladigan dam olish kuni",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6257288#art-283#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "283-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "283-modda. Qon va uning tarkibiy qismlarini topshirganda xodimlarga kafolatli toʻlovlar\nIsh beruvchi tibbiy tekshiruvdan oʻtish kunida hamda qon va uning tarkibiy qismlarini topshirish kunida xodimlarni tibbiyot muassasalariga moneliksiz yuborishi shart.\nAgar ish beruvchi bilan kelishuvga binoan xodim qon va uning tarkibiy qismlarini topshirish kunida ishga chiqqan boʻlsa (bundan xodimning oʻsha kuni ishga chiqish imkoni boʻlmagan zararli va (yoki) xavfli mehnat sharoitlarida bajariladigan ishlar mustasno), unga oʻz xohishiga koʻra boshqa dam olish kuni beriladi.\nHar yilgi mehnat taʼtili davrida, dam olish kunida yoki ishlanmaydigan bayram kunida qon va uning tarkibiy qismlarini topshirgan taqdirda, xodimga uning xohishiga koʻra boshqa dam olish kuni beriladi.\nDonor boʻlgan xodimlarga bevosita qon va uning tarkibiy qismlari topshirilgan har bir kundan keyin dam olish kuni beriladi. Xodimning xohishiga koʻra bu kun yillik mehnat taʼtiliga qoʻshiladi yoki qon va uning tarkibiy qismlari topshirilgan kundan keyin yil davomida boshqa vaqtda bu kundan foydalanilishi mumkin.\nTibbiy tekshiruv oʻtkaziladigan hamda qon va uning tarkibiy qismlari topshiriladigan kunda ishdan ozod qilinganda, shuningdek dam olish kunlarida xodimning oʻrtacha ish haqi saqlanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6257288#art-201#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "201-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "201-modda. Dam olish vaqti tushunchasi va turlari\nDam olish vaqti xodim mehnat majburiyatlarini bajarishdan ozod boʻlgan va oʻz ixtiyoriga koʻra foydalanishi mumkin boʻlgan vaqtdir.\nDam olish vaqtining turlari quyidagilardan iborat:\nish kuni (smena) davomidagi tanaffuslar;\nhar kungi (smenalar oraligʻidagi) dam olish;\ndam olish kunlari (har haftalik uzluksiz dam olish);\nishlanmaydigan bayram kunlari;\nhar yilgi asosiy va qoʻshimcha mehnat taʼtillari;\nxodimning istagiga koʻra dam olish kunida yoki ishlanmaydigan bayram kunida ishlaganlik uchun kompensatsiya sifatida taqdim etiladigan ishdan boʻsh boʻlgan qoʻshimcha kunlar, shuningdek qon va uning tarkibiy qismlari topshirilgan har bir kundan keyin donorlarga beriladigan dam olish kuni.",
+     "retrieval_score": 0.9718,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6257288#art-202#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "202-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "202-modda. Xodimni mehnat majburiyatlarini bajarishdan ozod etishning dam olish vaqti boʻlmagan davrlari\nXodimga dam olish uchun emas, balki boshqa maqsadlarda beriladigan, xodimni mehnat majburiyatlarini bajarishdan ozod etish davrlari dam olish vaqtiga kirmaydi. Bunday davrlar jumlasiga quyidagilar kiradi:\nmehnat shartnomasi ish beruvchining tashabbusiga koʻra bekor qilinishi toʻgʻrisidagi ogohlantirish muddati davrida xodimga ishga joylashish uchun beriladigan ishdan boʻsh boʻlinadigan qoʻshimcha kunlar;\noʻn olti yoshga toʻlguniga qadar nogironligi boʻlgan bolani tarbiyalayotgan ota-onadan biriga (ota-onaning oʻrnini bosuvchi shaxsga) beriladigan ishdan boʻsh boʻlinadigan qoʻshimcha kunlar;\nhomilador ayollarga beriladigan ishdan boʻsh boʻlinadigan kunlar;\ndonorlarning tibbiy tekshiruv kunida hamda qon va uning tarkibiy qismlari topshiriladigan kunda ishdan ozod etilishi;\nijtimoiy taʼtillar: homiladorlik va tugʻish taʼtillari, bolani parvarishlash taʼtillari, oʻquv taʼtillari va ijodiy taʼtillar;\nxodim tomonidan davlat yoki jamoat majburiyatlari bajariladigan davrlar;\nish beruvchining va mehnat jamoasining manfaatlarini koʻzlab majburiyatlar bajariladigan davrlar;\nxodimning vaqtincha mehnatga qobiliyatsizlik davrlari;",
+     "retrieval_score": 0.9894,
+     "rerank_score": 0.85,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-46727#art-20#p1",
+     "doc_id": "lex:-46727",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qon va uning tarkibiy qismlari donorligi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-46727",
+     "article": "20-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-09-09",
+     "text": "20-modda. Donorga beriladigan kafolatlar va kompensatsiyalar\nQon va uning tarkibiy qismlarini topshiradigan kuni, shuningdek tibbiy koʻrikdan oʻtadigan kuni donor ana shu kunlar uchun oʻrtacha ish haqi saqlangan holda ishdan ozod qilinadi.\nOʻrta maxsus va professional taʼlim tashkilotlarining oʻquvchilari, oliy taʼlim tashkilotlarining talabalari, taʼlim oluvchilarning boshqa toifalari qon va uning tarkibiy qismlarini topshiradigan kuni, shuningdek tibbiy koʻrikdan oʻtadigan kuni mashgʻulotlardan, harbiy xizmatchilar esa naryadlarni bajarishdan, xizmatni oʻtashning vaxta va boshqa shakllaridan ozod qilinadilar.\nDonorga har safar qon va uning tarkibiy qismlarini topshirgan kunning bevosita ertasiga dam olish uchun oʻrtacha ish haqi saqlangan holda qoʻshimcha bir kun beriladi. Donorning xohishiga koʻra mazkur dam olish kuni har yilgi mehnat taʼtiliga qoʻshib berilishi mumkin.",
+     "retrieval_score": 0.4128,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4674902#art-374#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "374-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-09-09",
+     "text": "374-modda. Ishlanmagan vaqt uchun haq toʻlash\nIshlanmagan vaqt uchun haq toʻlash jumlasiga quyidagilar kiradi:\n1) qonunchilikka muvofiq:\na) yillik asosiy (uzaytirilgan asosiy) taʼtil uchun toʻlov, shuningdek ushbu taʼtildan foydalanilmaganda, shu jumladan xodim bilan mehnat shartnomasi bekor qilinganda pullik kompensatsiya toʻlovi;\nb) noqulay va oʻziga xos mehnat sharoitlarida, shuningdek ogʻir va noqulay tabiiy-iqlim sharoitlarida ishlaganligi uchun ayrim tarmoqlarning xodimlariga beriladigan qoʻshimcha taʼtil uchun toʻlov;\nv) oʻqish bilan bogʻliq taʼtil va ijodiy taʼtillar uchun toʻlov;\ng) oʻn ikki yoshga toʻlmagan ikki va undan ortiq bolasi yoki oʻn olti yoshga toʻlmagan nogironligi boʻlgan bolasi bor ayollarga berilgan qoʻshimcha taʼtil uchun toʻlov;\n2) asosiy ish haqi qisman saqlab qolingan holda majburiy taʼtilda boʻlgan xodimlarga beriladigan toʻlovlar;\n3) donor xodimlarga koʻrikdan oʻtish, qon topshirish va qon topshirilgan har bir kundan keyin beriladigan dam olish kunlari uchun toʻlov;\n4) Oʻzbekiston Respublikasining Mehnat kodeksiga muvofiq davlat yoki jamoat vazifalarini bajarganlik uchun mehnatga toʻlov;\n5) qishloq xoʻjaligi va boshqa ishlarga jalb qilinadigan xodimlarning asosiy ish joyi boʻyicha saqlab qolinadigan ish haqi;",
+     "retrieval_score": 0.3958,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1857,
+    "retrieval_ms": 1335,
+    "rerank_ms": 0,
+    "generation_ms": 2113,
+    "total_ms": 5307
+   },
+   "usage": {
+    "input_tokens": 13690,
+    "output_tokens": 886,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Mehnat kodeksiga koʻra, xodim qon yoki uning tarkibiy qismlarini topshirgan kuni unga qanday dam olish imkoniyati beriladi va bu dam olish vaqtining qaysi turiga kiradi?",
+    "search_queries": [
+     "Mehnat kodeksiga koʻra, xodim qon yoki uning tarkibiy qismlarini topshirgan kuni unga qanday dam olish imkoniyati beriladi va bu dam olish vaqtining qaysi turiga kiradi?",
+     "qon yoki uning tarkibiy qismlarini topshirgan kun dam olish kuni",
+     "donorlarga qon topshirgan kuni qoʻshimcha dam olish kuni beriladi",
+     "dam olish vaqtining turlari qon topshirish kuni"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 436,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 1,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q099",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida bu savolga aniq javob topilmadi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7865964#band-18s2#p1",
+     "doc_id": "lex:-7865964",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori avtotransport vositalarining atmosfera havosiga zararli taʼsirini kamaytirish maqsadida “ekologik transport” tizimini joriy etish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7865964",
+     "article": "18-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-11-29",
+     "text": "18. Transport vositalarini roʻyxatga olish va qayta roʻyxatga olish jarayonida:\nishlab chiqaruvchi tomonidan ekologik sinfi (“Yevro” va unga muqobil boshqa turdagi standartlar) tasdiqlangan transport vositalariga mazkur Nizomning 8-bandida belgilangan mezonlar asosida diagnostika tekshiruvlarisiz aniqlanadigan ekologik toifaga mos boʻlgan rangdagi;\nekologik sinfini (“Yevro” va unga muqobil boshqa turdagi standartlar) aniqlash imkoni boʻlmagan transport vositalariga mazkur Nizomning 10-bandiga muvofiq oʻtkaziladigan diagnostika tekshiruvlari natijalari asosida avtomatik tarzda aniqlangan ekologik toifaga mos boʻlgan rangdagi ekologik stiker rasmiylashtirib beriladi.\nBunda ekologik stiker transport vositasini roʻyxatga olish (qayta roʻyxatga olish) amaliyoti oʻtkazilgan joyda maxsus texnika vositalarida avtomatik tarzda chop etiladi va transport vositasining roʻyxatdan oʻtkazilgani toʻgʻrisidagi guvohnoma hamda biriktirilgan davlat raqami belgisi bilan birga transport vositasining egasiga topshiriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-7865964#band-7s2#p1",
+     "doc_id": "lex:-7865964",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori avtotransport vositalarining atmosfera havosiga zararli taʼsirini kamaytirish maqsadida “ekologik transport” tizimini joriy etish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7865964",
+     "article": "7-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-11-29",
+     "text": "7. Transport vositalarini ekologik toifalarga ajratish hamda normativlarga mosligi darajasini diagnostika tekshiruvidan oʻtkazish ularni Davlat yoʻl harakati xavfsizligi boʻlinmalarida roʻyxatga olish va qayta roʻyxatga olish jarayonida, foydalanishda boʻlgan transport vositalari esa egasining ixtiyoriy murojaati asosida mazkur Nizomda belgilangan tartibda amalga oshiriladi.",
+     "retrieval_score": 0.9816,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-7865964#band-17s2#p1",
+     "doc_id": "lex:-7865964",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori avtotransport vositalarining atmosfera havosiga zararli taʼsirini kamaytirish maqsadida “ekologik transport” tizimini joriy etish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7865964",
+     "article": "17-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-11-29",
+     "text": "17. Ilgari ekologik stiker olganligidan qatʼi nazar, transport vositalarini roʻyxatga olish va qayta roʻyxatga olish jarayonida ularning toifalariga mos ravishdagi “yashil”, “sariq” yoki “qizil” rangli ekologik stikerlar Davlat yoʻl harakati xavfsizligi boʻlinmalarida ekologik operatorlar tomonidan beriladi.",
+     "retrieval_score": 0.937,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:5563039#art-14#p1",
+     "doc_id": "lex:5563039",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni transport toʻgʻrisida",
+     "url": "https://lex.uz/docs/5563039",
+     "article": "14-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-08-09",
+     "text": "14-modda. Transport vositalarini sertifikatlashtirish va roʻyxatdan oʻtkazish\nTransport vositalari muvofiqlik yoki transport vositasi turini maʼqullash sertifikatiga ega boʻlishi va roʻyxatdan oʻtkazilishi kerak.\nXavfsizlik talablariga javob bermaydigan transport vositalarini Oʻzbekiston Respublikasi hududiga olib kirish, Oʻzbekiston Respublikasida ishlab chiqarish, sotish (realizatsiya qilish) yoki ulardan foydalanish taqiqlanadi.",
+     "retrieval_score": 0.8265,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-7865964#band-15s2#p1",
+     "doc_id": "lex:-7865964",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori avtotransport vositalarining atmosfera havosiga zararli taʼsirini kamaytirish maqsadida “ekologik transport” tizimini joriy etish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7865964",
+     "article": "15-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-11-29",
+     "text": "15. Ekologik stikerga talabgor quyidagi huquqlarga ega:\nDavlat yoʻl harakati xavfsizligi xizmati boʻlinmalarida transport vositasini roʻyxatga olish va qayta roʻyxatga olish jarayonida elektron navbatdan oʻtish va unda belgilangan vaqtda transport vositasini diagnostika tekshiruvidan oʻtkazish;\nekologik operatordan diagnostika oʻlchov vositalarining metrologik nazorati natijalarini eʼtirof etish sertifikatini soʻrash;\ntransport vositasining diagnostika tekshiruvi natijalaridan norozi boʻlgan taqdirda, uni qayta diagnostika tekshiruvidan oʻtkazishni talab qilish;\ntransport vositasi diagnostika tekshiruvidan oʻtkazilgandan soʻng ekologik stikerni olish hamda transport vositasining belgilangan qismiga yelimlash.",
+     "retrieval_score": 0.8083,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1620,
+    "retrieval_ms": 676,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 2297
+   },
+   "usage": {
+    "input_tokens": 907,
+    "output_tokens": 126,
+    "models": {
+     "rewrite": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Uchib yuruvchi gilamni roʻyxatdan oʻtkazish qoidalari qanday?",
+    "search_queries": [
+     "Uchib yuruvchi gilamni roʻyxatdan oʻtkazish qoidalari qanday?",
+     "uchib yuruvchi gilamni roʻyxatdan oʻtkazish",
+     "transport vositalarini davlat roʻyxatidan oʻtkazish tartibi",
+     "havo transporti vositalarini roʻyxatga olish qoidalari"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 447,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": null,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q100",
+   "status": "ok",
+   "answer": "Soliq kodeksining 208-moddasiga koʻra, nazorat qilinadigan chet el kompaniyasining foydasi bunday kompaniya mansub boʻlgan davlat qonunchiligiga muvofiq moliyaviy hisobot tuziladigan yildan keyingi kalendar yilda ushbu kompaniya tomonidan toʻlangan dividendlar miqdoriga, shu moliyaviy yil davomida toʻlangan oraliq dividendlar hisobga olingan holda kamayadi [1]. Yaʼni hisobga olinadigan davr — moliyaviy hisobot tuzilgan yildan keyingi kalendar yil, oraliq dividendlar esa hisobot tuzilgan moliyaviy yil ichida toʻlanganlari hisobga olinadi [1]. Agar moliyaviy hisobot mansub davlat qonunchiligiga muvofiq tuzilmasa, kalendar yil qoʻllaniladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.75,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "208-modda",
+     "part": "1–4-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-208#p1",
+     "quote": "Nazorat qilinadigan chet el kompaniyasining foydasi bunday kompaniya mansub boʻlgan davlat (hudud) qonunchiligiga muvofiq moliyaviy hisobot tuziladigan yildan keyingi kalendar yilda ushbu chet el kompaniyasi tomonidan toʻlangan dividendlar miqdoriga, ushbu moliyaviy hisobot tuziladigan moliyaviy yil davomida toʻlangan oraliq dividendlar hisobga olingan holda kamayadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "208-modda",
+     "part": "1–4-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-208#p1",
+     "quote": "Agar nazorat qilinadigan chet el kompaniyasining moliyaviy hisoboti u mansub boʻlgan davlat (hudud) qonunchiligiga muvofiq tuzilmasa, ushbu band maqsadida kalendar yil qoʻllaniladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-208#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "208-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "208-modda. Nazorat qilinadigan chet el kompaniyasining foydasini soliq solishda hisobga olish tartibi\nNazorat qilinadigan chet el kompaniyasining ushbu Kodeksning XI boʻlimiga muvofiq hisob-kitob qilingan foydasi (zarari) summasi ushbu Kodeksning maqsadida mazkur kompaniyaning foydasi (zarari) deb eʼtirof etiladi.\nNazorat qilinadigan chet el kompaniyasining foydasini hisoblab chiqarishda ushbu Kodeksning XI boʻlimida nazarda tutilgan, xususan, ushbu chet el kompaniyasi doimiy joylashgan davlat (hudud) bilan xalqaro bitim mavjudligidan kelib chiqadigan xususiyatlar hisobga olinadi.\nNazorat qilinadigan chet el kompaniyasining foydasi bunday kompaniya mansub boʻlgan davlat (hudud) qonunchiligiga muvofiq moliyaviy hisobot tuziladigan yildan keyingi kalendar yilda ushbu chet el kompaniyasi tomonidan toʻlangan dividendlar miqdoriga, ushbu moliyaviy hisobot tuziladigan moliyaviy yil davomida toʻlangan oraliq dividendlar hisobga olingan holda kamayadi.\nAgar nazorat qilinadigan chet el kompaniyasining moliyaviy hisoboti u mansub boʻlgan davlat (hudud) qonunchiligiga muvofiq tuzilmasa, ushbu band maqsadida kalendar yil qoʻllaniladi.",
+     "retrieval_score": 0.9871,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4674902#art-208#p5",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "208-modda",
+     "part": "5–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "208-modda. Nazorat qilinadigan chet el kompaniyasining foydasini soliq solishda hisobga olish tartibi\nNazorat qilinadigan chet el kompaniyasining foydasini aniqlashda Oʻzbekiston Respublikasining yuridik shaxslari toʻlov manbai boʻlgan dividendlar tarzidagi daromadlar, agar ushbu nazorat qilinadigan chet el kompaniyasini nazorat qiladigan shaxs bunday daromadlarga nisbatan haqiqatda huquqqa ega boʻlsa va bunday daromadlar hisobidan soliq toʻlashdan ozod qilingan boʻlsa yoxud ularni ushbu Kodeksga muvofiq mustaqil ravishda toʻlagan boʻlsa, hisobga olinmaydi.\nAgar nazorat qilinadigan chet el kompaniyasi yuridik shaxs tashkil etmagan chet el tuzilmasi boʻlsa, uning foydasi ushbu chet el kompaniyasining nazorat qiluvchi shaxslari va (yoki) uning taʼsis hujjatlariga muvofiq benefitsiarlar deb eʼtirof etilgan boshqa shunday shaxslar foydasiga taqsimlangan foyda miqdoriga kamayadi.\nNazorat qilinadigan chet el kompaniyasining ushbu Kodeksga muvofiq aniqlanadigan taqsimlanmagan foydasi, ushbu kompaniyani nazorat qiluvchi shaxs deb eʼtirof etiladigan soliq toʻlovchi tomonidan olingan daromadlarga tenglashtiriladi. Bunday daromadlar nazorat qiluvchi shaxslarda nazorat qiluvchi shaxs yuridik yoki jismoniy shaxs ekanligiga bogʻliq ravishda foyda soligʻi yoki jismoniy shaxslardan olinadigan daromad soligʻi boʻyicha soliq bazasini aniqlashda inobatga olinadi.",
+     "retrieval_score": 0.8103,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4674902#art-331#p12",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "331-modda",
+     "part": "12–13-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "331-modda. Nazorat qilinadigan chet el kompaniyalarining foydasiga soliq solishning oʻziga xos xususiyatlari\nAgar nazorat qilinadigan chet el kompaniyasining foydasini (zararini) aniqlash tartibi ushbu modda birinchi qismining 2-bandiga muvofiq soliq toʻlovchining tanlovi boʻyicha qoʻllanilsa, bunday tartib tegishli nazorat qilinadigan chet el kompaniyasiga nisbatan bu tartibni qoʻllash boshlangan sanadan eʼtiboran kamida besh soliq davri ichida qoʻllanilishi lozim va bu hisob siyosatida nazorat qiluvchi shaxs boʻlgan soliq toʻlovchiga soliq solish maqsadlari uchun mustahkamlab qoʻyilgan boʻlishi kerak.\nNazorat qilinadigan chet el kompaniyasining ushbu kompaniyaning moliyaviy hisoboti maʼlumotlari boʻyicha aniqlangan va chet el valyutasida ifodalangan, ushbu Kodeksning 208-moddasida nazarda tutilgan tartibga muvofiq hisobga olinadigan dividendlarning (taqsimlangan foydaning) miqdoriga kamaytirilgan foydasi (zarari) chet el valyutasining yillik moliyaviy hisobot tuziladigan davr uchun aniqlanadigan, Oʻzbekiston Respublikasi Markaziy banki tomonidan milliy valyutaga nisbatan belgilangan oʻrtacha kursi qoʻllanilgan holda milliy valyutada qayta hisob-kitob qilinishi lozim.",
+     "retrieval_score": 0.7487,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4674902#art-41#p6",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "41-modda",
+     "part": "6–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-29",
+     "text": "41-modda. Dividendlar va foizlar\nUshbu moddaning birinchi qismida koʻrsatilgan daromadlar, basharti ular aksiyadorlarning (ishtirokchilarning) bunday daromadni toʻlovchi yuridik shaxsning ustav fondidagi (ustav kapitalidagi) ulushlariga mutanosib ravishda toʻlansa, dividendlar deb eʼtirof etiladi.\nOʻzbekiston Respublikasidan tashqaridagi manbalardan olinadigan, chet davlatlarning qonunchiligiga muvofiq dividendlar jumlasiga kiritiladigan har qanday daromadlar ham dividendlar deb eʼtirof etiladi.\nUshbu Kodeksning maqsadlari uchun xususiy korxona mulkdoriga, oilaviy korxona ishtirokchisiga yoki fermer xoʻjaligi boshligʻiga, shuningdek bank va mikromoliya tashkilotlaridagi islomiy qimmatli qogʻozlarga (sertifikatlarga) ega boʻlgan shaxslarga bunday yuridik shaxslar tasarrufida qolgan foyda summasidan toʻlanadigan daromadlar dividendlarga tenglashtiriladi.\nIlgari bildirilgan (belgilangan) har qanday daromad, shu jumladan har qanday turdagi qarz majburiyatlari boʻyicha diskont tarzida olingan daromad (uni rasmiylashtirish usulidan qatʼi nazar), islomiy moliya faoliyatidan olingan daromad, shu jumladan pul omonatlari boʻyicha olingan daromad foizlar deb eʼtirof etiladi.",
+     "retrieval_score": 0.8019,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4674902#art-343#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "343-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-01-01",
+     "text": "343-modda. Dividendlar tarzidagi daromadlarga soliq solishning oʻziga xos xususiyatlari\nYuridik shaxs tomonidan Oʻzbekiston Respublikasining soliq rezidentiga toʻlanadigan dividendlarga ushbu Kodeksning 345-moddasida nazarda tutilgan tartibda toʻlov manbaida soliq solinadi va bunday daromadlarni oluvchi tomonidan soliq bazasini aniqlashda chegirib tashlanadi.\nAgar dividendlar Oʻzbekiston Respublikasi norezidenti boʻlgan yuridik shaxs tomonidan Oʻzbekiston Respublikasi soliq rezidentiga toʻlansa, olingan dividendlarga nisbatan toʻlanadigan soliq summasi uni oluvchi tomonidan olingan dividendlar summasidan va ushbu Kodeks 337-moddasi birinchi qismining 11-bandida belgilangan soliq stavkasidan kelib chiqib, mustaqil ravishda aniqlanadi. Bunda dividend oluvchilar ushbu moddaga muvofiq hisoblab chiqarilgan soliq summasini daromad manbai joylashgan joy boʻyicha toʻlangan soliq summasiga kamaytirishga, agar Oʻzbekiston Respublikasi xalqaro shartnomalarida boshqacha qoida nazarda tutilmagan boʻlsa, haqli emas.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1942,
+    "retrieval_ms": 2117,
+    "rerank_ms": 0,
+    "generation_ms": 3676,
+    "total_ms": 7737
+   },
+   "usage": {
+    "input_tokens": 14883,
+    "output_tokens": 712,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Chet elda joylashgan kompaniyam mavjud boʻlib, unda foyda mavjud, lekin men dividend olganman. Soliq organlari ushbu foydadan mening dividendlarimni chegirib tashlashlari mumkinmi va qaysi yildagi dividendlar hisobga olinadi?",
+    "search_queries": [
+     "Chet elda kompaniyam bor, u yerda foyda bor-u, lekin men dividend olganman. Soliqda shu foydadan dividendlarimni ayirib tashlashsa boʻladimi va qaysi yildagi dividendlar hisobga olinadi?",
+     "Chet elda joylashgan kompaniyam mavjud boʻlib, unda foyda mavjud, lekin men dividend olganman. Soliq organlari ushbu foydadan mening dividendlarimni chegirib tashlashlari mumkinmi va qaysi yildagi dividendlar hisobga olinadi?",
+     "chet eldagi kompaniya foydasidan dividendlar chegirib tashlash",
+     "chet eldan olingan dividendlar soliqqa tortish",
+     "dividendlar soliq solinadigan bazadan chegirish"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 674,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

@@ -1,0 +1,904 @@
+{
+ "metrics": {
+  "run_id": "full100-v2",
+  "questions": 100,
+  "missing": [],
+  "hit5_doc": 0.8778,
+  "hit5_article": 0.8778,
+  "mrr": 0.8352,
+  "context_precision": 0.5733,
+  "citation_accuracy": 0.9285714285714286,
+  "fabricated_citations": 0,
+  "outdated_citations": 0,
+  "no_answer_accuracy": 1.0,
+  "latency_p50_s": 5.28,
+  "latency_p95_s": 7.99,
+  "error_rate": 0.0,
+  "answer_correctness": 1.5,
+  "faithfulness": 0.98,
+  "citation_accuracy_judge": 0.7917,
+  "error_attribution": {
+   "manba": 1,
+   "retrieval": 11
+  }
+ },
+ "targets": {
+  "hit5_doc": {
+   "value": 0.8778,
+   "target": ">= 0.9",
+   "pass": false
+  },
+  "hit5_article": {
+   "value": 0.8778,
+   "target": ">= 0.8",
+   "pass": true
+  },
+  "mrr": {
+   "value": 0.8352,
+   "target": ">= 0.7",
+   "pass": true
+  },
+  "context_precision": {
+   "value": 0.5733,
+   "target": ">= 0.6",
+   "pass": false
+  },
+  "answer_correctness": {
+   "value": 1.5,
+   "target": ">= 1.6",
+   "pass": false
+  },
+  "faithfulness": {
+   "value": 0.98,
+   "target": ">= 0.95",
+   "pass": true
+  },
+  "citation_accuracy": {
+   "value": 0.9285714285714286,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "fabricated_citations": {
+   "value": 0,
+   "target": "== 0",
+   "pass": true
+  },
+  "outdated_citations": {
+   "value": 0,
+   "target": "== 0",
+   "pass": true
+  },
+  "no_answer_accuracy": {
+   "value": 1.0,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "latency_p50_s": {
+   "value": 5.28,
+   "target": "<= 5.0",
+   "pass": false
+  },
+  "latency_p95_s": {
+   "value": 7.99,
+   "target": "<= 12.0",
+   "pass": true
+  },
+  "error_rate": {
+   "value": 0.0,
+   "target": "<= 0.02",
+   "pass": true
+  }
+ },
+ "per_question": [
+  {
+   "id": "q001",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 1,
+    "faithful_claims": 2,
+    "total_claims": 4,
+    "citation_supports": false,
+    "reason": "The answer includes the required information from the Civil Procedure Code (FPC 82) but misstates the requirement as needing both residence and work/study places, whereas the law uses 'yoki' (or). It also cites economic and administrative codes, but the claim for administrative code is not fully supported because that code only requires residence, not work/study place. Citation [2] and [3] do not support the claims as worded."
+   }
+  },
+  {
+   "id": "q002",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q003",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "reason": "System answer states the same rule from Article 20, including the condition for written resignation and removal by the President. Both atomic claims (the rule and the article reference) are directly supported by the retrieved context, and the citation quote accurately supports them."
+   }
+  },
+  {
+   "id": "q004",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": "manba (havola notoʻgʻri)",
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 5,
+    "total_claims": 5,
+    "citation_supports": true,
+    "reason": "The system answer correctly states that parents must support and raise their children until they reach adulthood, citing Article 77 of the Constitution of Uzbekistan, which contains the same rule as the expected answer from the Constitution of Karakalpakstan. It also adds correct additional details from the Family Code. All atomic factual claims are directly supported by the retrieved contexts, and each citation matches its quoted text."
+   }
+  },
+  {
+   "id": "q005",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 7,
+    "total_claims": 7,
+    "citation_supports": true,
+    "reason": "The system answer correctly identifies that land plots are given to families for agricultural production for at least five years under family contract terms, per Article 51. All atomic factual claims, including the source attribution, are directly supported by the retrieved contexts, and the citation accurately supports the statement."
+   }
+  },
+  {
+   "id": "q006",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": false,
+    "reason": "The answer correctly states both the appellate and cassation rules as in the expected answer. All four factual claims are directly supported by the retrieved contexts, but citation [1] only quotes the first paragraph of Article 202 and omits the five-day forwarding requirement, so it does not fully support the claim it is attached to."
+   }
+  },
+  {
+   "id": "q007",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 7,
+    "total_claims": 7,
+    "citation_supports": true,
+    "reason": "The answer correctly states that the citizen is protected from unauthorized entry and can vote from age 18, with extra correct detail from Uzbekistan and Qoraqalpog'iston laws. All seven factual claims are directly supported by the retrieved contexts, and each citation accurately supports the claim it is attached to."
+   }
+  },
+  {
+   "id": "q008",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 5,
+    "total_claims": 5,
+    "citation_supports": true,
+    "reason": "Системный ответ полностью соответствует статье 145 ГК и ожидаемому ответу. Все атомарные утверждения (о статье, о круге установителей срока, о способах определения и единицах измерения) подтверждаются приведённой цитатой из контекста."
+   }
+  },
+  {
+   "id": "q009",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "reason": "The answer correctly states the time limit for changing birth date (up to one year) and the age limit for changing birthplace (child not older than ten), based on FPK 299 and Family Code 164; all factual claims are directly supported by the cited and retrieved contexts."
+   }
+  },
+  {
+   "id": "q010",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q011",
+   "category": "faktik",
+   "status": "no_answer",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 0,
+    "total_claims": 0,
+    "citation_supports": false,
+    "reason": "system status no_answer"
+   }
+  },
+  {
+   "id": "q012",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q013",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "reason": "Tizim javobi 344-moddaga to'g'ri asoslanadi va kafolat summasi bojxona to'lovlari va foizlar summasidan kam bo'lmasligi kerakligini aniq ifodalaydi. Bitta da'vo mavjud va u keltirilgan kontekst bilan to'liq qo'llab-quvvatlanadi, iqtibos ham da'voni tasdiqlaydi."
+   }
+  },
+  {
+   "id": "q014",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q015",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "reason": "The answer correctly states the threshold (more than 10 times the base calculation amount) from Article 733 and includes the additional rule for legal entities. Both factual claims are directly supported by the retrieved context, and the citation accurately reflects the cited provision."
+   }
+  },
+  {
+   "id": "q016",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 1,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "reason": "Ijro hujjatlarini davlat maqsadli jamg'armalari mablag'lariga qaratish tartibi to'g'ri ko'rsatilgan, lekin jamg'armalarning kim qarori bilan tashkil etilishi haqidagi savolga javob berilmagan. O'rniga qo'shimcha manbalar va qoldiq mablag'lardan foydalanish Prezident va Vazirlar Mahkamasi qarorlari bilan amalga oshirilishi aytilgan, bu tashkil etish emas. Shuning uchun javob qisman to'g'ri."
+   }
+  },
+  {
+   "id": "q017",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "reason": "The answer matches the expected legal rule exactly: the right arises after conformity assessment and obtaining the certificate, and equivalence assessment is by the authorized state body. Both atomic claims are directly supported by the retrieved contexts, and each citation accurately quotes the supporting provision."
+   }
+  },
+  {
+   "id": "q018",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q019",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "reason": "The answer matches Article 460: fee is collected upon entry or in customs territory per Cabinet procedure. All three factual claims (entry timing, customs territory timing, customs authority collection) are supported by the retrieved contexts; citations support their claims."
+   }
+  },
+  {
+   "id": "q020",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q021",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 4,
+    "total_claims": 4,
+    "citation_supports": true,
+    "reason": "System answer matches expected statutory rule: notification of refusal must be sent no later than one business day after decision, with grounds stated. All atomic claims are directly supported by retrieved contexts and the citation quote."
+   }
+  },
+  {
+   "id": "q022",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 17,
+    "total_claims": 17,
+    "citation_supports": false,
+    "reason": "The answer includes the full list of mandatory national legislation areas (national security, defense, AML/CFT, immigration, family, environment, emergency, sanitary, health) as required, plus other categories from Article 12; all factual claims are supported by retrieved Article 12. However, the cited quote only reproduces the introductory sentence and not the enumerated list, so it does not support every attached claim."
+   }
+  },
+  {
+   "id": "q023",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "reason": "System answer correctly states the rule from article 286 including the cross-reference to articles 313-321 and the additional validity condition from the same article; both factual claims are directly supported by the retrieved context and citations."
+   }
+  },
+  {
+   "id": "q024",
+   "category": "faktik",
+   "status": "no_answer",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 0,
+    "total_claims": 0,
+    "citation_supports": false,
+    "reason": "system status no_answer"
+   }
+  },
+  {
+   "id": "q025",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q026",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q027",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 5,
+    "total_claims": 5,
+    "citation_supports": false,
+    "reason": "System answer correctly states the two conditions for transferring goods under customs warehouse regime (written notification and submission of customs declaration) and that transfer does not stop or extend storage period, matching Article 96. It also correctly adds the 3-year storage period under Article 94. All five factual claims are supported by retrieved contexts. However, citation [1] quotes only the first condition but is attached to a sentence that includes both conditions; thus it does not fully support the entire claim it is attached to."
+   }
+  },
+  {
+   "id": "q028",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 9,
+    "total_claims": 9,
+    "citation_supports": true,
+    "reason": "Системный ответ верно указывает, что лицензия не требуется, согласно статье 15, и добавляет условия из статьи 31; все утверждения подкреплены извлечёнными контекстами и цитатами."
+   }
+  },
+  {
+   "id": "q029",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)"
+  },
+  {
+   "id": "q030",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q031",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q032",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q033",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 1,
+    "total_claims": 1,
+    "citation_supports": true,
+    "reason": "The system answer correctly states the rule from Article 2 that international treaty rules prevail over national legislation. The single factual claim is fully supported by the retrieved contexts, and the cited quote directly supports it."
+   }
+  },
+  {
+   "id": "q034",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "reason": "The system answer exactly matches the expected rule from Article 5: it states the obligation to suspend or terminate political party membership and the prohibition on other paid activities except scientific, pedagogical, and creative. Both claims are directly supported by the retrieved context [lex:-3321352#art-5#p1], and the cited quote accurately supports the answer."
+   }
+  },
+  {
+   "id": "q035",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "reason": "The answer correctly states the one-month period from the ruling accepting the appeal, matching Article 395, and adds accurate extra detail about a possible one-month extension by the judicial panel. Both atomic claims are directly supported by the retrieved Article 395 text and the citations quoted."
+   }
+  },
+  {
+   "id": "q036",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 1,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": false,
+    "reason": "Birinchi qism to'g'ri: sud mutaxassis ishtirokida raqamli dalillarni bevosita ko'zdan kechirishi va tekshirishi shart, lekin ikkinchi qism noto'g'ri: dalillarni tekshirish tartibini sud belgilaydi, tizim esa Kodeks belgilaydi deb javob bergan. Barcha uchta da'vo olingan kontekstlar bilan tasdiqlangan, ammo [1] iqtibosida faqat birinchi jumla keltirilgan, ikkinchi da'voni (saqlash joyida ko'zdan kechirish) qo'llab-quvvatlamaydi."
+   }
+  },
+  {
+   "id": "q037",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 3,
+    "total_claims": 3,
+    "citation_supports": true,
+    "reason": "Tizim javobi Jinoyat-protsessual kodeksining 476-moddasidagi qoidalarni toʻgʻri va toʻliq aks ettiradi: qaramogʻidagilarni vasiylik/homiylikka topshirish, mol-mulkni qoʻriqlash choralarini koʻrish va qarorlarni sud majlisida hukm eʼlon qilinganidan keyin oʻqib eshittirish. Keltirilgan iqtiboslar daʼvolarni bevosita qoʻllab-quvvatlaydi."
+   }
+  },
+  {
+   "id": "q038",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q039",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null,
+   "judge": {
+    "correctness": 2,
+    "faithful_claims": 2,
+    "total_claims": 2,
+    "citation_supports": true,
+    "reason": "Javob kutilgan qoidaga to'liq mos keladi: Iqtisodiy protsessual kodeksining 341-moddasi ikkinchi qismiga ko'ra, ijro varaqasi davlat ijrochisi tomonidan yo'qotilgan va bu haqda undiruvchiga ijroga taqdim etish muddati o'tganidan so'ng ma'lum bo'lgan hollarda dublikat berish to'g'risidagi ariza ijro varaqasi yo'qotilganligi undiruvchiga ma'lum bo'lgan kundan e'tiboran bir oy ichida berilishi mumkin. Iqtibos keltirilgan manba ushbu qoidani aynan tasdiqlaydi. Barcha da'volar olingan kontekstda bevosita qo'llab-quvvatlanadi."
+   }
+  },
+  {
+   "id": "q040",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q041",
+   "category": "faktik",
+   "status": "no_answer",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 0,
+    "total_claims": 0,
+    "citation_supports": false,
+    "reason": "system status no_answer"
+   }
+  },
+  {
+   "id": "q042",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q043",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q044",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q045",
+   "category": "raqamlar",
+   "status": "no_answer",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 0,
+    "total_claims": 0,
+    "citation_supports": false,
+    "reason": "system status no_answer"
+   }
+  },
+  {
+   "id": "q046",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q047",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q048",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q049",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q050",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q051",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q052",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q053",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q054",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q055",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q056",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q057",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q058",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q059",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q060",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q061",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q062",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q063",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q064",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q065",
+   "category": "raqamlar",
+   "status": "no_answer",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 0,
+    "total_claims": 0,
+    "citation_supports": false,
+    "reason": "system status no_answer"
+   }
+  },
+  {
+   "id": "q066",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q067",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q068",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q069",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q070",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)"
+  },
+  {
+   "id": "q071",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q072",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q073",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q074",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q075",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q076",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q077",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q078",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)"
+  },
+  {
+   "id": "q079",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q080",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q081",
+   "category": "faktik",
+   "status": "no_answer",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)",
+   "judge": {
+    "correctness": 0,
+    "faithful_claims": 0,
+    "total_claims": 0,
+    "citation_supports": false,
+    "reason": "system status no_answer"
+   }
+  },
+  {
+   "id": "q082",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q083",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)"
+  },
+  {
+   "id": "q084",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q085",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q086",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q087",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q088",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q089",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q090",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q091",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q092",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q093",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q094",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q095",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q096",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q097",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": "retrieval (toʻgʻri modda topilmadi)"
+  },
+  {
+   "id": "q098",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q099",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q100",
+   "category": "noaniq",
+   "status": "ok",
+   "attribution": null
+  }
+ ]
+}

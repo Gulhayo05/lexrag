@@ -1,0 +1,1497 @@
+{
+ "run_id": "full100-v2",
+ "batch_id": "full100-v2-b05",
+ "batch_index": 5,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p6",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125645,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:45:55+05:00",
+  "completed_at": "2026-11-06T18:46:04+05:00",
+  "total_ms": 8991
+ },
+ "summary": {
+  "total": 10,
+  "ok": 7,
+  "no_answer": 3,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q041",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonunchilik hujjatlarida xususiylashtirilgan bino egallagan yer uchastkasiga ijara huquqini tan olish uchun soliqlar boʻyicha qanday talab bajarilishi kerakligi toʻgʻrisidagi qoida mavjud emas.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.6,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-424#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "424-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-01-01",
+     "text": "424-modda. Umumiy qoidalar\nYer uchastkalaridan foydalanganlik uchun budjetga toʻlovlar yer soligʻi yoki yer uchun ijara toʻlovi tarzda amalga oshiriladi.\nTuman (shahar) hokimi, shuningdek qonunchilikda belgilangan tartibda doimiy foydalanish huquqiga ega boʻlgan davlat organlari, muassasalari va tashkilotlari bilan tuzilgan hamda koʻchmas mulkka boʻlgan huquqlarni davlat roʻyxatidan oʻtkazadigan organlarda roʻyxatdan oʻtkazilgan yer uchastkasining ijara shartnomasi asosida berilgan yer uchastkalari uchun toʻlanadigan ijara toʻlovi yer soligʻiga tenglashtiriladi. Yer uchastkalarini ijaraga olgan yuridik shaxslarga yuridik shaxslardan olinadigan yer soligʻini toʻlovchilar uchun belgilangan soliq stavkalari, soliq imtiyozlari, soliqni hisoblab chiqarish, soliq hisobotini taqdim etish va soliqni toʻlash tartibi tatbiq etiladi.\nYuridik shaxslar mulk huquqi, egalik qilish, foydalanish yoki ijara huquqlari asosida foydalaniladigan yer uchastkalari uchun yer soligʻi toʻlaydi.",
+     "retrieval_score": 0.9719,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4674902#art-425#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "425-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-30",
+     "text": "425-modda. Soliq toʻlovchilar\nMulk huquqi, egalik qilish, foydalanish yoki ijara huquqlari asosida yer uchastkalariga ega boʻlgan yuridik shaxslar, shu jumladan Oʻzbekiston Respublikasining norezidentlari yuridik shaxslardan olinadigan yer soligʻini toʻlovchilar (bundan buyon ushbu bobda soliq toʻlovchilar deb yuritiladi) deb eʼtirof etiladi.\nKoʻchmas mulk ijaraga berilgan taqdirda, ijaraga beruvchi soliq toʻlovchi deb eʼtirof etiladi. Bunda moliyaviy ijara (lizing) shartnomasiga muvofiq moliyaviy ijaraga (lizing) berilgan (olingan) koʻchmas mulk obyektlari boʻyicha ijaraga oluvchi (lizing oluvchi) soliq toʻlovchi deb eʼtirof etiladi.\nYer uchastkasidan bir nechta yuridik shaxs birgalikda foydalangan taqdirda, har bir yuridik shaxs yer uchastkasining foydalanilayotgan maydonidagi oʻz ulushi uchun soliq toʻlovchi deb eʼtirof etiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4674902#art-426#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "426-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-08-06",
+     "text": "426-modda. Soliq solish obyekti\nMulk huquqi, egalik qilish, foydalanish yoki ijara huquqlari asosida yuridik shaxslarda boʻlgan yer uchastkalari yuridik shaxslardan olinadigan yer soligʻining (bundan buyon ushbu bobda soliq deb yuritiladi) soliq solish obyektidir.\nQuyidagi yer uchastkalari soliq solish obyekti sifatida hisoblanmaydi:\n1) notijorat tashkilotlari tomonidan notijorat faoliyati doirasida foydalaniladigan yerlar;\n2) aholi punktlarining, bogʻdorchilik, uzumchilik yoki polizchilik shirkatlarining umumiy foydalanishdagi yerlari (maydonlar, koʻchalar, tor koʻchalar, yoʻllar, shoxobcha yoʻllar, sugʻorish tarmoqlari, kollektorlar, sohil boʻyi yerlari va boshqa shu kabi umumiy foydalanishdagi yerlar);\n3) umumiy foydalanishdagi avtomobil yoʻllari, shu jumladan pulli avtomobil yoʻllari egallagan yerlar;\n4) aholining madaniy-maishiy ehtiyojlarini qondirish va dam olishi uchun foydalaniladigan yerlar (daraxtzorlar, istirohat bogʻlari, sayilgohlar, xiyobonlar, aholining ommaviy dam olishi va turizmini tashkil etish uchun belgilangan joylar, shuningdek ariq tarmoqlari egallagan yerlar);",
+     "retrieval_score": 0.8385,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4674902#art-427#p6",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "427-modda",
+     "part": "6–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-03-17",
+     "text": "427-modda. Soliq bazasi\nYer uchastkalariga boʻlgan mulk huquqi, egalik qilish, foydalanish yoki ijara huquqi yil mobaynida soliq toʻlovchiga oʻtgan boʻlsa, soliq bazasi yer uchastkalariga tegishli huquq vujudga kelganidan keyingi oydan eʼtiboran hisoblab chiqariladi. Yer uchastkasining maydoni kamaytirilgan taqdirda, soliq bazasi yer uchastkasi maydoni kamaytirilgan oydan eʼtiboran kamaytiriladi.\nYuridik shaxslarda soliq imtiyoziga boʻlgan huquq vujudga kelgan taqdirda, soliq bazasi ushbu huquq vujudga kelgan oydan eʼtiboran kamaytiriladi. Soliq imtiyoziga boʻlgan huquq bekor qilingan taqdirda, soliq bazasi ushbu huquq tugatilganidan keyingi oydan eʼtiboran hisoblab chiqariladi (koʻpaytiriladi).\nSoliq toʻlovchi soliq toʻlash nazarda tutilmagan faoliyat turlarini amalga oshirganda, soliq bazasi soliq solinadigan va soliq solinmaydigan yer uchastkasi boʻyicha alohida-alohida hisob yuritish asosida aniqlanadi. Alohida-alohida hisob yuritish imkoniyati boʻlmaganda, soliq bazasi soliqni toʻlash nazarda tutilgan faoliyatdan olinadigan sof tushumning umumiy sof tushum hajmidagi ulushidan kelib chiqqan holda aniqlanadi.",
+     "retrieval_score": 0.8298,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4674902#art-433#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "433-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-01-01",
+     "text": "433-modda. Soliq toʻlovchilar\nMulk huquqi, egalik qilish, foydalanish yoki ijara huquqlari asosida yer uchastkalariga ega boʻlgan jismoniy shaxslar, shuningdek yuridik shaxs tashkil etgan yoki etmagan holdagi dehqon xoʻjaliklari jismoniy shaxslardan olinadigan yer soligʻini soliq toʻlovchilari (bundan buyon ushbu bobda soliq toʻlovchi deb yuritiladi) deb eʼtirof etiladi.\nTuman (shahar) hokimi, shuningdek qonunchilikda belgilangan tartibda doimiy foydalanish huquqiga ega boʻlgan davlat organlari, muassasalari va tashkilotlari bilan tuzilgan hamda koʻchmas mulkka boʻlgan huquqlarni davlat roʻyxatidan oʻtkazadigan organlarda roʻyxatdan oʻtkazilgan yer uchastkasining ijara shartnomasi asosida berilgan yer uchastkalari uchun toʻlanadigan ijara toʻlovi yer soligʻiga tenglashtiriladi. Yer uchastkalarini ijaraga olgan jismoniy shaxslarga nisbatan jismoniy shaxslardan olinadigan yer soligʻini toʻlovchilar uchun belgilangan soliq stavkalari, soliq imtiyozlari, soliqni hisoblab chiqarish va toʻlash tartibi tatbiq etiladi.\nUy-joy, yashash uchun moʻljallanmagan imoratlar va inshootlar meros boʻyicha oʻtishi bilan birgalikda mulk huquqi, egalik qilish va foydalanish huquqi oʻtgan yer uchastkalari uchun yer soligʻi meros qoldiruvchining soliq majburiyatlarini inobatga olgan holda merosxoʻrlardan undiriladi.",
+     "retrieval_score": 0.953,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1493,
+    "retrieval_ms": 439,
+    "rerank_ms": 0,
+    "generation_ms": 1856,
+    "total_ms": 3788
+   },
+   "usage": {
+    "input_tokens": 14772,
+    "output_tokens": 356,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Xususiylashtirilgan bino egallab turgan yer uchastkasiga ijara huquqini tan olish uchun soliqlar boʻyicha qanday talab bajarilishi lozim?",
+    "search_queries": [
+     "Xususiylashtirilgan bino egallagan yer uchastkasiga ijara huquqini tan olish uchun soliqlar boʻyicha qanday talab bajarilishi kerak?",
+     "Xususiylashtirilgan bino egallab turgan yer uchastkasiga ijara huquqini tan olish uchun soliqlar boʻyicha qanday talab bajarilishi lozim?",
+     "xususiylashtirilgan bino egallagan yer uchastkasiga ijara huquqini tan olish",
+     "yer uchastkasiga ijara huquqi soliqlar boʻyicha talab",
+     "yer soligʻi va ijara toʻlovlari qarzdorligi yer uchastkasini ijaraga berish"
+    ],
+    "doc_hints": [
+     "Yer kodeksi",
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 653,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q042",
+   "status": "ok",
+   "answer": "Aholi bandligi toʻgʻrisidagi qonunning 103-moddasiga koʻra, Oʻzbekistonda roʻyxatdan oʻtkazilgan yuridik shaxslar chet elda mehnat faoliyatini amalga oshirish uchun chiqib ketayotgan fuqarolarning kasbiy bilimini tasdiqlash boʻyicha faoliyatni Oʻzbekiston Respublikasi Kambagʻallikni qisqartirish va bandlik vazirligi tomonidan oʻtkaziladigan akkreditatsiya asosida amalga oshirishga haqli [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5055690",
+     "doc_title": "Oʻzbekiston Respublikasi qonuni aholi bandligi toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5055690",
+     "article": "103-modda",
+     "part": "1–3-qism",
+     "edition_date": "2025-11-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5055690#art-103#p1",
+     "quote": "vaqtinchalik mehnat faoliyatini amalga oshirish uchun Oʻzbekiston Respublikasidan tashqariga chiqib ketayotgan fuqarolarning kasbiy bilimini, shu jumladan kasbiy koʻnikmalarga ega boʻlish va chet tillarni bilish darajasini tasdiqlash boʻyicha faoliyatni Oʻzbekiston Respublikasi Kambagʻallikni qisqartirish va bandlik vazirligi tomonidan oʻtkaziladigan akkreditatsiya asosida amalga oshirishga haqlidir",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5055690#art-103#p1",
+     "doc_id": "lex:-5055690",
+     "doc_title": "Oʻzbekiston Respublikasi qonuni aholi bandligi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5055690",
+     "article": "103-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-11-12",
+     "text": "103-modda. Yuridik shaxslarning Oʻzbekiston Respublikasidan tashqariga chiqib ketayotgan fuqarolarni ishga joylashtirish va ularning kasbiy bilimini tasdiqlash boʻyicha faoliyati\nQonunchilikda belgilangan tartibda Oʻzbekiston Respublikasida roʻyxatdan oʻtkazilgan yuridik shaxslar:\nMigratsiya agentligi tomonidan beriladigan litsenziya asosida fuqarolarni Oʻzbekiston Respublikasidan tashqarida ishga joylashtirish;\nvaqtinchalik mehnat faoliyatini amalga oshirish uchun Oʻzbekiston Respublikasidan tashqariga chiqib ketayotgan fuqarolarning kasbiy bilimini, shu jumladan kasbiy koʻnikmalarga ega boʻlish va chet tillarni bilish darajasini tasdiqlash boʻyicha faoliyatni Oʻzbekiston Respublikasi Kambagʻallikni qisqartirish va bandlik vazirligi tomonidan oʻtkaziladigan akkreditatsiya asosida amalga oshirishga haqlidir.",
+     "retrieval_score": 0.6859,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3811317#band-1#p1",
+     "doc_id": "lex:-3811317",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori Oʻzbekiston Respublikasining tashqi mehnat migratsiya tizimini yanada takomillashtirish boʻyicha qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3811317",
+     "article": "1-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-09-16",
+     "text": "1. Belgilab qoʻyilsinki, 2018-yil 1-sentabrdan Oʻzbekiston Respublikasida roʻyxatdan oʻtgan yuridik shaxslar:\nOʻzbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi tomonidan beriladigan litsenziya asosida Oʻzbekiston Respublikasi fuqarolarini xorijda ishga joylashtirish boʻyicha;\nOʻzbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligida akkreditatsiyadan oʻtish asosida, xorijda mehnat faoliyatini amalga oshirish uchun ketayotgan Oʻzbekiston Respublikasi fuqarolarining kasbiy malakasini, jumladan, kasbiy koʻnikmalarga ega boʻlish va xorijiy tillarni bilish darajasini tasdiqlash borasidagi faoliyat bilan shugʻullanish huquqiga ega.\nOʻzbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi markaziy apparatining tarkibiy boʻlinmasi (boʻlinmalari) Oʻzbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligining litsenziyalar berish va akkreditatsiyadan oʻtkazish toʻgʻrisidagi murojaatlarni koʻrib chiqish, zarur hujjatlarni tayyorlash funksiyalarini bajaruvchi ishchi organi etib belgilansin.",
+     "retrieval_score": 0.5322,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5055690#art-82#p1",
+     "doc_id": "lex:-5055690",
+     "doc_title": "Oʻzbekiston Respublikasi qonuni aholi bandligi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5055690",
+     "article": "82-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-10-02",
+     "text": "82-modda. Malakani baholash markazlarini akkreditatsiya qilish tartibi\nMalakani baholash markazlari oʻz faoliyatini amalga oshirish uchun Oʻzbekiston Respublikasi Kambagʻallikni qisqartirish va bandlik vazirligida akkreditatsiya qilinadi.\nBitta malakani baholash markazini kasbiy faoliyatning bir necha turlari (kasblar) boʻyicha akkreditatsiya qilishga yoʻl qoʻyiladi.\nMalakani baholash markazlarini akkreditatsiya qilish yoki akkreditatsiya qilishni rad etish toʻgʻrisidagi qaror Respublika kengashining taqdimnomasiga binoan Oʻzbekiston Respublikasi Kambagʻallikni qisqartirish va bandlik vazirligi tomonidan qabul qilinadi.\nAkkreditatsiyaga talabgor boʻlgan ariza beruvchi — malakani baholash markazi (bundan buyon matnda ariza beruvchi deb yuritiladi) Respublika kengashiga quyidagilarni taqdim etadi:\nakkreditatsiya olish uchun arizani;\nariza beruvchi malaka, bilim va koʻnikmalarni baholashdan oʻtkazishga talabgor boʻlgan yoʻnalishlarning har biri boʻyicha oʻz shtatida mehnat shartnomasi yoki fuqarolik-huquqiy shartnoma boʻyicha qabul qilingan oliy maʼlumotli mutaxassis (mutaxassislar) mavjudligini tasdiqlovchi hujjatlarni;",
+     "retrieval_score": 0.4857,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5055690#art-86#p1",
+     "doc_id": "lex:-5055690",
+     "doc_title": "Oʻzbekiston Respublikasi qonuni aholi bandligi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5055690",
+     "article": "86-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-10-02",
+     "text": "86-modda. Akkreditatsiya qilingan malakani baholash markazlarining registri\nOʻzbekiston Respublikasi Kambagʻallikni qisqartirish va bandlik vazirligi tomonidan Akkreditatsiya qilingan malakani baholash markazlarining registri yuritiladi.\nAkkreditatsiya qilingan malakani baholash markazlarining registri axborot-maʼlumotnoma xususiyatiga ega boʻlgan, vaqti-vaqti bilan yangilab turiladigan maʼlumotlarni oʻz ichiga olgan avtomatlashtirilgan tizimdir va u malaka, bilim va koʻnikmalarni baholash bilan shugʻullanuvchi yuridik shaxslarning davlat tomonidan hisobga olinishini taʼminlaydi.\nAkkreditatsiya qilingan malakani baholash markazlarining registrini yuritish uchun bevosita akkreditatsiya qilingan tashkilotdan kelib tushadigan maʼlumotlardan, Oʻzbekiston Respublikasi Kambagʻallikni qisqartirish va bandlik vazirligining, shuningdek zarur hollarda, soliq organlarining, davlat mulkini boshqarish organlarining hamda boshqa davlat organlarining maʼlumotlaridan foydalaniladi.\nAkkreditatsiya qilingan malakani baholash markazlarining registridagi axborotdan hamma foydalanishi mumkin hamda u Oʻzbekiston Respublikasi Kambagʻallikni qisqartirish va bandlik vazirligining rasmiy veb-saytida eʼlon qilinadi.",
+     "retrieval_score": 0.4974,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6257288#art-362#p1",
+     "doc_id": "lex:-6257288",
+     "doc_title": "Oʻzbekiston Respublikasining mehnat kodeksi",
+     "url": "https://lex.uz/docs/-6257288",
+     "article": "362-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-10-29",
+     "text": "362-modda. Xodimlarni mehnatni muhofaza qilish boʻyicha yoʻl-yoʻriqdan oʻtkazish va oʻqitish\nIshga yangi kirayotgan barcha xodimlar, shuningdek boshqa ishga oʻtkazilayotgan xodimlar uchun ish beruvchi mehnatni muhofaza qilish boʻyicha yoʻl-yoʻriq berishni amalga oshirishi, ishlarni bajarishning xavfsiz uslublari va usullari hamda ishlab chiqarishdagi baxtsiz hodisalardan jabrlanganlarga yordam koʻrsatishga oid oʻquvni tashkil etishi shart.\nYuqori xavfga ega boʻlgan ishlab chiqarishga yoki kasbiy tanlov talab etiladigan ishga kiruvchi xodimlar uchun ishni xavfsiz uslublar va usullar bilan bajarish boʻyicha dastlabki tayyorgarlik, kasb boʻyicha bir oy davomida mehnatni muhofaza qilishga doir oʻquv oʻtkazilib, imtihon topshiriladi va keyinchalik mehnatni muhofaza qilish masalalari boʻyicha majburiy davriy attestatsiya oʻtkaziladi.\nTashkilotlarning xodimlari, shu jumladan rahbarlari mehnatni muhofaza qilishning davlat boshqaruvini amalga oshiruvchi organlar tomonidan ushbu xodimlar va rahbarlarning kasbi hamda ish turlari uchun belgilangan tartibda va muddatlarda mehnatni muhofaza qilish boʻyicha oʻqitilishi, yoʻl-yoʻriq olishi, bilimlarining tekshiruvidan oʻtkazilishi shart.\nMehnatni muhofaza qilish boʻyicha belgilangan tartibda oʻquvdan oʻtmagan, yoʻl-yoʻriq olmagan va bilimlari tekshiruvdan oʻtkazilmagan shaxslarni ish beruvchi ishdan chetlashtirishi shart.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2029,
+    "retrieval_ms": 1549,
+    "rerank_ms": 0,
+    "generation_ms": 3359,
+    "total_ms": 6939
+   },
+   "usage": {
+    "input_tokens": 13123,
+    "output_tokens": 630,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Chet elda ishlash uchun ketayotgan fuqaroning kasbiy bilimini tekshirish va tasdiqlash bilan shugʻullanish uchun yuridik shaxs qaysi davlat organidan akkreditatsiya olishi kerak?",
+    "search_queries": [
+     "Chet elda ishlash uchun ketayotgan fuqaroning kasbiy bilimini tekshirib, tasdiqlash bilan shugʻullanish uchun yuridik shaxs qaysi davlat organidan akkreditatsiya olishi kerak?",
+     "Chet elda ishlash uchun ketayotgan fuqaroning kasbiy bilimini tekshirish va tasdiqlash bilan shugʻullanish uchun yuridik shaxs qaysi davlat organidan akkreditatsiya olishi kerak?",
+     "kasbiy bilimni tekshirish va tasdiqlash akkreditatsiya",
+     "chet elda ishlash uchun kasbiy tayyorgarlik sertifikatlash akkreditatsiyasi",
+     "yuridik shaxsni akkreditatsiyadan oʻtkazish vakolatli davlat organi"
+    ],
+    "doc_hints": [
+     "Mehnat kodeksi",
+     "Chet elda ishlash va mehnat migratsiyasi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 759,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q043",
+   "status": "ok",
+   "answer": "Yoʻq, bunga yoʻl qoʻyilmaydi. Oila kodeksining 149-moddasiga koʻra, vasiylik va homiylik organidan tashqari boshqa yuridik va jismoniy shaxslarning yetim bolalarni va ota-ona qaramogʻidan mahrum boʻlgan bolalarni aniqlash va muqobil joylashtirish boʻyicha faoliyat yuritishiga yoʻl qoʻyilmaydi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "149-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-09-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-104720#art-149#p1",
+     "quote": "Vasiylik va homiylik organidan tashqari boshqa yuridik va jismoniy shaxslarning yetim bolalarni va ota-ona qaramogʻidan mahrum boʻlgan bolalarni aniqlash va muqobil joylashtirish boʻyicha faoliyat yuritishiga yoʻl qoʻyilmaydi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-104720#art-149#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "149-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "149-modda. Yetim bolalarni va ota-ona qaramogʻidan mahrum boʻlgan bolalarni aniqlash va hisobga olish\nVasiylik va homiylik organlari yetim bolalarni va ota-ona qaramogʻidan mahrum boʻlgan bolalarni aniqlaydi, bunday bolalarni hisobga oladi va yetim qolishning yoki ota-ona qaramogʻidan mahrum boʻlishning har bir holatiga qarab, bolalarni muqobil joylashtirish shakllarini tanlaydi, shuningdek bundan buyon ularga taʼminot berish, ularni tarbiyalash va ularga taʼlim berish shart-sharoitlarini nazorat qilib boradi.\nVasiylik va homiylik organidan tashqari boshqa yuridik va jismoniy shaxslarning yetim bolalarni va ota-ona qaramogʻidan mahrum boʻlgan bolalarni aniqlash va muqobil joylashtirish boʻyicha faoliyat yuritishiga yoʻl qoʻyilmaydi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-104720#art-150#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "150-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "150-modda. Yetim bolalarni va ota-ona qaramogʻidan mahrum boʻlgan bolalarni muqobil joylashtirish\nYetim bolalar va ota-ona qaramogʻidan mahrum boʻlgan bolalar oilaga (farzandlikka olinishi, vasiylik, homiylik belgilanishi yoki tutingan (foster) oilaga) berilishi, bunday imkoniyat boʻlmaganda esa, yetim bolalar yoxud ota-ona qaramogʻidan mahrum boʻlgan bolalar uchun moʻljallangan muassasalarga (tarbiya, davolash, sogʻlomlashtirish, aholini ijtimoiy himoyalash muassasasiga va shunga oʻxshash boshqa muassasalarga) tarbiyaga berilishi lozim.\nYetim bolalarni va ota-ona qaramogʻidan mahrum boʻlgan bolalarni ushbu moddaning birinchi qismida koʻrsatilgan oilaga yoki muassasalarga tarbiyalash uchun muqobil joylashtirish masalasi hal boʻlguniga qadar vasiylik (homiylik) majburiyatlarini bajarish vaqtincha vasiylik va homiylik organlarining zimmasiga yuklatiladi.",
+     "retrieval_score": 0.9748,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-104720#art-149#p4",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "149-modda",
+     "part": "4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "149-modda. Yetim bolalarni va ota-ona qaramogʻidan mahrum boʻlgan bolalarni aniqlash va hisobga olish\nYetim bolalar va ota-ona qaramogʻidan mahrum boʻlgan bolalar toʻgʻrisidagi maʼlumotlarni vasiylik va homiylik organiga xabar qilmaganlik, shuningdek bunday bolalarni muqobil joylashtirishda qonunchilik talablarini buzganlik uchun ushbu moddaning uchinchi qismida koʻrsatilgan muassasalarning rahbarlari va organlarning mansabdor shaxslari qonunda belgilangan tartibda javobgarlikka tortiladi.",
+     "retrieval_score": 0.9713,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-104720#art-149#p3",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "149-modda",
+     "part": "3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "149-modda. Yetim bolalarni va ota-ona qaramogʻidan mahrum boʻlgan bolalarni aniqlash va hisobga olish\nTashkilotlarning (ichki ishlar organlarining, sudlarning, fuqarolik holati dalolatnomalarini yozish organlarining, sogʻliqni saqlash muassasalarining, taʼlim tashkilotlarining va boshqa muassasalarning), fuqarolar oʻzini oʻzi boshqarish organlarining mansabdor shaxslari, notariuslar va boshqa fuqarolar bolalar yetim qolganligidan yoki ota-ona qaramogʻidan mahrum boʻlganligidan xabardor boʻlgach, yigirma toʻrt soat ichida bu haqda bolalar haqiqatda turgan joydagi vasiylik va homiylik organlariga xabar berishi shart. Vasiylik va homiylik organi bunday maʼlumotlarni olgan kundan eʼtiboran uch ish kuni ichida bolaning turmush sharoitini tekshirib chiqishi (birlamchi baholash) va bunda bolaning yetim qolganligi yoxud ota-ona yoki qarindoshlari qaramogʻidan mahrum boʻlganligi aniqlansa, uni muqobil joylashtirish masalasi hal boʻlguniga qadar bolaning huquq va manfaatlari himoya qilinishini taʼminlashi shart.",
+     "retrieval_score": 0.9607,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-104720#art-158#p1",
+     "doc_id": "lex:-104720",
+     "doc_title": "Oʻzbekiston Respublikasining oila kodeksi",
+     "url": "https://lex.uz/docs/-104720",
+     "article": "158-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1998-04-30",
+     "text": "158-modda. Vasiylik yoki homiylikdagi bolani farzandlikka olish\nVasiylik yoki homiylikdagi bolani farzandlikka olish, agar uning ota-onasidan rozilik talab qilinmaydigan boʻlsa, vasiy yoki homiyning roziligi bilan amalga oshiriladi.",
+     "retrieval_score": 0.899,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1931,
+    "retrieval_ms": 913,
+    "rerank_ms": 0,
+    "generation_ms": 2098,
+    "total_ms": 4943
+   },
+   "usage": {
+    "input_tokens": 12866,
+    "output_tokens": 520,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oila kodeksiga koʻra, ota-onasi qaramogʻidan mahrum boʻlgan bolalarni aniqlash va ularni boshqa joyga joylashtirish bilan vasiylik va homiylik organlaridan tashqari boshqa shaxslar shugʻullanishi mumkinmi?",
+    "search_queries": [
+     "Oila kodeksiga koʻra, ota-onasi qaramogʻidan mahrum boʻlgan bolalarni aniqlash va ularni boshqa joyga joylashtirish bilan vasiylik va homiylik organlaridan tashqari boshqa shaxslar shugʻullanishi mumkinmi?",
+     "ota-onasi qaramogʻidan mahrum boʻlgan bolalarni aniqlash va joylashtirish",
+     "vasiylik va homiylik organlari bolalarni aniqlash joylashtirish",
+     "bolalarni himoyaga olish vasiylik homiylik organlari vakolati"
+    ],
+    "doc_hints": [
+     "Oila kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 493,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q044",
+   "status": "ok",
+   "answer": "Xorijdan mablagʻ jalb qilish toʻgʻrisidagi qonunning 2-moddasiga koʻra, agar Oʻzbekiston Respublikasining xalqaro shartnomalarida ushbu qonunchilikda bayon etilganidan koʻra boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnomalar qoidalari qoʻllanadi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-25531",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xorijdan mablagʻ jalb qilish toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-25531",
+     "article": "2-modda",
+     "part": "1–3-qism",
+     "edition_date": "2023-08-02",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-25531#art-2#p1",
+     "quote": "Agar Oʻzbekiston Respublikasining xalqaro shartnomalarida Oʻzbekiston Respublikasining xorijdan mablagʻ jalb qilish toʻgʻrisidagi qonunchiligida bayon etilganidan koʻra boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnomalar qoidalari qoʻllanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-25531#art-2#p1",
+     "doc_id": "lex:-25531",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xorijdan mablagʻ jalb qilish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-25531",
+     "article": "2-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-08-02",
+     "text": "2-modda. Xorijdan mablagʻ jalb qilish toʻgʻrisidagi qonunchilik\nXorijdan mablagʻ jalb qilish bilan bogʻliq munosabatlar ushbu Qonun hamda boshqa qonunchilik hujjatlari bilan tartibga solinadi.\nDavlat qarzi bilan bogʻliq munosabatlar alohida qonun bilan tartibga solinadi.\nAgar Oʻzbekiston Respublikasining xalqaro shartnomalarida Oʻzbekiston Respublikasining xorijdan mablagʻ jalb qilish toʻgʻrisidagi qonunchiligida bayon etilganidan koʻra boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnomalar qoidalari qoʻllanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4193761#art-2#p1",
+     "doc_id": "lex:4193761",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining xalqaro shartnomalari toʻgʻrisida",
+     "url": "https://lex.uz/docs/4193761",
+     "article": "2-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "2-modda. Oʻzbekiston Respublikasining xalqaro shartnomalari toʻgʻrisidagi qonunchilik\nOʻzbekiston Respublikasining xalqaro shartnomalari toʻgʻrisidagi qonunchilik ushbu Qonun va boshqa qonunchilik hujjatlaridan iboratdir.\nOʻzbekiston Respublikasining xalqaro shartnomalari xalqaro huquqning umum eʼtirof etilgan prinsiplari va normalariga, Oʻzbekiston Respublikasi Konstitutsiyasiga, shuningdek ushbu Qonunga hamda xalqaro shartnomalarning oʻz qoidalariga muvofiq tuziladi, bajariladi, tugatiladi va ularning amal qilishi toʻxtatib turiladi.\nAgar Oʻzbekiston Respublikasining xalqaro shartnomasida Oʻzbekiston Respublikasining qonunchiligida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, Oʻzbekiston Respublikasining xalqaro shartnomasi qoidalari qoʻllaniladi.",
+     "retrieval_score": 0.7371,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-25531#art-11#p1",
+     "doc_id": "lex:-25531",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xorijdan mablagʻ jalb qilish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-25531",
+     "article": "11-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "11-modda. Xorijdan mablagʻlarni jalb qilish bilan bogʻliq masalalar yuzasidan bahslarni hal etish\nXorijdan mablagʻ jalb qilish toʻgʻrisidagi shartnomalar bilan bogʻliq masalalar yuzasidan qarz beruvchi bilan qarz oluvchi oʻrtasida chiqqan bahslar, agar xalqaro shartnomalarda boshqacha tartib nazarda tutilgan boʻlmasa, sud tartibida yoki taraflarning kelishuviga koʻra — xolislar tekshiruvi tartibida hal etiladi.",
+     "retrieval_score": 0.947,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-25531#art-10#p1",
+     "doc_id": "lex:-25531",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xorijdan mablagʻ jalb qilish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-25531",
+     "article": "10-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "10-modda. Xalqaro moliya tashkilotlariga axborot taqdim etish\nOʻzbekiston Respublikasi Moliya vazirligi va Oʻzbekiston Respublikasi Markaziy banki xalqaro moliya tashkilotlariga Oʻzbekiston Respublikasining tuzilgan shartnomalarga muvofiq xorijdan mablagʻ jalb qilishi toʻgʻrisida axborot taqdim etadi.",
+     "retrieval_score": 0.9061,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-25531#art-9#p1",
+     "doc_id": "lex:-25531",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xorijdan mablagʻ jalb qilish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-25531",
+     "article": "9-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-08-02",
+     "text": "9-modda. Oʻzbekiston Respublikasi Markaziy bankining vakolatlari\nXorijdan mablagʻ jalb qilish borasida Oʻzbekiston Respublikasi Markaziy bankining vakolatlariga quyidagilar kiradi:\nxorijdan mablagʻ jalb qilish masalalari boʻyicha xalqaro moliya tashkilotlari bilan muzokaralar olib borish;\nOʻzbekiston Respublikasi tomonidan kafolatlanmagan xorijdan mablagʻ jalb qilish toʻgʻrisidagi shartnomalarni roʻyxatga olish;\nxorijdan mablagʻ jalb qilishga doir operatsiyalarni hisobga olish va kuzatib borish;\numumiy tashqi qarzning hisobini yuritish;\nxorijdan mablagʻ jalb qilish boʻyicha maʼlumotlar bazasini yaratish;\nVazirlar Mahkamasiga rezidentlarning tashqi qarzi boʻyicha axborotlar taqdim etish;\nqonunchilikka muvofiq boshqa vakolatlar.",
+     "retrieval_score": 0.8791,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2593,
+    "retrieval_ms": 1171,
+    "rerank_ms": 0,
+    "generation_ms": 2397,
+    "total_ms": 6162
+   },
+   "usage": {
+    "input_tokens": 10337,
+    "output_tokens": 544,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Xorijdan mablagʻ jalb qilish toʻgʻrisidagi qonunga koʻra, Oʻzbekistonning xalqaro shartnomasida mamlakatning xorijdan mablagʻ jalb qilish haqidagi qonunchiligidagidan boshqacha qoida belgilangan boʻlsa, qaysi qoidalar qoʻllanadi?",
+    "search_queries": [
+     "Qonuni xorijdan mablagʻ jalb qilish toʻgʻrisidaga koʻra, Oʻzbekistonning xalqaro shartnomasida mamlakatning xorijdan mablagʻ jalb qilish haqidagi qonunchiligidagidan boshqacha qoida belgilangan boʻlsa, qaysi qoidalar qoʻllanadi?",
+     "Xorijdan mablagʻ jalb qilish toʻgʻrisidagi qonunga koʻra, Oʻzbekistonning xalqaro shartnomasida mamlakatning xorijdan mablagʻ jalb qilish haqidagi qonunchiligidagidan boshqacha qoida belgilangan boʻlsa, qaysi qoidalar qoʻllanadi?",
+     "xalqaro shartnoma qoidalari qonunchilikdan boshqacha qoida belgilangan boʻlsa qaysi qoidalar qoʻllanadi",
+     "xorijdan mablagʻ jalb qilish toʻgʻrisidagi qonun xalqaro shartnoma ustunligi",
+     "xalqaro shartnoma qoidalari milliy qonunchilikdan ustun qoʻllanilishi"
+    ],
+    "doc_hints": [
+     "Xorijdan mablagʻ jalb qilish toʻgʻrisidagi qonun",
+     "Xalqaro shartnomalar toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 624,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q045",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida narkologik kasallikka chalingan shaxsni majburiy davolashga yuborish haqidagi sud qarori ustidan shikoyat qilish muddati belgilanmagan, shu sababli bu savolga javob berib boʻlmaydi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.4,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111460#art-497.11#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "497¹¹-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "49711-modda. Birinchi instansiya sudining ajrimi ustidan apellyatsiya tartibida shikoyat berish va protest bildirish\nIsh boʻyicha birinchi instansiya sudining ajrimi ustidan u chiqarilgan kundan eʼtiboran oʻn kunlik muddatda ushbu Kodeksning 4972-moddasida nazarda tutilgan shaxslar tomonidan xususiy shikoyat berilishi yoki xususiy protest bildirilishi mumkin.\nHukm chiqarish bilan yakunlangan sud muhokamasi chogʻida chiqarilgan ajrim ustidan shikoyat berilgan yoki protest bildirilgan taqdirda, ish faqat hukm ustidan xususiy shikoyat (xususiy protest) berish uchun belgilangan muddat tugaganidan keyin apellyatsiya instansiyasi sudiga yuboriladi.\nSud muhokamasi chogʻida chiqarilgan va dalillarni tekshirish tartibiga, jinoyat protsessi ishtirokchilarining iltimosnomalariga, ehtiyot chorasini tanlashga, uni oʻzgartirishga yoki bekor qilishga, shuningdek sud majlisi zalida tartib saqlashga taalluqli ajrimlar ustidan ushbu moddaning birinchi qismida nazarda tutilgan tartibda shikoyat berish va protest bildirish mumkin emas. Ularga qarshi eʼtirozlar apellyatsiya shikoyatiga yoki apellyatsiya protestiga kiritilishi mumkin.\nUshbu ish boʻyicha taraf hisoblanmagan shaxslar ham sud ajrimi ustidan, agar ajrim ularning manfaatlariga daxldor boʻlsa, shikoyat berishga haqlidir.",
+     "retrieval_score": 0.8066,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-97664#art-324.3#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "324³-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "3243-modda. Apellyatsiya shikoyati (protesti) berish muddatlari\nBirinchi instansiya sudining maʼmuriy huquqbuzarlik toʻgʻrisidagi ish boʻyicha qarori ustidan apellyatsiya shikoyati (protesti) qaror oʻqib eshittirilgan kundan eʼtiboran oʻn sutka ichida, oʻziga nisbatan sud qarori chiqarilgan shaxs va jabrlanuvchi tomonidan esa, qarorning koʻchirma nusxalari ularga topshirilgan yoki ular tomonidan ushbu koʻchirma nusxalar olingan kundan eʼtiboran xuddi shu muddatda berilishi mumkin.\nUshbu moddaning birinchi qismida nazarda tutilgan muddat oʻtkazib yuborilgan taqdirda, apellyatsiya shikoyati (protesti) beruvchi shaxsning iltimosnomasiga koʻra, qarorni chiqargan sud, agar muddatning oʻtkazib yuborilganligi sabablarini uzrli deb topsa, oʻtkazib yuborilgan muddatni tiklashga haqli boʻlib, bu haqda ajrim chiqariladi.\nSudning maʼmuriy huquqbuzarlik toʻgʻrisidagi qarori ustidan apellyatsiya shikoyati (protesti) berish muddatini tiklash haqidagi iltimosnomani rad qilish toʻgʻrisida ajrim chiqariladi, uning ustidan xususiy shikoyat (xususiy protest) berilishi mumkin.",
+     "retrieval_score": 0.9312,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111460#art-497.4#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "497⁴-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-09-27",
+     "text": "4974-modda. Hukm ustidan apellyatsiya shikoyatlarini (protestlarini) berish muddatlari\nApellyatsiya shikoyati va protestlari hukm eʼlon qilingan kundan eʼtiboran oʻn sutka ichida, mahkum, oqlangan shaxs, jabrlanuvchi tomonidan esa ularga hukmning koʻchirma nusxasi topshirilgan kundan eʼtiboran shu muddat ichida berilishi mumkin.\nHukm ustidan shikoyat va protest berish uchun belgilangan muddat ichida ish suddan talab qilib olinishi mumkin emas. Taraflar shu vaqt mobaynida ish bilan sud binosida tanishishga haqli.\nBelgilangan muddat oʻtgandan keyin berilgan shikoyat yoki protest oqibatsiz qoldiriladi, bu haqda ularni bergan shaxslarga xabar qilinadi.",
+     "retrieval_score": 0.9437,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-97664#art-324.6#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "324⁶-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "3246-modda. Apellyatsiya shikoyatini (protestini) koʻrib chiqish muddatlari\nBirinchi instansiya sudining maʼmuriy huquqbuzarlik toʻgʻrisidagi ish boʻyicha qarori ustidan berilgan apellyatsiya shikoyati (protesti) u ishning barcha materiallari bilan kelib tushgan kundan eʼtiboran oʻn besh sutka ichida apellyatsiya instansiyasi sudi tomonidan koʻrilishi lozim.\nUshbu Kodeksning 512, 513, 514, 515, 516, 517, 518, 519-moddalarida nazarda tutilgan birinchi instansiya sudining maʼmuriy huquqbuzarliklar toʻgʻrisidagi ishlar boʻyicha qarorlari ustidan berilgan apellyatsiya shikoyatlari (protestlari) ishning barcha materiallari bilan kelib tushgan kundan eʼtiboran besh kunlik muddatda apellyatsiya instansiyasi sudi tomonidan koʻrilishi lozim.\nBirinchi instansiya sudining maʼmuriy qamoqqa olish yoki maʼmuriy tartibda chiqarib yuborish toʻgʻrisidagi qarori ustidan berilgan apellyatsiya shikoyati (protesti) shikoyat (protest) berilgan paytdan eʼtiboran bir sutka ichida apellyatsiya instansiyasi sudi tomonidan koʻrilishi lozim.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111460#art-497.5#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "497⁵-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-09-22",
+     "text": "4975-modda. Apellyatsiya shikoyati yoki protesti berish muddatini tiklash tartibi\nHukm ustidan shikoyat berish yoki protest bildirish muddati uzrli sabablarga koʻra oʻtkazib yuborilgan hollarda apellyatsiya shikoyati yoki protesti berish huquqiga ega boʻlgan shaxslar hukm chiqargan sudga muddatni tiklash soʻralgan iltimosnoma bilan murojaat qilishi mumkin. Zarur hollarda, bu masala iltimosnoma bergan shaxsning ishtirokida hal qilinadi.\nSudning oʻtkazib yuborilgan muddatni tiklashni rad etish toʻgʻrisidagi ajrimi ustidan apellyatsiya instansiyasi sudiga xususiy shikoyat (protest) berilishi mumkin boʻlib, u mazkur ajrimni bekor qilishga, oʻtkazib yuborilgan muddatni tiklashga va apellyatsiya shikoyati (protesti) boʻyicha ishni koʻrishga yoxud ishni hukm chiqargan sudga ushbu Kodeks 4976-moddasining ikkinchi qismida nazarda tutilgan talablarni bajarish uchun yuborishga haqli.",
+     "retrieval_score": 0.9952,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1694,
+    "retrieval_ms": 1268,
+    "rerank_ms": 0,
+    "generation_ms": 1946,
+    "total_ms": 4910
+   },
+   "usage": {
+    "input_tokens": 13652,
+    "output_tokens": 380,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Narkologik kasallikka chalingan shaxsni majburiy davolashga yuborish toʻgʻrisidagi sud qarori ustidan shikoyat qilish uchun qancha muddat beriladi?",
+    "search_queries": [
+     "Narkologik kasallikka chalingan shaxsni majburiy davolashga yuborish haqidagi sud qarori ustidan shikoyat qilish uchun qancha vaqt beriladi?",
+     "Narkologik kasallikka chalingan shaxsni majburiy davolashga yuborish toʻgʻrisidagi sud qarori ustidan shikoyat qilish uchun qancha muddat beriladi?",
+     "majburiy davolashga yuborish toʻgʻrisidagi sud qarori ustidan shikoyat qilish muddati",
+     "narkologik kasallikka chalingan shaxsni majburiy davolashga yuborish apellyatsiya shikoyati muddati",
+     "sud qarori ustidan apellyatsiya shikoyati berish muddati"
+    ],
+    "doc_hints": [
+     "Jinoyat-protsessual kodeksi",
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 657,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q046",
+   "status": "ok",
+   "answer": "Ha, bojxona hududiga olib kirilgan tovarni vaqtincha saqlash bojxona rejimida saqlash mumkin: bu rejimda tovar bojxona toʻlovlari toʻlanmagan holda vaqtincha bojxona nazorati ostida saqlanadi [1]. Vaqtincha saqlash muddati vakolatli shaxs tomonidan belgilanadi, lekin oltmish kalendar kundan oshmasligi lozim [2]. Boj olinmaydigan savdo doʻkonlarida tovarlar Oʻzbekiston Respublikasi bojxona hududiga kirib kelayotgan va chiqib ketayotgan jismoniy shaxslarga, shuningdek Tashqi ishlar vazirligida akkreditatsiya qilinmagan xorijiy shaxslarga chakana sotilishi mumkin [3], sotish esa faqat xaridorning shaxsini tasdiqlaydigan hujjat taqdim etilgandan keyin amalga oshiriladi [4].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "83-modda",
+     "part": "1-qism",
+     "edition_date": "2016-01-20",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2876354#art-83#p1",
+     "quote": "Vaqtincha saqlash bojxona rejimi shunday rejimki, bunda bojxona hududiga olib kirilgan har qanday tovar tayinlangan bojxona organiga taqdim etilgan paytdan boshlab va tanlangan bojxona rejimiga muvofiq chiqarib yuborilguniga qadar, shuningdek ushbu Kodeksning 177-moddasida nazarda tutilgan hollarda va shartlarda, bojxona toʻlovlari toʻlanmagan hamda iqtisodiy siyosat choralari qoʻllanilmagan holda vaqtincha bojxona nazorati ostida saqlanishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "85-modda",
+     "part": "1–4-qism",
+     "edition_date": "2016-01-20",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2876354#art-85#p1",
+     "quote": "Tovarning vaqtincha saqlash bojxona rejimida turish muddati ana shu tovarning mazkur bojxona rejimiga joylashtirilishini maʼlum qilgan vakolatli shaxs tomonidan belgilanadi, lekin bu muddat, agar ushbu Kodeksning 177-moddasida boshqacha tartib nazarda tutilmagan boʻlsa, oltmish kalendar kundan oshmasligi lozim",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-246997",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori bojxona ombori, erkin ombor va boj olinmaydigan savdo doʻkoni faoliyatini litsenziyalash toʻgʻrisidagi nizomlarni tasdiqlash haqida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/-246997",
+     "article": "19-band (4-boʻlim)",
+     "part": null,
+     "edition_date": "2018-03-27",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-246997#band-19s4#p1",
+     "quote": "boj olinmaydigan savdo doʻkonining bojxona rejimi ostida joylashtirilgan tovarlar yoʻqotilgan taqdirda yoxud ulardan boj olinmaydigan savdo doʻkonida Oʻzbekiston Respublikasi bojxona hududiga kirib kelayotgan va Oʻzbekiston Respublikasi bojxona hududidan chiqib ketayotgan jismoniy shaxslarga, shuningdek Oʻzbekiston Respublikasi Tashqi ishlar vazirligida akkreditatsiya qilinmagan xorijiy shaxslarga chakanalab sotilgandan boshqa maqsadlarda foydalanilganda bunday tovarlarga nisbatan qonun hujjatlarida belgilangan talablar va shakllarga muvofiq bojxona bojlari toʻlanishi uchun;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:-246997",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori bojxona ombori, erkin ombor va boj olinmaydigan savdo doʻkoni faoliyatini litsenziyalash toʻgʻrisidagi nizomlarni tasdiqlash haqida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/-246997",
+     "article": "5-band (4-boʻlim)",
+     "part": null,
+     "edition_date": "2018-03-27",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-246997#band-5s4#p1",
+     "quote": "Oʻzbekiston Respublikasi Davlat chegarasini kesib oʻtadigan jismoniy shaxslar uchun boj olinmaydigan savdo doʻkonlarida tovarlarni sotish faqat xaridorning shaxsini tasdiqlaydigan hujjat taqdim etilgandan keyin amalga oshiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:2876354#art-83#p1",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "83-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2016-01-20",
+     "text": "83-modda. Vaqtincha saqlash bojxona rejimi\nVaqtincha saqlash bojxona rejimi shunday rejimki, bunda bojxona hududiga olib kirilgan har qanday tovar tayinlangan bojxona organiga taqdim etilgan paytdan boshlab va tanlangan bojxona rejimiga muvofiq chiqarib yuborilguniga qadar, shuningdek ushbu Kodeksning 177-moddasida nazarda tutilgan hollarda va shartlarda, bojxona toʻlovlari toʻlanmagan hamda iqtisodiy siyosat choralari qoʻllanilmagan holda vaqtincha bojxona nazorati ostida saqlanishi mumkin.",
+     "retrieval_score": 0.979,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-246997#band-5s4#p1",
+     "doc_id": "lex:-246997",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori bojxona ombori, erkin ombor va boj olinmaydigan savdo doʻkoni faoliyatini litsenziyalash toʻgʻrisidagi nizomlarni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/-246997",
+     "article": "5-band (4-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-03-27",
+     "text": "5. Oʻzbekiston Respublikasi hududida sotilishi cheklangan tovarlar boj olinmaydigan savdo doʻkoni rejimida qonun hujjatlarida belgilangan tartibda sotilishi mumkin.\nOʻzbekiston Respublikasi Davlat chegarasini kesib oʻtadigan jismoniy shaxslar uchun boj olinmaydigan savdo doʻkonlarida tovarlarni sotish faqat xaridorning shaxsini tasdiqlaydigan hujjat taqdim etilgandan keyin amalga oshiriladi. Bunda Nazorat-kassa mashinalari davlat reyestriga kiritilgan fiskal xotirali nazorat-kassa mashinasining tovar sotilganligini tasdiqlaydigan chekida quyidagi maʼlumotlar boʻlishi kerak:\nkassa cheki raqami;\nreysning raqami va xaridorning samolyotdagi joyi raqami (havoda tashishda);\nxarid qilingan vaqt va sana;\nsotiladigan tovarning nomi, narxi va miqdori;\nsotuvchi tomonidan olingan xorijiy valyuta summasi;\nkassa apparati raqami;\nboj olinmaydigan savdo doʻkonining nomi;\nsoliq toʻlovchining — boj olinmaydigan savdo doʻkoni egasining soliq toʻlovchining individual raqami.",
+     "retrieval_score": 0.448,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2876354#art-85#p1",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "85-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2016-01-20",
+     "text": "85-modda. Tovarning vaqtincha saqlash bojxona rejimida turish muddati\nTovarning vaqtincha saqlash bojxona rejimida turish muddati ana shu tovarning mazkur bojxona rejimiga joylashtirilishini maʼlum qilgan vakolatli shaxs tomonidan belgilanadi, lekin bu muddat, agar ushbu Kodeksning 177-moddasida boshqacha tartib nazarda tutilmagan boʻlsa, oltmish kalendar kundan oshmasligi lozim.\nTez buziladigan tovar vaqtincha saqlash bojxona rejimida turishining eng koʻp muddati oʻn kalendar kunni tashkil etadi.\nBojxona omborlarida, erkin omborlarda yoki boj olinmaydigan savdo doʻkonlarida turgan tovar ularni tugatish toʻgʻrisida qaror qabul qilinganidan keyin, ushbu Kodeksning 177-moddasida belgilangan muddatlarda vaqtincha saqlash bojxona rejimida turgan tovar deb hisoblanadi.\nVaqtincha saqlash bojxona rejimining amal qilish muddatini hisoblash tovar ushbu Kodeksning 177-moddasiga va 226-moddasining beshinchi qismiga muvofiq vaqtincha saqlash bojxona rejimida turgan tovar maqomini olgan kundan eʼtiboran boshlanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-246997#band-19s4#p1",
+     "doc_id": "lex:-246997",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori bojxona ombori, erkin ombor va boj olinmaydigan savdo doʻkoni faoliyatini litsenziyalash toʻgʻrisidagi nizomlarni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/-246997",
+     "article": "19-band (4-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-03-27",
+     "text": "19. Boj olinmaydigan savdo doʻkonining egasi:\nboj olinmaydigan savdo doʻkonining bojxona rejimi ostida joylashtirilgan tovarlar yoʻqotilgan taqdirda yoxud ulardan boj olinmaydigan savdo doʻkonida Oʻzbekiston Respublikasi bojxona hududiga kirib kelayotgan va Oʻzbekiston Respublikasi bojxona hududidan chiqib ketayotgan jismoniy shaxslarga, shuningdek Oʻzbekiston Respublikasi Tashqi ishlar vazirligida akkreditatsiya qilinmagan xorijiy shaxslarga chakanalab sotilgandan boshqa maqsadlarda foydalanilganda bunday tovarlarga nisbatan qonun hujjatlarida belgilangan talablar va shakllarga muvofiq bojxona bojlari toʻlanishi uchun;\nboj olinmaydigan savdo doʻkonining bojxona rejimi ostida joylashtirilmagan tovarlar sotilishi uchun belgilangan tartibda javob beradi.",
+     "retrieval_score": 0.4355,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4784923#band-23s8#p1",
+     "doc_id": "lex:4784923",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori bojxona ombori, erkin ombor va boj olinmaydigan savdo doʻkoni faoliyatini litsenziyalash yuzasidan davlat xizmatlarini koʻrsatishning maʼmuriy reglamentlarini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/4784923",
+     "article": "23-band (8-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-09-05",
+     "text": "23. Litsenziat:\nboj olinmaydigan savdo bojxona rejimi ostida joylashtirilgan tovarlar yoʻqolgan taqdirda yoxud ulardan boj olinmaydigan savdo doʻkonida Oʻzbekiston Respublikasi bojxona hududiga kirib kelayotgan va Oʻzbekiston Respublikasi bojxona hududidan chiqib ketayotgan jismoniy shaxslarga, shuningdek, Oʻzbekiston Respublikasi Tashqi ishlar vazirligida akkreditatsiya qilinmagan chet ellik shaxslarga chakana sotishdan boshqa maqsadlarda foydalanilganda, bunday tovarlarga nisbatan qonun hujjatlarida belgilangan talab va shartlarga muvofiq bojxona toʻlovlar toʻlanishi;\nboj olinmaydigan savdo bojxona rejimi ostida joylashtirilmagan tovarlar sotilishi;\nboj olinmaydigan savdo doʻkonida yongʻin xavfsizligini taʼminlash hamda sanitariya meʼyorlari va talablariga rioya etilishi uchun belgilangan tartibda javob beradi.",
+     "retrieval_score": 0.4201,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2024,
+    "retrieval_ms": 1387,
+    "rerank_ms": 0,
+    "generation_ms": 5573,
+    "total_ms": 8986
+   },
+   "usage": {
+    "input_tokens": 10441,
+    "output_tokens": 1195,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Bojxona hududiga olib kirilgan tovarni vaqtincha saqlash rejimida saqlash mumkinmi va bu vaqt ichida bojxona toʻlovlari toʻlanadimi? Boj olinmaydigan savdo doʻkonlarida tovarlar qaysi shaxslarga sotilishi mumkin?",
+    "search_queries": [
+     "Bojxona hududiga olib kirilgan tovarni vaqtincha saqlash rejimida saqlash mumkinmi va bu vaqt ichida bojxona toʻlovlari toʻlanadimi? Boj olinmaydigan savdo doʻkonlarida esa tovarlar qanday shaxslarga sotilishi mumkin?",
+     "Bojxona hududiga olib kirilgan tovarni vaqtincha saqlash rejimida saqlash mumkinmi va bu vaqt ichida bojxona toʻlovlari toʻlanadimi? Boj olinmaydigan savdo doʻkonlarida tovarlar qaysi shaxslarga sotilishi mumkin?",
+     "vaqtincha saqlash bojxona rejimi tovarlarni saqlash muddati",
+     "vaqtincha saqlash davrida bojxona toʻlovlari toʻlanmaydi",
+     "boj olinmaydigan savdo doʻkoni tovarlar sotilishi mumkin boʻlgan shaxslar"
+    ],
+    "doc_hints": [
+     "Bojxona kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 564,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q047",
+   "status": "ok",
+   "answer": "Gidrometeorologik axborotni tayyorlovchilar uni normativ hujjatlar talablariga muvofiq tayyorlashi va davlat va xoʻjalik boshqaruvi organlariga, yuridik va jismoniy shaxslarga toʻliq, ishonchli hamda foydalana olinadigan axborotni taqdim etishi shart [1]. Rasmiy ogohlantirishlar, prognozlar va aholi xavfsizligini taʼminlash bilan bogʻliq boshqa axborotni foydalanuvchilarga faqat maxsus vakolatli davlat organi taqdim etadi [2]. Foydalanuvchi qaror qabul qilishda toʻgʻri foydalana olishi axborotning toʻliqligi, ishonchliligi va undan foydalana olish prinsipi bilan taʼminlanadi: bunda qarorlar uchun gidrometeorologik parametrlarning yetarli toʻplami boʻlishi, axborotning qimmati va dolzarbligi saqlanishi, foydalanuvchi uni samarali oʻzlashtirishi va tushunishi lozim [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.8,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5819317",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni gidrometeorologiya faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5819317",
+     "article": "18-modda",
+     "part": "1–11-qism",
+     "edition_date": "2022-01-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5819317#art-18#p1",
+     "quote": "davlat va xoʻjalik boshqaruvi organlariga, yuridik va jismoniy shaxslarga toʻliq, ishonchli hamda foydalana olinadigan gidrometeorologik axborotni taqdim etishi;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-5819317",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni gidrometeorologiya faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5819317",
+     "article": "21-modda",
+     "part": "1–5-qism",
+     "edition_date": "2023-11-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5819317#art-21#p1",
+     "quote": "Rasmiy ogohlantirishlar, prognozlar va aholining turmush faoliyati xavfsizligini taʼminlash, ehtimoliy zararning oldini olish bilan bogʻliq boshqa gidrometeorologik axborot gidrometeorologik axborotdan foydalanuvchilarga faqat maxsus vakolatli davlat organi tomonidan taqdim etiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-5819317",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni gidrometeorologiya faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5819317",
+     "article": "7-modda",
+     "part": "1–2-qism",
+     "edition_date": "2022-01-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5819317#art-7#p1",
+     "quote": "Gidrometeorologik axborotning toʻliqligi, ishonchliligi va undan foydalana olish prinsipi qarorlar qabul qilish uchun gidrometeorologik parametrlarning yetarli toʻplamidan, ushbu axborotdan foydalanish paytida uning qimmatini va dolzarbligini saqlab qolishdan, foydalanuvchi tomonidan axborotni samarali tarzda oʻzlashtirish va tushunishdan iboratdir",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5819317#art-21#p1",
+     "doc_id": "lex:-5819317",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni gidrometeorologiya faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5819317",
+     "article": "21-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-11-29",
+     "text": "21-modda. Gidrometeorologik axborotni taqdim etish tartibi va shartlari\nGidrometeorologik axborot undan foydalanuvchilarga gidrometeorologiya faoliyati toʻgʻrisidagi qonunchilikka muvofiq taqdim etiladi.\nRasmiy ogohlantirishlar, prognozlar va aholining turmush faoliyati xavfsizligini taʼminlash, ehtimoliy zararning oldini olish bilan bogʻliq boshqa gidrometeorologik axborot gidrometeorologik axborotdan foydalanuvchilarga faqat maxsus vakolatli davlat organi tomonidan taqdim etiladi.\nUmumiy gidrometeorologik va ixtisoslashtirilgan gidrometeorologik axborot vazirliklarga va idoralarga, mahalliy davlat hokimiyati organlariga oʻzaro maʼlumotlar almashish toʻgʻrisidagi qoʻshma dasturlar (kelishuvlar) asosida maxsus vakolatli davlat organi tomonidan taqdim etiladi.\nUmumiy gidrometeorologik va tezkor gidrometeorologik axborot ushbu moddaning uchinchi qismida koʻrsatilmagan gidrometeorologik axborotdan foydalanuvchilarga maxsus vakolatli davlat organining rasmiy veb-saytiga va Oʻzbekiston Respublikasining ochiq maʼlumotlar portaliga joylashtirish yoʻli bilan taqdim etiladi.\nIxtisoslashtirilgan gidrometeorologik axborot undan foydalanuvchilarga shartnoma asosida taqdim etiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5819317#art-7#p1",
+     "doc_id": "lex:-5819317",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni gidrometeorologiya faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5819317",
+     "article": "7-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-01-12",
+     "text": "7-modda. Gidrometeorologik axborotning toʻliqligi, ishonchliligi va undan foydalana olish prinsipi\nGidrometeorologik axborotning toʻliqligi, ishonchliligi va undan foydalana olish prinsipi qarorlar qabul qilish uchun gidrometeorologik parametrlarning yetarli toʻplamidan, ushbu axborotdan foydalanish paytida uning qimmatini va dolzarbligini saqlab qolishdan, foydalanuvchi tomonidan axborotni samarali tarzda oʻzlashtirish va tushunishdan iboratdir.\nGidrometeorologik axborotning toʻliqligi, ishonchliligi va undan foydalana olish prinsipi foydalanuvchilar tomonidan qarorlar qabul qilish uchun ushbu axborotni uslubiy jihatdan toʻgʻri yigʻish, unga ishlov berish, uni tahlil qilish va oʻzgartirish hisobidan taʼminlanadi.",
+     "retrieval_score": 0.9268,
+     "rerank_score": 0.8,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5819317#art-18#p1",
+     "doc_id": "lex:-5819317",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni gidrometeorologiya faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5819317",
+     "article": "18-modda",
+     "part": "1–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-01-12",
+     "text": "18-modda. Gidrometeorologik axborotni tayyorlovchilarning huquq va majburiyatlari\nGidrometeorologik axborotni tayyorlovchilar quyidagi huquqlarga ega:\noʻz faoliyatini gidrometeorologiya faoliyati toʻgʻrisidagi qonunchilikka muvofiq amalga oshirish;\nixtisoslashtirilgan gidrometeorologik axborotni qatʼiy belgilangan haq evaziga taqdim etish;\ngidrometeorologiya faoliyatini amalga oshiruvchi yuridik shaxslardan gidrometeorologik axborotni olish;\ngidrometeorologiya sohasidagi ilmiy mahsulotga va boshqa mahsulotga doir mualliflik huquqlarini hamda turdosh huquqlarni himoya qilish;\naxborotni olish shartlari foydalanuvchi tomonidan buzilgan taqdirda gidrometeorologik axborotni foydalanuvchiga taqdim etishni rad etish.\nGidrometeorologik axborotni tayyorlovchilar:\nnormativ hujjatlar, shu jumladan texnik jihatdan tartibga solish sohasidagi normativ hujjatlar talablariga muvofiq gidrometeorologik hodisalar va jarayonlarning kuzatuvlarini amalga oshirishi;\ngidrometeorologik axborotni tayyorlash va taqdim etish toʻgʻrisidagi shartnoma shartlariga rioya etishi;\nbajarilgan gidrometeorologiyaga oid ishlarning hisobini yuritishi va belgilangan tartibda axborot taqdim etishi;\ndavlat va xoʻjalik boshqaruvi organlariga, yuridik va jismoniy shaxslarga toʻliq, ishonchli hamda foydalana olinadigan gidrometeorologik axborotni taqdim etishi;",
+     "retrieval_score": 0.9381,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5819317#art-4#p1",
+     "doc_id": "lex:-5819317",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni gidrometeorologiya faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5819317",
+     "article": "4-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-01-12",
+     "text": "4-modda. Gidrometeorologiya faoliyatining asosiy prinsiplari\nGidrometeorologiya faoliyatining asosiy prinsiplari quyidagilardan iborat:\ngloballik, tizimlilik va uzluksizlik;\ngidrometeorologik kuzatuvlar va atrof tabiiy muhit ifloslanishining monitoringi natijasida olingan maʼlumotlarni yigʻish, ularga ishlov berish, ularni saqlash hamda tarqatish usullarining birligi va qiyosiyligi;\ngidrometeorologik axborotning toʻliqligi, ishonchliligi va undan foydalana olish;\nochiqlik va xavfsizlik.",
+     "retrieval_score": 0.9439,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-5819317#art-19#p1",
+     "doc_id": "lex:-5819317",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni gidrometeorologiya faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5819317",
+     "article": "19-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-01-12",
+     "text": "19-modda. Gidrometeorologik axborotdan foydalanuvchilarning huquq va majburiyatlari\nGidrometeorologik axborotdan foydalanuvchilar quyidagi huquqlarga ega:\ngidrometeorologiya faoliyati toʻgʻrisidagi qonunchilikka muvofiq gidrometeorologik axborotni olish;\ngidrometeorologik axborotni tayyorlovchini tanlash;\ngidrometeorologik axborotni olishni rad etish hamda ushbu axborotni tayyorlovchi bilan tuzilgan shartnomani normativ hujjatlar, shu jumladan texnik jihatdan tartibga solish sohasidagi normativ hujjatlar talablari buzilgan va shartnoma shartlariga rioya etilmagan taqdirda bekor qilish.\nGidrometeorologik axborotdan foydalanuvchilar gidrometeorologik axborotni tayyorlovchilar faoliyatining texnologik jarayonlariga aralashish huquqiga ega emas.\nGidrometeorologik axborotdan foydalanuvchilar:\nixtisoslashtirilgan gidrometeorologik axborotdan belgilangan maqsadga va ushbu axborotni muhofaza qilish rejimiga muvofiq foydalanishi;\ngidrometeorologik axborotni tayyorlovchilar bilan tuzilgan shartnomalar shartlariga rioya etishi shart.\nGidrometeorologik axborotdan foydalanuvchilar qonunchilikka muvofiq boshqa huquqlarga ham ega boʻlishi va ularning zimmasida oʻzga majburiyatlar ham boʻlishi mumkin.",
+     "retrieval_score": 0.9184,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1930,
+    "retrieval_ms": 1747,
+    "rerank_ms": 0,
+    "generation_ms": 4529,
+    "total_ms": 8209
+   },
+   "usage": {
+    "input_tokens": 10795,
+    "output_tokens": 947,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Gidrometeorologik maʼlumotlarni kim tayyorlashi mumkin va bu maʼlumot qanday boʻlsa, foydalanuvchi undan qaror qabul qilishda toʻgʻri foydalana oladi?",
+    "search_queries": [
+     "Gidrometeorologik maʼlumotlarni kim tayyorlashi mumkin va bu maʼlumot qanday boʻlsa, foydalanuvchi undan qaror qabul qilishda toʻgʻri foydalana oladi?",
+     "gidrometeorologik maʼlumotlarni tayyorlash",
+     "gidrometeorologiya faoliyati toʻgʻrisidagi qonun",
+     "gidrometeorologik maʼlumotlardan foydalanish"
+    ],
+    "doc_hints": [
+     "Gidrometeorologiya faoliyati toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 394,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q048",
+   "status": "ok",
+   "answer": "Хўжалик юритувчи субъектлар фаолиятининг шартномавий-ҳуқуқий базаси тўғрисидаги қонуннинг 18-моддасига кўра, ўзига талабнома билдирилган хўжалик юритувчи субъект талабномани олган кундан бошлаб ўн беш кунлик муддат ичида унга жавоб қайтариши шарт [1].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-18942",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xoʻjalik yurituvchi subyektlar faoliyatining shartnomaviy-huquqiy bazasi toʻgʻrisida i. umumiy qoidalar",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-18942",
+     "article": "18-modda",
+     "part": "1–5-qism",
+     "edition_date": "2020-03-11",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-18942#art-18#p1",
+     "quote": "Oʻziga talabnoma bildirilgan xoʻjalik yurituvchi subyekt talabnomani olgan kundan boshlab oʻn besh kunlik muddat ichida unga javob qaytarishi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-18942#art-18#p1",
+     "doc_id": "lex:-18942",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xoʻjalik yurituvchi subyektlar faoliyatining shartnomaviy-huquqiy bazasi toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/-18942",
+     "article": "18-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2020-03-11",
+     "text": "18-modda. Talabnomani koʻrib chiqish tartibi va muddatlari\nOʻziga talabnoma bildirilgan xoʻjalik yurituvchi subyekt talabnomani olgan kundan boshlab oʻn besh kunlik muddat ichida unga javob qaytarishi shart.\nTalabnomaga javob xoʻjalik yurituvchi subyekt rahbari yoki rahbarning oʻrinbosari tomonidan imzolanadi va muhr bilan (muhr mavjud boʻlgan taqdirda) tasdiqlanadi.\nTalabnomaga javob buyurtma yoki qimmatli xat tarzida, telegraf, teletayp orqali, shuningdek talabnoma joʻnatilganligini qayd etadigan, qabul qilib oluvchini ogohlantiradigan boshqa aloqa vositalaridan foydalanilgan holda joʻnatiladi yoxud tilxat olib topshiriladi.\nTalabnoma toʻliq yoki qisman tan olingan taqdirda xoʻjalik yurituvchi subyekt arz qiluvchiga oʻzi tan olgan summani ixtiyoriy ravishda oʻtkazadi.\nAgar talabnomani tan olish toʻgʻrisidagi javobda tan olingan summa oʻtkazilishi haqida maʼlumot boʻlmasa, talabnoma bildirgan taraf javob olingandan soʻng yigirma kun muddat oʻtgach, bank muassasasiga qarzdor tan olgan summani soʻzsiz tartibda oʻtkazish toʻgʻrisidagi farmoyishni taqdim etishga haqli. Farmoyishga qarzdorning javobi ilova qilinadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-1165778#preamble#p3",
+     "doc_id": "lex:-1165778",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi maʼmuriy javobgarlik toʻgʻrisidagi kodeksining 2411-moddasiga va Oʻzbekiston Respublikasi fuqarolik kodeksining 44-moddasiga oʻzgartishlar kiritish haqida",
+     "url": "https://lex.uz/docs/-1165778",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2007-04-13",
+     "text": "“Qonuniy tadbirkorlik faoliyatiga toʻsqinlik qilish, yaʼni tadbirkorlik faoliyati subyektini davlat roʻyxatidan oʻtkazishning qonun hujjatlarida belgilangan tartibini buzish, tadbirkorlik faoliyati subyektini roʻyxatdan oʻtkazishni gʻayriqonuniy rad etish yoki roʻyxatdan oʻtkazishdan boʻyin tovlash, muayyan faoliyatni amalga oshirish uchun maxsus ruxsatnoma (litsenziya) berishni gʻayriqonuniy rad etish yoki uni berishdan boʻyin tovlash, xoʻjalik yurituvchi subyektlarning moliya-xoʻjalik faoliyatini tekshirish va taftish qilishning belgilangan tartibini buzish, tadbirkorlik faoliyati subyektining huquqlari va qonuniy manfaatlarini cheklash, qonun hujjatlarida nazarda tutilmagan statistika hisobotini va boshqa hujjatlarni talab qilib olish yoxud nazarda tutilgan hisobotni taqdim etishning belgilangan muddatlariga xilof ravishda talab qilib olish, xuddi shuningdek uning mustaqilligini boshqacha tarzda cheklash yoki uning faoliyatiga boshqacha tarzda gʻayriqonuniy aralashish”.",
+     "retrieval_score": 0.9015,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-180552#art-756#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "756-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "756-modda. Moliya agentining qarzdordan olingan summalarga huquqlari\nAgar pul talabnomasidan boshqa shaxs foydasiga voz kechish evaziga moliyalash shartnomasi shartlariga koʻra moliya agenti mijozdan bu talabni sotib olib, shu yoʻl bilan uni moliyalasa, moliya agenti qarzdor talabni bajarish uchun toʻlaydigan hamma summani olish huquqini qoʻlga kiritadi, mijoz esa moliya agenti olgan summalar u sotib olgan talabnomaning bahosidan kam boʻlib chiqqanligi uchun moliya agenti oldida javobgar boʻlmaydi.\nAgar mijozning majburiyatlari moliya agentiga bajarilishini taʼminlash maqsadida pul talabnomasidan uning foydasiga voz kechilgan boʻlsa va pul talabnomasidan boshqa shaxs foydasiga voz kechish evaziga moliyalash shartnomasida boshqacha qoida nazarda tutilmagan boʻlsa, moliya agenti mijozga hisobot taqdim etishi hamda mijozning pul talabnomasidan boshqa shaxs foydasiga voz kechish bilan taʼminlangan qarzidan ortib qolgan summani mijozga berishi shart. Agar moliya agenti qarzdordan olgan pul mablagʻlari mijozning moliya agentiga pul talabnomasidan boshqa shaxs foydasiga voz kechish bilan taʼminlangan qarzi summasidan kam boʻlib chiqsa, mijoz qarzning qoldigʻi uchun moliya agenti oldida javobgar boʻlib qolaveradi.",
+     "retrieval_score": 0.8829,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-180552#art-749#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "749-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "749-modda. Pul talabnomasidan boshqa shaxs foydasiga voz kechish evaziga moliyalash (faktoring) toʻgʻrisidagi umumiy qoidalar\nPul talabnomasidan boshqa shaxs foydasiga voz kechish evaziga moliyalash (faktoring) shartnomasi boʻyicha bir taraf (moliya agenti) ikkinchi tarafga (mijozga) shu mijozning (kreditorning) uchinchi shaxsga — yuridik shaxsga yoki tadbirkorlik subyektiga (qarzdorga) pul talabnomasi hisobidan pul mablagʻlarini beradi yoki berish majburiyatini oladi, mijoz esa moliya agentiga ushbu pul talabnomasini beradi yoki berish majburiyatini oladi.\nUshbu moddaning birinchi qismiga muvofiq voz kechiladigan pul talabnomasi:\ntovarlarni berishdan, shu jumladan ijaraga berishdan;\nishlarni bajarishdan yoki xizmatlar koʻrsatishdan;\nintellektual mulk obyektlariga boʻlgan mulkiy huquqlarni oʻtkazishdan kelib chiqishi mumkin.\nPul talabnomasidan boshqa shaxs foydasiga voz kechish evaziga moliyalash shartnomasi ushbu Kodeks 751-moddasining ikkinchi qismiga muvofiq pul talabnomasini tavsiflab bergan holda yozma ravishda tuziladi.\nMijoz oʻzining moliya agenti oldidagi majburiyatlari bajarilishini taʼminlash maqsadida ham qarzdorga nisbatan pul talabnomasidan moliya agenti foydasiga voz kechishi mumkin.",
+     "retrieval_score": 0.8666,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-180552#art-753#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "753-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "753-modda. Pul talabnomasidan boshqa shaxs foydasiga voz kechishni taqiqlashning haqiqiy emasligi\nMijoz bilan uning qarzdori oʻrtasida talabnomadan boshqa shaxs foydasiga voz kechishni taqiqlash yoki cheklash haqida kelishuv boʻlgan taqdirda ham, pul talabnomasidan moliya agenti foydasiga voz kechish haqiqiy hisoblanadi.\nMijoz va moliya agenti pul talabnomasidan boshqa shaxs foydasiga voz kechishga doir taqiqni yoki cheklovni buzganligi uchun qarzdor oldida javobgar boʻlmaydi.",
+     "retrieval_score": 0.855,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1968,
+    "retrieval_ms": 1449,
+    "rerank_ms": 0,
+    "generation_ms": 2306,
+    "total_ms": 5725
+   },
+   "usage": {
+    "input_tokens": 13196,
+    "output_tokens": 419,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Xoʻjalik yurituvchi subyekt oʻziga yuborilgan talabnomani olgandan keyin qancha vaqt ichida unga javob berishi shart?",
+    "search_queries": [
+     "Хўжалик юритувчи субъект ўзига юборилган талабномани олгандан кейин қанча вақт ичида унга жавоб бериши шарт?",
+     "Xoʻjalik yurituvchi subyekt oʻziga yuborilgan talabnomani olgandan keyin qancha vaqt ichida unga javob berishi shart?",
+     "talabnomaga javob berish muddati",
+     "xoʻjalik yurituvchi subyekt talabnomani koʻrib chiqish muddati",
+     "talabnoma boʻyicha javob berish tartibi va muddati"
+    ],
+    "doc_hints": [
+     "Xoʻjalik protsessual kodeksi",
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 816,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q049",
+   "status": "ok",
+   "answer": "Soliq kodeksining 119-moddasiga koʻra, soliq qarzini uzish toʻgʻrisidagi talabnoma yuridik shaxs, shuningdek tadbirkorlik faoliyatiga doir qismi boʻyicha yakka tartibdagi tadbirkor tomonidan olingan kundan eʼtiboran oltmish kalendar kun ichida soliq qarzi toʻlanmasa, soliq organlari undiruvni soliq toʻlovchining mol-mulkiga qaratadi [1]. Demak, avvalgi oʻn kunlik muddat oʻrniga hozir oltmish kalendar kunlik muddat amal qiladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.8,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "119-modda",
+     "part": "1-qism",
+     "edition_date": "2023-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-119#p1",
+     "quote": "Soliq qarzini uzish toʻgʻrisidagi talabnoma yuridik shaxs, shuningdek tadbirkorlik faoliyatiga doir qismi boʻyicha yakka tartibdagi tadbirkor tomonidan olingan kundan eʼtiboran oltmish kalendar kun ichida soliq qarzi toʻlanmagan taqdirda va agar ushbu Kodeksning 120 — 122-moddalarida nazarda tutilgan choralar qoʻllanishi natijasida soliq qarzi uzilmay qolaversa, soliq organlari undiruvni ushbu Kodeksning 123-124-moddalarida belgilangan tartibda soliq toʻlovchining mol-mulkiga qaratadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-119#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "119-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-01-01",
+     "text": "119-modda. Soliq qarzini uzish toʻgʻrisidagi talabnomani bajarish\nSoliq qarzini uzish toʻgʻrisidagi talabnoma yuridik shaxs, shuningdek tadbirkorlik faoliyatiga doir qismi boʻyicha yakka tartibdagi tadbirkor tomonidan olingan kundan eʼtiboran oltmish kalendar kun ichida soliq qarzi toʻlanmagan taqdirda va agar ushbu Kodeksning 120 — 122-moddalarida nazarda tutilgan choralar qoʻllanishi natijasida soliq qarzi uzilmay qolaversa, soliq organlari undiruvni ushbu Kodeksning 123-124-moddalarida belgilangan tartibda soliq toʻlovchining mol-mulkiga qaratadi.",
+     "retrieval_score": 0.8103,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-727632#band-4s2#p1",
+     "doc_id": "lex:-727632",
+     "doc_title": "Oʻzbekiston Respublikasi adliya vazirligi Oʻzbekiston Respublikasi oliy xoʻjalik sudi Oʻzbekiston Respublikasi moliya vazirligi Oʻzbekiston Respublikasi davlat soliq qoʻmitasi Oʻzbekiston Respublikasi Markaziy banki boshqaruvining qarori muddatida toʻlanmagan soliqlar va budjetga majburiy toʻlovlarni qarzdor korxona va tashkilotlar mol-mulki hisobidan undirib olish toʻgʻrisidagi xoʻjalik sudlari q",
+     "url": "https://lex.uz/docs/-727632",
+     "article": "4-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2006-11-28",
+     "text": "4. Soliq organining muddatida toʻlanmagan soliqlar va jarima sanksiyalarini toʻlash toʻgʻrisidagi yozma talabnomasi olingandan (topshirilgandan) soʻng oʻn kun mobaynida qarzdor korxona tomonidan qondirilmasligi yoki javobsiz qoldirilishi, soliq organi qarzni qarzdor korxonaning mol-mulki hisobidan undirib olish toʻgʻrisidagi talab bilan xoʻjalik sudiga ariza berishi uchun asos hisoblanadi.",
+     "retrieval_score": 0.484,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2829150#preamble#p12",
+     "doc_id": "lex:2829150",
+     "doc_title": "Oʻzbekiston Respublikasi oliy xoʻjalik sudi sudlov hayʼatining qarori daʼvogar nizoni sudgacha hal qilish (talabnoma yuborish) tartibiga rioya etmagan, bu esa shu toifadagi nizolar uchun qonunda yoki shartnomada nazarda tutilgan boʻlsa, daʼvo koʻrmasdan qoldiriladi",
+     "url": "https://lex.uz/docs/2829150",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2009-03-24",
+     "text": "Soliq qarzini uzish toʻgʻrisidagi talabnoma yuridik shaxs tomonidan olingan kundan eʼtiboran oʻttiz kun ichida yuridik shaxs soliq qarzini uzmagan taqdirda va agar ushbu moddaning birinchi hamda ikkinchi qismlarida nazarda tutilgan choralarni qoʻllash natijasida soliq qarzi uzilmay qolaversa, davlat soliq xizmati organlari undiruvni ushbu Kodeksning 65-moddasida belgilangan tartibda soliq toʻlovchining mol-mulkiga qaratadi.\nIshdagi hujjatlardan koʻrinishicha, “Oʻzbekiston” uy-joy mulkdorlari shirkatining 2008-yil 26-may holatiga soliq va boshqa majburiy toʻlovlardan qarzi 22374 soʻm 94 tiyinni tashkil qilgan boʻlib, ushbu qarzni toʻlash haqidagi talabnoma Qarshi shahar davlat soliq inspeksiyasi tomonidan javobgarga 2008-yil 12-avgustda pochta orqali yuborilgan.\nBiroq, Qarshi shahar davlat soliq inspeksiyasi qonunda belgilangan muddat oʻtmasdan va Oʻzbekiston Respublikasi Soliq kodeksining 62-moddasida qayd etilgan soliq qarzini majburiy undirish choralarini koʻrmasdan, qonunda belgilangan talablarga rioya etmagan holda shu kunning oʻzida daʼvo arizasi bilan sudga murojaat qilgan. Natijada, daʼvogar qonunda belgilangan nizoni sudgacha hal qilish tartibiga rioya etmagan. Aynan mana shu tartib buzilishi oqibatida shirkatning huquqlari va qonun bilan qoʻriqlanadigan manfaatlariga putur yetkazilishiga yoʻl qoʻyilgan.",
+     "retrieval_score": 0.468,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4674902#art-116#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "116-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "116-modda. Soliq qarzini uzish toʻgʻrisidagi talabnoma\nSoliq toʻlovchiga uning zimmasidagi soliq qarzi summasi toʻgʻrisida, shuningdek shu qarz summasini belgilangan muddatda toʻlash majburiyati haqida xabar yuborish soliq qarzini uzish toʻgʻrisidagi talabnomadir.\nSoliq qarzini uzish toʻgʻrisidagi talabnoma soliq toʻlovchi boʻlgan yuridik shaxsga yoki yakka tartibdagi tadbirkorga tadbirkorlik faoliyati boʻyicha unda ushbu Kodeksning 100-moddasida nazarda tutilgan soliq qarzi yoki foizlar mavjud boʻlgan taqdirda yuboriladi.\nSoliq toʻlovchilarning konsolidatsiyalashgan guruhi boʻyicha foyda soligʻiga doir soliq qarzini uzish toʻgʻrisidagi talabnoma ushbu soliq toʻlovchilar konsolidatsiyalashgan guruhining masʼul ishtirokchisiga yuboriladi.\nSoliq qarzini uzish toʻgʻrisidagi talabnoma soliq toʻlovchiga soliq haqidagi qonunchilikni buzganlik uchun javobgarlikka tortilishidan qatʼi nazar yuboriladi.\nSoliq qarzini uzish toʻgʻrisidagi talabnomada soliq boʻyicha qarz summasi, talabnoma yuborilayotgan paytga hisoblangan penyalar miqdori, jarimalar summasi, shuningdek soliq toʻlovchi talablarni bajarmagan taqdirda, soliq qarzini undirish va soliq majburiyati bajarilishini taʼminlash boʻyicha koʻriladigan choralar haqidagi maʼlumotlar koʻrsatilishi kerak.\nSoliq qarzini uzish toʻgʻrisidagi talabnomaning shakli Oʻzbekiston Respublikasi Davlat soliq qoʻmitasi tomonidan tasdiqlanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4674902#art-115#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "115-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-30",
+     "text": "115-modda. Soliqlarni toʻlash boʻyicha majburiyatlarning bajarilishini taʼminlash\nSoliq toʻlash majburiyatiga ega boʻlgan soliq toʻlovchi uni toʻlashga doir toʻlov topshiriqnomasini xizmat koʻrsatuvchi bankka, oʻzining bank hisobvaragʻida pul mablagʻlari bor-yoʻqligidan qatʼi nazar, ushbu Kodeksda belgilangan toʻlov muddatidan kechiktirmasdan taqdim etishi shart.\nAgar soliq toʻlovchida toʻlanmagan soliq qarzi mavjud boʻlsa, soliq organi unga soliqlarni toʻlash muddati oʻtganidan keyin uch kundan kechiktirmay soliq qarzini uzish toʻgʻrisida talabnoma yuboradi.",
+     "retrieval_score": 0.9982,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2052,
+    "retrieval_ms": 1729,
+    "rerank_ms": 0,
+    "generation_ms": 2851,
+    "total_ms": 6634
+   },
+   "usage": {
+    "input_tokens": 14146,
+    "output_tokens": 592,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Soliq qarzini undirish toʻgʻrisidagi talabnoma (talab) olingandan soʻng qarzni toʻlash uchun qancha muddat beriladi?",
+    "search_queries": [
+     "Avval soliq qarzini uzish toʻgʻrisidagi talabnoma olingandan keyin qarzni toʻlash uchun oʻn kun berilardi, hozir bu muddat qancha?",
+     "Soliq qarzini undirish toʻgʻrisidagi talabnoma (talab) olingandan soʻng qarzni toʻlash uchun qancha muddat beriladi?",
+     "soliq qarzini toʻlash toʻgʻrisidagi talabnoma muddati",
+     "soliq organi talabnomasi boʻyicha qarzni toʻlash muddati",
+     "soliq qarzini undirish talabnomasi ijro muddati"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 475,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q050",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida bu savolga aniq javob topilmadi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:2209750#band-59s2#p1",
+     "doc_id": "lex:2209750",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasi huzuridagi davlat zaxiralarini boshqarish qoʻmitasining qarori birinchi guruh moddiy boyliklarini masʼul saqlovchi tashkilotlarda maqbul harorat-namlik darajasini saqlab turish, laboratoriya va sanitariya nazoratini oʻtkazish tartibi toʻgʻrisidagi yoʻriqnomani tasdiqlash haqida",
+     "url": "https://lex.uz/docs/2209750",
+     "article": "59-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-08-19",
+     "text": "59. Yozgi mavsumda omborxonalarda havo va mahsulotlarning haroratini pasaytirish ayrim turdagi mahsulotlarning saqlanishiga birmuncha yaxshi sharoit yaratish uchun amalga oshiriladi.\nMahsulotlar haroratini pasaytirish uchun shamollatish tashqaridagi havo harorati omborxonadagi havo haroratidan past boʻlgan, tashqaridagi havoning mutlaq namligi esa omborxonadagi havoning mutlaq namligiga teng yoki undan past boʻlgan davrda, odatda kunning tungi va ertalabki vaqtida amalga oshiriladi.\n“Oqib kiruvchi-tortuvchi” shamollatishdan foydalanilganda havo olish omborxonaning yuqori qismidan, tashqariga chiqarish esa pastki qismidan amalga oshirilishi kerak.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:2430765#band-5s3#p4",
+     "doc_id": "lex:2430765",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori kommunal xizmatlar koʻrsatish qoidalarini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/2430765",
+     "article": "5-band (3-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-05-21",
+     "text": "kunduzi (soat 05:00 dan soat 0:00 gacha) turar joy xonasida havo haroratining pasayishiga yoʻl qoʻyilmaydi.\u0007Koʻrsatib oʻtilgan chetga chiqish yoʻl qoʻyilgan hisob-kitob davri mobaynida turar joy xonasida jamlangan holda havo haroratidan chetga chiqilgan har bir soat uchun bunday hisob-kitob davri uchun kommunal xizmatga toʻlov miqdori ushbu Qoidalarning IX-XI boʻlimlariga muvofiq, bunday hisob-kitob davri uchun belgilangan haroratdan chetga chiqishning har bir darajasi uchun toʻlov miqdorining 0,15 foiziga kamayadi.\n* Issiq suv taʼminoti tizimlarida bosimni oʻlchashni suv olish nuqtasida (elevator bogʻlamasi) ertalabki maksimum (soat 7.00 dan soat 9.00gacha) yoki kechki maksimum (soat 19.00 dan soat 22.00gacha) soatlarida amalga oshirish kerak.\n** Issiq suv haroratini aniqlashdan oldin suv olish nuqtasida (elevator bogʻlamasi) 3 minutdan ortiq boʻlmagan vaqt mobaynida suv oqizib yuboriladi.\n*** Koʻrsatib oʻtilgan talablar tashqi havoning harorati xonalarni issiq saqlash tadbirlari bajarilishi sharti bilan isitish tizimini loyihalashtirishda qabul qilingan hisoblab chiqilgan haroratdan past boʻlmaganda qoʻllanadi.\n**** Ushbu ilovaning 5-bandi qoʻllangan taqdirda 6-band isitishdagi tanaffus boshlangan paytdan eʼtiboran qoʻllanmaydi.",
+     "retrieval_score": 0.9082,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:2209750#band-55s2#p1",
+     "doc_id": "lex:2209750",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasi huzuridagi davlat zaxiralarini boshqarish qoʻmitasining qarori birinchi guruh moddiy boyliklarini masʼul saqlovchi tashkilotlarda maqbul harorat-namlik darajasini saqlab turish, laboratoriya va sanitariya nazoratini oʻtkazish tartibi toʻgʻrisidagi yoʻriqnomani tasdiqlash haqida",
+     "url": "https://lex.uz/docs/2209750",
+     "article": "55-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-08-19",
+     "text": "55. Gigroskopik mahsulotlarning namlanishini oldini olish va kondensat tushishiga yoʻl qoʻymaslik maqsadida omborxonalardagi havoning nisbiy namligi tushiriladi.\nHavoning nisbiy namligini pasaytirish maqsadida omborxonani shamollatish tashqaridagi havoning mutlaq namligi omborxona ichidagi havoning mutlaq namligidan past boʻlganda amalga oshirilishi lozim.\nKondensat tushishining oldini olish maqsadida shamollatganda omborxonadagi havoning oʻsish nuqtasidan kelib chiqish zarur.\nAgar konserva bankalar ustidagi harorat (bu amalda idishdagi bor mahsulotning umumiy haroratiga teng) omborxonadagi havoning oʻsish nuqtasidan baland boʻladigan boʻlsa, unda bankalar ustiga kondensat tushmasligi taʼminlanadi.\nTashqaridagi havoning mutlaq namligi omborxonadagi havoning nisbiy namligiga teng boʻlgan, tashqaridagi havo harorati esa omborxonadagi havo haroratidan baland boʻlgan sharoitda omborxona havosining nisbiy namligi pasayishi uchun omborxona shamollatiladi. Bunday sharoitda, omborxonadagi havo haroratining koʻtarilish jarayoni katta miqdordagi mahsulotlarning ilishi bilan bogʻliqligi sababli shamollatish uzoq davom etishi zarur.",
+     "retrieval_score": 0.9034,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:2209750#band-57s2#p1",
+     "doc_id": "lex:2209750",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasi huzuridagi davlat zaxiralarini boshqarish qoʻmitasining qarori birinchi guruh moddiy boyliklarini masʼul saqlovchi tashkilotlarda maqbul harorat-namlik darajasini saqlab turish, laboratoriya va sanitariya nazoratini oʻtkazish tartibi toʻgʻrisidagi yoʻriqnomani tasdiqlash haqida",
+     "url": "https://lex.uz/docs/2209750",
+     "article": "57-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-08-19",
+     "text": "57. Omborxonalarda havoning nisbiy namligini oshirish ayrim mahsulotlarning (qand-shakar, qogʻoz) oʻta quruqlanishining oldini olish maqsadida amalga oshiriladi.\nHavoning nisbiy namligini oshirish uchun shamollatish tashqaridagi havoning mutlaq namligi omborxonadagi havoning mutlaq namligidan baland boʻlgan paytda amalga oshiriladi.\nBinolardagi havo namligini oshirish uchun sunʼiy iqlim hosil qilish tizimlaridan foydalanilganda suv sochish, bugʻ berish yoki haroratni pasaytirish qoʻllaniladi.",
+     "retrieval_score": 0.8892,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:2209750#band-44s2#p1",
+     "doc_id": "lex:2209750",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasi huzuridagi davlat zaxiralarini boshqarish qoʻmitasining qarori birinchi guruh moddiy boyliklarini masʼul saqlovchi tashkilotlarda maqbul harorat-namlik darajasini saqlab turish, laboratoriya va sanitariya nazoratini oʻtkazish tartibi toʻgʻrisidagi yoʻriqnomani tasdiqlash haqida",
+     "url": "https://lex.uz/docs/2209750",
+     "article": "44-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-08-19",
+     "text": "44. Tashqaridagi havo va omborxona ichidagi havo harorati Selsiy (°S) graduslarida oʻlchanadi.",
+     "retrieval_score": 0.8757,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1038,
+    "retrieval_ms": 11,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 1050
+   },
+   "usage": {
+    "input_tokens": 903,
+    "output_tokens": 63,
+    "models": {
+     "rewrite": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Poytaxtda ertaga havo harorati necha daraja boʻladi?",
+    "search_queries": [
+     "Poytaxtda ertaga havo harorati necha daraja boʻladi?"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 150,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": null,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

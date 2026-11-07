@@ -1,0 +1,1041 @@
+{
+ "run_id": "final-v3",
+ "batch_id": "final-v3-b03",
+ "batch_index": 3,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.1.0",
+  "prompt_version": "p7",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125645,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-07T21:18:04+05:00",
+  "completed_at": "2026-11-07T21:18:11+05:00",
+  "total_ms": 7248
+ },
+ "summary": {
+  "total": 10,
+  "ok": 8,
+  "no_answer": 2,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q021",
+   "status": "ok",
+   "answer": "Nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisidagi qonunning 22-moddasiga koʻra, hisob roʻyxatidan oʻtkazishni rad etish haqidagi xabarnoma ariza beruvchiga rad etish asoslari koʻrsatilgan holda, rad etish toʻgʻrisidagi qaror qabul qilingan sanadan eʼtiboran bir ish kunidan kechiktirmay yuboriladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5972411",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5972411",
+     "article": "22-modda",
+     "part": "1–8-qism",
+     "edition_date": "2025-04-18",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5972411#art-22#p1",
+     "quote": "rad etish toʻgʻrisidagi qaror qabul qilingan sanadan eʼtiboran bir ish kunidan kechiktirmay yuboriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5972411#art-22#p1",
+     "doc_id": "lex:-5972411",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5972411",
+     "article": "22-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-04-18",
+     "text": "22-modda. Hisob roʻyxatidan oʻtkazishni rad etish\nHisob roʻyxatidan oʻtkazishni rad etish uchun quyidagilar asos boʻladi:\nariza beruvchi tomonidan taqdim etilgan hujjatlarning nobank kredit tashkilotlari va mikromoliyalashtirish faoliyati toʻgʻrisidagi qonunchilik talablariga muvofiq emasligi va (yoki) ularda notoʻgʻri yoki buzib koʻrsatilgan maʼlumotlarning mavjudligi;\nariza beruvchining ishtirokchilari (aksiyadorlari) tarkibida ushbu Qonun 14-moddasining ikkinchi qismida koʻrsatilgan shaxslarning mavjudligi;\nrahbar xodimlarning ushbu Qonunning 16-moddasida belgilangan talablarga muvofiq emasligi;\nariza beruvchining ustav fondi (ustav kapitali) ushbu Qonunning 17-moddasi talablariga muvofiq emasligi;\nnorezident boʻlgan yuridik shaxs nazorat qilish organining hisob roʻyxatidan oʻtkazishni rad etish toʻgʻrisidagi tavsiyasi mavjudligi;\nariza beruvchining hisob roʻyxatidan oʻtkazish uchun hujjatlarni ushbu Qonunda belgilangan muddatlarda taqdim etmaganligi.\nHisob roʻyxatidan oʻtkazishni rad etish haqidagi xabarnoma (bundan buyon matnda rad etish toʻgʻrisidagi xabarnoma deb yuritiladi) ariza beruvchiga rad etish asoslari koʻrsatilgan holda, hisob roʻyxatidan oʻtkazishni rad etish toʻgʻrisidagi qaror qabul qilingan sanadan eʼtiboran bir ish kunidan kechiktirmay yuboriladi.",
+     "retrieval_score": 0.9576,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1295,
+    "retrieval_ms": 224,
+    "rerank_ms": 0,
+    "generation_ms": 1870,
+    "total_ms": 3391
+   },
+   "usage": {
+    "input_tokens": 12407,
+    "output_tokens": 393,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Nobank kredit tashkilotini roʻyxatga olishni rad etish haqidagi xabar ariza beruvchiga qancha muddat ichida yuborilishi kerak?",
+    "search_queries": [
+     "Nobank kredit tashkilotini roʻyxatga olishni rad etish haqidagi xabar ariza beruvchiga qancha muddat ichida yuborilishi kerak?",
+     "nobank kredit tashkilotini roʻyxatga olishni rad etish",
+     "roʻyxatga olishni rad etish haqidagi xabar yuborish muddati",
+     "nobank kredit tashkiloti davlat roʻyxatidan oʻtkazish"
+    ],
+    "doc_hints": [
+     "Nobank kredit tashkilotlari va mikromoliya tashkilotlari toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 409,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q022",
+   "status": "ok",
+   "answer": "«Toshkent xalqaro moliya markazi toʻgʻrisida»gi Konstitutsiyaviy Qonunning 12-moddasiga koʻra, Moliya markazi hududida Oʻzbekiston Respublikasining xalqaro shartnomalaridan kelib chiqadigan majburiyatlar va quyidagi qonunchilik hujjatlari qoʻllaniladi: Oʻzbekiston Respublikasining Konstitutsiyasi; jinoyat toʻgʻrisidagi va jinoyat-protsessual qonunchilik; maʼmuriy javobgarlik toʻgʻrisidagi qonunchilik; milliy xavfsizlik, mudofaa, jinoiy faoliyatdan olingan daromadlarni legallashtirishga, terrorizmni moliyalashtirishga va ommaviy qirgʻin qurolini tarqatishni moliyalashtirishga qarshi kurashish, immigratsiya nazorati, oila, atrof-muhitni muhofaza qilish, favqulodda holat, sanitariya-epidemiologik osoyishtalik hamda fuqarolar sogʻligʻini saqlash toʻgʻrisidagi qonunchilik [1]. Shuningdek, Moliya markazining shaxslariga nisbatan toʻgʻridan-toʻgʻri qoʻllaniladigan darajada ratifikatsiya qilingan xalqaro shartnomalar hamda ushbu Qonunda yoki Moliya markazining qarorlarida qoʻllanilishi toʻgʻridan-toʻgʻri nazarda tutilgan boshqa qonunchilik hujjatlari qoʻllaniladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-8323797",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Toshkent xalqaro moliya markazi toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-8323797",
+     "article": "12-modda",
+     "part": "1–7-qism",
+     "edition_date": "2026-07-13",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-8323797#art-12#p1",
+     "quote": "Moliya markazi hududida Oʻzbekiston Respublikasining xalqaro shartnomalaridan kelib chiqadigan majburiyatlar va quyidagi qonunchilik hujjatlari qoʻllaniladi:",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-8323797#art-12#p1",
+     "doc_id": "lex:-8323797",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Toshkent xalqaro moliya markazi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8323797",
+     "article": "12-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-13",
+     "text": "12-modda. Milliy qonunchilikning umumiy qoidalarini qoʻllashning oʻziga xos xususiyatlari\nMoliya markazi hududida Oʻzbekiston Respublikasining xalqaro shartnomalaridan kelib chiqadigan majburiyatlar va quyidagi qonunchilik hujjatlari qoʻllaniladi:\nOʻzbekiston Respublikasining Konstitutsiyasi;\nushbu Konstitutsiyaviy Qonun 14-moddasining qoidalariga muvofiq jinoyat toʻgʻrisidagi va jinoyat-protsessual qonunchilik;\nushbu moddaning ikkinchi qismi qoidalari inobatga olingan holda maʼmuriy javobgarlik toʻgʻrisidagi qonunchilik;\nmilliy xavfsizlik, mudofaa, jinoiy faoliyatdan olingan daromadlarni legallashtirishga, terrorizmni moliyalashtirishga va ommaviy qirgʻin qurolini tarqatishni moliyalashtirishga qarshi kurashish, immigratsiya nazorati, oila, atrof-muhitni muhofaza qilish, favqulodda holat, sanitariya-epidemiologik osoyishtalik hamda fuqarolar sogʻligʻini saqlash toʻgʻrisidagi qonunchilik;\nMoliya markazining shaxslariga nisbatan toʻgʻridan-toʻgʻri qoʻllaniladigan darajada Oʻzbekiston Respublikasi tomonidan ratifikatsiya qilingan xalqaro shartnomalar;\nushbu Konstitutsiyaviy Qonunda yoki Moliya markazining qarorlarida Moliya markazi hududida qoʻllanilishi toʻgʻridan-toʻgʻri nazarda tutilgan boshqa qonunchilik hujjatlari.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1523,
+    "retrieval_ms": 600,
+    "rerank_ms": 0,
+    "generation_ms": 2633,
+    "total_ms": 4757
+   },
+   "usage": {
+    "input_tokens": 13095,
+    "output_tokens": 722,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "«Qonuni Toshkent xalqaro moliya markazi toʻgʻrisida»ga koʻra, moliya markazi hududida qaysi sohalardagi milliy qonunchilik majburiy tarzda qoʻllaniladi?",
+    "search_queries": [
+     "«Qonuni Toshkent xalqaro moliya markazi toʻgʻrisida»ga koʻra, moliya markazi hududida qaysi sohalardagi milliy qonunchilik majburiy tarzda qoʻllaniladi?",
+     "Toshkent xalqaro moliya markazi milliy qonunchilik qoʻllaniladigan sohalar",
+     "moliya markazi hududida milliy qonunchilik majburiy qoʻllanilishi",
+     "Toshkent xalqaro moliya markazi toʻgʻrisidagi qonun"
+    ],
+    "doc_hints": [
+     "Toshkent xalqaro moliya markazi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 611,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q023",
+   "status": "ok",
+   "answer": "Fuqarolik kodeksining 286-moddasiga koʻra, garovga oluvchi talabdan boshqa shaxs foydasiga voz kechish yoʻli bilan kreditorning huquqlarini boshqa shaxsga berish haqidagi qoidalarga (ushbu Kodeksning 313-321-moddalari) rioya qilgan holda garov toʻgʻrisidagi shartnoma boʻyicha oʻz huquqlarini boshqa shaxsga berishga haqli [1]. Bunday voz kechish, agar garov bilan taʼminlangan asosiy majburiyat boʻyicha qarzdordan talab qilish huquqidan ham oʻsha shaxs foydasiga voz kechilgan boʻlsa, haqiqiy boʻladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "286-modda",
+     "part": "1–3-qism",
+     "edition_date": "1995-12-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-286#p1",
+     "quote": "Garovga oluvchi talabdan boshqa shaxs foydasiga voz kechish yoʻli bilan kreditorning huquqlarini boshqa shaxsga berish haqidagi qoidalarga (ushbu Kodeksning 313-321-moddalari) rioya qilgan holda garov toʻgʻrisidagi shartnoma boʻyicha oʻz huquqlarini boshqa shaxsga berishga haqli",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "286-modda",
+     "part": "1–3-qism",
+     "edition_date": "1995-12-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-286#p1",
+     "quote": "Garovga oluvchining garov toʻgʻrisidagi shartnoma boʻyicha oʻz huquqlaridan boshqa shaxs foydasiga voz kechishi, agar garov bilan taʼminlangan asosiy majburiyat boʻyicha qarzdordan talab qilish huquqidan ham oʻsha shaxs foydasiga voz kechilgan boʻlsa, haqiqiy boʻladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111189#art-286#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "286-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-21",
+     "text": "286-modda. Garov toʻgʻrisidagi shartnoma boʻyicha huquqlardan boshqa shaxs foydasiga voz kechish\nGarovga oluvchi talabdan boshqa shaxs foydasiga voz kechish yoʻli bilan kreditorning huquqlarini boshqa shaxsga berish haqidagi qoidalarga (ushbu Kodeksning 313-321-moddalari) rioya qilgan holda garov toʻgʻrisidagi shartnoma boʻyicha oʻz huquqlarini boshqa shaxsga berishga haqli.\nGarovga oluvchining garov toʻgʻrisidagi shartnoma boʻyicha oʻz huquqlaridan boshqa shaxs foydasiga voz kechishi, agar garov bilan taʼminlangan asosiy majburiyat boʻyicha qarzdordan talab qilish huquqidan ham oʻsha shaxs foydasiga voz kechilgan boʻlsa, haqiqiy boʻladi.\nAgar boshqacha hol isbotlangan boʻlmasa, ipoteka toʻgʻrisidagi shartnoma boʻyicha huquqlardan boshqa shaxs foydasiga voz kechilishi ipoteka bilan taʼminlangan majburiyat boʻyicha huquqlardan boshqa shaxs foydasiga voz kechilishini ham anglatadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2000,
+    "retrieval_ms": 388,
+    "rerank_ms": 0,
+    "generation_ms": 1970,
+    "total_ms": 4361
+   },
+   "usage": {
+    "input_tokens": 12062,
+    "output_tokens": 606,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Fuqarolik kodeksi Birinchi qismga koʻra, garovga oluvchi garov shartnomasi boʻyicha oʻz huquqlarini boshqa shaxsga berish uchun qanday qoidalarga rioya qilishi kerak?",
+    "search_queries": [
+     "Fuqarolik kodeksi Birinchi qismga koʻra, garovga oluvchi garov shartnomasi boʻyicha oʻz huquqlarini boshqa shaxsga berish uchun qanday qoidalarga rioya qilishi kerak?",
+     "garovga oluvchining huquqlarini boshqa shaxsga oʻtkazish",
+     "garov shartnomasi boʻyicha huquqlarni berish tartibi",
+     "garov huquqlarini oʻzga shaxsga topshirish qoidalari"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 544,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q024",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonunchilik hujjatlarida Prezidentning oila aʼzolariga rasmiy xizmat mashinasidan foydalanish imtiyozi haqidagi qoida mavjud emas.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.8,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5491505#art-33#p6",
+     "doc_id": "lex:-5491505",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5491505",
+     "article": "33-modda",
+     "part": "6–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-07-06",
+     "text": "33-modda. Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati harbiy xizmatchilarini ijtimoiy himoya qilish kafolatlari\nular haqiqiy harbiy xizmatga qaysi harbiy-hisob mutaxassisligi boʻyicha tayinlangan boʻlsa, oʻsha mutaxassislikka muvofiq boʻlgan lavozimlardagi ish staji ham ushbu ishning bir oyi xizmatning bir oyiga tenglashtirilgan holda haqiqiy harbiy xizmat muddatiga qoʻshiladi.\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatida xizmatni oʻtash chogʻida halok boʻlgan (vafot etgan) harbiy xizmatchining oila aʼzolari, halok boʻlgan (vafot etgan) shaxs xizmat qilgan yillardan qatʼi nazar, unga berilgan xizmat turar joyini bepul xususiylashtirish huquqiga ega.\nBoshqa davlat organlaridan Oʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatiga oʻtkazish tartibida qabul qilingan va maxsus unvonga ega boʻlgan shaxslar uchun oldingi maxsus unvonda boʻlish muddati imtiyozli uzoq muddatli ipoteka va avtokreditlar berish uchun xizmat muddatiga qoʻshib hisoblanadi.\nOʻzbekiston Respublikasi Prezidenti davlat xavfsizlik xizmatining harbiy xizmatchilariga qonunchilikda harbiy xizmatchilarga nisbatan belgilangan boshqa ijtimoiy kafolatlar va imtiyozlar ham beriladi.",
+     "retrieval_score": 0.9937,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2096,
+    "retrieval_ms": 827,
+    "rerank_ms": 0,
+    "generation_ms": 1832,
+    "total_ms": 4755
+   },
+   "usage": {
+    "input_tokens": 11638,
+    "output_tokens": 298,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Prezidentning oila aʼzolari qanday imtiyozlarga ega, ular rasmiy xizmat avtomobilidan foydalanishi mumkinmi?",
+    "search_queries": [
+     "Prezidentning oila aʼzolari qanday imtiyozga ega — ular ham rasmiy xizmat mashinasidan foydalana oladimi?",
+     "Prezidentning oila aʼzolari qanday imtiyozlarga ega, ular rasmiy xizmat avtomobilidan foydalanishi mumkinmi?",
+     "Prezident oila aʼzolarining imtiyozlari",
+     "davlat mulki xizmat avtomobillaridan foydalanish tartibi",
+     "Prezident va oila aʼzolarini moddiy taʼminlash"
+    ],
+    "doc_hints": [
+     "Oʻzbekiston Respublikasi Konstitutsiyasi",
+     "Davlat mulki toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 746,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q025",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasi Konstitutsiyasining 96-moddasiga koʻra, Qonunchilik palatasi va Senatning birinchi majlislari tegishincha Qonunchilik palatasiga saylovdan keyin ikki oydan kechiktirmay va Senat tarkib topganidan keyin bir oydan kechiktirmay Markaziy saylov komissiyasi tomonidan chaqiriladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.98,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "96-modda",
+     "part": "1–6-qism",
+     "edition_date": "2023-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:6445145#art-96#p1",
+     "quote": "Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi va Senatining birinchi majlislari tegishincha Qonunchilik palatasiga saylovdan keyin ikki oydan kechiktirmay va Senat tarkib topganidan keyin bir oydan kechiktirmay Markaziy saylov komissiyasi tomonidan chaqiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:6445145#art-96#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "96-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-04-30",
+     "text": "96-modda.\nVakolat muddati tugagach, Oʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasi va Senati tegishincha yangi chaqiriq Qonunchilik palatasi va Senati ish boshlaguniga qadar oʻz faoliyatini davom ettirib turadi.\nOʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi va Senatining birinchi majlislari tegishincha Qonunchilik palatasiga saylovdan keyin ikki oydan kechiktirmay va Senat tarkib topganidan keyin bir oydan kechiktirmay Markaziy saylov komissiyasi tomonidan chaqiriladi.\nOʻzbekiston Respublikasi Oliy Majlisining Qonunchilik palatasi majlislari sessiyalar davrida oʻtkaziladi. Sessiyalar, qoida tariqasida, sentabrning birinchi ish kunidan boshlab kelgusi yilning iyun oyi oxirgi ish kuniga qadar oʻtkaziladi.\nOʻzbekiston Respublikasi Oliy Majlisining Senati majlislari zaruratga qarab, lekin yiliga kamida uch marta oʻtkaziladi.\nOʻzbekiston Respublikasi Oliy Majlisi palatalarining majlislari, agar ular ishida barcha deputatlar, senatorlar umumiy sonining yarmidan koʻpi ishtirok etayotgan boʻlsa, vakolatli hisoblanadi.\nKonstitutsiyaviy qonunlarni qabul qilishda barcha deputatlar, senatorlar umumiy sonining kamida uchdan ikki qismi ishtirok etishi shart.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:51961#art-10#p1",
+     "doc_id": "lex:51961",
+     "doc_title": "Oʻzbekiston Respublikasining konstitutsiyaviy qonuni Oʻzbekiston Respublikasi Oliy majlisining qonunchilik palatasi toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/51961",
+     "article": "10-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-09-14",
+     "text": "10-modda. Qonunchilik palatasi majlisi\nQonunchilik palatasi faoliyatining tashkiliy shakli uning Qonunchilik palatasi sessiyalari davrida oʻtkaziladigan majlislaridir.\nNavbatdagi sessiyalar, qoida tariqasida, sentabrning birinchi ish kunidan boshlab kelgusi yilning iyun oyi oxirgi ish kuniga qadar oʻtkaziladi.\nQonunchilik palatasining saylovdan keyingi birinchi majlisi saylovdan soʻng ikki oydan kechiktirmay Oʻzbekiston Respublikasi Markaziy saylov komissiyasi tomonidan chaqiriladi.\nQonunchilik palatasining birinchi majlisini Oʻzbekiston Respublikasi Markaziy saylov komissiyasining Raisi ochadi va Qonunchilik palatasi Spikeri saylangunga qadar unda raislik qiladi.\nQonunchilik palatasi va uning organlari majlislarida Oʻzbekiston Respublikasi Prezidenti, Senat Raisi, Bosh vazir, Vazirlar Mahkamasining aʼzolari, Oʻzbekiston Respublikasi Konstitutsiyaviy sudi, Oliy sudi, Sudyalar oliy kengashi raislari, Bosh prokuror ishtirok etishlari mumkin.\nQonunchilik palatasi majlisiga davlat organlari va nodavlat notijorat tashkilotlarining, ilmiy muassasalarning vakillari, mutaxassislar va olimlar, matbuot organlarining, televideniye, radio va boshqa ommaviy axborot vositalarining vakillari taklif qilinishi mumkin.\nQonunchilik palatasi majlislari ochiq va oshkora oʻtkaziladi.\nZarurat boʻlganda, Qonunchilik palatasi yopiq majlis oʻtkazish toʻgʻrisida qaror qabul qilishi mumkin.",
+     "retrieval_score": 0.9196,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1946,
+    "retrieval_ms": 826,
+    "rerank_ms": 0,
+    "generation_ms": 1937,
+    "total_ms": 4711
+   },
+   "usage": {
+    "input_tokens": 11751,
+    "output_tokens": 387,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekiston Respublikasi Konstitutsiyasiga koʻra, Qonunchilik palatasi va Senatning birinchi majlislari saylovdan yoki Senat tarkib topganidan keyin qancha muddat ichida chaqirilishi kerak?",
+    "search_queries": [
+     "Oʻzbekiston Respublikasi Konstitutsiyasiga koʻra, Qonunchilik palatasi va Senatning birinchi majlislari saylovdan yoki Senat tarkib topganidan keyin qancha muddat ichida chaqirilishi kerak?",
+     "Qonunchilik palatasi birinchi majlisi chaqirilishi",
+     "Senatning birinchi majlisi chaqirilishi muddati",
+     "saylovdan keyin palata majlisi chaqirilishi"
+    ],
+    "doc_hints": [
+     "Konstitutsiya",
+     "Oʻzbekiston Respublikasi Konstitutsiyasi",
+     "Konstitutsiyasiga"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 636,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q026",
+   "status": "ok",
+   "answer": "Saylov kodeksining 92¹-moddasiga koʻra, deputat etib saylangan shaxslar tegishli hududiy, tuman, shahar saylov komissiyasi tomonidan roʻyxatga olingan paytdan eʼtiboran tegishli mahalliy Kengash deputati maqomiga ega boʻladi [1]. Mahalliy Kengashlar deputatlariga roʻyxatga olingan kundan boshlab oʻn kun ichida guvohnoma va koʻkrak nishoni beriladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "92¹-modda",
+     "part": "1–4-qism",
+     "edition_date": "2023-12-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-92.1#p1",
+     "quote": "Deputat etib saylangan shaxslar tegishli hududiy, tuman, shahar saylov komissiyasi tomonidan roʻyxatga olingan paytdan eʼtiboran tegishli mahalliy Kengash deputati maqomiga ega boʻladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "92¹-modda",
+     "part": "1–4-qism",
+     "edition_date": "2023-12-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-92.1#p1",
+     "quote": "Mahalliy Kengashlar deputatlariga tegishli hududiy, tuman, shahar saylov komissiyasi tomonidan roʻyxatga olingan kundan boshlab oʻn kun ichida guvohnoma va koʻkrak nishoni beriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4386848#art-92.1#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "92¹-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-19",
+     "text": "921-modda. Mahalliy Kengashlarga saylangan deputatlarni roʻyxatga olish\nHududiy saylov komissiyasi okrug saylov komissiyalaridan olingan bayonnomalar asosida, tuman va shahar saylov komissiyalari uchastka saylov komissiyalaridan olingan bayonnomalar asosida tegishli mahalliy Kengashga saylangan deputatlarni roʻyxatga oladi.\nDeputat etib saylangan shaxslar tegishli hududiy, tuman, shahar saylov komissiyasi tomonidan roʻyxatga olingan paytdan eʼtiboran tegishli mahalliy Kengash deputati maqomiga ega boʻladi.\nUshbu Kodeks 90-moddasining uchinchi qismida koʻrsatib oʻtilgan, mahalliy Kengash deputati etib saylangan shaxslar tegishincha hududiy, tuman, shahar saylov komissiyasiga deputatning maqomiga toʻgʻri kelmaydigan vazifalarni oʻz zimmasidan soqit qilganligi toʻgʻrisida yozma shaklda xabar qilishi shart.\nMahalliy Kengashlar deputatlariga tegishli hududiy, tuman, shahar saylov komissiyasi tomonidan roʻyxatga olingan kundan boshlab oʻn kun ichida guvohnoma va koʻkrak nishoni beriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1671,
+    "retrieval_ms": 414,
+    "rerank_ms": 0,
+    "generation_ms": 3380,
+    "total_ms": 5467
+   },
+   "usage": {
+    "input_tokens": 11728,
+    "output_tokens": 494,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Saylov kodeksiga koʻra, mahalliy Kengashga deputat etib saylangan odam qaysi paytdan deputat maqomiga ega boʻladi va unga guvohnoma hamda koʻkrak nishoni qancha muddat ichida beriladi?",
+    "search_queries": [
+     "Saylov kodeksiga koʻra, mahalliy Kengashga deputat etib saylangan odam qaysi paytdan deputat maqomiga ega boʻladi va unga guvohnoma hamda koʻkrak nishoni qancha muddat ichida beriladi?",
+     "deputat maqomiga ega boʻlish payti",
+     "deputat guvohnomasi va koʻkrak nishoni berish muddati",
+     "mahalliy Kengash deputati saylangan paytdan"
+    ],
+    "doc_hints": [
+     "Saylov kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 487,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q027",
+   "status": "ok",
+   "answer": "Bojxona ombori rejimidagi tovarni boshqa shaxsga oʻtkazish uchun: oʻtkazuvchi vakolatli shaxs bojxona organini oldindan yozma shaklda xabardor etishi, huquqni oluvchi vakolatli shaxs esa tanlangan bojxona rejimi talablariga rioya etgan holda bojxona deklaratsiyasini bojxona organiga taqdim etishi lozim [1]. Bunday oʻtkazish tovarni saqlash muddatini toʻxtatib turmaydi va uzaytirmaydi [2]. Bojxona ombori rejimida turish muddati uch yilni tashkil etadi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "96-modda",
+     "part": "1–5-qism",
+     "edition_date": "2024-05-28",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2876354#art-96#p1",
+     "quote": "tovarni yoki unga nisbatan egalik qilish, foydalanish yoki tasarruf etish huquqini boshqa shaxsga oʻtkazuvchi vakolatli shaxs bojxona organini oldindan yozma shaklda xabardor etadi;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "96-modda",
+     "part": "1–5-qism",
+     "edition_date": "2024-05-28",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2876354#art-96#p1",
+     "quote": "bojxona ombori bojxona rejimiga joylashtirilgan tovarlarni saqlash muddatini toʻxtatib turmaydi va uzaytirmaydi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "94-modda",
+     "part": "1–4-qism",
+     "edition_date": "2024-05-28",
+     "doc_status": "amalda",
+     "chunk_id": "lex:2876354#art-94#p1",
+     "quote": "Tovarning bojxona ombori bojxona rejimida turish muddati uch yilni tashkil etadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:2876354#art-96#p1",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "96-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-05-28",
+     "text": "96-modda. Bojxona ombori bojxona rejimiga joylashtirilgan tovarni boshqa shaxsga oʻtkazish\nBojxona ombori bojxona rejimiga joylashtirilgan tovarni boshqa shaxsga oʻtkazishga, unga nisbatan egalik qilish, foydalanish yoki tasarruf etish huquqini boshqa shaxsga berishga quyidagi shartlarga rioya etilgan taqdirda yoʻl qoʻyiladi:\ntovarni yoki unga nisbatan egalik qilish, foydalanish yoki tasarruf etish huquqini boshqa shaxsga oʻtkazuvchi vakolatli shaxs bojxona organini oldindan yozma shaklda xabardor etadi;\ntovarga boʻlgan huquqni oluvchi vakolatli shaxs ushbu tovarga nisbatan tanlangan bojxona rejimi talablari va shartlariga rioya etgan holda bojxona deklaratsiyasini bojxona organiga taqdim etadi.\nVakolatli shaxsning tovarga nisbatan egalik qilish, foydalanish yoki tasarruf etish huquqi bojxona deklaratsiyasi bojxona organiga berilgan paytdan eʼtiboran boshqa shaxsga oʻtkazilgan deb hisoblanadi. Bojxona deklaratsiyasi berilgan paytda mazkur shaxsda bojxona rejimiga rioya etilishini taʼminlash bilan bogʻliq boʻlgan majburiyatlar yuzaga keladi.\nBojxona ombori bojxona rejimiga joylashtirilgan tovarlarning ushbu moddaning birinchi qismiga muvofiq boshqa shaxsga oʻtkazilganligi bojxona ombori bojxona rejimiga joylashtirilgan tovarlarni saqlash muddatini toʻxtatib turmaydi va uzaytirmaydi.",
+     "retrieval_score": 0.8752,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:2876354#art-94#p1",
+     "doc_id": "lex:2876354",
+     "doc_title": "Oʻzbekiston Respublikasining bojxona kodeksi",
+     "url": "https://lex.uz/docs/2876354",
+     "article": "94-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-05-28",
+     "text": "94-modda. Tovarning bojxona ombori bojxona rejimida turish muddati\nTovarning bojxona ombori bojxona rejimida turish muddati uch yilni tashkil etadi.\nTovarlar bir necha bor bojxona ombori bojxona rejimiga joylashtirilganda bojxona ombori bojxona rejimining umumiy amal qilish muddati ushbu moddaning birinchi qismida nazarda tutilgan muddatdan koʻp boʻlishi mumkin emas.\nTovarni bojxona ombori bojxona rejimiga joylashtirgan shaxs mazkur bojxona rejimini uning amal qilish muddati ushbu Kodeksning 98-moddasiga muvofiq tugaguniga qadar tugallash huquqiga ega.\nYaroqlilik, saqlash, ishlatish va (yoki) realizatsiya qilish muddati cheklangan tovar mazkur muddat tugaguniga qadar kamida bir yuz sakson kalendar kundan kechiktirmay boshqa bojxona rejimiga joylashtirish uchun maʼlum qilinishi va bojxona omboridan olib chiqilishi kerak.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1550,
+    "retrieval_ms": 542,
+    "rerank_ms": 0,
+    "generation_ms": 3169,
+    "total_ms": 5263
+   },
+   "usage": {
+    "input_tokens": 10276,
+    "output_tokens": 576,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Bojxona ombori rejimida turgan tovarni boshqa shaxsga oʻtkazmoqchi boʻlsam, qanday hujjatlarni tayyorlashim kerak va bu tovarni saqlash muddatiga taʼsir qiladimi?",
+    "search_queries": [
+     "Bojxona ombori rejimida turgan tovarni boshqa shaxsga oʻtkazmoqchi boʻlsam, qanday hujjatlarni tayyorlashim kerak va bu tovarni saqlash muddatiga taʼsir qiladimi?",
+     "bojxona ombori rejimi tovarni boshqa shaxsga oʻtkazish",
+     "bojxona ombori rejimida tovarni saqlash muddati",
+     "bojxona ombori rejimi bojxona hujjatlari"
+    ],
+    "doc_hints": [
+     "Bojxona kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 345,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q028",
+   "status": "ok",
+   "answer": "Нет, лицензия не требуется. Согласно статье 15 Закона «О недрах», собственники земли и землепользователи вправе без лицензии добывать общераспространённые полезные ископаемые в пределах выделенных им участков для собственных хозяйственных и бытовых нужд в установленном законодательством порядке [1]. Аналогично, по статье 31 Закона о внесении изменений в Закон «О недрах», они могут без получения разрешения осуществлять вскрышные работы общераспространённых полезных ископаемых, запасы которых не учтены в государственном балансе, без применения взрывных работ [2]. Земельный кодекс также закрепляет право использовать имеющиеся на участке общераспространённые полезные ископаемые для хозяйственных нужд в установленном порядке [3].",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-75847",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yer osti boyliklari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-75847",
+     "article": "15-modda",
+     "part": "1-qism",
+     "edition_date": "1994-09-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-75847#art-15#p1",
+     "quote": "Yer egalari va yerdan foydalanuvchilar oʻzlariga ajratib berilgan yer uchastkalari doirasida oʻz xoʻjalik va roʻzgʻor ehtiyojlari uchun keng tarqalgan foydali qazilmalarni qazib olish, yer osti suvlarini qazib chiqarish va yer osti inshootlarini qurish maqsadida yer osti boyliklaridan litsenziyasiz qonun hujjatlarida belgilangan tartibda foydalanish huquqiga egadirlar",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-77871",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “yer osti boyliklari toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartishlar va qoʻshimchalar kiritish haqida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-77871",
+     "article": "31-modda",
+     "part": "1–2-qism",
+     "edition_date": "2021-10-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-77871#art-31#p1",
+     "quote": "Yer egalari va yerdan foydalanuvchilar oʻzlariga berilgan yer uchastkalari doirasida oʻz xoʻjalik va roʻzgʻor ehtiyojlari uchun portlatish ishlarini qoʻllamagan holda qonunchilikda belgilangan tartibda zaxiralari foydali qazilmalar zaxiralari davlat balansi hisobiga olinmagan keng tarqalgan foydali qazilmalarni kavlab olishni hamda yer osti inshootlarini qurishni ruxsatnoma olmasdan amalga oshirish huquqiga ega",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "39-modda",
+     "part": "1–7-qism",
+     "edition_date": "2025-05-05",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-152653#art-39#p1",
+     "quote": "3) yer uchastkasidagi mavjud keng tarqalgan foydali qazilmalar, oʻrmonzorlar, suv obyektlaridan xoʻjalik ehtiyojlari uchun belgilangan tartibda foydalanish, shuningdek yerning boshqa foydali xossalarini ishga solish;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-75847#art-15#p1",
+     "doc_id": "lex:-75847",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yer osti boyliklari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-75847",
+     "article": "15-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-09-23",
+     "text": "15-modda. Yer osti boyliklaridan xoʻjalik va roʻzgʻor ehtiyojlari uchun foydalanish\nYer egalari va yerdan foydalanuvchilar oʻzlariga ajratib berilgan yer uchastkalari doirasida oʻz xoʻjalik va roʻzgʻor ehtiyojlari uchun keng tarqalgan foydali qazilmalarni qazib olish, yer osti suvlarini qazib chiqarish va yer osti inshootlarini qurish maqsadida yer osti boyliklaridan litsenziyasiz qonun hujjatlarida belgilangan tartibda foydalanish huquqiga egadirlar.",
+     "retrieval_score": 0.832,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-77871#art-31#p1",
+     "doc_id": "lex:-77871",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “yer osti boyliklari toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartishlar va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/-77871",
+     "article": "31-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-10-12",
+     "text": "31-modda. Yer qaʼridan xoʻjalik va roʻzgʻor ehtiyojlari uchun foydalanish\nYer egalari va yerdan foydalanuvchilar oʻzlariga berilgan yer uchastkalari doirasida oʻz xoʻjalik va roʻzgʻor ehtiyojlari uchun portlatish ishlarini qoʻllamagan holda qonunchilikda belgilangan tartibda zaxiralari foydali qazilmalar zaxiralari davlat balansi hisobiga olinmagan keng tarqalgan foydali qazilmalarni kavlab olishni hamda yer osti inshootlarini qurishni ruxsatnoma olmasdan amalga oshirish huquqiga ega.\nYer egalari va yerdan foydalanuvchilar tomonidan qonunchilik buzilgan taqdirda keng tarqalgan foydali qazilmalarni kavlab olish va yer osti inshootlarini qurish belgilangan tartibda taqiqlanishi mumkin.",
+     "retrieval_score": 0.7496,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-152653#art-39#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "39-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "39-modda. Yer egasi, yerdan foydalanuvchi, ijarachi va yer uchastkasi mulkdorining huquqlari\nYer egasi, yerdan foydalanuvchi, ijarachi va yer uchastkasi mulkdori quyidagi huquqlarga ega:\n1) yer uchastkasida undan ruxsat etilgan foydalanishning turlariga muvofiq mustaqil xoʻjalik yuritish;\n2) qishloq xoʻjalik ekinzorlari va koʻchatzorlari hamda dov-daraxtlarga, yetishtirilgan qishloq xoʻjalik mahsuloti va uni realizatsiya qilishdan olingan daromadga boʻlgan mulk huquqi;\n3) yer uchastkasidagi mavjud keng tarqalgan foydali qazilmalar, oʻrmonzorlar, suv obyektlaridan xoʻjalik ehtiyojlari uchun belgilangan tartibda foydalanish, shuningdek yerning boshqa foydali xossalarini ishga solish;\n4) yerlarni sugʻorish va ularning zaxini qochirish, agrotexnika va boshqa melioratsiya ishlari oʻtkazish;\n5) qishloq xoʻjalik ekinlarini, dov-daraxtlarni sugʻorish hamda boshqa maqsadlar uchun sugʻorish manbalaridan limitlarga muvofiq suv olish;\n6) belgilangan tartibda uy-joy binolari, ishlab chiqarish, madaniy-maishiy hamda boshqa imoratlar va inshootlarni barpo etish, yer uchastkalaridan ruxsat etilgan foydalanishning turlari va loyiha hujjatlariga muvofiq ularni qayta qurish va buzib tashlash. Yerdan foydalanuvchilar va ijarachilar bu ishlarni yer egalari bilan kelishib amalga oshirishga haqli;",
+     "retrieval_score": 0.9892,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-7182161#art-124#p4",
+     "doc_id": "lex:-7182161",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yer qaʼri toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7182161",
+     "article": "124-modda",
+     "part": "4–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-10-31",
+     "text": "124-modda. Tadbirkorlik faoliyati bilan bogʻliq boʻlmagan maqsadlar uchun qurilishbop foydali qazilmalarni va toʻldirgichlarni qazib olish uchun maxsus qoidalar\nYer uchastkasi doirasida joylashgan hamda yer egalari, yerdan foydalanuvchilar yoki yer uchastkalarining mulkdorlari tomonidan tadbirkorlik faoliyatini amalga oshirish bilan bogʻliq boʻlmagan shaxsiy, maishiy va boshqa ehtiyojlarni qanoatlantirish uchun foydalaniladigan qurilishbop foydali qazilmalar hamda toʻldirgichlar boshqa shaxsga berilishi mumkin emas.\nQurilishbop foydali qazilmalarni va toʻldirgichlarni qazib olishga doir ushbu moddaga muvofiq yuzaga keladigan huquq yer uchastkasiga boʻlgan huquqdan ajralmasdir.\nYer uchastkalarining mulkdorlarida, yer egalarida hamda yerdan foydalanuvchilarda qurilishbop foydali qazilmalarni va toʻldirgichlarni qazib olish huquqi ushbu moddaga muvofiq yer uchastkasiga boʻlgan mulk huquqi yoki yer uchastkasiga egalik qilish yoki undan foydalanish huquqi bilan bir vaqtda yuzaga keladi hamda tugatiladi.\nUshbu moddaga muvofiq qurilishbop foydali qazilmalarni va toʻldirgichlarni qazib olish uchun ruxsatnoma asosida yer qaʼridan foydalanadigan shaxslar uchun majburiy boʻlgan ruxsatnomani olish, shuningdek hisobotlar va boshqa hujjatlarni taqdim etish talab qilinmaydi.",
+     "retrieval_score": 0.6802,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2383,
+    "retrieval_ms": 457,
+    "rerank_ms": 0,
+    "generation_ms": 4397,
+    "total_ms": 7239
+   },
+   "usage": {
+    "input_tokens": 12409,
+    "output_tokens": 963,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Yer uchastkasi egasi yoki yerdan foydalanuvchi oʻziga ajratilgan uchastkada oʻz xoʻjalik ehtiyojlari uchun umumtarqalgan foydali qazilmalarni qazib olish uchun litsenziya olishi shartmi?",
+    "search_queries": [
+     "Обязан ли собственник земли или землепользователь получать лицензию для добычи общераспространённых полезных ископаемых для собственных хозяйственных нужд на выделенном ему участке?",
+     "Yer uchastkasi egasi yoki yerdan foydalanuvchi oʻziga ajratilgan uchastkada oʻz xoʻjalik ehtiyojlari uchun umumtarqalgan foydali qazilmalarni qazib olish uchun litsenziya olishi shartmi?",
+     "umumtarqalgan foydali qazilmalar qazib olish litsenziya",
+     "oʻz xoʻjalik ehtiyojlari uchun foydali qazilmalar",
+     "yer uchastkasi egasi yerdan foydalanuvchi foydali qazilmalar"
+    ],
+    "doc_hints": [
+     "Yer kodeksi",
+     "Yer osti boyliklari toʻgʻrisidagi qonun",
+     "Litsenziyalash toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 595,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q029",
+   "status": "ok",
+   "answer": "Soliq kodeksining 54-moddasiga koʻra, moliyaviy ijara shartnomasi talablarga javob berishi uchun qoldiq qiymat boshlangʻich qiymatning kamida 20 foizini tashkil etishi kifoya (avvalgi \"20 foizdan kam\" sharti emas) [1]. \"Lizing toʻgʻrisida\"gi qonunning 2-moddasida esa qoldiq qiymat boshlangʻich qiymatning yigirma foizidan kam boʻlsa, degan eski mezon saqlanib qolgan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.75,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "54-modda",
+     "part": "1–5-qism",
+     "edition_date": "2026-06-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-54#p1",
+     "quote": "moliyaviy ijara obyektining moliyaviy ijara shartnomasi tugaganidan keyingi qoldiq qiymati uning boshlangʻich qiymatining kamida 20 foizini tashkil etsa",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-85259",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni lizing toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-85259",
+     "article": "2-modda",
+     "part": "1–5-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-85259#art-2#p1",
+     "quote": "lizing obyektining lizing shartnomasi tugaganidan keyingi qoldiq qiymati uning boshlangʻich qiymatining yigirma foizidan kam boʻlsa",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-54#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "54-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-29",
+     "text": "54-modda. Moliyaviy ijara va lizing\nUshbu Kodeks maqsadida shartnoma boʻyicha mol-mulkni (moliyaviy ijara obyektini) oʻn ikki oydan koʻp muddatga egalik qilish va foydalanishga berish chogʻida yuzaga keladigan ijara munosabatlari moliyaviy ijara deb eʼtirof etiladi. Moliyaviy ijara shartnomasi quyidagi talablardan hech boʻlmaganda bittasiga javob berishi kerak:\n1) moliyaviy ijara shartnomasining muddati tugagach, moliyaviy ijara obyekti ijarachining mulkiga oʻtkazilsa;\n2) moliyaviy ijara shartnomasining muddati moliyaviy ijara obyekti xizmat qilish muddatining 80 foizidan oshsa yoki moliyaviy ijara obyektining moliyaviy ijara shartnomasi tugaganidan keyingi qoldiq qiymati uning boshlangʻich qiymatining kamida 20 foizini tashkil etsa;\n3) moliyaviy ijara shartnomasining muddati tugagach, ijarachi moliyaviy ijara obyektini moliyaviy ijara shartnomasida belgilanadigan qatʼiy narx boʻyicha haqini toʻlab olish huquqiga ega boʻlsa;\n31) islomiy moliya faoliyati doirasida banklar va mikromoliya tashkilotlari bilan islomiy moliya standartlariga muvofiq tuzilgan moliyaviy ijara (islomiy ijara) shartnomasining muddati tugagach, ijarachi moliyaviy ijara obyektini mulk huquqini oʻtkazish boʻyicha alohida shartnoma va unda belgilanadigan shartlar asosida qabul qilib olish huquqiga ega boʻlsa;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-85259#art-2#p1",
+     "doc_id": "lex:-85259",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni lizing toʻgʻrisida",
+     "url": "https://lex.uz/docs/-85259",
+     "article": "2-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "2-modda. Lizing tushunchasi\nLizing — moliyaviy ijaraning alohida turi boʻlib, unda bir taraf (lizing beruvchi) ikkinchi tarafning (lizing oluvchining) topshirigʻiga binoan uchinchi tarafdan (sotuvchidan) lizing shartnomasida shartlashilgan mol-mulkni (lizing obyektini) mulk qilib oladi va uni lizing oluvchiga shu shartnomada belgilangan shartlarda haq evaziga egalik qilish va foydalanish uchun oʻn ikki oydan ortiq muddatga beradi. Bunda lizing shartnomasi quyidagi talablardan biriga javob berishi kerak:\nlizing shartnomasining muddati tugagach, lizing obyekti lizing oluvchining mulki boʻlib oʻtsa;\nlizing shartnomasining muddati lizing obyekti xizmat muddatining sakson foizidan ortiq boʻlsa yoki lizing obyektining lizing shartnomasi tugaganidan keyingi qoldiq qiymati uning boshlangʻich qiymatining yigirma foizidan kam boʻlsa;\nlizing shartnomasining muddati tugagach, lizing oluvchi lizing obyektini uning bozor qiymatidan past narxda evazini toʻlab sotib olish huquqiga ega boʻlsa, bunda ana shu huquqni amalga oshirish kunidagi lizing obyekti qiymati asos boʻladi;\nlizing shartnomasi davri uchun lizing toʻlovlarining joriy diskontlangan (hisobga olingan) qiymati lizing obyektining lizingga topshirish paytidagi joriy qiymatining toʻqson foizidan ortiq boʻlsa. Joriy diskontlangan (hisobga olingan) qiymat buxgalteriya hisobi toʻgʻrisidagi qonunchilikka muvofiq belgilanadi.",
+     "retrieval_score": 0.9625,
+     "rerank_score": 0.85,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-4225533#band-3s2#p1",
+     "doc_id": "lex:-4225533",
+     "doc_title": "Oʻzbekiston Respublikasi moliya vazirining buyrugʻi Oʻzbekiston Respublikasi budjet hisobining standarti (6-sonli bhs) “ijara”ni tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4225533",
+     "article": "3-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-07-28",
+     "text": "3. Moliyaviy ijara — mol-mulkni (moliyaviy ijara obyektini) egalik qilish va foydalanishga oʻn ikki oydan ortiq muddatga shartnoma boʻyicha topshirishda vujudga keladigan ijara munosabatlaridir.\nMoliyaviy ijara shartnomasi quyidagi talablardan biriga javob berishi kerak:\nmoliyaviy ijara shartnomasining muddati tugagach, moliyaviy ijara obyekti ijarachining mulkiga oʻtsa;\nmoliyaviy ijara shartnomasining muddati moliyaviy ijara obyekti xizmat muddatining 80 foizidan ortiq boʻlsa yoki moliyaviy ijara obyektining moliyaviy ijara shartnomasi tugaganidan keyingi qoldiq qiymati uning boshlangʻich qiymatining 20 foizidan kam boʻlsa;\nmoliyaviy ijara shartnomasining muddati tugagach, ijaraga oluvchi moliyaviy ijara obyektini shu huquqni amalga oshirish sanasidagi bozor qiymatidan past narx boʻyicha sotib olish huquqiga ega boʻlsa;\nmoliyaviy ijara shartnomasining amal qilish davrida ijara toʻlovlarining joriy diskontlangan qiymati moliyaviy ijara obyektining moliyaviy ijaraga topshirish paytidagi joriy qiymatining 90 foizidan oshib ketsa. Joriy diskontlangan qiymat buxgalteriya hisobi toʻgʻrisidagi qonunchilik hujjatlariga muvofiq belgilanadi.",
+     "retrieval_score": 0.8263,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:1473352#band-6s2#p1",
+     "doc_id": "lex:1473352",
+     "doc_title": "Oʻzbekiston Respublikasi moliya vazirining buyrugʻi Oʻzbekiston Respublikasi buxgalteriya hisobining milliy standarti (6-sonli bhms) “ijara hisobi”ni tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/1473352",
+     "article": "6-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-09-24",
+     "text": "6. Moliyaviy ijara — mulkni (moliyaviy ijara obyektini) shartnomaga binoan oʻn ikki oydan ortiq muddatga egalik qilish va foydalanish huquqini berishda yuzaga keladigan ijaraviy munosabatlar. Bunda moliyaviy ijara shartnomasi quyidagi shartlardan biriga javob berishi kerak:\nmoliyaviy ijara shartnomasining muddati tugagach, moliyaviy ijara obyekti ijaraga oluvchining mulki boʻlib oʻtishi;\nmoliyaviy ijara shartnomasining muddati moliyaviy ijara obyekti xizmat muddatining 80 foizidan ortiq boʻlsa yoki moliyaviy ijara obyektining moliyaviy ijara shartnomasi tugaganidan keyingi qoldiq qiymati uning boshlangʻich qiymatining 20 foizidan kamrogʻini tashkil qilishi;\nmoliyaviy ijara shartnomasining muddati tugagach, ijaraga oluvchi moliyaviy ijara obyektini ushbu huquq sotilish kunidagi bozor qiymatidan ancha past narxda sotib olish huquqiga ega boʻlishi va bunda ijara muddatining boshida ushbu huquqning sotilishiga asoslangan ishonchning mavjud boʻlishi;\nmoliyaviy ijara shartnomasi amal qiladigan davr uchun ijara toʻlovlarining diskontlangan joriy qiymati, moliyaviy ijara obyektini ijaraga berish paytidagi joriy qiymatining 90 foizidan ortiq boʻlishi.",
+     "retrieval_score": 0.78,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-55080#preamble#p104",
+     "doc_id": "lex:-55080",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartishlar va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-55080",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-05-16",
+     "text": "XIX. Oʻzbekiston Respublikasining 1998-yil 28-avgustda qabul qilingan “Davlat yer kadastri toʻgʻrisida”gi Qonuni (Oʻzbekiston Respublikasi Oliy Majlisining Axborotnomasi, 1998-yil, № 9, 165-modda) 6-moddasining oltinchi xatboshisi chiqarib tashlansin.\nXXI. Oʻzbekiston Respublikasining 1999-yil 14-aprelda qabul qilingan “Lizing toʻgʻrisida”gi Qonuni (Oʻzbekiston Respublikasi Oliy Majlisining Axborotnomasi, 1999-yil, № 5, 108-modda):\n1) 2-moddasining birinchi qismi quyidagi tahrirda bayon etilsin:\n“Lizing (moliyaviy ijara) ijara munosabatlarining alohida turi boʻlib, unda bir taraf (lizing beruvchi) ikkinchi tarafning (lizing oluvchining) topshirigʻiga binoan uchinchi tarafdan (sotuvchidan) lizing shartnomasida shartlashilgan mol-mulkni (lizing obyektini) mulk qilib sotib oladi va uni shu shartnomada belgilangan shartlarda haq evaziga egalik qilish va foydalanish uchun lizing oluvchiga oʻn ikki oydan ortiq muddatga beradi. Bunda lizing shartnomasi quyidagi shartlardan biriga muvofiq boʻlishi kerak:\nlizing shartnomasining muddati tugagach, lizing obyekti lizing oluvchining mulki boʻlib oʻtsa;\nlizing shartnomasining muddati lizing obyekti xizmat muddatining sakson foizidan ortiq boʻlsa yoki lizing obyektining lizing shartnomasi tugaganidan keyingi qoldiq qiymati uning boshlangʻich qiymatining yigirma foizidan kam boʻlsa;",
+     "retrieval_score": 0.7826,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2010,
+    "retrieval_ms": 926,
+    "rerank_ms": 0,
+    "generation_ms": 1417,
+    "total_ms": 4354
+   },
+   "usage": {
+    "input_tokens": 11264,
+    "output_tokens": 587,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Moliyaviy lizing (leasing) shartnomasi boʻyicha lizing obyektining qoldiq qiymatiga qanday talab qoʻyiladi, qoldiq qiymat boshlangʻich qiymatning necha foizini tashkil etishi lozim?",
+    "search_queries": [
+     "Avval lizing shartnomasi boʻyicha obyektning qoldiq qiymati boshlangʻich qiymatining 20 foizidan kam boʻlsagina moliyaviy ijara hisoblanardi, hozir-chi — qoldiq qiymat qancha boʻlsa shartnoma talabga javob beradi?",
+     "Moliyaviy lizing (leasing) shartnomasi boʻyicha lizing obyektining qoldiq qiymatiga qanday talab qoʻyiladi, qoldiq qiymat boshlangʻich qiymatning necha foizini tashkil etishi lozim?",
+     "moliyaviy lizing shartnomasi qoldiq qiymat",
+     "lizing obyekti qoldiq qiymati talab",
+     "lizing shartnomasi boshlangʻich qiymat foiz"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi",
+     "Lizing toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 416,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q030",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida bu savolga aniq javob topilmadi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:6652964#preamble#p1",
+     "doc_id": "lex:6652964",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori futbol-taʼlim muassasalari tarmogʻini kengaytirish hamda xalqaro standartlarga mos keladigan futbol infratuzilmasini rivojlantirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/6652964",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-11-04",
+     "text": "Mamlakatimizda professional futbolchilarni shakllantirish tizimini sifat jihatidan yangi bosqichga olib chiqish, buning uchun futbol-taʼlim muassasalari sonini koʻpaytirish, xalqaro standartlarga mos keladigan futbol infratuzilmasini yanada rivojlantirish, futbol rivojlangan davlatlar bilan raqobat qila oladigan trener, hakam va boshqa mutaxassislarni tayyorlash maqsadida:",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1123,
+    "retrieval_ms": 91,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 1214
+   },
+   "usage": {
+    "input_tokens": 943,
+    "output_tokens": 41,
+    "models": {
+     "rewrite": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Mening telefonimga qaysi ilova eng koʻp mos keladi?",
+    "search_queries": [
+     "Mening telefonimga qaysi ilova eng koʻp mos keladi?"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 150,
+    "rerank_pool": 20,
+    "rerank": "llm-joint",
+    "speculative_answer_used": null,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

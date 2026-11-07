@@ -1,0 +1,33 @@
+{
+ "pipeline_version": "1.0.0",
+ "prompt_version": "p4",
+ "llm_provider": "deepseek",
+ "llm_model": "deepseek-flash",
+ "rewrite_model": "deepseek-flash",
+ "embedding_model": null,
+ "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+ "reranker": "deepseek-flash (llm-joint rerank)",
+ "index_version": "lex-idx-2026-11-06",
+ "lex_snapshot_date": "2026-11-03",
+ "index_docs": 36951,
+ "index_chunks": 1125643,
+ "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars",
+ "languages": [
+  "ru",
+  "uz-Cyrl",
+  "uz-Latn"
+ ],
+ "max_batch_items": 10,
+ "sync_timeout_s": 110.0,
+ "rate_limit_per_sec": 2.0,
+ "result_retention_days": 30,
+ "error_codes": [
+  "RETRIEVAL_FAILED",
+  "INDEX_UNAVAILABLE",
+  "LLM_TIMEOUT",
+  "LLM_ERROR",
+  "CONTEXT_TOO_LONG",
+  "INVALID_LANGUAGE",
+  "INTERNAL_ERROR"
+ ]
+}

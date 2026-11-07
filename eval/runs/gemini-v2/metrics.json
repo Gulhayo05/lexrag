@@ -1,0 +1,140 @@
+{
+ "metrics": {
+  "run_id": "gemini-v2",
+  "questions": 10,
+  "missing": [],
+  "hit5_doc": 1.0,
+  "hit5_article": 1.0,
+  "mrr": 1.0,
+  "context_precision": 0.675,
+  "citation_accuracy": 1.0,
+  "fabricated_citations": 0,
+  "outdated_citations": 0,
+  "no_answer_accuracy": 1.0,
+  "latency_p50_s": 0.59,
+  "latency_p95_s": 36.4,
+  "error_rate": 0.0,
+  "error_attribution": {
+   "generatsiya": 1
+  }
+ },
+ "targets": {
+  "hit5_doc": {
+   "value": 1.0,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "hit5_article": {
+   "value": 1.0,
+   "target": ">= 0.8",
+   "pass": true
+  },
+  "mrr": {
+   "value": 1.0,
+   "target": ">= 0.7",
+   "pass": true
+  },
+  "context_precision": {
+   "value": 0.675,
+   "target": ">= 0.6",
+   "pass": true
+  },
+  "citation_accuracy": {
+   "value": 1.0,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "fabricated_citations": {
+   "value": 0,
+   "target": "== 0",
+   "pass": true
+  },
+  "outdated_citations": {
+   "value": 0,
+   "target": "== 0",
+   "pass": true
+  },
+  "no_answer_accuracy": {
+   "value": 1.0,
+   "target": ">= 0.9",
+   "pass": true
+  },
+  "latency_p50_s": {
+   "value": 0.59,
+   "target": "<= 5.0",
+   "pass": true
+  },
+  "latency_p95_s": {
+   "value": 36.4,
+   "target": "<= 12.0",
+   "pass": false
+  },
+  "error_rate": {
+   "value": 0.0,
+   "target": "<= 0.02",
+   "pass": true
+  }
+ },
+ "per_question": [
+  {
+   "id": "q001",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q002",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q003",
+   "category": "faktik",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q004",
+   "category": "raqamlar",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q005",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  },
+  {
+   "id": "q006",
+   "category": "ozgargan",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q007",
+   "category": "rus_kirill",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q008",
+   "category": "noaniq",
+   "status": "no_answer",
+   "attribution": "generatsiya (modda topilgan, javob berilmadi)"
+  },
+  {
+   "id": "q009",
+   "category": "bir_nechta",
+   "status": "ok",
+   "attribution": null
+  },
+  {
+   "id": "q010",
+   "category": "javobsiz",
+   "status": "no_answer",
+   "attribution": null
+  }
+ ]
+}

@@ -31,8 +31,8 @@ class LLMError(Exception):
 # --------------------------------------------------------------------------- #
 class Rewrite(BaseModel):
     language: Literal["uz-Latn", "uz-Cyrl", "ru"]
-    question_uz: str = Field(description="The question translated / normalised into Uzbek (Latin script), legal register")
-    search_queries: list[str] = Field(description="2-3 short alternative Uzbek Latin search phrasings using lex.uz legal terminology")
+    question_uz: str = Field(description="The question translated / normalised into Uzbek (Latin script), legal register; empty string if the question is already formal Uzbek Latin")
+    search_queries: list[str] = Field(description="2-3 short (3-8 words) alternative Uzbek Latin search phrasings using lex.uz legal terminology")
     doc_hints: list[str] = Field(description="Names of the most likely acts, e.g. 'Mehnat kodeksi', 'Fuqarolik kodeksi', 'Soliq kodeksi'. Empty if unsure")
     article_hints: list[str] = Field(description="Article numbers explicitly mentioned or confidently known, e.g. '216-modda'. Usually empty")
     in_scope: bool = Field(description="False if the question is not about law / legal regulation of Uzbekistan at all")
@@ -46,7 +46,7 @@ class Relevance(BaseModel):
 class CitationOut(BaseModel):
     ref: int = Field(description="Marker number used in the answer text, e.g. 1 for [1]")
     ctx: int = Field(description="Context number Cn that supports the claim")
-    quote: str = Field(description="Verbatim excerpt copied exactly from that context (one sentence or clause)")
+    quote: str = Field(description="Verbatim excerpt copied exactly from that context (one clause, max ~200 characters)")
 
 
 class AnswerOut(BaseModel):
@@ -63,7 +63,7 @@ class AnswerOut(BaseModel):
 REWRITE_SYSTEM = """You are the query-understanding step of a retrieval system over the official legislation database of Uzbekistan (lex.uz). The index contains Uzbek-language (Latin script) texts of codes, laws, decrees and resolutions.
 
 Given a user question (Uzbek Latin, Uzbek Cyrillic or Russian, possibly colloquial), produce search inputs:
-- question_uz: faithful translation into formal Uzbek Latin (use the official letters oʻ, gʻ and ʼ).
+- question_uz: faithful translation into formal Uzbek Latin (use the official letters oʻ, gʻ and ʼ). If the question is already written in formal Uzbek Latin and needs no translation or expansion, return an empty string (do not copy it).
 - search_queries: 2-3 short Uzbek Latin phrasings with the exact legal terms the statute would use (e.g. "yillik asosiy taʼtil muddati", "daʼvo muddati umumiy muddat"). Expand colloquial words into legal terms.
 - doc_hints: the act(s) most likely to regulate this (e.g. "Mehnat kodeksi", "Fuqarolik kodeksi", "Jinoyat kodeksi", "Soliq kodeksi", "Oila kodeksi", "Konstitutsiya", or a specific law "Iste'molchilarning huquqlarini himoya qilish toʻgʻrisidagi qonun"). Leave empty when unsure.
 - article_hints: only article numbers mentioned in the question or that you know with certainty for the CURRENT edition; otherwise empty.
@@ -76,10 +76,10 @@ ANSWER_SYSTEM = """You answer legal questions strictly from provided excerpts of
 Input: a question, the answer language, and numbered contexts [C1]..[Cn]. Each context shows the act title, its type, its status (amalda = in force, kuchini_yoqotgan = no longer in force), its edition date and the article.
 
 Do the following:
-1. relevance: list ONLY the contexts that are relevant to the question (score >= 0.3), each with a score 0..1 (1 = contains the rule asked about). Omit unrelated contexts; they count as 0.
+1. relevance: list ONLY the contexts that are relevant to the question (score >= 0.3, at most 8 entries, most relevant first), each with a score 0..1 (1 = contains the rule asked about). Omit unrelated contexts; they count as 0.
 2. Decide no_answer. Set no_answer=true when the contexts do not contain the rule that answers THIS question, when the question is outside law (everyday advice, opinions, predictions, how-to questions), when its premise is fictional or impossible (a non-existent ministry, institution, place or situation), or when only repealed (kuchini_yoqotgan) acts contain it. A loosely related regulation is not an answer. Do not guess. Then answer with one short sentence in the answer language saying the provided legislation does not answer the question, and return no citations.
 3. Otherwise write a concise answer (1-4 sentences) in the answer language. Every factual claim ends with a marker like [1]. Copy numbers, terms, amounts, percentages and BHM (bazaviy hisoblash miqdori) multiples exactly as written in the context; never convert units. Prefer in-force acts and the most specific article. Mention the act and article in the text (e.g. "Mehnat kodeksining 216-moddasiga koʻra ...").
-4. citations: one entry per marker. ref = marker number, ctx = context number, quote = an exact, verbatim excerpt (a sentence or clause, max ~300 characters) copied character-for-character from that context that supports the claim.
+4. citations: one entry per marker. ref = marker number, ctx = context number, quote = an exact, verbatim excerpt (the shortest clause that supports the claim, max ~200 characters) copied character-for-character from that context.
 5. confidence: your probability (0..1) that the answer is correct and complete.
 
 Source priority: the constitution, codes and laws prevail over government resolutions and ministry regulations. A regulation that quotes or paraphrases an article of a code may be outdated (it may cite a repealed edition). If a code in the contexts states the rule directly, answer from the code. Never answer from text that restates a repealed act. If the question contains a premise from an old or repealed act, answer per the law in force and briefly say the rule has changed.

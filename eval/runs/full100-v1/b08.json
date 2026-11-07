@@ -1,0 +1,1547 @@
+{
+ "run_id": "full100-v1",
+ "batch_id": "full100-v1-b08",
+ "batch_index": 8,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p5",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:25:36+05:00",
+  "completed_at": "2026-11-06T18:25:46+05:00",
+  "total_ms": 9511
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q071",
+   "status": "ok",
+   "answer": "Suv kodeksining 121-moddasiga koʻra, xoʻjalik faoliyati yoki tabiiy jarayonlar natijasida insonlar sogʻligʻiga, hayvonot va oʻsimlik dunyosiga, atrof tabiiy muhitning holatiga hamda yuridik va jismoniy shaxslarning mol-mulkiga xavf soladigan oʻzgarishlar sodir boʻladigan suv obyektlari, ularning qismlari hamda ularning suv toʻplanadigan maydonlari favqulodda ekologik vaziyat yoxud ekologik ofat zonalari deb eʼlon qilinishi mumkin [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "121-modda",
+     "part": "1–4-qism",
+     "edition_date": "2025-07-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7655343#art-121#p1",
+     "quote": "Xoʻjalik faoliyati yoki tabiiy jarayonlar natijasida insonlar sogʻligʻiga, hayvonot va oʻsimlik dunyosiga, atrof tabiiy muhitning holatiga hamda yuridik va jismoniy shaxslarning mol-mulkiga xavf soladigan oʻzgarishlar sodir boʻladigan suv obyektlari, ularning qismlari hamda ularning suv toʻplanadigan maydonlari favqulodda ekologik vaziyat yoxud ekologik ofat zonalari deb eʼlon qilinishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7655343#art-121#p1",
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "121-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-30",
+     "text": "121-modda. Suv obyektlaridagi favqulodda ekologik vaziyat yoki ekologik ofat zonalari\nXoʻjalik faoliyati yoki tabiiy jarayonlar natijasida insonlar sogʻligʻiga, hayvonot va oʻsimlik dunyosiga, atrof tabiiy muhitning holatiga hamda yuridik va jismoniy shaxslarning mol-mulkiga xavf soladigan oʻzgarishlar sodir boʻladigan suv obyektlari, ularning qismlari hamda ularning suv toʻplanadigan maydonlari favqulodda ekologik vaziyat yoxud ekologik ofat zonalari deb eʼlon qilinishi mumkin.\nSuv obyektlaridagi favqulodda ekologik vaziyat zonalari deb tabiat muvozanatining buzilishi, tabiiy ekologik tizimlarning buzilishi bilan bogʻliq boʻlgan, tabiiy muhitdagi barqaror yoki qaytarilmaydigan oʻzgarishlar sodir boʻlgan yoki sodir boʻlayotgan hududlar uchastkalari eʼlon qilinadi.\nSuv obyektlaridagi favqulodda ekologik vaziyat yoki ekologik ofat zonalari ekologik ahvol yomonligining yuqoriroq darajasini aks ettiruvchi bitta yoki bir necha asosiy va qoʻshimcha koʻrsatkichlar boʻyicha belgilanadi.\nSuv obyektlaridagi favqulodda ekologik vaziyat yoki ekologik ofat zonalari deb eʼlon qilish toʻgʻrisidagi qarorlar qonunchilikda belgilangan tartibda qabul qilinadi.",
+     "retrieval_score": 0.8419,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-7655343#art-121#p5",
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "121-modda",
+     "part": "5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-30",
+     "text": "121-modda. Suv obyektlaridagi favqulodda ekologik vaziyat yoki ekologik ofat zonalari\nSuv obyektlaridagi favqulodda ekologik vaziyat va ekologik ofat zonalarida shu vaziyatni (ofatni) keltirib chiqargan ishlar toʻxtatib turiladi, atrof tabiiy muhitga zararli taʼsir etuvchi faoliyat (aholiga xizmat koʻrsatish bilan bogʻliq faoliyatdan tashqari) taqiqlanadi, uni tiklash va sogʻlomlashtirish choralari koʻriladi.",
+     "retrieval_score": 0.7048,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-12328#art-67#p1",
+     "doc_id": "lex:-12328",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni suv va suvdan foydalanish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-12328",
+     "article": "67-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "67-modda. Muhofaza etiladigan suv obyektlari\nUstuvor ekologik, ilmiy, madaniy, estetik, rekreatsiya va sanitariya-sogʻlomlashtirish ahamiyatiga molik suv obyektlari yoki ularning ayrim uchastkalari qonunchilikda belgilangan tartibda muhofaza etiladigan tabiiy hududlar deb eʼlon qilinadi va xoʻjalik maqsadida foydalanishdan chiqariladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-12328#art-17#p1",
+     "doc_id": "lex:-12328",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni suv va suvdan foydalanish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-12328",
+     "article": "17-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "17-modda. Suv obyektlarida, suv obyektlarining suvni muhofaza qilish zonalari, sohil boʻyi mintaqalarida va sanitariya muhofazasi zonalarida ishlarni bajarish tartibi\nSuv obyektlarida, suv obyektlarining suvni muhofaza qilish zonalari, sohil boʻyi mintaqalarida va sanitariya muhofazasi zonalarida, yer osti suvlari hosil boʻladigan hududlarda suvlarning va suv obyektlarining holatiga taʼsir etuvchi qurilish, taʼmirlash, tiklash, oʻzan tubini chuqurlashtirish va portlatish ishlari, foydali qazilmalarni kavlab olish va suv oʻsimliklarini olish, kabellar, quvurlar hamda boshqa kommunikatsiyalarni oʻtkazish, daraxtlarni kesish, burgʻulash, qishloq xoʻjaligi ishlari va oʻzga ishlar qonunchilikka muvofiq bajariladi.\nSuvlarning va suv obyektlarining holatiga taʼsir etuvchi ishlar ushbu Qonun talablariga muvofiq ravishda, ilmiy asoslangan norma va qoidalar asosida qishloq va suv xoʻjaligi, energetika, baliqchilik xoʻjaligi, oʻrmon xoʻjaligi, maishiy va kommunal xoʻjalik manfaatlari hisobga olingan holda oʻtkaziladi.",
+     "retrieval_score": 0.9364,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-12328#art-35#p10",
+     "doc_id": "lex:-12328",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni suv va suvdan foydalanish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-12328",
+     "article": "35-modda",
+     "part": "10–16-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-03-02",
+     "text": "35-modda. Suvdan foydalanuvchilarning majburiyatlari\nsuvni tejash va raqamli texnologiyalarni joriy etish choralarini koʻrishi;\nsuv resurslaridan oqilona foydalanishda suv isteʼmolchilariga koʻmaklashishi;\nsuvlarning bulgʻanishi, ifloslanishi va kamayib ketishining oldini olish hamda ularni bartaraf etish, suv obyektlariga suvlarning zararli taʼsirini bartaraf etish chora-tadbirlarini koʻrishi, shuningdek yer usti va yer osti suvlari toʻplanadigan maydonlarning ifloslanishiga yoʻl qoʻymasligi;\nsuv obyektlarining suvni muhofaza qilish zonalari, sohil boʻyi mintaqalari va sanitariya muhofazasi zonalarini saqlashning belgilangan rejimiga rioya qilishi;\nsuvlardan foydalanish va ularni muhofaza qilish ustidan davlat nazoratini amalga oshiruvchi organlarning vakillarini oʻz suv xoʻjaligi obyektlariga belgilangan tartibda kiritishi hamda ularga zarur axborotni taqdim etishi;\nsuvlarning va suv obyektlarining holatiga taʼsir etadigan avariyalar va boshqa tabiiy hamda texnogen xususiyatli favqulodda vaziyatlar yuzaga kelganligi toʻgʻrisida mahalliy davlat hokimiyati organlarini oʻz vaqtida xabardor qilishi va ularning oqibatlarini bartaraf etish boʻyicha ishlarni amalga oshirishda, shuningdek suv obyektlarida taʼmirlash-tiklash ishlarida qonunchilikda belgilangan tartibda ishtirok etishi;\nbaliqlarni, boshqa suv florasi va faunasini muhofaza qilish tadbirlarini amalga oshirishi shart.",
+     "retrieval_score": 0.9284,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1987,
+    "retrieval_ms": 2083,
+    "rerank_ms": 0,
+    "generation_ms": 3096,
+    "total_ms": 7167
+   },
+   "usage": {
+    "input_tokens": 12823,
+    "output_tokens": 624,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Suv obyektlarida qanday holat yuz berganda ularning ayrim qismlari va suv toʻplanadigan maydonlari ekologik ofat zonasi deb eʼlon qilinishi mumkin?",
+    "search_queries": [
+     "Suv obyektlarida qanday holat yuz berganda ularning ayrim qismlari va suv toʻplanadigan maydonlari ekologik ofat zonasi deb eʼlon qilinishi mumkin?",
+     "suv obyektlarining ayrim qismlari va suv toʻplanadigan maydonlari ekologik ofat zonasi deb eʼlon qilinishi",
+     "ekologik ofat zonasi suv obyekti eʼlon qilish shartlari",
+     "suv obyektlari ekologik ofat zonasi deb eʼlon qilinishi mumkin boʻlgan holat"
+    ],
+    "doc_hints": [
+     "Suv va suvdan foydalanish toʻgʻrisidagi qonun",
+     "Ekologik nazorat toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 509,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q072",
+   "status": "ok",
+   "answer": "Jinoyat-protsessual kodeksining 240-moddasi uchinchi qismiga koʻra, ishni sudga qadar yuritish bosqichida sud tomonidan qoʻllanilgan garov tarzidagi ehtiyot chorasi uni bundan buyon qoʻllash uchun asoslar mavjud boʻlmaganda, xuddi shuningdek ish yuritish tugatilgan taqdirda, mazkur ehtiyot chorasini qoʻllash toʻgʻrisida qaror chiqargan sud albatta xabardor etilgan holda prokuror tomonidan, shuningdek prokurorning roziligi bilan surishtiruvchi yoki tergovchi tomonidan bekor qilinishi yoki oʻzgartirilishi mumkin [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "240-modda",
+     "part": "1–3-qism",
+     "edition_date": "2018-04-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111460#art-240#p1",
+     "quote": "Ishni sudga qadar yuritish bosqichida sud tomonidan qoʻllanilgan garov tarzidagi ehtiyot chorasi uni bundan buyon qoʻllash uchun asoslar mavjud boʻlmaganda, xuddi shuningdek ish yuritish tugatilgan taqdirda, mazkur ehtiyot chorasini qoʻllash toʻgʻrisida qaror chiqargan sud albatta xabardor etilgan holda prokuror tomonidan, shuningdek prokurorning roziligi bilan surishtiruvchi yoki tergovchi tomonidan bekor qilinishi yoki oʻzgartirilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111460#art-240#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "240-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-04-19",
+     "text": "240-modda. Ehtiyot chorasini qoʻllash, bekor qilish, oʻzgartirish toʻgʻrisidagi qaror yoki ajrim\nEhtiyot chorasi surishtiruvchi, tergovchi, prokurorning qarori va sudning ajrimi bilan qoʻllanilishi, bekor qilinishi va oʻzgartirilishi mumkin.\nIshni sudga qadar yuritish bosqichida qoʻllanilgan qamoqqa olish yoki uy qamogʻi tarzidagi ehtiyot chorasi shaxsni bundan keyin qamoqda saqlash yoki uning uy qamogʻida boʻlishi uchun asoslar mavjud boʻlmaganda prokuror tomonidan, shuningdek prokurorning roziligi bilan surishtiruvchi yoki tergovchi tomonidan ehtiyot choralari toʻgʻrisida qaror chiqargan sudni albatta xabardor etgan holda bekor qilinishi yoki oʻzgartirilishi mumkin. Qamoqqa olish yoki uy qamogʻi tarzidagi ehtiyot chorasining bekor qilinishi yoki oʻzgartirilishi ushbu ehtiyot chorasini aynan oʻsha shaxsga nisbatan qoʻllash toʻgʻrisidagi iltimosnoma bilan sudga takroran murojaat etishga monelik qilmaydi.\nIshni sudga qadar yuritish bosqichida sud tomonidan qoʻllanilgan garov tarzidagi ehtiyot chorasi uni bundan buyon qoʻllash uchun asoslar mavjud boʻlmaganda, xuddi shuningdek ish yuritish tugatilgan taqdirda, mazkur ehtiyot chorasini qoʻllash toʻgʻrisida qaror chiqargan sud albatta xabardor etilgan holda prokuror tomonidan, shuningdek prokurorning roziligi bilan surishtiruvchi yoki tergovchi tomonidan bekor qilinishi yoki oʻzgartirilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3689258#preamble#p72",
+     "doc_id": "lex:3689258",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/3689258",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-10-31",
+     "text": "“Ishni sudga qadar yuritish bosqichida sud tomonidan qoʻllanilgan garov tarzidagi ehtiyot chorasi uni bundan buyon qoʻllash uchun asoslar mavjud boʻlmaganda, xuddi shuningdek ish yuritish tugatilgan taqdirda, mazkur ehtiyot chorasini qoʻllash toʻgʻrisida qaror chiqargan sud albatta xabardor etilgan holda prokuror tomonidan, shuningdek prokurorning roziligi bilan surishtiruvchi yoki tergovchi tomonidan bekor qilinishi yoki oʻzgartirilishi mumkin”;\nuchinchi va toʻrtinchi qismlari tegishincha toʻrtinchi va beshinchi qismlar deb hisoblansin;\n10) 241-moddaning ikkinchi qismi quyidagi tahrirda bayon etilsin:",
+     "retrieval_score": 0.448,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3689258#preamble#p65",
+     "doc_id": "lex:3689258",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/3689258",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-10-31",
+     "text": "“Alohida hollarda, ushlab turilgan gumon qilinuvchiga nisbatan sud tomonidan qamoqqa olish, uy qamogʻi yoki garov tarzidagi ehtiyot choralari qoʻllanilishi mumkin. Bunda gumon qilinuvchiga u ushlangan kundan eʼtiboran oʻn kun ichida ayblov eʼlon qilinishi kerak. Aks holda ehtiyot chorasi bekor qilinadi va shaxs qamoqdan yoki uy qamogʻidan ozod etiladi, garov esa garovga qoʻyuvchiga qaytariladi. Jinoyat ishi qoʻzgʻatilganidan keyin va ushlab turishning butun muddati mobaynida ishni yuritish oʻziga taalluqli boʻlgan surishtiruvchi va tergovchi jinoyatni sodir etish holatlarini aniqlash, ushlab turishning asosli ekanligini tekshirish uchun oʻz vakolatlari doirasida tergov harakatlari oʻtkazishi mumkin”;\n8) 239-modda:\nquyidagi mazmundagi ikkinchi qism bilan toʻldirilsin:\n“Alohida hollarda, ishni sudga qadar yuritish bosqichida ushlab turilgan gumon qilinuvchiga nisbatan sud tomonidan qamoqqa olish, uy qamogʻi yoki garov tarzidagi ehtiyot choralari qoʻllanilishi mumkin”;\nikkinchi qismi uchinchi qism deb hisoblansin;\n9) 240-modda:\nquyidagi mazmundagi uchinchi qism bilan toʻldirilsin:",
+     "retrieval_score": 0.4159,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111460#art-241#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "241-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-01-29",
+     "text": "241-modda. Ehtiyot chorasini qoʻllash toʻgʻrisidagi qaror ustidan shikoyat berish va protest bildirish\nEhtiyot chorasini qoʻllash toʻgʻrisidagi qaror ustidan tergovni nazorat qilayotgan, uni bekor qilishga yoki oʻzgartirishga haqli boʻlgan prokurorga shikoyat berilishi mumkin. Prokuror shikoyatni olgan paytdan eʼtiboran uch sutka ichida uni koʻrib chiqishi hamda shikoyat bergan shaxsni oʻz qaroridan xabardor etishi shart.\nSurishtiruv yoki dastlabki tergov bosqichida qamoqqa olish, uy qamogʻi, garov tarzidagi ehtiyot choralarini qoʻllash haqidagi yoki qamoqda saqlash, uy qamogʻi muddatini uzaytirish toʻgʻrisidagi yoxud uy qamogʻi boʻyicha qoʻshimcha taqiq (cheklov) belgilash haqidagi masala yuzasidan sudning ajrimi ustidan mazkur ajrim chiqarilgan kundan eʼtiboran yetmish ikki soat ichida apellyatsiya tartibida shikoyat berilishi, protest bildirilishi mumkin. Shikoyat, protest ajrim chiqargan sud orqali beriladi, ushbu sud ularni yigirma toʻrt soat ichida materiallar bilan birga apellyatsiya instansiyasi sudiga yuborishi shart. Apellyatsiya instansiyasi sudining sudyasi ushbu materiallarni shikoyat yoki protest bilan birga kelib tushgan paytdan eʼtiboran yetmish ikki soatdan kechiktirmay yakka tartibda koʻrib chiqishi kerak.\nShikoyat yoki protest berilishi ehtiyot chorasini qoʻllash toʻgʻrisidagi masala boʻyicha qaror ijrosini toʻxtatib qoʻymaydi.",
+     "retrieval_score": 0.9723,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:2456411#preamble#p64",
+     "doc_id": "lex:2456411",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/2456411",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-10-31",
+     "text": "“Ishni sudga qadar yuritish bosqichida qoʻllanilgan qamoqqa olish yoki uy qamogʻi tarzidagi ehtiyot chorasi shaxsni bundan keyin qamoqda saqlash yoki uning uy qamogʻida boʻlishi uchun asoslar mavjud boʻlmaganda prokuror tomonidan, shuningdek prokurorning roziligi bilan tergovchi tomonidan ehtiyot choralari toʻgʻrisida qaror chiqargan sudni albatta xabardor etgan holda bekor qilinishi yoki oʻzgartirilishi mumkin. Qamoqqa olish yoki uy qamogʻi tarzidagi ehtiyot chorasining bekor qilinishi yoki oʻzgartirilishi ushbu ehtiyot chorasini aynan oʻsha shaxsga nisbatan qoʻllash toʻgʻrisidagi iltimosnoma bilan sudga takroran murojaat etishga monelik qilmaydi”;\ntoʻrtinchi qismi quyidagi tahrirda bayon etilsin:\n“Qamoqqa olish yoki uy qamogʻi tarzidagi ehtiyot chorasi bekor qilingan yoxud oʻzgartirilgan taqdirda, qamoqda yoki uy qamogʻida boʻlgan shaxs darhol ozod qilinishi kerak”;\n9) 241-modda ikkinchi qismining birinchi jumlasi quyidagi tahrirda bayon etilsin:\n“Dastlabki tergov bosqichida qamoqqa olish, uy qamogʻi tarzidagi ehtiyot chorasini qoʻllash haqidagi yoki qamoqda saqlash, uy qamogʻi muddatini uzaytirish toʻgʻrisidagi masala boʻyicha sudning ajrimi ustidan mazkur ajrim chiqarilgan kundan eʼtiboran yetmish ikki soat ichida apellyatsiya tartibida shikoyat berilishi, protest bildirilishi mumkin”;\n10) quyidagi mazmundagi 2421-modda bilan toʻldirilsin:\n“2421-modda. Uy qamogʻi",
+     "retrieval_score": 0.4109,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2379,
+    "retrieval_ms": 2572,
+    "rerank_ms": 0,
+    "generation_ms": 2836,
+    "total_ms": 7787
+   },
+   "usage": {
+    "input_tokens": 14151,
+    "output_tokens": 653,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Tergov bosqichida sud qoʻllagan garov tarzidagi ehtiyot chorasi qanday hollarda bekor qilinishi yoki oʻzgartirilishi mumkin va bunda kim xabardor qilinadi?",
+    "search_queries": [
+     "Tergov bosqichida sud qoʻllagan garov tarzidagi ehtiyot chorasi qanday hollarda bekor qilinishi yoki oʻzgartirilishi mumkin va bunda kim xabardor qilinadi?",
+     "garov tarzidagi ehtiyot chorasini bekor qilish yoki oʻzgartirish",
+     "ehtiyot chorasini oʻzgartirish toʻgʻrisidagi masala sud tomonidan koʻrib chiqilishi",
+     "garov ehtiyot chorasi bekor qilinganda prokuror va gumondor xabardor qilinishi"
+    ],
+    "doc_hints": [
+     "Jinoyat-protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 543,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q073",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasi Prezidenti chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalar rahbarlarini tayinlash uchun nomzodlarni Oliy Majlisning Senatiga taqdim etadi [1]. Bu Konstitutsiyaning 109-moddasida ham mustahkamlangan [2], Senat esa bu masalani oʻzining mutlaq vakolati sifatida koʻrib chiqadi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6804077",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yangi tahrirdagi Oʻzbekiston Respublikasi konstitutsiyasi qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga Oʻzbekiston Respublikasi Oliy majlisining faoliyatini takomillashtirishga qaratilgan oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6804077",
+     "article": "22-modda",
+     "part": "1–3-qism",
+     "edition_date": "2024-02-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6804077#art-22#p1",
+     "quote": "Oʻzbekiston Respublikasi Markaziy banki boshqaruvining raisi, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalari rahbarlarini lavozimlarga tayinlash uchun nomzodlarni Oʻzbekiston Respublikasining Prezidenti Senatga taqdim etadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "109-modda",
+     "part": "1–7-qism",
+     "edition_date": "2026-07-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:6445145#art-109#p1",
+     "quote": "5) Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalarining rahbarlarini tayinlash uchun nomzodlarni Oʻzbekiston Respublikasi Oliy Majlisining Senatiga taqdim etadi;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "95-modda",
+     "part": "1–7-qism",
+     "edition_date": "2023-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:6445145#art-95#p1",
+     "quote": "4) Oʻzbekiston Respublikasi Prezidentining taqdimiga binoan Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalari rahbarlarini tayinlash va ularni lavozimidan ozod etish;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6804077#art-22#p1",
+     "doc_id": "lex:-6804077",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yangi tahrirdagi Oʻzbekiston Respublikasi konstitutsiyasi qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga Oʻzbekiston Respublikasi Oliy majlisining faoliyatini takomillashtirishga qaratilgan oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6804077",
+     "article": "22-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-19",
+     "text": "22-modda. Oʻzbekiston Respublikasi Markaziy banki boshqaruvining raisini, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalari rahbarlarini tayinlash va ularni lavozimidan ozod etish\nOʻzbekiston Respublikasi Markaziy banki boshqaruvining raisi, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalari rahbarlarini lavozimlarga tayinlash uchun nomzodlarni Oʻzbekiston Respublikasining Prezidenti Senatga taqdim etadi.\nOʻzbekiston Respublikasi Markaziy banki boshqaruvining raisini, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalarining rahbarlarini tayinlash hamda ularni lavozimidan ozod etish toʻgʻrisidagi masalani Senat oʻzining navbatdagi majlisida koʻrib chiqadi. Bu masalalar yuzasidan qarorlar Senat aʼzolari umumiy sonining koʻpchilik ovozi bilan qabul qilinadi.\nSenatning Oʻzbekiston Respublikasi Markaziy banki boshqaruvining raisini, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalarining rahbarlarini tayinlash yoki ularni lavozimidan ozod etish toʻgʻrisidagi qarorlari mazkur qarorlar qabul qilingan kundan eʼtiboran uch kun ichida Oʻzbekiston Respublikasi Prezidentiga yuboriladi.",
+     "retrieval_score": 0.987,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:6445145#art-109#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "109-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-25",
+     "text": "109-modda.\nOʻzbekiston Respublikasining Prezidenti:\n1) fuqarolarning huquqlari va erkinliklariga, Oʻzbekiston Respublikasining Konstitutsiyasi va qonunlariga rioya etilishining, Oʻzbekiston Respublikasi suvereniteti, xavfsizligi va hududiy yaxlitligining kafilidir, milliy-davlat tuzilishi masalalariga doir qarorlarni amalga oshirish yuzasidan zarur chora-tadbirlar koʻradi;\n2) mamlakat ichkarisida va xalqaro munosabatlarda Oʻzbekiston Respublikasi nomidan ish koʻradi;\n3) muzokaralar olib boradi hamda Oʻzbekiston Respublikasining shartnoma va bitimlarini imzolaydi, respublika tomonidan tuzilgan shartnomalarga, bitimlarga va uning qabul qilingan majburiyatlariga rioya etilishini taʼminlaydi;\n4) oʻz huzurida akkreditatsiyadan oʻtgan diplomatik hamda boshqa vakillarning ishonch va chaqiruv yorliqlarini qabul qiladi;\n5) Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalarining rahbarlarini tayinlash uchun nomzodlarni Oʻzbekiston Respublikasi Oliy Majlisining Senatiga taqdim etadi;\n6) Oʻzbekiston Respublikasi xalqiga hamda Oliy Majlisiga mamlakat ichki va tashqi siyosatini amalga oshirishning eng muhim masalalari yuzasidan murojaat qilish huquqiga ega;",
+     "retrieval_score": 0.8631,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:6445145#art-95#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "95-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-04-30",
+     "text": "95-modda.\nOʻzbekiston Respublikasi Oliy Majlisining Senati mutlaq vakolatlari quyidagilardan iborat:\n1) Oʻzbekiston Respublikasi Prezidentining taqdimiga binoan Oʻzbekiston Respublikasi Konstitutsiyaviy sudini, Oliy sudini, Sudyalar oliy kengashini, respublika korrupsiyaga qarshi kurashish organining rahbarini va respublika monopoliyaga qarshi organining rahbarini saylash;\n2) Oʻzbekiston Respublikasi Prezidentining taqdimiga binoan Oʻzbekiston Respublikasi Bosh prokurori va Oʻzbekiston Respublikasi Hisob palatasi raisi lavozimlariga nomzodlarni koʻrib chiqish hamda maʼqullash;\n3) Oʻzbekiston Respublikasi Prezidenti tomonidan taklif etilgan Oʻzbekiston Respublikasi Davlat xavfsizlik xizmati raisi lavozimiga nomzod yuzasidan maslahatlashuvlar oʻtkazish;\n4) Oʻzbekiston Respublikasi Prezidentining taqdimiga binoan Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalari rahbarlarini tayinlash va ularni lavozimidan ozod etish;\n5) Oʻzbekiston Respublikasi Prezidentining taqdimiga binoan Oʻzbekiston Respublikasi Markaziy banki boshqaruvining raisini tayinlash va uni lavozimidan ozod etish;\n6) Oʻzbekiston Respublikasi Prezidentining vazirliklarni va boshqa respublika ijro etuvchi hokimiyat organlarini tuzish hamda tugatish toʻgʻrisidagi farmonlarini tasdiqlash;",
+     "retrieval_score": 0.9371,
+     "rerank_score": 0.85,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6804077#art-22#p4",
+     "doc_id": "lex:-6804077",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni yangi tahrirdagi Oʻzbekiston Respublikasi konstitutsiyasi qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga Oʻzbekiston Respublikasi Oliy majlisining faoliyatini takomillashtirishga qaratilgan oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6804077",
+     "article": "22-modda",
+     "part": "4–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-19",
+     "text": "22-modda. Oʻzbekiston Respublikasi Markaziy banki boshqaruvining raisini, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalari rahbarlarini tayinlash va ularni lavozimidan ozod etish\nAgar Oʻzbekiston Respublikasi Markaziy banki boshqaruvining raisi, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalarining rahbarlarini lavozimlarga tayinlash uchun taqdim etilgan nomzodlar ovoz berish paytida Senat aʼzolari ovozlarining zarur sonini ololmasalar, Oʻzbekiston Respublikasi Prezidenti Senat koʻrib chiqishi uchun shu nomzodlarni qaytadan taqdim etishi mumkin. Agar ular qayta rad etilsa, Senat koʻrib chiqishi uchun Oʻzbekiston Respublikasi Prezidenti tomonidan boshqa nomzodlar taqdim etiladi”;\n11) VI boʻlimning nomi quyidagi tahrirda bayon etilsin:\n“VI. OʻZBEKISTON RESPUBLIKASI PREZIDENTI TOMONIDAN KIRITILGAN AYRIM MASALALARNI KOʻRIB CHIQISH”;\n12) 23-modda quyidagi tahrirda bayon etilsin:\n“23-modda. Oʻzbekiston Respublikasi Prezidentining vazirliklarni va boshqa respublika ijro etuvchi hokimiyat organlarini tuzish hamda tugatish toʻgʻrisidagi farmonlarini tasdiqlash",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:60232#art-22#p4",
+     "doc_id": "lex:60232",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Oliy majlisi senatining reglamenti toʻgʻrisida i. umumiy qoidalar",
+     "url": "https://lex.uz/docs/60232",
+     "article": "22-modda",
+     "part": "4–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-19",
+     "text": "22-modda. Oʻzbekiston Respublikasi Markaziy banki boshqaruvining raisini, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalari rahbarlarini tayinlash va ularni lavozimidan ozod etish\nAgar Oʻzbekiston Respublikasi Markaziy banki boshqaruvining raisi, Oʻzbekiston Respublikasining chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik hamda boshqa vakolatxonalarining rahbarlarini lavozimlarga tayinlash uchun taqdim etilgan nomzodlar ovoz berish paytida Senat aʼzolari ovozlarining zarur sonini ololmasalar, Oʻzbekiston Respublikasi Prezidenti Senat koʻrib chiqishi uchun shu nomzodlarni qaytadan taqdim etishi mumkin. Agar ular qayta rad etilsa, Senat koʻrib chiqishi uchun Oʻzbekiston Respublikasi Prezidenti tomonidan boshqa nomzodlar taqdim etiladi.\nVI. OʻZBEKISTON RESPUBLIKASI PREZIDENTI TOMONIDAN KIRITILGAN AYRIM MASALALARNI KOʻRIB CHIQISH",
+     "retrieval_score": 0.672,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1908,
+    "retrieval_ms": 355,
+    "rerank_ms": 0,
+    "generation_ms": 3116,
+    "total_ms": 5381
+   },
+   "usage": {
+    "input_tokens": 13195,
+    "output_tokens": 722,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik vakolatxonalar rahbarlarini tayinlash uchun nomzodlarni Prezident qaysi organga taqdim etadi?",
+    "search_queries": [
+     "Chet davlatlardagi va xalqaro tashkilotlar huzuridagi diplomatik vakolatxonalar rahbarlarini tayinlash uchun nomzodlarni Prezident qaysi organga taqdim etadi?",
+     "diplomatik vakolatxonalar rahbarlarini tayinlash nomzodlarini taqdim etish",
+     "Chet davlatlardagi diplomatik vakolatxonalar rahbarlarini tayinlash Oliy Majlis Senati",
+     "elchi tayinlash nomzodini Senat tasdiqlash"
+    ],
+    "doc_hints": [
+     "Konstitutsiya",
+     "Tashqi siyosiy faoliyat toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 561,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q074",
+   "status": "ok",
+   "answer": "Fuqarolik kodeksining 361-moddasiga koʻra, dastlabki shartnomada taraflar qancha muddatda asosiy shartnomani tuzish majburiyatini olishi koʻrsatiladi; agar dastlabki shartnomada bunday muddat belgilab qoʻyilmasa, asosiy shartnoma dastlabki shartnoma tuzilgan paytdan boshlab bir yil ichida tuzilishi shart [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "361-modda",
+     "part": "1–6-qism",
+     "edition_date": "1995-12-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111189#art-361#p1",
+     "quote": "Dastlabki shartnomada taraflar qancha muddatda asosiy shartnomani tuzish majburiyatini olishi koʻrsatiladi. Agar dastlabki shartnomada bunday muddat belgilab qoʻyilgan boʻlmasa, asosiy shartnoma dastlabki shartnoma tuzilgan paytdan boshlab bir yil ichida tuzilishi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111189#art-361#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "361-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "1995-12-21",
+     "text": "361-modda. Dastlabki shartnoma\nDastlabki shartnoma boʻyicha taraflar kelgusida mol-mulk berish, ishlar bajarish yoki xizmatlar koʻrsatish haqida dastlabki shartnomada nazarda tutilgan shartlar asosida shartnoma tuzish (asosiy shartnoma) majburiyatini oladilar.\nDastlabki shartnoma asosiy shartnoma uchun belgilangan shaklda, bordi-yu, asosiy shartnomaning shakli aniqlanmagan boʻlsa, yozma shaklda tuziladi. Dastlabki shartnomaning shakli toʻgʻrisidagi qoidalarga rioya qilmaslik uning haqiqiy sanalmasligiga sabab boʻladi.\nDastlabki shartnomada asosiy shartnomaning narsasini, shuningdek boshqa muhim shartlarini belgilab qoʻyish imkonini beradigan shartlar boʻlishi kerak.\nDastlabki shartnomada taraflar qancha muddatda asosiy shartnomani tuzish majburiyatini olishi koʻrsatiladi. Agar dastlabki shartnomada bunday muddat belgilab qoʻyilgan boʻlmasa, asosiy shartnoma dastlabki shartnoma tuzilgan paytdan boshlab bir yil ichida tuzilishi shart.\nDastlabki shartnomani tuzgan taraf asosiy shartnomani tuzishdan bosh tortgan taqdirda ushbu Kodeks 377-moddasining oltinchi va yettinchi qismlarida nazarda tutilgan qoidalar qoʻllaniladi.\nAgar taraflar asosiy shartnomani tuzishlari lozim boʻlgan muddatning oxirigacha u tuzilmasa yoki taraflarning birontasi ham ikkinchi tarafga ana shunday shartnoma tuzish haqida taklif yubormasa, dastlabki shartnomada nazarda tutilgan majburiyatlar bekor boʻladi.",
+     "retrieval_score": 0.9623,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111189#art-373#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "373-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "373-modda. Aksept muddati koʻrsatilmagan oferta asosida shartnoma tuzish\nYozma ofertada aksept muddati koʻrsatilmagan aksept oferta yoʻllagan shaxs tomonidan qonunchilikda belgilab qoʻyilgan muddatlarda, agar bunday muddat belgilab qoʻyilgan boʻlmasa — buning uchun normal zarur boʻlgan vaqt mobaynida olinsa, shartnoma tuzilgan hisoblanadi.\nOferta aksept uchun muddat koʻrsatmasdan ogʻzaki tarzda qilinganida boshqa taraf uni akseptlaganini darhol aytgan boʻlsa, shartnoma tuzilgan hisoblanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111189#art-364#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "364-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "364-modda. Shartnoma tuzish toʻgʻrisidagi asosiy qoidalar\nAgar taraflar oʻrtasida shartnomaning barcha muhim shartlari yuzasidan shunday hollarda talab qilinadigan shaklda kelishuvga erishilgan boʻlsa, shartnoma tuzilgan hisoblanadi.\nShartnomaning narsasi toʻgʻrisidagi shartlar, qonunchilikda bunday turdagi shartnomalar uchun muhim yoki zarur deb hisoblangan shartlar, shuningdek taraflardan birining arizasiga koʻra kelishib olinishi zarur boʻlgan hamma shartlar muhim shartlar hisoblanadi.\nShartnoma taraflardan birining oferta (shartnoma tuzish haqida taklif) yoʻllashi va ikkinchi taraf uni akseptlashi (taklifni qabul qilishi) yoʻli bilan tuziladi.",
+     "retrieval_score": 0.8996,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-180552#art-469#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "469-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "469-modda. Energiya taʼminoti shartnomasini tuzish va muddatini uzaytirish\nEnergiya taʼminoti shartnomasi energiya bilan taʼminlovchi tashkilot tarmoqlariga qonunchilikda belgilangan tartibda ulangan energiya qurilmasi, shuningdek energiya isteʼmolini hisobga olish uskunalari va asboblari mavjud boʻlgan abonent bilan tuziladi.\nEnergiya taʼminoti shartnomasiga muvofiq energiyadan turmushda foydalanadigan fuqaro abonent boʻlgan taqdirda, abonent tarmoqqa belgilangan tartibda amalda birinchi marta ulangan paytdan boshlab u bilan shartnoma tuzilgan hisoblanadi.\nEnergiya taʼminoti shartnomasining muddati tugagach, taraflardan biri uni bekor qilish yoki oʻzgartirish haqida ariza bermasa, u shartnomada nazarda tutilgan muddatga va shartlarda uzaytirilgan hisoblanadi. Shartnoma yangi muddatga uzaytirilganida uning shartlari taraflar kelishuviga binoan oʻzgartirilishi mumkin.\nAgar taraflardan biri shartnomaning amal qilish muddati tugashidan oldin yangi shartnoma tuzish haqida taklif kiritsa, taraflarning oʻzaro munosabatlari yangi shartnoma tuzilgunga qadar avval tuzilgan shartnoma bilan tartibga solib turiladi.",
+     "retrieval_score": 0.964,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-180552#art-846#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "846-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "846-modda. Komitentning muddati koʻrsatilmay tuzilgan vositachilik shartnomasini bajarishdan bosh tortishi\nKomitent muddati koʻrsatilmay tuzilgan vositachilik shartnomasini bajarishdan istagan vaqtda bosh tortishga haqli boʻlib, bu haqda vositachini, agar shartnomada uzoqroq muddat nazarda tutilgan boʻlmasa, kamida oʻttiz kun oldin xabardor qiladi.\nBunday holda komitent vositachilik shartnomasi bekor qilinganga qadar tuzgan bitimlari uchun vositachiga haq toʻlashi, shuningdek vositachi shartnoma bekor boʻlguncha qilgan xarajatlarni unga toʻlashi shart.\nKomitent vositachilik shartnomasini bajarishdan bosh tortgan taqdirda ushbu Kodeks 844-moddasining uchinchi qismida nazarda tutilgan majburiyatlarni bajarishi shart.",
+     "retrieval_score": 0.9511,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1973,
+    "retrieval_ms": 2052,
+    "rerank_ms": 0,
+    "generation_ms": 1798,
+    "total_ms": 5824
+   },
+   "usage": {
+    "input_tokens": 11651,
+    "output_tokens": 482,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar oldindan tuzilgan kelishuvda asosiy shartnomani imzolash muddati aniq koʻrsatilmagan boʻlsa, asosiy shartnoma qanday muddat ichida tuzilishi talab qilinadi?",
+    "search_queries": [
+     "Agar oldindan tuzilgan kelishuvda asosiy shartnomani qachon imzolash kerakligi aniq koʻrsatilmagan boʻlsa, uni qancha vaqt ichida tuzish talab qilinadi?",
+     "Agar oldindan tuzilgan kelishuvda asosiy shartnomani imzolash muddati aniq koʻrsatilmagan boʻlsa, asosiy shartnoma qanday muddat ichida tuzilishi talab qilinadi?",
+     "oldindan tuzilgan kelishuv asosiy shartnoma tuzish muddati",
+     "asosiy shartnomani tuzish muddati kelishuvda koʻrsatilmagan",
+     "oldindan tuzilgan shartnoma bir yil muddat"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 675,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q075",
+   "status": "ok",
+   "answer": "Tovar ishlab chiqaruvchilar va tadbirkorlar palatalari toʻgʻrisidagi qonunning 9-moddasiga koʻra, yuridik shaxsga aylanmagan holda yakka tartibdagi tadbirkorlik faoliyati bilan shugʻullanayotgan shaxslar uchun kirish va aʼzolik badallari yuridik shaxslar uchun palata ustavida belgilangan badal miqdorining koʻpi bilan ellik foizigacha belgilanishi mumkin [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.8,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-34604",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tovar ishlab chiqaruvchilar va tadbirkorlar palatalari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-34604",
+     "article": "9-modda",
+     "part": "1–5-qism",
+     "edition_date": "1997-04-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-34604#art-9#p1",
+     "quote": "Yuridik shaxsga aylanmagan holda yakka tartibdagi tadbirkorlik faoliyati bilan shugʻullanayotgan shaxslar uchun kirish va aʼzolik badallari yuridik shaxslar uchun palata ustavida belgilangan badal miqdorining koʻpi bilan ellik foizigacha belgilanishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-34604#art-9#p1",
+     "doc_id": "lex:-34604",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tovar ishlab chiqaruvchilar va tadbirkorlar palatalari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-34604",
+     "article": "9-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "1997-04-24",
+     "text": "9-modda. Palataga aʼzolik\nPalataga aʼzolik xoʻjalik yurituvchi subyekt va palata oʻrtasida shartnoma tuzish yoʻli bilan rasmiylashtiriladi.\nPalataga aʼzolik yakka tartibda va (yoki) birlashgan (jamoa) tarzda boʻlishi mumkin.\nPalata aʼzolarini hisobga olish xoʻjalik yurituvchi subyekt joylashgan manzil boʻyicha yuritiladi.\nPalataning aʼzolari kirish va aʼzolik badallarini palata ustavida belgilanadigan tartibda va miqdorda toʻlaydilar.\nYuridik shaxsga aylanmagan holda yakka tartibdagi tadbirkorlik faoliyati bilan shugʻullanayotgan shaxslar uchun kirish va aʼzolik badallari yuridik shaxslar uchun palata ustavida belgilangan badal miqdorining koʻpi bilan ellik foizigacha belgilanishi mumkin.",
+     "retrieval_score": 0.6501,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-415141#art-16#p1",
+     "doc_id": "lex:-415141",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi savdo-sanoat palatasi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-415141",
+     "article": "16-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2004-12-03",
+     "text": "16-modda. Palata aʼzolarining kirish va aʼzolik badallari\nPalata aʼzolari Palata ustavida belgilanadigan tartibda hamda miqdorlarda kirish va aʼzolik badallari toʻlaydi.\nIV. Yakunlovchi qoidalar",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3815461#art-32#p1",
+     "doc_id": "lex:3815461",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “Oʻzbekiston Respublikasi savdo-sanoat palatasi toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/3815461",
+     "article": "32-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-07-10",
+     "text": "32-modda. Palata aʼzolarining kirish va aʼzolik badallari\nPalata aʼzolari Palata ustavida belgilanadigan tartibda hamda miqdorlarda kirish va aʼzolik badallari toʻlaydi.",
+     "retrieval_score": 0.8467,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-415141#art-15#p1",
+     "doc_id": "lex:-415141",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi savdo-sanoat palatasi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-415141",
+     "article": "15-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2004-12-03",
+     "text": "15-modda. Palataning mol-mulkini shakllantirish manbalari\nPalataning mol-mulkini shakllantirish manbalari quyidagilardan iborat:\nPalata aʼzolarining kirish va aʼzolik badallari;\nPalata tadbirkorlik faoliyatidan oladigan va faqat oʻz ustavida belgilangan vazifalarini bajarish uchun foydalanadigan daromadlar (foyda);\nPalata tomonidan tashkil etilgan tashkilotlardan ajratmalar;\ngrantlar va homiylardan keladigan mablagʻlar;\nqonun hujjatlarida taqiqlanmagan boshqa tushumlar.",
+     "retrieval_score": 0.9022,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-415141#art-9#p1",
+     "doc_id": "lex:-415141",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi savdo-sanoat palatasi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-415141",
+     "article": "9-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2004-12-03",
+     "text": "9-modda. Palataga aʼzolik\nOʻzbekiston Respublikasining tadbirkorlik faoliyati subyektlari, ularning birlashmalari, shuningdek tadbirkorlik faoliyatini qoʻllab-quvvatlash uchun tuzilgan boshqa tashkilotlar Palata aʼzosi boʻlishi mumkin.\nPalata aʼzolari teng huquq va majburiyatlarga ega.\nPalataga aʼzolik tadbirkorlik faoliyati subyekti yoki tadbirkorlik faoliyati subyektlarining birlashmasi yoxud tadbirkorlik faoliyatini qoʻllab-quvvatlash uchun tuzilgan boshqa tashkilot bilan Palata oʻrtasida shartnoma tuzish yoʻli bilan rasmiylashtiriladi.",
+     "retrieval_score": 0.7922,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2115,
+    "retrieval_ms": 2707,
+    "rerank_ms": 0,
+    "generation_ms": 2622,
+    "total_ms": 7446
+   },
+   "usage": {
+    "input_tokens": 10230,
+    "output_tokens": 570,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Yuridik shaxs maqomiga ega boʻlmasdan yakka tartibda tadbirkorlik faoliyati bilan shugʻullanuvchi jismoniy shaxs savdo-sanoat palatasiga kirish va aʼzolik badallarini yuridik shaxslarga nisbatan eng koʻpi bilan qancha miqdorda toʻlashi mumkin?",
+    "search_queries": [
+     "Yuridik shaxs maqomiga ega boʻlmasdan yakka tartibda tadbirkorlik qilayotgan odam palataga kirish va aʼzolik badallarini yuridik shaxslarga nisbatan eng koʻpi bilan qancha miqdorda toʻlashi mumkin?",
+     "Yuridik shaxs maqomiga ega boʻlmasdan yakka tartibda tadbirkorlik faoliyati bilan shugʻullanuvchi jismoniy shaxs savdo-sanoat palatasiga kirish va aʼzolik badallarini yuridik shaxslarga nisbatan eng koʻpi bilan qancha miqdorda toʻlashi mumkin?",
+     "savdo-sanoat palatasi aʼzolik badali yakka tartibdagi tadbirkor",
+     "palataga kirish badali va aʼzolik badali miqdori yuridik shaxslarga nisbatan",
+     "yakka tartibdagi tadbirkor palata aʼzolik badali eng koʻp miqdori"
+    ],
+    "doc_hints": [
+     "Oʻzbekiston Respublikasi Savdo-sanoat palatasi toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 546,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q076",
+   "status": "ok",
+   "answer": "Avtobus oynasini sindirish Maʼmuriy javobgarlik toʻgʻrisidagi kodeksning 121-moddasi ikkinchi qismiga koʻra bazaviy hisoblash miqdorining besh baravaridan oʻn baravarigacha miqdorda jarima solishga sabab boʻladi [1]. Chorva mollarning xoʻjalik ekinzorlarini payhon qilishi esa oʻsha kodeksning 104-moddasi birinchi qismiga koʻra fuqarolarga bazaviy hisoblash miqdorining bir baravaridan uch baravarigacha jarima solishga sabab boʻladi [2]; agar bu huquqbuzarlik maʼmuriy jazo qoʻllanilganidan keyin bir yil davomida takror sodir etilsa, fuqarolarga bazaviy hisoblash miqdorining besh baravaridan yetti baravarigacha miqdorda jarima solinadi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "121-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-121#p1",
+     "quote": "Avtobuslarning, taksilarning, marshrut taksilarining, shahar elektr transportining va metropoliten vagonlarining oynalari va ichki jihozlariga shikast yetkazish — bazaviy hisoblash miqdorining besh baravaridan oʻn baravarigacha miqdorda jarima solishga sabab boʻladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "104-modda",
+     "part": "1–6-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-104#p1",
+     "quote": "Chorva mollar yoki parrandalarning xoʻjalik ekinzorlarini payhon qilishi, qishloq xoʻjalik ekinlarining dalada toʻplab qoʻyilgan hosiliga zarar yetkazishi yoki uni yoʻq qilib yuborishi, koʻchatlarga shikast yetkazishi — fuqarolarga bazaviy hisoblash miqdorining bir baravaridan uch baravarigacha, mansabdor shaxslarga esa — uch baravaridan besh baravarigacha miqdorda jarima solishga sabab boʻladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "104-modda",
+     "part": "1–6-qism",
+     "edition_date": "2026-04-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-104#p1",
+     "quote": "Ushbu moddaning birinchi yoki ikkinchi qismida nazarda tutilgan huquqbuzarliklar maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, — fuqarolarga bazaviy hisoblash miqdorining besh baravaridan yetti baravarigacha, mansabdor shaxslarga esa — besh baravaridan oʻn baravarigacha miqdorda jarima solishga sabab boʻladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-97664#art-104#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "104-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "104-modda. Ekinzorlarni payhon qilish, qishloq xoʻjalik ekinlarining dalada toʻplab qoʻyilgan hosiliga zarar yetkazish yoki uni yoʻq qilib yuborish, koʻchatlarga shikast yetkazish\nChorva mollar yoki parrandalarning xoʻjalik ekinzorlarini payhon qilishi, qishloq xoʻjalik ekinlarining dalada toʻplab qoʻyilgan hosiliga zarar yetkazishi yoki uni yoʻq qilib yuborishi, koʻchatlarga shikast yetkazishi —\nfuqarolarga bazaviy hisoblash miqdorining bir baravaridan uch baravarigacha, mansabdor shaxslarga esa — uch baravaridan besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nEkinzorlarni yoki koʻchatzorlarni hamma turdagi harakatlanuvchi texnika vositalarida bosib oʻtish —\nbazaviy hisoblash miqdorining uch baravaridan besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nUshbu moddaning birinchi yoki ikkinchi qismida nazarda tutilgan huquqbuzarliklar maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, —\nfuqarolarga bazaviy hisoblash miqdorining besh baravaridan yetti baravarigacha, mansabdor shaxslarga esa — besh baravaridan oʻn baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-97664#art-121#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "121-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "121-modda. Transport vositalarining ichki jihozlariga shikast yetkazish\nLokomotivlar, vagonlar, daryo va havo kemalari, xuddi shuningdek hamma turdagi maxsus transportlarning oynalari va ichki jihozlariga shikast yetkazish —\nbazaviy hisoblash miqdorining oʻn baravaridan oʻn besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nAvtobuslarning, taksilarning, marshrut taksilarining, shahar elektr transportining va metropoliten vagonlarining oynalari va ichki jihozlariga shikast yetkazish —\nbazaviy hisoblash miqdorining besh baravaridan oʻn baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.8977,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:1687781#band-3#p1",
+     "doc_id": "lex:1687781",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori ekinlarning payhon qilinishi va nobud boʻlishiga qarshi kurashni yanada kuchaytirish toʻgʻrisida",
+     "url": "https://lex.uz/docs/1687781",
+     "article": "3-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2019-12-29",
+     "text": "3. Eʼtiborga olinsinki, amaldagi qonunchilikda ekinzorlarni payhon qilganlik uchun belgilangan javobgarlik asosida:\nchorva mollarning ekinzorlarni payhon qilishi, fuqarolarga bazaviy hisoblash miqdorining uchdan bir qismidan bir baravarigacha, mansabdor shaxslarga esa — ikkidan bir qismidan ikki baravarigacha miqdorda jarima solishga;\nekinzorlarni texnika vositalarida bosib oʻtish — bazaviy hisoblash miqdorining ikkidan bir qismidan ikki baravarigacha jarima solishga sabab boʻladi.\nUshbu huquqbuzarlik uchun belgilangan jarima bilan bir qatorda ekinzorlarni payhon qilish oqibatida keltirilgan zarar aybdor shaxs hisobidan qoplanadi.",
+     "retrieval_score": 0.478,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-97664#art-113#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "113-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "113-modda. Temir yoʻl transportida harakat xavfsizligi qoidalarini buzish\nTemir yoʻl izlariga poyezdlar qatnovining buzilishiga olib kelishi mumkin boʻlgan ashyolarni qoʻyish, shuningdek temir yoʻlni va qor toʻsish gʻovlarini hamda boshqa yoʻl obyektlarini, signal berish va aloqa inshootlari va qurilmalarini shikastlantirish —\nbazaviy hisoblash miqdorining ikkidan bir qismidan bir baravarigacha miqdorda jarima solishga sabab boʻladi.\nTemir yoʻldan ot-arava haydab oʻtish va chorva mollarni haydab oʻtish, chorva mollarni temir yoʻl yaqinida boqish qoidalarini buzish —\nbazaviy hisoblash miqdorining beshdan bir qismidan ikkidan bir qismigacha miqdorda jarima solishga sabab boʻladi.\nTemir yoʻl transportiga yuk ortish vaqtida belgilangan gabaritlarga rioya qilmaslik —\nmansabdor shaxslarga bazaviy hisoblash miqdorining beshdan bir qismidan ikkidan bir qismigacha miqdorda jarima solishga sabab boʻladi.\nTemir yoʻllarni belgilanmagan joylardan kesib oʻtish —\nbazaviy hisoblash miqdorining yigirmadan bir qismi miqdorida jarima solishga sabab boʻladi.\nTransport vositalari haydovchilari tomonidan temir yoʻl izini belgilanmagan joydan kesib oʻtish —\nbazaviy hisoblash miqdorining ikki baravaridan uch baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.9637,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-97664#art-79#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "79-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "79-modda. Daraxtlarni, butalarni, boshqa oʻsimliklarni va nihollarni qonunga xilof ravishda kesish, kundakov qilish, shikastlantirish, yoʻq qilish yoki boshqa joyga koʻchirib oʻtkazish\nDaraxtlarni, butalarni, boshqa oʻsimliklarni va nihollarni qonunga xilof ravishda kesish, kundakov qilish, shikastlantirish, yoʻq qilish yoki boshqa joyga koʻchirib oʻtkazish, —\nfuqarolarga bazaviy hisoblash miqdorining yigirma besh baravaridan ellik baravarigacha, mansabdor shaxslarga esa — ellik baravaridan yetmish besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nOʻz hududida binolarni, inshootlarni yoki boshqa obyektlarni qurish, rekonstruksiya qilish chogʻida belgilangan talablarni buzib, kimyoviy, biologik vositalarni qoʻllagan holda daraxtlarni, butalarni yoki boshqa oʻsimliklarni qasddan shikastlantirish, payhon qilish yoki yoʻq qilish, —\nfuqarolarga bazaviy hisoblash miqdorining oʻttiz besh baravaridan ellik baravarigacha, mansabdor shaxslarga esa — oltmish baravaridan yetmish besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nUshbu moddaning birinchi va ikkinchi qismlarida nazarda tutilgan huquqbuzarliklarni maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etish, —",
+     "retrieval_score": 0.837,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2116,
+    "retrieval_ms": 2686,
+    "rerank_ms": 0,
+    "generation_ms": 3790,
+    "total_ms": 8594
+   },
+   "usage": {
+    "input_tokens": 11881,
+    "output_tokens": 918,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Avtobus oynasini sindirib qoʻygan fuqaro qancha miqdorda jarima toʻlaydi va agar u bir yil ichida chorva mollarini xoʻjalik ekinzoriga yana payhon qildirsa, qanday miqdorda jarimaga tortiladi?",
+    "search_queries": [
+     "Avtobus oynasini sindirib qoʻygan fuqaro qancha jarima toʻlaydi va agar u bir yil ichida chorva mollarini xoʻjalik ekinzoriga yana payhon qildirsa, qanday miqdorda jarimaga tortiladi?",
+     "Avtobus oynasini sindirib qoʻygan fuqaro qancha miqdorda jarima toʻlaydi va agar u bir yil ichida chorva mollarini xoʻjalik ekinzoriga yana payhon qildirsa, qanday miqdorda jarimaga tortiladi?",
+     "avtotransport vositasini shikastlantirish jarima miqdori",
+     "chorva mollarini ekinzorga payhon qildirish jarima",
+     "mayda talonchilik avtobus oynasini sindirish jarima"
+    ],
+    "doc_hints": [
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 708,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q077",
+   "status": "ok",
+   "answer": "ЭҲМ учун дастур ёки маълумотлар базасидан ҳуқуқ эгасидан бошқа шахс, Фуқаролик кодексининг 1056-моддасига кўра, фақат ҳуқуқ эгаси ёки бошқа ваколатли шахс билан тузилган шартномага биноан фойдаланиши мумкин [1]. Шунингдек, ЭҲМ учун дастурнинг ёки маълумотлар базасининг нусхасига қонуний эга бўлган шахс кейинчалик шахсий фойдаланиш мақсадида уларни эркин такрорлаш ва соддалаштириш ҳуқуқига эга [2]. Бироқ шахсий мақсадларда розиликсиз ва ҳақ тўламасдан такрорлаш қоидаси маълумотлар базаларини ёки уларнинг муҳим қисмларини такрорлашга, шунингдек қонунда назарда тутилган ҳолларни истисно қилганда ЭҲМ учун дастурларни такрорлашга нисбатан татбиқ этилмайди [3].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.75,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1056-modda",
+     "part": "1–8-qism",
+     "edition_date": "2011-12-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-180552#art-1056#p1",
+     "quote": "Yuridik va jismoniy shaxslar, ushbu Kodeksda va boshqa qonunlarda koʻrsatilganidan tashqari hollarda, asardan faqat huquq egasi yoki boshqa vakolatli shaxs bilan tuzilgan shartnomaga binoan, shu jumladan mulkiy huquqlarni jamoaviy asosda boshqaruvchi tashkilotlar bilan tuzilgan shartnomaga binoan yoxud ular boʻlmagan taqdirda, bu tashkilotlarning vazifalari va majburiyatlarini bajaruvchi tashkilot bilan tuzilgan shartnomaga binoan foydalanishlari mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-1022944",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni mualliflik huquqi va turdosh huquqlar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-1022944",
+     "article": "32-modda",
+     "part": "1-qism",
+     "edition_date": "2006-07-20",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-1022944#art-32#p1",
+     "quote": "EHM uchun dasturning yoki maʼlumotlar bazasining nusxasiga qonuniy ega boʻlgan shaxsning keyinchalik shaxsiy foydalanish maqsadida EHM uchun dasturni yoki maʼlumotlar bazasini erkin takrorlashga va soddalashtirishga boʻlgan huquqi qonun bilan belgilanadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1059-modda",
+     "part": "1–6-qism",
+     "edition_date": "2007-01-16",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-180552#art-1059#p1",
+     "quote": "maʼlumotlar bazalarini yoki ularning muhim qismlarini takrorlashga; qonunda nazarda tutilgan hollarni istisno qilganda, EHM uchun dasturlarni takrorlashga;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-1022944#art-32#p1",
+     "doc_id": "lex:-1022944",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni mualliflik huquqi va turdosh huquqlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-1022944",
+     "article": "32-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2006-07-20",
+     "text": "32-modda. EHM uchun dasturlar yoki maʼlumotlar bazalarini erkin takrorlash va soddalashtirish\nEHM uchun dasturning yoki maʼlumotlar bazasining nusxasiga qonuniy ega boʻlgan shaxsning keyinchalik shaxsiy foydalanish maqsadida EHM uchun dasturni yoki maʼlumotlar bazasini erkin takrorlashga va soddalashtirishga boʻlgan huquqi qonun bilan belgilanadi.",
+     "retrieval_score": 0.9465,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-180552#art-1059#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1059-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2007-01-16",
+     "text": "1059-modda. Asarlarni muallifning roziligisiz va haq toʻlanmagan holda shaxsiy maqsadlarda takrorlash\nOshkor qilingan asarni shaxsiy maqsadlarda muallifning yoki boshqa huquq egasining roziligisiz va haq toʻlanmagan holda takrorlashga yoʻl qoʻyiladi, qonunda nazarda tutilgan hollar bundan mustasno.\nUshbu modda birinchi qismining qoidalari:\nbinolar va inshootlar shaklidagi arxitektura asarlarini takrorlashga;\nmaʼlumotlar bazalarini yoki ularning muhim qismlarini takrorlashga;\nqonunda nazarda tutilgan hollarni istisno qilganda, EHM uchun dasturlarni takrorlashga;\nkitoblarni (toʻlaligicha) va notali matnlarni reprografik takrorlashga nisbatan tatbiq etilmaydi.",
+     "retrieval_score": 0.9271,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-1022944#art-25#p1",
+     "doc_id": "lex:-1022944",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni mualliflik huquqi va turdosh huquqlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-1022944",
+     "article": "25-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2006-07-20",
+     "text": "25-modda. Asarlarni muallifning roziligisiz va haq toʻlamasdan shaxsiy maqsadlarda takrorlash\nOshkor qilingan asarni shaxsiy maqsadlarda muallifning yoki boshqa huquq egasining roziligisiz va haq toʻlamagan holda takrorlashga yoʻl qoʻyiladi, ushbu Qonunning 33-moddasida nazarda tutilgan hollar bundan mustasno.\nUshbu modda birinchi qismining qoidalari:\nbinolar va inshootlar shaklidagi arxitektura asarlarini takrorlashga;\nmaʼlumotlar bazalarini yoki ularning muhim qismlarini takrorlashga;\nqonunda nazarda tutilgan hollarni istisno qilganda, EHM uchun dasturlarni takrorlashga;\nkitoblarni (toʻlaligicha) va notali matnlarni reprografik takrorlashga nisbatan tatbiq etilmaydi.",
+     "retrieval_score": 0.912,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-180552#art-1056#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1056-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2011-12-21",
+     "text": "1056-modda. Muallifning mulkiy huquqlari\nMuallifga asardan har qanday shaklda va har qanday usulda foydalanishda mutlaq huquqlar tegishlidir.\nYuridik va jismoniy shaxslar, ushbu Kodeksda va boshqa qonunlarda koʻrsatilganidan tashqari hollarda, asardan faqat huquq egasi yoki boshqa vakolatli shaxs bilan tuzilgan shartnomaga binoan, shu jumladan mulkiy huquqlarni jamoaviy asosda boshqaruvchi tashkilotlar bilan tuzilgan shartnomaga binoan yoxud ular boʻlmagan taqdirda, bu tashkilotlarning vazifalari va majburiyatlarini bajaruvchi tashkilot bilan tuzilgan shartnomaga binoan foydalanishlari mumkin.\nMuallifning asardan foydalanishga boʻlgan mutlaq huquqlari quyidagi harakatlarni amalga oshirish yoki bunday harakatlarga ruxsat berish huquqini anglatadi:\nasarni takrorlash (takrorlash huquqi);\nasarning asl nusxasini yoki nusxalarini sotish yoki mulk huquqini oʻzgacha tarzda boshqa shaxsga oʻtkazish yoʻli bilan tarqatish (tarqatish huquqi);\nasarni barchaning eʼtiboriga yetkazish (barchaning eʼtiboriga yetkazish huquqi);\nasarning asl nusxasini yoki nusxalarini prokatga berish (prokatga berish huquqi);\ntarqatish maqsadida asarning nusxalarini, shu jumladan mutlaq mualliflik huquqlari egasining ruxsati bilan tayyorlangan nusxalarini import qilish (import qilish huquqi);",
+     "retrieval_score": 0.6827,
+     "rerank_score": 0.5,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-1022944#art-19#p1",
+     "doc_id": "lex:-1022944",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni mualliflik huquqi va turdosh huquqlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-1022944",
+     "article": "19-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2011-12-21",
+     "text": "19-modda. Muallifning mulkiy huquqlari\nMuallif asardan har qanday shaklda va har qanday usulda foydalanishda mutlaq huquqlarga ega.\nYuridik va jismoniy shaxslar, ushbu Qonunda koʻrsatilganidan tashqari hollarda, asardan faqat huquq egasi yoki boshqa vakolatli shaxs bilan tuzilgan shartnomaga binoan, shu jumladan mulkiy huquqlarni jamoaviy asosda boshqaruvchi tashkilotlar bilan tuzilgan shartnomaga binoan yoxud ular boʻlmagan taqdirda, bu tashkilotlarning vazifalari va majburiyatlarini bajaruvchi tashkilot bilan tuzilgan shartnomaga binoan foydalanishlari mumkin.\nMuallifning asardan foydalanishga boʻlgan mutlaq huquqlari quyidagi harakatlarni amalga oshirish yoki bunday harakatlarga ruxsat berish huquqini anglatadi:\nasarni takrorlash (takrorlash huquqi);\nasarning asl nusxasini yoki nusxalarini sotish yoki mulk huquqini oʻzgacha tarzda boshqa shaxsga oʻtkazish yoʻli bilan tarqatish (tarqatish huquqi);\nasarni barchaning eʼtiboriga yetkazish (barchaning eʼtiboriga yetkazish huquqi);\nasarning asl nusxasini yoki nusxalarini prokatga berish (prokatga berish huquqi);\ntarqatish maqsadida asarning nusxalarini, shu jumladan mutlaq mualliflik huquqlari egasining ruxsati bilan tayyorlangan nusxalarini import qilish (import qilish huquqi);\nasarni sim (kabel) orqali yoki boshqa shu kabi vositalar yordamida uzatish yoʻli bilan barchaning eʼtibori uchun yuborish (kabel orqali yuborish huquqi);",
+     "retrieval_score": 0.6349,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2059,
+    "retrieval_ms": 2509,
+    "rerank_ms": 0,
+    "generation_ms": 4934,
+    "total_ms": 9504
+   },
+   "usage": {
+    "input_tokens": 12907,
+    "output_tokens": 1061,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Kompyuter dasturi yoki maʼlumotlar bazasidan huquq egasidan boshqa shaxs qanday asosda foydalanishi mumkin va qanday holatlar bundan mustasno?",
+    "search_queries": [
+     "Компьютер дастури ёки маълумотлар базасидан ҳуқуқ эгасидан бошқа шахс қандай асосда фойдаланиши мумкин, ва қандай ҳолатлар бундан мустасно?",
+     "Kompyuter dasturi yoki maʼlumotlar bazasidan huquq egasidan boshqa shaxs qanday asosda foydalanishi mumkin va qanday holatlar bundan mustasno?",
+     "kompyuter dasturi yoki maʼlumotlar bazasidan boshqa shaxsning foydalanishi",
+     "kompyuter dasturiga boʻlgan mutlaq huquqdan foydalanish asoslari",
+     "mualliflik huquqi kompyuter dasturi maʼlumotlar bazasi foydalanish mustasno"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi",
+     "Mualliflik huquqi va turdosh huquqlar toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 813,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q078",
+   "status": "ok",
+   "answer": "Davlat xaridlari toʻgʻrisidagi qonunning 38-moddasi ikkinchi qismiga koʻra, birgalikdagi davlat xaridlari natijalari boʻyicha tuzilgan shartnomalar toʻgʻrisidagi axborot davlat buyurtmachilari tomonidan maxsus axborot portaliga shartnomalar tuzilgan sanadan eʼtiboran besh ish kunidan kechiktirmay joylashtiriladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5382974",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat xaridlari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5382974",
+     "article": "38-modda",
+     "part": "1–2-qism",
+     "edition_date": "2025-03-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5382974#art-38#p1",
+     "quote": "Birgalikdagi davlat xaridlari natijalari boʻyicha tuzilgan shartnomalar toʻgʻrisidagi axborot davlat buyurtmachilari tomonidan maxsus axborot portaliga shartnomalar tuzilgan sanadan eʼtiboran besh ish kunidan kechiktirmay joylashtiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5382974#art-38#p1",
+     "doc_id": "lex:-5382974",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat xaridlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5382974",
+     "article": "38-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-03-01",
+     "text": "38-modda. Birgalikdagi davlat xaridlari\nTovarlarning (ishlarning, xizmatlarning) birgalikdagi davlat xaridlarini shakllantirish ikki va undan ortiq davlat buyurtmachisining davlat xaridlari reja-jadvallariga koʻra amalga oshiriladi.\nBirgalikdagi davlat xaridlari natijalari boʻyicha tuzilgan shartnomalar toʻgʻrisidagi axborot davlat buyurtmachilari tomonidan maxsus axborot portaliga shartnomalar tuzilgan sanadan eʼtiboran besh ish kunidan kechiktirmay joylashtiriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-7239145#art-1#p66",
+     "doc_id": "lex:-7239145",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “davlat xaridlari toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga davlat xaridlari tizimini yanada takomillashtirishga qaratilgan qoʻshimcha va oʻzgartirishlar kiritish haqida",
+     "url": "https://lex.uz/docs/-7239145",
+     "article": "1-modda",
+     "part": "66–71-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-27",
+     "text": "1-modda. Oʻzbekiston Respublikasining 2021-yil 22-aprelda qabul qilingan “Davlat xaridlari toʻgʻrisida”gi OʻRQ-684-sonli Qonuniga (Oʻzbekiston Respublikasi Oliy Majlisi palatalarining Axborotnomasi, 2021-yil, № 4, 289-modda; 2024-yil, № 2, 111-modda) quyidagi qoʻshimcha va oʻzgartirishlar kiritilsin:\nMazkur roʻyxatga kiritish talablariga yoki shartlariga kiritilgan har qanday oʻzgartirishlar toʻgʻrisidagi axborot bunday oʻzgartirishlar kiritilgan kundan eʼtiboran bir ish kuni ichida maxsus axborot portaliga joylashtirilishi hamda ushbu roʻyxatga kiritilgan barcha ishtirokchilarga yetkazilishi kerak.\nMalakali ishtirokchilar oʻrtasida dastlabki malaka tanlovini va xarid qilish tartib-taomillarini oʻtkazish tartibi Oʻzbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadi”;\n15) 38-moddaning ikkinchi qismi quyidagi tahrirda bayon etilsin:\n“Birgalikdagi davlat xaridlari natijalari boʻyicha tuzilgan shartnomalar toʻgʻrisidagi axborot davlat buyurtmachilari tomonidan maxsus axborot portaliga shartnomalar tuzilgan sanadan eʼtiboran besh ish kunidan kechiktirmay joylashtiriladi”;\n16) quyidagi mazmundagi 381 va 382-moddalar bilan toʻldirilsin:\n“381-modda. Markazlashgan davlat xaridlari",
+     "retrieval_score": 0.7292,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-5382974#art-70.7#p1",
+     "doc_id": "lex:-5382974",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat xaridlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5382974",
+     "article": "70⁷-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-03-01",
+     "text": "707-modda. Ikki bosqichli davlat xaridlarining natijalari boʻyicha shartnoma tuzish\nIkki bosqichli davlat xaridlarining natijalari boʻyicha shartnoma tuziladi.\nIkki bosqichli davlat xaridlarining natijalari boʻyicha tuzilgan shartnomalar toʻgʻrisidagi axborot davlat buyurtmachisi tomonidan maxsus axborot portaliga ular tuzilgan sanadan eʼtiboran besh ish kunidan kechiktirmay joylashtiriladi.",
+     "retrieval_score": 0.9444,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5382974#art-71#p26",
+     "doc_id": "lex:-5382974",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat xaridlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5382974",
+     "article": "71-modda",
+     "part": "26–31-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-08",
+     "text": "71-modda. Toʻgʻridan-toʻgʻri shartnomalar boʻyicha davlat xaridlarini amalga oshirish tartibi\n20) mutaxassislarni xorijda tayyorlash va vatandoshlar bilan muloqot qilish yuzasidan “El-yurt umidi” jamgʻarmasi tomonidan taʼlim dasturlarini tashkil etish, respublikaga xorijiy olimlar va mutaxassislarni, shu jumladan vatandoshlarni jalb etish xizmatlari;\n21) avval tuzilgan shartnomalardagi yetkazib beruvchilar bilan aloqa, Internet va teleradiouzatish xizmatlari boʻyicha davlat xaridi;\n22) madaniyat va sanʼat boʻyicha xalqaro hamda davlatlararo darajadagi tadbirlarni tashkil etish va oʻtkazish bilan bogʻliq davlat xaridi. Bunda bunday tadbirlarning darajalari qonunchilikda belgilangan tartibda aniqlanadi.\nDavlat buyurtmachilari toʻgʻridan-toʻgʻri shartnomalar tuzilganligi toʻgʻrisidagi axborotni shartnoma tuzilgan paytdan eʼtiboran besh ish kuni ichida maxsus axborot portaliga joylashtirishi shart.\nToʻgʻridan-toʻgʻri shartnomalar tuzilganligi toʻgʻrisidagi axborot maxsus axborot portaliga joylashtirilmagan boʻlsa, ushbu shartnomalar boʻyicha toʻlovlar amalga oshirilmaydi.\nDavlat buyurtmachisi ushbu moddada nazarda tutilgan davlat xaridlarini amalga oshirish chogʻida xarid qilish tartib-taomillarining boshqa raqobatli turlaridan ham ushbu Qonun talablariga muvofiq foydalanishi mumkin.",
+     "retrieval_score": 0.8915,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-5382974#art-27#p7",
+     "doc_id": "lex:-5382974",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat xaridlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5382974",
+     "article": "27-modda",
+     "part": "7–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-24",
+     "text": "27-modda. Maxsus axborot portali\nMaxsus axborot portalida davlat xaridlarini rejalashtirish, xarid qilish tartib-taomillarini amalga oshirish, shartnoma tuzish, davlat xaridlari monitoringi va nazoratini oʻtkazish jarayonlari tizimlashtiriladi.\nBudjet buyurtmachilarining davlat xaridlari boʻyicha toʻlovlari maxsus axborot portalida davlat xaridlarini rejalashtirish, xarid qilish tartib-taomillarini amalga oshirish, shartnoma tuzish va ular toʻgʻrisida axborot joylashtirish, shartnomani tegishli gʻaznachilik boʻlinmasida roʻyxatdan oʻtkazish jarayonlari tugaganidan keyin Oʻzbekiston Respublikasi Iqtisodiyot va moliya vazirligi huzuridagi Gʻaznachilik xizmati qoʻmitasi tomonidan belgilangan tartibda amalga oshiriladi.",
+     "retrieval_score": 0.8783,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1931,
+    "retrieval_ms": 2907,
+    "rerank_ms": 0,
+    "generation_ms": 2585,
+    "total_ms": 7424
+   },
+   "usage": {
+    "input_tokens": 13061,
+    "output_tokens": 519,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Ikki yoki undan ortiq davlat buyurtmachisi birgalikda xarid qilganda, tuzilgan shartnomalar haqidagi maʼlumot maxsus axborot portaliga qancha muddat ichida joylashtirilishi kerak?",
+    "search_queries": [
+     "Ikki yoki undan ortiq davlat buyurtmachisi birgalikda xarid qilganda, tuzilgan shartnomalar haqidagi maʼlumotni maxsus axborot portaliga qancha muddat ichida joylashtirishi kerak?",
+     "Ikki yoki undan ortiq davlat buyurtmachisi birgalikda xarid qilganda, tuzilgan shartnomalar haqidagi maʼlumot maxsus axborot portaliga qancha muddat ichida joylashtirilishi kerak?",
+     "davlat buyurtmachilari birgalikda xarid tuzilgan shartnomalar maʼlumot maxsus axborot portaliga joylashtirish muddati",
+     "tuzilgan shartnoma toʻgʻrisidagi maʼlumot maxsus axborot portaliga joylashtiriladi",
+     "davlat xaridlari shartnomalari reyestri maxsus axborot portali muddat"
+    ],
+    "doc_hints": [
+     "Davlat xaridlari toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 393,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q079",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonunchilik hujjatlarida qaysi metro bekati ertalabki tirbandlikni kamaytirish uchun eng qulay ekani toʻgʻrisidagi qoida mavjud emas.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5680284#band-8#p1",
+     "doc_id": "lex:-5680284",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori Toshkent metropoliteni faoliyatining samaradorligini oshirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5680284",
+     "article": "8-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-10-16",
+     "text": "8. Toshkent shahar hokimligi (Artikxodjayev) Transport vazirligi (Maxkamov) bilan birgalikda metropoliten ommabopligini oshirish maqsadida:\n2022-yil 1-iyulga qadar 7 ta metro bekatida (Beruniy, Chorsu, Paxtakor, Olmazor, Turkiston, Qoʻyliq bozori, Chilonzor) transport oʻtish bogʻlamalarini;\n2022-yil 1-oktabrga qadar Toshkent shahriga kirib keluvchi yoʻlovchi transport vositalari uchun 6 ta metro bekati (Turkiston, Yunusobod, Chilonzor va yer usti halqa liniyasining 3, 4 va 5-bekati) atrofida avtoturargohlar tashkil etilishini taʼminlasin.",
+     "retrieval_score": 0.681,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5680284#band-3s4#p1",
+     "doc_id": "lex:-5680284",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori Toshkent metropoliteni faoliyatining samaradorligini oshirish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5680284",
+     "article": "3-band (4-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2021-10-16",
+     "text": "3. Foydalanishga topshirish.\n2021-2022 yy.\nToshkent shahar hokimligi (Artikxodjayev),\n“Toshshahartransxizmat” AJ (Djurayev)\n4.\nToshkent viloyatidan kirib keluvchi yoʻlovchi transport vositalari uchun 6 ta metro bekati (Turkiston, Yunusobod, Chilonzor va yer usti halqa metropoliten liniyasining 3, 4 va 5-bekati) atrofida avtoturargohlar tashkil etish.",
+     "retrieval_score": 0.6688,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-4934217#preamble#p1",
+     "doc_id": "lex:-4934217",
+     "doc_title": "Norasmiy tarjima OʻZBEKISTON RESPUBLIKASI PREZIDENTINING QARORI “TOSHKENT SHAHRIDA YER USTI HALQA METRO LINIYASINI QURISH” LOYIHASINI AMALGA OSHIRISH CHORA-TADBIRLARI TOʻGʻRISIDA",
+     "url": "https://lex.uz/docs/-4934217",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": null,
+     "text": "Toshkent shahriga asosiy aylanma magistral kirish yoʻllari bilan tutashtirilgan yer usti halqa metro liniyasi qurilishini samarali tashkil etish va shu asosda yoʻlovchilarga transport xizmatini yaxshilash, jamoat transportida yoʻlovchilar oqimini koʻpaytirish, yer usti jamoat shahar transporti va shahar avtomobil yoʻllaridagi tirbandlikni kamaytirish, shuningdek, ekologiya va atrof-muhitni yaxshilashni taʼminlash maqsadida:",
+     "retrieval_score": 0.9242,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-5847479#band-20#p65",
+     "doc_id": "lex:-5847479",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori Toshkent shahar jamoat transporti tizimini yanada rivojlantirishga doir qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5847479",
+     "article": "20-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-10-01",
+     "text": "Mazkur bekatlar hududida aholining imkoniyati cheklangan guruhlarining toʻsiqsiz harakatlanish muhiti, avtomobil yoʻli qatnovi qismi bilan chegarasida “taktil” plitalar oʻrnatish yoʻli bilan ularning xavfsizligi taʼminlanadi, zamonaviy dizayndagi va qulay boʻlgan oʻrindiqlar oʻrnatiladi, aholining internet tarmogʻidan (Wi-Fi) foydalanish, bekatlarda elektron tablo oʻrnatish orqali avtobuslar qatnov jadvali va kelish vaqtini kuzatib borish, mobil qurilmalarni quvvatlash uchun manbalardan foydalanish imkoniyati yaratiladi.\nBunday bekatlarda faqatgina reklama mahsulotlari, bankomatlar va oziq-ovqat mahsulotlarini xarid qilishga moʻljallangan oʻziga-oʻzi xizmat koʻrsatish (vending) avtomatlari joylashtiriladi.\nToshkent shahridagi tirbandliklarni, markaziy koʻchalarda transport oqimini kamaytirish, jamoat transportining oʻrtacha harakatlanish tezligini oshirish, avtomobillarning yoʻl boʻyida betartib toʻxtashini tartibga solish, aholining jamoat transportidan foydalanishini ragʻbatlantirish maqsadida Toshkent shahrida yagona avtomobil yoʻl boʻyi pullik toʻxtash joylari tizimi tashkil etiladi.\nBirinchi bosqichda 10 ta koʻchada, kelgusida talabdan kelib chiqib boshqa koʻchalarda ham avtomobillarning avtomatlashtirilgan yoʻl boʻyi pullik toʻxtash joylari tizimi davlat-xususiy sheriklik tamoyillari asosida tashkil etiladi.",
+     "retrieval_score": 0.7574,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-5847479#band-20#p31",
+     "doc_id": "lex:-5847479",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori Toshkent shahar jamoat transporti tizimini yanada rivojlantirishga doir qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5847479",
+     "article": "20-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-10-01",
+     "text": "avtobus oraliq bekatlari infratuzilmasi xavfsizlik, qulaylik va shaharsozlik normalariga javob bermaydi;\navtomobil yoʻl boʻyi toʻxtash joylarining hozirgi kundagi betartib holati tirbandliklarni yuzaga keltirib, jamoat transportining oʻrtacha harakatlanish tezligining pasayishiga olib kelmoqda;\nyoʻnalishsiz taksi faoliyati qonunchilik bilan yetarli darajada tartibga solinmagan;\nToshkent metropoliteni harakat tarkibining eskirganligi natijasida turli xil texnologik holatlar sodir boʻlishiga olib kelmoqda;\njamoat transportida yoʻlkira haqini belgilash boʻyicha tarif siyosati takomillashtirilmagan va egiluvchan tariflar joriy etilmagan;\njamoat transporti korxonalari faoliyatini moliyalashtirish ishlari bugungi kun talablariga javob bermaydi;\nyoʻl harakatini tashkil etish tizimining mukammal emasligi sababli yoʻllar va chorrahalarda transport oqimi toʻgʻri taqsimlanmagan hamda tirbandliklar darajasi yuqori, yoʻl-transport hodisalari soni ortib bormoqda.\nKonsepsiyaning asosiy maqsadi aholining jamoat transportidan foydalanish darajasini kamida ikki barobarga oshirish, yoʻlovchilarga qulay va xavfsiz harakatlanish muhitini yaratish hamda transportning atrof-muhitga salbiy taʼsirini kamaytirish orqali shaharda ekologik holatni yaxshilashdan iborat.\nAsosiy maqsadlarga erishishga qaratilgan ustuvor yoʻnalishlar:",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1572,
+    "retrieval_ms": 150,
+    "rerank_ms": 0,
+    "generation_ms": 1440,
+    "total_ms": 3163
+   },
+   "usage": {
+    "input_tokens": 10437,
+    "output_tokens": 265,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Toshkentda ertalabki tirbandlikni kamaytirish uchun eng qulay metro bekati qaysi?",
+    "search_queries": [
+     "Toshkentda ertalabki tirbandlikni kamaytirish uchun eng qulay metro bekati qaysi?",
+     "Toshkent metro bekati qulaylik tirbandlik",
+     "metro bekati tanlash yoʻlovchi oqimi",
+     "Toshkent shahar transport tirbandlikni kamaytirish"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 323,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q080",
+   "status": "ok",
+   "answer": "Yoʻq, sudning faktni aniqlash toʻgʻrisidagi hal qiluv qarori idorada alohida hujjat oʻrnini bosmaydi: Fuqarolik protsessual kodeksining 297-moddasiga koʻra, bunday qaror fuqarolik holati dalolatnomalarini qayd etish yoki boshqa organlarda rasmiylashtirish uchun asos boʻlib xizmat qiladi, lekin ushbu organlar beradigan hujjatlarning oʻrniga oʻtmaydi [1]. Iqtisodiy protsessual kodeksining 209-moddasida ham sudning bunday hal qiluv qarori tegishli organlar uchun faktni qayd etish yoki huquqlarni rasmiylashtirish uchun asos boʻlishi, ammo beriladigan hujjatlarning oʻrniga oʻtmasligi belgilangan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "297-modda",
+     "part": "1–2-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-297#p1",
+     "quote": "Fuqarolik holati dalolatnomalarini qayd etish organlarida qayd etilishi yoki boshqa organlarda rasmiylashtirilishi lozim boʻlgan faktlarning aniqlanganligi toʻgʻrisidagi sudning hal qiluv qarori ushbu organlar tomonidan beriladigan hujjatlarning oʻrniga oʻtmaganda, ana shunday qayd qilish yoki rasmiylashtirish uchun asos boʻlib xizmat qiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "209-modda",
+     "part": "1–3-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-209#p1",
+     "quote": "Sudning yuridik ahamiyatga ega boʻlgan faktni aniqlash toʻgʻrisidagi hal qiluv qarori tegishli organlar tomonidan shunday faktni qayd etish uchun yoki aniqlangan fakt munosabati bilan yuzaga keladigan huquqlarni rasmiylashtirish uchun asos boʻladi va ushbu organlar tomonidan beriladigan hujjatlarning oʻrniga oʻtmaydi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-297#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "297-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "297-modda. Fakt aniqlanganligi toʻgʻrisidagi hal qiluv qarori\nSudning hal qiluv qarorida: sud tomonidan aniqlangan fakt, uning qanday maqsadda aniqlanganligi, shuningdek mazkur faktni aniqlash uchun sud qanday dalillarga asoslanganligi koʻrsatilishi kerak.\nFuqarolik holati dalolatnomalarini qayd etish organlarida qayd etilishi yoki boshqa organlarda rasmiylashtirilishi lozim boʻlgan faktlarning aniqlanganligi toʻgʻrisidagi sudning hal qiluv qarori ushbu organlar tomonidan beriladigan hujjatlarning oʻrniga oʻtmaganda, ana shunday qayd qilish yoki rasmiylashtirish uchun asos boʻlib xizmat qiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3523891#art-209#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "209-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "209-modda. Yuridik ahamiyatga ega boʻlgan faktni aniqlash toʻgʻrisidagi ish boʻyicha sudning hal qiluv qarori\nYuridik ahamiyatga ega boʻlgan faktni aniqlash toʻgʻrisidagi ish boʻyicha hal qiluv qarori ushbu Kodeksning 21-bobida belgilangan qoidalarga koʻra sud tomonidan qabul qilinadi.\nSud tomonidan yuridik ahamiyatga ega boʻlgan faktni aniqlash toʻgʻrisidagi ariza qanoatlantirilganda, hal qiluv qarorining xulosa qismida aniqlangan fakt bayon etiladi.\nSudning yuridik ahamiyatga ega boʻlgan faktni aniqlash toʻgʻrisidagi hal qiluv qarori tegishli organlar tomonidan shunday faktni qayd etish uchun yoki aniqlangan fakt munosabati bilan yuzaga keladigan huquqlarni rasmiylashtirish uchun asos boʻladi va ushbu organlar tomonidan beriladigan hujjatlarning oʻrniga oʻtmaydi.",
+     "retrieval_score": 0.99,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3517337#art-295#p11",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "295-modda",
+     "part": "11–13-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-03-14",
+     "text": "295-modda. Sud tomonidan koʻrib chiqiladigan, yuridik ahamiyatga ega boʻlgan faktlarni aniqlash toʻgʻrisidagi ishlar\n9) merosni qabul qilish va merosning ochilish joyi faktlarini aniqlash toʻgʻrisidagi ishlarni koʻradi.\nAgar qonunchilikda ularni belgilashning boshqacha tartibi nazarda tutilmagan boʻlsa, sud yuridik ahamiyatga ega boʻlgan boshqa faktlarni ham belgilashi mumkin.\nArizachi yuridik ahamiyatga ega boʻlgan faktlarni tasdiqlaydigan zarur hujjatlarni boshqacha tartibda olishi mumkin boʻlmagan yoxud yoʻqotilgan hujjatlarni tiklashning imkoni boʻlmagan taqdirdagina sud ushbu faktlarni aniqlaydi.",
+     "retrieval_score": 0.9161,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-295#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "295-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-03-14",
+     "text": "295-modda. Sud tomonidan koʻrib chiqiladigan, yuridik ahamiyatga ega boʻlgan faktlarni aniqlash toʻgʻrisidagi ishlar\nSud fuqarolarning yoki tashkilotlarning shaxsiy, mulkiy huquqlari yuzaga kelishiga, oʻzgarishiga yoki tugashiga sabab boʻladigan faktlarni aniqlaydi.\nSud:\n1) shaxslarning qarindoshlik aloqalari;\n2) shaxs birovning qaramogʻida ekanligi;\n3) otalikni tan olish (belgilash), bolaning u yoki bu onadan tugʻilganligi, shuningdek tugʻilgan vaqti;\n4) farzandlikka olishni, nikohni, nikohdan ajratishni va oʻlimni qayd etilganligi;\n5) er-xotindan biri vafot etganligi oqibatida fuqarolik holati dalolatnomalarini qayd etish organlarida nikohni roʻyxatdan oʻtkazish mumkin boʻlmay qolsa, qonunda belgilangan hollarda ularning haqiqatda nikoh munosabatlarida boʻlganligi;\n6) shaxsning huquqini belgilovchi hujjatlarda (bundan jamoat birlashmalariga aʼzolik biletlari, harbiy hujjatlar, pasportlar yoki identifikatsiyalovchi ID-kartalar, fuqarolik holati dalolatnomalarini qayd etish organlari beradigan guvohnomalar mustasno) koʻrsatilgan familiyasi, ismi yoki otasining ismi uning pasportidagi yoki identifikatsiyalovchi ID-kartasidagi yoxud tugʻilganlik toʻgʻrisidagi guvohnomasidagi familiyasi, ismi yoki otasining ismi bilan mos kelmagan taqdirda, mazkur hujjatlarning unga tegishliligi yoxud tegishli emasligi;\n7) baxtsiz hodisa;\n8) imoratga xususiy mulk huquqi asosida egalik qilish;",
+     "retrieval_score": 0.7806,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:3523891#art-208#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "208-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "208-modda. Yuridik ahamiyatga ega boʻlgan faktlarni aniqlash toʻgʻrisidagi ishlar boʻyicha sud muhokamasining xususiyatlari\nYuridik ahamiyatga ega boʻlgan faktlarni aniqlash toʻgʻrisidagi ishlar arizachi va boshqa manfaatdor shaxslar ishtirokida koʻriladi.\nIshni sud muhokamasiga tayyorlashda sudya yuridik ahamiyatga ega boʻlgan faktni aniqlash toʻgʻrisidagi hal qiluv qarori oʻz huquqlariga daxldor boʻlishi mumkin boʻlgan manfaatdor shaxslar doirasini aniqlaydi, ish yuritish toʻgʻrisida ushbu shaxslarni xabardor qiladi, ularni ishda ishtirok etish uchun jalb qilish toʻgʻrisidagi masalani koʻrib chiqadi, sud majlisining vaqti va joyi toʻgʻrisida xabar qiladi.\nYuridik ahamiyatga ega boʻlgan faktni aniqlash toʻgʻrisidagi ishni koʻrishda sud qonunchilikda ushbu faktni aniqlashning boshqacha tartibi nazarda tutilgan-tutilmaganligini, arizachida zarur hujjatlarni olish yoki tiklash uchun boshqa imkoniyat boʻlgan-boʻlmaganligini tekshiradi, arizachi iqtisodiyot sohasida faoliyatni amalga oshirishi munosabati bilan ushbu fakt uning uchun yuridik ahamiyatga ega boʻlgan oqibatlarni keltirib chiqarishini yoki chiqarmasligini belgilaydi, talab etilayotgan faktning aniqlanishi boshqa shaxslarning huquqlariga taʼsir etishi yoki etmasligini, huquq toʻgʻrisida nizo kelib chiqqan-chiqmaganligini aniqlaydi.",
+     "retrieval_score": 0.9184,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2215,
+    "retrieval_ms": 2563,
+    "rerank_ms": 0,
+    "generation_ms": 3626,
+    "total_ms": 8405
+   },
+   "usage": {
+    "input_tokens": 12407,
+    "output_tokens": 764,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud men haqimda faktni tasdiqlovchi qaror chiqargan boʻlsa, ushbu qaror bilan idoraga murojaat qilganimda, uni alohida hujjat oʻrnida qabul qiladilarmi yoki yoʻqmi?",
+    "search_queries": [
+     "Sud meni haqimda faktni tasdiqlab qaror chiqarsa, oʻsha qogʻoz bilan idoraga borsam, ular buni alohida hujjat oʻrnida qabul qiladimi yoki yoʻqmi?",
+     "Sud men haqimda faktni tasdiqlovchi qaror chiqargan boʻlsa, ushbu qaror bilan idoraga murojaat qilganimda, uni alohida hujjat oʻrnida qabul qiladilarmi yoki yoʻqmi?",
+     "sud tomonidan aniqlangan faktlarning boshqa organlar uchun majburiyligi",
+     "sud qarori asosida faktni tasdiqlash",
+     "yuridik faktni aniqlash toʻgʻrisidagi sud qarori"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 911,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

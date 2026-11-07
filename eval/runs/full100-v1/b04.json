@@ -1,0 +1,1618 @@
+{
+ "run_id": "full100-v1",
+ "batch_id": "full100-v1-b04",
+ "batch_index": 4,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p5",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:25:04+05:00",
+  "completed_at": "2026-11-06T18:25:12+05:00",
+  "total_ms": 7676
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q031",
+   "status": "ok",
+   "answer": "Kelishuv bitimi yozma shaklda tuziladi va uni tuzgan shaxslar yoki ularning vakillari tomonidan imzolanadi [1]. Bitimda taraflar kelishilgan majburiyatlarni bajarish shartlari va muddatlari koʻrsatilishi kerak [2]. Shuningdek, kelishuv bitimi sud tomonidan tasdiqlanganidan keyin tuzilgan hisoblanadi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.8,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "132-modda",
+     "part": "1–6-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-132#p1",
+     "quote": "Kelishuv bitimi yozma shaklda tuziladi va kelishuv bitimini tuzgan shaxslar yoki ularning vakillari tomonidan imzolanadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "132-modda",
+     "part": "1–6-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-132#p1",
+     "quote": "Kelishuv bitimida taraflar tomonidan kelishilgan majburiyatlarni bajarish shartlari va muddatlari haqidagi qoidalar koʻrsatilishi kerak",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "166-modda",
+     "part": "1–6-qism",
+     "edition_date": "2019-03-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-166#p1",
+     "quote": "Kelishuv bitimi sud tomonidan tasdiqlanganidan keyin tuzilgan hisoblanadi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:3523891#art-132#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "132-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "132-modda. Kelishuv bitimining shakli va mazmuni\nKelishuv bitimi yozma shaklda tuziladi va kelishuv bitimini tuzgan shaxslar yoki ularning vakillari tomonidan imzolanadi.\nKelishuv bitimida taraflar tomonidan kelishilgan majburiyatlarni bajarish shartlari va muddatlari haqidagi qoidalar koʻrsatilishi kerak.\nTaraflar tomonidan kelishuv bitimi shartlari boʻyicha qabul qilingan majburiyatlarning bajarilishi taraflarni bir-biriga yoki boshqa voqealarga (harakatlarga) bogʻliq qilib qoʻyishi mumkin emas.\nKelishuv bitimida javobgar tomonidan majburiyatlarni kechiktirib yoki boʻlib-boʻlib ijro etish toʻgʻrisidagi, talab qilish huquqidan boshqa shaxs foydasiga voz kechish haqidagi, qarzdan toʻliq yoki qisman voz kechish yoxud qarzni tan olish toʻgʻrisidagi, sud xarajatlarini taqsimlash haqidagi shartlar va qonunga zid boʻlmagan boshqa shartlar koʻrsatilishi mumkin.\nAgar kelishuv bitimida sud xarajatlarini taqsimlash haqidagi shart mavjud boʻlmasa, sud bu masalani kelishuv bitimini tasdiqlash chogʻida, ushbu Kodeksda belgilangan umumiy tartibda hal etadi.\nKelishuv bitimi uni tuzgan shaxslar sonidan bitta ortiq nusxada tuziladi va imzolanadi. Ushbu nusxalardan biri ish materiallariga qoʻshib qoʻyiladi.",
+     "retrieval_score": 0.828,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-167#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "167-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "167-modda. Kelishuv bitimining mazmuni\nKelishuv bitimi uni ijro etish muddati va tartibi koʻrsatilgan holda taraflar tomonidan kelishilgan shartlarni oʻz ichiga olishi kerak.\nTaraflar tomonidan kelishuv bitimi shartlari boʻyicha qabul qilingan majburiyatlarning ijro etilishi taraflarni bir-biriga yoki boshqa voqealarga (harakatlarga) bogʻliq qilib qoʻyishi mumkin emas.\nKelishuv bitimida javobgar tomonidan majburiyatlarni kechiktirib yoki boʻlib-boʻlib ijro etish toʻgʻrisidagi, talab qilish huquqidan boshqa shaxs foydasiga voz kechish haqidagi, qarzdan toʻliq yoki qisman voz kechish yoxud uni tan olish toʻgʻrisidagi, sud xarajatlarini taqsimlash haqidagi shartlar va qonunga zid boʻlmagan boshqa shartlar boʻlishi mumkin.\nAgar kelishuv bitimida sud xarajatlarini taqsimlash toʻgʻrisidagi shart mavjud boʻlmasa, sud mazkur masalani kelishuv bitimini tasdiqlash chogʻida, ushbu Kodeksda belgilangan tartibda hal qiladi.\nKelishuv bitimi uni tuzgan shaxslar sonidan bitta ortiq nusxada tuziladi va imzolanadi. Ushbu nusxalardan biri ish materiallariga qoʻshib qoʻyiladi.",
+     "retrieval_score": 0.7918,
+     "rerank_score": 0.85,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3517337#art-166#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "166-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-03-21",
+     "text": "166-modda. Kelishuv bitimini yoki mediativ kelishuvni tuzish\nSud taraflarni yarashtirish uchun choralar koʻradi, ularga fuqarolik sud ishlarini yuritishning barcha bosqichlarida nizoni hal etishga koʻmaklashadi.\nTaraflar kelishuv bitimini yoki mediativ kelishuvni tuzib, nizoni oʻzaro talablarning toʻliq hajmida yoki qisman hal etishi mumkin.\nKelishuv bitimi yoki mediativ kelishuv daʼvo tartibida yuritiladigan har qanday ish boʻyicha tuzilishi mumkin.\nKelishuv bitimi fuqarolik sud ishlarini yuritishning har qanday bosqichida va sud hujjatini ijro etish jarayonida, mediativ kelishuv esa birinchi instansiya sudida sud alohida xonaga (maslahatxonaga) sud hujjatini qabul qilish uchun chiqquniga qadar taraflar tomonidan tuzilishi mumkin.\nKelishuv bitimi yoki mediativ kelishuv yozma shaklda tuziladi va kelishuv bitimini, mediativ kelishuvni tuzgan shaxslar yoki ularning vakillari tomonidan imzolanadi.\nKelishuv bitimi sud tomonidan tasdiqlanganidan keyin tuzilgan hisoblanadi.",
+     "retrieval_score": 0.986,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-131#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "131-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-03-21",
+     "text": "131-modda. Kelishuv bitimini yoki mediativ kelishuvni tuzish\nTaraflar nizoni kelishuv bitimini yoki mediativ kelishuvni tuzib hal etishi mumkin.\nKelishuv bitimi yoki mediativ kelishuv daʼvo tartibidagi har qanday ish boʻyicha tuzilishi mumkin.\nKelishuv bitimi iqtisodiy sud ishlarini yuritishning har qanday bosqichida va sud hujjatini ijro etish jarayonida, mediativ kelishuv esa birinchi instansiya sudida sud alohida xonaga (maslahatxonaga) sud hujjatini qabul qilish uchun chiqquniga qadar taraflar tomonidan tuzilishi mumkin.\nKelishuv bitimi u sud tomonidan tasdiqlanganidan keyin tuzilgan hisoblanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-169#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "169-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "169-modda. Kelishuv bitimini tasdiqlashni rad etish\nSud kelishuv bitimini tasdiqlashni quyidagi hollarda rad etadi, agar uning shartlari:\nqonunchilikka zid boʻlsa;\nuchinchi shaxslarning huquqlari va qonuniy manfaatlariga daxldor boʻlsa.\nKelishuv bitimini tasdiqlashni rad etish toʻgʻrisida ajrim chiqariladi, ajrim ustidan shikoyat qilinishi (protest keltirilishi) mumkin.",
+     "retrieval_score": 0.8053,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1705,
+    "retrieval_ms": 619,
+    "rerank_ms": 0,
+    "generation_ms": 2444,
+    "total_ms": 4769
+   },
+   "usage": {
+    "input_tokens": 13367,
+    "output_tokens": 505,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud ishida tomonlar kelishuv bitimini tuzishlari uchun qanday asosiy shart talab qilinadi?",
+    "search_queries": [
+     "Sud ishida tomonlar kelishuv bitimini tuzishlari uchun qanday asosiy shart talab qilinadi?",
+     "kelishuv bitimi tuzish shartlari",
+     "sud ishida kelishuv bitimi",
+     "tomonlar kelishuv bitimi tuzishi mumkinligi"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 563,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q032",
+   "status": "ok",
+   "answer": "Iqtisodiy protsessual kodeksning 192-moddasiga koʻra, xoʻjalik sudining hal qiluv qarori, agar uning ustidan apellyatsiya tartibida shikoyat qilinmagan (protest keltirilmagan) boʻlsa, u qabul qilingan kundan eʼtiboran bir oylik muddat oʻtgach qonuniy kuchga kiradi [1]. Apellyatsiya shikoyati (protesti) berilgan taqdirda hal qiluv qarori, agar u bekor qilinmagan boʻlsa, apellyatsiya instansiyasi sudining qarori qabul qilingan kundan eʼtiboran qonuniy kuchga kiradi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "192-modda",
+     "part": "1-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-192#p1",
+     "quote": "Hal qiluv qarori, agar uning ustidan apellyatsiya tartibida shikoyat qilinmagan (protest keltirilmagan) boʻlsa, u qabul qilingan kundan eʼtiboran bir oylik muddat oʻtgach, qonuniy kuchga kiradi. Apellyatsiya shikoyati (protesti) berilgan taqdirda hal qiluv qarori, agar u bekor qilinmagan boʻlsa, apellyatsiya instansiyasi sudining qarori qabul qilingan kundan eʼtiboran qonuniy kuchga kiradi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:3523891#art-192#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "192-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "192-modda. Hal qiluv qarorining qonuniy kuchga kirishi\nHal qiluv qarori, agar uning ustidan apellyatsiya tartibida shikoyat qilinmagan (protest keltirilmagan) boʻlsa, u qabul qilingan kundan eʼtiboran bir oylik muddat oʻtgach, qonuniy kuchga kiradi. Apellyatsiya shikoyati (protesti) berilgan taqdirda hal qiluv qarori, agar u bekor qilinmagan boʻlsa, apellyatsiya instansiyasi sudining qarori qabul qilingan kundan eʼtiboran qonuniy kuchga kiradi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:185986#art-146#p1",
+     "doc_id": "lex:185986",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING XOʻJALIK PROTSESSUAL KODEKSI Oʻzbekiston Respublikasining 1997-yil 30-avgustdagi 478-I-sonli “Oʻzbekiston Respublikasining Xoʻjalik protsessual kodeksini tasdiqlash toʻgʻrisida”gi Qonuni Oʻzbekiston Respublikasining 2018-yil 29-yanvardagi OʻRQ-463-sonli “Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrim qonun h",
+     "url": "https://lex.uz/docs/185986",
+     "article": "146-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "1997-08-30",
+     "text": "146-modda. Hal qiluv qarorining qonuniy kuchga kirishi\nXoʻjalik sudining hal qiluv qarori qabul qilingandan keyin bir oylik muddat oʻtgach kuchga kiradi.\nOʻzbekiston Respublikasi Oliy xoʻjalik sudining hal qiluv qarori qabul qilingan paytdan kuchga kiradi.\nApellyatsiya shikoyati berilgan taqdirda hal qiluv qarori, agar u bekor qilinmasa, apellyatsiya instansiyasi qaror chiqargan paytdan qonuniy kuchga kiradi.\nXoʻjalik sudining hal qiluv qarori qonuniy kuchga kirganidan keyin ijro etiladi.\nDavlat organlarining, fuqarolar oʻzini oʻzi boshqarish organlarining hujjatlarini haqiqiy emas deb topish toʻgʻrisidagi hal qiluv qarorlari, shuningdek kelishuv bitimini tasdiqlash toʻgʻrisidagi ajrimlar darhol ijro etiladi.",
+     "retrieval_score": 0.5892,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-203.5#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "203⁵-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-09-17",
+     "text": "2035-modda. Soddalashtirilgan ish yuritish tartibida koʻrib chiqilgan ish boʻyicha hal qiluv qarori\nSoddalashtirilgan ish yuritish tartibida koʻrib chiqilgan ish boʻyicha hal qiluv qarori ushbu Kodeksning 21-bobida nazarda tutilgan umumiy qoidalarga koʻra, ushbu bobda belgilangan xususiyatlar hisobga olingan holda sud tomonidan qabul qilinadi.\nSoddalashtirilgan ish yuritish tartibida koʻrib chiqilgan ish boʻyicha hal qiluv qarori, agar apellyatsiya shikoyati (protesti) berilmagan boʻlsa, qabul qilinganidan keyin oʻn kun oʻtgach qonuniy kuchga kiradi.\nSoddalashtirilgan ish yuritish tartibida koʻrib chiqilgan ish boʻyicha hal qiluv qarori sud tomonidan beriladigan ijro varaqasi asosida ushbu Kodeks V boʻlimining qoidalariga binoan majburiy ijro etilishi lozim.\nApellyatsiya shikoyati (protesti) berilgan taqdirda hal qiluv qarori, agar u bekor qilinmagan boʻlsa, apellyatsiya instansiyasi sudining qarori qabul qilingan kundan eʼtiboran qonuniy kuchga kiradi.",
+     "retrieval_score": 0.7039,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-222#p7",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "222-modda",
+     "part": "7–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-21",
+     "text": "222-modda. Huquqiy taʼsir chorasini qoʻllash toʻgʻrisidagi ish boʻyicha hal qiluv qarori\n4) faoliyat cheklanadigan, toʻxtatib turiladigan va taqiqlanadigan muddat; litsenziyaning (ruxsatnomaning) amal qilishi toʻxtatib turiladigan muddat; amal qilishi toʻxtatib turilgan litsenziyaning (ruxsatnomaning), shuningdek bekor qilingan litsenziyaning (ruxsatnomaning) hamda tugatilgan, xabardor qilish tartibida amalga oshiriladigan faoliyat (harakat) uchun olingan tasdiqnomaning nomi, raqami, berilgan sanasi va boshqa rekvizitlari haqidagi hamda litsenziyani (ruxsatnomani) bergan, xabardor qilingan organ toʻgʻrisidagi maʼlumotlar; faoliyat qanday shartlar bajarilguniga qadar cheklanayotganligi, toʻxtatib turilayotganligi va taqiqlanayotganligi; banklardagi hisobvaraqlar boʻyicha operatsiyalar qanday shartlar bajarilguniga qadar toʻxtatib turilganligi.\nSudning huquqiy taʼsir chorasini qoʻllash toʻgʻrisidagi ish boʻyicha hal qiluv qarori, agar apellyatsiya shikoyati (protesti) berilmagan boʻlsa, u qabul qilinganidan keyin oʻn kun oʻtgach qonuniy kuchga kiradi.\nApellyatsiya shikoyati (protesti) berilgan taqdirda sudning hal qiluv qarori, agar u bekor qilinmagan boʻlsa, apellyatsiya instansiyasi sudining qarori qabul qilingan kundan eʼtiboran qonuniy kuchga kiradi.",
+     "retrieval_score": 0.7247,
+     "rerank_score": 0.35,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:3523891#art-262#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "262-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-15",
+     "text": "262-modda. Apellyatsiya shikoyatini (protestini) berish muddati\nAgar qonunchilikda boshqacha muddat belgilanmagan boʻlsa, apellyatsiya shikoyati (protesti) birinchi instansiya sudi tomonidan shikoyat qilinayotgan (protest keltirilayotgan) hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy ichida berilishi mumkin.\nSudning soddalashtirilgan ish yuritish tartibida koʻrib chiqilgan, shuningdek huquqiy taʼsir chorasini qoʻllash, oʻzboshimchalik bilan egallab olingan, davlat mulkida boʻlgan yer uchastkasini qaytarish, oʻzboshimchalik bilan qurilgan imoratni buzib tashlash toʻgʻrisidagi ishlar boʻyicha hal qiluv qarori ustidan apellyatsiya shikoyati (protesti) hal qiluv qarori qabul qilinganidan keyin oʻn kun ichida berilishi mumkin.\nApellyatsiya shikoyatini (protestini) berishning oʻtkazib yuborilgan muddati, shikoyat (protest) bergan shaxsning iltimosnomasi boʻyicha apellyatsiya instansiyasi sudi tomonidan, agar iltimosnoma hal qiluv qarori qabul qilingan kundan eʼtiboran ikki oydan kechiktirmasdan berilgan va apellyatsiya shikoyatini (protestini) berish muddati oʻtkazib yuborilishining sabablari sud tomonidan uzrli deb topilgan boʻlsa, tiklanishi mumkin.\nApellyatsiya shikoyatini (protestini) berishning oʻtkazib yuborilgan muddatini tiklash haqida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.",
+     "retrieval_score": 0.6209,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1664,
+    "retrieval_ms": 1167,
+    "rerank_ms": 0,
+    "generation_ms": 2587,
+    "total_ms": 5419
+   },
+   "usage": {
+    "input_tokens": 12086,
+    "output_tokens": 571,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Xoʻjalik sudi chiqargan qaror qachon qonuniy kuchga kiradi?",
+    "search_queries": [
+     "Xoʻjalik sudi chiqargan qaror qachon kuchga kiradi?",
+     "Xoʻjalik sudi chiqargan qaror qachon qonuniy kuchga kiradi?",
+     "xoʻjalik sudi qarori qonuniy kuchga kirish muddati",
+     "iqtisodiy sud qarori apellyatsiya tartibida shikoyat qilish muddati",
+     "sud qarori qonuniy kuchga kirishi"
+    ],
+    "doc_hints": [
+     "Iqtisodiy protsessual kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 690,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q033",
+   "status": "ok",
+   "answer": "Madaniy faoliyat va madaniyat tashkilotlari toʻgʻrisidagi qonunning 34-moddasiga koʻra, madaniy-maʼrifiy tashkilotlar eng yaxshi xalq ijodiyoti jamoalarini viloyatlar, hududlar, respublika bayramlarida, xalqaro bayramlarda, tanlovlarda, festivallarda ishtirok etish uchun jalb qilish orqali ommalashtiradi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-5230682",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni madaniy faoliyat va madaniyat tashkilotlari toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-5230682",
+     "article": "34-modda",
+     "part": "1–7-qism",
+     "edition_date": "2021-01-20",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-5230682#art-34#p1",
+     "quote": "eng yaxshi xalq ijodiyoti jamoalarini viloyatlar, hududlar, respublika bayramlarida, xalqaro bayramlarda, tanlovlarda, festivallarda ishtirok etish uchun jalb qilish orqali ularni ommalashtirish;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-5230682#art-34#p1",
+     "doc_id": "lex:-5230682",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni madaniy faoliyat va madaniyat tashkilotlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5230682",
+     "article": "34-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-01-20",
+     "text": "34-modda. Madaniy-maʼrifiy tashkilotlar faoliyatining asosiy yoʻnalishlari\nMadaniy-maʼrifiy tashkilotlar faoliyatining asosiy yoʻnalishlari quyidagilardan iborat:\nxalq ijodiyotini, xalq badiiy hunarmandchiligi va amaliy sanʼatini, shuningdek madaniy meros obyektlarini saqlash va targʻib qilish;\nOʻzbekiston Respublikasida oʻtkaziladigan bayramlarni, konsertlarni, ashula va raqs bayramlarini, taqdimotlarni, festivallarni, tanlovlarni, xalq amaliy va tasviriy sanʼati koʻrgazmalarini tashkil etish;\nilmiy-amaliy, axborot-uslubiy ishlarni tashkil etish;\nmadaniy-koʻngilochar faoliyatning va xalq ijodiyotining ilgʻor tajribasini oʻrganish, umumlashtirish, ommalashtirish, tatbiq etish va tarqatish;\neng yaxshi xalq ijodiyoti jamoalarini viloyatlar, hududlar, respublika bayramlarida, xalqaro bayramlarda, tanlovlarda, festivallarda ishtirok etish uchun jalb qilish orqali ularni ommalashtirish;\nmadaniyat tashkilotlarining assotsiatsiyalarini (uyushmalarini), shuningdek madaniyatni saqlash va rivojlantirishga qaratilgan innovatsion loyihalarni, madaniy tadbirlar hamda tashabbuslarni qoʻllab-quvvatlash.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5230682#art-29#p1",
+     "doc_id": "lex:-5230682",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni madaniy faoliyat va madaniyat tashkilotlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5230682",
+     "article": "29-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-01-20",
+     "text": "29-modda. Madaniyat markazlari\nDavlat muassasasi shaklida tashkil etilgan, aholining madaniy ehtiyojlarini oʻrganish, shuningdek madaniy-maʼrifiy va koʻngilochar xizmatlar koʻrsatish boʻyicha faoliyatni amalga oshiruvchi, badiiy ijod, amaliy sanʼat va havaskorlik bilan shugʻullanuvchi yuridik shaxs madaniyat markazidir.\nMadaniyat markazlarining asosiy vazifalari quyidagilardan iborat:\naholiga koʻrsatiladigan madaniy xizmatlar sifatini yaxshilash, aholining boʻsh vaqti mazmunli oʻtishini taʼminlash va madaniy ehtiyojlarini qanoatlantirish, ijodiy jamoalarning milliy qadriyatlarni, urf-odatlar va anʼanalarni oʻzida mujassam etgan namunaviy dasturlarni shakllantirish;\nxalq ijodiyotini va badiiy havaskorlikni saqlash hamda rivojlantirish, badiiy va amaliy ijodiy jamoalarni, havaskorlik guruhlarini tashkil etish, ularning faoliyat koʻrsatishi uchun zarur shart-sharoitlar yaratish, shuningdek ijodiy jarayonlarni tizimli asosda boyitib borish;\nbolalarni toʻgaraklarga jalb etish, ularni chet tillarga oʻqitish, “Nutq madaniyati” kurslarini tashkil etish, xalq ijodiyotining barcha janrlari va yoʻnalishlarini, havaskorlik sanʼatini va nomoddiy madaniy merosni keng targʻib qilish, shuningdek ularni asl holida kelajak avlodga yetkazish;",
+     "retrieval_score": 0.8433,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4084926#band-9s2#p2784",
+     "doc_id": "lex:4084926",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori Oʻzbekiston Respublikasida milliy madaniyatni yanada rivojlantirish konsepsiyasini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/4084926",
+     "article": "9-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-11-28",
+     "text": "Madaniyat markazlarida faoliyat koʻrsatayotgan “Xalq havaskorlik jamoalari” va “Namunali bolalar jamoalari”ning hisobot konsertlarini oʻtkazish hamda ommaviy axborot vositalarida keng yoritish.\nhar chorakda  bir marotaba, rejaga muvofiq\nBajaruvchilar mablagʻlari\nMadaniyat vazirligi (B. Sayfullayev),\nMilliy teleradiokompaniya (A. Xadjayev),\nOʻzbekiston Milliy axborot agentligi (A. Koʻchimov)\n21.\nRespublika va xalqaro koʻrik-tanlovlar gʻoliblari, eng namunali badiiy havaskorlik jamoalari, qiziqchi va teatr aktyorlari, xonanda va sozandalarni keng jalb etgan holda “Xalq ijodiyoti” poyezdini Qoraqalpogʻiston Respublikasi va viloyatlar boʻylab ijodiy safarlarini tashkil etish.\nhar yili sentabr oyida\nBajaruvchilar mablagʻlari\nMadaniyat vazirligi (B. Sayfullayev),\n“Oʻzbekiston temir yoʻllari” AJ (F. Sagdullayev), Milliy teleradiokompaniya (A. Xadjayev), Qoraqalpogʻiston Respublikasi Vazirlar Kengashi, viloyatlar  va Toshkent shahar hokimliklari\n22.\nMadaniyat markazlarida taniqli teatr, kino aktyorlari va sanʼatkorlar, yozuvchi, shoir va sportchilar ishtirokida madaniy-maʼrifiy targʻibot uchrashuvlarini tashkil etish hamda tarixiy, badiiy va zamonaviy kino filmlar namoyishini yoʻlga qoʻyish.\nmuntazam, rejaga muvofiq\nBajaruvchilar mablagʻlari\nMadaniyat vazirligi (B. Sayfullayev),",
+     "retrieval_score": 0.6349,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-4261685#band-7s2#p1",
+     "doc_id": "lex:-4261685",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori madaniyat markazlari faoliyatiga oid normativ-huquqiy hujjatlarni tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4261685",
+     "article": "7-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-11-28",
+     "text": "7. Quyidagilar Markazning asosiy vazifalari hisoblanadi:\naholiga madaniy xizmat koʻrsatish sifatini yaxshilash, ularning madaniy ehtiyojlarini qondirish va boʻsh vaqtlarining mazmunli oʻtishini taʼminlash, ijodiy jamoalarning milliy qadriyat, urf-odat va anʼanalarni oʻzida mujassam etgan namunali dasturlarini shakllantirish;\nxalq ijodiyoti va badiiy havaskorlik sanʼatini saqlab qolish va rivojlantirish, badiiy va amaliy ijodiy jamoalar, havaskorlik guruhlari tashkil etish va ularning faoliyat yuritishi uchun qulay shart-sharoitlar yaratish hamda ijodiy jarayonni tizimli ravishda boyitib borish;\nbolalarni toʻgaraklarga jalb etish, xorijiy tillarni oʻrganish va “nutq madaniyati” boʻyicha kurslar tashkil etish, xalq ijodiyotining barcha janr va yoʻnalishlari, havaskorlik sanʼati va nomoddiy madaniy merosni keng targʻib qilish hamda ularni asl holicha kelajak avlodga yetkazish;\nadabiyot hamda sanʼat arboblari va professional ijodiy guruhlar bilan maʼnaviy-maʼrifiy, madaniy-ommaviy tadbirlar tashkil etib, ular ishtirokida aholi, xususan, yoshlar bilan bevosita badiiy uchrashuvlar va davra suhbatlari oʻtkazish;\ntanlovlar, xalq ijodiyoti va tomosha sanʼatining tuman (shahar) festivallarini oʻtkazish, iqtidorli yoshlarni aniqlash, ijodkor yoshlarni qoʻllab-quvvatlash;",
+     "retrieval_score": 0.8165,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4084926#band-3#p1",
+     "doc_id": "lex:4084926",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori Oʻzbekiston Respublikasida milliy madaniyatni yanada rivojlantirish konsepsiyasini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/4084926",
+     "article": "3-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-11-28",
+     "text": "3. Qoraqalpogʻiston Respublikasi Vazirlar Kengashi, viloyatlar va Toshkent shahrida faoliyat koʻrsatayotgan madaniyat va aholi dam olish markazlari negizida madaniyat markazlari tashkil etilsin.\nQuyidagilar madaniyat markazlarining asosiy vazifalari etib belgilansin:\naholiga madaniy xizmat koʻrsatish sifatini yaxshilash, ularning madaniy ehtiyojlarini qondirish va boʻsh vaqtlarining mazmunli oʻtishini taʼminlash, ijodiy jamoalarning milliy qadriyat, urf-odat va anʼanalarni oʻzida mujassam etgan namunali dasturlarini shakllantirish;\nxalq ijodiyoti va badiiy havaskorlik sanʼatini saqlab qolish va rivojlantirish, badiiy va amaliy ijodiy jamoalar, havaskorlik guruhlarini tashkil etish va ularning faoliyat yuritishi uchun qulay shart-sharoit yaratish hamda ijodiy jarayonni tizimli ravishda boyitib borish;\nbolalarni toʻgaraklarga jalb etish, xorijiy tillarni oʻrganish va “nutq madaniyati” boʻyicha kurslarni tashkil etish, xalq ijodiyotining barcha janr va yoʻnalishlari, havaskorlik sanʼati va nomoddiy madaniy merosni keng targʻib qilish hamda ularni asl holicha kelajak avlodga yetkazish;\nadabiyot hamda sanʼat arboblari va professional ijodiy guruhlar bilan maʼnaviy-maʼrifiy, madaniy-ommaviy tadbirlar tashkil etib, ular ishtirokida aholi, xususan, yoshlar bilan bevosita badiiy uchrashuvlar va davra suhbatlarini oʻtkazish;",
+     "retrieval_score": 0.7147,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1193,
+    "retrieval_ms": 164,
+    "rerank_ms": 0,
+    "generation_ms": 2275,
+    "total_ms": 3634
+   },
+   "usage": {
+    "input_tokens": 11864,
+    "output_tokens": 441,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Madaniy-maʼrifiy tashkilotlar eng yaxshi xalq ijodiyoti jamoalarini qanday yoʻl bilan ommalashtiradi?",
+    "search_queries": [
+     "Madaniy-maʼrifiy tashkilotlar eng yaxshi xalq ijodiyoti jamoalarini qanday yoʻl bilan ommalashtiradi?",
+     "xalq ijodiyoti jamoalarini ommalashtirish",
+     "madaniy-maʼrifiy tashkilotlar xalq ijodiyoti jamoalari",
+     "eng yaxshi xalq ijodiyoti jamoalarini targʻib qilish"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 398,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q034",
+   "status": "ok",
+   "answer": "Patent vakili sifatida faoliyat yuritish uchun Oʻzbekiston Respublikasi hududida doimiy yashaydigan Oʻzbekiston Respublikasi fuqarosi boʻlish talab etiladi [1]. Nomzod oliy maʼlumotga ega boʻlishi va intellektual mulk obyektlariga huquqlarni himoya qilish sohasida Vazirlik belgilagan hajmda malaka imtihonidan oʻtishi kerak [2]. Attestatsiya aynan malaka imtihoni oʻtkazish yoʻli bilan amalga oshiriladi [3].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:245257",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori patent vakillari toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/245257",
+     "article": "3-band (2-boʻlim)",
+     "part": null,
+     "edition_date": "2022-06-10",
+     "doc_status": "amalda",
+     "chunk_id": "lex:245257#band-3s2#p1",
+     "quote": "Oʻzbekiston Respublikasi hududida doimiy yashaydigan Oʻzbekiston Respublikasi fuqarolari patent vakillari sifatida attestatsiyadan va roʻyxatdan oʻtkazilishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:245257",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori patent vakillari toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/245257",
+     "article": "4-band (2-boʻlim)",
+     "part": null,
+     "edition_date": "2022-06-10",
+     "doc_status": "amalda",
+     "chunk_id": "lex:245257#band-4s2#p1",
+     "quote": "oliy maʼlumotga ega boʻlish; intellektual mulk obyektlariga huquqlarni himoya va muhofaza qilish boʻyicha faoliyatni amalga oshirish uchun Vazirlik tomonidan belgilanadigan hajmda Oʻzbekiston Respublikasi qonunchiligi, Oʻzbekiston Respublikasining xalqaro shartnomalari sohasida malaka imtihoni natijalari bilan tasdiqlangan bilimlarga ega boʻlish",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:4565151",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori patent vakillari toʻgʻrisidagi nizomga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "doc_type": "vm_qarori",
+     "url": "https://lex.uz/docs/4565151",
+     "article": "4-band (2-boʻlim)",
+     "part": null,
+     "edition_date": "2019-10-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4565151#band-4s2#p1",
+     "quote": "“Patent vakilligiga nomzodni attestatsiyadan va roʻyxatdan oʻtkazish hamda patent vakilini attestatsiyadan oʻtkazish”.",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:245257#band-3s2#p1",
+     "doc_id": "lex:245257",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori patent vakillari toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/245257",
+     "article": "3-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-06-10",
+     "text": "3. Jismoniy shaxslar Vazirlikda attestatsiyadan va roʻyxatdan oʻtgandan keyin patent vakillari sifatida faoliyatni amalga oshirishga haqlidir. Oʻzbekiston Respublikasi hududida doimiy yashaydigan Oʻzbekiston Respublikasi fuqarolari patent vakillari sifatida attestatsiyadan va roʻyxatdan oʻtkazilishi mumkin.",
+     "retrieval_score": 0.9178,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:245257#band-4s2#p1",
+     "doc_id": "lex:245257",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori patent vakillari toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/245257",
+     "article": "4-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-06-10",
+     "text": "4. Quyidagilar patent vakillariga qoʻyiladigan malaka talablari hisoblanadi:\noliy maʼlumotga ega boʻlish;\nintellektual mulk obyektlariga huquqlarni himoya va muhofaza qilish boʻyicha faoliyatni amalga oshirish uchun Vazirlik tomonidan belgilanadigan hajmda Oʻzbekiston Respublikasi qonunchiligi, Oʻzbekiston Respublikasining xalqaro shartnomalari sohasida malaka imtihoni natijalari bilan tasdiqlangan bilimlarga ega boʻlish.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.8,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4565151#band-4s2#p1",
+     "doc_id": "lex:4565151",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori patent vakillari toʻgʻrisidagi nizomga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/4565151",
+     "article": "4-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2019-10-22",
+     "text": "4. II-bobning nomi quyidagi tahrirda bayon qilinsin:\n“Patent vakilligiga nomzodni attestatsiyadan va roʻyxatdan oʻtkazish hamda patent vakilini attestatsiyadan oʻtkazish”.",
+     "retrieval_score": 0.8076,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:245257#band-7s2#p1",
+     "doc_id": "lex:245257",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori patent vakillari toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/245257",
+     "article": "7-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2022-06-10",
+     "text": "7. Nomzodni attestatsiyadan va roʻyxatdan oʻtkazish hamda patent vakilini attestatsiyadan oʻtkazish Vazirlik tomonidan qonunchilikka muvofiq amalga oshiriladi.",
+     "retrieval_score": 0.8512,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:245257#band-81s2#p1",
+     "doc_id": "lex:245257",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori patent vakillari toʻgʻrisidagi nizomni tasdiqlash haqida",
+     "url": "https://lex.uz/docs/245257",
+     "article": "81-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2019-10-22",
+     "text": "81. Patent vakili attestatsiyasi patent vakillarining kasbiy malaka darajasini xolisona baholash maqsadida oʻtkaziladi.\nPatent vakillari attestatsiyasi har besh yilda kamida bir marta oʻtkaziladi.",
+     "retrieval_score": 0.8786,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1760,
+    "retrieval_ms": 1117,
+    "rerank_ms": 0,
+    "generation_ms": 3245,
+    "total_ms": 6125
+   },
+   "usage": {
+    "input_tokens": 6572,
+    "output_tokens": 638,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Patent vakili boʻlish uchun qanday fuqaro talab qilinadi va u qanday sinovdan (attestatsiyadan) oʻtishi kerak?",
+    "search_queries": [
+     "Patent vakili boʻlish uchun qanday fuqaro talab qilinadi va u qanday sinovdan oʻtishi kerak?",
+     "Patent vakili boʻlish uchun qanday fuqaro talab qilinadi va u qanday sinovdan (attestatsiyadan) oʻtishi kerak?",
+     "patent vakili boʻlish uchun talablar",
+     "patent vakili attestatsiyadan oʻtish tartibi",
+     "patent vakolatliligini tasdiqlovchi imtihon sinov"
+    ],
+    "doc_hints": [
+     "Patent vakillari toʻgʻrisidagi nizom",
+     "Intellektual mulkni muhofaza qilish toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 452,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q035",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasining Saylov kodeksining 33-moddasiga koʻra, manfaatdor tashkilotlar oʻz kuzatuvchilari toʻgʻrisida saylov komissiyalariga saylovdan kamida oʻn kun oldin ariza bilan maʼlum qiladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "33-modda",
+     "part": "1–8-qism",
+     "edition_date": "2023-12-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4386848#art-33#p1",
+     "quote": "Manfaatdor tashkilotlar oʻz kuzatuvchilari toʻgʻrisida saylov komissiyalariga saylovdan kamida oʻn kun oldin ariza bilan maʼlum qiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4386848#art-33#p1",
+     "doc_id": "lex:4386848",
+     "doc_title": "Oʻzbekiston Respublikasining saylov kodeksi",
+     "url": "https://lex.uz/docs/4386848",
+     "article": "33-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-19",
+     "text": "33-modda. Siyosiy partiyalardan, fuqarolarning oʻzini oʻzi boshqarish organlaridan, boshqa davlatlar va xalqaro tashkilotlardan kuzatuvchilar\nSiyosiy partiyalardan, fuqarolarning oʻzini oʻzi boshqarish organlaridan, shuningdek boshqa davlatlar va xalqaro tashkilotlardan kuzatuvchilar oʻz faoliyatini tegishli komissiyalar tomonidan berilgan mandatlar asosida amalga oshiradi.\nManfaatdor tashkilotlar oʻz kuzatuvchilari toʻgʻrisida saylov komissiyalariga saylovdan kamida oʻn kun oldin ariza bilan maʼlum qiladi.\nManfaatdor tashkilotdan ariza olinganidan keyin besh kun ichida saylov komissiyasi kuzatuvchi uchun mandat beradi. Boshqa davlatlardan, xalqaro tashkilotlardan kuzatuvchilarga mandatlar Markaziy saylov komissiyasi tomonidan beriladi.\nKuzatuvchilar quyidagi huquqlarga ega:\nsaylov komissiyalarining majlislarida hozir boʻlish;\nnomzodlar koʻrsatishga bagʻishlangan yigʻilishlarda, nomzodlarning va siyosiy partiyalarning (vakillarining) saylovchilar bilan uchrashuvlarida ishtirok etish;\nsaylov uchastkasida hozir boʻlish, tayyorgarlik ishlarining borishini, yashirin ovoz berish kabinalarining yoki xonalarining joylashtirilishini va saylov qutilarining muhrlanishini, fuqarolarning roʻyxatga olinishini, saylov byulletenlarining ularga berilishini kuzatish;\novozlar sanab chiqilayotganda va saylov komissiyasining bayonnomasi tuzilayotganda hozir boʻlish;",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-5233886#art-33#p1",
+     "doc_id": "lex:-5233886",
+     "doc_title": "Qoraqalpogʻiston Respublikasining qonuni saylov toʻgʻrisida",
+     "url": "https://lex.uz/docs/-5233886",
+     "article": "33-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-12-26",
+     "text": "33-modda. Siyosiy partiyalardan, fuqarolarning oʻzini oʻzi boshqarish organlaridan kuzatuvchilar\nSiyosiy partiyalardan, fuqarolarning oʻzini oʻzi boshqarish organlaridan, shuningdek boshqa davlatlar va xalqaro tashkilotlardan kuzatuvchilar oʻz faoliyatini tegishli komissiyalar tomonidan berilgan mandatlar asosida amalga oshiradi.\nManfaatdor tashkilotlar oʻz kuzatuvchilari toʻgʻrisida saylov komissiyalariga saylovdan kamida oʻn besh kun oldin ariza bilan maʼlum qiladi.\nManfaatdor tashkilotdan ariza olinganidan keyin besh kun ichida saylov komissiyasi kuzatuvchi uchun mandat beradi.\nKuzatuvchilar quyidagi huquqlarga ega:\nsaylov komissiyalarining majlislarida hozir boʻlish;\nnomzodlar koʻrsatishga bagʻishlangan yigʻilishlarda, nomzodlarning saylovchilar bilan uchrashuvlarida ishtirok etish;\nsaylov uchastkasida hozir boʻlish, tayyorgarlik ishlarining borishini, yashirin ovoz berish kabinalarining yoki xonalarining joylashtirilishini va saylov qutilarining muhrlanishini, fuqarolarning roʻyxatga olinishini, saylov byulletenlarining ularga berilishini kuzatish;\novozlar sanab chiqilayotganda va saylov komissiyasining bayonnomasi tuzilayotganda hozir boʻlish;\nsaylov natijalari toʻgʻrisidagi hujjatlarning tegishli saylov komissiyasi tomonidan tasdiqlangan koʻchirma nusxalarini soʻrash va olish;",
+     "retrieval_score": 0.5517,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111838#art-5#p5",
+     "doc_id": "lex:-111838",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti saylovi toʻgʻrisida",
+     "url": "https://lex.uz/docs/-111838",
+     "article": "5-modda",
+     "part": "5–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2015-12-29",
+     "text": "5-modda. Oʻzbekiston Respublikasi Prezidenti sayloviga tayyorgarlik koʻrish va uni oʻtkazishdagi oshkoralik\nManfaatdor tashkilotlar oʻz kuzatuvchilari toʻgʻrisida okrug saylov komissiyalariga saylovdan kamida oʻn besh kun oldin maʼlum qiladilar.\nOkrug saylov komissiyasi Oʻzbekiston Respublikasi Markaziy saylov komissiyasi tomonidan belgilanadigan namunadagi mandatni manfaatdor tashkilotdan ariza olinganidan keyin besh kun ichida kuzatuvchi uchun beradi. Boshqa davlatlar, xalqaro tashkilotlar va harakatlardan kuzatuvchilarga mandatlar Markaziy saylov komissiyasi tomonidan beriladi.\nKuzatuvchilar quyidagi huquqlarga ega:\nOʻzbekiston Respublikasi Prezidentligiga nomzodlar koʻrsatishga bagʻishlangan yigʻilishlarda, okrug va uchastka saylov komissiyalarining majlislarida hozir boʻlish;\nsaylov uchastkasida hozir boʻlish hamda tayyorgarlik ishlarining borishini, ovoz berish uchun saylov qutilarining joylashtirilishi va muhrlanishini, fuqarolarga saylov byulletenlarining berilishini kuzatish;\novozlarni sanab chiqishda va uchastka saylov komissiyasining bayonnomasini tuzishda hozir boʻlish;\nsaylov natijalari toʻgʻrisidagi hujjatlarning tegishli saylov komissiyasi tomonidan tasdiqlangan nusxalarini soʻrash va ularni olish;\nagar saylov uchastkasida ushbu Qonunning buzilishiga yoʻl qoʻyilgan deb hisoblash uchun asos boʻlsa, oʻz kuzatuvlari toʻgʻrisida yuqori komissiyaga maʼlum qilish.",
+     "retrieval_score": 0.5082,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-67462#art-6#p5",
+     "doc_id": "lex:-67462",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni xalq deputatlari viloyat, tuman va shahar kengashlariga saylov toʻgʻrisida",
+     "url": "https://lex.uz/docs/-67462",
+     "article": "6-modda",
+     "part": "5–14-qism",
+     "doc_status": "amalda",
+     "edition_date": "2008-12-25",
+     "text": "6-modda. Saylovga tayyorgarlik koʻrish va uni oʻtkazishdagi oshkoralik\nManfaatdor tashkilotlar oʻz kuzatuvchilari toʻgʻrisida okrug saylov komissiyalariga saylovga kechi bilan oʻn besh kun qolganida maʼlum qiladilar.\nOkrug saylov komissiyasi manfaatdor tashkilotdan ariza olinganidan keyin besh kun ichida tegishli viloyat, tuman, shahar saylov komissiyasi belgilaydigan namunadagi mandatni kuzatuvchi uchun beradi.\nKuzatuvchilar quyidagi huquqlarga ega:\ndeputatlikka nomzodlar koʻrsatishga bagʻishlangan yigʻilishlarda, okrug va uchastka saylov komissiyalarining majlislarida hozir boʻlish;\nsaylov uchastkasida hozir boʻlish hamda tayyorgarlik ishlarining borishini, ovoz berish uchun saylov qutilarining joylashtirilishi va muhrlanishini, fuqarolarga saylov byulletenlarining berilishini kuzatish;\novozlarni sanab chiqishda va uchastka saylov komissiyasining bayonlarini tuzishda hozir boʻlish;\nsaylov natijalari toʻgʻrisidagi hujjatlarning tegishli saylov komissiyasi tomonidan tasdiqlangan nusxalarini soʻrash va ularni olish;\nbasharti saylov uchastkasida ushbu Qonunning buzilishiga yoʻl qoʻyilgan deb hisoblash uchun asos boʻlsa, oʻz kuzatuvlari toʻgʻrisida yuqori saylov komissiyasiga maʼlum qilish.\nKuzatuvchilarga quyidagilar man etiladi:\nsaylovchi saylov byulleteniga oʻz belgisini qoʻyayotgan paytda yashirin ovoz berish kabinasida yoki xonasida boʻlish;",
+     "retrieval_score": 0.4899,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-7042273#band-2s2#p1-89",
+     "doc_id": "lex:-7042273",
+     "doc_title": "Oʻzbekiston Respublikasi markaziy saylov komissiyasining qarori “e-saylov” axborot tizimining reglamentini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7042273",
+     "article": "2-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": null,
+     "text": "2. Murojaat rad etilganida, aniqlangan kamchiliklarni bartaraf etgan holda avvalgi raqamini koʻrsatib, qayta murojaat qilish mumkin.\u0007\u0007Zaruratga koʻra, biroq kechi bilan saylovdan kamida 10 kun oldin\u0007\u0007\nRoʻyxatdan oʻtgan kuzatuvchilarning vakolatini muddatidan ilgari tugatish\n\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u00075-bosqich\u0007\u0007Ariza beruvchi (MFY)\u0007\u0007Ariza beruvchi roʻyxatdan oʻtgan kuzatuvchilarni vakolatlarini muddatidan ilgari tugatish boʻyicha soʻrovnomani toʻldiradi va tasdiqlash uchun yuboradi.\u0007\u0007Zaruratga koʻra\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u00076-bosqich\u0007\u0007“E-saylov” axborot tizimi\u0007\u0007Toʻldirilgan soʻrovnomani tegishli hududiy saylov komissiyasiga yuboradi.\u0007\u0007Avtomatik tarzda\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u00077-bosqich\u0007\u0007Hududiy saylov komissiyasi\u0007\u00071. Soʻrovnomani koʻrib chiqadi va roʻyxatdan oʻtgan kuzatuvchining vakolatini muddatidan ilgari tugatish toʻgʻrisida qaror qabul qiladi.",
+     "retrieval_score": 0.4886,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1773,
+    "retrieval_ms": 1130,
+    "rerank_ms": 0,
+    "generation_ms": 1724,
+    "total_ms": 4628
+   },
+   "usage": {
+    "input_tokens": 13468,
+    "output_tokens": 391,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Saylovda kuzatuvchi boʻlishni istagan tashkilot oʻz kuzatuvchilari toʻgʻrisida saylov komissiyasiga qancha muddat oldin ariza bilan xabar berishi kerak?",
+    "search_queries": [
+     "Saylovda kuzatuvchi boʻlishni istagan tashkilot oʻz kuzatuvchilari haqida saylov komissiyasiga qancha muddat oldin ariza bilan xabar berishi kerak?",
+     "Saylovda kuzatuvchi boʻlishni istagan tashkilot oʻz kuzatuvchilari toʻgʻrisida saylov komissiyasiga qancha muddat oldin ariza bilan xabar berishi kerak?",
+     "kuzatuvchi saylov komissiyasiga ariza berish muddati",
+     "saylovda kuzatuvchilar toʻgʻrisida xabar berish muddati",
+     "kuzatuvchi tayinlash ariza saylov komissiyasi"
+    ],
+    "doc_hints": [
+     "Saylov kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 408,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q036",
+   "status": "ok",
+   "answer": "Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil oʻz zimmasiga yuklatilgan vazifalarni bajarish uchun tadbirkorlik subyektlarining manfaatlarini koʻzlab arizalar, daʼvolar va shikoyatlar bilan sudlarga davlat boji toʻlamasdan murojaat etish huquqiga ega [1]. Davlat boji toʻgʻrisidagi qonunning 9-moddasiga koʻra vakil iqtisodiy sudlarda tadbirkorlik subyektlari manfaatlarini koʻzlab beriladigan daʼvolar, arizalar va shikoyatlar yuzasidan davlat bojini toʻlashdan ozod qilinadi [2], 10-moddasiga koʻra esa maʼmuriy sudlarda tadbirkorlik subyektlari manfaatlarini koʻzlab berilgan arizalar (shikoyatlar) yuzasidan ham ozod qilinadi [3]. Vakil faoliyatida davlat organlari va boshqa tashkilotlar unga soʻralayotgan hujjatlar, materiallar hamda boshqa maʼlumotlarni soʻrov olingan kundan eʼtiboran oʻn kundan kechiktirmasdan taqdim etishi shart [4].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "8-modda",
+     "part": "1–6-qism",
+     "edition_date": "2022-04-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3321352#art-8#p1",
+     "quote": "tadbirkorlik subyektlarining manfaatlarini koʻzlab arizalar, daʼvolar va shikoyatlar bilan sudlarga davlat boji toʻlamasdan murojaat etish;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-4680944",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat boji toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-4680944",
+     "article": "9-modda",
+     "part": "31–35-qism",
+     "edition_date": "2026-09-09",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-4680944#art-9#p31",
+     "quote": "25) Oʻzbekiston Respublikasi Prezidenti huzuridagi Tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil — tadbirkorlik subyektlari manfaatlarini koʻzlab beriladigan daʼvolar, arizalar va shikoyatlar yuzasidan;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-4680944",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat boji toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-4680944",
+     "article": "10-modda",
+     "part": "20–25-qism",
+     "edition_date": "2026-09-09",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-4680944#art-10#p20",
+     "quote": "15) Oʻzbekiston Respublikasi Prezidenti huzuridagi Tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil — tadbirkorlik subyektlari manfaatlarini koʻzlab berilgan arizalar (shikoyatlar) yuzasidan;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "18-modda",
+     "part": "1–3-qism",
+     "edition_date": "2019-11-13",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3321352#art-18#p1",
+     "quote": "Davlat organlari va boshqa tashkilotlar, ularning mansabdor shaxslari Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilga uning faoliyatida koʻmaklashishi, u tomonidan soʻralayotgan, tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlariga taalluqli boʻlgan hujjatlar, materiallar hamda boshqa maʼlumotlarni, agar boshqa muddat belgilanmagan boʻlsa, soʻrov olingan kundan eʼtiboran oʻn kundan kechiktirmasdan taqdim etishi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3321352#art-8#p1",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "8-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-04-12",
+     "text": "8-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilning huquqlari\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakil oʻz zimmasiga yuklatilgan vazifalarni bajarish uchun quyidagi huquqlarga ega:\ntadbirkorlik subyektlarining huquqlari va qonuniy manfaatlariga rioya etilishiga doir qonunchilikning davlat organlari tomonidan ogʻishmay ijro etilishini oʻrganish;\ntadbirkorlik subyektlarining faoliyati tekshiruvlarini oʻtkazishning qonuniyligi monitoringini amalga oshirish, tadbirkorlik subyektlarining faoliyatiga qonunga xilof ravishda aralashish faktlarining oldini olish yuzasidan kompleks chora-tadbirlar koʻrish boʻyicha takliflar kiritish;\ntadbirkorlik subyektlarining huquqlari va qonuniy manfaatlariga rioya etilishiga doir qonunchilikning buzilishiga yoʻl qoʻyilmasligi toʻgʻrisida davlat organlarining hamda boshqa tashkilotlarning mansabdor shaxslariga yozma ravishda ogohlantirishlar eʼlon qilish;\nqonunchilikning aniqlangan buzilishlarini, ularga imkon beruvchi sabablar va shart-sharoitlarni bartaraf etish toʻgʻrisida davlat organlarining va boshqa tashkilotlarning rahbarlariga belgilangan muddatlarda bajarilishi majburiy boʻlgan taqdimnomalar kiritish;\ntadbirkorlik subyektlarining manfaatlarini koʻzlab arizalar, daʼvolar va shikoyatlar bilan sudlarga davlat boji toʻlamasdan murojaat etish;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-4680944#art-9#p31",
+     "doc_id": "lex:-4680944",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat boji toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4680944",
+     "article": "9-modda",
+     "part": "31–35-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-09",
+     "text": "9-modda. Iqtisodiy sudlarda davlat bojini toʻlashdan ozod qilish\n25) Oʻzbekiston Respublikasi Prezidenti huzuridagi Tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil — tadbirkorlik subyektlari manfaatlarini koʻzlab beriladigan daʼvolar, arizalar va shikoyatlar yuzasidan;\n26) Oʻzbekiston Respublikasining Hisob palatasi — Oʻzbekiston Respublikasining iqtisodiy manfaatlarini himoya qilish maqsadida berilgan daʼvolar, arizalar va shikoyatlar yuzasidan;\n27) Oʻzbekiston Respublikasi Qishloq xoʻjaligi vazirligi, uning joylardagi organlari — yer toʻgʻrisidagi qonunchilik buzilganligi bilan bogʻliq daʼvolar boʻyicha;\n271) Oʻzbekiston Respublikasi Qishloq xoʻjaligi vazirligi huzuridagi Agrosanoatni rivojlantirish agentligi — oʻzining hamda meva-sabzavotchilik yoʻnalishidagi mahsulot yetishtiruvchi, qayta ishlovchi subyektlarning, issiqxona xoʻjaliklarining huquqlari va qonuniy manfaatlarini himoya qilish maqsadida berilgan arizalar, shikoyatlar va daʼvolar yuzasidan;\n28) “Tadbirkorlikni rivojlantirish kompaniyasi” aksiyadorlik jamiyati — oʻz huquqlari hamda qonuniy manfaatlarini himoya qilish yuzasidan daʼvolar, arizalar va shikoyatlar bilan sudga murojaat qilganda;",
+     "retrieval_score": 0.7348,
+     "rerank_score": 0.8,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-4680944#art-10#p20",
+     "doc_id": "lex:-4680944",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni davlat boji toʻgʻrisida",
+     "url": "https://lex.uz/docs/-4680944",
+     "article": "10-modda",
+     "part": "20–25-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-09",
+     "text": "10-modda. Maʼmuriy sudlarda davlat bojini toʻlashdan ozod qilish\n14) Oʻzbekiston Respublikasi Madaniy meros agentligi va uning hududiy boshqarmalari — moddiy madaniy meros obyektlarini muhofaza qilish va ulardan oqilona foydalanishga doir ishlar yuzasidan;\n15) Oʻzbekiston Respublikasi Prezidenti huzuridagi Tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil — tadbirkorlik subyektlari manfaatlarini koʻzlab berilgan arizalar (shikoyatlar) yuzasidan;\n16) Oʻzbekiston Respublikasining Hisob palatasi — Oʻzbekiston Respublikasining iqtisodiy manfaatlarini himoya qilish maqsadida berilgan arizalar (shikoyatlar) yuzasidan;\n17) Oʻzbekiston Respublikasi Oila va xotin-qizlar qoʻmitasi hamda uning hududiy boʻlinmalari — xotin-qizlarning huquqlari va qonuniy manfaatlarini himoya qilish maqsadida beriladigan arizalar, shikoyatlar va daʼvolar yuzasidan;\n171) Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi hamda uning hududiy boʻlinmalari — ogʻir ahvolga tushib qolgan va ogʻir ahvolga tushib qolish xavfi yuqori boʻlgan shaxslar hamda oilalar manfaatlarini koʻzlab berilgan arizalar va shikoyatlar yuzasidan;\n18) “Tadbirkorlikni rivojlantirish kompaniyasi” aksiyadorlik jamiyati — oʻz huquqlari hamda qonuniy manfaatlarini himoya qilish yuzasidan arizalar va shikoyatlar bilan sudga murojaat qilganda;",
+     "retrieval_score": 0.7268,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3321352#art-15#p5",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "15-modda",
+     "part": "5–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "15-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilga beriladigan shikoyatlarga qoʻyiladigan talablar\nArz qiluvchilar va ularning vakillari shikoyatni u koʻrib chiqilguniga qadar va koʻrib chiqilayotgan paytda shikoyat yuzasidan qaror qabul qilinguniga qadar yozma yoki elektron shaklda ariza berish orqali qaytarib olishi mumkin. Shikoyatni qaytarib olish toʻgʻrisidagi ariza Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil tomonidan qonun buzilishlarini aniqlash va bartaraf etish yuzasidan chora-tadbirlar koʻrilishini istisno etmaydi.\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakilga berilgan shikoyat uchun davlat boji undirilmaydi.",
+     "retrieval_score": 0.9637,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3321352#art-18#p1",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "18-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-11-13",
+     "text": "18-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilning faoliyatiga koʻmaklashish\nDavlat organlari va boshqa tashkilotlar, ularning mansabdor shaxslari Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilga uning faoliyatida koʻmaklashishi, u tomonidan soʻralayotgan, tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlariga taalluqli boʻlgan hujjatlar, materiallar hamda boshqa maʼlumotlarni, agar boshqa muddat belgilanmagan boʻlsa, soʻrov olingan kundan eʼtiboran oʻn kundan kechiktirmasdan taqdim etishi shart.\nDavlat organlari va boshqa tashkilotlarning mansabdor shaxslari Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilning tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish masalalariga doir soʻrovlari, xulosalari, takliflari va tavsiyalarini koʻrib chiqishi, shuningdek Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilning qonuniy talablarini bajarishi hamda koʻrib chiqish natijalari va koʻrilgan chora-tadbirlar toʻgʻrisida belgilangan muddatda uni xabardor qilishi shart.\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakil oʻz faoliyatiga doir masalalar boʻyicha davlat organlarining va boshqa tashkilotlarning mansabdor shaxslari tomonidan darhol qabul qilinish huquqidan foydalanadi.",
+     "retrieval_score": 0.7097,
+     "rerank_score": 0.3,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1726,
+    "retrieval_ms": 1177,
+    "rerank_ms": 0,
+    "generation_ms": 4486,
+    "total_ms": 7391
+   },
+   "usage": {
+    "input_tokens": 13687,
+    "output_tokens": 1125,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Tadbirkorlar huquqlarini himoya qilish boʻyicha vakil qanday hujjatlar asosida ish yuritadi va u tadbirkorlar manfaatini koʻzlab sudga murojaat qilganda davlat boji toʻlaydimi?",
+    "search_queries": [
+     "Tadbirkorlar huquqlarini himoya qilish boʻyicha vakil qanday hujjatlar asosida ish yuritadi va u tadbirkorlar manfaatini koʻzlab sudga murojaat qilganda davlat boji toʻlaydimi?",
+     "Tadbirkorlar huquqlarini himoya qilish boʻyicha vakil faoliyati toʻgʻrisidagi nizom",
+     "Tadbirkorlar huquqlarini himoya qilish boʻyicha vakil sudga murojaat qilganda davlat boji toʻlashdan ozod qilish",
+     "davlat bojini toʻlashdan ozod qilish tadbirkorlar manfaatlarini himoya qilish"
+    ],
+    "doc_hints": [
+     "Tadbirkorlar huquqlarini himoya qilish boʻyicha vakil toʻgʻrisidagi nizom",
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 642,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q037",
+   "status": "ok",
+   "answer": "Alkogolga yoki nikotinga qaram boʻlib qolgan va tibbiyot tashkilotlariga murojaat etgan shaxslarga alkogol va tamaki mahsulotlarini isteʼmol qilishni toʻxtatishga, qaramlikni davolashga qaratilgan tibbiy-sanitariya yordami hamda reabilitatsiya yuzasidan yordam qonunchilikka muvofiq koʻrsatiladi [1]. Sogʻliqni saqlash vazirligi bunday yordam koʻrsatilishini taʼminlaydi [2], mahalliy davlat hokimiyati organlari esa uni moliyaviy, moddiy-texnik va tashkiliy jihatdan taʼminlash masalalarini hal etadi [3]. Bunday tadbirlarni moliyalashtirish Oʻzbekiston Respublikasi Davlat budjeti mablagʻlari va qonunchilikda taqiqlanmagan boshqa manbalar hisobidan amalga oshiriladi [4].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6472100",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alkogol va tamaki mahsulotlarining tarqatilishini hamda isteʼmol qilinishini cheklash toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6472100",
+     "article": "28-modda",
+     "part": "1–2-qism",
+     "edition_date": "2023-05-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6472100#art-28#p1",
+     "quote": "Alkogolga yoki nikotinga qaram boʻlib qolgan hamda tibbiyot tashkilotlariga murojaat etgan shaxslarga alkogol va tamaki mahsulotlarini isteʼmol qilishni toʻxtatishga, alkogolga yoki nikotinga qaramlikni davolashga qaratilgan tibbiy-sanitariya yordami, shuningdek ularni reabilitatsiya qilish yuzasidan yordam koʻrsatiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6472100",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alkogol va tamaki mahsulotlarining tarqatilishini hamda isteʼmol qilinishini cheklash toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6472100",
+     "article": "10-modda",
+     "part": "7–10-qism",
+     "edition_date": "2023-05-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6472100#art-10#p7",
+     "quote": "alkogolga yoki nikotinga qaramlikdan aziyat chekayotgan shaxslarga tibbiy-sanitariya yordami koʻrsatilishini taʼminlaydi, alkogol va tamaki mahsulotlarini isteʼmol qilish bilan bogʻliq boʻlgan surunkali kasalliklar hamda oʻlim holatlarining monitoringini amalga oshiradi;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-6472100",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alkogol va tamaki mahsulotlarining tarqatilishini hamda isteʼmol qilinishini cheklash toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6472100",
+     "article": "18-modda",
+     "part": "7–9-qism",
+     "edition_date": "2025-12-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6472100#art-18#p7",
+     "quote": "alkogolga yoki nikotinga qaram boʻlib qolgan shaxslarga tibbiy-sanitariya yordamini moliyaviy, moddiy-texnik, tashkiliy jihatdan taʼminlash masalalarini hal etadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:-1880029",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alkogol va tamaki mahsulotlarining tarqatilishi hamda isteʼmol qilinishini cheklash toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-1880029",
+     "article": "21-modda",
+     "part": "1-qism",
+     "edition_date": "2021-04-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-1880029#art-21#p1",
+     "quote": "Alkogol va tamaki mahsulotlarining tarqatilishi hamda isteʼmol qilinishini cheklash, ularning aholi sogʻligʻiga zararli taʼsirining profilaktikasi, oldini olish, bunday taʼsirni kamaytirishga doir tadbirlarni moliyalashtirish Oʻzbekiston Respublikasi Davlat budjeti mablagʻlari va qonunchilikda taqiqlanmagan boshqa manbalar hisobidan amalga oshiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6472100#art-28#p1",
+     "doc_id": "lex:-6472100",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alkogol va tamaki mahsulotlarining tarqatilishini hamda isteʼmol qilinishini cheklash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6472100",
+     "article": "28-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-05-24",
+     "text": "28-modda. Alkogolga yoki nikotinga qaram boʻlib qolgan shaxslarga tibbiy-sanitariya yordami koʻrsatish\nAlkogolga yoki nikotinga qaram boʻlib qolgan hamda tibbiyot tashkilotlariga murojaat etgan shaxslarga alkogol va tamaki mahsulotlarini isteʼmol qilishni toʻxtatishga, alkogolga yoki nikotinga qaramlikni davolashga qaratilgan tibbiy-sanitariya yordami, shuningdek ularni reabilitatsiya qilish yuzasidan yordam koʻrsatiladi.\nAlkogolga yoki nikotinga qaram boʻlib qolgan shaxslarga tibbiy-sanitariya yordami, shuningdek ularni reabilitatsiya qilish boʻyicha yordam qonunchilikka muvofiq koʻrsatiladi.",
+     "retrieval_score": 0.9905,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-1880029#art-20#p1",
+     "doc_id": "lex:-1880029",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alkogol va tamaki mahsulotlarining tarqatilishi hamda isteʼmol qilinishini cheklash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-1880029",
+     "article": "20-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "20-modda. Alkogol va tamakiga qaram boʻlib qolgan shaxslarga tibbiy-sanitariya yordami koʻrsatish\nAlkogolga qaram boʻlib qolgan shaxslarga tibbiy-sanitariya yordami koʻrsatish, shuningdek ularni reabilitatsiya qilish yuzasidan yordam koʻrsatish qonunchilikka muvofiq amalga oshiriladi.\nTamakiga qaram boʻlib qolgan shaxslarga ularning xohishiga koʻra, sogʻliqni saqlash muassasalarida tibbiy-sanitariya yordami koʻrsatiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6472100#art-18#p7",
+     "doc_id": "lex:-6472100",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alkogol va tamaki mahsulotlarining tarqatilishini hamda isteʼmol qilinishini cheklash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6472100",
+     "article": "18-modda",
+     "part": "7–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "18-modda. Mahalliy davlat hokimiyati organlarining alkogol va tamaki mahsulotlarining tarqatilishini hamda isteʼmol qilinishini cheklash sohasidagi vakolatlari\nfuqarolarning sogʻligʻini alkogol va tamaki mahsulotlarini isteʼmol qilishning salbiy taʼsiridan himoya qilish, jamiyatda sogʻlom turmush tarzini qaror toptirish masalalari yuzasidan nodavlat notijorat tashkilotlari hamda fuqarolik jamiyatining boshqa institutlari bilan hamkorlikni taʼminlaydi;\nalkogolga yoki nikotinga qaram boʻlib qolgan shaxslarga tibbiy-sanitariya yordamini moliyaviy, moddiy-texnik, tashkiliy jihatdan taʼminlash masalalarini hal etadi.\nMahalliy davlat hokimiyati organlari qonunchilikka muvofiq boshqa vakolatlarni ham amalga oshirishi mumkin.",
+     "retrieval_score": 0.9097,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-1880029#art-21#p1",
+     "doc_id": "lex:-1880029",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alkogol va tamaki mahsulotlarining tarqatilishi hamda isteʼmol qilinishini cheklash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-1880029",
+     "article": "21-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "21-modda. Alkogol va tamaki mahsulotlarining tarqatilishi hamda isteʼmol qilinishini cheklashga doir tadbirlarni moliyalashtirish\nAlkogol va tamaki mahsulotlarining tarqatilishi hamda isteʼmol qilinishini cheklash, ularning aholi sogʻligʻiga zararli taʼsirining profilaktikasi, oldini olish, bunday taʼsirni kamaytirishga doir tadbirlarni moliyalashtirish Oʻzbekiston Respublikasi Davlat budjeti mablagʻlari va qonunchilikda taqiqlanmagan boshqa manbalar hisobidan amalga oshiriladi.",
+     "retrieval_score": 0.6354,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6472100#art-10#p7",
+     "doc_id": "lex:-6472100",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni alkogol va tamaki mahsulotlarining tarqatilishini hamda isteʼmol qilinishini cheklash toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6472100",
+     "article": "10-modda",
+     "part": "7–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-05-24",
+     "text": "10-modda. Oʻzbekiston Respublikasi Sogʻliqni saqlash vazirligining alkogol va tamaki mahsulotlarining tarqatilishini hamda isteʼmol qilinishini cheklash sohasidagi vakolatlari\nalkogol va tamaki mahsulotlari tarkibidagi inson hayoti hamda sogʻligʻi uchun zararli boʻlgan moddalar miqdorining yoʻl qoʻyiladigan eng yuqori darajalarini belgilaydi;\nalkogol mahsuloti idishining yorligʻiga yoki tamaki mahsulotining hamda tamakini va nikotinni isteʼmol qilish moslamalarining isteʼmol oʻroviga (qutisiga) joylashtiriladigan tibbiy ogohlantirishlarning namunalarini ishlab chiqadi;\nalkogolga yoki nikotinga qaramlikdan aziyat chekayotgan shaxslarga tibbiy-sanitariya yordami koʻrsatilishini taʼminlaydi, alkogol va tamaki mahsulotlarini isteʼmol qilish bilan bogʻliq boʻlgan surunkali kasalliklar hamda oʻlim holatlarining monitoringini amalga oshiradi;\nfuqarolar, ayniqsa, yigirma bir yoshga toʻlmagan shaxslar oʻrtasida alkogol va tamaki mahsulotlarining isteʼmol qilinishini kamaytirish, maʼrifiy, tibbiy-sanitariya ishlarining taʼsirchanligini oshirish choralarini hamda jamiyatda sogʻlom turmush tarzini qaror toptirishga qaratilgan boshqa ijtimoiy, tashkiliy-huquqiy choralarni oʻz ichiga oluvchi samarali profilaktika tizimining yaratilishini va ishlashini taʼminlaydi;",
+     "retrieval_score": 0.876,
+     "rerank_score": 0.5,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2207,
+    "retrieval_ms": 1077,
+    "rerank_ms": 0,
+    "generation_ms": 4383,
+    "total_ms": 7669
+   },
+   "usage": {
+    "input_tokens": 14701,
+    "output_tokens": 1137,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Alkogol va tamaki mahsulotlaridan zarar koʻrgan, ularga qaram boʻlib qolgan shaxslarga tibbiy yordam koʻrsatishni tashkil etish va uni moliyalashtirish boʻyicha qanday qoidalar belgilangan?",
+    "search_queries": [
+     "Alkogol va tamaki mahsulotlaridan zarar koʻrgan, qaram boʻlib qolgan odamlarga tibbiy yordam koʻrsatishni tashkil etish va buni moliyalashtirish boʻyicha qanday qoidalar belgilangan?",
+     "Alkogol va tamaki mahsulotlaridan zarar koʻrgan, ularga qaram boʻlib qolgan shaxslarga tibbiy yordam koʻrsatishni tashkil etish va uni moliyalashtirish boʻyicha qanday qoidalar belgilangan?",
+     "alkogol va tamaki mahsulotlariga qaramlik tibbiy yordam koʻrsatish",
+     "giyohvandlik va alkogolizmga qarshi kurash tibbiy yordam moliyalashtirish",
+     "alkogolizm narkologik yordam davlat byudjeti hisobidan moliyalashtirish"
+    ],
+    "doc_hints": [
+     "Alkogol va tamaki mahsulotlarini ishlab chiqarish va sotishni davlat tomonidan tartibga solish toʻgʻrisidagi qonun",
+     "Fuqarolarning sogʻligʻini saqlash toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 472,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q038",
+   "status": "ok",
+   "answer": "Ўзбекистон Республикаси Конституциясининг 71-моддасига кўра, конституциявий тузумни зўрлик билан ўзгартиришни мақсад қилиб қўювчи, давлат суверенитетига, ҳудудий яхлитлигига ва хавфсизлигига қарши чиқувчи, урушни, ижтимоий, миллий, ирқий ҳамда диний адоватни тарғиб қилувчи, фуқароларнинг конституциявий ҳуқуқ ва эркинликларига, аҳолининг соғлиғига, ижтимоий ахлоққа тажовуз қилувчи сиёсий партияларнинг ва бошқа нодавлат нотижорат ташкилотларининг, шунингдек миллий ва диний белгиларига кўра сиёсий партияларнинг, ҳарбийлаштирилган бирлашмаларнинг ташкил этилиши ва фаолияти тақиқланади [1]. Шунингдек, махфий жамиятлар ва бирлашмалар ташкил этиш тақиқланади [1]. «Сиёсий партиялар тўғрисида»ги қонуннинг 3-моддасида ҳам шунга ўхшаш тақиқлар, жумладан миллий ва диний руҳдаги партияларни тузиш тақиқи назарда тутилган [2].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "doc_type": "konstitutsiya",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "71-modda",
+     "part": "1–2-qism",
+     "edition_date": "2023-04-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:6445145#art-71#p1",
+     "quote": "Konstitutsiyaviy tuzumni zoʻrlik bilan oʻzgartirishni maqsad qilib qoʻyuvchi, Oʻzbekistonning davlat suverenitetiga, hududiy yaxlitligiga va xavfsizligiga qarshi chiquvchi, urushni, ijtimoiy, milliy, irqiy hamda diniy adovatni targʻib qiluvchi, fuqarolarning konstitutsiyaviy huquqlari va erkinliklariga, aholining sogʻligʻiga, ijtimoiy axloqqa tajovuz qiluvchi siyosiy partiyalarning, boshqa nodavlat notijorat tashkilotlarining, shuningdek milliy va diniy belgilariga koʻra siyosiy partiyalarning, harbiylashtirilgan birlashmalarning tashkil etilishi va faoliyati taqiqlanadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:54191",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni siyosiy partiyalar toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/54191",
+     "article": "3-modda",
+     "part": "1–7-qism",
+     "edition_date": "2025-07-31",
+     "doc_status": "amalda",
+     "chunk_id": "lex:54191#art-3#p1",
+     "quote": "Quyidagi siyosiy partiyalarni tuzish va ularning faoliyat koʻrsatishi taqiqlanadi:",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:6445145#art-71#p1",
+     "doc_id": "lex:6445145",
+     "doc_title": "Oʻzbekiston Respublikasi konstitutsiyasi",
+     "url": "https://lex.uz/docs/6445145",
+     "article": "71-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-04-30",
+     "text": "71-modda.\nKonstitutsiyaviy tuzumni zoʻrlik bilan oʻzgartirishni maqsad qilib qoʻyuvchi, Oʻzbekistonning davlat suverenitetiga, hududiy yaxlitligiga va xavfsizligiga qarshi chiquvchi, urushni, ijtimoiy, milliy, irqiy hamda diniy adovatni targʻib qiluvchi, fuqarolarning konstitutsiyaviy huquqlari va erkinliklariga, aholining sogʻligʻiga, ijtimoiy axloqqa tajovuz qiluvchi siyosiy partiyalarning, boshqa nodavlat notijorat tashkilotlarining, shuningdek milliy va diniy belgilariga koʻra siyosiy partiyalarning, harbiylashtirilgan birlashmalarning tashkil etilishi va faoliyati taqiqlanadi.\nMaxfiy jamiyatlar va birlashmalar tashkil etish taqiqlanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:54191#art-3#p1",
+     "doc_id": "lex:54191",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni siyosiy partiyalar toʻgʻrisida",
+     "url": "https://lex.uz/docs/54191",
+     "article": "3-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-31",
+     "text": "3-modda. Siyosiy partiyalarni tuzish va ularning faoliyat koʻrsatish prinsiplari\nSiyosiy partiyalar fuqarolarning huquq va erkinliklarini amalga oshirish maqsadida, xohish-irodani erkin bildirish, partiyaga ixtiyoriy ravishda kirish va undan chiqish, aʼzolarining teng huquqliligi, oʻzini oʻzi boshqarish, qonuniylik va oshkoralik asosida tuziladi va faoliyat koʻrsatadi.\nQuyidagi siyosiy partiyalarni tuzish va ularning faoliyat koʻrsatishi taqiqlanadi:\nkonstitutsiyaviy tuzumni zoʻrlik bilan oʻzgartirishni maqsad qilib qoʻyuvchi;\nOʻzbekiston Respublikasi suvereniteti, yaxlitligi va xavfsizligiga, fuqarolarining konstitutsiyaviy huquq va erkinliklariga qarshi chiquvchi;\nurushni, ijtimoiy, milliy, irqiy va diniy adovatni targʻib qiluvchi;\nxalqning sogʻligʻi va maʼnaviyatiga tajovuz qiluvchi;\nmilliy va diniy ruhdagi partiyalar.",
+     "retrieval_score": 0.8194,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4953674#art-54#p1",
+     "doc_id": "lex:4953674",
+     "doc_title": "QORAQALPOGʻISTON RESPUBLIKASINING KONSTITUTSIYASI Qoraqalpogʻiston Respublikasi Oliy Kengashi tomonidan 1993-yil 9-aprelda qabul qilingan",
+     "url": "https://lex.uz/docs/4953674",
+     "article": "54-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-02-26",
+     "text": "54-modda. Qoraqalpogʻiston Respublikasida qonunda belgilangan tartibda roʻyxatdan oʻtkazilgan kasaba uyushmalari, siyosiy partiyalar, olimlarning jamiyatlari, xotin-qizlar, faxriylar va yoshlar tashkilotlari, ijodiy uyushmalar, ommaviy harakatlar va fuqarolarning boshqa uyushmalari jamoat birlashmalari sifatida eʼtirof etiladi.\n55-modda. Konstitutsiyaviy tuzumni kuch zoʻrlik bilan oʻzgartirishni maqsad qilib qoʻyuvchi, respublikaning suvereniteti, yaxlitligi va xavfsizligiga, fuqarolarning konstitutsiyaviy huquq va erkinliklariga qarshi chiquvchi, urushni, ijtimoiy, milliy, irqiy va diniy adovatni targʻib qiluvchi, xalqning sogʻligi va maʼnaviyatiga tajovuz qiluvchi, shuningdek harbiylashtirilgan birlashmalarning, milliy va diniy ruhdagi siyosiy partiyalarning hamda jamoat birlashmalarining tuzilishi va faoliyati taʼqiqlanadi.\nMaxfiy jamiyatlar va uyushmalar tuzish taʼqiqlanadi.",
+     "retrieval_score": 0.9208,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:54191#art-7#p1",
+     "doc_id": "lex:54191",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni siyosiy partiyalar toʻgʻrisida",
+     "url": "https://lex.uz/docs/54191",
+     "article": "7-modda",
+     "part": "1–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-31",
+     "text": "7-modda. Siyosiy partiyaning ustavi\nSiyosiy partiyaning ustavida quyidagilar koʻrsatilishi lozim:\npartiyaning nomi, maqsadi va vazifalari;\npartiyaning tuzilishi;\npartiya aʼzoligiga qabul qilish va undan chiqish shartlari va tartibi;\npartiya aʼzolarining huquq va majburiyatlari;\npartiya va uning tashkilotlari rahbar organlarining vakolatlari hamda ularni tuzish (chaqirish) tartibi, ularning vakolat muddatlari;\npartiya rahbar organlarining faoliyatini nazorat qilish tartibi;\npartiya va uning tashkilotlari mablagʻlarini shakllantirish hamda boshqa mol-mulkini sotib olish manbalari;\npartiya rahbar organi joylashgan manzil;\npartiya ustavi va dasturini qabul qilish, ularga oʻzgartishlar va qoʻshimchalar kiritish tartibi;\npartiya faoliyatini qayta tashkil etish yoki toʻxtatish tartibi.\nUstavda partiya faoliyatiga oid boshqa qoidalar ham nazarda tutilishi mumkin.",
+     "retrieval_score": 0.9781,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:2969547#band-2#p125",
+     "doc_id": "lex:2969547",
+     "doc_title": "Oʻzbekiston Respublikasi Oliy majlisi qonunchilik palatasi kengashining qarori “davlat boshqaruvini yangilash va yanada demokratlashtirish hamda mamlakatni modernizatsiya qilishda siyosiy partiyalarning rolini kuchaytirish toʻgʻrisida”gi Oʻzbekiston Respublikasi konstitutsiyaviy qonuni va “Oʻzbekiston Respublikasi konstitutsiyasining ayrim moddalariga (89-moddasiga, 93-moddasining 15-bandiga, 102-",
+     "url": "https://lex.uz/docs/2969547",
+     "article": "2-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": null,
+     "text": "Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasining Qonunchilik va sud-huquq masalalari qoʻmitasi hamda Demokratik institutlar, nodavlat tashkilotlar va fuqarolarning oʻzini oʻzi boshqarish organlari qoʻmitasi",
+     "retrieval_score": 0.9507,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1637,
+    "retrieval_ms": 887,
+    "rerank_ms": 0,
+    "generation_ms": 4754,
+    "total_ms": 7280
+   },
+   "usage": {
+    "input_tokens": 10094,
+    "output_tokens": 969,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekistonda qanday maqsadlarni koʻzlagan siyosiy partiyalar va boshqa nodavlat tashkilotlar tuzilishi mumkin emas?",
+    "search_queries": [
+     "Ўзбекистонда қандай мақсадларни кўзлаган сиёсий партиялар ва бошқа нодавлат ташкилотлар тузилиши мумкин эмас?",
+     "Oʻzbekistonda qanday maqsadlarni koʻzlagan siyosiy partiyalar va boshqa nodavlat tashkilotlar tuzilishi mumkin emas?",
+     "siyosiy partiyalar va boshqa nodavlat tashkilotlar tuzilishi mumkin emas",
+     "qanday maqsadlarni koʻzlagan siyosiy partiyalar tuzilishi taqiqlanadi",
+     "nodavlat tashkilotlar va siyosiy partiyalar taʼsis etilishi mumkin boʻlmagan maqsadlar"
+    ],
+    "doc_hints": [
+     "Konstitutsiya",
+     "Siyosiy partiyalar toʻgʻrisidagi qonun",
+     "Nodavlat notijorat tashkilotlari toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 394,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q039",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 450-moddasiga koʻra, ijro varaqasining dublikatini berish toʻgʻrisidagi ariza sudga kelib tushgan paytdan eʼtiboran oʻn kun ichida sud majlisida koʻriladi [1]. Iqtisodiy sudda esa bunday ariza sudga kelib tushgan kundan eʼtiboran bir oylik muddatda koʻrib chiqiladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "450-modda",
+     "part": "1–5-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-450#p1",
+     "quote": "Dublikat berish toʻgʻrisidagi ariza bunday ariza sudga kelib tushgan paytdan eʼtiboran oʻn kun ichida sud majlisida koʻriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "341-modda",
+     "part": "1–3-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-341#p1",
+     "quote": "Ijro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza sudga kelib tushgan kundan eʼtiboran bir oylik muddatda sud majlisida koʻrib chiqiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-450#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "450-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "450-modda. Ijro varaqasining yoki sud buyrugʻining dublikatini berish\nIjro varaqasining yoki sud buyrugʻining asl nusxasi yoʻqotilgan hollarda, sud hujjatini chiqargan sud undiruvchining yoxud davlat ijrochisining arizasiga koʻra, ijro varaqasining dublikatini berishi mumkin.\nDublikat berish haqidagi ariza ishda ishtirok etuvchi shaxslar xabardor qilingan holda sud majlisida koʻriladi, biroq ularning kelmaganligi dublikat berish toʻgʻrisidagi masalani hal etish uchun toʻsqinlik qilmaydi.\nDublikat berish toʻgʻrisidagi ariza bunday ariza sudga kelib tushgan paytdan eʼtiboran oʻn kun ichida sud majlisida koʻriladi.\nSudning dublikat berish toʻgʻrisidagi masalaga doir ajrimi ustidan xususiy shikoyat (protest) berilishi mumkin.\nXususiy shikoyatda (protestda) xususiy shikoyat (protest) bergan shaxsning yoki uning vakilining telefonlari va fakslari raqamlari, elektron pochta manzili koʻrsatilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3523891#art-341#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "341-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "341-modda. Ijro varaqasining (sud buyrugʻining) dublikatini berish\nIjro varaqasi (sud buyrugʻi) yoʻqotilgan taqdirda, uni bergan sud undiruvchining arizasiga koʻra ijro varaqasining (sud buyrugʻining) dublikatini berishi mumkin.\nIjro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza ijro varaqasini (sud buyrugʻini) ijroga taqdim etish uchun belgilangan muddat oʻtguniga qadar berilishi mumkin, bundan ijro varaqasi (sud buyrugʻi) davlat ijrochisi yoki ijroni amalga oshiruvchi boshqa shaxs tomonidan yoʻqotilgan va bu haqda undiruvchiga ijro varaqasini (sud buyrugʻini) ijroga taqdim etish uchun belgilangan muddat oʻtganidan soʻng maʼlum boʻlgan hollar mustasno. Ushbu hollarda ijro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza ijro varaqasi (sud buyrugʻi) yoʻqotilganligi undiruvchiga maʼlum boʻlgan kundan eʼtiboran bir oy ichida berilishi mumkin.\nIjro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza sudga kelib tushgan kundan eʼtiboran bir oylik muddatda sud majlisida koʻrib chiqiladi.",
+     "retrieval_score": 0.9714,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-341#p4",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "341-modda",
+     "part": "4–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "341-modda. Ijro varaqasining (sud buyrugʻining) dublikatini berish\nUndiruvchi, qarzdor sud majlisining vaqti va joyi toʻgʻrisida ariza kelib tushgan kundan eʼtiboran besh kundan kechiktirmay chiqarilgan sud ajrimi orqali, ushbu Kodeksning 127-moddasida nazarda tutilgan tartibda xabardor qilinadi. Sud majlisining vaqti va joyi toʻgʻrisida tegishli tarzda xabardor qilingan mazkur shaxslarning kelmaganligi, arizani koʻrib chiqish uchun toʻsqinlik qilmaydi.\nArizani koʻrish natijalari boʻyicha ajrim chiqariladi, uning koʻchirma nusxasi undiruvchi va qarzdorga yuboriladi.\nAjrim ustidan shikoyat qilinishi (protest keltirilishi) mumkin.",
+     "retrieval_score": 0.9687,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3523891#art-340#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "340-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "340-modda. Ijro varaqasini ijroga taqdim etishning oʻtkazib yuborilgan muddatini tiklash\nIjro varaqasini ijroga taqdim etish muddatini oʻtkazib yuborgan undiruvchi ijro varaqasini bergan sudga yoki u ijro etiladigan joydagi sudga oʻtkazib yuborilgan muddatni tiklash toʻgʻrisidagi ariza bilan murojaat qilishga haqli.\nMuddatni oʻtkazib yuborish sabablari sud tomonidan uzrli deb topilgan taqdirda, oʻtkazib yuborilgan muddat tiklanishi mumkin.\nUndiruvchining ijro varaqasini ijroga taqdim etish muddatini tiklash toʻgʻrisidagi arizasi u sudga kelib tushgan kundan eʼtiboran bir oylik muddatda sud majlisida koʻrib chiqiladi.\nUndiruvchi, qarzdor sud majlisining vaqti va joyi toʻgʻrisida ariza kelib tushgan kundan eʼtiboran besh kundan kechiktirmay chiqarilgan sud ajrimi orqali, ushbu Kodeksning 127-moddasida nazarda tutilgan tartibda xabardor qilinadi. Sud majlisining vaqti va joyi toʻgʻrisida tegishli tarzda xabardor qilingan mazkur shaxslarning kelmaganligi arizani koʻrib chiqish uchun toʻsqinlik qilmaydi.\nArizani koʻrish natijalari boʻyicha ajrim chiqariladi, uning koʻchirma nusxasi undiruvchi va qarzdorga yuboriladi.\nAjrim ustidan shikoyat qilinishi (protest keltirilishi) mumkin.",
+     "retrieval_score": 0.8516,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:3523891#art-230#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "230-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "230-modda. Hakamlik sudining hal qiluv qarorini majburiy ijro etish uchun ijro varaqasi berish toʻgʻrisidagi arizani koʻrib chiqish tartibi\nHakamlik sudining hal qiluv qarorini majburiy ijro etish uchun ijro varaqasi berish toʻgʻrisidagi ariza ushbu Kodeksda nazarda tutilgan qoidalarga binoan sudya tomonidan yakka tartibda koʻrib chiqiladi.\nSudya ishni hakamlik muhokamasi tarafining iltimosnomasiga binoan sud muhokamasiga tayyorlayotganda ijro varaqasi soʻralayotgan ish materiallarini hakamlik sudidan ushbu Kodeksda dalillarni talab qilib olish uchun nazarda tutilgan qoidalar boʻyicha talab qilib olishi mumkin.\nIqtisodiy sud hakamlik muhokamasi taraflarini sud majlisining vaqti va joyi toʻgʻrisida xabardor qiladi. Sud majlisining vaqti va joyi haqida tegishli tarzda xabardor qilingan mazkur shaxslarning kelmaganligi ishni koʻrib chiqish uchun toʻsqinlik qilmaydi.\nIqtisodiy sud ishni sud majlisida koʻrib chiqayotganda hakamlik sudining hal qiluv qarorini majburiy ijro etish uchun ijro varaqasi berishni rad etish uchun ushbu Kodeksning 231-moddasida nazarda tutilgan asoslar mavjudligini yoki mavjud emasligini bildirilgan talablar va eʼtirozlarni asoslash uchun iqtisodiy sudga taqdim etilgan dalillarni tekshirish yoʻli bilan aniqlaydi.",
+     "retrieval_score": 0.8293,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1939,
+    "retrieval_ms": 1455,
+    "rerank_ms": 0,
+    "generation_ms": 2552,
+    "total_ms": 5948
+   },
+   "usage": {
+    "input_tokens": 14364,
+    "output_tokens": 526,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Ijro varaqasining asl nusxasi yoʻqolib qolgan taqdirda, uning dublikatini berish toʻgʻrisidagi ariza sudga kelib tushganidan keyin qancha muddat ichida sud majlisida koʻrib chiqilishi lozim?",
+    "search_queries": [
+     "Ijro varaqasining asl nusxasi yoʻqolib qolsa, dublikat berish haqidagi ariza sudga tushganidan keyin qancha muddat ichida sud majlisida koʻrib chiqiladi?",
+     "Ijro varaqasining asl nusxasi yoʻqolib qolgan taqdirda, uning dublikatini berish toʻgʻrisidagi ariza sudga kelib tushganidan keyin qancha muddat ichida sud majlisida koʻrib chiqilishi lozim?",
+     "ijro varaqasining dublikatini berish toʻgʻrisidagi ariza sud majlisida koʻrib chiqish muddati",
+     "ijro varaqasi asl nusxasi yoʻqolgan dublikat berish ariza",
+     "ijro hujjati dublikatini berish sud majlisida koʻrib chiqish"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 781,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q040",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonunchilik hujjatlarida vaqt mashinasida oʻtmishga sayohat qilish holati uchun qaysi davlatning pasporti talab qilinishi belgilanmagan, shu sababli bu savolga javob berib boʻlmaydi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:1945473#band-5#p1",
+     "doc_id": "lex:1945473",
+     "doc_title": "Oʻzbekiston Respublikasi oliy sudi plenumining qarori Oʻzbekiston Respublikasining davlat chegarasini kesib oʻtish tartibini buzishga oid ishlar boʻyicha sud amaliyoti toʻgʻrisida",
+     "url": "https://lex.uz/docs/1945473",
+     "article": "5-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-12-16",
+     "text": "5. Oʻzbekiston Respublikasidan chiqish uchun quyidagi hujjatlar asos boʻladi:\nOʻzbekiston Respublikasi fuqarolari uchun — amaldagi xorijga chiqish biometrik pasporti (diplomatik pasport), chet el davlatiga kirish vizasi (Oʻzbekiston Respublikasining xalqaro shartnomalariga muvofiq ularga kirish uchun kirish vizalari rasmiylashtirilishi talab etilmaydigan xorijiy davlatlar bundan mustasno);\nxorijiy fuqarolar va fuqaroligi boʻlmagan shaxslar uchun — amaldagi milliy pasport (diplomatik pasport), shaxsini tasdiqlovchi boshqa hujjat, Oʻzbekiston Respublikasiga kirish-chiqish uchun viza va xorijiy fuqarolar kirish-chiqish Tartibi I, III boʻlimlarida nazarda tutilgan boshqa hujjatlar.",
+     "retrieval_score": 0.8449,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:1945473#band-4#p1",
+     "doc_id": "lex:1945473",
+     "doc_title": "Oʻzbekiston Respublikasi oliy sudi plenumining qarori Oʻzbekiston Respublikasining davlat chegarasini kesib oʻtish tartibini buzishga oid ishlar boʻyicha sud amaliyoti toʻgʻrisida",
+     "url": "https://lex.uz/docs/1945473",
+     "article": "4-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-12-16",
+     "text": "4. Oʻzbekiston Respublikasiga kirish uchun quyidagi hujjatlar asos boʻladi:\nOʻzbekiston Respublikasi fuqarolari uchun xorijga chiqish biometrik pasporti (diplomatik pasport, identifikatsiya elektron kartasi ID-karta), vaqtincha xorijda turgan va konsullik roʻyxatiga olinmagan Oʻzbekiston Respublikasi fuqarolari uchun xorijga chiqish biometrik pasporti yoʻqolgan, yaroqsiz holga kelgan, uning amal qilish muddati tugagan, maʼlumotlar yoki vizalar uchun moʻljallangan sahifalaridan foydalanib boʻlingan holatlarda, shuningdek, sud ajrimi bilan uning amal qilishi toʻxtatib turilganda yangi xorijga chiqish biometrik pasporti yoki Oʻzbekiston Respublikasiga qaytish uchun guvohnomasi;\nxorijiy fuqarolar va fuqaroligi boʻlmagan shaxslar uchun — amaldagi milliy pasport (diplomatik pasport), shaxsini tasdiqlovchi boshqa hujjat, Oʻzbekiston Respublikasiga kirish uchun (kirish, tranzit) viza va xorijiy fuqarolar kirish-chiqish Tartibi II boʻlimida nazarda tutilgan boshqa hujjatlar.",
+     "retrieval_score": 0.8256,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:1945473#band-7#p1",
+     "doc_id": "lex:1945473",
+     "doc_title": "Oʻzbekiston Respublikasi oliy sudi plenumining qarori Oʻzbekiston Respublikasining davlat chegarasini kesib oʻtish tartibini buzishga oid ishlar boʻyicha sud amaliyoti toʻgʻrisida",
+     "url": "https://lex.uz/docs/1945473",
+     "article": "7-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2024-12-16",
+     "text": "7. Sudlarga tushuntirilsinki, JK 223-moddasi boʻyicha javobgarlik Oʻzbekiston Respublikasi fuqarolari xorijga chiqish biometrik pasportini rasmiylashtirilmagan holda yoki amal qilish muddati oʻtgan xorijga chiqish biometrik pasporti bilan Oʻzbekiston Respublikasidan, shuningdek, Oʻzbekiston Respublikasining xalqaro shartnomalariga muvofiq ularga kirish uchun kirish vizalari talab etilmaydigan har qanday xorijiy davlatdan boshqa, kirish vizasi rasmiylashtirilishi talab etiladigan xorijiy davlatga kirgan hollarda kelib chiqadi.\nShu bilan birga, fuqarolar kirish chiqish Tartibida Oʻzbekiston Respublikasi fuqarolarining xorijiy davlat hududida boʻlishi muddati chegarasi belgilanmaganligi sababli, ularning xorijiy davlat hududida Oʻzbekiston Respublikasining xalqaro shartnomalarida belgilangan muddatlardan ortiq boʻlishlari maʼmuriy (MJTK 226-moddasi) yoki jinoiy (JK 223-moddasi) javobgarlikka tortish uchun asos boʻlmaydi.",
+     "retrieval_score": 0.8349,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-7509614#band-5s2#p1",
+     "doc_id": "lex:-7509614",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori “work and travel” xalqaro dasturlarida ishtirok etuvchi talaba yoshlarning ishlash va sayohat qilish maqsadida xorijiy davlatlarga borishi va kelishi bilan bogʻliq xarajatlar uchun ssuda ajratish tartibini joriy etish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7509614",
+     "article": "5-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-05-05",
+     "text": "5. Ssuda ajratish boʻyicha davlat xizmatlarini koʻrsatish uchun vakolatli organ tomonidan fuqarolik-huquqiy shartnoma asosida qonunchilik hujjatlarida belgilangan tartibda malakali mutaxassislar jalb qilinishi mumkin.\nBunda ushbu mutaxassislar tomonidan arizalarning oʻz vaqtida koʻrib chiqilishi va asossiz rad etilmasligi vakolatli organ tomonidan doimiy nazorat qilib boriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:5274299#band-3s10#p37",
+     "doc_id": "lex:5274299",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori odam savdosidan jabrlangan yoki odam savdosidan jabrlangan deb taxmin qilinayotgan shaxslarni milliy darajadagi qayta yoʻnaltirish tizimini tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/5274299",
+     "article": "3-band (10-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-12-16",
+     "text": "Shaxsini tasdiqlovchi hujjati hozir qayerda? □ mazkur shaxsda □ yoʻllovchida/odam sotuvchida □ ichki ishlar organlarida □ nomaʼlum □ boshqa ________________________________________________________________\nMazkur shaxs boshqa davlatlar orqali tranzit yoʻllari bilan yurganmi? □ Ha □ Yoʻq □ Nomaʼlum\nAgar ha boʻlsa, ushbu shaxs mazkur davlatlar hududida biron-bir faoliyatga jalb etilganligini koʻrsating? □ Ha □ Yoʻq □ Nomaʼlum\nAgar ha boʻlsa, faoliyat turini koʻrsating: □ enaga □ uy mehnati □ qurilish ishlari □ qishloq xoʻjaligi ishlari □ boshqa jismoniy mehnat\n□ savdo □ raqsga tushish □ ofitsiant □ shahvoniy-biznes □ tilanchilik □ jinoiy faoliyat □ harbiy xizmat □ turizm □ boshqa\nKetish shahar/mamlakat\u0007Boradigan/borgan shahar/mamlakat\u0007Foydalaniladigan transport vositasi (piyoda, avtobusda, mashinada samolyotda, poyezdda va boshqalar)\u0007kun/oy/yil\u0007Mazkur shaxs boshqa jabrlanganlar/migrantlar bilan sayohat qilganmi? (Ha/Yoʻq)\u0007Mazkur shaxs oʻzining shaxsini tasdiqlovchi hujjati bilan sayohat qilganmi? (Ha/Yoʻq)\u0007Mazkur shaxs qalbaki hujjatlar bilan sayohat qilganmi? (Ha/Yoʻq)\u0007Chiqish-kirish vizasi boʻlganmi? (Ha/Yoʻq)\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\nTashish vaqtida foydalanilgan boshqarish vositalari: □ aldov □ jismoniy zoʻravonlik □ ruhiy zoʻravonlik □ olib qochish □ hujjatlarni olib qoʻyish □ jismoniy qaramlikdan foydalanish □ boshqa ___________________________________________________________________",
+     "retrieval_score": 0.9681,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1537,
+    "retrieval_ms": 172,
+    "rerank_ms": 0,
+    "generation_ms": 2032,
+    "total_ms": 3743
+   },
+   "usage": {
+    "input_tokens": 11029,
+    "output_tokens": 263,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Vaqt mashinasida oʻtmishga sayohat qilgan fuqaro uchun qaysi davlatning pasporti talab qilinadi?",
+    "search_queries": [
+     "Vaqt mashinasida oʻtmishga sayohat qilgan fuqaro uchun qaysi davlatning pasporti talab qilinadi?",
+     "pasport talablari",
+     "davlat chegarasini kesib oʻtishda pasport",
+     "vaqt mashinasida sayohat qilish huquqiy tartibi"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 588,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

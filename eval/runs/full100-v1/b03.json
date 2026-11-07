@@ -1,0 +1,1565 @@
+{
+ "run_id": "full100-v1",
+ "batch_id": "full100-v1-b03",
+ "batch_index": 3,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p5",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125643,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:24:55+05:00",
+  "completed_at": "2026-11-06T18:25:04+05:00",
+  "total_ms": 8887
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q021",
+   "status": "ok",
+   "answer": "Suv kodeksining 150-moddasiga koʻra, atrof-muhitni ifloslantirganlik, shuningdek suvdan va suv obyektlaridan limitdan ortiqcha (normativdan ortiq) va boshqacha tarzda nooqilona ravishda foydalanganlik uchun kompensatsiya toʻlovlari yuridik shaxs daromadidan (foydasidan) undiriladi [1]. Soliq kodeksining 317-moddasiga koʻra esa qonunchilikda nazarda tutilgan normalardan ortiqcha tarzda atrof-muhitni ifloslantirganlik va chiqindilar joylashtirganlik uchun kompensatsiya toʻlovlari chegirib tashlanmaydigan xarajatlar hisoblanadi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "150-modda",
+     "part": "1–8-qism",
+     "edition_date": "2025-07-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7655343#art-150#p1",
+     "quote": "Atrof-muhitni ifloslantirganlik, shuningdek suvdan va suv obyektlaridan limitdan ortiqcha (normativdan ortiq) va boshqacha tarzda nooqilona ravishda foydalanganlik uchun kompensatsiya toʻlovlari yuridik shaxs daromadidan (foydasidan) undiriladi, qolgan barcha toʻlovlar esa yuridik shaxs boʻlgan suvdan foydalanuvchilar mahsulotining (ishlarining, xizmatlarining) tannarxiga kiritiladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "317-modda",
+     "part": "8–10-qism",
+     "edition_date": "2024-10-19",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-317#p8",
+     "quote": "8) qonunchilikda nazarda tutilgan normalardan ortiqcha tarzda atrof-muhitni ifloslantirganlik va chiqindilar joylashtirganlik uchun kompensatsiya toʻlovlari;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7655343#art-150#p1",
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "150-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-30",
+     "text": "150-modda. Suv resurslaridan foydalanganlik uchun toʻlovlar\nSuv resurslaridan foydalanganlik uchun toʻlovlar quyidagilardan iborat:\nsuv resurslaridan foydalanganlik uchun soliqdan;\nsuv yetkazib berish va boshqa suv xoʻjaligi xizmatlari uchun toʻlovdan;\nsuv olish kvotalarini boshqa suvdan foydalanuvchilardan sotib olish uchun toʻlovdan (kvotaning bir qismini boshqalarga berishga doir shartnomaga muvofiq);\nsuvdan limitdan ortiqcha foydalanganlik uchun toʻlovdan (suvdan limitdan ortiqcha foydalanganlik yoki suv yetkazish boʻyicha majburiyatning bir qismini boshqalarga berishga doir shartnomaga muvofiq);\natrof-muhitni (suvlar va joy relyefini) ifloslantirganlik uchun kompensatsiya toʻlovidan.\nAtrof-muhitni ifloslantirganlik, shuningdek suvdan va suv obyektlaridan limitdan ortiqcha (normativdan ortiq) va boshqacha tarzda nooqilona ravishda foydalanganlik uchun kompensatsiya toʻlovlari yuridik shaxs daromadidan (foydasidan) undiriladi, qolgan barcha toʻlovlar esa yuridik shaxs boʻlgan suvdan foydalanuvchilar mahsulotining (ishlarining, xizmatlarining) tannarxiga kiritiladi.\nSuvdan foydalanganlik uchun toʻlovlar va atrof-muhitni ifloslantirganlik uchun kompensatsiya toʻlovlari boʻyicha imtiyozlar qonunchilikda belgilanadi.",
+     "retrieval_score": 0.6305,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4674902#art-317#p8",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "317-modda",
+     "part": "8–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-10-19",
+     "text": "317-modda. Chegirib tashlanmaydigan xarajatlar\n7) xayriya yordamini amalga oshirish uchun xarajatlar, bundan metsenatlik koʻmagini koʻrsatish, oʻzgalar parvarishiga muhtoj boʻlgan yolgʻiz keksalarga, yolgʻiz yashovchi keksalarga va nogironligi boʻlgan shaxslarga homiylik qilish, oʻquv-tarbiya muassasalariga yoki yetim bolalarga va ota-ona qaramogʻidan mahrum boʻlgan bolalarga moddiy yordam koʻrsatish uchun yoʻnaltirilgan mablagʻlar, shuningdek Bolalarni qoʻllab-quvvatlash jamoat fondiga xayriya qilingan mablagʻlar mustasno;\n8) qonunchilikda nazarda tutilgan normalardan ortiqcha tarzda atrof-muhitni ifloslantirganlik va chiqindilar joylashtirganlik uchun kompensatsiya toʻlovlari;\n9) loyihalar va qurilish-montaj ishlaridagi kamchiliklarni, obyekt yonidagi omborga tashib keltirilguniga qadar yuz bergan buzilishlar va deformatsiyalarni bartaraf etishga doir xarajatlar, korroziyaga qarshi muhofazadagi nuqsonlar tufayli taftish oʻtkazish (asbob-uskunalarni qismlarga ajratish) xarajatlari hamda ushbu xarajatlarning oʻrnini kamchiliklar, buzilishlar yoki zararlar uchun javobgar boʻlgan mahsulot yetkazib beruvchi yoki boshqa xoʻjalik yurituvchi subyektlar hisobidan qoplash imkoni boʻlmagan miqdordagi boshqa shunga oʻxshash xarajatlar;",
+     "retrieval_score": 0.8366,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-8169998#art-61#p11",
+     "doc_id": "lex:-8169998",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni ekologiya, atrof-muhitni muhofaza qilish va tabiatdan foydalanish sohasidagi huquqbuzarliklarni sodir etganlik uchun javobgarlik kuchaytirilishi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga qoʻshimcha va oʻzgartirishlar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8169998",
+     "article": "61-modda",
+     "part": "11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-05-04",
+     "text": "61-modda. Ekologiya, atrof-muhitni muhofaza qilish va tabiatdan foydalanish sohasidagi huquqbuzarliklarni sodir etganlik uchun moliyaviy sanksiyalar qoʻllash tartibi\n“111) ushbu Kodeks 701-moddasining birinchi qismida, 72-moddasining birinchi qismida (suvlarni ifloslantirish, shuningdek suv obyektlariga oqova suvlarni oqizishga yoʻl qoʻyish shartlari toʻgʻrisidagi talablarni buzishga oid qismida), 79-moddasining birinchi va toʻrtinchi qismlarida, 85-moddasining birinchi qismida (ifloslantiruvchi moddalarni yoʻl qoʻyiladigan normativdan ortiq darajada atmosfera havosiga chiqarib tashlashga oid qismida), 851-moddasining birinchi qismida, 88-moddasining beshinchi qismida, 91-moddasining birinchi qismida nazarda tutilgan huquqbuzarliklar yuridik shaxsning manfaatlarini koʻzlab sodir etilgan hamda bu atrof-muhitga zarar yetkazilishiga yoki atrof-muhitni ifloslantirganlik va chiqindilarni joylashtirganlik uchun kompensatsiya toʻlovlari hisoblanishiga olib kelgan hollarda, yuridik shaxsga nisbatan jarima tarzidagi moliyaviy sanksiyalar qoʻllanilgan boʻlsa”.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-8169998#art-57#p1",
+     "doc_id": "lex:-8169998",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni ekologiya, atrof-muhitni muhofaza qilish va tabiatdan foydalanish sohasidagi huquqbuzarliklarni sodir etganlik uchun javobgarlik kuchaytirilishi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga qoʻshimcha va oʻzgartirishlar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8169998",
+     "article": "57-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-05-04",
+     "text": "57-modda. Ifloslantiruvchi moddalarni yoʻl qoʻyiladigan normativdan ortiq darajada atmosfera havosiga chiqarib tashlaganlik\nIfloslantiruvchi moddalarni yoʻl qoʻyiladigan normativdan ortiq darajada atmosfera havosiga chiqarib tashlaganlik uchun atrof-muhitga taʼsir koʻrsatishning IV toifasiga mansub yuridik shaxslarga nisbatan — atrof-muhitni ifloslantirganlik uchun toʻlanishi lozim boʻlgan kompensatsiya toʻlovining ikki baravari, III toifasiga mansub yuridik shaxslarga nisbatan — toʻrt baravari, II toifasiga mansub yuridik shaxslarga nisbatan — olti baravari, I toifasiga mansub yuridik shaxslarga nisbatan — oʻn baravari miqdorida jarima tarzidagi moliyaviy sanksiyalar qoʻllaniladi.",
+     "retrieval_score": 0.9974,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-8169998#art-55#p1",
+     "doc_id": "lex:-8169998",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni ekologiya, atrof-muhitni muhofaza qilish va tabiatdan foydalanish sohasidagi huquqbuzarliklarni sodir etganlik uchun javobgarlik kuchaytirilishi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga qoʻshimcha va oʻzgartirishlar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8169998",
+     "article": "55-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-05-04",
+     "text": "55-modda. Suvlarni ifloslantirganlik, shuningdek suv obyektlariga oqova suvlarni oqizishga yoʻl qoʻyish shartlari toʻgʻrisidagi talablarni buzganlik\nSuvlarni ifloslantirganlik, shuningdek suv obyektlariga oqova suvlarni oqizishga yoʻl qoʻyish shartlari toʻgʻrisidagi talablarni buzganlik uchun yuridik shaxslarga nisbatan atrof-muhitni ifloslantirganlik uchun toʻlanishi lozim boʻlgan kompensatsiya toʻlovining oʻn baravari miqdorida jarima tarzidagi moliyaviy sanksiyalar qoʻllaniladi.",
+     "retrieval_score": 0.9901,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2250,
+    "retrieval_ms": 1900,
+    "rerank_ms": 0,
+    "generation_ms": 2892,
+    "total_ms": 7043
+   },
+   "usage": {
+    "input_tokens": 15508,
+    "output_tokens": 725,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Suvdan belgilangan limitdan ortiq foydalangan yoki atrof-muhitni ifloslantirgan yuridik shaxs ushbu kompensatsiya toʻlovlarini qaysi mablagʻlar hisobidan toʻlaydi?",
+    "search_queries": [
+     "Suvdan belgilangan limitdan koʻproq foydalangan yoki atrof-muhitni ifloslantirgan yuridik shaxs bu kompensatsiya toʻlovlarini qaysi mablagʻ hisobidan toʻlaydi?",
+     "Suvdan belgilangan limitdan ortiq foydalangan yoki atrof-muhitni ifloslantirgan yuridik shaxs ushbu kompensatsiya toʻlovlarini qaysi mablagʻlar hisobidan toʻlaydi?",
+     "suvdan limitdan ortiq foydalanganlik uchun kompensatsiya toʻlovi yuridik shaxs mablagʻlari hisobidan",
+     "atrof-muhitni ifloslantirganlik uchun kompensatsiya toʻlovlarini toʻlash manbasi",
+     "tabiatdan foydalanish va atrof-muhitni ifloslantirish uchun kompensatsiya toʻlovlari"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi",
+     "Ekologiya va atrof-muhitni muhofaza qilish toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 727,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q022",
+   "status": "ok",
+   "answer": "Temir yoʻl transporti toʻgʻrisidagi qonunning 19-moddasiga koʻra, vagonlardan foydalanganlik uchun haq yuk joʻnatuvchi tomonidan vagonlar yuk ortish (tushirish) va manyovr ishlarini amalga oshirish uchun yuk joʻnatuvchilarda boʻlgan butun vaqt uchun toʻlanadi [1]. Shuningdek, aybdor taraf vagonlar va konteynerlardan foydalanganlik uchun butun kechiktirilgan vaqt uchun haq toʻlaydi [2]. Haq miqdorlari qonunchilikka muvofiq belgilanadi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-7239390",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni temir yoʻl transporti toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-7239390",
+     "article": "19-modda",
+     "part": "1–4-qism",
+     "edition_date": "2024-11-27",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7239390#art-19#p1",
+     "quote": "vagonlar, konteynerlar yuk ortish (tushirish) va manyovr ishlarini amalga oshirish uchun yuk joʻnatuvchilarda, yukni oluvchilarda va umumiy foydalanishda boʻlmagan temir yoʻl egalarida boʻlgan butun vaqt uchun;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-7239390",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni temir yoʻl transporti toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-7239390",
+     "article": "17-modda",
+     "part": "6-qism",
+     "edition_date": "2024-11-27",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7239390#art-17#p6",
+     "quote": "Ushbu moddaning beshinchi qismida nazarda tutilgan harakatlarni amalga oshirishda aybdor boʻlgan taraf (yuk joʻnatuvchi, yukni oluvchi, ekspeditor) temir yoʻl transporti korxonasiga, tashuvchiga vagonlar va konteynerlardan foydalanganlik uchun butun kechiktirilgan vaqt uchun haq toʻlaydi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7239390#art-19#p1",
+     "doc_id": "lex:-7239390",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni temir yoʻl transporti toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7239390",
+     "article": "19-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-27",
+     "text": "19-modda. Vagonlardan, konteynerlardan foydalanganlik va umumiy foydalanishdagi temir yoʻllarda harakatdagi tarkib bekor ushlab turilganligi (toʻxtab turganligi, kechiktirilganligi) uchun haq\nVagonlardan, konteynerlardan foydalanganlik va umumiy foydalanishdagi temir yoʻllarda harakatdagi tarkib bekor ushlab turilganligi (toʻxtab turganligi, kechiktirilganligi) uchun haq umumiy foydalanishdagi temir yoʻl transporti korxonasiga, tashuvchiga yuk joʻnatuvchi, yukni oluvchi, umumiy foydalanishda boʻlmagan temir yoʻl egasi tomonidan:\nvagonlar, konteynerlar yuk ortish (tushirish) va manyovr ishlarini amalga oshirish uchun yuk joʻnatuvchilarda, yukni oluvchilarda va umumiy foydalanishda boʻlmagan temir yoʻl egalarida boʻlgan butun vaqt uchun;\nyuk joʻnatuvchilarning, yukni oluvchilarning, umumiy foydalanishda boʻlmagan temir yoʻllar egalarining aybi bilan umumiy foydalanishdagi temir yoʻllarda harakatdagi tarkibning bekor ushlab turilganligi (toʻxtab turganligi, kechiktirilganligi) vaqti uchun toʻlanadi.\nHaq miqdorlari qonunchilikka muvofiq belgilanadi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-7239390#art-17#p6",
+     "doc_id": "lex:-7239390",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni temir yoʻl transporti toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7239390",
+     "article": "17-modda",
+     "part": "6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-27",
+     "text": "17-modda. Yuk tashish uchun haq\nUshbu moddaning beshinchi qismida nazarda tutilgan harakatlarni amalga oshirishda aybdor boʻlgan taraf (yuk joʻnatuvchi, yukni oluvchi, ekspeditor) temir yoʻl transporti korxonasiga, tashuvchiga vagonlar va konteynerlardan foydalanganlik uchun butun kechiktirilgan vaqt uchun haq toʻlaydi.",
+     "retrieval_score": 0.675,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-7239390#art-48#p1",
+     "doc_id": "lex:-7239390",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni temir yoʻl transporti toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7239390",
+     "article": "48-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-27",
+     "text": "48-modda. Yuk joʻnatuvchilarning (joʻnatuvchilarning), yukni oluvchilarning (oluvchilarning), yoʻlovchilarning, boshqa yuridik va jismoniy shaxslarning umumiy foydalanishdagi temir yoʻl transporti korxonalari, tashuvchilar oldidagi javobgarligi\nYuk joʻnatuvchilar (joʻnatuvchilar) va yukni oluvchilar (oluvchilar) quyidagilar uchun qonunchilikda belgilangan miqdorlarda neustoyka toʻlash tarzida javobgar boʻladi:\ntashishlar haqini oʻz vaqtida toʻlamaganlik uchun;\nyuklarni taqdim etmaganlik uchun, yuk tashishga berilgan vagonlardan, konteynerlardan foydalanmaganlik yoki buyurtmanomada koʻrsatilgan vagonlarni, konteynerlarni rad etganlik uchun;\numumiy foydalanishdagi temir yoʻl transporti korxonalariga, tashuvchilarga qarashli vagonlar va konteynerlardan ruxsatsiz foydalanganlik uchun;\nvagonlar va konteynerlarni yukni ortish, tushirish yoki qayta yuklash paytida belgilangan texnologiya normalaridan ortiqcha kechiktirganlik (bekor ushlab turganlik) uchun, shuningdek ularni yukni ortish, tushirish, qayta yuklash uchun yetkazib berish paytida kuttirib qoʻyish orqali yoki yuk joʻnatuvchiga (joʻnatuvchiga) bogʻliq boʻlgan boshqa sabablarga koʻra kechiktirganlik (bekor ushlab turganlik) uchun;",
+     "retrieval_score": 0.9648,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:1404120#band-133s2#p1",
+     "doc_id": "lex:1404120",
+     "doc_title": "Norasmiy tarjima OʻZBEKISTON RESPUBLIKASI VAZIRLAR MAHKAMASINING QARORI OʻZBEKISTON RESPUBLIKASI TEMIR YOʻL USTAVINI TASDIQLASH TOʻGʻRISIDA",
+     "url": "https://lex.uz/docs/1404120",
+     "article": "133-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2009-01-01",
+     "text": "133. Reja va buyurtmanomada nazarda tutilgan yuklarni yuklash uchun yuk joʻnatuvchining buyurtmanomasi boʻyicha boʻsh maxsus vagonlar berilgan, ammo yuk joʻnatuvchiga bogʻliq sabablar bilan ular yuklash temir yoʻl stansiyasida ushlab qolingan boʻlsa, ushlab turilgan butun vaqt uchun mazkur Ustavning 132-bandida belgilangan miqdorda jarima undiriladi. Agar yuk joʻnatuvchi bu vagonlardan foydalanishdan voz kechganini stansiyaga xabar qilsa, jarima xabar olingan vaqtgacha hisoblanadi.\nYuk joʻnatuvchi buyurtmanomasiga muvofiq yuklash temir yoʻl stansiyasiga kelgan boʻsh maxsus vagonlarni yuklashdan voz kechsa va hisobot sutkasida ulardan boshqa yuk joʻnatuvchilar foydalana olmasa, tashish rejasini bajarmaganlik jarimasidan tashqari, vagonlar joʻnatilgan stansiyadan yuklash stansiyasigacha, biroq 300 kilometrdan oshmagan masofa uchun vagonlar yurishi haqi undiriladi.\nBunday vagonlar yurishi uchun toʻlov miqdori yuk tashish tarifi bilan belgilanadi.",
+     "retrieval_score": 0.4977,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:1404120#band-132s2#p1",
+     "doc_id": "lex:1404120",
+     "doc_title": "Norasmiy tarjima OʻZBEKISTON RESPUBLIKASI VAZIRLAR MAHKAMASINING QARORI OʻZBEKISTON RESPUBLIKASI TEMIR YOʻL USTAVINI TASDIQLASH TOʻGʻRISIDA",
+     "url": "https://lex.uz/docs/1404120",
+     "article": "132-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2009-01-01",
+     "text": "132. Yuk joʻnatuvchi yoki yukni oluvchi vositalari bilan yuklash, tushirish yoki qayta yuklash uchun berilgan vagonlar belgilangan muddatdan ortiq ushlab qolinsa (vagonlar bekor tursa), yuk joʻnatuvchi yoki yukni oluvchidan jarima undiriladi.\nOddiy vagonlar (yopiq vagonlar, yarim ochiq vagonlar, platformalar) bekor turganda jarima quyidagi miqdorda undiriladi:\n1 soatdan 6 soatgacha — har bir vagon uchun soatiga eng kam ish haqining 0,05 baravari;\n7 soatdan 12 soatgacha — har bir vagon uchun soatiga eng kam ish haqining 0,1 baravari;\n13 soatdan 18 soatgacha — har bir vagon uchun soatiga eng kam ish haqining 0,15 baravari;\n18 soatdan ortiq — har bir vagon uchun soatiga eng kam ish haqining 0,25 baravari.\n15 daqiqagacha bekor turish hisobga olinmaydi, 15 daqiqa va undan ortiq vaqt toʻliq bir soat deb hisoblanadi.\nSisternalar, sement tashuvchi vagonlar, transporterlar, bunkerli yarim ochiq vagonlar va boshqa maxsus vagonlar (refrijeratorlardan tashqari) bekor turganda jarima 2 baravar, refrijerator vagonlar uchun 3 baravar oshiriladi.\nYukni oluvchi yoki shoxobcha temir yoʻl egasiga bogʻliq sabablar bilan tushirish yoki qayta yuklash uchun berishni kutib, tayinlangan, oraliq yoki qoʻshni temir yoʻl stansiyalarida vagonlar bekor turganda ham shu miqdorda jarima undiriladi.",
+     "retrieval_score": 0.396,
+     "rerank_score": 0.35,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1908,
+    "retrieval_ms": 1176,
+    "rerank_ms": 0,
+    "generation_ms": 2996,
+    "total_ms": 6081
+   },
+   "usage": {
+    "input_tokens": 13920,
+    "output_tokens": 708,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Yuk joʻnatuvchi vagonlarni yuk ortish uchun oʻz hududida ushlab turgan vaqt uchun toʻlov qanday tartibda olinadi — bu toʻlov qaysi vaqt oraligʻi uchun hisoblanadi?",
+    "search_queries": [
+     "Yuk joʻnatuvchi vagonlarni yuk ortish uchun oʻz hududida ushlab turgan vaqt uchun toʻlov qanday tartibda olinadi — bu toʻlov qaysi vaqt oraligʻi uchun hisoblanadi?",
+     "vagonlarni yuk ortish uchun ushlab turilgan vaqt uchun toʻlov",
+     "yuk joʻnatuvchi vagonlarni ushlab turganlik uchun haq toʻlash tartibi",
+     "vagonlardan foydalanish va ushlab turish uchun toʻlov hisoblash"
+    ],
+    "doc_hints": [
+     "Temir yoʻl transporti toʻgʻrisidagi qonun",
+     "Temir yoʻllar ustavini tasdiqlash toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 528,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q023",
+   "status": "ok",
+   "answer": "Maʼmuriy javobgarlik toʻgʻrisidagi kodeksning 77¹-moddasiga koʻra, qonunga xilof ravishda oʻrmon fondi yerlarini berish yoki ularda bino-inshootlarni qurish fuqarolarga bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha miqdorda jarima solishga sabab boʻladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "77¹-modda",
+     "part": "1–2-qism",
+     "edition_date": "2026-06-28",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-97664#art-77.1#p1",
+     "quote": "Qonunga xilof ravishda oʻrmon fondi yerlarini berish yoki ularda bino-inshootlarni qurish, — fuqarolarga bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha, mansabdor shaxslarga esa — bir yuz ellik baravaridan ikki yuz baravarigacha miqdorda jarima solishga sabab boʻladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-97664#art-77.1#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "77¹-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-28",
+     "text": "771-modda. Qonunga xilof ravishda oʻrmon fondi yerlarini berish va ularda bino-inshootlar qurish\nQonunga xilof ravishda oʻrmon fondi yerlarini berish yoki ularda bino-inshootlarni qurish, —\nfuqarolarga bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha, mansabdor shaxslarga esa — bir yuz ellik baravaridan ikki yuz baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111453#art-198.1#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "198¹-modda",
+     "part": "1–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-28",
+     "text": "1981-modda. Qonunga xilof ravishda oʻrmon fondi yerlarini berish, ulardan foydalanish, ularda bino-inshootlar qurish\nQonunga xilof ravishda oʻrmon fondi yerlarini berish, ulardan foydalanish, shunday qilmishlar uchun maʼmuriy jazo qoʻllanilganidan keyin sodir etilgan boʻlsa, —\nbazaviy hisoblash miqdorining uch yuz baravaridan toʻrt yuz baravarigacha miqdorda jarima yoki ikki yildan uch yilgacha ozodlikni cheklash yoxud uch yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nOʻrmon fondi yerlarida qonunga xilof ravishda bino-inshootlar qurish, shunday harakatlar uchun maʼmuriy jazo qoʻllanilganidan keyin sodir etilgan boʻlsa, —\nbazaviy hisoblash miqdorining toʻrt yuz baravaridan besh yuz baravarigacha miqdorda jarima yoki uch yildan besh yilgacha ozodlikni cheklash yoxud uch yildan besh yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nUshbu moddaning birinchi va ikkinchi qismlarida nazarda tutilgan harakatlar:\na) takroran;\nb) koʻp miqdorda zarar yetkazgan holda;\nv) bir guruh shaxslar tomonidan oldindan til biriktirib sodir etilgan boʻlsa, —\nbesh yildan yetti yilgacha ozodlikdan mahrum qilish bilan jazolanadi.\nYetkazilgan moddiy zararning oʻrni uch karra miqdorida qoplangan taqdirda, ozodlikni cheklash va ozodlikdan mahrum qilish tariqasidagi jazo qoʻllanilmaydi, bundan ushbu moddaning uchinchi qismida nazarda tutilgan hollar mustasno.",
+     "retrieval_score": 0.6844,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-97664#art-77#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "77-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-06-28",
+     "text": "77-modda. Oʻrmon fondi yerlaridan foydalanish qoidalarini buzish\nOʻrmon fondi yerlarida pichanzorlar va yaylovlarni shikastlantirish, oʻzboshimchalik bilan pichan oʻrish, drenaj tizimlarini va yoʻllarni yoʻq qilish yoki shikastlantirish —\nfuqarolarga bazaviy hisoblash miqdorining uch baravaridan besh baravarigacha, mansabdor shaxslarga esa — oʻn baravaridan oʻn besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nXuddi shunday huquqbuzarliklar maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, —\nfuqarolarga bazaviy hisoblash miqdorining yetti baravaridan oʻn baravarigacha, mansabdor shaxslarga esa — oʻn besh baravaridan yigirma besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nOʻrmon fondi yerlarida chorva mollarini oʻtlatish qoidalarini buzish, —\nfuqarolarga bazaviy hisoblash miqdorining yetti baravaridan oʻn baravarigacha, mansabdor shaxslarga esa — oʻn besh baravaridan yigirma besh baravarigacha miqdorda jarima solishga sabab boʻladi.\nUshbu moddaning uchinchi qismida nazarda tutilgan huquqbuzarlik maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, —\nfuqarolarga bazaviy hisoblash miqdorining oʻn besh baravaridan yigirma besh baravarigacha, mansabdor shaxslarga esa — oʻttiz baravaridan ellik baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.9802,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-152653#art-20#p1",
+     "doc_id": "lex:-152653",
+     "doc_title": "Oʻzbekiston Respublikasining yer kodeksi",
+     "url": "https://lex.uz/docs/-152653",
+     "article": "20-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "20-modda. Yer uchastkalaridan doimiy foydalanish huquqi\nYer uchastkalari viloyat va Toshkent shahar hokimining qaroriga asosan davlat organlariga, muassasalariga va korxonalariga, fuqarolarning oʻzini oʻzi boshqarish organlariga jamoat ehtiyojlari uchun doimiy foydalanishga beriladi. Yerlardan ruxsat etilgan foydalanishning asosiy turiga muvofiq:\nshahar va posyolka quriladigan yerlarning maʼmuriy imoratlar hamda inshootlar qurilgan yerlari yoki shunday imoratlar va inshootlar qurish uchun berilgan yerlar, aholi punktlarining umumiy foydalanishdagi yerlari, shaharlardagi daraxtzorlar egallagan yerlar;\nsanoat, transport, aloqa, mudofaa va boshqa maqsadlarga moʻljallangan yerlar;\ntabiatni muhofaza qilish, sogʻlomlashtirish va rekreatsiya maqsadlariga moʻljallangan yerlar;\ntarixiy-madaniy ahamiyatga molik yerlar;\noʻrmon fondi yerlari;\nsuv fondi yerlari;\nqonunchilikda nazarda tutilgan hollarda, yer fondining boshqa toifadagi yerlari foydalanishga berilishi mumkin.\nKoʻp kvartirali uy joylashgan yer uchastkasi, shuningdek koʻp kvartirali uyga tutash yer uchastkasi, agar u koʻp kvartirali uydagi joylarning mulkdorlariga boshqacha tarzda tegishli boʻlmasa, viloyatlar va Toshkent shahar ijro etuvchi hokimiyat organlari tomonidan ushbu mulkdorlarga doimiy foydalanish huquqi asosida umumiy foydalanishga beriladi.",
+     "retrieval_score": 0.8478,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-97664#art-78#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "78-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "78-modda. Kesiladigan oʻrmon fondidan foydalanish tartibini buzish\nKesiladigan oʻrmon fondidan foydalanish, yogʻoch tayyorlash va tashib olib ketish tartibini, shuningdek oʻrmon kesish chiptasi (orderi)da yoki oʻrmon chiptasida belgilangan boshqa talablarni buzish —\nfuqarolarga bazaviy hisoblash miqdorining uchdan bir qismidan bir baravarigacha, mansabdor shaxslarga esa — bir baravaridan uch baravarigacha miqdorda jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.8143,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1700,
+    "retrieval_ms": 1146,
+    "rerank_ms": 0,
+    "generation_ms": 2041,
+    "total_ms": 4888
+   },
+   "usage": {
+    "input_tokens": 13283,
+    "output_tokens": 505,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻrmon fondi yerlarini noqonuniy ajratib berish yoki ushbu yerlarda ruxsatsiz imorat qurish uchun oddiy fuqaroga qancha miqdorda maʼmuriy jarima solinadi?",
+    "search_queries": [
+     "Oʻrmon fondi yerlarini noqonuniy ajratib bergani yoki bu yerlarda ruxsatsiz imorat qurgani uchun oddiy fuqaroga qancha miqdorda jarima solinadi?",
+     "Oʻrmon fondi yerlarini noqonuniy ajratib berish yoki ushbu yerlarda ruxsatsiz imorat qurish uchun oddiy fuqaroga qancha miqdorda maʼmuriy jarima solinadi?",
+     "oʻrmon fondi yerlarini noqonuniy ajratib berish jarima",
+     "oʻrmon fondi yerlarida ruxsatsiz imorat qurish maʼmuriy javobgarlik",
+     "oʻrmon fondi yerlari egallab olinganligi uchun jarima fuqarolarga"
+    ],
+    "doc_hints": [
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeks",
+     "Yer kodeksi",
+     "Oʻrmon kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 646,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q024",
+   "status": "ok",
+   "answer": "Jinoyat-ijroiya kodeksining 113-moddasiga koʻra, ogʻir jinoyati uchun, shuningdek qasddan sodir etgan jinoyati uchun, agar u ilgari qasddan sodir etgan jinoyati uchun ozodlikdan mahrum etishga hukm qilingan boʻlsa, manzil-koloniyaga tuzalish yoʻliga oʻtgan va sud tayinlagan jazo muddatining kamida uchdan bir qismini oʻtagan mahkumlar oʻtkaziladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-163629",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-ijroiya kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-163629",
+     "article": "113-modda",
+     "part": "1–9-qism",
+     "edition_date": "2023-03-23",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-163629#art-113#p1",
+     "quote": "ogʻir jinoyati uchun, shuningdek qasddan sodir etgan jinoyati uchun, agar u ilgari qasddan sodir etgan jinoyati uchun ozodlikdan mahrum etishga hukm qilingan boʻlsa, sud tayinlagan jazo muddatining kamida uchdan bir qismini oʻtagan mahkumlar;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-163629#art-113#p1",
+     "doc_id": "lex:-163629",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-ijroiya kodeksi",
+     "url": "https://lex.uz/docs/-163629",
+     "article": "113-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-03-23",
+     "text": "113-modda. Manzil-koloniyalarda jazoni oʻtash tartibi\nManzil-koloniyalarda:\nmazkur muassasalarga sud hukmiga binoan kelgan voyaga yetgan mahkumlar;\numumiy, qattiq tartibli koloniyalardan va tarbiya koloniyalaridan sudning ajrimi asosida oʻtkazilgan voyaga yetgan mahkumlar;\nijtimoiy xavfi katta boʻlmagan jinoyati, ehtiyotsizlik oqibatida sodir etilgan jinoyati uchun va qasddan sodir etgan uncha ogʻir boʻlmagan jinoyati uchun ozodlikdan mahrum qilish bilan bogʻliq boʻlmagan jazoni ozodlikdan mahrum qilish tariqasidagi jazo bilan almashtirish tarzida sudning ajrimi asosida yuborilgan voyaga yetgan mahkumlar jazoni oʻtaydi.\nManzil-koloniyalarga tuzalish yoʻliga oʻtgan va:\nogʻir jinoyati uchun, shuningdek qasddan sodir etgan jinoyati uchun, agar u ilgari qasddan sodir etgan jinoyati uchun ozodlikdan mahrum etishga hukm qilingan boʻlsa, sud tayinlagan jazo muddatining kamida uchdan bir qismini oʻtagan mahkumlar;\noʻta ogʻir jinoyati uchun, shuningdek jazodan muddatidan ilgari shartli ravishda ozod qilish yoki jazoni yengilrogʻi bilan almashtirish qoʻllanilgan va jazoning oʻtalmagan qismi mobaynida qasddan sodir etgan yangi jinoyati uchun sud tayinlagan jazo muddatining kamida yarmini oʻtagan mahkumlar oʻtkaziladi.\nManzil-koloniyalarga quyidagilar oʻtkazilmaydi:\noʻta xavfli retsidivistlar;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:6412097#preamble#p43",
+     "doc_id": "lex:6412097",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining jinoyat hamda jinoyat-ijroiya kodekslariga oʻzgartish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/6412097",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2023-03-23",
+     "text": "manzil-koloniyadan umumiy tartibli koloniyaga, umumiy, qattiq yoki maxsus tartibli koloniyalardan — turmaga oʻtkazish toʻgʻrisida;\nmanzil-koloniyadan umumiy yoki qattiq tartibli koloniyaga, qattiq tartibli koloniyadan — maxsus tartibli koloniyaga, koloniyadan — turmaga qaytarish haqida.\nTaqdimnoma Jinoyat-protsessual kodeksining 537-moddasida nazarda tutilgan tartibda sud tomonidan koʻrib chiqiladi”;\n7) 113-moddaning:\nikkinchi qismi:\nikkinchi xatboshisidagi “toʻrtdan” degan soʻz “uchdan” degan soʻz bilan almashtirilsin;\nuchinchi xatboshisidagi “uchdan bir qismini” degan soʻzlar “yarmini” degan soʻz bilan almashtirilsin;\nuchinchi qismi:\nquyidagi mazmundagi toʻrtinchi va beshinchi xatboshilar bilan toʻldirilsin:\n“jazoni oʻtash davrida ushbu Kodeksning 1121-moddasida nazarda tutilgan tartibda manzil-koloniyadan umumiy tartibli koloniyaga oʻtkazilgan, shuningdek umumiy yoki qattiq tartibli koloniyaga qaytarilgan mahkumlar sud tomonidan bu haqda ajrim chiqarilgan kundan eʼtiboran kamida ikki yil mobaynida;\nmanzil-koloniyada jazoni oʻtash vaqtida jinoyat sodir etgan va sud tomonidan ozodlikdan mahrum qilish tariqasidagi jazoga hukm qilingan mahkumlar”;\ntoʻrtinchi, beshinchi va oltinchi xatboshilari tegishincha oltinchi, yettinchi va sakkizinchi xatboshilar deb hisoblansin;\n8) 114-moddaning:\nbirinchi qismi:\noltinchi xatboshisi quyidagi tahrirda bayon etilsin:",
+     "retrieval_score": 0.6493,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-163629#art-104#p1",
+     "doc_id": "lex:-163629",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-ijroiya kodeksi",
+     "url": "https://lex.uz/docs/-163629",
+     "article": "104-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2003-08-30",
+     "text": "104-modda. Mahkumlarning saqlash sharoitini oʻzgartirish bilan bogʻliq ragʻbatlantirish choralarini qoʻllash tartibi\nYengillashtirilgan saqlash sharoitlariga intizomiy jazosi yoʻq mahkumlar:\nqasddan sodir etilgan uncha ogʻir boʻlmagan jinoyat uchun sud tayinlagan jazo muddatining kamida olti oyini oʻtaganidan keyin;\nsodir etilgan ogʻir jinoyat uchun sud tayinlagan jazo muddatining kamida chorak qismini oʻtaganidan keyin;\nsodir etilgan oʻta ogʻir jinoyat uchun sud tayinlagan jazo muddatining kamida uchdan bir qismini oʻtaganidan keyin oʻtkaziladi.\nMahkumlar turmadan jazoni ijro etish koloniyasiga va maxsus tartibli koloniyadan qattiq tartibli koloniyaga sud tayinlagan jazo muddatining kamida yarmini oʻtaganlaridan keyin, Jinoyat-protsessual kodeksining 537-moddasida nazarda tutilgan tartibda oʻtkaziladi.\nMahkumlar qattiq va umumiy tartibli koloniyadan manzil-koloniyaga ushbu Kodeks 113-moddasining birinchi va ikkinchi qismlarida nazarda tutilgan hollarda va tartibda oʻtkaziladi.",
+     "retrieval_score": 0.8657,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111453#art-50#p6",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "50-modda",
+     "part": "6–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-10-15",
+     "text": "50-modda. Ozodlikdan mahrum qilish\nOzodlikdan mahrum etishga hukm qilinayotgan ayollarga hamda oltmish yoshdan oshgan erkaklarga nisbatan tayinlanayotgan jazo muddati ushbu Kodeks Maxsus qismining tegishli moddasida nazarda tutilgan ozodlikdan mahrum etish eng koʻp muddatining uchdan ikki qismidan ortiq boʻlishi mumkin emas, bundan bolaning oʻlimiga sabab boʻlgan qasddan sodir etilgan jinoyatlar mustasno.\nOzodlikdan mahrum etishga hukm qilinayotgan erkaklarga nisbatan:\na) ijtimoiy xavfi katta boʻlmagan jinoyati, ehtiyotsizlik oqibatida sodir etilgan jinoyati uchun va qasddan uncha ogʻir boʻlmagan jinoyat sodir etganlik uchun ozodlikdan mahrum etishga hukm qilinayotganlarga nisbatan jazoni manzil-koloniyalarda;\nb) qasddan ogʻir jinoyat sodir etganlik va oʻta ogʻir jinoyati uchun birinchi marta ozodlikdan mahrum etishga hukm qilinayotganlarga nisbatan jazoni umumiy tartibli koloniyalarda;\nv) ilgari qasddan sodir etgan jinoyati uchun ozodlikdan mahrum qilish tariqasidagi jazoni oʻtab chiqib yoki oʻtayotgan chogʻida, qasddan yangi sodir etgan jinoyati uchun hukm qilinayotganlarga nisbatan jazoni qattiq tartibli koloniyalarda;",
+     "retrieval_score": 0.762,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-163629#art-118#p1",
+     "doc_id": "lex:-163629",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-ijroiya kodeksi",
+     "url": "https://lex.uz/docs/-163629",
+     "article": "118-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-02-16",
+     "text": "118-modda. Qattiq tartibli koloniyalarda jazoni oʻtash tartibi\nQattiq tartibli koloniyalarda jazoni:\nmazkur muassasaga sud hukmiga binoan kelgan mahkumlar;\nturmalar va maxsus tartibli koloniyalardan ragʻbatlantirish tarzida oʻtkazilgan mahkumlar;\nsud tomonidan tayinlangan turmaga qamash tariqasidagi ozodlikdan mahrum qilish muddatini oʻtaganidan soʻng turmalardan oʻtkazilgan mahkumlar;\nsud tomonidan manzil-koloniyalardan intizomiy jazo tarzida qaytarilgan mahkumlar;\nqasddan sodir etgan jinoyati uchun ozodlikdan mahrum qilish tariqasidagi jazoni ilgari oʻtagan va qasddan jinoyat sodir etganligi uchun ozodlikdan mahrum qilish bilan bogʻliq boʻlmagan jazoga qayta hukm qilinib, ozodlikdan mahrum qilish bilan bogʻliq boʻlmagan jazoni ozodlikdan mahrum qilish tariqasidagi jazo bilan almashtirish tartibida sudning ajrimi asosida yuborilgan mahkumlar oʻtaydi.\nTuzalish yoʻliga oʻtgan mahkumlar ushbu Kodeksning 104-moddasida nazarda tutilgan tartibda yengillashtirilgan saqlash sharoitiga oʻtkaziladi.\nQattiq tartibli bir koloniyadan ikkinchisiga oʻtkazilgan mahkumlar jazoni bu yerga oʻtkazilgunga qadar belgilangan saqlash sharoitida oʻtaydilar.",
+     "retrieval_score": 0.8961,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1701,
+    "retrieval_ms": 1104,
+    "rerank_ms": 0,
+    "generation_ms": 2473,
+    "total_ms": 5280
+   },
+   "usage": {
+    "input_tokens": 15035,
+    "output_tokens": 559,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Qasddan ogʻir jinoyat sodir etgan, ilgari ham qasddan jinoyat uchun ozodlikdan mahrum etilgan mahkum manzil-koloniyaga oʻtkazilishi uchun sud tayinlagan jazo muddatining kamida qancha qismini oʻtagan boʻlishi kerak?",
+    "search_queries": [
+     "Qasddan ogʻir jinoyat sodir etgan, ilgari ham qasddan jinoyat uchun ozodlikdan mahrum etilgan mahkum manzil-koloniyaga oʻtkazilishi uchun sud tayinlagan jazo muddatining kamida qancha qismini oʻtagan boʻlishi kerak?",
+     "manzil-koloniyaga oʻtkazish jazo muddatining kamida qancha qismini oʻtagan boʻlishi kerak",
+     "qasddan ogʻir jinoyat ilgari qasddan jinoyat uchun ozodlikdan mahrum etilgan manzil-koloniyaga oʻtkazish",
+     "jazoni oʻtash tartibini oʻzgartirish manzil-koloniyaga oʻtkazish shartlari"
+    ],
+    "doc_hints": [
+     "Jinoyat-ijroiya kodeksi",
+     "Jinoyat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 469,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q025",
+   "status": "ok",
+   "answer": "Raqobatchini obroʻsizlantirish, yaʼni uning ishbilarmonlik nufuziga putur yetkazish maqsadida bila turib yolgʻon, noaniq yoki buzib koʻrsatilgan maʼlumotlarni tarqatish Jinoyat kodeksining 192-moddasiga koʻra bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha miqdorda jarima bilan jazolanadi [1]. Bunday harakat Raqobat toʻgʻrisidagi qonunning 21-moddasida insofsiz raqobat sifatida taqiqlangan [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "192-modda",
+     "part": "1–2-qism",
+     "edition_date": "2019-12-04",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111453#art-192#p1",
+     "quote": "bazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha miqdorda jarima yoki uch yuz oltmish soatgacha majburiy jamoat ishlari yoxud uch yilgacha axloq tuzatish ishlari bilan jazolanadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-6518381",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni raqobat toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6518381",
+     "article": "21-modda",
+     "part": "1–4-qism",
+     "edition_date": "2026-02-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6518381#art-21#p1",
+     "quote": "raqobatchini obroʻsizlantirish, yaʼni raqobatchi xoʻjalik yurituvchi subyektning faoliyatiga salbiy taʼsir koʻrsatishi yoki uning ishchanlik obroʻsiga putur yetkazishi mumkin boʻlgan",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111453#art-192#p1",
+     "doc_id": "lex:-111453",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat kodeksi",
+     "url": "https://lex.uz/docs/-111453",
+     "article": "192-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2019-12-04",
+     "text": "192-modda. Raqobatchini obroʻsizlantirish\nRaqobatchini obroʻsizlantirish, yaʼni bosma yoki boshqacha usulda koʻpaytirilgan matnlarda yoki ommaviy axborot vositalari orqali xoʻjalik yurituvchi subyektning ishbilarmonlik nufuziga putur yetkazish maqsadida bila turib yolgʻon, noaniq yoki buzib koʻrsatilgan maʼlumotlarni tarqatish —\nbazaviy hisoblash miqdorining ellik baravaridan yuz baravarigacha miqdorda jarima yoki uch yuz oltmish soatgacha majburiy jamoat ishlari yoxud uch yilgacha axloq tuzatish ishlari bilan jazolanadi.",
+     "retrieval_score": 0.7174,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-6518381#art-21#p1",
+     "doc_id": "lex:-6518381",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni raqobat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6518381",
+     "article": "21-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-02-07",
+     "text": "21-modda. Insofsiz raqobatni taqiqlash\nXoʻjalik yurituvchi subyektlar yoki ularning manfaatlarini koʻzlab boshqa shaxslar tomonidan raqobatchilarga nisbatan insofsiz raqobatni amalga oshirish, shu jumladan quyidagi harakatlarni amalga oshirish taqiqlanadi:\nraqobatchini obroʻsizlantirish, yaʼni raqobatchi xoʻjalik yurituvchi subyektning faoliyatiga salbiy taʼsir koʻrsatishi yoki uning ishchanlik obroʻsiga putur yetkazishi mumkin boʻlgan, u sotuvga taklif qilayotgan tovarning sifati va isteʼmol xossalari toʻgʻrisida, mazkur tovarni tayyorlash hamda undan foydalanish usullari va sharoitlari haqida, undan foydalanishdan kutilayotgan natijalar toʻgʻrisida, tovarning muayyan maqsadlarga yaroqliligi haqida, tovarni sotuvga taklif etish shartlari, shu jumladan uning narxi toʻgʻrisida yolgʻon, noaniq yoki buzib koʻrsatilgan maʼlumotlarni tarqatish;\nnotoʻgʻri taqqoslash, yaʼni raqobatchi xoʻjalik yurituvchi subyektni yoki uning tovarini tovarning ustunligi haqida tasavvur hosil qiluvchi soʻzlardan yoki ramzlardan tovarning xolisona tasdiqqa ega boʻlgan tavsifini yoki taqqoslash parametrlarini koʻrsatmagan holda foydalanib taqqoslash;\ntovarning xususiyati, ishlab chiqarilish usuli va joyi, isteʼmol xossalari, narxi va sifati, ishlab chiqaruvchining (bajaruvchining) kafolat majburiyatlari xususida isteʼmolchilarni chalgʻitish;",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111189#art-100#p1",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "100-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "100-modda. Shaʼn, qadr-qimmat va ishchanlik obroʻsini himoya qilish\nFuqaro oʻzining shaʼni, qadr-qimmati yoki ishchanlik obroʻsiga putur yetkazuvchi maʼlumotlar yuzasidan, basharti bunday maʼlumotlarni tarqatgan shaxs ularning haqiqatga toʻgʻri kelishini isbotlay olmasa, sud yoʻli bilan raddiya talab qilishga haqli.\nManfaatdor shaxslarning talabiga koʻra fuqaroning shaʼni va qadr-qimmatini uning vafotidan keyin ham himoya qilishga yoʻl qoʻyiladi.\nBasharti, fuqaroning shaʼni, qadr-qimmati yoki ishchanlik obroʻsiga putur yetkazuvchi maʼlumotlar ommaviy-axborot vositalarida tarqatilgan boʻlsa, ayni shu ommaviy-axborot vositalarida raddiya berilishi lozim.\nBasharti, bunday maʼlumotlar tashkilotdan olingan hujjatda uchrasa, bunday hujjat almashtirilishi yoki chaqirib olinishi kerak.\nBoshqa hollarda raddiya berish tartibi sud tomonidan belgilanadi.\nFuqaro ommaviy axborot vositalarida uning huquqlari yoki qonun bilan qoʻriqlanadigan manfaatlarini kamsituvchi maʼlumotlar eʼlon qilinganda u ayni oʻsha ommaviy axborot vositalari orqali chiqib, oʻzini himoya qilish huquqiga ega.\nBasharti, sudning hal qiluv qarori bajarilmasa, sud qoidabuzarga qonunchilikda belgilangan miqdorda va tartibda undiriladigan jarima solishga haqlidir. Jarimani toʻlash qoidabuzarni sudning hal qiluv qarorida nazarda tutilgan harakatlarni bajarish vazifasidan ozod etmaydi.",
+     "retrieval_score": 0.9989,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111189#art-100#p8",
+     "doc_id": "lex:-111189",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI Birinchi qism",
+     "url": "https://lex.uz/docs/-111189",
+     "article": "100-modda",
+     "part": "8–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "100-modda. Shaʼn, qadr-qimmat va ishchanlik obroʻsini himoya qilish\nOʻzining shaʼni, qadr-qimmati yoki ishchanlik obroʻsiga putur yetkazuvchi maʼlumotlar tarqatilgan fuqaro bunday maʼlumotlar rad etilishi bilan bir qatorda ularni tarqatish oqibatida yetkazilgan zararlar va maʼnaviy ziyonning oʻrnini qoplashni talab qilishga haqlidir.\nUshbu moddadagi fuqaroning ishchanlik obroʻsini himoya qilish toʻgʻrisidagi qoidasi yuridik shaxsning ishchanlik obroʻsini himoya etishga nisbatan ham tegishli yoʻsinda tatbiq etiladi.",
+     "retrieval_score": 0.9573,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-180552#art-1021#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "1021-modda",
+     "part": "1–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-03-30",
+     "text": "1021-modda. Umumiy qoidalar\nMaʼnaviy zarar uni yetkazuvchining aybi boʻlgan taqdirda, zarar yetkazuvchi tomonidan qoplanadi, ushbu moddaning ikkinchi qismida nazarda tutilgan hollar bundan mustasno.\nMaʼnaviy zarar uni yetkazuvchining aybidan qatʼi nazar, quyidagi hollarda qoplanadi, agar:\nzarar fuqaroning hayoti va sogʻligʻiga oshiqcha xavf manbai tomonidan yetkazilgan boʻlsa;\nzarar fuqaroga uni qonunga xilof tarzda hukm qilish, qonunga xilof tarzda jinoiy javobgarlikka tortish, ehtiyot chorasi sifatida qamoqqa olishni yoki munosib xulq-atvorda boʻlish haqida tilxat olishni qonunga xilof tarzda qoʻllanish, qonunga xilof tarzda maʼmuriy jazo qoʻllanish va qonunga xilof tarzda ushlab turish, shuningdek har qanday qiynoqqa solish va boshqa shafqatsiz, gʻayriinsoniy yoki qadr-qimmatni kamsituvchi muomala hamda jazo turlarini qoʻllash natijasida yetkazilgan boʻlsa;\nzarar or-nomus, qadr-qimmat va ishchanlik obroʻ-eʼtiborini haqoratlovchi maʼlumotlarni tarqatish tufayli yetkazilgan boʻlsa;\nqonunda nazarda tutilgan boshqa hollarda.",
+     "retrieval_score": 0.7971,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1913,
+    "retrieval_ms": 1274,
+    "rerank_ms": 0,
+    "generation_ms": 2912,
+    "total_ms": 6100
+   },
+   "usage": {
+    "input_tokens": 13142,
+    "output_tokens": 685,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Raqobatchi toʻgʻrisida yolgʻon maʼlumot tarqatib, uning ishbilarmonlik obroʻsiga putur yetkazgan shaxs qanday miqdorda jarimaga tortilishi mumkin?",
+    "search_queries": [
+     "Raqobatchi haqida yolgʻon maʼlumot tarqatib uning ishbilarmonlik obroʻsiga putur yetkazgan kishi qanday miqdorda jarimaga tortilishi mumkin?",
+     "Raqobatchi toʻgʻrisida yolgʻon maʼlumot tarqatib, uning ishbilarmonlik obroʻsiga putur yetkazgan shaxs qanday miqdorda jarimaga tortilishi mumkin?",
+     "raqobatchi toʻgʻrisida yolgʻon maʼlumot tarqatish ishbilarmonlik obroʻsiga putur yetkazish javobgarlik",
+     "ishbilarmonlik obroʻsiga putur yetkazish jarima miqdori",
+     "notoʻgʻri maʼlumot tarqatish orqali obroʻsiga zarar yetkazish jarima"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi",
+     "Raqobat toʻgʻrisidagi qonun",
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 658,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q026",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 389³-moddasiga koʻra, apellyatsiya shikoyati berish muddati oʻtkazib yuborilgan holda berilgan va muddatni tiklash toʻgʻrisidagi iltimosnoma qanoatlantirilgan taqdirda, apellyatsiya instansiyasi sudi birinchi instansiya sudining hal qiluv qarori ijrosini apellyatsiya instansiyasida ish yuritish tamomlanguniga qadar toʻxtatib turadi, bundan darhol ijro etilishi lozim boʻlgan hal qiluv qarorlari mustasno [1]. Iqtisodiy protsessual kodeksining 271-moddasiga koʻra esa bunday toʻxtatib turish ishda ishtirok etuvchi shaxslarning iltimosnomasiga koʻra amalga oshiriladi va hal qiluv qarorining ijrosi apellyatsiya shikoyatini koʻrib chiqish natijalari boʻyicha sud hujjati qabul qilingunga qadar boʻlgan muddatga toʻxtatib turiladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "389³-modda",
+     "part": "1–2-qism",
+     "edition_date": "2018-01-22",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-389.3#p1",
+     "quote": "Ishda ishtirok etuvchi shaxslarning iltimosnomasiga koʻra, apellyatsiya shikoyati (protesti) uni berish muddati oʻtkazib yuborilgan holda berilgan va mazkur muddatni tiklash toʻgʻrisidagi iltimosnoma qanoatlantirilgan taqdirda, apellyatsiya instansiyasi sudi (sudyasi) birinchi instansiya sudi tomonidan qabul qilingan hal qiluv qarorining ijrosini apellyatsiya instansiyasida ish yuritish tamomlanguniga qadar toʻxtatib turadi, bundan darhol ijro etilishi lozim boʻlgan hal qiluv qarorlari mustasno",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "271-modda",
+     "part": "1–3-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-271#p1",
+     "quote": "Hal qiluv qarorining ijrosi apellyatsiya instansiyasi sudi tomonidan apellyatsiya shikoyatini (protestini) koʻrib chiqish natijalari boʻyicha sud hujjati qabul qilingunga qadar boʻlgan muddatga toʻxtatib turiladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-389.3#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "389³-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "3893-modda. Apellyatsiya instansiyasi sudi tomonidan hal qiluv qarorining ijrosini toʻxtatib turish\nIshda ishtirok etuvchi shaxslarning iltimosnomasiga koʻra, apellyatsiya shikoyati (protesti) uni berish muddati oʻtkazib yuborilgan holda berilgan va mazkur muddatni tiklash toʻgʻrisidagi iltimosnoma qanoatlantirilgan taqdirda, apellyatsiya instansiyasi sudi (sudyasi) birinchi instansiya sudi tomonidan qabul qilingan hal qiluv qarorining ijrosini apellyatsiya instansiyasida ish yuritish tamomlanguniga qadar toʻxtatib turadi, bundan darhol ijro etilishi lozim boʻlgan hal qiluv qarorlari mustasno.\nHal qiluv qarorining ijrosini toʻxtatib turish haqida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3523891#art-271#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "271-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "271-modda. Apellyatsiya instansiyasi sudi tomonidan hal qiluv qarorining ijrosini toʻxtatib turish\nApellyatsiya shikoyati (protesti) uni berish muddati oʻtkazib yuborilgan holda berilganda va ushbu muddatni tiklash toʻgʻrisidagi iltimosnoma qanoatlantirilganda, apellyatsiya instansiyasi sudi birinchi instansiya sudi tomonidan qabul qilingan hal qiluv qarorining ijrosini ishda ishtirok etuvchi shaxslarning iltimosnomasiga koʻra toʻxtatib turishga haqli.\nHal qiluv qarorining ijrosini toʻxtatib turish yoki uning ijrosini toʻxtatib turishni rad etish haqida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.\nHal qiluv qarorining ijrosi apellyatsiya instansiyasi sudi tomonidan apellyatsiya shikoyatini (protestini) koʻrib chiqish natijalari boʻyicha sud hujjati qabul qilingunga qadar boʻlgan muddatga toʻxtatib turiladi.",
+     "retrieval_score": 0.9965,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6708694#art-389.3#p1",
+     "doc_id": "lex:-6708694",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni sud qarorlarining qonuniyligi, asosliligi va adolatliligini tekshirish tartibi takomillashtirilishi munosabati bilan Oʻzbekiston Respublikasining fuqarolik protsessual kodeksiga oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6708694",
+     "article": "389³-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-12-25",
+     "text": "3893-modda. Apellatsiya instansiyasi sudi tomonidan hal qiluv qarorining ijrosini toʻxtatib turish\nIshda ishtirok etuvchi shaxslarning iltimosnomasiga koʻra, apellatsiya shikoyati (protesti) uni berish muddati oʻtkazib yuborilgan holda berilgan va mazkur muddatni tiklash toʻgʻrisidagi iltimosnoma qanoatlantirilgan taqdirda, apellatsiya instansiyasi sudi (sudyasi) birinchi instansiya sudi tomonidan qabul qilingan hal qiluv qarorining ijrosini apellatsiya instansiyasida ish yuritish tamomlanguniga qadar toʻxtatib turadi, bundan darhol ijro etilishi lozim boʻlgan hal qiluv qarorlari mustasno.\nHal qiluv qarorining ijrosini toʻxtatib turish haqida apellatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.",
+     "retrieval_score": 0.7055,
+     "rerank_score": 0.85,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-385.1#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "385¹-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-15",
+     "text": "3851-modda. Apellyatsiya shikoyatini (protestini) berish muddati\nApellyatsiya shikoyati (protesti) sud tomonidan hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy ichida berilishi mumkin.\nSudning soddalashtirilgan ish yuritish tartibida koʻrib chiqilgan, shuningdek oʻzboshimchalik bilan egallab olingan, davlat mulkida boʻlgan yer uchastkasini qaytarish, oʻzboshimchalik bilan qurilgan imoratni buzib tashlash toʻgʻrisidagi ishlar boʻyicha hal qiluv qarori ustidan apellyatsiya shikoyati (protesti) hal qiluv qarori qabul qilinganidan keyin oʻn kun ichida berilishi mumkin.\nOʻtkazib yuborilgan muddat, agar iltimosnoma hal qiluv qarori qabul qilingan kundan eʼtiboran uch oydan kechiktirmay berilgan va muddatni oʻtkazib yuborish sabablari uzrli deb topilgan boʻlsa, apellyatsiya shikoyati (protesti) berayotgan shaxsning iltimosnomasiga koʻra apellyatsiya instansiyasi sudining sudyasi tomonidan tiklanishi mumkin.\nApellyatsiya shikoyatini (protestini) berishning oʻtkazib yuborilgan muddatini tiklash haqida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.\nApellyatsiya shikoyatini (protestini) berish muddatini tiklashni rad etish haqida apellyatsiya shikoyatini (protestini) qabul qilishni rad etish toʻgʻrisidagi ajrimda koʻrsatiladi.",
+     "retrieval_score": 0.8765,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:3523891#art-262#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "262-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-15",
+     "text": "262-modda. Apellyatsiya shikoyatini (protestini) berish muddati\nAgar qonunchilikda boshqacha muddat belgilanmagan boʻlsa, apellyatsiya shikoyati (protesti) birinchi instansiya sudi tomonidan shikoyat qilinayotgan (protest keltirilayotgan) hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy ichida berilishi mumkin.\nSudning soddalashtirilgan ish yuritish tartibida koʻrib chiqilgan, shuningdek huquqiy taʼsir chorasini qoʻllash, oʻzboshimchalik bilan egallab olingan, davlat mulkida boʻlgan yer uchastkasini qaytarish, oʻzboshimchalik bilan qurilgan imoratni buzib tashlash toʻgʻrisidagi ishlar boʻyicha hal qiluv qarori ustidan apellyatsiya shikoyati (protesti) hal qiluv qarori qabul qilinganidan keyin oʻn kun ichida berilishi mumkin.\nApellyatsiya shikoyatini (protestini) berishning oʻtkazib yuborilgan muddati, shikoyat (protest) bergan shaxsning iltimosnomasi boʻyicha apellyatsiya instansiyasi sudi tomonidan, agar iltimosnoma hal qiluv qarori qabul qilingan kundan eʼtiboran ikki oydan kechiktirmasdan berilgan va apellyatsiya shikoyatini (protestini) berish muddati oʻtkazib yuborilishining sabablari sud tomonidan uzrli deb topilgan boʻlsa, tiklanishi mumkin.\nApellyatsiya shikoyatini (protestini) berishning oʻtkazib yuborilgan muddatini tiklash haqida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.",
+     "retrieval_score": 0.868,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2137,
+    "retrieval_ms": 1985,
+    "rerank_ms": 0,
+    "generation_ms": 3951,
+    "total_ms": 8075
+   },
+   "usage": {
+    "input_tokens": 12836,
+    "output_tokens": 892,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar apellyatsiya shikoyati berish muddati oʻtkazib yuborilgan boʻlsa va sud bu muddatni tiklab bersa, hal qiluv qarorining ijrosi qanday holatga tushadi va u qachongacha davom etadi?",
+    "search_queries": [
+     "Agar apellyatsiya shikoyati berish muddati oʻtkazib yuborilgan boʻlsa-yu, sud bu muddatni tiklab bersa, hal qiluv qarorining ijrosi qanday holatga tushadi va u qachongacha davom etadi?",
+     "Agar apellyatsiya shikoyati berish muddati oʻtkazib yuborilgan boʻlsa va sud bu muddatni tiklab bersa, hal qiluv qarorining ijrosi qanday holatga tushadi va u qachongacha davom etadi?",
+     "apellyatsiya shikoyati berish muddatini tiklash hal qiluv qarori ijrosini toʻxtatib turish",
+     "apellyatsiya shikoyati muddati tiklanganida qaror ijrosi",
+     "hal qiluv qarorining ijrosini toʻxtatib turish apellyatsiya"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 683,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q027",
+   "status": "ok",
+   "answer": "Yer osti suvlarining davlat monitoringi natijalari boʻyicha yer osti chuchuk suvlari sathi tizimli kamaygan hududlarda quduqlarni qazish, gidrogeologik xulosa va suvdan maxsus foydalanish uchun ruxsatnoma berish cheklanishi, toʻxtatib turilishi yoki taqiqlanishi mumkin [1]. Bunday kuzatuvlar yer osti suvlarini chiqarish va ulardan foydalanish bilan shugʻullanuvchi shaxslar tomonidan suv chiqarish uchastkasida va unga tutash hududda olib boriladi, shuningdek foydalanilayotgan suvning miqdori va sifati hisobi yuritiladi [2]; quduqlarni kuzatish tarmogʻini yaratish va ishlab chiqarish monitoringini yuritish tadbirlari yer osti suvlarining holatiga taʼsir koʻrsatadigan korxonalar tomonidan amalga oshiriladi [3]. Yer osti suvlarining davlat monitoringini yuritish Togʻ-kon sanoati va geologiya vazirligining vakolatlariga kiradi [4].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.85,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "89-modda",
+     "part": "1–3-qism",
+     "edition_date": "2025-07-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7655343#art-89#p1",
+     "quote": "Yer osti suvlarining davlat monitoringi natijalari boʻyicha yer osti chuchuk suvlari sathining tizimli kamayishi belgilangan hududlarda quduqlarni qazish, gidrogeologik xulosa va suvdan maxsus foydalanish uchun ruxsatnoma berish cheklanishi, toʻxtatib turilishi yoki taqiqlanishi mumkin",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "124-modda",
+     "part": "1–3-qism",
+     "edition_date": "2025-07-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7655343#art-124#p1",
+     "quote": "Yer osti suvlarini chiqarish va ulardan foydalanish bilan shugʻullanuvchi shaxslar suv chiqarish uchastkasida hamda unga tutash hududda ularning rejimi ustidan kuzatuvlar olib borishi, shuningdek foydalanilayotgan suvning miqdori va sifati hisobini yuritishi shart",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 3,
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "124-modda",
+     "part": "7-qism",
+     "edition_date": "2025-07-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7655343#art-124#p7",
+     "quote": "Yer osti suvlarini muhofaza qilish, shu jumladan quduqlarni kuzatish tarmogʻini yaratish va ishlab chiqarish monitoringini yuritish tadbirlari faoliyati yer osti suvlarining holatiga taʼsir koʻrsatadigan yoki taʼsir koʻrsatishi mumkin boʻlgan korxonalar tomonidan amalga oshiriladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 4,
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "22-modda",
+     "part": "1–7-qism",
+     "edition_date": "2025-07-30",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-7655343#art-22#p1",
+     "quote": "manfaatdor vazirliklar va idoralar, mahalliy davlat hokimiyati organlari bilan birgalikda yer osti suvlarining davlat monitoringini yuritish;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7655343#art-89#p1",
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "89-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-30",
+     "text": "89-modda. Yer osti chuchuk suvlaridan ichimlik va xoʻjalik-maishiy suv taʼminoti bilan bogʻliq boʻlmagan ehtiyojlar uchun foydalanishni cheklash\nYer osti chuchuk suvlaridan ichimlik va xoʻjalik-maishiy suv taʼminoti bilan bogʻliq boʻlmagan ehtiyojlar uchun foydalanishga yoʻl qoʻyilmaydi, bundan ushbu moddaning ikkinchi qismida nazarda tutilgan hollar mustasno.\nZarur boʻlgan yer usti suv manbalari boʻlmagan hamda yer osti chuchuk suvlarining yetarli zaxiralari boʻlgan hududlarda tasdiqlangan limitlarga muvofiq togʻ-kon sanoati va geologiya organlari ushbu suvlardan ichimlik va xoʻjalik-maishiy suv taʼminoti bilan bogʻliq boʻlmagan maqsadlar uchun foydalanishga ruxsat berishi mumkin.\nYer osti suvlarining davlat monitoringi natijalari boʻyicha yer osti chuchuk suvlari sathining tizimli kamayishi belgilangan hududlarda quduqlarni qazish, gidrogeologik xulosa va suvdan maxsus foydalanish uchun ruxsatnoma berish cheklanishi, toʻxtatib turilishi yoki taqiqlanishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-7655343#art-124#p1",
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "124-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-30",
+     "text": "124-modda. Yer osti suvlarini muhofaza qilish\nYer osti suvlarini chiqarish va ulardan foydalanish bilan shugʻullanuvchi shaxslar suv chiqarish uchastkasida hamda unga tutash hududda ularning rejimi ustidan kuzatuvlar olib borishi, shuningdek foydalanilayotgan suvning miqdori va sifati hisobini yuritishi shart.\nAgar foydali qazilmalar konlarini qidirish, ularni oʻrganish va ulardan foydalanish bilan bogʻliq boʻlgan burgʻilash hamda boshqa kon-qidiruv ishlarini bajarish chogʻida yer osti suvlari bor qatlamlar aniqlangan boʻlsa, bu haqda togʻ-kon sanoati va geologiya organlariga xabar qilinishi hamda belgilangan tartibda yer osti suvlarini muhofaza qilishga doir choralar koʻrilishi zarur.\nSanoat va boshqa oqova suvlarini oqizish uchun qaziladigan quduqlar suvli qatlamni ifloslantirish manbaiga aylanishi mumkin boʻlgan barcha hollarda bunday quduqlarni qazish taqiqlanadi.",
+     "retrieval_score": 0.8057,
+     "rerank_score": 0.7,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-7655343#art-124#p7",
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "124-modda",
+     "part": "7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-30",
+     "text": "124-modda. Yer osti suvlarini muhofaza qilish\nYer osti suvlarini muhofaza qilish, shu jumladan quduqlarni kuzatish tarmogʻini yaratish va ishlab chiqarish monitoringini yuritish tadbirlari faoliyati yer osti suvlarining holatiga taʼsir koʻrsatadigan yoki taʼsir koʻrsatishi mumkin boʻlgan korxonalar tomonidan amalga oshiriladi.",
+     "retrieval_score": 0.6821,
+     "rerank_score": 0.6,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-7655343#art-22#p1",
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "22-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-30",
+     "text": "22-modda. Oʻzbekiston Respublikasi Togʻ-kon sanoati va geologiya vazirligining suvga doir munosabatlarni tartibga solish sohasidagi vakolatlari\nOʻzbekiston Respublikasi Togʻ-kon sanoati va geologiya vazirligining suvga doir munosabatlarni tartibga solish sohasidagi vakolatlari jumlasiga quyidagilar kiradi:\nyer osti suvlarining resurslari va zaxiralarini aniqlash uchun geologiya-qidiruv ishlarini amalga oshirish, ulardan oqilona foydalanish, ularni ifloslanishdan va kamayib ketishdan muhofaza qilish boʻyicha asoslantirilgan takliflar ishlab chiqish;\nyer osti suvlaridan oqilona foydalanilishi, yuridik va jismoniy shaxslar tomonidan yer osti suvlaridan foydalanish hamda ularni muhofaza qilish sohasidagi qonunchilik va normativ hujjatlar talablariga rioya etilishi ustidan davlat nazoratini amalga oshirish;\nyer osti suvlarining davlat zaxiralari balansi va muhofaza etiladigan tabiiy hududlar davlat kadastri, yer osti chuchuk suvlari konlari hosil boʻladigan zonalar toʻgʻrisidagi axborotni tuzish;\nmanfaatdor vazirliklar va idoralar, mahalliy davlat hokimiyati organlari bilan birgalikda yer osti suvlarining davlat monitoringini yuritish;\nyer osti suvlaridan oqilona foydalanilishi ustidan oʻz vakolatlari doirasida nazorat va hisobni amalga oshirish;\nyer osti suvlarining ifloslanishi manbalari monitoringini yuritish;",
+     "retrieval_score": 0.7339,
+     "rerank_score": 0.5,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-7655343#art-22#p8",
+     "doc_id": "lex:-7655343",
+     "doc_title": "Oʻzbekiston Respublikasining suv kodeksi",
+     "url": "https://lex.uz/docs/-7655343",
+     "article": "22-modda",
+     "part": "8–14-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-07-30",
+     "text": "22-modda. Oʻzbekiston Respublikasi Togʻ-kon sanoati va geologiya vazirligining suvga doir munosabatlarni tartibga solish sohasidagi vakolatlari\nmanfaatdor vazirliklar va idoralar bilan birgalikda yer osti suvlaridan kompleks foydalanish hamda ularni muhofaza qilish sxemalarini ishlab chiqish;\nyer osti suvlarini chiqarish uchun quduqlarni burgʻilash faoliyatiga va suvdan maxsus foydalanishga doir ruxsatnomalar berish;\nyer osti suvlarining holati toʻgʻrisida gidrogeologik xulosa berish;\nyer osti suvlaridan samarali foydalanish, ularning aniq hisobini yuritish va ularni muhofaza qilish uchun investitsiyalarni jalb qilish;\nyer osti suvlarining holatiga taʼsir koʻrsatadigan korxonalar, inshootlar va boshqa obyektlarning joylashtirilishi, loyihalashtirilishi, qurilishi, rekonstruksiya qilinishi, taʼmirlanishi hamda foydalanishga topshirilishida oʻz vakolatlari doirasida ishtirok etish va buni kelishish;\nRespublika suv kengashining faoliyatida ishtirok etish, yer osti suvlari, ulardan foydalanish holati, mavjud muammolar va ularni hal etish yoʻllari yuzasidan takliflar kiritish.\nOʻzbekiston Respublikasi Togʻ-kon sanoati va geologiya vazirligining vakolatlari jumlasiga qonunchilikka muvofiq boshqa masalalar ham kiritilishi mumkin.",
+     "retrieval_score": 0.7137,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2016,
+    "retrieval_ms": 1967,
+    "rerank_ms": 0,
+    "generation_ms": 4895,
+    "total_ms": 8880
+   },
+   "usage": {
+    "input_tokens": 15161,
+    "output_tokens": 1088,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar hududda yer osti chuchuk suvlari sathining muntazam pasayib borishi aniqlansa, quduq qazish va suvdan maxsus foydalanishga ruxsat berishda qanday choralar koʻriladi va bunday kuzatuvlar qaysi hujjatda qayd etiladi?",
+    "search_queries": [
+     "Agar hududda yer osti chuchuk suvlari sathi muntazam pasayib borayotgani aniqlansa, quduq qazish va suvdan maxsus foydalanishga ruxsat berishda qanday choralar koʻrilishi mumkin va bunday kuzatuvlar qanday hujjatda qayd etiladi?",
+     "Agar hududda yer osti chuchuk suvlari sathining muntazam pasayib borishi aniqlansa, quduq qazish va suvdan maxsus foydalanishga ruxsat berishda qanday choralar koʻriladi va bunday kuzatuvlar qaysi hujjatda qayd etiladi?",
+     "yer osti suvlari sathining pasayishi kuzatuv hujjati",
+     "suvdan maxsus foydalanishga ruxsat berish quduq qazish",
+     "yer osti chuchuk suvlari monitoringi davlat suv kadastri"
+    ],
+    "doc_hints": [
+     "Suv kodeksi",
+     "Yer osti boyliklari toʻgʻrisidagi qonun",
+     "Suvdan maxsus foydalanish toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 615,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q028",
+   "status": "ok",
+   "answer": "Согласно статье 193 Хозяйственного процессуального кодекса, протест в порядке надзора на вступившие в законную силу решения и постановления любого экономического суда Узбекистана вправе приносить Председатель Верховного суда и Генеральный прокурор, а также их заместители (за исключением постановлений Президиума Верховного суда) [1]. В соответствии со статьёй 192 пересмотр в порядке надзора возможен по протестам именно этих должностных лиц [2].",
+   "answer_language": "ru",
+   "question_language": "ru",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:185986",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING XOʻJALIK PROTSESSUAL KODEKSI Oʻzbekiston Respublikasining 1997-yil 30-avgustdagi 478-I-sonli “Oʻzbekiston Respublikasining Xoʻjalik protsessual kodeksini tasdiqlash toʻgʻrisida”gi Qonuni Oʻzbekiston Respublikasining 2018-yil 29-yanvardagi OʻRQ-463-sonli “Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrim qonun h",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/185986",
+     "article": "193-modda",
+     "part": "1–3-qism",
+     "edition_date": "2017-04-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:185986#art-193#p1",
+     "quote": "Oʻzbekiston Respublikasi Oliy sudining Raisi va Oʻzbekiston Respublikasi Bosh prokurori — Oʻzbekiston Respublikasining har qanday iqtisodiy sudi qabul qilgan, qonuniy kuchga kirgan hal qiluv qarorlari va qarorlar ustidan;",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:185986",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING XOʻJALIK PROTSESSUAL KODEKSI Oʻzbekiston Respublikasining 1997-yil 30-avgustdagi 478-I-sonli “Oʻzbekiston Respublikasining Xoʻjalik protsessual kodeksini tasdiqlash toʻgʻrisida”gi Qonuni Oʻzbekiston Respublikasining 2018-yil 29-yanvardagi OʻRQ-463-sonli “Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrim qonun h",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/185986",
+     "article": "192-modda",
+     "part": "1-qism",
+     "edition_date": "2017-04-12",
+     "doc_status": "amalda",
+     "chunk_id": "lex:185986#art-192#p1",
+     "quote": "Oʻzbekiston Respublikasi xoʻjalik sudlarining qonuniy kuchga kirgan hal qiluv qarorlari va qarorlari ushbu Kodeksning 193-moddasida koʻrsatilgan mansabdor shaxslarning protestlari boʻyicha nazorat tartibida qayta koʻrilishi mumkin, Oʻzbekiston Respublikasi Oliy sudi Rayosatining qarorlari bundan mustasno",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:185986#art-193#p1",
+     "doc_id": "lex:185986",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING XOʻJALIK PROTSESSUAL KODEKSI Oʻzbekiston Respublikasining 1997-yil 30-avgustdagi 478-I-sonli “Oʻzbekiston Respublikasining Xoʻjalik protsessual kodeksini tasdiqlash toʻgʻrisida”gi Qonuni Oʻzbekiston Respublikasining 2018-yil 29-yanvardagi OʻRQ-463-sonli “Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrim qonun h",
+     "url": "https://lex.uz/docs/185986",
+     "article": "193-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-04-12",
+     "text": "193-modda. Protest keltirish huquqiga ega boʻlgan shaxslar\nProtest keltirishga quyidagilar haqli:\nOʻzbekiston Respublikasi Oliy sudining Raisi va Oʻzbekiston Respublikasi Bosh prokurori — Oʻzbekiston Respublikasining har qanday iqtisodiy sudi qabul qilgan, qonuniy kuchga kirgan hal qiluv qarorlari va qarorlar ustidan;\nOʻzbekiston Respublikasi Oliy sudi Raisining oʻrinbosarlari va Bosh prokurorining oʻrinbosarlari — Oʻzbekiston Respublikasining har qanday iqtisodiy sudi qabul qilgan, qonuniy kuchga kirgan hal qiluv qarorlari va qarorlar ustidan, bundan Oʻzbekiston Respublikasi Oliy sudi Rayosatining qarorlari mustasno.",
+     "retrieval_score": 0.959,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:185986#art-192#p1",
+     "doc_id": "lex:185986",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING XOʻJALIK PROTSESSUAL KODEKSI Oʻzbekiston Respublikasining 1997-yil 30-avgustdagi 478-I-sonli “Oʻzbekiston Respublikasining Xoʻjalik protsessual kodeksini tasdiqlash toʻgʻrisida”gi Qonuni Oʻzbekiston Respublikasining 2018-yil 29-yanvardagi OʻRQ-463-sonli “Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrim qonun h",
+     "url": "https://lex.uz/docs/185986",
+     "article": "192-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-04-12",
+     "text": "192-modda. Xoʻjalik sudlarining hal qiluv qarorlari va qarorlarini nazorat tartibida qayta koʻrish\nOʻzbekiston Respublikasi xoʻjalik sudlarining qonuniy kuchga kirgan hal qiluv qarorlari va qarorlari ushbu Kodeksning 193-moddasida koʻrsatilgan mansabdor shaxslarning protestlari boʻyicha nazorat tartibida qayta koʻrilishi mumkin, Oʻzbekiston Respublikasi Oliy sudi Rayosatining qarorlari bundan mustasno.",
+     "retrieval_score": 0.7863,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:185986#art-195#p1",
+     "doc_id": "lex:185986",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING XOʻJALIK PROTSESSUAL KODEKSI Oʻzbekiston Respublikasining 1997-yil 30-avgustdagi 478-I-sonli “Oʻzbekiston Respublikasining Xoʻjalik protsessual kodeksini tasdiqlash toʻgʻrisida”gi Qonuni Oʻzbekiston Respublikasining 2018-yil 29-yanvardagi OʻRQ-463-sonli “Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrim qonun h",
+     "url": "https://lex.uz/docs/185986",
+     "article": "195-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-04-12",
+     "text": "195-modda. Ishlarni protestlar boʻyicha nazorat tartibida koʻruvchi sud\nProtestlar boʻyicha ishlarni nazorat tartibida quyidagilar koʻradi:\nOʻzbekiston Respublikasi Oliy sudining sudlov hayʼati — barcha iqtisodiy sudlarning hal qiluv qarorlari va qarorlari ustidan keltirilgan protestlar boʻyicha;\nOʻzbekiston Respublikasi Oliy sudi Rayosati — barcha iqtisodiy sudlarning hal qiluv qarorlari va qarorlari hamda Oʻzbekiston Respublikasi Oliy sudi sudlov hayʼatining nazorat tartibida chiqargan qarorlari ustidan keltirilgan protestlar boʻyicha.",
+     "retrieval_score": 0.8658,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:185986#art-203#p1",
+     "doc_id": "lex:185986",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING XOʻJALIK PROTSESSUAL KODEKSI Oʻzbekiston Respublikasining 1997-yil 30-avgustdagi 478-I-sonli “Oʻzbekiston Respublikasining Xoʻjalik protsessual kodeksini tasdiqlash toʻgʻrisida”gi Qonuni Oʻzbekiston Respublikasining 2018-yil 29-yanvardagi OʻRQ-463-sonli “Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrim qonun h",
+     "url": "https://lex.uz/docs/185986",
+     "article": "203-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1997-08-30",
+     "text": "203-modda. Xoʻjalik sudlarining ajrimlari ustidan nazorat tartibida protest keltirish va ularni qayta koʻrish\nXoʻjalik sudlarining qonuniy kuchga kirgan ajrimlari ustidan nazorat tartibida protest keltirilishi va ushbu Kodeksda ular ustidan shikoyat qilish nazarda tutilgan, shuningdek ular ishning kelgusidagi harakatiga toʻsqinlik qilgan hollarda, hal qiluv qaroridan alohida qayta koʻrilishi mumkin.\nXoʻjalik sudining ajrimlari ustidan keltirilgan protestlar sudning hal qiluv qarorlari va qarorlari ustidan keltirilgan protestlarni koʻrish uchun nazarda tutilgan tartibda koʻriladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:185986#art-176#p1",
+     "doc_id": "lex:185986",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING XOʻJALIK PROTSESSUAL KODEKSI Oʻzbekiston Respublikasining 1997-yil 30-avgustdagi 478-I-sonli “Oʻzbekiston Respublikasining Xoʻjalik protsessual kodeksini tasdiqlash toʻgʻrisida”gi Qonuni Oʻzbekiston Respublikasining 2018-yil 29-yanvardagi OʻRQ-463-sonli “Oʻzbekiston Respublikasining ayrim qonun hujjatlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrim qonun h",
+     "url": "https://lex.uz/docs/185986",
+     "article": "176-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-04-12",
+     "text": "176-modda. Kassatsiya shikoyatini (protestini) berish muddati\nKassatsiya shikoyati (protesti) xoʻjalik sudining hal qiluv qarori qonuniy kuchga kirganidan keyin bir oy davomida berilishi mumkin.",
+     "retrieval_score": 0.9127,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1760,
+    "retrieval_ms": 1538,
+    "rerank_ms": 0,
+    "generation_ms": 2719,
+    "total_ms": 6019
+   },
+   "usage": {
+    "input_tokens": 11380,
+    "output_tokens": 562,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Kuchga kirgan xoʻjalik sudi hal qiluv qarori yoki qarorini nazorat tartibida qayta koʻrish uchun kimning protesti zarur?",
+    "search_queries": [
+     "Чей протест необходим для пересмотра в порядке надзора вступившего в законную силу решения или постановления хозяйственного суда?",
+     "Kuchga kirgan xoʻjalik sudi hal qiluv qarori yoki qarorini nazorat tartibida qayta koʻrish uchun kimning protesti zarur?",
+     "nazorat tartibida ish yuritish protest",
+     "kuchga kirgan sud hujjatini nazorat tartibida qayta koʻrish protest",
+     "xoʻjalik sudi qarori ustidan nazorat protesti"
+    ],
+    "doc_hints": [
+     "Xoʻjalik protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 731,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q029",
+   "status": "ok",
+   "answer": "Soliq kodeksining 432-moddasiga koʻra, qishloq xoʻjaligiga moʻljallanmagan yerlar uchun aylanmadan soliq toʻlovchilar yillik soliq summasining toʻrtdan bir qismi miqdorida, har chorak uchinchi oyining 20-sanasidan kechiktirmay toʻlaydi [1]. Aylanmadan soliq toʻlovchi boʻlmaganlar esa yillik summaning oʻn ikkidan bir qismini har oyning 10-sanasidan kechiktirmay (yanvar uchun 20-yanvardan kechiktirmay) toʻlaydi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "432-modda",
+     "part": "1–7-qism",
+     "edition_date": "2023-01-01",
+     "doc_status": "amalda",
+     "chunk_id": "lex:4674902#art-432#p1",
+     "quote": "aylanmadan soliq toʻlovchilar uchun − yillik soliq summasining toʻrtdan bir qismi miqdorida, har chorak uchinchi oyining 20-sanasidan kechiktirmay;",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:4674902#art-432#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "432-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-01-01",
+     "text": "432-modda. Soliqni toʻlash tartibi\nQishloq xoʻjaligi uchun moʻljallanmagan yerlar uchun soliqni toʻlash quyidagicha amalga oshiriladi:\naylanmadan soliq toʻlovchilar uchun − yillik soliq summasining toʻrtdan bir qismi miqdorida, har chorak uchinchi oyining 20-sanasidan kechiktirmay;\naylanmadan soliq toʻlovchi boʻlmagan soliq toʻlovchilar uchun — yillik soliq summasining oʻn ikkidan bir qismi miqdorida, har oyning 10-sanasidan kechiktirmay. Bunda yanvar oyi uchun 20-yanvardan kechiktirmay amalga oshiriladi.\nSoliq davri davomida soliq toʻlashning belgilangan muddatidan keyin majburiyatlar yuzaga kelganda, ushbu summani toʻlash majburiyatlar yuzaga kelgan sanadan eʼtiboran oʻttiz kundan kechiktirmay amalga oshiriladi.\nQishloq xoʻjaligiga moʻljallangan yerlar uchun soliqni toʻlash quyidagicha amalga oshiriladi:\nhisobot yilining 1-sentabriga qadar — yillik soliq summasining 30 foizi;\nhisobot yilining 1-dekabriga qadar — soliqning qolgan summasi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4674902#art-482#p12",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "482-modda",
+     "part": "12–17-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-04-03",
+     "text": "482-modda. Soliqlarni, soliqlar boʻyicha boʻnak toʻlovlarini toʻlash boʻyicha foizsiz toʻlashni kechiktirishning yoki boʻlib-boʻlib toʻlashni qoʻllashning va alohida sharoitlarda soliq majburiyatlarini bajarishning vaqtinchalik tartibi\n1) ijtimoiy soliq boʻyicha — olti oy davomida teng ulushlarda, ushbu Kodeks 407-moddasining beshinchi qismida va 408-moddasining beshinchi qismida belgilangan soliqni toʻlash muddatlaridan kechiktirmay;\n2) quyidagilar boʻyicha oʻn ikki oy davomida teng ulushlarda:\nyuridik shaxslarning mol-mulkiga solinadigan soliq boʻyicha — ushbu Kodeks 417-moddasining oltinchi qismida belgilangan soliq boʻyicha boʻnak toʻlovlarini toʻlash muddatidan kechiktirmay, yakka tartibdagi tadbirkorlar uchun esa har oyning oʻn beshinchi kunidan kechiktirmay;\nyuridik shaxslarning yer soligʻi boʻyicha — ushbu Kodeksning 432-moddasi birinchi qismida belgilangan soliqni toʻlash muddatidan kechiktirmay, yakka tartibdagi tadbirkorlar uchun esa — har oyning oʻn beshinchi sanasidan kechiktirmay;\nsuv resurslaridan foydalanganlik uchun soliq boʻyicha — ushbu Kodeks 448-moddasining uchinchi qismida belgilangan soliq boʻyicha boʻnak toʻlovlarini toʻlash muddatidan kechiktirmay;\naylanmadan olinadigan soliq boʻyicha — har oyning oʻn beshinchi kunidan kechiktirmay.",
+     "retrieval_score": 0.6516,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:4674902#art-448#p8",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "448-modda",
+     "part": "8–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-01-01",
+     "text": "448-modda. Soliq toʻlash tartibi\nSoliq davri uchun boʻnak toʻlovlar summasi soliq hisobotida koʻrsatilgan budjetga toʻlanishi lozim boʻlgan soliq summasiga nisbatan 10 foizdan ortiq miqdorga kamaytirilgan taqdirda, soliq organi boʻnak toʻlovlarni soliqning haqiqiy summasidan kelib chiqib, penya hisoblagan holda qaytadan hisob-kitob qiladi.\nQishloq xoʻjaligi korxonalari tomonidan soliq davri uchun soliqni toʻlash quyidagi tartibda amalga oshiriladi:\n1-oktabrga qadar — soliq organlari tomonidan aniqlangan yillik soliq summasining 70 foizi;\n15-dekabrga qadar — soliqning qolgan summasi.\nDehqon xoʻjaliklari, shuningdek qishloq xoʻjaligi yerlariga hamda tadbirkorlik faoliyati va (yoki) daromad olish uchun moʻljallangan, yashash uchun moʻljallanmagan koʻchmas mulk obyektlariga ega boʻlgan jismoniy shaxslar tomonidan soliqni toʻlash yilda bir marta, soliq davridan keyingi yilning 1-mayidan kechiktirmay amalga oshiriladi.",
+     "retrieval_score": 0.818,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:4674902#art-448#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "448-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-01-01",
+     "text": "448-modda. Soliq toʻlash tartibi\nSoliq davri mobaynida soliq toʻlovchilar soliq boʻyicha boʻnak toʻlovlarini toʻlaydi, bundan qishloq xoʻjaligi korxonalari, Oʻzbekiston Respublikasida faoliyatini doimiy muassasalar orqali amalga oshirayotgan Oʻzbekiston Respublikasining norezidentlari boʻlgan yuridik shaxslar, shuningdek dehqon xoʻjaliklari va qishloq xoʻjaligi yerlariga hamda tadbirkorlik faoliyati va (yoki) daromad olish uchun moʻljallangan, yashash uchun moʻljallanmagan koʻchmas mulk obyektlariga ega boʻlgan jismoniy shaxslar mustasno.\nBoʻnak toʻlovlar miqdorini hisoblab chiqarish uchun soliq toʻlovchilar joriy soliq davrining 20-yanvaridan kechiktirmay, yangi tashkil etilganlari esa davlat roʻyxatidan oʻtkazilgan kundan eʼtiboran oʻttiz kundan kechiktirmay, suvdan foydalanish yoki suvni isteʼmol qilish joyidagi soliq organlariga moʻljallanayotgan soliq bazasidan (foydalaniladigan suv hajmidan) va belgilangan soliq stavkalaridan kelib chiqqan holda hisoblangan joriy soliq davri uchun soliq summasi toʻgʻrisidagi maʼlumotnomani taqdim etadi. Soliq boʻyicha majburiyatlari soliq davri ichida yuzaga kelgan soliq toʻlovchilar soliq summasi toʻgʻrisidagi maʼlumotnomani soliq majburiyati yuzaga kelgan sanadan eʼtiboran oʻttiz kundan kechiktirmay taqdim etadi.\nUshbu moddaning ikkinchi qismiga muvofiq hisoblab chiqarilgan boʻnak toʻlovlar:",
+     "retrieval_score": 0.7826,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4674902#art-427#p1",
+     "doc_id": "lex:4674902",
+     "doc_title": "OʻZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI (yangi tahriri)",
+     "url": "https://lex.uz/docs/4674902",
+     "article": "427-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-03-17",
+     "text": "427-modda. Soliq bazasi\nQuyidagilar soliq bazasidir:\nqishloq xoʻjaligiga moʻljallanmagan yerlar boʻyicha — ushbu Kodeksning 428-moddasi ikkinchi qismiga muvofiq soliq solinmaydigan yer uchastkalari maydonlari chegirib tashlangan holda, qishloq xoʻjaligiga moʻljallanmagan yer uchastkasining umumiy maydoni;\nqishloq xoʻjaligiga moʻljallangan yerlar boʻyicha — ushbu Kodeksning 428-moddasi ikkinchi qismiga muvofiq soliq solinmaydigan yer uchastkalari chegirib tashlangan holda, yer uchastkalarining qonunchilikka muvofiq aniqlangan normativ qiymati;\ndavlat koʻchmas mulk obyektini boʻlib-boʻlib toʻlash sharti bilan sotib olgan xaridorga mazkur obyekt egallagan, qishloq xoʻjaligiga moʻljallanmagan yer uchun soliq, agar mazkur obyektga “tasarruf etish huquqisiz” belgisini qoʻygan holda davlat orderi berilgan boʻlsa, yer uchastkasining xaridor tomonidan mazkur obyekt boʻyicha sotib olish toʻlovlarining toʻlangan qismiga mutanosib ravishdagi ulushga (foizga) teng maydoni.\nBunda soliqlar davlat koʻchmas mulk obyekti boʻyicha sotib olish toʻlovlarini boʻlib-boʻlib toʻlash grafigiga amal qilgan holda undiriladi. Ushbu grafig Davlat aktivlarini boshqarish agentligi tomonidan Soliq qoʻmitasiga axborot tizimlari orqali taqdim etiladi.",
+     "retrieval_score": 0.7651,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1981,
+    "retrieval_ms": 1586,
+    "rerank_ms": 0,
+    "generation_ms": 2853,
+    "total_ms": 6421
+   },
+   "usage": {
+    "input_tokens": 12692,
+    "output_tokens": 493,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Qishloq xoʻjaligiga moʻljallanmagan yerlar uchun soliq ilgari yiliga bir marta toʻlangan; hozirgi tartibga koʻra aylanmadan soliq toʻlovchilar ushbu soliqni qanday miqdorda va qaysi muddatgacha toʻlashlari kerak?",
+    "search_queries": [
+     "Qishloq xoʻjaligiga moʻljallanmagan yerlar uchun soliqni yiliga bir marta toʻlash tartibi bor edi, hozir esa toʻlovlar qanday boʻlib qoldi — aylanmadan soliq toʻlaydiganlar qancha va qaysi muddatgacha toʻlashi kerak?",
+     "Qishloq xoʻjaligiga moʻljallanmagan yerlar uchun soliq ilgari yiliga bir marta toʻlangan; hozirgi tartibga koʻra aylanmadan soliq toʻlovchilar ushbu soliqni qanday miqdorda va qaysi muddatgacha toʻlashlari kerak?",
+     "qishloq xoʻjaligiga moʻljallanmagan yerlar uchun yer soligʻi toʻlash muddati",
+     "aylanmadan soliq toʻlovchilar yer soligʻi boʻyicha avans toʻlovlari",
+     "yer soligʻi stavkasi va toʻlash tartibi Soliq kodeksi"
+    ],
+    "doc_hints": [
+     "Soliq kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 657,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q030",
+   "status": "no_answer",
+   "answer": "Berilgan qonun hujjatlari uy sharoitida limon daraxtini parvarishlash boʻyicha aniq agrotexnik qoidalarni belgilamaydi — ularda faqat tegishli tavsiyalar va seminarlar tashkil etish vazifalari koʻrsatilgan, shuning uchun bu savolga javob berib boʻlmaydi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.8,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-7468960#band-8#p1",
+     "doc_id": "lex:-7468960",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori respublikada limonchilik sohasini qoʻllab-quvvatlash boʻyicha qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7468960",
+     "article": "8-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-04-09",
+     "text": "8. Oʻzbekiston Respublikasi Kambagʻallikni qisqartirish va bandlik vazirligi, Qishloq xoʻjaligi vazirligi, “Turonbank” ATB, Sitrus, subtropik va tropik oʻsimlik yetishtiruvchilar va eksport qiluvchilar uyushmasi, Qoraqalpogʻiston Respublikasi Vazirlar Kengashi va viloyatlar hokimliklari:\nlimon yetishtirish va eksportini rivojlantirish boʻyicha loyihalar sonini koʻpaytirish maqsadida hududlarda koʻrgazmali seminarlar oʻtkazsin;\nlimon yetishtiruvchilar hamda ularning ishchi-xodimlari, dehqon xoʻjaligi rahbarlari, shuningdek, tomorqa yer egalarining malakasini oshirishni tizimli tashkil etsin;\nAkademik Mahmud Mirzayev nomidagi Bogʻdorchilik, uzumchilik va vinochilik ilmiy-tadqiqot instituti, Oʻsimliklar genetik resurslari ilmiy-tadqiqot instituti va Toshkent davlat agrar universiteti olimlari hamda mutaxassislari tomonidan limon yetishtiruvchilarga shartnoma asosida limon koʻchatlarini ekish, parvarishlash, kasallik va zararkunandalardan himoya qilish, yetishtirilgan mahsulotlarni saqlash va qayta ishlash yuzasidan maslahat va tavsiyalar berish boʻyicha xizmatlar koʻrsatilishini tashkil etsin;\nbir oy muddatda hududlarning tuproq-iqlim sharoitidan kelib chiqqan holda limon koʻchatlarini ekish, parvarishlash va sifatli mahsulot yetishtirish boʻyicha tavsiyalar ishlab chiqilishini va joylarga yetkazilishini taʼminlasin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:4741430#band-9#p1",
+     "doc_id": "lex:4741430",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining qarori limonchilik tarmogʻini yanada rivojlantirishga doir qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/4741430",
+     "article": "9-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2020-02-20",
+     "text": "9. Oʻzbekiston Respublikasi Qishloq xoʻjaligi vazirligi hamda Akademik M. Mirzayev nomidagi bogʻdorchilik, uzumchilik va vinochilik ilmiy-tadqiqot institutiga:\nbir oy muddatda limonchilikni rivojlantirish boʻyicha ilgʻor xorijiy tajribani oʻrgangan holda resurs tejovchi texnologiyalarga asoslangan limonzorlarni barpo etish va parvarishlash, mahsulot yetishtirish, saqlash hamda qayta ishlash boʻyicha tavsiyalarni ishlab chiqish va joylarga yetkazish;\nikki oy muddatda limon ekish, parvarishlash, yetishtirish, hosilni yigʻishtirib olish, qayta ishlash, saqlash, saralash va eksport qilish masalalari boʻyicha fermer hamda dehqon xoʻjaliklari, tomorqa yer egalari va tadbirkorlik subyektlari uchun joylarda oʻquv-seminarlarini oʻtkazish;\nyetakchi xorijiy institutlar bilan limonchilikni rivojlantirish va ilgʻor innovatsion texnologiyalarni keng joriy qilish boʻyicha ilmiy-amaliy hamkorlikni yoʻlga qoʻyish, ilmiy xodimlar va mutaxassislarning malakasini oshirish hamda tajriba almashish ishlarini tashkil etish vazifalari yuklatilsin.",
+     "retrieval_score": 0.8232,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3130164#band-4#p1",
+     "doc_id": "lex:-3130164",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori dehqon xoʻjaliklari va aholining tomorqa yerlaridan samarali foydalanish, suvga chidamli, eksportbop daraxt plantatsiyalarini rivojlantirishga doir qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3130164",
+     "article": "4-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2019-06-28",
+     "text": "4. Quyidagilar agrofirmalar faoliyatining asosiy yoʻnalishlari etib belgilansin:\ndehqon xoʻjaliklari va xonadon egalarining buyurtmalariga muvofiq limon oʻstirish uchun issiqxonalar va parranda boqish uchun qafaslarni markazlashgan holda qurib berish va tayyor holda xonadon egalariga topshirish;\nparranda boqish istagini bildirgan har bir xonadon uchun yoshi 90 kunlikdan katta boʻlgan 100 bosh parrandalarni markazlashgan holda yetkazib berish;\nlimon, unabi va grek yongʻogʻi koʻchatlarini olib kelib ekib berish, agrotexnikasi va kasalliklarga qarshi kurashish boʻyicha amaliy yordamlar koʻrsatish hamda barcha zaruriy moddiy-texnika resurslari va yem mahsulotlarini yetkazib beruvchi savdo shoxobchalarini tashkil etish;\ndehqon xoʻjaliklari va aholi tomorqa yer uchastkalarida yetishtirilayotgan qishloq xoʻjaligi mahsulotlari, shu jumladan, limon, unabi, yongʻoq va parranda mahsulotlarini xarid qilish, tayyorlash, qayta ishlash, sotish va eksport qilish.",
+     "retrieval_score": 0.7987,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3130164#band-16#p99",
+     "doc_id": "lex:-3130164",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori dehqon xoʻjaliklari va aholining tomorqa yerlaridan samarali foydalanish, suvga chidamli, eksportbop daraxt plantatsiyalarini rivojlantirishga doir qoʻshimcha chora-tadbirlar toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3130164",
+     "article": "16-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2019-06-28",
+     "text": "III. Dehqon xoʻjaliklari va aholi xonadonlarida ilgʻor tajribalarni joriy etish\n3.1.\nXonadonlarda tashkil etilgan yengil konstruksiyali issiqxonalarda limon yetishtirishni yoʻlga qoʻyish boʻyicha Andijon viloyatida respublika koʻrgazmali amaliy seminarini tashkil etish.\nChora-tadbirlar dasturi\n2017-yil mart\nAndijon viloyati hokimligi,\nQishloq va suv xoʻjaligi vazirligi, Akademik M.Mirzayev nomidagi Bogʻdorchilik, uzumchilik va vinochilik ilmiy-tadqiqot instituti\n3.2.\nDehqon xoʻjaliklari va aholi xonadonlarida parrandalarni boqishda, issiqxonalarda limon yetishtirishda resurs tejamkor agrotexnik tadbirlarini amalga oshirish, kasallik va zararkunandalarga qarshi kurashishning ilmiy asoslangan zamonaviy usullarini qoʻllash va eksportbop mahsulot yetishtirish boʻyicha Qoraqalpogʻiston Respublikasi va barcha viloyatlarda koʻrgazmali seminarlar oʻtkazish.\nKompleks chora-tadbirlar dasturi\n2017-yil mart\nQishloq va suv xoʻjaligi vazirligi,\nMehnat vazirligi,\n“Parrandasanoat” uyushmasi, “Oʻzagrokimyohimoya” AJ, Qoraqalpogʻiston Respublikasi Vazirlar Kengashi, viloyatlar va tumanlar hokimliklari\n3.3.\nFermer va dehqon xoʻjaliklari hamda aholi xonadonlarida limon yetishtirishda ilgʻor tajribalar va zamonaviy texnologiyalarni joriy etish maqsadida soha mutaxassislari va olimlarini Turkiya davlatiga xizmat safariga yuborish.\nRoʻyxat asosida\n2017-yil mart-aprel",
+     "retrieval_score": 0.725,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:4600882#band-97s2#p1",
+     "doc_id": "lex:4600882",
+     "doc_title": "Oʻzbekiston Respublikasi ekologiya va atrof-muhitni muhofaza qilish davlat qoʻmitasining qarori qattiq maishiy chiqindi poligonlarini loyihalashtirish va ulardan foydalanish boʻyicha yoʻriqnomani tasdiqlash haqida",
+     "url": "https://lex.uz/docs/4600882",
+     "article": "97-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2019-11-20",
+     "text": "97. Rekultivatsiya qilishning biologik bosqichida tuproq eroziyasiyaga qarshi, landshaft-koʻkalamzorlashtirish ahamiyatiga ega oʻrmonzorlar (daraxtzorlar) barpo etilib, bu quyidagi tadbirlarni oʻz ichiga oladi:\ndastlabki yilda — koʻkalamzorlashtirish uchun yerni urugʻ ekishga tayyorlash, koʻp yillik oʻt urugʻlarini ekish (sepish), ekinzorlarni parvarishlash;\nkelgusi yilda — mahalliy iqlim sharoitidan kelib chiqqan holda, koʻp yillik daraxt va buta turlarini tanlash, daraxt va butalarni (urugʻ, nihol va koʻchatlarini) ekish, ekinzorlarni parvarishlash.",
+     "retrieval_score": 0.9558,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1203,
+    "retrieval_ms": 19,
+    "rerank_ms": 0,
+    "generation_ms": 1974,
+    "total_ms": 3197
+   },
+   "usage": {
+    "input_tokens": 11752,
+    "output_tokens": 245,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Uy sharoitida limon daraxtini qanday parvarishlash kerak?",
+    "search_queries": [
+     "Uy sharoitida limon daraxtini qanday parvarishlash kerak?"
+    ],
+    "doc_hints": [],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 150,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}

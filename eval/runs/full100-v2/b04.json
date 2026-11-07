@@ -1,0 +1,1533 @@
+{
+ "run_id": "full100-v2",
+ "batch_id": "full100-v2-b04",
+ "batch_index": 4,
+ "total_batches": 10,
+ "status": "completed",
+ "system": {
+  "pipeline_version": "1.0.0",
+  "prompt_version": "p6",
+  "llm_provider": "deepseek",
+  "llm_model": "deepseek-flash",
+  "rewrite_model": "deepseek-flash",
+  "embedding_model": null,
+  "retriever": "bm25-fts5 multi-query + title/article hints + authority prior",
+  "reranker": "deepseek-flash (llm-joint rerank)",
+  "index_version": "lex-idx-2026-11-06",
+  "lex_snapshot_date": "2026-11-03",
+  "index_docs": 36951,
+  "index_chunks": 1125645,
+  "chunking": "structure-aware: N-modda / N-band, parts packed to <=1400 chars"
+ },
+ "timing": {
+  "received_at": "2026-11-06T18:45:44+05:00",
+  "completed_at": "2026-11-06T18:45:55+05:00",
+  "total_ms": 11553
+ },
+ "summary": {
+  "total": 10,
+  "ok": 9,
+  "no_answer": 1,
+  "error": 0,
+  "timeout": 0
+ },
+ "results": [
+  {
+   "id": "q031",
+   "status": "ok",
+   "answer": "Yoʻq, bunday holatda yordam koʻrsatish shart emas. Havo kodeksining 72-moddasiga koʻra, komandir xavf ostida qolgan odamlar haqida xabar berishi shart, ammo yordamni faqat \"mazkur kema parvozi, yoʻlovchilari va ekipaj hayoti uchun xatar tugʻilmasa\" koʻrsatishi shart [1]. Parvozlar xavfsizligi inspeksiyasining 52-bandi ham yordamni oʻz kemasi, yoʻlovchilari va ekipajiga zarar yetkazmaydigan darajada koʻrsatishni talab qiladi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "72-modda",
+     "part": "1-qism",
+     "edition_date": "1993-05-07",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-55594#art-72#p1",
+     "quote": "Xavf ostida qolgan odamlar haqida har qanday maʼlumot olgan havo kemasining komandiri bu haqda havo transporti qatnovini taʼminlovchi organga yoxud boshqa vakolatli organga xabar bermogʻi va agar mazkur kema parvozi, yoʻlovchilari va ekipaj hayoti uchun xatar tugʻilmasa, ularga zarur yordam koʻrsatmogʻi shart",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:1261834",
+     "doc_title": "Oʻzbekiston Respublikasi parvozlar xavfsizligini nazorat qilish davlat inspeksiyasi boshligʻining buyrugʻi Oʻzbekiston Respublikasi samoviy hududida fuqaro va eksperimental aviatsiyasining parvoz qilish aviatsiya qoidalarini (oʻzr aq-91) tasdiqlash toʻgʻrisida",
+     "doc_type": "buyruq",
+     "url": "https://lex.uz/docs/1261834",
+     "article": "52-band (2-boʻlim)",
+     "part": null,
+     "edition_date": "2018-01-17",
+     "doc_status": "amalda",
+     "chunk_id": "lex:1261834#band-52s2#p1",
+     "quote": "Boshqa havo kemasi yoki dengiz kemasidan falokat signali olgan, yoki halokatga uchrayotgan yoxud uchragan havo kemasini, yoxud xavf ostida qolgan odamlarni uchratgan havo kemasi komandiri oʻziga ishonib topshirilgan havo kemasi, yoʻlovchilari va ekipajiga zarar yetkazmaydigan darajada ularga yordam koʻrsatishi, kartada falokat joyini belgilashi va havo transporti qatnovini boshqarish organiga falokat toʻgʻrisida xabar bermogʻi shart",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-55594#art-72#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "72-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1993-05-07",
+     "text": "72-modda. Xavf ostida qolgan odamlarga yordam berish\nXavf ostida qolgan odamlar haqida har qanday maʼlumot olgan havo kemasining komandiri bu haqda havo transporti qatnovini taʼminlovchi organga yoxud boshqa vakolatli organga xabar bermogʻi va agar mazkur kema parvozi, yoʻlovchilari va ekipaj hayoti uchun xatar tugʻilmasa, ularga zarur yordam koʻrsatmogʻi shart.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:1261834#band-52s2#p1",
+     "doc_id": "lex:1261834",
+     "doc_title": "Oʻzbekiston Respublikasi parvozlar xavfsizligini nazorat qilish davlat inspeksiyasi boshligʻining buyrugʻi Oʻzbekiston Respublikasi samoviy hududida fuqaro va eksperimental aviatsiyasining parvoz qilish aviatsiya qoidalarini (oʻzr aq-91) tasdiqlash toʻgʻrisida",
+     "url": "https://lex.uz/docs/1261834",
+     "article": "52-band (2-boʻlim)",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-01-17",
+     "text": "52. Boshqa havo kemasi yoki dengiz kemasidan falokat signali olgan, yoki halokatga uchrayotgan yoxud uchragan havo kemasini, yoxud xavf ostida qolgan odamlarni uchratgan havo kemasi komandiri oʻziga ishonib topshirilgan havo kemasi, yoʻlovchilari va ekipajiga zarar yetkazmaydigan darajada ularga yordam koʻrsatishi, kartada falokat joyini belgilashi va havo transporti qatnovini boshqarish organiga falokat toʻgʻrisida xabar bermogʻi shart.",
+     "retrieval_score": 0.8529,
+     "rerank_score": 0.9,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-55594#art-73#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "73-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2008-07-08",
+     "text": "73-modda. Havo transporti qatnovini taʼminlovchi organning halokat roʻy bergandagi vazifalari\nHavo transporti qatnovini taʼminlovchi organ halokatga uchrayotgan yoki uchragan havo kemasi toʻgʻrisida, shuningdek havo kemasi komandiridan xavf ostida qolgan odamlar haqida har qanday boshqa maʼlumot olganida Oʻzbekiston Respublikasi Samoviy hududida aviatsiya parvozining asosiy qoidalarida belgilangan tartibda zarur yordam koʻrsatish uchun barcha choralarni koʻrishi shart.",
+     "retrieval_score": 0.9138,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-55594#art-71#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "71-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2008-07-08",
+     "text": "71-modda. Havo kemasi halokatga uchraganda kema ekipajining vazifalari\nHavo kemasi yoki uning ichidagi odamlar uchun bevosita xatar tugʻilsa yoxud kema bilan radioaloqa uzilib, uning qayerdaligi nomaʼlum boʻlsa, bunday havo kemasi halokatga uchrayotgan hisoblanadi.\nUchish, qoʻnish yoki qulash natijasida jiddiy zarar koʻrgan yoxud butunlay vayron boʻlgan, shuningdek aerodromdan tashqariga majburan qoʻngan havo kemasi halokatga uchragan hisoblanadi.\nHalokatga uchrayotgan havo kemasining ekipaji Oʻzbekiston Respublikasi Samoviy hududida aviatsiya parvozining asosiy qoidalarida belgilangan tartibda falokat signalini berishi, havo transporti qatnovini taʼminlovchi organga halokat xususiyati haqida maʼlumot berishi va kema ichidagi odamlarning hayotini, sogʻligʻi va mol-mulkni, shuningdek havo kemasining oʻzini saqlab qolish uchun barcha zarur chora-tadbirlarni koʻrishi shart.\nHalokatga uchragan havo kemasining ekipaji oʻz vakolatini tegishli organlarga topshirgunga qadar, havo kemasi ichidagi odamlarni, mol-mulkni hamda havo kemasini qutqarish va xavfsizligini taʼminlash uchun barcha zarur chora-tadbirlarni koʻrishi shart. Ushbu havo kemasi ekipajining barcha aʼzolari va imkon qadar, yoʻlovchilari odamlarni, mol-mulkni hamda havo kemasini qutqarishda ishtirok etishlari shart.",
+     "retrieval_score": 0.9071,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-55594#art-79#p1",
+     "doc_id": "lex:-55594",
+     "doc_title": "Oʻzbekiston Respublikasining havo kodeksi",
+     "url": "https://lex.uz/docs/-55594",
+     "article": "79-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-12-30",
+     "text": "79-modda. Halokatga uchrayotgan yoki uchragan havo kemalari yoʻlovchilari va ekipajini qutqarish\nHalokatga uchrayotgan yoki uchragan havo kemasini qidiruv va qutqaruv ishlari Oʻzbekiston Respublikasi Vazirlar Mahkamasi tasdiqlagan tegishli ishlarni bajarish qoidalariga muvofiq zudlik bilan amalga oshirilishi lozim. Bu qoidalarda:\na) barcha davlatlar havo kemalarini qidiruv va qutqaruv ishlari, qidiruv-qutqaruv kuchlari va vositalarini joylashtirish, ularga yuqoridagi ishlarni bajarishda tekin taʼminot va xizmat koʻrsatilishi;\nb) havo kemasini, uning yoʻlovchilarini va ekipajini halokat joyidan evakuatsiya qilish, halokatga uchragan havo kemasi ekspluatantining kuchi va vositalari bilan yoxud ekspluatant hisobidan oʻzga kuch va vositalar bilan amalga oshirilishi;\nv) mahalliy ijro etuvchi hokimiyat organlari, korxonalar, muassasalar va tashkilotlar havo kemasini qidiruv va qutqaruv ishlarini amalga oshirishda barcha zarur yordamni koʻrsatishga va qidiruv-qutqaruv organlari yetib kelguniga qadar odamlarni qutqarish, ularga tibbiy va boshqa yordam koʻrsatish uchun, shuningdek havo kemasini va uning ichidagi hujjatlar, asbob-uskunalar va mol-mulklarni saqlash uchun choralar koʻrishlari shartligi nazarda tutilishi lozim.",
+     "retrieval_score": 0.8663,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1715,
+    "retrieval_ms": 2084,
+    "rerank_ms": 0,
+    "generation_ms": 1520,
+    "total_ms": 5320
+   },
+   "usage": {
+    "input_tokens": 13274,
+    "output_tokens": 779,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Agar havo kemasi komandiri halokat xavfi ostida qolgan odamlar toʻgʻrisida xabar olsa, lekin yordam koʻrsatish natijasida oʻz kemasi, yoʻlovchilari va ekipaji uchun xavf tugʻilsa, u yordam koʻrsatishga majburmi?",
+    "search_queries": [
+     "Agar havo kemasi komandiri halokat xavfi ostida qolgan odamlar haqida xabar topsa, lekin yordam berish oqibatida oʻz kemasi, yoʻlovchilari va ekipaji uchun xavf tugʻilsa, u yordam koʻrsatishi shartmi?",
+     "Agar havo kemasi komandiri halokat xavfi ostida qolgan odamlar toʻgʻrisida xabar olsa, lekin yordam koʻrsatish natijasida oʻz kemasi, yoʻlovchilari va ekipaji uchun xavf tugʻilsa, u yordam koʻrsatishga majburmi?",
+     "havo kemasi komandirining halokat xavfi ostida qolgan odamlarga yordam koʻrsatish majburiyati",
+     "havo kemasi komandiri yordam koʻrsatishdan ozod qilinadigan holatlar oʻz kemasi uchun xavf",
+     "halokat xavfi ostidagi odamlarga yordam koʻrsatish majburiyati havo transporti"
+    ],
+    "doc_hints": [
+     "Havo kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 489,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q032",
+   "status": "ok",
+   "answer": "Hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisidagi qonunning 27-moddasiga koʻra, foydalanish huquqi quyidagi hollarda bekor qilinadi: foydalanish zarurati qolmaganda yoki undan voz kechilganda; foydalanishning belgilangan muddati oʻtganda; hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisidagi qonun hujjatlari buzilganda; hayvonot dunyosi obyektlarini muhofaza qilish maqsadida ularni foydalanishdan ajratib olish zarurati tugʻilganda; foydalanish huquqi berilgan yuridik shaxs tugatilganda [1]. Qonun hujjatlarida bekor qilishning boshqa asoslari ham nazarda tutilishi mumkin [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-31719",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-31719",
+     "article": "27-modda",
+     "part": "1–8-qism",
+     "edition_date": "1997-12-26",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-31719#art-27#p1",
+     "quote": "Hayvonot dunyosidan foydalanish huquqi quyidagi hollarda bekor qilinadi: foydalanish zarurati qolmaganda yoki undan voz kechilganda; foydalanishning belgilangan muddati oʻtganda; hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisidagi qonun hujjatlari buzilganda; hayvonot dunyosi obyektlarini muhofaza qilish maqsadida ularni foydalanishdan ajratib olish zarurati tugʻilganda; foydalanish huquqi berilgan yuridik shaxs tugatilganda",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-31719#art-27#p1",
+     "doc_id": "lex:-31719",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-31719",
+     "article": "27-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "1997-12-26",
+     "text": "27-modda. Hayvonot dunyosidan foydalanish huquqini bekor qilish\nHayvonot dunyosidan foydalanish huquqi quyidagi hollarda bekor qilinadi:\nfoydalanish zarurati qolmaganda yoki undan voz kechilganda;\nfoydalanishning belgilangan muddati oʻtganda;\nhayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisidagi qonun hujjatlari buzilganda;\nhayvonot dunyosi obyektlarini muhofaza qilish maqsadida ularni foydalanishdan ajratib olish zarurati tugʻilganda;\nfoydalanish huquqi berilgan yuridik shaxs tugatilganda.\nQonun hujjatlarida hayvonot dunyosidan foydalanish huquqini bekor qilish uchun boshqa asoslar ham nazarda tutilishi mumkin.\nHayvonot dunyosidan foydalanish huquqi ruxsatnomalarni qonun hujjatlarida belgilangan tartibda bekor qilish yoʻli bilan tugatiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3029502#art-48#p12",
+     "doc_id": "lex:3029502",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/3029502",
+     "article": "48-modda",
+     "part": "12–15-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "48-modda. Hayvonot dunyosi obyektlaridan maxsus foydalanish huquqini toʻxtatib turish, tugatish va bekor qilish\nHayvonot dunyosi obyektlaridan maxsus foydalanish huquqi quyidagilar asosida bekor qilinishi mumkin:\nhayvonot dunyosi obyektlaridan foydalanuvchining ruxsat etish xususiyatiga ega hujjatni bekor qilish toʻgʻrisidagi arizasiga koʻra;\nruxsat etish xususiyatiga ega hujjat qalbaki hujjatlardan foydalangan holda olinganligi fakti aniqlanganda.\nHayvonot dunyosi obyektlaridan maxsus foydalanish huquqi qonunchilikda belgilangan tartibda toʻxtatib turiladi, tugatiladi yoki bekor qilinadi.",
+     "retrieval_score": 0.8763,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3029502#art-48#p1",
+     "doc_id": "lex:3029502",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/3029502",
+     "article": "48-modda",
+     "part": "1–11-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "48-modda. Hayvonot dunyosi obyektlaridan maxsus foydalanish huquqini toʻxtatib turish, tugatish va bekor qilish\nHayvonot dunyosi muhofaza qilinishini taʼminlash uchun hayvonot dunyosi obyektlaridan maxsus foydalanish huquqi toʻxtatib turilishi, tugatilishi yoki bekor qilinishi mumkin.\nHayvonot dunyosi obyektlaridan maxsus foydalanish huquqi quyidagi hollarda toʻxtatib turilishi mumkin:\nruxsat berishga doir talablar va shartlar buzilganligi aniqlanganda;\nmaxsus vakolatli davlat organining aniqlangan qoidabuzarliklarni bartaraf etish toʻgʻrisidagi qarori hayvonot dunyosi obyektlaridan foydalanuvchilar tomonidan bajarilmaganda.\nHayvonot dunyosi obyektlaridan maxsus foydalanish huquqi quyidagi hollarda tugatiladi:\nfoydalanish zarurati qolmaganda yoki undan voz kechilganda;\nfoydalanishning belgilangan muddati oʻtganda;\nhayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisidagi qonunchilik buzilganda;\nhayvonot dunyosi obyektlarini muhofaza qilish maqsadida ularni foydalanishdan ajratib olish zarurati tugʻilganda;\nfoydalanish huquqi berilgan jismoniy shaxs vafot etganda yoki uning faoliyati tugatilganda yoxud yuridik shaxs tugatilganda.\nQonunchilikda hayvonot dunyosi obyektlaridan maxsus foydalanish huquqini toʻxtatib turish yoki tugatish uchun boshqa hollar ham nazarda tutilishi mumkin.",
+     "retrieval_score": 0.8884,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3029502#art-2#p1",
+     "doc_id": "lex:3029502",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/3029502",
+     "article": "2-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-04-19",
+     "text": "2-modda. Oʻzbekiston Respublikasi Vazirlar Mahkamasi:\nhukumat qarorlarini ushbu Qonunga muvofiqlashtirsin;\ndavlat boshqaruvi organlari ushbu Qonunga zid boʻlgan oʻz normativ-huquqiy hujjatlarini qayta koʻrib chiqishlari va bekor qilishlarini taʼminlasin.",
+     "retrieval_score": 0.8161,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:51075#band-2#p1",
+     "doc_id": "lex:51075",
+     "doc_title": "Oʻzbekiston Respublikasi Oliy majlisining qarori “hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida”gi Oʻzbekiston Respublikasi qonunini amalga kiritish haqida",
+     "url": "https://lex.uz/docs/51075",
+     "article": "2-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "1997-12-26",
+     "text": "2. Oʻzbekiston Respublikasi Vazirlar Mahkamasi hukumat qarorlarini “Hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida”gi Qonunga muvofiqlashtirsin, vazirliklar va idoralarning mazkur Qonunga zid boʻlgan normativ hujjatlarini qayta koʻrib chiqishlari va bekor qilishlarini taʼminlasin.",
+     "retrieval_score": 0.8086,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1771,
+    "retrieval_ms": 1837,
+    "rerank_ms": 0,
+    "generation_ms": 496,
+    "total_ms": 4105
+   },
+   "usage": {
+    "input_tokens": 10159,
+    "output_tokens": 707,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "«Hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida»gi qonunga koʻra, hayvonlardan foydalanish huquqi qanday hollarda bekor qilinadi?",
+    "search_queries": [
+     "«Qonuni hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida»ga koʻra, hayvonlardan foydalanish huquqi qanday hollarda bekor qilinadi?",
+     "«Hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisida»gi qonunga koʻra, hayvonlardan foydalanish huquqi qanday hollarda bekor qilinadi?",
+     "hayvonlardan foydalanish huquqini bekor qilish asoslari",
+     "hayvonot dunyosidan foydalanish huquqi tugatilishi",
+     "hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisidagi qonun foydalanish huquqi"
+    ],
+    "doc_hints": [
+     "Hayvonot dunyosini muhofaza qilish va undan foydalanish toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 279,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q033",
+   "status": "ok",
+   "answer": "Elektron tijorat toʻgʻrisidagi qonunning 2-moddasiga koʻra, agar Oʻzbekiston Respublikasining xalqaro shartnomasida elektron tijorat toʻgʻrisidagi qonunchilikda nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnoma qoidalari qoʻllaniladi [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-6213382",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni elektron tijorat toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-6213382",
+     "article": "2-modda",
+     "part": "1–3-qism",
+     "edition_date": "2026-07-25",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-6213382#art-2#p1",
+     "quote": "Agar Oʻzbekiston Respublikasining xalqaro shartnomasida Oʻzbekiston Respublikasining elektron tijorat toʻgʻrisidagi qonunchiligida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnoma qoidalari qoʻllaniladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-6213382#art-2#p1",
+     "doc_id": "lex:-6213382",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni elektron tijorat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6213382",
+     "article": "2-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-07-25",
+     "text": "2-modda. Elektron tijorat toʻgʻrisidagi qonunchilik\nElektron tijorat toʻgʻrisidagi qonunchilik ushbu Qonun va boshqa qonunchilik hujjatlaridan iboratdir.\nOʻzbekiston Respublikasining Konstitutsiyaviy Qonuni bilan maxsus huquqiy rejim oʻrnatilgan hududda elektron tijoratga oid munosabatlar ushbu Qonunda belgilanganidan boshqacha qoidalar bilan tartibga solinadi.\nAgar Oʻzbekiston Respublikasining xalqaro shartnomasida Oʻzbekiston Respublikasining elektron tijorat toʻgʻrisidagi qonunchiligida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnoma qoidalari qoʻllaniladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:2650293#art-2#p1-2",
+     "doc_id": "lex:2650293",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni “elektron tijorat toʻgʻrisida”gi Oʻzbekiston Respublikasi qonuniga oʻzgartish va qoʻshimchalar kiritish haqida",
+     "url": "https://lex.uz/docs/2650293",
+     "article": "2-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "2-modda. Elektron tijorat toʻgʻrisidagi qonunchilik\nElektron tijorat toʻgʻrisidagi qonunchilik ushbu Qonun va boshqa qonunchilik hujjatlaridan iboratdir.\nAgar Oʻzbekiston Respublikasining xalqaro shartnomasida Oʻzbekiston Respublikasining elektron tijorat toʻgʻrisidagi qonunchiligida nazarda tutilganidan boshqacha qoidalar belgilangan boʻlsa, xalqaro shartnoma qoidalari qoʻllaniladi.",
+     "retrieval_score": 0.8752,
+     "rerank_score": 0.9,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-6213382#art-18#p1",
+     "doc_id": "lex:-6213382",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni elektron tijorat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6213382",
+     "article": "18-modda",
+     "part": "1–7-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-09-29",
+     "text": "18-modda. Elektron tijoratni amalga oshirish jarayonlari\nAgar qonunchilikda boshqacha qoida nazarda tutilmagan boʻlsa, elektron tijorat ishtirokchilari oʻzaro kelishuvga koʻra quyidagilarni belgilashga haqli:\nidentifikatsiya qilish, elektron hujjat va xabar almashish tartibini;\nshartnoma tuzishga doir harakatlarni amalga oshirish tartibini;\nofertani joylashtirish, yuborish va qabul qilish tartibini;\nakseptni yuborish va akseptni chaqirib olish tartibini;\naxborotning ishonchliligini tekshirish tartibini;\ntaraflarning axborot tizimlari dasturiy taʼminotidan foydalanish tartibini.",
+     "retrieval_score": 0.8713,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-6213382#art-25#p9",
+     "doc_id": "lex:-6213382",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni elektron tijorat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6213382",
+     "article": "25-modda",
+     "part": "9–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-09-29",
+     "text": "25-modda. Elektron tijoratda tovarlarni yetkazib berish\nAgar shartnomada boshqacha qoida nazarda tutilmagan boʻlsa, sotuvchi xaridorga tovarni yetkazib berishi va bir vaqtning oʻzida qonunchilikda nazarda tutilgan tegishli hujjatlarni (texnik pasportni, sifat sertifikatini, qoʻllashga doir yoʻriqnomani) taqdim etishi shart.\nAgar qonunchilikda yoki shartnomada boshqacha qoida nazarda tutilmagan boʻlsa, tovar xaridorga yoki shartnoma tuzilganligi yoxud tovarni yetkazib berish rasmiylashtirilganligi toʻgʻrisida guvohlik beradigan kvitansiyani yoki boshqa hujjatni taqdim etgan har qanday shaxsga topshirilgan paytdan eʼtiboran chakana oldi-sotdi shartnomasi sotuvchi tomonidan bajarilgan deb hisoblanadi.",
+     "retrieval_score": 0.8197,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-6213382#art-27#p1",
+     "doc_id": "lex:-6213382",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni elektron tijorat toʻgʻrisida",
+     "url": "https://lex.uz/docs/-6213382",
+     "article": "27-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2022-09-29",
+     "text": "27-modda. Elektron tijoratda toʻlangan mablagʻlarni xaridorga qaytarishning oʻziga xos xususiyatlari\nAgar shartnoma taraflarining kelishuvida boshqacha qoida nazarda tutilmagan boʻlsa, xaridor tomonidan toʻlangan pul summasini unga qaytarish tovar uchun haq toʻlash qanday shaklda amalga oshirilgan boʻlsa, xuddi shunday shaklda amalga oshiriladi.\nShartnomaga muvofiq xaridor tomonidan toʻlangan pul summasini qaytarish bilan bogʻliq xarajatlar sotuvchining zimmasiga yuklatiladi.\nAgar shartnoma bekor qilinganidan keyin xaridor toʻlagan pul summasi shartnomada belgilangan muddat ichida sotuvchi tomonidan xaridorga qaytarilmasa, sotuvchi xaridorga shartnomada belgilangan muddatlardan ortiq har bir kechiktirilgan kun uchun qaytarilishi lozim boʻlgan pul summasining bir foizi miqdorida neustoyka (penya) toʻlaydi. Bunda neustoykaning (penyaning) miqdori qaytarilishi lozim boʻlgan pul summasidan oshib ketishi mumkin emas. Neustoyka (penya) toʻlanganligi sotuvchini shartnoma bekor qilinishi munosabati bilan yuzaga keladigan majburiyatlardan ozod etmaydi.\n2026-yil 12-dekabrdan kuchga kiradigan oʻzgarishlarga qarang\n2026-yil 12-dekabrdan kuchga kiradigan oʻzgarishlarga qarang",
+     "retrieval_score": 0.7217,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1526,
+    "retrieval_ms": 941,
+    "rerank_ms": 0,
+    "generation_ms": 1768,
+    "total_ms": 4236
+   },
+   "usage": {
+    "input_tokens": 10390,
+    "output_tokens": 492,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "«Elektron tijorat toʻgʻrisida»gi qonunga koʻra, Oʻzbekistonning xalqaro shartnomasida elektron tijorat boʻyicha milliy qonunchilikdagidan boshqacha qoidalar belgilangan boʻlsa, qaysi qoidalar qoʻllaniladi?",
+    "search_queries": [
+     "«Qonuni elektron tijorat toʻgʻrisida»ga koʻra, Oʻzbekistonning xalqaro shartnomasida elektron tijorat boʻyicha milliy qonunchilikdagidan boshqacha qoidalar belgilangan boʻlsa, qaysi qoidalar qoʻllaniladi?",
+     "«Elektron tijorat toʻgʻrisida»gi qonunga koʻra, Oʻzbekistonning xalqaro shartnomasida elektron tijorat boʻyicha milliy qonunchilikdagidan boshqacha qoidalar belgilangan boʻlsa, qaysi qoidalar qoʻllaniladi?",
+     "xalqaro shartnoma elektron tijorat boshqacha qoidalar qoʻllaniladi",
+     "elektron tijorat toʻgʻrisidagi qonun xalqaro shartnomalar ustunligi",
+     "xalqaro shartnomada belgilangan qoidalar milliy qonunchilikka nisbatan qoʻllanilishi"
+    ],
+    "doc_hints": [
+     "Elektron tijorat toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 578,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q034",
+   "status": "ok",
+   "answer": "Oʻzbekiston Respublikasining «Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida»gi qonunning 5-moddasiga koʻra, vakil oʻz vazifalarini bajarayotgan davrda siyosiy partiyaga aʼzoligini toʻxtatib turishi yoki tugatishi shart [1]. Shuningdek, u ilmiy, pedagogik va ijodiy faoliyatdan tashqari haq toʻlanadigan boshqa turdagi faoliyat bilan shugʻullanishi mumkin emas [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "5-modda",
+     "part": "1-qism",
+     "edition_date": "2017-08-29",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3321352#art-5#p1",
+     "quote": "Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil oʻzining siyosiy partiyaga aʼzoligini oʻz vazifalarini bajarayotgan davrda toʻxtatib turishi yoki tugatishi shart. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil ilmiy, pedagogik va ijodiy faoliyatdan tashqari haq toʻlanadigan boshqa turdagi faoliyat bilan shugʻullanishi mumkin emas",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3321352#art-5#p1",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "5-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2017-08-29",
+     "text": "5-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil lavozimiga mos kelmaydigan faoliyat\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakil oʻzining siyosiy partiyaga aʼzoligini oʻz vazifalarini bajarayotgan davrda toʻxtatib turishi yoki tugatishi shart. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil ilmiy, pedagogik va ijodiy faoliyatdan tashqari haq toʻlanadigan boshqa turdagi faoliyat bilan shugʻullanishi mumkin emas.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3321352#art-7#p9",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "7-modda",
+     "part": "9–10-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-01-21",
+     "text": "7-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil faoliyatining asosiy vazifalari va yoʻnalishlari\ndavlat organlari va tashkilotlar tomonidan oʻz vakolatlari doirasidagi sohalar boʻyicha belgilangan tartibda taqdim etilgan tadbirkorlik subyektlari faoliyatining qonunchilik talablariga muvofiqligi roʻyxati asosida shakllantiriladigan majburiy talablarning elektron reyestrini yuritish;\ntadbirkorlik subyektlarining huquqiy kafolatlarini mustahkamlashga, ularni rivojlantirishni ragʻbatlantirishga qaratilgan qonunchilikni takomillashtirish yuzasidan takliflar tayyorlash.",
+     "retrieval_score": 0.8539,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3321352#art-7#p1",
+     "doc_id": "lex:-3321352",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida",
+     "url": "https://lex.uz/docs/-3321352",
+     "article": "7-modda",
+     "part": "1–8-qism",
+     "doc_status": "amalda",
+     "edition_date": "2023-01-21",
+     "text": "7-modda. Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil faoliyatining asosiy vazifalari va yoʻnalishlari\nTadbirkorlarning huquqlarini himoya qilish boʻyicha vakil faoliyatining asosiy vazifalari va yoʻnalishlari quyidagilardan iborat:\ntadbirkorlik faoliyatini rivojlantirish, tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish sohasida davlat siyosatini shakllantirish hamda amalga oshirishda ishtirok etish;\ndavlat organlari tomonidan tadbirkorlik subyektlarining huquqlari hamda qonuniy manfaatlariga rioya etilishi yuzasidan nazoratni amalga oshirish;\ntadbirkorlik subyektlarining faoliyatini tekshirish amalga oshirilayotganda ularni huquqiy jihatdan qoʻllab-quvvatlash;\ntadbirkorlik subyektlari faoliyatining tekshiruvlarini muvofiqlashtirishni hamda nazorat qiluvchi organlar tomonidan tadbirkorlik subyektlari faoliyati tekshiruvlari oʻtkazilishining qonuniyligi ustidan nazoratni amalga oshirish;\ntadbirkorlik faoliyati erkinligining kafolatlari toʻgʻrisidagi qonunchilik normalari va talablarining amalda roʻyobga chiqarilishini oʻrganish;\nqabul qilingan normativ-huquqiy hujjatlarning tadbirkorlik faoliyatini amalga oshirishga taʼsiri samaradorligini baholash;\nTekshirishlarni roʻyxatga olish kitobining hisobini elektron tarzda yuritish;",
+     "retrieval_score": 0.8194,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:3299939#band-8#p1",
+     "doc_id": "lex:3299939",
+     "doc_title": "Oʻzbekiston Respublikasi Vazirlar mahkamasining qarori Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil instituti faoliyatini tashkil etish chora-tadbirlari toʻgʻrisida",
+     "url": "https://lex.uz/docs/3299939",
+     "article": "8-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2019-05-14",
+     "text": "8. Oʻzbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi Axborot va ommaviy kommunikatsiyalar agentligi Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakil apparatini bosma va kitob mahsulotlarining (huquqiy, ijtimoiy-siyosiy va iqtisodiy nashrlar) bepul nazorat nusxasini oladigan tashkilotlar roʻyxatiga kiritsin va Tadbirkorlarning huquqlarini himoya qilish boʻyicha vakilning buyurtmanomalari boʻyicha axborot-tahliliy va ilmiy mahsulotlar nashr etilishiga koʻmaklashsin.",
+     "retrieval_score": 0.8069,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:3193118#band-6#p1",
+     "doc_id": "lex:3193118",
+     "doc_title": "Oʻzbekiston Respublikasi Prezidentining farmoni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakili institutini taʼsis etish toʻgʻrisida",
+     "url": "https://lex.uz/docs/3193118",
+     "article": "6-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2017-05-05",
+     "text": "6. Oʻzbekiston Respublikasi Prezidenti devoni Siyosiy-huquqiy masalalar xizmati manfaatdor vazirliklar va idoralar bilan birgalikda Oʻzbekiston Respublikasi Oliy Majlisi Qonunchilik palatasiga kiritish uchun ikki oy muddatda “Oʻzbekiston Respublikasi Prezidenti huzuridagi Tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida”gi Oʻzbekiston Respublikasi Qonuni loyihasini ishlab chiqsin.",
+     "retrieval_score": 0.8049,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2256,
+    "retrieval_ms": 1938,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 4194
+   },
+   "usage": {
+    "input_tokens": 10886,
+    "output_tokens": 721,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisidagi qonunga koʻra, tadbirkorlar huquqlarini himoya qilish vakili oʻz vazifalarini bajarayotganda siyosiy partiyaga aʼzoligi bilan nima qilishi kerak va qanday haq toʻlanadigan faoliyat turlari bilan shugʻullanishi mumkin?",
+    "search_queries": [
+     "Qonuni Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisida boʻyicha, tadbirkorlar huquqlarini himoya qilish vakili oʻz vazifalarini bajarayotganda siyosiy partiyaga aʼzoligi bilan nima qilishi kerak va qanday haq toʻlanadigan faoliyat turlari bilan shugʻullanishi mumkin?",
+     "Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisidagi qonunga koʻra, tadbirkorlar huquqlarini himoya qilish vakili oʻz vazifalarini bajarayotganda siyosiy partiyaga aʼzoligi bilan nima qilishi kerak va qanday haq toʻlanadigan faoliyat turlari bilan shugʻullanishi mumkin?",
+     "tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil siyosiy partiya aʼzoligi",
+     "Biznes-ombudsman faoliyati bilan birga haq toʻlanadigan faoliyat turlari",
+     "tadbirkorlar huquqlarini himoya qilish vakili cheklovlar va taqiqlar"
+    ],
+    "doc_hints": [
+     "Oʻzbekiston Respublikasi Prezidenti huzuridagi tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish boʻyicha vakil toʻgʻrisidagi qonun"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 347,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q035",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 395-moddasiga koʻra, apellyatsiya instansiyasi sudi apellyatsiya shikoyatini ish yuritishga qabul qilish toʻgʻrisida ajrim chiqarilgan kundan eʼtiboran bir oydan ortiq boʻlmagan muddatda koʻrib chiqadi [1]. Alohida hollarda bu muddat ishni koʻrayotgan sudlov hayʼati tomonidan koʻpi bilan bir oyga uzaytirilishi mumkin [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.97,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "395-modda",
+     "part": "1–3-qism",
+     "edition_date": "2024-11-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-395#p1",
+     "quote": "Apellyatsiya instansiyasi sudi birinchi instansiya sudining hal qiluv qarori ustidan berilgan apellyatsiya shikoyatini (protestini) apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisida ajrim chiqarilgan kundan eʼtiboran bir oydan ortiq boʻlmagan muddatda koʻrib chiqadi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "395-modda",
+     "part": "1–3-qism",
+     "edition_date": "2024-11-15",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-395#p1",
+     "quote": "Alohida hollarda, apellyatsiya shikoyatini (protestini) koʻrib chiqish muddati ishni koʻrayotgan sudlov hayʼati tomonidan koʻpi bilan bir oyga uzaytirilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-395#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "395-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-15",
+     "text": "395-modda. Apellyatsiya shikoyatini (protestini) koʻrish muddati\nApellyatsiya instansiyasi sudi birinchi instansiya sudining hal qiluv qarori ustidan berilgan apellyatsiya shikoyatini (protestini) apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisida ajrim chiqarilgan kundan eʼtiboran bir oydan ortiq boʻlmagan muddatda koʻrib chiqadi.\nSudning soddalashtirilgan ish yuritish tartibida koʻrib chiqilgan, shuningdek oʻzboshimchalik bilan egallab olingan, davlat mulkida boʻlgan yer uchastkasini qaytarish, oʻzboshimchalik bilan qurilgan imoratni buzib tashlash toʻgʻrisidagi ishlar boʻyicha hal qiluv qarori ustidan apellyatsiya shikoyati (protesti) u sudga kelib tushgan kundan eʼtiboran oʻn besh kun ichida koʻrib chiqiladi.\nAlohida hollarda, apellyatsiya shikoyatini (protestini) koʻrib chiqish muddati ishni koʻrayotgan sudlov hayʼati tomonidan koʻpi bilan bir oyga uzaytirilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-388#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "388-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "388-modda. Apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi masalani hal etish tartibi va muddati\nApellyatsiya shikoyatini (protestini) qaytarish, qabul qilishni rad etish yoki ish yuritishga qabul qilish masalasi apellyatsiya instansiyasi sudining sudyasi tomonidan yakka tartibda shikoyat (protest) sudga kelib tushgan kundan eʼtiboran besh kundan kechiktirmay hal qilinadi.\nApellyatsiya shikoyatini (protestini) qaytarish, qabul qilishni rad etish yoki ish yuritishga qabul qilish toʻgʻrisida ajrim chiqariladi, uning koʻchirma nusxasi ishda ishtirok etuvchi shaxslarga u chiqarilgan kunning ertasidan kechiktirmay, ushbu Kodeksning 270-moddasida nazarda tutilgan tartibda yuboriladi.",
+     "retrieval_score": 0.8779,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-3517337#art-385.1#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "385¹-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-15",
+     "text": "3851-modda. Apellyatsiya shikoyatini (protestini) berish muddati\nApellyatsiya shikoyati (protesti) sud tomonidan hal qiluv qarori qabul qilingan kundan eʼtiboran bir oy ichida berilishi mumkin.\nSudning soddalashtirilgan ish yuritish tartibida koʻrib chiqilgan, shuningdek oʻzboshimchalik bilan egallab olingan, davlat mulkida boʻlgan yer uchastkasini qaytarish, oʻzboshimchalik bilan qurilgan imoratni buzib tashlash toʻgʻrisidagi ishlar boʻyicha hal qiluv qarori ustidan apellyatsiya shikoyati (protesti) hal qiluv qarori qabul qilinganidan keyin oʻn kun ichida berilishi mumkin.\nOʻtkazib yuborilgan muddat, agar iltimosnoma hal qiluv qarori qabul qilingan kundan eʼtiboran uch oydan kechiktirmay berilgan va muddatni oʻtkazib yuborish sabablari uzrli deb topilgan boʻlsa, apellyatsiya shikoyati (protesti) berayotgan shaxsning iltimosnomasiga koʻra apellyatsiya instansiyasi sudining sudyasi tomonidan tiklanishi mumkin.\nApellyatsiya shikoyatini (protestini) berishning oʻtkazib yuborilgan muddatini tiklash haqida apellyatsiya shikoyatini (protestini) ish yuritishga qabul qilish toʻgʻrisidagi ajrimda koʻrsatiladi.\nApellyatsiya shikoyatini (protestini) berish muddatini tiklashni rad etish haqida apellyatsiya shikoyatini (protestini) qabul qilishni rad etish toʻgʻrisidagi ajrimda koʻrsatiladi.",
+     "retrieval_score": 0.9155,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-385#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "385-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "385-modda. Apellyatsiya shikoyatini (protestini) berish tartibi\nApellyatsiya shikoyati (protesti) apellyatsiya instansiyasi sudining nomiga yoʻllanadi, lekin hal qiluv qarorini, ajrimni, qarorni qabul qilgan sudga beriladi.\nSud hujjatini qabul qilgan sud apellyatsiya shikoyati (protesti) kelib tushgan kundan eʼtiboran besh kunlik muddatda uni apellyatsiya instansiyasi sudiga ish bilan birga yuborishi shart.",
+     "retrieval_score": 0.7005,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-415#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "415-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-01-01",
+     "text": "415-modda. Kassatsiya shikoyatini (protestini) koʻrish muddati\nKassatsiya shikoyati (protesti) uni ish yuritishga qabul qilish toʻgʻrisida ajrim chiqarilgan kundan eʼtiboran bir oydan koʻp boʻlmagan muddatda koʻrib chiqiladi.\nAlohida hollarda kassatsiya shikoyatini (protestini) koʻrib chiqish muddatini ishni koʻrib chiqayotgan sudlov hayʼati tomonidan koʻpi bilan yana bir oyga uzaytirilishi mumkin.",
+     "retrieval_score": 0.7098,
+     "rerank_score": 0.2,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1710,
+    "retrieval_ms": 713,
+    "rerank_ms": 0,
+    "generation_ms": 2030,
+    "total_ms": 4454
+   },
+   "usage": {
+    "input_tokens": 14248,
+    "output_tokens": 619,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Fuqarolik protsessual kodeksiga koʻra, apellyatsiya instansiyasi sudi apellyatsiya shikoyatini qabul qilish toʻgʻrisida ajrim chiqarilgan kundan boshlab qancha muddat ichida koʻrib chiqishi shart?",
+    "search_queries": [
+     "Fuqarolik protsessual kodeksiga koʻra, apellyatsiya instansiyasi sudi apellyatsiya shikoyatini qabul qilish toʻgʻrisida ajrim chiqarilgan kundan boshlab qancha muddat ichida koʻrib chiqishi shart?",
+     "apellyatsiya shikoyatini koʻrib chiqish muddati",
+     "apellyatsiya instansiyasi sudi ishni koʻrib chiqish muddati",
+     "apellyatsiya shikoyati qabul qilish toʻgʻrisida ajrim chiqarilgan kundan boshlab"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 627,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q036",
+   "status": "ok",
+   "answer": "Fuqarolik protsessual kodeksining 89⁴-moddasiga koʻra sud mutaxassis ishtirokida raqamli dalillarni bevosita koʻzdan kechirishi va tekshirishi shart [1]. Raqamli dalillarni sudga taqdim etish mumkin boʻlmagan yoki yetkazib berishda qiyinchiliklar boʻlgan taqdirda sud ular saqlanadigan joyda koʻzdan kechirish va tekshirishni talab qilishi mumkin [1]. Dalillarni tekshirish tartibini Oʻzbekiston Respublikasining Fuqarolik protsessual kodeksi belgilaydi [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.8,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "89⁴-modda",
+     "part": "1–2-qism",
+     "edition_date": "2024-11-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-89.4#p1",
+     "quote": "Sud mutaxassis ishtirokida raqamli dalillarni bevosita koʻzdan kechirishi va tekshirishi shart",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "78-modda",
+     "part": "1–3-qism",
+     "edition_date": "2024-11-21",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-3517337#art-78#p1",
+     "quote": "Dalillarni taʼminlash ushbu Kodeksda belgilangan dalillarni toʻplash va tekshirish qoidalari boʻyicha sud tomonidan amalga oshiriladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-3517337#art-89.4#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "89⁴-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-21",
+     "text": "894-modda. Raqamli dalillarni koʻzdan kechirish va tekshirish shartlari\nSud mutaxassis ishtirokida raqamli dalillarni bevosita koʻzdan kechirishi va tekshirishi shart.\nRaqamli dalillarni sudga taqdim etish mumkin boʻlmagan yoki ularni yetkazib berishda qiyinchiliklar mavjud boʻlgan taqdirda sud mazkur dalillar saqlanadigan joyda ularning koʻzdan kechirilishini va tekshirilishini talab qilishi mumkin.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-3517337#art-233.1#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "233¹-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-21",
+     "text": "2331-modda. Raqamli dalillarni tekshirish\nRaqamli dalillar yoki ushbu Kodeksning 76, 83, 103 va 104-moddalarida nazarda tutilgan tartibda tuzilgan ularni koʻzdan kechirish bayonnomalari sud majlisida namoyish etiladi yoki oʻqib eshittiriladi va ishda ishtirok etuvchi shaxslarga, zarur boʻlgan hollarda esa ekspertlarga, mutaxassislarga xamda guvohlarga tanishish uchun taqdim etiladi. Shundan keyin ishda ishtirok etuvchi shaxslar ushbu dalillar yuzasidan tushuntirishlar berishi mumkin.",
+     "retrieval_score": 0.9098,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-7228758#art-894#p1",
+     "doc_id": "lex:-7228758",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni Oʻzbekiston Respublikasining ayrim qonun hujjatlariga raqamli dalillar bilan ishlash tizimini takomillashtirishga qaratilgan oʻzgartirish va qoʻshimchalar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-7228758",
+     "article": "894-modda",
+     "part": "1–9-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-21",
+     "text": "894-modda. Raqamli dalillarni koʻzdan kechirish va tekshirish shartlari\nSud mutaxassis ishtirokida raqamli dalillarni bevosita koʻzdan kechirishi va tekshirishi shart.\nRaqamli dalillarni sudga taqdim etish mumkin boʻlmagan yoki ularni yetkazib berishda qiyinchiliklar mavjud boʻlgan taqdirda sud mazkur dalillar saqlanadigan joyda ularning koʻzdan kechirilishini va tekshirilishini talab qilishi mumkin”;\n7) 104-moddaning ikkinchi qismidagi “yozma va ashyoviy” degan soʻzlar “ashyoviy, yozma va raqamli” degan soʻzlar bilan almashtirilsin;\n8) 204-modda birinchi qismining 6-bandidagi “yozma va ashyoviy” degan soʻzlar “ashyoviy, yozma va raqamli” degan soʻzlar bilan almashtirilsin;\n9) quyidagi mazmundagi 2331-modda bilan toʻldirilsin:\n“2331-modda. Raqamli dalillarni tekshirish\nRaqamli dalillar yoki ushbu Kodeksning 76, 83, 103 va 104-moddalarida nazarda tutilgan tartibda tuzilgan ularni koʻzdan kechirish bayonnomalari sud majlisida namoyish etiladi yoki oʻqib eshittiriladi va ishda ishtirok etuvchi shaxslarga, zarur boʻlgan hollarda esa ekspertlarga, mutaxassislarga hamda guvohlarga tanishish uchun taqdim etiladi. Shundan keyin ishda ishtirok etuvchi shaxslar ushbu dalillar yuzasidan tushuntirishlar berishi mumkin”;\n10) 239-moddaning:\nbirinchi qismi quyidagi tahrirda bayon etilsin:",
+     "retrieval_score": 0.8848,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-239#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "239-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-21",
+     "text": "239-modda. Dalillarni joyida koʻzdan kechirish\nSudga olib kelish mumkin boʻlmagan ashyoviy, yozma va raqamli dalillar turgan joyida koʻzdan kechiriladi va tekshiriladi. Koʻzdan kechirishni joyida oʻtkazish toʻgʻrisida sud ajrim chiqaradi.\nDalillarni joyida koʻzdan kechirish sudning butun tarkibi tomonidan ishda ishtirok etuvchi shaxslarni xabardor qilgan, zarur hollarda esa ekspertlar, mutaxassislar va guvohlarni chaqirgan holda amalga oshiriladi.\nRaislik qiluvchi koʻzdan kechirish joyiga yetib borgach, sud muhokamasi davom ettirilishi toʻgʻrisida eʼlon qiladi, sud muhokamasi ushbu Kodeksda belgilangan qoidalar boʻyicha olib boriladi. Koʻzdan kechirish natijalari sud majlisi bayonnomasiga kiritiladi. Bayonnomaga koʻzdan kechirish paytida tuzilgan yoki tekshirilgan barcha rejalar, chizmalar, suratlar, hisob-kitoblar, hujjatlarning koʻzdan kechirish vaqtida olingan koʻchirma nusxalari, ashyoviy, yozma va raqamli dalillarning videoyozuvlari, fotosuratlari, shuningdek ekspert xulosasi va mutaxassis maslahati ilova qilinishi mumkin.",
+     "retrieval_score": 0.859,
+     "rerank_score": 0.5,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-3517337#art-78#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "78-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-11-21",
+     "text": "78-modda. Dalillarni taʼminlash tartibi\nDalillarni taʼminlash ushbu Kodeksda belgilangan dalillarni toʻplash va tekshirish qoidalari boʻyicha sud tomonidan amalga oshiriladi. Arizachi va ishda ishtirok etuvchi boshqa shaxslar dalillarni taʼminlash vaqti va joyi haqida xabardor qilinadi, biroq ularning kelmaganligi dalillarni taʼminlash haqidagi arizani koʻrib chiqishga toʻsqinlik qilmaydi. Kechiktirish, shuningdek keyinchalik arizachi bilan kimning oʻrtasida nizo kelib chiqishini aniqlash mumkin boʻlmagan hollarda, dalillarni taʼminlash faqat arizachining oʻzini xabardor qilish yoʻli bilan amalga oshiriladi.\nDalillarni taʼminlash tartibida taraflarning, uchinchi shaxslarning tushuntirishlari eshitiladi, guvohlar soʻroq qilinadi, ekspertiza tayinlanadi, ashyoviy, yozma va raqamli dalillar talab qilib olinadi yoki koʻzdan kechiriladi, joyga borib koʻzdan kechirish oʻtkaziladi.\nDalillarni taʼminlash tartibida toʻplangan barcha materiallar ishni koʻrib chiqayotgan sudga yuboriladi yoki arizachiga beriladi.",
+     "retrieval_score": 0.8008,
+     "rerank_score": 0.3,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1756,
+    "retrieval_ms": 458,
+    "rerank_ms": 0,
+    "generation_ms": 983,
+    "total_ms": 3198
+   },
+   "usage": {
+    "input_tokens": 13026,
+    "output_tokens": 567,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud raqamli dalillarni qanday sharoitda va kim ishtirokida koʻzdan kechirishi shart hamda dalillarni tekshirish tartibini kim belgilaydi?",
+    "search_queries": [
+     "Sud raqamli dalillarni qanday sharoitda va kim ishtirokida koʻzdan kechirishi shart, va dalillarni tekshirish tartibini kim belgilaydi?",
+     "Sud raqamli dalillarni qanday sharoitda va kim ishtirokida koʻzdan kechirishi shart hamda dalillarni tekshirish tartibini kim belgilaydi?",
+     "raqamli dalillarni sudda koʻzdan kechirish tartibi",
+     "dalillarni tekshirish tartibi Fuqarolik protsessual kodeksi",
+     "elektron hujjatlar va raqamli dalillarni tekshirish"
+    ],
+    "doc_hints": [
+     "Fuqarolik protsessual kodeksi",
+     "Iqtisodiy protsessual kodeksi",
+     "Jinoyat-protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 614,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": true,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q037",
+   "status": "ok",
+   "answer": "Jinoyat-protsessual kodeksining 476-moddasiga koʻra, ozodlikdan mahrum etishga hukm qilingan shaxsning voyaga yetmagan bolalari, qari ota-onalari yoki boshqa qaramogʻidagi shaxslar qarovsiz qolsa, sud ayblov hukmini chiqarish bilan bir vaqtda ularni qarindoshlari yoki boshqa shaxslar va muassasalar vasiyligi yoki homiyligiga topshirish toʻgʻrisida, mahkumning qarovsiz qolayotgan mol-mulki yoki uy-joyi boʻlsa, ularni qoʻriqlab turish choralarini koʻrish toʻgʻrisida ajrim chiqaradi [1]. Ushbu moddada koʻrsatilgan barcha protsessual qarorlar sud majlisining zalida hukm eʼlon qilinganidan keyin oʻqib eshittirilishi lozim [2].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.95,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "476-modda",
+     "part": "1–3-qism",
+     "edition_date": "2024-02-28",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111460#art-476#p1",
+     "quote": "Ozodlikdan mahrum etishga hukm qilingan shaxsning voyaga yetmagan bolalari, qari ota-onalari, qaramogʻida boshqa shaxslar boʻlsa va ular qarovsiz hamda yordamsiz qolayotgan boʻlsa, sud ayblov hukmini chiqarish bilan bir vaqtda ularni qarindoshlari yoki boshqa shaxslarning va muassasalarning vasiyligiga yoki homiyligiga topshirish toʻgʻrisida, mahkumning qarovsiz qolayotgan mol-mulki yoki uy-joyi boʻlsa, ularni qoʻriqlab turish choralarini koʻrish toʻgʻrisida ajrim chiqaradi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "476-modda",
+     "part": "1–3-qism",
+     "edition_date": "2024-02-28",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-111460#art-476#p1",
+     "quote": "Ushbu moddada koʻrsatilgan barcha protsessual qarorlar sud majlisining zalida hukm eʼlon qilinganidan keyin oʻqib eshittirilishi lozim",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-111460#art-476#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "476-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2024-02-28",
+     "text": "476-modda. Hukm chiqarish bilan bir vaqtda sud tomonidan hal qilinadigan boshqa masalalar\nOzodlikdan mahrum etishga hukm qilingan shaxsning voyaga yetmagan bolalari, qari ota-onalari, qaramogʻida boshqa shaxslar boʻlsa va ular qarovsiz hamda yordamsiz qolayotgan boʻlsa, sud ayblov hukmini chiqarish bilan bir vaqtda ularni qarindoshlari yoki boshqa shaxslarning va muassasalarning vasiyligiga yoki homiyligiga topshirish toʻgʻrisida, mahkumning qarovsiz qolayotgan mol-mulki yoki uy-joyi boʻlsa, ularni qoʻriqlab turish choralarini koʻrish toʻgʻrisida ajrim chiqaradi.\nUshbu Kodeksning 298 va 300-moddalarida nazarda tutilgan asoslar mavjud boʻlgan taqdirda, shuningdek tegishli mansabdor shaxslarning eʼtiborini surishtiruv va dastlabki tergov oʻtkazishda yoʻl qoʻyilgan kamchiliklarga jalb qilish zarur boʻlganda sud hukm chiqarish bilan bir vaqtda xususiy ajrim ham chiqaradi.\nUshbu moddada koʻrsatilgan barcha protsessual qarorlar sud majlisining zalida hukm eʼlon qilinganidan keyin oʻqib eshittirilishi lozim.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-111460#art-531#p11",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "531-modda",
+     "part": "11–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "531-modda. Hukmni, ajrimni ijro ettirish tartibi\nSud tomonidan mahkumning voyaga yetmagan farzandlarini muassasalarning, qarindoshlarining yoki boshqa shaxslarning vasiyligiga yoki homiyligiga berish toʻgʻrisida qaror qabul qilingan boʻlsa, sud bu haqda bolalar turgan joydagi vasiylik va homiylik organiga, shuningdek mahkumga xabar beradi.\nMahkumning qarovsiz qolgan mol-mulki va turar joyini qoʻriqlash choralarini koʻrish zarurligi toʻgʻrisida sud mol-mulk va turar joy joylashgan yerdagi hokimlikka yoki fuqarolarning oʻzini oʻzi boshqarish organiga xabar qiladi, bu haqda mahkumni xabardor etadi.",
+     "retrieval_score": 0.8927,
+     "rerank_score": 0.6,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-111460#art-563#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "563-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1994-09-22",
+     "text": "563-modda. Voyaga yetmagan sudlanuvchiga nisbatan hukm chiqarishda sud tomonidan hal etiladigan masalalar\nVoyaga yetmagan sudlanuvchiga nisbatan hukm chiqarishda sud, ushbu Kodeksning 457-moddasida koʻrsatilgan masalalardan tashqari, basharti voyaga yetmagan shaxs shartli hukm qilinsa, unga ozodlikdan mahrum etish bilan bogʻliq boʻlmagan jazo tayinlansa, voyaga yetmagan shaxsga jamoat tarbiyachisi tayinlash zarurligini muhokama qilishga majbur.",
+     "retrieval_score": 0.7087,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-111460#art-457#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "457-modda",
+     "part": "1–12-qism",
+     "doc_status": "amalda",
+     "edition_date": "2025-08-15",
+     "text": "457-modda. Hukm chiqarish vaqtida sud hal qiladigan masalalar\nSud hukm chiqarish vaqtida alohida xonada (maslahatxonada) quyidagi masalalarni hal qiladi:\n1) sudlanuvchi aybli deb topilayotgan qilmish haqiqatan sodir etilganmi;\n2) bu qilmish jinoyat deb hisoblanadimi va u Jinoyat kodeksining qaysi moddasida nazarda tutilgan;\n3) bu qilmishni sudlanuvchi sodir etganmi;\n4) sudlanuvchi jinoyat sodir etilishida ayblimi va, basharti aybli boʻlsa, uning aybi qanday shaklda;\n5) sudlanuvchining javobgarligini yengillashtiradigan va ogʻirlashtiradigan holatlar bormi;\n6) sudlanuvchi sodir etgan jinoyati uchun jazolanishi kerakmi;\n7) sudlanuvchiga qanday jazo tayinlanishi lozim va u shu jazoni oʻtashi kerakmi;\n8) sudlanuvchini Jinoyat kodeksining 34-moddasiga muvofiq oʻta xavfli retsidivist deb topish lozimmi;\n9) ozodlikdan mahrum qilingan mahkum jazoni qanday tartibli koloniyada oʻtashi lozim va jazo muddatining bir qismini turmada oʻtashi kerakmi;\n10) fuqaroviy daʼvo qanoatlantirilishi kerakmi, bu daʼvo kimning foydasiga va qancha miqdorda qanoatlantirilishi lozim, shuningdek fuqaroviy daʼvo qoʻzgʻatilmagan boʻlsa, jinoyat tufayli keltirilgan mulkiy zarar undirilishi kerakmi, sudlanuvchilar sheriklik yoki hissadorlik tartibida javobgarlikka tortilishlari lozimmi;\n11) fuqaroviy daʼvoni taʼminlash uchun xatlangan mol-mulkni nima qilish kerak;",
+     "retrieval_score": 0.6972,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-111460#art-218#p1",
+     "doc_id": "lex:-111460",
+     "doc_title": "Oʻzbekiston Respublikasining jinoyat-protsessual kodeksi",
+     "url": "https://lex.uz/docs/-111460",
+     "article": "218-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-09-12",
+     "text": "218-modda. Ushlab turilgan, qamoqqa olingan yoki tibbiy muassasaga joylashtirilgan shaxsning qaramogʻidagilarga homiylik qilish va uning mol-mulkini qoʻriqlash choralari\nUshlab turilgan, qamoqqa olingan yoki ekspertiza oʻtkazish uchun tibbiy muassasaga joylashtirilgan shaxsning qarovsiz va yordamga muhtoj voyaga yetmagan farzandlari, keksaygan ota-onalari, boshqa boqimlari boʻlganda surishtiruvchi, tergovchi, prokuror yoki sud ularni qarindoshlarining yoki boshqa shaxslar yoxud muassasalarning vasiyligiga yoki homiyligiga topshirishi, majburlov chorasi qoʻllanilgan shaxsning nazoratsiz qolayotgan mol-mulki yoxud uy-joyi boʻlsa, ularni qoʻriqlash chorasini koʻrishi shart.\nShaxsning qaramogʻidagilarga homiylik qilish va uning mol-mulkini qoʻriqlash toʻgʻrisidagi koʻrsatilgan choralar ushlab turish tarzidagi protsessual majburlov chorasini qoʻllagan tergovga qadar tekshiruvni amalga oshiruvchi organning mansabdor shaxsi tomonidan ham koʻrilishi shart.",
+     "retrieval_score": 0.6919,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2287,
+    "retrieval_ms": 1884,
+    "rerank_ms": 0,
+    "generation_ms": 3812,
+    "total_ms": 7986
+   },
+   "usage": {
+    "input_tokens": 15376,
+    "output_tokens": 891,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Sud hukm chiqarayotganda, agar mahkum ozodlikdan mahrum etilsa va uning qaramogʻida boʻlgan voyaga yetmagan bolalari yoki qari ota-onasi qarovsiz qolsa, shuningdek uning mol-mulki yoki uy-joyi qarovsiz qolsa, sud bu masalalarni qanday hal qiladi va bu qarorlar qachon eʼlon qilinadi?",
+    "search_queries": [
+     "Sud hukm chiqarayotganda, agar mahkum ozodlikdan mahrum etilsa va uning qaramogʻida boʻlgan voyaga yetmagan bolalari yoki qari ota-onasi qarovsiz qolsa, shuningdek uning mol-mulki yoki uy-joyi qarovsiz qolsa, sud bu masalalarni qanday hal qiladi va bu qarorlar qachon eʼlon qilinadi?",
+     "hukm chiqarishda voyaga yetmagan bolalar va qari ota-onani qarovsiz qoldirish masalasini hal qilish",
+     "mahkumning mol-mulki va uy-joyini qarovsiz qoldirish boʻyicha choralar koʻrish",
+     "hukm eʼlon qilinishi bilan bir vaqtda qarovsiz qolgan shaxslar va mol-mulk masalasini hal qilish"
+    ],
+    "doc_hints": [
+     "Jinoyat-protsessual kodeksi",
+     "Jinoyat kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 811,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q038",
+   "status": "ok",
+   "answer": "«Табиатни муҳофаза қилиш тўғрисида»ги қонуннинг 58-моддасига кўра, майдони беш юз квадрат метр ва ундан ортиқ бўлган қурилиш майдонида чанг ва қум заррачаларининг ҳавога кўтарилишини бартараф этишга доир мажбурий талабларни бузганлик учун юридик шахсларга атроф-муҳитни ифлослантирганлик учун тўланиши лозим бўлган компенсация тўловининг уч баравари миқдорида жарима тарзидаги молиявий санкциялар қўлланилади [1][2].",
+   "answer_language": "uz-Cyrl",
+   "question_language": "uz-Cyrl",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:-107115",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tabiatni muhofaza qilish toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-107115",
+     "article": "58-modda",
+     "part": "1-qism",
+     "edition_date": "1992-12-09",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-107115#art-58#p1",
+     "quote": "Oʻlchami besh yuz kvadrat metr va undan ortiq boʻlgan qurilish maydonida, unga tutash boʻlgan hududda hamda undan chiqish yoʻllarida chang va qum zarrachalarining havoga koʻtarilishini bartaraf etishga doir majburiy talablarni buzganlik yoxud ushbu hududlarda ifloslantiruvchi moddalarning yoʻl qoʻyiladigan doiradagi normativlardan ortiq darajada atmosfera havosiga chiqarilishiga yoʻl qoʻyganlik uchun yuridik shaxslarga nisbatan atrof-muhitni ifloslantirganlik uchun toʻlanishi lozim boʻlgan kompensatsiya toʻlovining uch baravari miqdorida jarima tarzidagi moliyaviy sanksiyalar qoʻllaniladi",
+     "amended_after_as_of": false
+    },
+    {
+     "ref": 2,
+     "doc_id": "lex:-8169998",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni ekologiya, atrof-muhitni muhofaza qilish va tabiatdan foydalanish sohasidagi huquqbuzarliklarni sodir etganlik uchun javobgarlik kuchaytirilishi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga qoʻshimcha va oʻzgartirishlar kiritish toʻgʻrisida",
+     "doc_type": "qonun",
+     "url": "https://lex.uz/docs/-8169998",
+     "article": "58-modda",
+     "part": "1-qism",
+     "edition_date": "2026-05-04",
+     "doc_status": "amalda",
+     "chunk_id": "lex:-8169998#art-58#p1",
+     "quote": "Oʻlchami besh yuz kvadrat metr va undan ortiq boʻlgan qurilish maydonida, unga tutash boʻlgan hududda hamda undan chiqish yoʻllarida chang va qum zarrachalarining havoga koʻtarilishini bartaraf etishga doir majburiy talablarni buzganlik yoxud ushbu hududlarda ifloslantiruvchi moddalarning yoʻl qoʻyiladigan doiradagi normativlardan ortiq darajada atmosfera havosiga chiqarilishiga yoʻl qoʻyganlik uchun yuridik shaxslarga nisbatan atrof-muhitni ifloslantirganlik uchun toʻlanishi lozim boʻlgan kompensatsiya toʻlovining uch baravari miqdorida jarima tarzidagi moliyaviy sanksiyalar qoʻllaniladi",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-107115#art-58#p1",
+     "doc_id": "lex:-107115",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tabiatni muhofaza qilish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-107115",
+     "article": "58-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1992-12-09",
+     "text": "58-modda. Qurilish maydonlarida atmosfera havosini muhofaza qilish talablariga rioya etmaslik\nOʻlchami besh yuz kvadrat metr va undan ortiq boʻlgan qurilish maydonida, unga tutash boʻlgan hududda hamda undan chiqish yoʻllarida chang va qum zarrachalarining havoga koʻtarilishini bartaraf etishga doir majburiy talablarni buzganlik yoxud ushbu hududlarda ifloslantiruvchi moddalarning yoʻl qoʻyiladigan doiradagi normativlardan ortiq darajada atmosfera havosiga chiqarilishiga yoʻl qoʻyganlik uchun yuridik shaxslarga nisbatan atrof-muhitni ifloslantirganlik uchun toʻlanishi lozim boʻlgan kompensatsiya toʻlovining uch baravari miqdorida jarima tarzidagi moliyaviy sanksiyalar qoʻllaniladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-8169998#art-58#p1",
+     "doc_id": "lex:-8169998",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni ekologiya, atrof-muhitni muhofaza qilish va tabiatdan foydalanish sohasidagi huquqbuzarliklarni sodir etganlik uchun javobgarlik kuchaytirilishi munosabati bilan Oʻzbekiston Respublikasining ayrim qonun hujjatlariga qoʻshimcha va oʻzgartirishlar kiritish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-8169998",
+     "article": "58-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-05-04",
+     "text": "58-modda. Qurilish maydonlarida atmosfera havosini muhofaza qilish talablariga rioya etmaslik\nOʻlchami besh yuz kvadrat metr va undan ortiq boʻlgan qurilish maydonida, unga tutash boʻlgan hududda hamda undan chiqish yoʻllarida chang va qum zarrachalarining havoga koʻtarilishini bartaraf etishga doir majburiy talablarni buzganlik yoxud ushbu hududlarda ifloslantiruvchi moddalarning yoʻl qoʻyiladigan doiradagi normativlardan ortiq darajada atmosfera havosiga chiqarilishiga yoʻl qoʻyganlik uchun yuridik shaxslarga nisbatan atrof-muhitni ifloslantirganlik uchun toʻlanishi lozim boʻlgan kompensatsiya toʻlovining uch baravari miqdorida jarima tarzidagi moliyaviy sanksiyalar qoʻllaniladi.",
+     "retrieval_score": 0.8491,
+     "rerank_score": 0.95,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-97664#art-85.1#p1",
+     "doc_id": "lex:-97664",
+     "doc_title": "Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksi",
+     "url": "https://lex.uz/docs/-97664",
+     "article": "85¹-modda",
+     "part": "1–4-qism",
+     "doc_status": "amalda",
+     "edition_date": "2026-04-23",
+     "text": "851-modda. Qurilish maydonlarida atmosfera havosini muhofaza qilish talablariga rioya etmaslik\nOʻlchami besh yuz kvadrat metr va undan ortiq boʻlgan qurilish maydonida, unga tutash boʻlgan hududda hamda undan chiqish yoʻllarida chang va qum zarrachalarining havoga koʻtarilishini bartaraf etishga doir majburiy talablarni buzish yoxud ushbu hududlarda ifloslantiruvchi moddalarning yoʻl qoʻyiladigan doiradagi normativlardan ortiq darajada atmosfera havosiga chiqarilishiga yoʻl qoʻyish, —\nmansabdor shaxslarga bazaviy hisoblash miqdorining oʻn baravari miqdorida jarima solishga sabab boʻladi.\nXuddi shunday huquqbuzarlik maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, —\nmansabdor shaxslarga bazaviy hisoblash miqdorining ellik baravari miqdorida jarima solishga sabab boʻladi.",
+     "retrieval_score": 0.9622,
+     "rerank_score": 0.4,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:7414829#preamble#p8",
+     "doc_id": "lex:7414829",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni qurilish maydonlarida chang va qum zarrachalarining havoga koʻtarilishini bartaraf etishga doir majburiy talablar belgilanishi munosabati bilan Oʻzbekiston Respublikasining maʼmuriy javobgarlik toʻgʻrisidagi kodeksiga qoʻshimchalar va oʻzgartirish kiritish haqida",
+     "url": "https://lex.uz/docs/7414829",
+     "article": null,
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2025-03-03",
+     "text": "1) quyidagi mazmundagi 851-modda bilan toʻldirilsin:\n“851-modda. Qurilish maydonlarida atmosfera havosini muhofaza qilish talablariga rioya etmaslik\nOʻlchami besh yuz kvadrat metr va undan ortiq boʻlgan qurilish maydonida, unga tutash boʻlgan hududda hamda undan chiqish yoʻllarida chang va qum zarrachalarining havoga koʻtarilishini bartaraf etishga doir majburiy talablarni buzish yoxud ushbu hududlarda ifloslantiruvchi moddalarning yoʻl qoʻyiladigan doiradagi normativlardan ortiq darajada atmosfera havosiga chiqarilishiga yoʻl qoʻyish, —\nmansabdor shaxslarga bazaviy hisoblash miqdorining oʻn baravari miqdorida jarima solishga sabab boʻladi.\nXuddi shunday huquqbuzarlik maʼmuriy jazo chorasi qoʻllanilganidan keyin bir yil davomida takror sodir etilgan boʻlsa, —\nmansabdor shaxslarga bazaviy hisoblash miqdorining ellik baravari miqdorida jarima solishga sabab boʻladi”;\n2) 245-moddaning uchinchi qismi “681” raqamidan keyin “851” raqami bilan toʻldirilsin;\n3) 261-moddaning birinchi qismidagi “86” raqami “851, 86” raqamlari bilan almashtirilsin.",
+     "retrieval_score": 0.7577,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-107115#art-59#p1",
+     "doc_id": "lex:-107115",
+     "doc_title": "Oʻzbekiston Respublikasining qonuni tabiatni muhofaza qilish toʻgʻrisida",
+     "url": "https://lex.uz/docs/-107115",
+     "article": "59-modda",
+     "part": "1-qism",
+     "doc_status": "amalda",
+     "edition_date": "1992-12-09",
+     "text": "59-modda. Yoqilgʻini, moddalarni, materiallarni va chiqindilarni yoqishda atmosfera havosini muhofaza qilish talablariga rioya etmaslik\nYoqish uchun moʻljallanmagan joylarda va (yoki) qurilmalarda yoqilgʻini, yoqilgʻi sifatida foydalaniladigan moddalarni yoki moddalar aralashmasini, yoqilgʻi hisoblanmaydigan materiallarni va chiqindilarni ochiq alanga oldirib yoqqanlik, shuningdek issiqxonalarda, ishlab chiqarish binolarida, yondirish uskunalarida yoki boshqa obyektlarda yoqilgʻi sifatida shinalarni, bitumni, mazutni, plyonkani, sintetik kartonni, rezinani, jun tolasini yoqqanlik va shunga oʻxshash komponentlarni oʻz ichiga olgan chiqindilarni yoqqanlik uchun yuridik shaxslarga nisbatan atrof-muhitni ifloslantirganlik uchun toʻlanishi lozim boʻlgan kompensatsiya toʻlovining besh baravari miqdorida jarima tarzidagi moliyaviy sanksiyalar qoʻllaniladi.",
+     "retrieval_score": 0.7762,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2181,
+    "retrieval_ms": 1217,
+    "rerank_ms": 0,
+    "generation_ms": 4220,
+    "total_ms": 7619
+   },
+   "usage": {
+    "input_tokens": 12178,
+    "output_tokens": 1052,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "«Tabiatni muhofaza qilish toʻgʻrisida»gi qonunga koʻra, maydoni 500 kvadrat metr va undan katta boʻlgan qurilish maydonida chang va qum havoga koʻtarilishini toʻxtatish talablarini buzgan yuridik shaxsga qanday miqdorda jarima qoʻllaniladi?",
+    "search_queries": [
+     "«Табиатни муҳофаза қилиш тўғрисида»ги қонунга кўра, майдони 500 квадрат метр ва ундан катта бўлган қурилиш майдонида чанг ва қум ҳавога кўтарилишини тўхтатиш талабларини бузган юридик шахсга қандай миқдорда жарима қўлланилади?",
+     "«Tabiatni muhofaza qilish toʻgʻrisida»gi qonunga koʻra, maydoni 500 kvadrat metr va undan katta boʻlgan qurilish maydonida chang va qum havoga koʻtarilishini toʻxtatish talablarini buzgan yuridik shaxsga qanday miqdorda jarima qoʻllaniladi?",
+     "qurilish maydonida chang va qum havoga koʻtarilishini toʻxtatish talablari",
+     "500 kvadrat metr va undan katta qurilish maydoni chang toʻxtatish jarima yuridik shaxs",
+     "Tabiatni muhofaza qilish toʻgʻrisidagi qonun atmosfera havosini muhofaza qilish talablari jarima"
+    ],
+    "doc_hints": [
+     "Tabiatni muhofaza qilish toʻgʻrisidagi qonun",
+     "Maʼmuriy javobgarlik toʻgʻrisidagi kodeks"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 754,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q039",
+   "status": "ok",
+   "answer": "Iqtisodiy protsessual kodeksining 341-moddasi ikkinchi qismiga koʻra, ijro varaqasi davlat ijrochisi tomonidan yoʻqotilgan va bu haqda undiruvchiga ijroga taqdim etish muddati oʻtganidan soʻng maʼlum boʻlgan hollarda dublikat berish toʻgʻrisidagi ariza ijro varaqasi yoʻqotilganligi undiruvchiga maʼlum boʻlgan kundan eʼtiboran bir oy ichida berilishi mumkin [1]. Demak, bunday holat uchun alohida bir oylik muddat nazarda tutilgan [1].",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": false,
+   "confidence": 0.9,
+   "citations": [
+    {
+     "ref": 1,
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "doc_type": "kodeks",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "341-modda",
+     "part": "1–3-qism",
+     "edition_date": "2018-01-24",
+     "doc_status": "amalda",
+     "chunk_id": "lex:3523891#art-341#p1",
+     "quote": "Ushbu hollarda ijro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza ijro varaqasi (sud buyrugʻi) yoʻqotilganligi undiruvchiga maʼlum boʻlgan kundan eʼtiboran bir oy ichida berilishi mumkin",
+     "amended_after_as_of": false
+    }
+   ],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:3523891#art-341#p1",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "341-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "341-modda. Ijro varaqasining (sud buyrugʻining) dublikatini berish\nIjro varaqasi (sud buyrugʻi) yoʻqotilgan taqdirda, uni bergan sud undiruvchining arizasiga koʻra ijro varaqasining (sud buyrugʻining) dublikatini berishi mumkin.\nIjro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza ijro varaqasini (sud buyrugʻini) ijroga taqdim etish uchun belgilangan muddat oʻtguniga qadar berilishi mumkin, bundan ijro varaqasi (sud buyrugʻi) davlat ijrochisi yoki ijroni amalga oshiruvchi boshqa shaxs tomonidan yoʻqotilgan va bu haqda undiruvchiga ijro varaqasini (sud buyrugʻini) ijroga taqdim etish uchun belgilangan muddat oʻtganidan soʻng maʼlum boʻlgan hollar mustasno. Ushbu hollarda ijro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza ijro varaqasi (sud buyrugʻi) yoʻqotilganligi undiruvchiga maʼlum boʻlgan kundan eʼtiboran bir oy ichida berilishi mumkin.\nIjro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza sudga kelib tushgan kundan eʼtiboran bir oylik muddatda sud majlisida koʻrib chiqiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 1.0,
+     "used_in_answer": true,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:3780952#band-27#p89",
+     "doc_id": "lex:3780952",
+     "doc_title": "Oʻzbekiston Respublikasi oliy sudi plenumining qarori Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi qabul qilinganligi munosabati bilan Oʻzbekiston Respublikasi oliy sudi plenumi va oliy xoʻjalik sudi plenumining ayrim qarorlariga oʻzgartish va qoʻshimchalar kiritish, shuningdek ayrimlarini oʻz kuchini yoʻqotgan deb topish toʻgʻrisida",
+     "url": "https://lex.uz/docs/3780952",
+     "article": "27-band",
+     "part": null,
+     "doc_status": "amalda",
+     "edition_date": "2018-05-19",
+     "text": "“29. IPK 341-moddasining ikkinchi qismiga koʻra ijro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza ijro varaqasini (sud buyrugʻini) ijroga taqdim etish uchun belgilangan muddat oʻtguniga qadar berilishi mumkin, bundan ijro varaqasi (sud buyrugʻi) davlat ijrochisi yoki ijroni amalga oshiruvchi boshqa shaxs tomonidan yoʻqotilgan va bu haqda undiruvchiga ijro varaqasini (sud buyrugʻini) ijroga taqdim etish uchun belgilangan muddat oʻtganidan soʻng maʼlum boʻlgan hollar mustasno. Ushbu hollarda ijro varaqasining (sud buyrugʻining) dublikatini berish toʻgʻrisidagi ariza ijro varaqasi (sud buyrugʻi) yoʻqotilganligi undiruvchiga maʼlum boʻlgan kundan eʼtiboran bir oy ichida berilishi mumkin.\nSudlar shuni inobatga olishi kerakki, bunday ariza ijro varaqasi berilgan kundan boshlab uch yil davomida ham, agar sud tomonidan ijro varaqasini ijroga taqdim etish muddatini tiklash haqidagi ajrim chiqarilgan boʻlsa, ushbu muddat oʻtgandan keyin ham berilishi mumkin”;\n30-bandidagi “XPK” degan soʻz “IPK” degan soʻz bilan almashtirilsin.",
+     "retrieval_score": 0.8498,
+     "rerank_score": 0.7,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:3523891#art-341#p4",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "341-modda",
+     "part": "4–6-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "341-modda. Ijro varaqasining (sud buyrugʻining) dublikatini berish\nUndiruvchi, qarzdor sud majlisining vaqti va joyi toʻgʻrisida ariza kelib tushgan kundan eʼtiboran besh kundan kechiktirmay chiqarilgan sud ajrimi orqali, ushbu Kodeksning 127-moddasida nazarda tutilgan tartibda xabardor qilinadi. Sud majlisining vaqti va joyi toʻgʻrisida tegishli tarzda xabardor qilingan mazkur shaxslarning kelmaganligi, arizani koʻrib chiqish uchun toʻsqinlik qilmaydi.\nArizani koʻrish natijalari boʻyicha ajrim chiqariladi, uning koʻchirma nusxasi undiruvchi va qarzdorga yuboriladi.\nAjrim ustidan shikoyat qilinishi (protest keltirilishi) mumkin.",
+     "retrieval_score": 0.9044,
+     "rerank_score": 0.3,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-3517337#art-450#p1",
+     "doc_id": "lex:-3517337",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik protsessual kodeksi",
+     "url": "https://lex.uz/docs/-3517337",
+     "article": "450-modda",
+     "part": "1–5-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-22",
+     "text": "450-modda. Ijro varaqasining yoki sud buyrugʻining dublikatini berish\nIjro varaqasining yoki sud buyrugʻining asl nusxasi yoʻqotilgan hollarda, sud hujjatini chiqargan sud undiruvchining yoxud davlat ijrochisining arizasiga koʻra, ijro varaqasining dublikatini berishi mumkin.\nDublikat berish haqidagi ariza ishda ishtirok etuvchi shaxslar xabardor qilingan holda sud majlisida koʻriladi, biroq ularning kelmaganligi dublikat berish toʻgʻrisidagi masalani hal etish uchun toʻsqinlik qilmaydi.\nDublikat berish toʻgʻrisidagi ariza bunday ariza sudga kelib tushgan paytdan eʼtiboran oʻn kun ichida sud majlisida koʻriladi.\nSudning dublikat berish toʻgʻrisidagi masalaga doir ajrimi ustidan xususiy shikoyat (protest) berilishi mumkin.\nXususiy shikoyatda (protestda) xususiy shikoyat (protest) bergan shaxsning yoki uning vakilining telefonlari va fakslari raqamlari, elektron pochta manzili koʻrsatilishi mumkin.",
+     "retrieval_score": 0.8363,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:3523891#art-232.11#p14",
+     "doc_id": "lex:3523891",
+     "doc_title": "Oʻzbekiston Respublikasining iqtisodiy protsessual kodeksi",
+     "url": "https://lex.uz/docs/3523891",
+     "article": "232¹¹-modda",
+     "part": "14-qism",
+     "doc_status": "amalda",
+     "edition_date": "2018-01-24",
+     "text": "23211-modda. Mediativ kelishuvni majburiy ijro etish uchun ijro varaqasi berish toʻgʻrisidagi arizaning shakli va mazmuni\nUshbu Kodeks 37-moddasining oltinchi qismida, ushbu moddaning birinchi, ikkinchi, toʻrtinchi va beshinchi qismlarida nazarda tutilgan talablarga rioya etilmagan, shuningdek ariza olti oylik muddat tugagach berilgan va oʻtkazib yuborilgan muddatni tiklash toʻgʻrisida iltimosnoma mavjud boʻlmagan taqdirda, mediativ kelishuvni majburiy ijro etish uchun ijro varaqasi berish toʻgʻrisidagi ariza ushbu Kodeksning 155-moddasida nazarda tutilgan qoidalar boʻyicha arizachiga qaytariladi.",
+     "retrieval_score": 0.7784,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 2182,
+    "retrieval_ms": 1967,
+    "rerank_ms": 0,
+    "generation_ms": 7394,
+    "total_ms": 11545
+   },
+   "usage": {
+    "input_tokens": 12882,
+    "output_tokens": 594,
+    "models": {
+     "rewrite": "deepseek-flash",
+     "answer": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Iqtisodiy protsessual kodeksiga koʻra, ijro varaqasi davlat ijrochisi tomonidan yoʻqotilgan boʻlsa va bu haqda undiruvchi ijroga taqdim etish muddati oʻtgandan keyin bilgan boʻlsa, ijro varaqasining dublikatini berish toʻgʻrisidagi arizani qanday muddatda berish mumkin? Avval bunday holat uchun alohida muddat mavjud emas edi, hozirgi holat qanday?",
+    "search_queries": [
+     "Iqtisodiy protsessual kodeksiga koʻra, ijro varaqasi davlat ijrochisi tomonidan yoʻqotilgan boʻlsa va bu haqda undiruvchi ijroga taqdim etish muddati oʻtgandan keyin bilgan boʻlsa, dublikat berish toʻgʻrisidagi arizani qanday muddatda berish mumkin? Avval bunday holat uchun alohida muddat yoʻq edi, hozir-chi?",
+     "Iqtisodiy protsessual kodeksiga koʻra, ijro varaqasi davlat ijrochisi tomonidan yoʻqotilgan boʻlsa va bu haqda undiruvchi ijroga taqdim etish muddati oʻtgandan keyin bilgan boʻlsa, ijro varaqasining dublikatini berish toʻgʻrisidagi arizani qanday muddatda berish mumkin? Avval bunday holat uchun alohida muddat mavjud emas edi, hozirgi holat qanday?",
+     "ijro varaqasining dublikatini berish toʻgʻrisidagi ariza muddati",
+     "ijro varaqasi yoʻqotilgan dublikat berish sud",
+     "ijro hujjatini yoʻqotish dublikat berish muddati Iqtisodiy protsessual kodeksi"
+    ],
+    "doc_hints": [
+     "Iqtisodiy protsessual kodeksi",
+     "protsessual kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": true,
+    "retrieved_total": 490,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": false,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  },
+  {
+   "id": "q040",
+   "status": "no_answer",
+   "answer": "Taqdim etilgan qonun hujjatlarida bu savolga aniq javob topilmadi.",
+   "answer_language": "uz-Latn",
+   "question_language": "uz-Latn",
+   "no_answer": true,
+   "confidence": 0.9,
+   "citations": [],
+   "contexts": [
+    {
+     "rank": 1,
+     "chunk_id": "lex:-180552#art-428#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "428-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "428-modda. Tovarning sotib oluvchi tomonidan belgilangan muddatda qabul qilinishi sharti bilan sotish\nTaraflar sotib oluvchi tovarni shartnomada belgilangan muddatda qabul qilib olishi sharti bilan chakana oldi-sotdi shartnomasi tuzishlari mumkin, bu muddat mobaynida tovar boshqa sotib oluvchiga sotilishi mumkin emas.\nAgar chakana oldi-sotdi shartnomasida boshqacha tartib nazarda tutilgan boʻlmasa, shartnomada belgilangan muddatda sotib oluvchining tovarni qabul qilish uchun kelmasligi yoki boshqa zarur harakatlarni amalga oshirmasligini sotuvchi sotib oluvchining shartnomani bajarishdan bosh tortishi deb qaralishi mumkin.\nSotuvchining tovarni sotib oluvchiga chakana oldi-sotdi shartnomasida belgilangan muddatda topshirishni taʼminlash borasidagi qoʻshimcha xarajatlari, agar qonunchilikda yoki shartnomada boshqacha tartib nazarda tutilgan boʻlmasa, tovarning bahosiga qoʻshiladi.",
+     "retrieval_score": 1.0,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 2,
+     "chunk_id": "lex:-180552#art-431#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "431-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "2021-04-21",
+     "text": "431-modda. Tovarni sotib oluvchiga yetkazib berish sharti bilan sotish\nChakana oldi-sotdi shartnomasi tovarni sotib oluvchiga yetkazib berish sharti bilan tuzilgan hollarda sotuvchi shartnomada belgilangan muddatda tovarni sotib oluvchi koʻrsatgan joyga, agar sotib oluvchi tovarni yetkazib berish joyini koʻrsatmagan boʻlsa, sotib oluvchi fuqaro istiqomat qiladigan yoki yuridik shaxs joylashgan manzilga yetkazib berishi lozim.\nAgar qonunchilikda, shartnomada boshqacha tartib nazarda tutilgan boʻlmasa yoki u majburiyatning mohiyatidan kelib chiqmasa, tovar sotib oluvchiga, u boʻlmaganda esa –– shartnoma tuzilganidan yoxud tovarni yetkazib berish rasmiylashtirilganidan guvohlik beradigan kvitansiya yoki boshqa hujjatni taqdim qilgan har qanday shaxsga topshirilgan paytdan boshlab chakana oldi-sotdi shartnomasi sotuvchi tomonidan bajarilgan hisoblanadi.\nChakana oldi-sotdi shartnomasida tovarni sotib oluvchiga topshirish uchun yetkazib berish vaqti belgilanmagan hollarda tovar sotib oluvchidan talab tushganidan keyin oqilona muddatda yetkazib berilishi lozim.",
+     "retrieval_score": 0.9963,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 3,
+     "chunk_id": "lex:-180552#art-429#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "429-modda",
+     "part": "1–3-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "429-modda. Tovarni namuna boʻyicha sotish\nTaraflar tovarni namuna (taʼrif, katalog va hokazo) boʻyicha olish-sotish shartnomasini tuzishlari mumkin.\nTovarni namuna boʻyicha sotish shartnomasi ushbu Kodeks 431-moddasining qoidalariga muvofiq bajariladi.\nSotib oluvchi tovar topshirilgunga qadar sotuvchining chakana oldi-sotdi shartnomasini bajarishga qaratilgan harakatlarni amalga oshirish bilan bogʻliq zarur xarajatlarini qoplash sharti bilan shartnomani bajarishdan bosh tortishga haqli.",
+     "retrieval_score": 0.8661,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 4,
+     "chunk_id": "lex:-180552#art-479#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "479-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "479-modda. Koʻchmas mulkni sotish shartnomasi\nKoʻchmas mulkning oldi-sotdi shartnomasiga (koʻchmas mulkni sotish shartnomasiga) binoan sotuvchi yer uchastkasi, bino, inshoot, kvartira yoki boshqa koʻchmas mulkni sotib oluvchiga mulk qilib topshirishni (ushbu Kodeksning 83-moddasi) oʻz zimmasiga oladi.\nKorxonalarni sotishga nisbatan, basharti korxonani sotish shartnomasi toʻgʻrisidagi qoidalarda (ushbu Kodeksning 489-496-moddalari) boshqacha tartib nazarda tutilgan boʻlmasa, ushbu paragraf qoidalari qoʻllanadi.",
+     "retrieval_score": 0.8615,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    },
+    {
+     "rank": 5,
+     "chunk_id": "lex:-180552#art-484#p1",
+     "doc_id": "lex:-180552",
+     "doc_title": "Oʻzbekiston Respublikasining fuqarolik kodeksi ikkinchi qism",
+     "url": "https://lex.uz/docs/-180552",
+     "article": "484-modda",
+     "part": "1–2-qism",
+     "doc_status": "amalda",
+     "edition_date": "1996-08-29",
+     "text": "484-modda. Koʻchmas mulkni sotish shartnomasida shartnoma narsasini belgilash\nKoʻchmas mulkni sotish shartnomasida shartnoma boʻyicha sotib oluvchiga topshirilishi lozim boʻlgan koʻchmas mulkni aniq belgilash imkonini beradigan maʼlumotlar, shu jumladan koʻchmas mulk tegishli yer uchastkasida yoki boshqa koʻchmas mulkning tarkibida qanday joylashganligini belgilash imkonini beradigan maʼlumotlar koʻrsatilgan boʻlishi shart.\nShartnomada bunday maʼlumotlar boʻlmasa, boshqa shaxsga topshirilishi lozim boʻlgan koʻchmas mulk toʻgʻrisidagi shartni taraflar oʻzaro kelishib olmagan, tegishli shartnoma esa tuzilmagan hisoblanadi.",
+     "retrieval_score": 0.8397,
+     "rerank_score": 0.0,
+     "used_in_answer": false,
+     "amended_after_as_of": false
+    }
+   ],
+   "timing": {
+    "rewrite_ms": 1635,
+    "retrieval_ms": 650,
+    "rerank_ms": 0,
+    "generation_ms": 0,
+    "total_ms": 2286
+   },
+   "usage": {
+    "input_tokens": 908,
+    "output_tokens": 140,
+    "models": {
+     "rewrite": "deepseek-flash"
+    }
+   },
+   "error": null,
+   "debug": {
+    "rewritten_query": "Vaqt mashinasini sotib olish shartnomasi qanday rasmiylashtiriladi?",
+    "search_queries": [
+     "Vaqt mashinasini sotib olish shartnomasi qanday rasmiylashtiriladi?",
+     "sotib olish-sotish shartnomasi rasmiylashtirish tartibi",
+     "oldi-sotdi shartnomasi yozma shakli",
+     "sotib olish-sotish shartnomasi muhim shartlari"
+    ],
+    "doc_hints": [
+     "Fuqarolik kodeksi"
+    ],
+    "article_hints": [],
+    "in_scope": false,
+    "retrieved_total": 561,
+    "rerank_pool": 24,
+    "rerank": "llm-joint",
+    "speculative_answer_used": null,
+    "citations_dropped": 0,
+    "generation_cached": null
+   }
+  }
+ ]
+}
