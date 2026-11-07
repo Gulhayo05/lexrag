@@ -104,6 +104,23 @@ Answerable questions the system refused score correctness 0.
 
 Each batch response is saved to `eval/runs/<run_id>/bNN.json`, metrics to `metrics.json`.
 
+## Streamlit front end
+
+`streamlit_app/streamlit_app.py` is a chat UI for the API. It shows the answer, citations with verbatim quotes and lex.uz links, and the retrieved contexts. It holds no index and no LLM key, only the API's URL and a key. The 1.7 GB index can't go to Streamlit Community Cloud (GitHub rejects files over 100 MB, apps get ~1 GB RAM), so the API runs elsewhere: the Hugging Face Space (`deploy/deploy_hf.py`), the Oracle VM (`deploy/oracle/deploy_vm.sh`) or any server.
+
+```bash
+LEXRAG_API_URL=http://127.0.0.1:8000 LEXRAG_API_KEY=<key> streamlit run streamlit_app/streamlit_app.py
+```
+
+Deploy on [share.streamlit.io](https://share.streamlit.io): **Create app** → repository `Gulhayo05/lexrag`, branch `main`, main file `streamlit_app/streamlit_app.py`. Then in **Advanced settings → Secrets** add:
+
+```toml
+LEXRAG_API_URL = "https://<your-api-host>"
+LEXRAG_API_KEY = "<test API key>"
+```
+
+`streamlit_app/requirements.txt` (streamlit, httpx) is used instead of the root one.
+
 ## Endpoints
 
 | Endpoint | Notes |
