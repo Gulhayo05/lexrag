@@ -104,22 +104,32 @@ Answerable questions the system refused score correctness 0.
 
 Each batch response is saved to `eval/runs/<run_id>/bNN.json`, metrics to `metrics.json`.
 
-## Streamlit front end
+## Streamlit app
 
-`streamlit_app/streamlit_app.py` is a chat UI for the API. It shows the answer, citations with verbatim quotes and lex.uz links, and the retrieved contexts. It holds no index and no LLM key, only the API's URL and a key. The 1.7 GB index can't go to Streamlit Community Cloud (GitHub rejects files over 100 MB, apps get ~1 GB RAM), so the API runs elsewhere: the Hugging Face Space (`deploy/deploy_hf.py`), the Oracle VM (`deploy/oracle/deploy_vm.sh`) or any server.
+`streamlit_app/streamlit_app.py` is a chat UI: answer, citations with verbatim quotes and lex.uz links, retrieved contexts, follow-up questions. It has two modes:
 
-```bash
-LEXRAG_API_URL=http://127.0.0.1:8000 LEXRAG_API_KEY=<key> streamlit run streamlit_app/streamlit_app.py
-```
+* **Built-in mode** (default, used on Streamlit Community Cloud). The app downloads the prebuilt index from the public Hugging Face dataset [`gulkhayo5775/lexrag-index`](https://huggingface.co/datasets/gulkhayo5775/lexrag-index) on first start (1–3 min) and runs the same pipeline in-process. The index is too large for GitHub (100 MB file limit), so it is not in the repository.
+* **API mode**: set `LEXRAG_API_URL` (+ `LEXRAG_API_KEY`) and the app calls a running API instead.
 
-Deploy on [share.streamlit.io](https://share.streamlit.io): **Create app** → repository `Gulhayo05/lexrag`, branch `main`, main file `streamlit_app/streamlit_app.py`. Then in **Advanced settings → Secrets** add:
+Deploy on [share.streamlit.io](https://share.streamlit.io): **Create app** → repository `Gulhayo05/lexrag`, branch `main`, main file `streamlit_app/streamlit_app.py`; **Advanced settings → Secrets**:
 
 ```toml
-LEXRAG_API_URL = "https://<your-api-host>"
-LEXRAG_API_KEY = "<test API key>"
+DEEPSEEK_API_KEY = "<key>"
+LEXRAG_LLM_PROVIDER = "deepseek"
 ```
 
-`streamlit_app/requirements.txt` (streamlit, httpx) is used instead of the root one.
+`streamlit_app/requirements.txt` is used instead of the root one. Locally: `streamlit run streamlit_app/streamlit_app.py` (uses `data/lex.sqlite`).
+
+## Public API from this Mac (free)
+
+Free hosting can't run the API with its 1.7 GB index (Hugging Face Docker Spaces need PRO), so the spec's REST API is served from this Mac through a free Cloudflare quick tunnel:
+
+```bash
+brew install cloudflared     # once
+./serve_public.sh            # prints PUBLIC API URL: https://<random>.trycloudflare.com
+```
+
+Keep the window open and the Mac on (the script keeps it awake). The URL changes on every start. Testers use it as the base URL with their own key from `LEXRAG_API_KEYS`.
 
 ## Endpoints
 

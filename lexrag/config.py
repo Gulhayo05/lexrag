@@ -16,6 +16,8 @@ class Settings(BaseSettings):
     txt_dir: str = str(ROOT / "data" / "txt")
     db_path: str = str(ROOT / "data" / "lex.sqlite")
     results_db: str = str(ROOT / "data" / "batches.sqlite")
+    sqlite_mmap_mb: int = 4000                       # per connection; lower on small hosts (Streamlit Cloud)
+    sqlite_cache_mb: int = 200
 
     # API
     api_keys: str = "test-key-change-me"           # comma separated

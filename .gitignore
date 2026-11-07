@@ -9,3 +9,6 @@ deploy/oracle/lexrag_vm_key
 deploy/oracle/known_hosts
 # local index + results DB (1.7 GB)
 data/
+# access note with the teacher API key (never commit)
+TEACHER_ACCESS.md
+.public_url

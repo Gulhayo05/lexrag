@@ -1,34 +1,92 @@
-"""Streamlit front end for the lex.uz RAG API.
+"""Streamlit front end for the lex.uz RAG system.
 
-The app holds no index and no LLM key: it only calls a running lexrag API
-(Hugging Face Space, Oracle VM, or local server).  Configure it with Streamlit
-secrets (Streamlit Community Cloud: App settings -> Secrets):
+Two modes, chosen by Streamlit secrets (Community Cloud: App settings -> Secrets):
 
-    LEXRAG_API_URL = "https://<your-api-host>"
-    LEXRAG_API_KEY = "<test API key>"
+* API mode: set LEXRAG_API_URL (+ LEXRAG_API_KEY). The app calls a running lexrag API.
+* Built-in mode (no LEXRAG_API_URL): the app downloads the prebuilt index from a public
+  Hugging Face dataset (LEXRAG_INDEX_REPO, default gulkhayo5775/lexrag-index) and runs the
+  same pipeline in-process. Needs an LLM key, e.g.:
+
+      DEEPSEEK_API_KEY = "..."
+      LEXRAG_LLM_PROVIDER = "deepseek"
 
 Run locally:
-    streamlit run streamlit_app/streamlit_app.py
+    streamlit run streamlit_app/streamlit_app.py                       # built-in, uses data/lex.sqlite
+    LEXRAG_API_URL=http://127.0.0.1:8000 LEXRAG_API_KEY=... streamlit run streamlit_app/streamlit_app.py
 """
 from __future__ import annotations
 
+import asyncio
 import os
+import sys
+import time
+from pathlib import Path
 
 import httpx
 import streamlit as st
 
 st.set_page_config(page_title="Lex RAG — lex.uz", page_icon="⚖️", layout="wide")
+ROOT = Path(__file__).resolve().parent.parent
 
 
 def _secret(name: str, default: str = "") -> str:
     try:
-        return str(st.secrets.get(name, os.environ.get(name, default)))
+        if name in st.secrets:
+            return str(st.secrets[name])
     except Exception:  # noqa: BLE001 - no secrets file locally
-        return os.environ.get(name, default)
+        pass
+    return os.environ.get(name, default)
 
 
-API_URL = _secret("LEXRAG_API_URL", "http://127.0.0.1:8000").rstrip("/")
+API_URL = _secret("LEXRAG_API_URL").rstrip("/")
 API_KEY = _secret("LEXRAG_API_KEY")
+BUILT_IN = not API_URL
+
+
+# --------------------------------------------------------------------------- #
+# built-in mode: index from a Hugging Face dataset, pipeline in this process
+# --------------------------------------------------------------------------- #
+@st.cache_resource(show_spinner="Qonunchilik indeksi yuklanmoqda (birinchi ishga tushishda 1–3 daqiqa)…")
+def _engine():
+    try:  # root-level Streamlit secrets -> environment, before lexrag reads its settings
+        for k, v in st.secrets.items():
+            if isinstance(v, (str, int, float, bool)):
+                os.environ.setdefault(k, str(v))
+    except Exception:  # noqa: BLE001
+        pass
+    local = ROOT / "data" / "lex.sqlite"
+    if not os.environ.get("LEXRAG_DB_PATH"):
+        if local.exists():
+            os.environ["LEXRAG_DB_PATH"] = str(local)
+        else:  # small host: modest SQLite memory, results/cache DB in /tmp
+            from huggingface_hub import hf_hub_download
+            os.environ["LEXRAG_DB_PATH"] = hf_hub_download(
+                repo_id=os.environ.get("LEXRAG_INDEX_REPO", "gulkhayo5775/lexrag-index"),
+                filename="lex.sqlite", repo_type="dataset")
+            os.environ.setdefault("LEXRAG_SQLITE_MMAP_MB", "0")
+            os.environ.setdefault("LEXRAG_SQLITE_CACHE_MB", "16")
+            os.environ.setdefault("LEXRAG_RESULTS_DB", "/tmp/lexrag-results.sqlite")
+    sys.path.insert(0, str(ROOT))
+    from lexrag import llm, pipeline
+    from lexrag.config import settings
+    return pipeline, llm, settings
+
+
+def _ask_built_in(question: str, options: dict, history: list[dict]) -> dict:
+    pipeline, llm, settings = _engine()
+    item = {"id": "q", "question": question, "language": None, "history": history[-5:]}
+    t0 = time.perf_counter()
+
+    async def run():
+        return await asyncio.wait_for(pipeline.answer_item(item, options), timeout=settings.question_timeout_s)
+    try:
+        r = asyncio.run(run())
+    except asyncio.TimeoutError:
+        r = pipeline.error_result(item, "LLM_TIMEOUT", "javob berish vaqti tugadi", True, status="timeout")
+    except llm.LLMError as e:
+        r = pipeline.error_result(item, e.code, e.message, e.retryable)
+    return {"system": pipeline.system_info(), "timing": {"total_ms": int((time.perf_counter() - t0) * 1000)}, "result": r}
+
 
 LANG_LABELS = {"auto": "Savol tilida (auto)", "uz-Latn": "Oʻzbek (lotin)", "uz-Cyrl": "Ўзбек (кирилл)", "ru": "Русский"}
 EXAMPLES = [
@@ -49,6 +107,8 @@ def fetch_meta(url: str) -> dict | None:
 
 
 def ask(question: str, options: dict, history: list[dict]) -> dict:
+    if BUILT_IN:
+        return _ask_built_in(question, options, history)
     body = {"question": question, "options": options, "history": history[-5:]}
     r = httpx.post(f"{API_URL}/v1/rag/query", json=body, timeout=180,
                    headers={"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json; charset=utf-8"})
@@ -110,14 +170,21 @@ with st.sidebar:
     as_of = st.date_input("Sana boʻyicha (as_of_date)", value=None)
     if st.button("Suhbatni tozalash"):
         st.session_state.messages = []
-    meta = fetch_meta(API_URL)
+    if BUILT_IN:
+        try:
+            meta = _engine()[0].system_info()
+        except Exception as e:  # noqa: BLE001
+            meta = None
+            st.error(f"Indeksni yuklab boʻlmadi: {e}")
+    else:
+        meta = fetch_meta(API_URL)
     st.divider()
     if meta:
         st.caption(f"Model: {meta.get('llm_model')}  \nIndeks: {meta.get('index_version')}  \n"
                    f"lex.uz holati: {meta.get('lex_snapshot_date')}  \nPipeline: {meta.get('pipeline_version')}")
-    else:
+    elif not BUILT_IN:
         st.error(f"API ga ulanib boʻlmadi: {API_URL}")
-    if not API_KEY:
+    if not BUILT_IN and not API_KEY:
         st.warning("LEXRAG_API_KEY sozlanmagan (Secrets).")
 
 st.title("lex.uz huquqiy yordamchi")

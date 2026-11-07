@@ -29,8 +29,8 @@ def db() -> sqlite3.Connection:
     if con is None:
         con = sqlite3.connect(f"file:{settings.db_path}?mode=ro", uri=True, check_same_thread=False)
         con.row_factory = sqlite3.Row
-        con.execute("PRAGMA mmap_size=4000000000")
-        con.execute("PRAGMA cache_size=-200000")
+        con.execute(f"PRAGMA mmap_size={settings.sqlite_mmap_mb * 1_000_000}")
+        con.execute(f"PRAGMA cache_size=-{settings.sqlite_cache_mb * 1000}")
         _local.con = con
     return con
 

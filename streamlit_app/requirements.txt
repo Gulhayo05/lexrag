@@ -1,2 +1,7 @@
 streamlit>=1.40
 httpx>=0.27
+huggingface_hub>=0.24
+# lexrag pipeline (built-in mode)
+anthropic>=0.99
+pydantic>=2.7
+pydantic-settings>=2.3
